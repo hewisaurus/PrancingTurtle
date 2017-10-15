@@ -23,6 +23,12 @@ A simple implementation of NLog
 #### Web (ASP.NET 5 MVC)
 This project is responsible for everything other than the database interaction and the log parsing.
 
+Notable packages used by this project:
+ * [Glimpse](http://getglimpse.com/) for debugging & insight
+ * [Quartz.NET](https://www.quartz-scheduler.net/) for the early scheduling implementation
+ * [Hangfire](https://www.hangfire.io/) - a better way of executing background tasks
+ * [StructureMap](http://structuremap.github.io/) for Dependency Injection / IoC
+
 ## History
 PrancingTurtle originally existed as a very simple web project for internal use within a RIFT guild. The idea came from a site that I had used before but had been decommissioned. I managed to get in contact with the author and was kindly given a copy of the source that was used there. The structure of the logs themselves had changed significantly but looking through the existing code gave me a few ideas, and a very early iteration of PrancingTurtle was born. Looking back at my first series of commits, it turns out that development started around August 2014.
 
