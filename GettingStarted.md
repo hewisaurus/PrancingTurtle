@@ -37,3 +37,17 @@ The following files include the bare minimum data required in order to have a us
 
 ### Hangfire - a background job execution framework
 PT uses Hangfire to coordinate a series of background tasks and the existing Quartz.NET tasks will be moved to Hangfire in the future. As long as you configure a working MySQL/MariaDB server within the web project's **ConnectionStrings.config** file, the Hangfire database will be created automatically.
+
+## Information specific to individual projects
+
+### AutoExtracter
+
+To run this project (rather than debug it), first you need to configure the settings for the application itself. These are located within the **AutoExtracterAsync.exe.config** file that sits alongside the executable. The key values to modify are:
+ * watchFolder (the folder to watch for incoming .zip files)
+ * extractionFolder (the folder that the logs should be extracted into - this is the watch folder for the parser)
+ * archiveFolder (the folder to move the archive to once it has been extracted)
+ * PTGalera connection string (similar to the web project)
+ 
+ The **archiveFolder** value should have a trailing backslash (\) but the **watchFolder** and **extractionFolder** values should not.
+
+These folders must all exist before the application runs, or it will exit.
