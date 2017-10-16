@@ -51,3 +51,5 @@ To run this project (rather than debug it), first you need to configure the sett
  The **archiveFolder** value should have a trailing backslash (\) but the **watchFolder** and **extractionFolder** values should not.
 
 These folders must all exist before the application runs, or it will exit.
+
+**TO ADD: AutoParser needs the folder databaseimport**
