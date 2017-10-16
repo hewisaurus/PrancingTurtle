@@ -22,4 +22,8 @@ In the PrancingTurtle (web) project, the two files you'll need to create are **P
 Right-click the PrancingTurtle web project and click "Set as Startup Project" if it isn't set already... unless, of course, you're debugging the AutoExtracter or AutoParser projects.
 
 ### Import the DB schema to a local MySQL server
+You can find the default schema [here](https://github.com/hewisaurus/PrancingTurtle/blob/master/PTSchema-20171016.sql). It includes create statements for the tables, so you can copy/paste it directly into something like MySQL Workbench and execute it to get a working (but empty) database.
+
+**Schemas that include test guilds and existing sessions will be linked here also**
+
 **TODO: Provide options for schema (smaller / larger in terms of encounter and session #s)
