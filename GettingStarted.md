@@ -1,6 +1,6 @@
 # Getting started
 
-This is a quick guide to getting the project to an operational state.. beyond that it's up to you! 
+This is a quick guide to getting the project to an operational state.. beyond that it's up to you! Please follow the entire guide before running the solution for the first time, as it covers some important points.
 
 PT is a Visual Studio 2017 solution & targets .NET 4.6.2 with each project. For some reason, the VS2017 installer doesn't have the option for this, so you'll have to install it manually.
 
@@ -18,6 +18,8 @@ In Visual Studio, open Team Explorer and click 'Clone' underneath the GitHub sec
 ### Copy example files (mail account info and DB connection strings)
 In the PrancingTurtle (web) project, the two files you'll need to create are **PrancingTurtle/ConnectionStrings.config** and **PrancingTurthe/Helpers/Mail/AccountInfo.cs**. Example files are provided next to where the live files should live, so you can copy/paste their contents and create the new files. This is in place so that you're able to point your debug copy of PT to a local MySQL server for ease of use, as well as the mail engine if you'd like to debug that too.
 
+You can change the name of the connection strings away from **PTGalera** and **PTHangfire** if you wish, but be sure to change them in the dependency injection registry as well (**PrancingTurtle/DependencyResolution/Registries/RepositoryRegistry.cs**)
+
 ### Set the web project as the startup project
 Right-click the PrancingTurtle web project and click "Set as Startup Project" if it isn't set already... unless, of course, you're debugging the AutoExtracter or AutoParser projects.
 
@@ -27,3 +29,6 @@ You can find the default schema [here](https://github.com/hewisaurus/PrancingTur
 **Schemas that include test guilds and existing sessions will be linked here also**
 
 **TODO: Provide options for schema (smaller / larger in terms of encounter and session #s)
+
+### Hangfire - a background job execution framework
+PT uses Hangfire to coordinate a series of background tasks and the existing Quartz.NET tasks will be moved to Hangfire in the future. As long as you configure a working MySQL/MariaDB server within the web project's **ConnectionStrings.config** file, the Hangfire database will be created automatically.
