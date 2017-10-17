@@ -28,7 +28,7 @@ You can find the default schema [here](https://github.com/hewisaurus/PrancingTur
 
 The following files include the bare minimum data required in order to have a useful site. There is one user, **testuser@domain.com** and its password is **qwerty12345**
  * Minimum data with no sessions [here](https://github.com/hewisaurus/PrancingTurtle/blob/master/PTBasicData-IncGuild-NoSessions.sql)
- * Minimum data with 2 sessions (here soon)
+ * Minimum data with 2 sessions [here](https://github.com/hewisaurus/PrancingTurtle/blob/master/PTBasicData-IncGuild-2Sessions.zip) - 7.6mb zipped, 74mb uncompressed
  * Minimum data with 5 sessions (here soon)
 
 **Schemas that include test guilds and existing sessions will be linked here also**
