@@ -50,6 +50,10 @@ To run this project (rather than debug it), first you need to configure the sett
  
  The **archiveFolder** value should have a trailing backslash (\) but the **watchFolder** and **extractionFolder** values should not.
 
-These folders must all exist before the application runs, or it will exit.
+These folders must all exist before the application runs, or it will exit. Also, if any of the folders used by this application are in protected locations, you'll want to run the app as an administrator (UAC)
+
+### AutoParser
+
+Similar to AutoExtracter, this application has a config file that it reads from when it's initialized, **AutoParser.exe.config**. On top of the connection string, the only setting you need to configure is the **watchFolder**, which should be the same path as the **extractionFolder** for the AutoExtracter application.
 
 **TO ADD: AutoParser needs the folder databaseimport**
