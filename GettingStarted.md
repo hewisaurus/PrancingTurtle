@@ -50,8 +50,14 @@ To run this project (rather than debug it), first you need to configure the sett
  
  The **archiveFolder** value should have a trailing backslash (\) but the **watchFolder** and **extractionFolder** values should not.
 
-These folders must all exist before the application runs, or it will exit. Also, if any of the folders used by this application are in protected locations, you'll want to run the app as an administrator (UAC)
+These folders must all exist before the application runs, or it will exit. Also, if any of the folders used by this application are in protected locations, you'll want to run the app as an administrator (UAC).
+
+If you run the application after it has been built in **debug** mode in VS, the child windows that spawn won't close on their own (this is deliberate). If you don't need to watch the console as it works, run the app in **Release** and it'll close automatically.
 
 ### AutoParser
 
 Similar to AutoExtracter, this application has a config file that it reads from when it's initialized, **AutoParser.exe.config**. On top of the connection string, the only setting you need to configure is the **watchFolder**, which should be the same path as the **extractionFolder** for the AutoExtracter application. Again, consider running it "as Administrator" if you run into permissions issues.
+
+This project uses MySQL's Bulk Loader in order to insert damage, healing and shielding records - particularly when inserting upwards of 30000 records at a time, this is an efficient method. Smaller tables don't require this and have a much simpler method of inserting data.
+
+If you run the application after it has been built in **debug** mode in VS, the child windows that spawn won't close on their own (this is deliberate). If you don't need to watch the console as it works, run the app in **Release** and it'll close automatically.
