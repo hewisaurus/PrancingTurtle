@@ -20,6 +20,8 @@ In the PrancingTurtle (web) project, the two files you'll need to create are **P
 
 You can change the name of the connection strings away from **PTGalera** and **PTHangfire** if you wish, but be sure to change them in the dependency injection registry as well (**PrancingTurtle/DependencyResolution/Registries/RepositoryRegistry.cs**)
 
+The last file to copy/paste / rename is **PrancingTurtle/Helpers/Authorization/ApplicationSid.cs**. This is really just a unique string for this application and can be anything you like.
+
 ### Set the web project as the startup project
 Right-click the PrancingTurtle web project and click "Set as Startup Project" if it isn't set already... unless, of course, you're debugging the AutoExtracter or AutoParser projects.
 
