@@ -1,7 +1,7 @@
 # PrancingTurtle
 A web-based CombatLog parser for [RIFT](http://www.riftgame.com). Link to the live PT site is [here](https://prancingturtle.com/).
 
-The whole project is written in C#, and consists of two console applications & one ASP.NET MVC project.
+The whole project is written in C#, and consists of two console applications & one ASP.NET MVC project. Below is a breakdown of how PT has been put together and a bit of history - if you're looking for the Getting Started guide, you'll find it [here](https://github.com/hewisaurus/PrancingTurtle/blob/master/GettingStarted.md).
 
 ## Components
 
