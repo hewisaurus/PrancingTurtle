@@ -54,6 +54,4 @@ These folders must all exist before the application runs, or it will exit. Also,
 
 ### AutoParser
 
-Similar to AutoExtracter, this application has a config file that it reads from when it's initialized, **AutoParser.exe.config**. On top of the connection string, the only setting you need to configure is the **watchFolder**, which should be the same path as the **extractionFolder** for the AutoExtracter application.
-
-**TO ADD: AutoParser needs the folder databaseimport**
+Similar to AutoExtracter, this application has a config file that it reads from when it's initialized, **AutoParser.exe.config**. On top of the connection string, the only setting you need to configure is the **watchFolder**, which should be the same path as the **extractionFolder** for the AutoExtracter application. Again, consider running it "as Administrator" if you run into permissions issues.
