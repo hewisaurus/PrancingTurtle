@@ -252,6 +252,7 @@ UNLOCK TABLES;
 
 LOCK TABLES `encounterdifficulty` WRITE;
 /*!40000 ALTER TABLE `encounterdifficulty` DISABLE KEYS */;
+INSERT INTO `encounterdifficulty` VALUES (1,'Easy','EM',3),(4,'Normal','NM',2),(7,'Hard','HM',1);
 /*!40000 ALTER TABLE `encounterdifficulty` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -502,6 +503,7 @@ UNLOCK TABLES;
 
 LOCK TABLES `usergroup` WRITE;
 /*!40000 ALTER TABLE `usergroup` DISABLE KEYS */;
+INSERT INTO `usergroup` VALUES (7,'AdminUsers');
 /*!40000 ALTER TABLE `usergroup` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -511,18 +513,8 @@ UNLOCK TABLES;
 
 LOCK TABLES `usergroupmembership` WRITE;
 /*!40000 ALTER TABLE `usergroupmembership` DISABLE KEYS */;
+INSERT INTO `usergroupmembership` VALUES (10,7,2372,'2017-10-20 18:40:06','system','2017-10-20 18:40:06','system');
 /*!40000 ALTER TABLE `usergroupmembership` ENABLE KEYS */;
-UNLOCK TABLES;
-/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
-
---
--- Dumping data for table `EncounterDifficulty`
---
-
-LOCK TABLES `EncounterDifficulty` WRITE;
-/*!40000 ALTER TABLE `EncounterDifficulty` DISABLE KEYS */;
-INSERT INTO `EncounterDifficulty` VALUES (1,'Easy','EM',3),(4,'Normal','NM',2),(7,'Hard','HM',1);
-/*!40000 ALTER TABLE `EncounterDifficulty` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -534,5 +526,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
-
--- Dump completed on 2017-10-16 20:13:28
+-- Dump completed on 2017-10-20 18:40:38
