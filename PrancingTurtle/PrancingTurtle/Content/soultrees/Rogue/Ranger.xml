@@ -1,0 +1,1351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SoulTree calling="Rogue" name="Ranger">
+  <Traits>
+    <Trait>
+      <Key>0</Key>
+      <Name>Enduring</Name>
+      <Icon>healed</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1022654065</AbilityId>
+          <Description></Description>
+          <AddonId>A3CF4767100000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the Max Health of your pets by 5% and your Base Health by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the Max Health of your pets by 10% and your Base Health by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the Max Health of your pets by 15% and your Base Health by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases the Max Health of your pets by 20% and your Base Health by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases the Max Health of your pets by 25% and your Base Health by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>1</Key>
+      <Name>Eagle Eye</Name>
+      <Icon>ironwill2a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>424528403</AbilityId>
+          <Description></Description>
+          <AddonId>A194DCA1300000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Critical Hit chance by 1%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Critical Hit chance by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your Critical Hit chance by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your Critical Hit chance by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your Critical Hit chance by 5%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>2</Key>
+      <Name>Predatory Instincts</Name>
+      <Icon>spiritoflion3</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>699978571</AbilityId>
+          <Description>Increases the Rogue and the pet&apos;s Attack Power and Weapon Damage by 4%.</Description>
+          <AddonId>A29B8D34BD7B991A3</AddonId>
+          <IsPassive>False</IsPassive>
+          <CostEnergy>10</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>3</Key>
+      <Name>Thrill of the Kill</Name>
+      <Icon>beastmaster_enraged_companion_01_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-19024827</AbilityId>
+          <Description></Description>
+          <AddonId>AFEDDB44500000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage of Quick Shot and Splinter Shot by 5%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage of Quick Shot and Splinter Shot by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>4</Key>
+      <Name>Bolster</Name>
+      <Icon>bolster_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>821274055</AbilityId>
+          <Description></Description>
+          <AddonId>A30F3A5C700000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces the damage you and your pet take by 1%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reduces the damage you and your pet take by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Reduces the damage you and your pet take by 3%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>5</Key>
+      <Name>Killing Focus</Name>
+      <Icon>killing_focus_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>170395522</AbilityId>
+          <Description></Description>
+          <AddonId>A0A28078200000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases damage with melee and ranged weapons by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases damage with melee and ranged weapons by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases damage with melee and ranged weapons by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases damage with melee and ranged weapons by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases damage with melee and ranged weapons by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>6</Key>
+      <Name>Wilderness Training</Name>
+      <Icon>beastmaster_kinship_01_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-87782914</AbilityId>
+          <Description></Description>
+          <AddonId>AFAC489FE00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Attack Power and Weapon Damage by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Attack Power and Weapon Damage by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your Attack Power and Weapon Damage by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your Attack Power and Weapon Damage by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your Attack Power and Weapon Damage by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>7</Key>
+      <Name>Piercing Shot</Name>
+      <Icon>piercing_shot_01_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1812387454</AbilityId>
+          <Description>Deals 818 to 904 damage. Reduces Armor by 95 for 30s. Awards 1 Combo Point.</Description>
+          <AddonId>A6C06D67EAB161708</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+          <Cooldown>10.000000</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <CostEnergy>24</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <GainComboPoints>1</GainComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>8</Key>
+      <Name>Bestial Fury</Name>
+      <Icon>awareness_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Head Shot now also increases your damage by 5%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>9</Key>
+      <Name>Blood Rage</Name>
+      <Icon>bleeding_aa</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your pet enters a Blood Rage when attacking enemies under the effect of a bleed. Increases damage by 5% for 10 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your pet enters a Blood Rage when attacking enemies under the effect of a bleed. Increases damage by 10% for 10 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Your pet enters a Blood Rage when attacking enemies under the effect of a bleed. Increases damage by 15% for 10 seconds.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>10</Key>
+      <Name>Opportunity</Name>
+      <Icon>opportunity_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1239869022</AbilityId>
+          <Description></Description>
+          <AddonId>A49E6E65E46239BA5</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your successful ranged weapon Finishers have a 6.6% chance per Combo Point to award 1 Combo Point.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your successful ranged weapon Finishers have a 13.2% chance per Combo Point  to award 1 Combo Point.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Your successful ranged weapon Finishers have a 20% chance per Combo Point  to award 1 Combo Point.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>11</Key>
+      <Name>Doubleshot</Name>
+      <Icon>double_shot_01_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>84129184</AbilityId>
+          <Description></Description>
+          <AddonId>A0503B5A068C7CEBA</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Gives you a 10% chance to fire an additional shot when attacking with ranged weapons.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Gives you a 20% chance to fire an additional shot when attacking with ranged weapons.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>12</Key>
+      <Name>Trick Shot</Name>
+      <Icon>ricochet1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1488596729</AbilityId>
+          <Description>Deals 534 to 590 damage to up to 5 enemies. Awards 1 Combo Point.</Description>
+          <AddonId>A58BA2EF9C542389F</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+          <MaxRange>30.000000</MaxRange>
+          <CostEnergy>26</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <GainComboPoints>1</GainComboPoints>
+          <CastTime>Instant</CastTime>
+          <Radius>7.000000</Radius>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>13</Key>
+      <Name>Improved Trick Shot</Name>
+      <Icon>ricochet2</Icon>
+      <PrereqTraitKey>12</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Each additional enemy affected by your Trick Shot has a 15% chance to add 1 Combo Point.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>14</Key>
+      <Name>Prey on the Weak</Name>
+      <Icon>provoke1a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Whenever your pet deals a Critical Hit, you have a 33% chance to become enraged, increasing damage by 8% for 15 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Whenever your pet deals a Critical Hit, you have a 66% chance to become enraged, increasing damage by 8% for 15 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Whenever your pet deals a Critical Hit, you have a 100% chance to become enraged, increasing damage by 8% for 15 seconds.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>15</Key>
+      <Name>Concussive Blast</Name>
+      <Icon>concussive_blast_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>121585151</AbilityId>
+          <Description>Interrupts up to 5 enemies.</Description>
+          <AddonId>A073F3DFFEF67CBE0</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+          <Cooldown>10.000000</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <CostEnergy>11</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+          <Radius>7.000000</Radius>
+          <MaxAffected>5</MaxAffected>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>16</Key>
+      <Name>Steady Hand</Name>
+      <Icon>generic_ability_012_b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1673078901</AbilityId>
+          <Description></Description>
+          <AddonId>A63B9287561F8775C</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increase you and your pet&apos;s Attack Power and Weapon Damage by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increase you and your pet&apos;s Attack Power and Weapon Damage by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increase you and your pet&apos;s Attack Power and Weapon Damage by 12%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increase you and your pet&apos;s Attack Power and Weapon Damage by 16%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increase you and your pet&apos;s Attack Power and Weapon Damage by 20%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>17</Key>
+      <Name>Master Huntsman</Name>
+      <Icon>invoker_prerogative1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Dire Wolf&apos;s Maul infects the enemy, reducing healing taken by 5% for 10 seconds.
+Increases the Armor of your Razorbeast by 20%.
+Gives your Blood Raptor&apos;s Bloodied Blow a 50% chance to double attack.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your Dire Wolf&apos;s Maul infects the enemy, reducing healing taken by 10% for 10 seconds.
+Increases the Armor of your Razorbeast by 40%.
+Gives your Blood Raptor&apos;s Bloodied Blow a 100% chance to double attack.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>18</Key>
+      <Name>Hasten Call</Name>
+      <Icon>trinket4</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1990441046</AbilityId>
+          <Description>Causes the next Call to be cast instantly and with no cost. Lasts 15s.</Description>
+          <AddonId>A76A3B8568EAF7EA0</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>60.000004</Cooldown>
+          <CostEnergy>10</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>19</Key>
+      <Name>Call: Blood Raptor</Name>
+      <Icon>pet_raptor</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1422534837</AbilityId>
+          <Description>Summons a Blood Raptor. Best used for Damage.</Description>
+          <AddonId>A54CA28B521DB5B2F</AddonId>
+          <IsPassive>False</IsPassive>
+          <CostEnergy>100</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>8.000000</CastTime>
+          <Interruptible>false</Interruptible>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>20</Key>
+      <Name>King of the Jungle</Name>
+      <Icon>spirit_of_lion1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your pet&apos;s damage by 10% and reduces the damage your pet takes from area of effect attacks by 65%. For every point spent in the Ranger Soul above 21, the damage taken from area of effects is reduced by 1%, up to a maximum of 95%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>21</Key>
+      <Name>Fast and Furious</Name>
+      <Icon>fleeting_instincts_02_c</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-79110268</AbilityId>
+          <Description></Description>
+          <AddonId>AFB48DF8400000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces the cast time of your Splinter Shot and Shadow Fire by 50%. Reduces their energy cost by 5.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reduces the cast time of your Splinter Shot and Shadow Fire by 100%. Reduces their energy cost by 10.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>22</Key>
+      <Name>Survival of the Fittest</Name>
+      <Icon>beastmaster_protective_companion_aura_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces the global cooldown of your pet&apos;s attacks by 0.1 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reduces the global cooldown of your pet&apos;s attacks by 0.2 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Reduces the global cooldown of your pet&apos;s attacks by 0.3 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Reduces the global cooldown of your pet&apos;s attacks by 0.4 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Reduces the global cooldown of your pet&apos;s attacks by 0.5 seconds.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>23</Key>
+      <Name>Spirit of the Wilderness</Name>
+      <Icon>generic_ability_011</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-94891566</AbilityId>
+          <Description>15% of the damage done by the pet heals the Rogue. Lasts 1 hr.</Description>
+          <AddonId>AFA5811D27121CC4D</AddonId>
+          <IsPassive>False</IsPassive>
+          <CostEnergy>10</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>24</Key>
+      <Name>Ace Shot</Name>
+      <Icon>tempest_difficult_target_z</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>40</MinimumPointsSpent>
+      <DisplayRow>8</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-74354681</AbilityId>
+          <Description>Deals 891 to 985 damage and adds a debuff that causes the enemy to take 8% more damage from the Rogue and 40% more damage from the Rogue&apos;s pet. Lasts 15s. Awards 1 Combo Point.</Description>
+          <AddonId>AFB917007316A02FD</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+          <MaxRange>30.000000</MaxRange>
+          <CostEnergy>24</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <GainComboPoints>1</GainComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+  </Traits>
+  <Abilities>
+    <Ability>
+      <MinimumPointsInSoul>48</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Ravenous Instincts</Name>
+      <Icon>beastmaster_enraged_companion_01_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>48</RequiredLevel>
+        <AbilityId>-98443253</AbilityId>
+        <Description>Increases the Rogue and the pet&apos;s Critical Hit damage and healing by 10% and their Critical Hit chance by 5%.</Description>
+        <AddonId>AFA21E00B9AC03522</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Spirit of the Wilderness</Name>
+      <Icon>generic_ability_011</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-94891566</AbilityId>
+        <Description>15% of the damage done by the pet heals the Rogue. Lasts 1 hr.</Description>
+        <AddonId>AFA5811D27121CC4D</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Ace Shot</Name>
+      <Icon>tempest_difficult_target_z</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-74354681</AbilityId>
+        <Description>Deals 891 to 985 damage and adds a debuff that causes the enemy to take 8% more damage from the Rogue and 40% more damage from the Rogue&apos;s pet. Lasts 15s. Awards 1 Combo Point.</Description>
+        <AddonId>AFB917007316A02FD</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>24</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>1</GainComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>61</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Animalism</Name>
+      <Icon>tempest_identified_weakness_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>60</RequiredLevel>
+        <AbilityId>-66933296</AbilityId>
+        <Description>Increases damage of the Rogue and the pet by 40%. Lasts 15s.</Description>
+        <AddonId>AFC02ADD062BFD48D</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Duration>15.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>58</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Twin Shot</Name>
+      <Icon>double_shot_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>57</RequiredLevel>
+        <AbilityId>-65070773</AbilityId>
+        <Description>Fires 2 shots and deals additional damage per Combo Point with each shot.
+
+1 Point: 1094 damage
+2 Points: 1414 damage
+3 Points: 1841 damage
+4 Points: 2374 damage
+5 Points: 3014 damage</Description>
+        <AddonId>AFC1F194B29F18B0E</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>16</CostEnergy>
+        <ConsumesComboPoints>True</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Ranger Mastery</Name>
+      <Icon>menacingroar3</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-57111622</AbilityId>
+        <Description>Increases damage by 1% and the pet&apos;s damage by 1% for each point spent in the Ranger soul.</Description>
+        <AddonId>AFC988BBACF0B9781</AddonId>
+        <IsPassive>True</IsPassive>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>54</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Multiple Instincts</Name>
+      <Icon>track_humanoids_01_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>53</RequiredLevel>
+        <AbilityId>-50545685</AbilityId>
+        <Description>The Rogue can now activate 2 instincts at a time.</Description>
+        <AddonId>AFCFCBBEB866AB290</AddonId>
+        <IsPassive>True</IsPassive>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Concussive Blast</Name>
+      <Icon>concussive_blast_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>121585151</AbilityId>
+        <Description>Interrupts up to 5 enemies.</Description>
+        <AddonId>A073F3DFFEF67CBE0</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <Cooldown>10.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>11</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Radius>7.000000</Radius>
+        <MaxAffected>5</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>24</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Call: Greater Razorbeast</Name>
+      <Icon>pet_razorbeast_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>24</RequiredLevel>
+        <AbilityId>255121041</AbilityId>
+        <Description>Summons a Greater Razorbeast. Best used for Tanking.</Description>
+        <AddonId>A0F34D691A15D4BAB</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>100</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>8.000000</CastTime>
+        <Interruptible>false</Interruptible>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Quick Shot</Name>
+      <Icon>rapidshot1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>280691459</AbilityId>
+        <Description>Deals 891 to 985 damage. Awards 1 Combo Point.</Description>
+        <AddonId>A10BB0303D519D2DE</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>24</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>1</GainComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>36</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Feral Instincts</Name>
+      <Icon>menacingroar2</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>36</RequiredLevel>
+        <AbilityId>383201413</AbilityId>
+        <Description>Increases both the Rogue and their pet&apos;s damage by 5% and reduces the damage they take by 5%.</Description>
+        <AddonId>A16D7308576BFEECD</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>20</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>16</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Fleeting Instincts</Name>
+      <Icon>fleeting_instincts_02_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>16</RequiredLevel>
+        <AbilityId>385560679</AbilityId>
+        <Description>Increases movement speed by 15%.</Description>
+        <AddonId>A16FB30674E516F58</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>24</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Shadow Fire</Name>
+      <Icon>rapidshot2</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>24</RequiredLevel>
+        <AbilityId>553401968</AbilityId>
+        <Description>Deals 2394 to 2646 damage. Increases the Rogue&apos;s damage with ranged weapon attacks by 5% for 30s. Awards 2 Combo Points.</Description>
+        <AddonId>A20FC3E70868C72C2</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <Cooldown>20.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>36</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>2</GainComboPoints>
+        <CastTime>2.000000</CastTime>
+        <Interruptible>false</Interruptible>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>51</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Feral Aggression</Name>
+      <Icon>shaman-courage_of_the_bear_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>50</RequiredLevel>
+        <AbilityId>585753360</AbilityId>
+        <Description>Increases damage and Critical Hit chance of your pet by 50%. Grants immunity to Fear and Confuse. Lasts 15s.</Description>
+        <AddonId>A22E9E310E07B1FC3</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Duration>15.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>32</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Escape Artist</Name>
+      <Icon>escape_artist_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>32</RequiredLevel>
+        <AbilityId>668136976</AbilityId>
+        <Description>Removes all crowd control effects.</Description>
+        <AddonId>A27D2F610774FC075</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Predatory Instincts</Name>
+      <Icon>spiritoflion3</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>699978571</AbilityId>
+        <Description>Increases the Rogue and the pet&apos;s Attack Power and Weapon Damage by 4%.</Description>
+        <AddonId>A29B8D34BD7B991A3</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>4</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Splinter Shot</Name>
+      <Icon>killer_instinct</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>4</RequiredLevel>
+        <AbilityId>777208711</AbilityId>
+        <Description>Bleeds 1931 health over 10s. Awards 1 Combo Point.</Description>
+        <AddonId>A2E534387CD5925D1</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>30</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>1</GainComboPoints>
+        <CastTime>1.500000</CastTime>
+        <Interruptible>false</Interruptible>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>12</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Call: Dire Wolf</Name>
+      <Icon>pet_dire-wolf</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>12</RequiredLevel>
+        <AbilityId>930603599</AbilityId>
+        <Description>Summons a Dire Wolf (max level 36). Best used for PvP.</Description>
+        <AddonId>A3777E24FE9204B1C</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>100</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>8.000000</CastTime>
+        <Interruptible>false</Interruptible>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Dismiss Pet</Name>
+      <Icon>redirect1a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1086659173</AbilityId>
+        <Description>Dismiss your Pet.</Description>
+        <AddonId>A40C51A65DBA71310</AddonId>
+        <IsPassive>False</IsPassive>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>8</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Rejuvenate</Name>
+      <Icon>triage3</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>8</RequiredLevel>
+        <AbilityId>1124820918</AbilityId>
+        <Description>Restores 2699 health over 8s.</Description>
+        <AddonId>A430B67B68D9F769C</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <CostEnergy>24</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Duration>8.000000</Duration>
+        <Interval>2.000000</Interval>
+        <PowerStatCoefficient effect="0" action="0">3.630000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>40</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Pin Down</Name>
+      <Icon>pin_down_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>40</RequiredLevel>
+        <AbilityId>1150046740</AbilityId>
+        <Description>Roots all enemies in the target area for 5s.</Description>
+        <AddonId>A448C52144241E729</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>25.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Radius>7.000000</Radius>
+        <MaxAffected>50</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>44</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Diffuse</Name>
+      <Icon>diffuse_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>44</RequiredLevel>
+        <AbilityId>1409682949</AbilityId>
+        <Description>Intercepts all incoming damage to the Rogue for 10s.</Description>
+        <AddonId>A54060E05934738AF</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Call: Blood Raptor</Name>
+      <Icon>pet_raptor</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1422534837</AbilityId>
+        <Description>Summons a Blood Raptor. Best used for Damage.</Description>
+        <AddonId>A54CA28B521DB5B2F</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>100</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>8.000000</CastTime>
+        <Interruptible>false</Interruptible>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Trick Shot</Name>
+      <Icon>ricochet1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1488596729</AbilityId>
+        <Description>Deals 534 to 590 damage to up to 5 enemies. Awards 1 Combo Point.</Description>
+        <AddonId>A58BA2EF9C542389F</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>26</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>1</GainComboPoints>
+        <CastTime>Instant</CastTime>
+        <Radius>7.000000</Radius>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>24</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Call: Greater Dire Wolf</Name>
+      <Icon>pet_dire-wolf_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>24</RequiredLevel>
+        <AbilityId>1673239866</AbilityId>
+        <Description>Summons a Dire Wolf. Best used for PvP.</Description>
+        <AddonId>A63BB9D3AB5175722</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>100</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>8.000000</CastTime>
+        <Interruptible>false</Interruptible>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Call: Razorbeast</Name>
+      <Icon>pet_razorbeast</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1708728246</AbilityId>
+        <Description>Summons a Razorbeast (max level 36). Best used for Tanking.</Description>
+        <AddonId>A65D91FB6B96A9B2C</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>100</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>8.000000</CastTime>
+        <Interruptible>false</Interruptible>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>20</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Divert Rage</Name>
+      <Icon>divert_rage_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>20</RequiredLevel>
+        <AbilityId>1743210077</AbilityId>
+        <Description>Transfers all threat generated to the Rogue&apos;s pet for 10s.</Description>
+        <AddonId>A67E7465D23B36347</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Duration>10.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Piercing Shot</Name>
+      <Icon>piercing_shot_01_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1812387454</AbilityId>
+        <Description>Deals 818 to 904 damage. Reduces Armor by 95 for 30s. Awards 1 Combo Point.</Description>
+        <AddonId>A6C06D67EAB161708</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <Cooldown>10.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>24</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>1</GainComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>28</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Rain of Arrows</Name>
+      <Icon>rainofarrows2</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>28</RequiredLevel>
+        <AbilityId>1916678497</AbilityId>
+        <Description>Deals 4602 damage over 6s to up to 8 enemies in the target area.</Description>
+        <AddonId>A723E316171474642</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <Cooldown>6.000000</Cooldown>
+        <MaxRange>25.000000</MaxRange>
+        <CostEnergy>40</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Channel>true</Channel>
+        <Duration>6.000000</Duration>
+        <Interval>1.000000</Interval>
+        <Radius>7.000000</Radius>
+        <MaxAffected>8</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Hasten Call</Name>
+      <Icon>trinket4</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1990441046</AbilityId>
+        <Description>Causes the next Call to be cast instantly and with no cost. Lasts 15s.</Description>
+        <AddonId>A76A3B8568EAF7EA0</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>2</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Head Shot</Name>
+      <Icon>headshot3</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>2</RequiredLevel>
+        <AbilityId>2085294259</AbilityId>
+        <Description>Deals additional damage per Combo Point. Increases the damage of the pet by 5%. Lasts 12s per Combo Point.
+
+1 Point: 907 damage
+2 Points: 1166 damage
+3 Points: 1512 damage
+4 Points: 1944 damage
+5 Points: 2463 damage</Description>
+        <AddonId>A7C4B10B3A62367B4</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>16</CostEnergy>
+        <ConsumesComboPoints>True</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+  </Abilities>
+</SoulTree>
+

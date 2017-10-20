@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "You're unable to upload!";
+}
+<br />
+<div class="row">
+    <div class="col-md-6">
+        <div class="panel panel-danger">
+            <div class="panel-heading">
+                <h3 class="panel-title">You're unable to upload!</h3>
+            </div>
+            <div class="panel-body">
+                <p>You're not currently permitted to create sessions or upload logs!</p>
+                <p>
+                    This happens when you don't have any characters in a guild, or your guild rank doesn't allow you to upload.
+                    If you're in a guild but can't upload, check whether you guild has been approved, and contact your guild leader or anyone listed as an Administrator for your guild.
+                    You can view this information by clicking 'My Account' and then clicking on the guild name.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+@Html.ActionLink("Ok", "Index", "Home", null, new { @class = "btn btn-primary" })

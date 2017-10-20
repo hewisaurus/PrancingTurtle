@@ -1,0 +1,63 @@
+﻿@using PrancingTurtle.Helpers
+@model PrancingTurtle.Models.ViewModels.Session.SessionIndexVM
+
+@{
+    ViewBag.Title = "Sessions";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-8 col-centered">
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-3">
+
+                    <h2>Sessions</h2>
+                    <h4>
+                        Legend:
+                        <span class="label label-success">Boss killed</span>
+                        <span class="label label-danger">Boss not killed</span>
+                    </h4>
+                </div>
+            </div>
+            <br/><br/>
+            <div class="table-responsive">
+                <table class="table">
+                    @foreach (var session in Model.Sessions)
+                    {
+                        <tr>
+                            <td class="text-right col-sm-3">
+                                <b>@DateTimeHelpers.TimeAgo(session.Date.Add(Model.TimeZoneOffset))</b>
+                            </td>
+                            <td class="text-left col-sm-9">
+                                @Html.Raw(string.Format("&lt;{0}&gt;", session.AuthUserCharacter.Guild.Name))
+                                <b>
+                                    @Html.Raw(string.Join(" | ", session.InstancesSeen))
+                                </b>
+                                @*@foreach (var instance in session.InstancesSeen)
+                                {
+                                    <b>@instance</b>
+                                }*@
+                                <span> -> </span>
+                                <b>@Html.ActionLink(session.Name, "Detail", "Session", new {@id = session.Id}, new {@class = "text-info-i"})</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-right col-sm-3"></td>
+                            <td class="text-left col-sm-9">
+                                @foreach (var bossKilled in session.BossesSeen)
+                                {
+                                    <span class="btn-sm label-success">@bossKilled</span>
+                                }
+                                @foreach (var bossNotKilled in session.BossesSeenNotKilled)
+                                {
+                                    <span class="btn-sm label-danger">@bossNotKilled</span>
+                                }
+                            </td>
+                        </tr>
+                        <tr><td colspan="2"></td></tr>
+                    }
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

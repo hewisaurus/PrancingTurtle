@@ -1,0 +1,45 @@
+﻿@using PrancingTurtle.Helpers
+@model Database.Models.Session
+
+@{
+    ViewBag.Title = "Rename session";
+}
+
+<div class="row">
+    <div class="col-md-6 col-centered">
+        <h2>Rename session</h2>
+        <br />
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <h3 class="panel-title">Rename session</h3>
+            </div>
+            <div class="panel-body">
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+
+                    <div class="form-horizontal">
+                        @Html.ValidationSummary(false)
+                        @Html.HiddenFor(model => model.Id)
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Name, new { @class = "control-label col-md-3" })
+                            <div class="col-md-9">
+                                @Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-offset-3 col-md-9">
+                                <input type="submit" value="Save" class="btn btn-success" />
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+            <div class="panel-footer">
+                @Html.ImageActionLink("Detail", "Session", new {id = Model.Id}, "text-info", "fa fa-lg fa-arrow-circle-left", "Back to session")
+            </div>
+        </div>
+    </div>
+</div>

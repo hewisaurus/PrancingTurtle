@@ -1,0 +1,113 @@
+﻿@using BotDetect.C5
+@using PrancingTurtle.Models.ViewModels
+@using WebGrease.Css.Extensions
+@model PrancingTurtle.Models.ViewModels.Encounter.DeathVM
+@{
+    ViewBag.Title = string.Format("{0} ({1})", Model.Encounter.BossFight.Name, Model.Encounter.Duration);
+}
+
+@Html.Partial("_EncounterNav2", new EncounterNav(Model.Encounter.Id,
+        Model.Encounter.BossFight.Name, Model.Encounter.BossFight.Instance.Name,
+            Model.Encounter.Duration, Model.Encounter.SuccessfulKill, Model.Session), new ViewDataDictionary { { "link", "deaths" } })
+
+<a name="top">&nbsp;</a>
+
+<div class="container container-fluid">
+    <div class="row">
+        <div class="col-lg-8 col-centered">
+            <div class="bs-callout overview">
+                <h3 class="text-center">@Html.Raw(string.Format("{0}: Encounter Deaths", Model.Encounter.BossFight.Name))</h3>
+                <h4 class="text-center">Encounter: @Model.Encounter.BossFight.Name</h4>
+                <h5 class="text-center">@Html.Raw(string.Format("<b>Date:</b> {0} | <b>Fight Length:</b> {1}", Model.Encounter.Date, Model.Encounter.Duration))</h5>
+
+                @*foreach (
+                    var deathGroup in
+                    Deaths.Where(d => d.TargetPlayerId != null)
+                    .GroupBy(d => new {d.TargetPlayerId, d.TargetPlayer.Name})
+                    .OrderByDescending(d => d.Count()))
+                    {
+                    string grpLine = string.Format("{0} ({1}): ", deathGroup.Key.Name, deathGroup.Count());
+                    foreach (var deathRecord in deathGroup)
+                    {
+                    grpLine += string.Format("{0} ({1})", deathRecord.Ability.Name, deathRecord.SecondsElapsed);
+                    }
+                    returnValue.Add(grpLine);
+                    }
+                    return returnValue;*@
+                <br />
+                <h5>Deaths by player:</h5>
+                <br />
+                @foreach (var dGroup in Model.Deaths.Where(d => d.TargetPlayerId != null)
+                    .GroupBy(d => new { d.TargetPlayerId, d.TargetPlayer.Name })
+                    .OrderByDescending(d => d.Count()))
+                {
+                    var playerHtml = string.Format("<h6><b>{0}</b> ({1}): ", dGroup.Key.Name, dGroup.Count());
+                    foreach (var record in dGroup)
+                    {
+                        TimeSpan ts = new TimeSpan(0, 0, record.SecondsElapsed);
+                        if (record.SourcePlayerId == null)
+                        {
+                            playerHtml += string.Format("{0} - {1} ({2}) ", ts.ToString(@"mm\:ss"), record.Ability.Name, record.SourceNpcName);
+                        }
+                        else
+                        {
+                            playerHtml += string.Format("{0} - {1} ({2}) ", ts.ToString(@"mm\:ss"), record.Ability.Name, record.SourcePlayer.Name);
+                        }
+                    }
+                    playerHtml += "</h6>";
+                    @Html.Raw(playerHtml);
+                }
+                <br />
+                @*@foreach (var death in Model.DeathStrings)
+                    {
+                        <p>@death</p>
+                    }*@
+
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered table-condensed table-text-small">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th class="text-center">Seconds Elapsed</th>
+                                <th class="text-center">Attacker</th>
+                                <th class="text-center">Target</th>
+                                <th class="text-center">Ability</th>
+                                <th class="text-center">Total Damage</th>
+                                <th class="text-center">Overkill</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.Deaths.Where(d => d.TargetPlayerId != null))
+                            {
+                                <tr>
+                                    <td class="text-right">@Html.ActionLink("Details", "DeathEvents", "Encounter", new { id = Model.Encounter.Id, p = item.TargetPlayerId, se = item.SecondsElapsed }, null)</td>
+                                    <td class="text-center">
+                                        @{
+                                            TimeSpan ts = new TimeSpan(0, 0, item.SecondsElapsed);
+                                        }
+                                        @Html.Raw(string.Format("{0} ({1}) ", item.SecondsElapsed, ts.ToString(@"mm\:ss")))
+                                    </td>
+                                    @*<td>@item.SourceNpcName</td>*@
+                                    @if (item.SourceNpcId == null)
+                                    {
+                                        <td class="text-center">@item.SourcePlayer.Name</td>
+                                    }
+                                    else
+                                    {
+                                        <td class="text-center">@item.SourceNpcName</td>
+                                    }
+                                    <td class="text-center">@item.TargetPlayer.Name</td>
+                                    <td class="text-center">@item.Ability.Name</td>
+                                    <td class="text-center">@item.TotalDamage</td>
+                                    <td class="text-center">@item.OverkillValue</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        <p class="text-center text-muted">Page built in @Model.BuildTime</p>
+    </div>
+</div>

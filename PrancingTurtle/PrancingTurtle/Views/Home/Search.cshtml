@@ -1,0 +1,129 @@
+﻿@using Database.Models
+@model Database.QueryModels.Misc.SearchResult
+
+@{
+    ViewBag.Title = "Search Results";
+}
+
+@section scripts{
+    <script>
+
+        $(document).ready(function () {
+
+            $('div.players,div.guilds,div.encounters').expander({
+                slicePoint: 300,
+                sliceOn: '<p hidden',
+                expandText: 'show all',
+                expandEffect: 'fadeIn',
+                userCollapse: false
+            });
+        });
+
+    </script>
+
+}
+
+<h2>Search Results</h2>
+
+@* PLAYERS *@
+<div class="row">
+    <div class="players">
+        <div class="col-lg-3">
+            <h3>Players</h3>
+            @if (Model.Players.Any())
+            {
+                foreach (var player in Model.Players)
+                {
+                    <p>
+                        @Html.ActionLink(player.DisplayName, "Player", "Session", new { id = player.Id }, new { @class = player.DisplayColorClass })
+                        @*<span class="@player.DisplayColorClass">@player.DisplayName</span> |
+                        @Html.ActionLink("Sessions", "Player", "Session", new {id = player.Id}, new {@class = "text-info"})*@
+                    </p>
+                    @*<p>
+                            @Html.ActionLink(player.DisplayName, "Index", "Player", new { id = player.Id }, new { @class = @player.DisplayColorClass })
+                        </p>*@
+                }
+                @*<table class="table table-responsive table-striped">
+                        <tr>
+                            <th>Player Name</th>
+                            <th>Shard</th>
+                        </tr>
+                        @foreach (var player in Model.Players)
+                        {
+                            <tr>
+                                <td>@player.Name</td>
+                                <td>@player.Shard</td>
+                            </tr>
+                        }
+                    </table>*@
+            }
+            else
+            {
+                <span class="text-danger">No matching players found!</span>
+            }
+        </div>
+    </div>
+
+    @* GUILDS *@
+
+    <div class="guilds">
+        <div class="col-lg-3">
+            <h3>Guilds</h3>
+            @if (Model.Guilds.Any())
+            {
+                foreach (var guild in Model.Guilds)
+                {
+                    <p>
+                        @Html.ActionLink(string.Format("{0} @ {1}", guild.Name, guild.Shard.Name), "Guild", "Session", new { id = guild.Id }, new { @class = "text-info" }) |
+                        @Html.ActionLink("Guild Info", "Index", "Guild", new {id = guild.Id}, new {@class = "text-warning"})
+
+                    </p>
+                }
+            }
+            else
+            {
+                <span class="text-danger">No matching guilds found!</span>
+            }
+        </div>
+    </div>
+
+    <div class="encounters">
+        <div class="col-lg-3">
+            <h3>Encounters</h3>
+            @if (Model.Encounters.Any())
+            {
+                foreach (var encGroup in Model.Encounters.GroupBy(e => new { e.Instance.Name, e.Instance.Id, e.Instance.MaxRaidSize }))
+                {
+                    if (encGroup.Key.MaxRaidSize > -1)
+                    {
+                        <h4>
+                            @Html.ActionLink(string.Format("{0} ({1}-man)", encGroup.Key.Name, encGroup.Key.MaxRaidSize),
+                                "Instance", "Session", new {@id = encGroup.Key.Id}, new {@class = "text-warning"})
+                        </h4>
+                    }
+                    else
+                    {
+                        <h4>
+                            @Html.ActionLink(encGroup.Key.Name, "Instance", "Session", new { @id = encGroup.Key.Id }, new { @class = "text-warning" })
+                        </h4>
+                    }
+                    foreach (var enc in encGroup)
+                    {
+                        @*<p>@enc.Name</p>*@
+                        <p>@Html.ActionLink(enc.Name, "BossFight", "Session", new { @id = enc.Id }, new { @class = "text-info" })</p>
+                    }
+                }
+                @*foreach (var encounter in Model.Encounters)
+                    {
+                        <p>
+                            @Html.ActionLink(string.Format("{0} ({1})", encounter.Name, encounter.Instance.Name), "Index", "BossFight", new { id = encounter.Id }, new { @class = "text-info" })
+                        </p>
+                    }*@
+            }
+            else
+            {
+                <span class="text-danger">No matching encounters found!</span>
+            }
+        </div>
+    </div>
+</div>

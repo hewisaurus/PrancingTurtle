@@ -1,0 +1,1330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SoulTree calling="Mage" name="Chloromancer">
+  <Traits>
+    <Trait>
+      <Key>0</Key>
+      <Name>Natural Awareness</Name>
+      <Icon>inspiration1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>872036020</AbilityId>
+          <Description></Description>
+          <AddonId>A33FA36B4783D95F1</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Casting a Life or Death based ability enhances your Intelligence by 5% for 6 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Casting a Life or Death based ability enhances your Intelligence by 10% for 6 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Casting a Life or Death based ability enhances your Intelligence by 15% for 6 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Casting a Life or Death based ability enhances your Intelligence by 20% for 6 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Casting a Life or Death based ability enhances your Intelligence by 25% for 6 seconds.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>1</Key>
+      <Name>Accelerated Growth</Name>
+      <Icon>plant47</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>445178433</AbilityId>
+          <Description></Description>
+          <AddonId>A1A88E2416175F83A</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your damage by 1%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your damage by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your damage by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your damage by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your damage by 5%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>2</Key>
+      <Name>Empowered Veil</Name>
+      <Icon>shroudofpenitent2</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage and healing bonus from your Entropic Veil to 12% and increases the radius of your Lifegiving Veil and Lifebound Veil by 5 meters.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage and healing bonus from your Entropic Veil to 14% and increases the radius of your Lifegiving Veil and Lifebound Veil by 10 meters.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the damage and healing bonus from your Entropic Veil to 16% and increases the radius of your Lifegiving Veil and Lifebound Veil by 15 meters.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>3</Key>
+      <Name>Nature&apos;s Corrosion</Name>
+      <Icon>poison_gas_01_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Vile Spores and Ruin abilities also deal 33% of their damage over the next 6 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your Vile Spores and Ruin abilities also deal 66% of their damage over the next 6 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Your Vile Spores and Ruin abilities also deal 100% of their damage over the next 6 seconds.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>4</Key>
+      <Name>Healing Slipstream</Name>
+      <Icon>binding_of_authority_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>128987029</AbilityId>
+          <Description></Description>
+          <AddonId>A07B02F95506CFD1E</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces the cast time of your Bloom and Flourish abilities by 1 second.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reduces the cast time of your Bloom and Flourish abilities by 2 seconds.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>5</Key>
+      <Name>Circle of Life</Name>
+      <Icon>ward1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>315636326</AbilityId>
+          <Description></Description>
+          <AddonId>A12D03A66055E3664</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Using a damaging ability increases the critical hit chance of your next Bloom, Flourish or Natural Healing, within 15 seconds, by 5%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Using a damaging ability increases the critical hit chance of your next Bloom, Flourish or Natural Healing, within 15 seconds, by 10%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Using a damaging ability increases the critical hit chance of your next Bloom, Flourish or Natural Healing, within 15 seconds, by 15%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Using a damaging ability increases the critical hit chance of your next Bloom, Flourish or Natural Healing, within 15 seconds, by 20%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Using a damaging ability increases the critical hit chance of your next Bloom, Flourish or Natural Healing, within 15 seconds, by 25%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>6</Key>
+      <Name>Phytogenesis</Name>
+      <Icon>mend2a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the chance your Radiant Spores will heal allies attacking the affected enemy by 2%. Gives your Radiant Spores a 33% chance to affect up to 8 enemies within 10 meters of the targeted enemy.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the chance your Radiant Spores will heal allies attacking the affected enemy by 4%. Gives your Radiant Spores a 66% chance to affect up to 8 enemies within 10 meters of the targeted enemy.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the chance your Radiant Spores will heal allies attacking the affected enemy by 6%. Gives your Radiant Spores a 100% chance to affect up to 8 enemies within 10 meters of the targeted enemy.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>7</Key>
+      <Name>Raised in Nature</Name>
+      <Icon>survival3</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1774349245</AbilityId>
+          <Description></Description>
+          <AddonId>A69C26BBD54F76B02</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Endurance by 5% of your equipment modified Intelligence</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Endurance by 10% of your equipment modified Intelligence</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your Endurance by 15% of your equipment modified Intelligence</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>8</Key>
+      <Name>Call of Spring</Name>
+      <Icon>plant13b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>375997101</AbilityId>
+          <Description></Description>
+          <AddonId>A166942AD3C30A032</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your healing by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your healing by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your healing by 9%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your healing by 12%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your healing by 15%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>9</Key>
+      <Name>Bloom</Name>
+      <Icon>plant14a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1351023610</AbilityId>
+          <Description>Restores 714 to 789 health.</Description>
+          <AddonId>A5086FBFA6289C14B</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>10.000000</Cooldown>
+          <MaxRange>35.000000</MaxRange>
+          <CostManaPercent>10.000000</CostManaPercent>
+          <GainHeat>15</GainHeat>
+          <CastTime>2.000000</CastTime>
+          <PowerStatCoefficient effect="0" action="0">1.580000</PowerStatCoefficient>
+          <AggroMultiplier effect="0" action="0">0.250000</AggroMultiplier>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Unlocks the Bloom ability.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>10</Key>
+      <Name>Synthesis</Name>
+      <Icon>magicresist3</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1948151642</AbilityId>
+          <Description>Increases the healing the ally receives from the Mage&apos;s Lifebound Veil. Applies Lifebound Veil to the Mage. Can only affect 1 ally, never the Mage. Lasts 1h.</Description>
+          <AddonId>A741E6F5A9B514DA7</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>5.000000</Cooldown>
+          <MaxRange>35.000000</MaxRange>
+          <CostManaPercent>2.250000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+          <Duration>3600.000000</Duration>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Unlocks the Synthesis ability.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>11</Key>
+      <Name>Nature&apos;s Touch</Name>
+      <Icon>layonhands2</Icon>
+      <PrereqTraitKey>10</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1028684575</AbilityId>
+          <Description>Deals 1747 to 1930 Life damage. Triggers a significantly larger heal from Lifebound Veil on the target of the Mage&apos;s Synthesis.</Description>
+          <AddonId>A3D507B1FA2F13ADD</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>6.000000</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>12.500000</CostManaPercent>
+          <GainHeat>22</GainHeat>
+          <CastTime>2.500000</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Unlocks the Nature&apos;s Touch ability.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>12</Key>
+      <Name>Resurgence</Name>
+      <Icon>coda_of_fury_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-40468548</AbilityId>
+          <Description>Restores 74 health over 6s.</Description>
+          <AddonId>AFD967FBCA14A8C56</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>10.000000</Cooldown>
+          <MaxRange>35.000000</MaxRange>
+          <CostManaPercent>7.500000</CostManaPercent>
+          <GainHeat>9</GainHeat>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>13</Key>
+      <Name>Boon of Life</Name>
+      <Icon>lifes_devotion_01</Icon>
+      <PrereqTraitKey>11</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-34746010</AbilityId>
+          <Description></Description>
+          <AddonId>AFDEDD166016DA6D7</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Damage from Vile Spores, Ruin and Void Life place a stacking buff on you, reducing the global cooldown of your next Nature&apos;s Touch, within 10 seconds, to 1 second and reduces its cast time by 0.3 seconds and its mana cost by 6% per stack. Does not include damage from Nature&apos;s Corrosion.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Damage from Vile Spores, Ruin and Void Life place a stacking buff on you, reducing the global cooldown of your next Nature&apos;s Touch, within 10 seconds, to 1 second and reduces its cast time by 0.4 seconds and its mana cost by 8% per stack. Does not include damage from Nature&apos;s Corrosion.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Damage from Vile Spores, Ruin and Void Life place a stacking buff on you, reducing the global cooldown of your next Nature&apos;s Touch, within 10 seconds, to 1 second and reduces its cast time by 0.5 seconds and its mana cost by 10% per stack. Does not include damage from Nature&apos;s Corrosion.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>14</Key>
+      <Name>Natural Fusion</Name>
+      <Icon>beastmaster_shared_bonds_c</Icon>
+      <PrereqTraitKey>10</PrereqTraitKey>
+      <BendType>VerticalToHorizontal</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Synthesis increases heals from your Lifebound Veil by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your Synthesis increases heals from your Lifebound Veil by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Your Synthesis increases heals from your Lifebound Veil by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>15</Key>
+      <Name>Natural Power</Name>
+      <Icon>mend4</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-91166824</AbilityId>
+          <Description></Description>
+          <AddonId>AFA90E798560DCDC0</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Lifegiving and Lifebound Veil increase your Life damage by 3%, reduce the mana cost of your Life abilities by 5% and reduce the pushback suffered while casting Life spells by 33%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Lifegiving and Lifebound Veil increase your Life damage by 6%, reduce the mana cost of your Life abilities by 10% and reduce the pushback suffered while casting Life spells by 66%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Lifegiving and Lifebound Veil increase your Life damage by 10%, reduce the mana cost of your Life abilities by 15% and reduce the pushback suffered while casting Life spells by 100%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>16</Key>
+      <Name>Wild Growth</Name>
+      <Icon>spiritoftree1a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>304675133</AbilityId>
+          <Description>Restores 321 health over 12s on up to 10 nearby party or raid members. Snares and increases damage taken by 10% on all nearby enemies. Consumes Charge while active. Charge can be gained while active.</Description>
+          <AddonId>A1228F93DC7326968</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>60.000004</Cooldown>
+          <MinimumHeat>10</MinimumHeat>
+          <CastTime>1.500000</CastTime>
+          <Duration>12.000000</Duration>
+          <Interval>2.000000</Interval>
+          <Radius>25.000000</Radius>
+          <MaxAffected>10</MaxAffected>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Unlocks the Wild Growth ability.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>17</Key>
+      <Name>Nature&apos;s Swiftness</Name>
+      <Icon>untangle</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>580535865</AbilityId>
+          <Description></Description>
+          <AddonId>A229A46393E11C033</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces the cast time of Nature&apos;s Fury and Natural Healing by 13%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reduces the cast time of Nature&apos;s Fury and Natural Healing by 26%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Reduces the cast time of Nature&apos;s Fury and Natural Healing by 40%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>18</Key>
+      <Name>Essence Surge</Name>
+      <Icon>invigorate1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>2140472368</AbilityId>
+          <Description>Restores health equal to 100% of the Mage&apos;s Maximum Health.</Description>
+          <AddonId>A7F9504307A2F177A</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>60.000004</Cooldown>
+          <MaxRange>35.000000</MaxRange>
+          <CostManaPercent>7.500000</CostManaPercent>
+          <GainHeat>9</GainHeat>
+          <CastTime>Instant</CastTime>
+          <PowerStatCoefficient effect="0" action="0">0.000000E+000</PowerStatCoefficient>
+          <AggroMultiplier effect="0" action="0">0.500000</AggroMultiplier>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Unlocks the Essence Surge ability.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>19</Key>
+      <Name>Convalesce</Name>
+      <Icon>paladin-preservation_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Nature&apos;s Cleansing and Cleansing Rush have a 33% chance to heal allies they cleanse for 6% of the caster&apos;s Maximum Health.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Nature&apos;s Cleansing and Cleansing Rush have a 66% chance to heal allies they cleanse for 6% of their Maximum Health.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Nature&apos;s Cleansing and Cleansing Rush have a 100% chance to heal allies they cleanse for 6% of the caster&apos;s Maximum Health.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>20</Key>
+      <Name>Healing Balance</Name>
+      <Icon>generic_ability_009_b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-16995197</AbilityId>
+          <Description></Description>
+          <AddonId>AFEFCAC836ACEAF6D</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces the global cooldown of non-damaging abilities to 1.25 seconds and reduces their mana cost by 16%. Casting a non-damaging healing spell places a stack of Healing Balance on you for 30 seconds. While affected by Healing Balance, the damage of your next Life based damaging ability is increased by 10%. Casting a Life based damaging ability removes 1 stack of Healing Balance. Max 5 stacks. </Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reduces the global cooldown of non-damaging abilities to 1 second and reduces their mana cost by 33%. Casting a non-damaging healing spell places a stack of Healing Balance on you for 30 seconds. While affected by Healing Balance, the damage of your next Life based damaging ability is increased by 20%. Casting a Life based damaging ability removes 1 stack of Healing Balance. Max 5 stacks. </Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>21</Key>
+      <Name>Lingering Spores</Name>
+      <Icon>growing_energy_02</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-54606858</AbilityId>
+          <Description></Description>
+          <AddonId>AFCBEC3F6146AED33</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the duration of your Radiant Spores by 5 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the duration of your Radiant Spores by 10 seconds.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>22</Key>
+      <Name>Cleansing Rush</Name>
+      <Icon>ward1zz</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-28057063</AbilityId>
+          <Description>Removes 1 Curse, Disease, or Poison from up to 10 group and raid members within 25 meters.</Description>
+          <AddonId>AFE53E2190E6923B7</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>10.000000</Cooldown>
+          <CostManaPercent>5.400000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+          <Radius>25.000000</Radius>
+          <MaxAffected>10</MaxAffected>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>23</Key>
+      <Name>Healing Torrent</Name>
+      <Icon>bolt_of_radiance_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>40</MinimumPointsSpent>
+      <DisplayRow>8</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-71719116</AbilityId>
+          <Description>Restores 596 to 658 health and an additional 716 health over 6s.</Description>
+          <AddonId>AFBB9A7348CCA7456</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>15.000001</Cooldown>
+          <MaxRange>35.000000</MaxRange>
+          <CostManaPercent>12.500000</CostManaPercent>
+          <GainHeat>22</GainHeat>
+          <CastTime>2.000000</CastTime>
+          <PowerStatCoefficient effect="0" action="0">1.310000</PowerStatCoefficient>
+          <AggroMultiplier effect="0" action="0">0.250000</AggroMultiplier>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+  </Traits>
+  <Abilities>
+    <Ability>
+      <MinimumPointsInSoul>61</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Living Aegis</Name>
+      <Icon>doctrine_of_faithful_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>60</RequiredLevel>
+        <AbilityId>-97815543</AbilityId>
+        <Description>Increases the Mage&apos;s Maximum Health by 10%, their Life damage by 15%, healing by 10% and heals the Mage for 11 to 12 health when damaged. Counts as a Mage Armor.</Description>
+        <AddonId>AFA2B74093943533B</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>3.750000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>3600.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>24</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Essence Conversion</Name>
+      <Icon>life_and_death_concord_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>24</RequiredLevel>
+        <AbilityId>-77387164</AbilityId>
+        <Description>Restores 7% mana. Consumes 7% health.</Description>
+        <AddonId>AFB632A6498C7625B</AddonId>
+        <IsPassive>False</IsPassive>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="1">1.000000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Healing Torrent</Name>
+      <Icon>bolt_of_radiance_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-71719116</AbilityId>
+        <Description>Restores 596 to 658 health and an additional 716 health over 6s.</Description>
+        <AddonId>AFBB9A7348CCA7456</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>15.000001</Cooldown>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>12.500000</CostManaPercent>
+        <GainHeat>22</GainHeat>
+        <CastTime>2.000000</CastTime>
+        <PowerStatCoefficient effect="0" action="0">1.310000</PowerStatCoefficient>
+        <AggroMultiplier effect="0" action="0">0.250000</AggroMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Resurgence</Name>
+      <Icon>coda_of_fury_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-40468548</AbilityId>
+        <Description>Restores 74 health over 6s.</Description>
+        <AddonId>AFD967FBCA14A8C56</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>10.000000</Cooldown>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Cleansing Rush</Name>
+      <Icon>ward1zz</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-28057063</AbilityId>
+        <Description>Removes 1 Curse, Disease, or Poison from up to 10 group and raid members within 25 meters.</Description>
+        <AddonId>AFE53E2190E6923B7</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>10.000000</Cooldown>
+        <CostManaPercent>5.400000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Radius>25.000000</Radius>
+        <MaxAffected>10</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Vile Spores</Name>
+      <Icon>sanction_heretic</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>78357498</AbilityId>
+        <Description>Deals 777 to 858 Life damage. Counts as a Primary Bolt.</Description>
+        <AddonId>A04ABA3FA13E65771</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>10.000000</CostManaPercent>
+        <GainHeat>15</GainHeat>
+        <CastTime>2.000000</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>18</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Nature&apos;s Cleansing</Name>
+      <Icon>mend1c</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>18</RequiredLevel>
+        <AbilityId>107077785</AbilityId>
+        <Description>Removes 1 Curse, Disease, or Poison.</Description>
+        <AddonId>A0661E099AFB3164E</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>36</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Natural Healing</Name>
+      <Icon>invigorate2</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>36</RequiredLevel>
+        <AbilityId>139141508</AbilityId>
+        <Description>Restores 566 to 626 health.</Description>
+        <AddonId>A084B2184351078FB</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>12.500000</CostManaPercent>
+        <GainHeat>22</GainHeat>
+        <CastTime>2.500000</CastTime>
+        <PowerStatCoefficient effect="0" action="0">1.000000</PowerStatCoefficient>
+        <AggroMultiplier effect="0" action="0">0.250000</AggroMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>11</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Lifebound Veil</Name>
+      <Icon>generic_ability_011</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>11</RequiredLevel>
+        <AbilityId>140899038</AbilityId>
+        <Description>Best used with Synthesis for Single Target healing.
+
+Ability damage dealt by the Mage heals up to 5 party or raid members. Instant Life abilities restore 24 to 27 health. Cast time Life abilities heal more based on cast time, up to 61 to 67 health. Non-Life abilities restore 4 to 4 health. Prevents healing from other Veils. Lasts 1h.</Description>
+        <AddonId>A0865F2DE73516486</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>5.000000</Cooldown>
+        <CostManaPercent>0.900000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>2</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Withering Vine</Name>
+      <Icon>plant3b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>2</RequiredLevel>
+        <AbilityId>261702468</AbilityId>
+        <Description>Deals 1686 Life damage over 16s. Restores 279 health over 16s on up to 10 party or raid members near the enemy. Can only affect 3 enemies.</Description>
+        <AddonId>A0F9943445128951F</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+        <Duration>16.000000</Duration>
+        <Interval>2.000000</Interval>
+        <PowerStatCoefficient effect="0" action="0">2.200000</PowerStatCoefficient>
+        <DamageMultiplier effect="0" action="0">0.111000</DamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Wild Growth</Name>
+      <Icon>spiritoftree1a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>304675133</AbilityId>
+        <Description>Restores 321 health over 12s on up to 10 nearby party or raid members. Snares and increases damage taken by 10% on all nearby enemies. Consumes Charge while active. Charge can be gained while active.</Description>
+        <AddonId>A1228F93DC7326968</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <MinimumHeat>10</MinimumHeat>
+        <CastTime>1.500000</CastTime>
+        <Duration>12.000000</Duration>
+        <Interval>2.000000</Interval>
+        <Radius>25.000000</Radius>
+        <MaxAffected>10</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>51</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Void Life</Name>
+      <Icon>chloromancer_void_life_01_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>50</RequiredLevel>
+        <AbilityId>327693484</AbilityId>
+        <Description>Deals 711 Life damage to the enemy each second for 3s. Triggers a significantly larger heal from Lifebound Veil on the target of the Mage&apos;s Synthesis.</Description>
+        <AddonId>A138834ACB672F4C7</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>15.000000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+        <Channel>true</Channel>
+        <Duration>3.000000</Duration>
+        <Interval>1.000000</Interval>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>40</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Living Energy</Name>
+      <Icon>opportunity_01_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>40</RequiredLevel>
+        <AbilityId>394549633</AbilityId>
+        <Description>Reduces ability cost by 5% on all party or raid members.</Description>
+        <AddonId>A17845981A0B9E755</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>20</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Flourish</Name>
+      <Icon>mend2b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>20</RequiredLevel>
+        <AbilityId>456744392</AbilityId>
+        <Description>Restores 303 health on up to 10 party or raid members.</Description>
+        <AddonId>A1B395DC8248C2C0D</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>20.000000</Cooldown>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>2.000000</CastTime>
+        <Radius>20.000000</Radius>
+        <MaxAffected>10</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>8</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Lifegiving Veil</Name>
+      <Icon>vitalizingshield1b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>8</RequiredLevel>
+        <AbilityId>598632415</AbilityId>
+        <Description>Ability damage dealt by the Mage heals up to 10 party or raid members. Instant Life abilities restore 72 to 79 health. Cast time Life abilities heal more based on cast time, up to 235 to 260 health. Non-Life abilities restore 16 to 17 health. Prevents healing from other Veils. Lasts 1h.</Description>
+        <AddonId>A23AE67DFB4CF307A</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>5.000000</Cooldown>
+        <CostManaPercent>0.900000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Chloromancer Soul Gift</Name>
+      <Icon>invigoration3</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>947607882</AbilityId>
+        <Description>Increases your healing by 1.25% for each point spent in the Chloromancer soul.</Description>
+        <AddonId>A387B594A32FC0427</AddonId>
+        <IsPassive>True</IsPassive>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Nature&apos;s Touch</Name>
+      <Icon>layonhands2</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1028684575</AbilityId>
+        <Description>Deals 1747 to 1930 Life damage. Triggers a significantly larger heal from Lifebound Veil on the target of the Mage&apos;s Synthesis.</Description>
+        <AddonId>A3D507B1FA2F13ADD</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>6.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>12.500000</CostManaPercent>
+        <GainHeat>22</GainHeat>
+        <CastTime>2.500000</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>44</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Natural Splendor</Name>
+      <Icon>healthchannel2</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>44</RequiredLevel>
+        <AbilityId>1086596248</AbilityId>
+        <Description>Deals 4082 Life damage over 8s to up to 8 enemies. Restores 1035 health over 8s on up to 8 party or raid members near the enemy. Consumes Charge while active.</Description>
+        <AddonId>A40C424984174CB64</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>120.000008</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <MinimumHeat>10</MinimumHeat>
+        <CastTime>Instant</CastTime>
+        <Channel>true</Channel>
+        <Duration>8.000000</Duration>
+        <Interval>1.000000</Interval>
+        <Radius>7.000000</Radius>
+        <MaxAffected>8</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>20</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Blight</Name>
+      <Icon>reaver_explosive_infestation_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>20</RequiredLevel>
+        <AbilityId>1202817253</AbilityId>
+        <Description>Removes all heal over time effects. Reduces healing received by 10% for 8s.</Description>
+        <AddonId>A47B188E580E44E01</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>32</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Soul Tether</Name>
+      <Icon>vitalizingshield2</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>32</RequiredLevel>
+        <AbilityId>1256404592</AbilityId>
+        <Description>Brings the fallen ally back to life, restoring 50% health and mana. Usable in combat.</Description>
+        <AddonId>A4AE33670A72C0F45</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>300.000000</Cooldown>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Radiant Spores</Name>
+      <Icon>devout_conviction_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1283682214</AbilityId>
+        <Description>When hit, has a 10% chance to heal the attacker for 100% of the damage done. Healing done cannot exceed an amount equal to 5% of the Mage&apos;s Maximum Health. Lasts 16s.</Description>
+        <AddonId>A4C836FA6712DE212</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>8.000000</Cooldown>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <GainHeat>10</GainHeat>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>58</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Symbiosis</Name>
+      <Icon>beastmaster_shared_bonds_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>57</RequiredLevel>
+        <AbilityId>1324584128</AbilityId>
+        <Description>Increases the healing the Ally receives from the Mage&apos;s Lifegiving Veil by 50%. If cast on the Mage&apos;s Synthesis target, increases Lifebound Veil healing by 50%, otherwise increases Lifebound Veil healing on the Ally to match healing done to the Mage&apos;s Synthesis target. Lasts 10 seconds. Cannot affect the Mage.</Description>
+        <AddonId>A4EF38CC08FA3FB34</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>45.000004</Cooldown>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>10.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Bloom</Name>
+      <Icon>plant14a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1351023610</AbilityId>
+        <Description>Restores 714 to 789 health.</Description>
+        <AddonId>A5086FBFA6289C14B</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>10.000000</Cooldown>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>10.000000</CostManaPercent>
+        <GainHeat>15</GainHeat>
+        <CastTime>2.000000</CastTime>
+        <PowerStatCoefficient effect="0" action="0">1.580000</PowerStatCoefficient>
+        <AggroMultiplier effect="0" action="0">0.250000</AggroMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>28</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Nature&apos;s Fury</Name>
+      <Icon>healthchannel1g</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>28</RequiredLevel>
+        <AbilityId>1372715588</AbilityId>
+        <Description>Deals 1310 to 1448 Life damage to up to 4 enemies.</Description>
+        <AddonId>A51D1FA44ACFC2A25</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>8.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>15.000000</CostManaPercent>
+        <GainHeat>22</GainHeat>
+        <CastTime>2.500000</CastTime>
+        <Radius>15.000000</Radius>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>16</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Ruin</Name>
+      <Icon>druid-hidden_path</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>16</RequiredLevel>
+        <AbilityId>1513634360</AbilityId>
+        <Description>Deals 1456 to 1609 Life damage. Triggers a significantly larger heal from Lifebound Veil on the target of the Mage&apos;s Synthesis.</Description>
+        <AddonId>A5A383A38558350FB</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>15.000001</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>14</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Natural Conversion</Name>
+      <Icon>chloromancer-natural_conversion</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>14</RequiredLevel>
+        <AbilityId>1603572441</AbilityId>
+        <Description>Causes the next damaging spell cast by the enemy to heal their target for 200% of the damage done. Lasts 30s.</Description>
+        <AddonId>A5F9492D9B037C801</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>90.000008</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>3.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>54</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Corrosive Spores</Name>
+      <Icon>poison_gas_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>53</RequiredLevel>
+        <AbilityId>1604872421</AbilityId>
+        <Description>Deals 1091 to 1206 Life damage. This damage triggers a significantly larger heal from Lifebound Veil on the target of the Mage&apos;s Synthesis. Deals an additional 346 Life damage over 8s to up to 5 enemies within 7 meters of the initial target. Lasts 8s.</Description>
+        <AddonId>A5FA868E5596D38F8</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>8.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">1.500000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>4</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Entropic Veil</Name>
+      <Icon>chloromancer_entropic_veil_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>4</RequiredLevel>
+        <AbilityId>1758241501</AbilityId>
+        <Description>Increases damage and healing done by 10%. Consumes Charge while active. Charge cannot be gained while active. Does not trigger a global cooldown.</Description>
+        <AddonId>A68CCA2DD91885306</AddonId>
+        <IsPassive>False</IsPassive>
+        <MinimumHeat>1</MinimumHeat>
+        <CastTime>Instant</CastTime>
+        <Duration>25.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>48</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Living Shell</Name>
+      <Icon>spiritofturtle2</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>48</RequiredLevel>
+        <AbilityId>1846498973</AbilityId>
+        <Description>Restores 1% of the Mage&apos;s Mana per second. Absorbs up to 1036 damage. Lasts 30s.</Description>
+        <AddonId>A6E0F569D61653B54</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>120.000008</Cooldown>
+        <CostManaPercent>3.750000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">2.000000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Synthesis</Name>
+      <Icon>magicresist3</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1948151642</AbilityId>
+        <Description>Increases the healing the ally receives from the Mage&apos;s Lifebound Veil. Applies Lifebound Veil to the Mage. Can only affect 1 ally, never the Mage. Lasts 1h.</Description>
+        <AddonId>A741E6F5A9B514DA7</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>5.000000</Cooldown>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>2.250000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>3600.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Essence Surge</Name>
+      <Icon>invigorate1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>2140472368</AbilityId>
+        <Description>Restores health equal to 100% of the Mage&apos;s Maximum Health.</Description>
+        <AddonId>A7F9504307A2F177A</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">0.000000E+000</PowerStatCoefficient>
+        <AggroMultiplier effect="0" action="0">0.500000</AggroMultiplier>
+      </AbilityRank>
+    </Ability>
+  </Abilities>
+</SoulTree>
+

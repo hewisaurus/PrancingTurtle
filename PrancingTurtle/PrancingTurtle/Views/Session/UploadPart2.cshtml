@@ -1,0 +1,138 @@
+﻿@using PrancingTurtle.Helpers
+@model PrancingTurtle.Models.ViewModels.Session.UploadSessionVM
+
+@{
+    ViewBag.Title = "Upload a session";
+}
+
+<style type="text/css">
+    .dz-max-files-reached {
+        background-color: red;
+    }
+
+    .dropzone {
+        background-image: url("/Content/turtle/turtleupload.jpg");
+        background-repeat: no-repeat;
+    }
+</style>
+
+
+@section scripts{
+    <script type="text/javascript">
+
+        //File Upload response from the server
+        Dropzone.options.dropzoneForm = {
+            maxFilesize: 300,
+            maxFiles: 5,
+            dictDefaultMessage: 'Drag and drop your zipped log here to upload!',
+            init: function () {
+                this.on("maxfilesexceeded", function (data) {
+                    var res = eval('(' + data.xhr.responseText + ')');
+
+                });
+                this.on("complete", function (file) {
+                    if (this.getUploadingFiles().length === 0 && this.getQueuedFiles().length === 0) {
+                        window.alert('Upload complete!');
+                    }
+                });
+                //this.on("addedfile", function (file) {
+
+                // Create the remove button
+                //var removeButton = Dropzone.createElement("<button>Remove file</button>");
+
+
+                // Capture the Dropzone instance as closure.
+                //var _this = this;
+
+                // Listen to the click event
+                //removeButton.addEventListener("click", function (e) {
+                // Make sure the button click doesn't submit the form:
+                //e.preventDefault();
+                //e.stopPropagation();
+                // Remove the file preview.
+                //_this.removeFile(file);
+                // If you want to the delete the file on the server as well,
+                // you can do the AJAX request here.
+                //});
+
+                // Add the button to the file preview element.
+                //file.previewElement.appendChild(removeButton);
+                //});
+            }
+        };
+    </script>
+
+}
+
+<br />
+
+<div class="container container-fluid">
+    @*<div class="row">
+            <div class="col-lg-6 col-centered">
+                <div class="alert alert-dismissible alert-warning">
+                    <button type="button" class="close" data-dismiss="alert">×</button>
+                    <h4>Upload Issues?</h4>
+                    <p>
+                        If you're having issues uploading, <b>@Html.ActionLink("check out the alternative uploading method!", "FTP", "Session", null, new { @class = "text-info" })</b>
+                    </p>
+                </div>
+            </div>
+        </div>*@
+    <div class="row">
+        <div class="col-lg-8 col-centered">
+            <h3 class="text-warning">If you like the site, find it useful, or just want to contribute to the turtle version of PT's hamster wheel, please consider donating!</h3>
+            <h4 class="text-warning">All donations will go straight back into the hardware supporting this site, or the caffeine supporting the developers!</h4>
+
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="48YSV6E8EEABY">
+                <input type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal — The safer, easier way to pay online.">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_AU/i/scr/pixel.gif" width="1" height="1">
+            </form>
+
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-lg-8 col-centered">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h4 class="panel-title">Session created!</h4>
+                </div>
+                <div class="panel-body">
+                    <h2>Success! Now that you have created your session, it's time to upload your log!</h2>
+                    @*<div class="alert alert-info">*@
+                    <h4>Please zip up your combat log, rename it to to <b class="text-info">@Model.UploadTokenDisplay</b> and then upload it using the controls below.</h4>
+                    @*</div>*@
+                    <br />
+                    <p>
+                        <b>Why do I have to use this name for my log?</b>
+                    </p>
+                    <p>It's true, our turtles are always hungry, but they're also ridiculously picky. Using this code will allow them to know who to thank after chewi... processing your log.</p>
+                    <p>Once your transfer completes, please allow a few minutes for the logs to be processed and show up under your recent sessions.</p>
+                    @*<div>
+                            <input type="file" name="file_upload" id="file_upload" />
+                        </div>
+                        <div id="uploaded"></div>*@
+                    @*<div class="jumbotron">*@
+                    <hr />
+                    <div class="col-lg-8 col-centered">
+                        @*<p class="text-center">Drag and drop your zipped log into the box below.</p>*@
+                        <form action="~/Session/SaveUploadedFile" method="post" enctype="multipart/form-data" class="dropzone" id="dropzoneForm">
+                            <div class="fallback">
+                                <input name="file" type="file" multiple />
+                                <input type="submit" value="Upload" />
+                            </div>
+                        </form>
+                    </div>
+
+                    @*</div>*@
+                </div>
+                <div class="panel-footer">
+                    <b>@Html.ImageActionLink("Detail", "Session", new { @id = Model.UploadedSessionId }, "text-info", "fa fa-share", "Click here to go to your new session!")</b>
+                    @*<b>@Html.ActionLink("Click here to go to your new session!", "Detail", "Session", new {@id = Model.UploadedSessionId}, new {@class = "text-info"})</b>*@
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

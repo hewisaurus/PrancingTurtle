@@ -1,0 +1,25 @@
+﻿@model Database.Models.Session
+
+@{
+    ViewBag.Title = "Reimport Session";
+}
+
+<h3>Really reimport session '@Model.Name' ?</h3>
+<h4>This operation can't be undone, and will remove all existing records for enconters within this session.</h4>
+<h4>This process can also take several minutes - all existing records must be removed first (which usually takes around 5-10 seconds per encounter) and then the whole session is reimported.</h4>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        @Html.ValidationSummary(true)
+
+        <div class="form-group">
+            <div class="col-md-10">
+                <input type="submit" value="Yep, reimport this session" class="btn btn-danger" />
+                @Html.ActionLink("No! I didn't mean to click that!", "Detail", new { @id = Model.Id }, new { @class = "btn btn-success" })
+            </div>
+        </div>
+    </div>
+}

@@ -1,0 +1,1382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SoulTree calling="Rogue" name="Marksman">
+  <Traits>
+    <Trait>
+      <Key>0</Key>
+      <Name>Single Minded Focus</Name>
+      <Icon>single_minded_focus</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1542492128</AbilityId>
+          <Description></Description>
+          <AddonId>A5BF08FE000000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage of all attacks by 1%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage of all attacks by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the damage of all attacks by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases the damage of all attacks by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases the damage of all attacks by 5%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>1</Key>
+      <Name>Keen Eye</Name>
+      <Icon>keen_eye</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1497536187</AbilityId>
+          <Description></Description>
+          <AddonId>A594296BB00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the range of your ranged weapon attacks by 1 meter. Increases the Attack Power and Weapon Damage contribution to your ranged weapon attacks by 1%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the range of your ranged weapon attacks by 2 meters. Increases the Attack Power and Weapon Damage contribution to your ranged weapon attacks by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the range of your ranged weapon attacks by 3 meters. Increases the Attack Power and Weapon Damage contribution to your ranged weapon attacks by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases the range of your ranged weapon attacks by 4 meters. Increases the Attack Power and Weapon Damage contribution to your ranged weapon attacks by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases the range of your ranged weapon attacks by 5 meters. Increases the Attack Power and Weapon Damage contribution to your ranged weapon attacks by 5%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>2</Key>
+      <Name>Increased Fire Power</Name>
+      <Icon>generic_ability_012_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>525210404</AbilityId>
+          <Description></Description>
+          <AddonId>A1F4E132400000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Critical Hits increase your Weapon Damage and Attack Power by 2% for 10 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your Critical Hits increase your Weapon Damage and Attack Power by 4% for 10 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Your Critical Hits increase your Weapon Damage and Attack Power by 6% for 10 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Your Critical Hits increase your Weapon Damage and Attack Power by 8% for 10 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Your Critical Hits increase your Weapon Damage and Attack Power by 10% for 10 seconds.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>3</Key>
+      <Name>Repelling Shot</Name>
+      <Icon>repelling_shot</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1077803094</AbilityId>
+          <Description>Deals weapon damage and knocks the enemy back.</Description>
+          <AddonId>A403DF8568166E3DF</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+          <Cooldown>30.000002</Cooldown>
+          <MaxRange>3.000000</MaxRange>
+          <CostEnergy>10</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+          <Radius>7.000000</Radius>
+          <MaxAffected>1</MaxAffected>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>4</Key>
+      <Name>Full Metal Jacket</Name>
+      <Icon>piercingshot3a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>403075102</AbilityId>
+          <Description></Description>
+          <AddonId>A1806701E00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Critical Hit chance with Swift Shot, Hasted Shot and Rapid Fire Shot by 5%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Critical Hit chance with Swift Shot, Hasted Shot and Rapid Fire Shot by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>5</Key>
+      <Name>Improved Static Shot</Name>
+      <Icon>static_shot</Icon>
+      <PrereqTraitKey>12</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Static Shot no longer breaks on damage.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>6</Key>
+      <Name>Penetrating Shots</Name>
+      <Icon>piercingshot1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>632315168</AbilityId>
+          <Description></Description>
+          <AddonId>A25B05D2000000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your attacks with melee and ranged weapons ignore 2% of your enemy&apos;s Armor and Resist.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your attacks with melee and ranged weapons ignore 4% of your enemy&apos;s Armor and Resist.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Your attacks with melee and ranged weapons ignore 6% of your enemy&apos;s Armor and Resist.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Your attacks with melee and ranged weapons ignore 8% of your enemy&apos;s Armor and Resist.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Your attacks with melee and ranged weapons ignore 10% of your enemy&apos;s Armor and Resist.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>7</Key>
+      <Name>Barbed Shot</Name>
+      <Icon>mortalshot2</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1113480214</AbilityId>
+          <Description>Deals 628 to 694 damage. Deals an additional 272 damage each second the enemy moves. Awards 1 Combo Point.</Description>
+          <AddonId>A425E5C167D1D76B5</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+          <MaxRange>30.000000</MaxRange>
+          <CostEnergy>24</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <GainComboPoints>1</GainComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>8</Key>
+      <Name>Hasty Departure</Name>
+      <Icon>harbinger_phase_step</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1556170838</AbilityId>
+          <Description></Description>
+          <AddonId>A5CC1485600000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Whenever you are attacked by an enemy, your movement speed is increased by 3% for 10 seconds. Can be applied up to 5 times.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>9</Key>
+      <Name>Master Archer</Name>
+      <Icon>marksman_pedestal_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>386129908</AbilityId>
+          <Description></Description>
+          <AddonId>A1703DFF400000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage of Marksman attacks by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage of Marksman attacks by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the damage of Marksman attacks by 12%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>10</Key>
+      <Name>Improved Repelling Shot</Name>
+      <Icon>repelling_shot</Icon>
+      <PrereqTraitKey>3</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Repelling Shot knocks back 4 other enemies around the target.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>11</Key>
+      <Name>Getaway</Name>
+      <Icon>fleeting_instincts_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your On the Double removes all movement impairing effects and makes you immune to these effects for 5 seconds.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>12</Key>
+      <Name>Static Shot</Name>
+      <Icon>static_shot</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1544052356</AbilityId>
+          <Description>Roots the enemy for 5s or until damaged.</Description>
+          <AddonId>A5C085E84888EE174</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+          <Cooldown>20.000000</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <CostEnergy>10</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>13</Key>
+      <Name>Killer Instinct</Name>
+      <Icon>generic_ability_014_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1151554537</AbilityId>
+          <Description></Description>
+          <AddonId>A44A353E900000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the Critical Hit chance of your cast time and channeled attacks by 5%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the Critical Hit chance of your cast time and channeled attacks by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>14</Key>
+      <Name>Ranged Combat Mastery</Name>
+      <Icon>close_combat</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>565744715</AbilityId>
+          <Description></Description>
+          <AddonId>A21B8944B00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases damage of ranged attacks by 2%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>15</Key>
+      <Name>Sniper Training</Name>
+      <Icon>piercingshot2a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1611649449</AbilityId>
+          <Description></Description>
+          <AddonId>A600FD1A900000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage of cast time and channeled attacks by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage of cast time and channeled attacks by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the damage of cast time and channeled attacks by 9%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases the damage of cast time and channeled attacks by 12%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases the damage of cast time and channeled attacks by 15%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>16</Key>
+      <Name>Collateral Damage</Name>
+      <Icon>rainofarrows1z</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1123518378</AbilityId>
+          <Description></Description>
+          <AddonId>A42F787AA00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage of your area of effect ranged weapon attacks by 4% and single target ranged weapon attacks by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage of your area of effect ranged weapon attacks by 8% and single target ranged weapon attacks by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the damage of your area of effect ranged weapon attacks by 12% and single target ranged weapon attacks by 6%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>17</Key>
+      <Name>Rapid Extrication</Name>
+      <Icon>shadow_warp_b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>881325346</AbilityId>
+          <Description></Description>
+          <AddonId>A3487F52200000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces the cooldown of all your Marksman abilities by 15%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reduces the cooldown of all your Marksman abilities by 30%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>18</Key>
+      <Name>Bull&apos;s Eye</Name>
+      <Icon>headshot2</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1787382567</AbilityId>
+          <Description>Forces the next damaging Rogue ability to Critically Hit. Lasts 60s.</Description>
+          <AddonId>A6A894B27DC2CE464</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>60.000004</Cooldown>
+          <CostEnergy>10</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>19</Key>
+      <Name>Strafe</Name>
+      <Icon>strafe_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1763485809</AbilityId>
+          <Description>Deals 5833 to 6448 damage over 4s. Grants immunity to Stun, Root, and Snare to the Rogue. Awards 1 Combo Point each second. Allows movement.</Description>
+          <AddonId>A691CA8719C671B74</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+          <Cooldown>60.000004</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <CostEnergy>40</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <GainComboPoints>1</GainComboPoints>
+          <CastTime>Instant</CastTime>
+          <Channel>true</Channel>
+          <Duration>4.000000</Duration>
+          <Interval>1.000000</Interval>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>20</Key>
+      <Name>Controlled Fire</Name>
+      <Icon>controlled_fire</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1744297470</AbilityId>
+          <Description></Description>
+          <AddonId>A67F7DDFE43178A47</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces the energy cost of ranged weapon attacks by 1%. Increases the damage of ranged weapon attacks by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reduces the energy cost of ranged weapon attacks by 2%. Increases the damage of ranged weapon attacks by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Reduces the energy cost of ranged weapon attacks by 3%. Increases the damage of ranged weapon attacks by 12%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Reduces the energy cost of ranged weapon attacks by 4%. Increases the damage of ranged weapon attacks by 16%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Reduces the energy cost of ranged weapon attacks by 5%. Increases the damage of ranged weapon attacks by 20%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>21</Key>
+      <Name>Shoot to Kill</Name>
+      <Icon>tempest_difficult_target</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-58654680</AbilityId>
+          <Description></Description>
+          <AddonId>AFC81002800000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Marksman Finishers increases the damage of Marksman combo point generating attack by 2% per Combo Point. Lasts 15s.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your Marksman Finishers increases the damage of Marksman combo point generating attack by 4% per Combo Point. Lasts 15s.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Your Marksman Finishers increases the damage of Marksman combo point generating attack by 6% per Combo Point. Lasts 15s.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Your Marksman Finishers increases the damage of Marksman combo point generating attack by 8% per Combo Point. Lasts 15s.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Your Marksman Finishers increases the damage of Marksman combo point generating attack by 10% per Combo Point. Lasts 15s.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>22</Key>
+      <Name>Lock N Load</Name>
+      <Icon>hit_and_run</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-79774704</AbilityId>
+          <Description></Description>
+          <AddonId>AFB3EBC1000000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Marksman Finishers have a 20% chance per Combo Point to reset the cooldown of Empowered Shot and cause the next Empowered Shot to become instant cast.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>23</Key>
+      <Name>Chain Destruction</Name>
+      <Icon>tempest_bounce_shot_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-53985283</AbilityId>
+          <Description>Deals 3836 to 4239 Air damage to 2 enemies. The number of enemies affected increases while channeling.</Description>
+          <AddonId>AFCC83FFD78CE3B65</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+          <MaxRange>30.000000</MaxRange>
+          <CostEnergy>48</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+          <Channel>true</Channel>
+          <Duration>5.000000</Duration>
+          <Interval>1.000000</Interval>
+          <Radius>7.000000</Radius>
+          <MaxAffected>2</MaxAffected>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>24</Key>
+      <Name>Decoy</Name>
+      <Icon>tempest_physical_training_z</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>40</MinimumPointsSpent>
+      <DisplayRow>8</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-12120824</AbilityId>
+          <Description>Summons a Decoy that fights with the Rogue for 15s.</Description>
+          <AddonId>AFF470D0874001CC7</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+          <Cooldown>60.000004</Cooldown>
+          <CostEnergy>10</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+          <Duration>15.000000</Duration>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>25</Key>
+      <Name>Vampiric Munitions</Name>
+      <Icon>mortalshot1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1001210033</AbilityId>
+          <Description>Grants ranged weapon attack abilities a 50% chance to reduce healing received by 10% for 15s and siphon all of the stolen healing to the Rogue. Lasts 1h.</Description>
+          <AddonId>A3BAD40B17365D685</AddonId>
+          <IsPassive>False</IsPassive>
+          <CostEnergy>10</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+  </Traits>
+  <Abilities>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Marksman Mastery</Name>
+      <Icon>generic_ability_012_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-61419509</AbilityId>
+        <Description>Increases damage by 1% for each point spent in the Marksman soul.</Description>
+        <AddonId>AFC56D00B3D977AD7</AddonId>
+        <IsPassive>True</IsPassive>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Chain Destruction</Name>
+      <Icon>tempest_bounce_shot_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-53985283</AbilityId>
+        <Description>Deals 3836 to 4239 Air damage to 2 enemies. The number of enemies affected increases while channeling.</Description>
+        <AddonId>AFCC83FFD78CE3B65</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>48</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Channel>true</Channel>
+        <Duration>5.000000</Duration>
+        <Interval>1.000000</Interval>
+        <Radius>7.000000</Radius>
+        <MaxAffected>2</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>61</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Free Recoil</Name>
+      <Icon>tempest_brace</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>60</RequiredLevel>
+        <AbilityId>-49990455</AbilityId>
+        <Description>Causes the next Marksman Finisher to consume only 2 Combo Points.</Description>
+        <AddonId>AFD0534C9832321D2</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>18.000000</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>58</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Static Shock Munitions</Name>
+      <Icon>lance1_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>57</RequiredLevel>
+        <AbilityId>-40926265</AbilityId>
+        <Description>Causes ranged weapon attack abilities to deal additional Air damage. Increases the Rogue&apos;s Critical Hit damage and healing by 5%. Increases damage done by 15%. Lasts 1h.</Description>
+        <AddonId>AFD8F83C776D40D65</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>54</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Sentry Battery</Name>
+      <Icon>tempest_focus_fire</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>53</RequiredLevel>
+        <AbilityId>-17799423</AbilityId>
+        <Description>Deals 5327 to 5888 damage to up to 5 enemies between the Rogue and the enemy target over 5s. Reduces Energy by 5 for every second of channel.</Description>
+        <AddonId>AFEF06701A80BCE05</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Channel>true</Channel>
+        <Duration>5.000000</Duration>
+        <MaxAffected>5</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Decoy</Name>
+      <Icon>tempest_physical_training_z</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-12120824</AbilityId>
+        <Description>Summons a Decoy that fights with the Rogue for 15s.</Description>
+        <AddonId>AFF470D0874001CC7</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <Cooldown>60.000004</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Duration>15.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>8</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Fan Out</Name>
+      <Icon>rainofarrows1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>8</RequiredLevel>
+        <AbilityId>153369428</AbilityId>
+        <Description>Deals 555 to 613 Air damage to up to 5 enemies.</Description>
+        <AddonId>A09243B5494D34A9E</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>26</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Radius>7.000000</Radius>
+        <MaxAffected>5</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Swift Shot</Name>
+      <Icon>rapidshot4</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>298432740</AbilityId>
+        <Description>Deals 891 to 985 damage. Increases movement speed by 15% for 10s. Awards 1 Combo Point.</Description>
+        <AddonId>A11C9B8E483EA5935</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>24</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>1</GainComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>16</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Electrified Munitions</Name>
+      <Icon>lance1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>16</RequiredLevel>
+        <AbilityId>454628014</AbilityId>
+        <Description>Causes ranged weapon attack abilities to deal additional Air damage. Lasts 1h.</Description>
+        <AddonId>A1B1912AE7F4DC107</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>24</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Deaden</Name>
+      <Icon>fire_and_forget</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>24</RequiredLevel>
+        <AbilityId>513723296</AbilityId>
+        <Description>Interrupts. If Interrupt is successful, Silences for  5s.</Description>
+        <AddonId>A1E9ECBA0C5E7B037</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <Cooldown>15.000001</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>40</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Retreat</Name>
+      <Icon>retreat</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>40</RequiredLevel>
+        <AbilityId>571973222</AbilityId>
+        <Description>Leap backwards. Immune to movement impairing effects while leaping.</Description>
+        <AddonId>A22179E66D577B6BB</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>45.000004</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>44</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Eradicate</Name>
+      <Icon>master_archer_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>44</RequiredLevel>
+        <AbilityId>788308251</AbilityId>
+        <Description>Removes 2 Buffs.</Description>
+        <AddonId>A2EFCA11B39984648</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <Cooldown>10.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Vampiric Munitions</Name>
+      <Icon>mortalshot1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1001210033</AbilityId>
+        <Description>Grants ranged weapon attack abilities a 50% chance to reduce healing received by 10% for 15s and siphon all of the stolen healing to the Rogue. Lasts 1h.</Description>
+        <AddonId>A3BAD40B17365D685</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Repelling Shot</Name>
+      <Icon>repelling_shot</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1077803094</AbilityId>
+        <Description>Deals weapon damage and knocks the enemy back.</Description>
+        <AddonId>A403DF8568166E3DF</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Radius>7.000000</Radius>
+        <MaxAffected>1</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Barbed Shot</Name>
+      <Icon>mortalshot2</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1113480214</AbilityId>
+        <Description>Deals 628 to 694 damage. Deals an additional 272 damage each second the enemy moves. Awards 1 Combo Point.</Description>
+        <AddonId>A425E5C167D1D76B5</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>24</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>1</GainComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>20</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Rapid Fire Shot</Name>
+      <Icon>rapidshot1a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>20</RequiredLevel>
+        <AbilityId>1149883813</AbilityId>
+        <Description>Deals 870 to 961 damage. Fires additional shots per Combo Point.
+
+1 Point: 1 shot
+2 Points: 2 shots
+3 Points: 3 shots
+4 Points: 4 shots
+5 Points: 5 shots</Description>
+        <AddonId>A4489D5A5C4D05A79</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <Cooldown>20.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>16</CostEnergy>
+        <ConsumesComboPoints>True</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>28</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Rending Munitions</Name>
+      <Icon>piercing_shot_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>28</RequiredLevel>
+        <AbilityId>1252354666</AbilityId>
+        <Description>Causes ranged weapon attack abilities to ignore 25% Armor and Resist. Lasts 1h.</Description>
+        <AddonId>A4AA56A6A93178257</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Duration>3600.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>4</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Empowered Shot</Name>
+      <Icon>rapidshot4a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>4</RequiredLevel>
+        <AbilityId>1534805977</AbilityId>
+        <Description>Deals 1896 to 2095 damage. Awards 2 Combo Points.</Description>
+        <AddonId>A5B7B47D97C12F5FC</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <Cooldown>10.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>30</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>2</GainComboPoints>
+        <CastTime>1.500000</CastTime>
+        <Interruptible>false</Interruptible>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Static Shot</Name>
+      <Icon>static_shot</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1544052356</AbilityId>
+        <Description>Roots the enemy for 5s or until damaged.</Description>
+        <AddonId>A5C085E84888EE174</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <Cooldown>20.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>2</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Hasted Shot</Name>
+      <Icon>rapidshot3</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>2</RequiredLevel>
+        <AbilityId>1545376891</AbilityId>
+        <Description>Increases movement speed by 20% for a duration based on Combo Points. Deals additional damage per Combo Point.
+
+1 Point: Lasts 3s, 907 damage
+2 Points: Lasts 6s, 1166 damage
+3 Points: Lasts 9s, 1512 damage
+4 Points: Lasts 12s, 1944 damage
+5 Points: Lasts 15s, 2463 damage</Description>
+        <AddonId>A5C1C947BB5B016ED</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>16</CostEnergy>
+        <ConsumesComboPoints>True</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>32</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Lightning Fury</Name>
+      <Icon>lighting_fury</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>32</RequiredLevel>
+        <AbilityId>1709884889</AbilityId>
+        <Description>Deals 1383 to 1529 Air damage to up to 5 enemies. Reduces Armor by 210 for 15s on each enemy hit.</Description>
+        <AddonId>A65EAC5D9BE15D37B</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <Cooldown>10.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>26</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Radius>5.000000</Radius>
+        <MaxAffected>5</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>48</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Crossfire</Name>
+      <Icon>rainofarrows4a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>48</RequiredLevel>
+        <AbilityId>1749386950</AbilityId>
+        <Description>Deals 3200 to 3537 Air damage over 4s to up to 5 enemies. Damaged enemies are additionally knocked back if nearby. Allows movement.</Description>
+        <AddonId>A684586C679DFB1EE</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <Cooldown>30.000002</Cooldown>
+        <CostEnergy>40</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Channel>true</Channel>
+        <Duration>4.000000</Duration>
+        <Interval>1.000000</Interval>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Strafe</Name>
+      <Icon>strafe_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1763485809</AbilityId>
+        <Description>Deals 5833 to 6448 damage over 4s. Grants immunity to Stun, Root, and Snare to the Rogue. Awards 1 Combo Point each second. Allows movement.</Description>
+        <AddonId>A691CA8719C671B74</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <Cooldown>60.000004</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>40</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>1</GainComboPoints>
+        <CastTime>Instant</CastTime>
+        <Channel>true</Channel>
+        <Duration>4.000000</Duration>
+        <Interval>1.000000</Interval>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Bull&apos;s Eye</Name>
+      <Icon>headshot2</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1787382567</AbilityId>
+        <Description>Forces the next damaging Rogue ability to Critically Hit. Lasts 60s.</Description>
+        <AddonId>A6A894B27DC2CE464</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>36</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Quick Reload</Name>
+      <Icon>quick_reload_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>36</RequiredLevel>
+        <AbilityId>1793516182</AbilityId>
+        <Description>Resets the cooldown on all Marksman abilities.</Description>
+        <AddonId>A6AE6E2962AA2FB6E</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>180.000015</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>51</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Silver Tip Munitions</Name>
+      <Icon>mortalshot1b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>50</RequiredLevel>
+        <AbilityId>1900535668</AbilityId>
+        <Description>Causes ranged weapon attack abilities to increase damage taken from the Rogue by 6%. Max 3 stacks. Lasts 1h.</Description>
+        <AddonId>A7147DF74736D7981</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>On the Double</Name>
+      <Icon>fleeting_instincts_01_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1901161944</AbilityId>
+        <Description>Increases movement speed by 50% for 5s.</Description>
+        <AddonId>A71516DD8E913FD58</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Duration>5.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>12</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Deadeye Shot</Name>
+      <Icon>headshot1b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>12</RequiredLevel>
+        <AbilityId>1941214875</AbilityId>
+        <Description>Deals additional damage per Combo Point.
+
+1 Point: 1140 damage
+2 Points: 1520 damage
+3 Points: 2026 damage
+4 Points: 2659 damage
+5 Points: 3418 damage</Description>
+        <AddonId>A73B4969B7F70DCBE</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>20</CostEnergy>
+        <ConsumesComboPoints>True</ConsumesComboPoints>
+        <CastTime>1.500000</CastTime>
+        <Interruptible>false</Interruptible>
+      </AbilityRank>
+    </Ability>
+  </Abilities>
+</SoulTree>
+

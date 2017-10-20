@@ -1,0 +1,322 @@
+﻿@using PrancingTurtle.Models.ViewModels.BossFight
+@model PrancingTurtle.Models.ViewModels.Session.SessionBossFightVM
+
+@*<div class="row">
+    <div id="vtabs">*@
+
+            @*<ul class="nav nav-tabs tabs-left col-xs-2">
+                <li><a href="@Url.Action("FastestKills", "Records")" data-toggle="tab">Fastest Kills</a></li>
+                <li><a href="@Url.Action("AllTimeRecords", "Records")" data-toggle="tab">All-time top DPS/HPS/APS</a></li>
+                <li><a href="@Url.Action("ClassRecords", "Records")" data-toggle="tab">Class top DPS/HPS/APS</a></li>
+                <li><a href="@Url.Action("SingleTargetDps", "Records")" data-toggle="tab">Top single target DPS</a></li>
+                <li><a href="@Url.Action("SupportDps", "Records")" data-toggle="tab">Top support DPS</a></li>
+            </ul>*@
+        @*</div>*@
+
+
+        @*<div class="col-xs-10">
+            <div class="tab-content">
+                <div class="tab-pane active" id="vt1">Fastest Kills Tab.</div>
+            </div>
+        </div>*@
+    @*<div id="vtabs">
+
+            <ul class="nav nav-tabs">
+                <li><a href="#vt1">Fastest Kills</a></li>
+                <li><a href="@Url.Action("AllTimeTop", "Session")">All-time top DPS/HPS/APS</a></li>
+                <li><a href="@Url.Action("AllTimeTop", "Session")">Class top DPS/HPS/APS</a></li>
+                <li><a href="@Url.Action("AllTimeTop", "Session")">Top single target DPS</a></li>
+                <li><a href="@Url.Action("AllTimeTop", "Session")">Top support DPS</a></li>
+            </ul>
+            <div id="vt1">
+
+            </div>
+        </div>*@
+
+
+<div class="row" id="setheights">
+    <div class="col-md-4">
+        <div class="panel panel-warning panel-clear">
+            <div class="panel-heading">
+                <h3 class="panel-title">
+                    <b>Fastest Kills</b>
+                </h3>
+            </div>
+            <div class="panel-body">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#allregion" data-toggle="tab" aria-expanded="true">All Regions</a></li>
+                    <li class=""><a href="#reu" data-toggle="tab" aria-expanded="false">EU</a></li>
+                    <li class=""><a href="#rna" data-toggle="tab" aria-expanded="false">NA</a></li>
+                </ul>
+                <div id="tabKillTimers" class="tab-content">
+                    <div class="tab-pane fade active in" id="allregion">
+                        @Html.Partial("~/Views/BossFight/_FastestKill.cshtml", Model.AllRegionsFastestKills)
+                    </div>
+                    <div class="tab-pane fade" id="reu">
+                        @Html.Partial("~/Views/BossFight/_FastestKill.cshtml", Model.EuFastestKills)
+                    </div>
+                    <div class="tab-pane fade" id="rna">
+                        @Html.Partial("~/Views/BossFight/_FastestKill.cshtml", Model.NaFastestKills)
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="panel panel-warning panel-clear">
+            <div class="panel-heading">
+                <h3 class="panel-title">
+                    <b>All-time top DPS/HPS/APS</b>
+                </h3>
+            </div>
+            <div class="panel-body">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#dps" data-toggle="tab" aria-expanded="true"><img src="~/Content/icons/roles/raid_icon_role_dps.png" height="18" width="18" /> DPS</a></li>
+                    <li class=""><a href="#hps" data-toggle="tab" aria-expanded="false"><img src="~/Content/icons/roles/raid_icon_role_heal.png" height="18" width="18" /> HPS</a></li>
+                    <li class=""><a href="#aps" data-toggle="tab" aria-expanded="false"><img src="~/Content/icons/roles/raid_icon_role_tank.png" height="18" width="18" /> APS</a></li>
+                </ul>
+                <div id="tabTopX" class="tab-content">
+                    <div class="tab-pane fade active in" id="dps">
+                        @Html.Partial("~/Views/BossFight/_TopXPS.cshtml", new RankPlayerGuildType { DestinationAction = "PlayerDamageDone", Players = Model.Top10Dps })
+                    </div>
+                    <div class="tab-pane fade" id="hps">
+                        @Html.Partial("~/Views/BossFight/_TopXPS.cshtml", new RankPlayerGuildType { DestinationAction = "PlayerHealingDone", Players = Model.Top10Hps })
+                    </div>
+                    <div class="tab-pane fade" id="aps">
+                        @Html.Partial("~/Views/BossFight/_TopXPS.cshtml", new RankPlayerGuildType { DestinationAction = "PlayerShieldingDone", Players = Model.Top10Aps })
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="panel panel-warning panel-clear">
+            <div class="panel-heading">
+                <h3 class="panel-title">
+                    <b>Class DPS/HPS/APS records</b>
+                </h3>
+            </div>
+            <div class="panel-body">
+                <ul class="nav nav-tabs">
+                    <li class="dropdown active">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                            <img src="~/Content/icons/roles/raid_icon_role_dps.png" height="18" width="18" /> DPS <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class=""><a href="#wd" data-toggle="tab" aria-expanded="false" style="background: none"><span class="classtype-warrior">Warriors</span></a></li>
+                            <li class=""><a href="#rd" data-toggle="tab" aria-expanded="false" style="background: none"><span class="classtype-rogue">Rogues</span></a></li>
+                            <li class=""><a href="#cd" data-toggle="tab" aria-expanded="false" style="background: none"><span class="classtype-cleric">Clerics</span></a></li>
+                            <li class=""><a href="#md" data-toggle="tab" aria-expanded="false" style="background: none"><span class="classtype-mage">Mages</span></a></li>
+                            <li class=""><a href="#pd" data-toggle="tab" aria-expanded="false" style="background: none"><span class="classtype-primalist">Primalist</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                            <img src="~/Content/icons/roles/raid_icon_role_heal.png" height="18" width="18" /> HPS <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class=""><a href="#wh" data-toggle="tab" aria-expanded="false" style="background: none"><span class="classtype-warrior">Warriors</span></a></li>
+                            <li class=""><a href="#rh" data-toggle="tab" aria-expanded="false" style="background: none"><span class="classtype-rogue">Rogues</span></a></li>
+                            <li class=""><a href="#ch" data-toggle="tab" aria-expanded="false" style="background: none"><span class="classtype-cleric">Clerics</span></a></li>
+                            <li class=""><a href="#mh" data-toggle="tab" aria-expanded="false" style="background: none"><span class="classtype-mage">Mages</span></a></li>
+                            <li class=""><a href="#ph" data-toggle="tab" aria-expanded="false" style="background: none"><span class="classtype-primalist">Primalist</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                            <img src="~/Content/icons/roles/raid_icon_role_tank.png" height="18" width="18" /> APS <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class=""><a href="#wa" data-toggle="tab" aria-expanded="false" style="background: none"><span class="classtype-warrior">Warriors</span></a></li>
+                            <li class=""><a href="#ra" data-toggle="tab" aria-expanded="false" style="background: none"><span class="classtype-rogue">Rogues</span></a></li>
+                            <li class=""><a href="#ca" data-toggle="tab" aria-expanded="false" style="background: none"><span class="classtype-cleric">Clerics</span></a></li>
+                            <li class=""><a href="#ma" data-toggle="tab" aria-expanded="false" style="background: none"><span class="classtype-mage">Mages</span></a></li>
+                            <li class=""><a href="#pa" data-toggle="tab" aria-expanded="false" style="background: none"><span class="classtype-primalist">Primalist</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="tab-pane fade active in collapse" id="wd">
+                    @Html.Partial("~/Views/BossFight/_TopXPS.cshtml", new RankPlayerGuildType { DestinationAction = "PlayerDamageDone", Players = Model.Top10WarriorDps })
+                </div>
+                <div class="tab-pane collapse fade" id="rd">
+                    @Html.Partial("~/Views/BossFight/_TopXPS.cshtml", new RankPlayerGuildType { DestinationAction = "PlayerDamageDone", Players = Model.Top10RogueDps })
+                </div>
+                <div class="tab-pane collapse fade" id="cd">
+                    @Html.Partial("~/Views/BossFight/_TopXPS.cshtml", new RankPlayerGuildType { DestinationAction = "PlayerDamageDone", Players = Model.Top10ClericDps })
+                </div>
+                <div class="tab-pane collapse fade" id="md">
+                    @Html.Partial("~/Views/BossFight/_TopXPS.cshtml", new RankPlayerGuildType { DestinationAction = "PlayerDamageDone", Players = Model.Top10MageDps })
+                </div>
+                <div class="tab-pane collapse fade" id="pd">
+                    @Html.Partial("~/Views/BossFight/_TopXPS.cshtml", new RankPlayerGuildType { DestinationAction = "PlayerDamageDone", Players = Model.Top10PrimalistDps })
+                </div>
+                <div class="tab-pane collapse fade" id="wh">
+                    @Html.Partial("~/Views/BossFight/_TopXPS.cshtml", new RankPlayerGuildType { DestinationAction = "PlayerHealingDone", Players = Model.Top10WarriorHps })
+                </div>
+                <div class="tab-pane collapse fade" id="rh">
+                    @Html.Partial("~/Views/BossFight/_TopXPS.cshtml", new RankPlayerGuildType { DestinationAction = "PlayerHealingDone", Players = Model.Top10RogueHps })
+                </div>
+                <div class="tab-pane collapse fade" id="ch">
+                    @Html.Partial("~/Views/BossFight/_TopXPS.cshtml", new RankPlayerGuildType { DestinationAction = "PlayerHealingDone", Players = Model.Top10ClericHps })
+                </div>
+                <div class="tab-pane collapse fade" id="mh">
+                    @Html.Partial("~/Views/BossFight/_TopXPS.cshtml", new RankPlayerGuildType { DestinationAction = "PlayerHealingDone", Players = Model.Top10MageHps })
+                </div>
+                <div class="tab-pane collapse fade" id="ph">
+                    @Html.Partial("~/Views/BossFight/_TopXPS.cshtml", new RankPlayerGuildType { DestinationAction = "PlayerHealingDone", Players = Model.Top10PrimalistHps })
+                </div>
+                <div class="tab-pane collapse fade" id="wa">
+                    @Html.Partial("~/Views/BossFight/_TopXPS.cshtml", new RankPlayerGuildType { DestinationAction = "PlayerShieldingDone", Players = Model.Top10WarriorAps })
+                </div>
+                <div class="tab-pane collapse fade" id="ra">
+                    @Html.Partial("~/Views/BossFight/_TopXPS.cshtml", new RankPlayerGuildType { DestinationAction = "PlayerShieldingDone", Players = Model.Top10RogueAps })
+                </div>
+                <div class="tab-pane collapse fade" id="ca">
+                    @Html.Partial("~/Views/BossFight/_TopXPS.cshtml", new RankPlayerGuildType { DestinationAction = "PlayerShieldingDone", Players = Model.Top10ClericAps })
+                </div>
+                <div class="tab-pane collapse fade" id="ma">
+                    @Html.Partial("~/Views/BossFight/_TopXPS.cshtml", new RankPlayerGuildType { DestinationAction = "PlayerShieldingDone", Players = Model.Top10MageAps })
+                </div>
+                <div class="tab-pane collapse fade" id="pa">
+                    @Html.Partial("~/Views/BossFight/_TopXPS.cshtml", new RankPlayerGuildType { DestinationAction = "PlayerShieldingDone", Players = Model.Top10PrimalistAps })
+                </div>
+            </div>
+        </div>
+    </div>
+    @if (Model.Top10SingleTargetDps.Any())
+    {
+    <div class="col-md-4">
+        <div class="panel panel-warning panel-clear">
+            <div class="panel-heading">
+                <h3 class="panel-title">
+                    <b>All-time top single target DPS</b>
+                </h3>
+            </div>
+            <div class="panel-body">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#astdps" data-toggle="tab" aria-expanded="true"><img src="~/Content/icons/roles/raid_icon_role_dps.png" height="18" width="18" /> All</a></li>
+                    <li class=""><a href="#wstdps" data-toggle="tab" aria-expanded="false"><span class="classtype-warrior">W</span></a></li>
+                    <li class=""><a href="#rstdps" data-toggle="tab" aria-expanded="false"><span class="classtype-rogue">R</span></a></li>
+                    <li class=""><a href="#cstdps" data-toggle="tab" aria-expanded="false"><span class="classtype-cleric">C</span></a></li>
+                    <li class=""><a href="#mstdps" data-toggle="tab" aria-expanded="false"><span class="classtype-mage">M</span></a></li>
+                    <li class=""><a href="#pstdps" data-toggle="tab" aria-expanded="false"><span class="classtype-primalist">P</span></a></li>
+                    @*<li class=""><a href="#hps" data-toggle="tab" aria-expanded="false"><img src="~/Content/icons/roles/raid_icon_role_heal.png" height="18" width="18" /> HPS</a></li>
+                        <li class=""><a href="#aps" data-toggle="tab" aria-expanded="false"><img src="~/Content/icons/roles/raid_icon_role_tank.png" height="18" width="18" /> APS</a></li>*@
+                </ul>
+                <div id="tabTopAllSTDPS" class="tab-content">
+                    <div class="tab-pane fade active in" id="astdps">
+                        @Html.Partial("~/Views/BossFight/_TopXPS.cshtml", new RankPlayerGuildType { DestinationAction = "PlayerDamageDone", Players = Model.Top10SingleTargetDps })
+                    </div>
+                    <div class="tab-pane fade" id="wstdps">
+                        @Html.Partial("~/Views/BossFight/_TopXPS.cshtml", new RankPlayerGuildType { DestinationAction = "PlayerDamageDone", Players = Model.Top10SingleTargetWarriorDps })
+                    </div>
+                    <div class="tab-pane fade" id="rstdps">
+                        @Html.Partial("~/Views/BossFight/_TopXPS.cshtml", new RankPlayerGuildType { DestinationAction = "PlayerDamageDone", Players = Model.Top10SingleTargetRogueDps })
+                    </div>
+                    <div class="tab-pane fade" id="cstdps">
+                        @Html.Partial("~/Views/BossFight/_TopXPS.cshtml", new RankPlayerGuildType { DestinationAction = "PlayerDamageDone", Players = Model.Top10SingleTargetClericDps })
+                    </div>
+                    <div class="tab-pane fade" id="mstdps">
+                        @Html.Partial("~/Views/BossFight/_TopXPS.cshtml", new RankPlayerGuildType { DestinationAction = "PlayerDamageDone", Players = Model.Top10SingleTargetMageDps })
+                    </div>
+                    <div class="tab-pane fade" id="pstdps">
+                        @Html.Partial("~/Views/BossFight/_TopXPS.cshtml", new RankPlayerGuildType { DestinationAction = "PlayerDamageDone", Players = Model.Top10SingleTargetPrimalistDps })
+                    </div>
+                    @*<div class="tab-pane fade" id="hps">
+                            @Html.Partial("~/Views/BossFight/_TopXPS.cshtml", new RankPlayerGuildType { DestinationAction = "PlayerHealingDone", Players = Model.Top10Hps })
+                        </div>
+                        <div class="tab-pane fade" id="aps">
+                            @Html.Partial("~/Views/BossFight/_TopXPS.cshtml", new RankPlayerGuildType { DestinationAction = "PlayerShieldingDone", Players = Model.Top10Aps })
+                        </div>*@
+                </div>
+            </div>
+        </div>
+    </div>
+    }
+    @if (Model.TopSupportDps.Any())
+    {
+    <div class="col-md-4">
+        <div class="panel panel-warning panel-clear">
+            <div class="panel-heading">
+                <h3 class="panel-title">
+                    <b>All-time top support DPS</b>
+                </h3>
+            </div>
+            <div class="panel-body">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#asupdps" data-toggle="tab" aria-expanded="true"><img src="~/Content/icons/roles/raid_icon_role_dps.png" height="18" width="18" /> All</a></li>
+                    <li class=""><a href="#wsupdps" data-toggle="tab" aria-expanded="false"><span class="classtype-warrior">W</span></a></li>
+                    <li class=""><a href="#rsupdps" data-toggle="tab" aria-expanded="false"><span class="classtype-rogue">R</span></a></li>
+                    <li class=""><a href="#csupdps" data-toggle="tab" aria-expanded="false"><span class="classtype-cleric">C</span></a></li>
+                    <li class=""><a href="#msupdps" data-toggle="tab" aria-expanded="false"><span class="classtype-mage">M</span></a></li>
+                    <li class=""><a href="#psupdps" data-toggle="tab" aria-expanded="false"><span class="classtype-primalist">P</span></a></li>
+                </ul>
+                <div id="tabTopAllSTDPS" class="tab-content">
+                    <div class="tab-pane fade active in" id="asupdps">
+                        @Html.Partial("~/Views/BossFight/_TopXPS.cshtml", new RankPlayerGuildType { DestinationAction = "PlayerDamageDone", Players = Model.TopSupportDps })
+                    </div>
+                    <div class="tab-pane fade" id="wsupdps">
+                        @Html.Partial("~/Views/BossFight/_TopXPS.cshtml", new RankPlayerGuildType { DestinationAction = "PlayerDamageDone", Players = Model.WarriorTopSupportDps })
+                    </div>
+                    <div class="tab-pane fade" id="rsupdps">
+                        @Html.Partial("~/Views/BossFight/_TopXPS.cshtml", new RankPlayerGuildType { DestinationAction = "PlayerDamageDone", Players = Model.RogueTopSupportDps })
+                    </div>
+                    <div class="tab-pane fade" id="csupdps">
+                        @Html.Partial("~/Views/BossFight/_TopXPS.cshtml", new RankPlayerGuildType { DestinationAction = "PlayerDamageDone", Players = Model.ClericTopSupportDps })
+                    </div>
+                    <div class="tab-pane fade" id="msupdps">
+                        @Html.Partial("~/Views/BossFight/_TopXPS.cshtml", new RankPlayerGuildType { DestinationAction = "PlayerDamageDone", Players = Model.MageTopSupportDps })
+                    </div>
+                    <div class="tab-pane fade" id="psupdps">
+                        @Html.Partial("~/Views/BossFight/_TopXPS.cshtml", new RankPlayerGuildType { DestinationAction = "PlayerDamageDone", Players = Model.PrimalistTopSupportDps })
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    }
+    @*@if (Model.Top10BurstDamage1S.Any())
+    {
+    <div class="col-md-4">
+        <div class="panel panel-warning panel-clear">
+            <div class="panel-heading">
+                <h3 class="panel-title">
+                    <b>All-time top 1s burst damage</b>
+                </h3>
+            </div>
+            <div class="panel-body">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#a1sbdmg" data-toggle="tab" aria-expanded="true"><img src="~/Content/icons/roles/raid_icon_role_dps.png" height="18" width="18" /> All</a></li>
+                    <li class=""><a href="#w1sbdmg" data-toggle="tab" aria-expanded="false"><span class="classtype-warrior">W</span></a></li>
+                    <li class=""><a href="#r1sbdmg" data-toggle="tab" aria-expanded="false"><span class="classtype-rogue">R</span></a></li>
+                    <li class=""><a href="#c1sbdmg" data-toggle="tab" aria-expanded="false"><span class="classtype-cleric">C</span></a></li>
+                    <li class=""><a href="#m1sbdmg" data-toggle="tab" aria-expanded="false"><span class="classtype-mage">M</span></a></li>
+                    <li class=""><a href="#p1sbdmg" data-toggle="tab" aria-expanded="false"><span class="classtype-primalist">P</span></a></li>
+                </ul>
+                <div id="tabTop1sburstdmg" class="tab-content">
+                    <div class="tab-pane fade active in" id="a1sbdmg">
+                        @Html.Partial("~/Views/BossFight/_TopXPS.cshtml", new RankPlayerGuildType { DestinationAction = "PlayerDamageDone", Players = Model.Top10BurstDamage1S })
+                    </div>
+                    <div class="tab-pane fade" id="w1sbdmg">
+                        @Html.Partial("~/Views/BossFight/_TopXPS.cshtml", new RankPlayerGuildType { DestinationAction = "PlayerDamageDone", Players = Model.Top10BurstDamage1SWarrior })
+                    </div>
+                    <div class="tab-pane fade" id="r1sbdmg">
+                        @Html.Partial("~/Views/BossFight/_TopXPS.cshtml", new RankPlayerGuildType { DestinationAction = "PlayerDamageDone", Players = Model.Top10BurstDamage1SRogue })
+                    </div>
+                    <div class="tab-pane fade" id="c1sbdmg">
+                        @Html.Partial("~/Views/BossFight/_TopXPS.cshtml", new RankPlayerGuildType { DestinationAction = "PlayerDamageDone", Players = Model.Top10BurstDamage1SCleric })
+                    </div>
+                    <div class="tab-pane fade" id="m1sbdmg">
+                        @Html.Partial("~/Views/BossFight/_TopXPS.cshtml", new RankPlayerGuildType { DestinationAction = "PlayerDamageDone", Players = Model.Top10BurstDamage1SMage })
+                    </div>
+                    <div class="tab-pane fade" id="p1sbdmg">
+                        @Html.Partial("~/Views/BossFight/_TopXPS.cshtml", new RankPlayerGuildType { DestinationAction = "PlayerDamageDone", Players = Model.Top10BurstDamage1SPrimalist })
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    }*@
+</div>
+

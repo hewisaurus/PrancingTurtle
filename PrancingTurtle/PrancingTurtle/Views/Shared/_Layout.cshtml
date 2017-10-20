@@ -1,0 +1,114 @@
+﻿@using Common
+@using PrancingTurtle.Helpers
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @if (ViewBag.Title.Contains("Interaction"))
+    {
+        <title>@ViewBag.Title</title>
+    }
+    else
+    {
+        <title>@ViewBag.Title - The Prancing Turtle</title>
+    }
+
+    <link rel="icon" href="@Url.Content("~/Content/favicon.ico")" />
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/flicktheme")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/highcharts")
+    @Scripts.Render("~/bundles/socialmedia")
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="@BotDetect.Web.CaptchaUrls.Absolute.LayoutStyleSheetUrl" rel="stylesheet" type="text/css" />
+    <link href="~/Content/fullcalendar.css" rel="stylesheet" />
+    <script src="~/Scripts/fullcalendar.js"></script>
+    <script src="~/Scripts/jq/jquery.expander.min.js"></script>
+    <script type="text/javascript" src="~/Content/uploadify/jquery.uploadify.js"></script>
+    <script type="text/javascript" src="~/Content/uploadify/jquery.uploadify.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="~/Scripts/dropzone/basic.css" />
+    <link rel="stylesheet" type="text/css" href="~/Scripts/dropzone/dropzone.css" />
+    @RenderSection("AdditionalMeta", false)
+    @RenderSection("headerScripts", required: false)
+    @RenderSection("headerStyles", required: false)
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainnavbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="/"><img src="~/Content/turtle/turtle12.png" width="114" height="38" /></a>
+            </div>
+            <div class="collapse navbar-collapse" id="mainnavbar-collapse">
+                <ul class="nav navbar-nav">
+                    @if (Request.IsAuthenticated)
+                    {
+                        if (User.IsInRole(UserGroups.Admin))
+                        {
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-wrench"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                                        <a href="#">Silent Updates</a>
+                                        <ul class="dropdown-menu">
+                                            <li>@Html.ActionLink("Add missing encounter role records 15122016", "AddMissingEncounterPlayerRoles", "SilentUpdate")</li>
+                                            <li>@Html.ActionLink("Validate Successful Encounters", "ValidateSuccessfulEncounters", "SilentUpdate")</li>
+                                            <li>@Html.ActionLink("Update Encounter Burst Stats 20160622", "UpdateEncounterStatsBurstOnly", "SilentUpdate")</li>
+                                            <li>@Html.ActionLink("Update encounter difficulty since oct2016", "DoubleCheckEncounterDifficulty", "SilentUpdate")</li>
+                                            <li>@Html.ActionLink("Remove duplicate EncounterPlayerRole records", "RemoveDuplicateEncounterPlayerRoleRecords", "SilentUpdate")</li>
+                                            <li>@Html.ActionLink("Remove old wipes 30112015", "MarkOldWipesForDeletion", "SilentUpdate")</li>
+                                            <li>@Html.ActionLink("Remove encounters marked for deletion", "RemoveEncountersMarkedForDeletion", "SilentUpdate")</li>
+                                        </ul>
+                                    </li>
+
+                                    @* show the guild list for admins *@
+                                    @Html.Action("GetGuildAdminNav", "Home")
+
+                                    <li>@Html.ActionLink("Instance", "Index", "Instance")</li>
+                                    <li>@Html.ActionLink("Boss fights", "Index", "BossFight")</li>
+                                    <li>@Html.ActionLink("Role abilities", "Index", "AbilityRole")</li>
+                                </ul>
+                            </li>
+                        }
+                    }
+                    @(Html.Action("MainNavigation", "Home"))
+
+
+                </ul>
+
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </nav>
+    <div class="container body-content">
+        <div id="bootstrap_alerts">
+            @if (TempData.ContainsKey("flash"))
+            {
+                @Html.Partial("_Alert", TempData["flash"]);
+            }
+        </div>
+
+        @RenderBody()
+        <hr />
+        <footer>
+            <a href="https://twitter.com/PrancingTurtl" class="twitter-follow-button" data-show-count="false">Follow @Html.Raw("@PrancingTurtl")</a><br />
+            <div class="fb-like" data-href="https://www.facebook.com/prancingturtle" data-layout="standard" data-action="like" data-show-faces="true" data-share="true" data-colorscheme="dark"></div>
+            <p>TPT build @Html.AssemblyVersion() on @Html.Action("GetHost", "Home")</p>
+            <p>
+                <b>&copy; @DateTime.Now.Year Hewi &amp; The Prancing Turtle</b>. Kinda sounds like a book for kids. Trion, Trion Worlds, RIFT, Storm Legion, Nightmare Tide, Telara, and their respective logos, are trademarks or registered trademarks of Trion Worlds, Inc. in the U.S. and other countries.
+            </p>
+        </footer>
+    </div>
+
+    @{Html.RenderPartial("_GoogleAnalytics");}
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/dropzonescripts")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

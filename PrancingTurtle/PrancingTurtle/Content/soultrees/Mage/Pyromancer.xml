@@ -1,0 +1,1180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SoulTree calling="Mage" name="Pyromancer">
+  <Traits>
+    <Trait>
+      <Key>0</Key>
+      <Name>Improved Bolt</Name>
+      <Icon>fireball</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1799824579</AbilityId>
+          <Description></Description>
+          <AddonId>A6B4724C3619B23F6</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the critical hit chance of your Primary Bolt abilities by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the critical hit chance of your Primary Bolt abilities by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the critical hit chance of your Primary Bolt abilities by 6%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>1</Key>
+      <Name>Ignition</Name>
+      <Icon>internalizeheat1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>5261135</AbilityId>
+          <Description></Description>
+          <AddonId>A0050474F178DFDDB</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+        <Ability>
+          <AbilityId>1372881079</AbilityId>
+          <Description></Description>
+          <AddonId>A51D480B7488A49DB</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Decreases the cast time of your Fire spells by 4% and all other spells by 1%. Reduces the mana cost of non-instant Fire spells by 4%. Increases the range of non-melee damaging abilities by 1 meter. Increased range does not stack with the other range increasing effects.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Decreases the cast time of your Fire spells by 8% and all other spells by 2%. Reduces the mana cost of non-instant Fire spells by 8%. Increases the range of non-melee damaging abilities by 2 meters. Increased range does not stack with the other range increasing effects.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Decreases the cast time of your Fire spells by 12% and all other spells by 3%. Reduces the mana cost of non-instant Fire spells by 12%. Increases the range of non-melee damaging abilities by 3 meters. Increased range does not stack with the other range increasing effects.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Decreases the cast time of your Fire spells by 16% and all other spells by 4%. Reduces the mana cost of non-instant Fire spells by 16%. Increases the range of non-melee damaging abilities by 4 meters. Increased range does not stack with the other range increasing effects.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Decreases the cast time of your Fire spells by 20% and all other spells by 5%. Reduces the mana cost of non-instant Fire spells by 20%. Increases the range of non-melee damaging abilities by 5 meters. Increased range does not stack with the other range increasing effects.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>2</Key>
+      <Name>Fiery Concentration</Name>
+      <Icon>releaseheat3</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>75494617</AbilityId>
+          <Description></Description>
+          <AddonId>A047FF4D96E214A7F</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces the amount of pushback suffered while casting single target spells by 33%. Reduces the mana cost of Fire abilities by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reduces the amount of pushback suffered while casting single target spells by 66%. Reduces the mana cost of Fire abilities by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Reduces the amount of pushback suffered while casting single target spells by 100%. Reduces the mana cost of Fire abilities by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>3</Key>
+      <Name>Burning Bonds</Name>
+      <Icon>ensnare1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>173506618</AbilityId>
+          <Description>Roots for 8 seconds or until damaged.</Description>
+          <AddonId>A0A57803A6011387D</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>30.000002</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>4.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+          <Duration>8.000000</Duration>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Burning Bonds</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>4</Key>
+      <Name>Innate Fire</Name>
+      <Icon>releaseheat4</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage bonus of Internalize Charge by 2% and number of abilities affected by 1. While Internalize Charge is active, gives a 10% chance, when hit, to apply a shield that absorbs damage up to the value of 10% of your Maximum Health for 10s. This effect can occur up to once every 30s.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage bonus of Internalize Charge by 4% and number of abilities affected by 2. While Internalize Charge is active, gives a 20% chance, when hit, to apply a shield that absorbs damage up to the value of 10% of your Maximum Health for 10s. This effect can occur up to once every 30s.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the damage bonus of Internalize Charge by 6% and number of abilities affected by 3. While Internalize Charge is active, gives a 30% chance, when hit, to apply a shield that absorbs damage up to the value of 10% of your Maximum Health for 10s. This effect can occur up to once every 30s.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>5</Key>
+      <Name>Burning Focus</Name>
+      <Icon>internalizeheat3</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>2003546713</AbilityId>
+          <Description></Description>
+          <AddonId>A776BB2595058CDDB</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage of single target abilities by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage of single target abilities by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the damage of single target abilities by 6%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>6</Key>
+      <Name>Stoke the Flames</Name>
+      <Icon>sterilize1_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>847029473</AbilityId>
+          <Description></Description>
+          <AddonId>A327CA4E15D27E8B5</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage of non-instant abilities by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage of non-instant abilities by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the damage of non-instant abilities by 6%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>7</Key>
+      <Name>Flicker</Name>
+      <Icon>burning</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>805577881</AbilityId>
+          <Description>Removes all crowd control effects. Teleports forward 15 meters.</Description>
+          <AddonId>A3004249946C9508C</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>20.000000</Cooldown>
+          <CostManaPercent>4.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Flicker</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>9</Key>
+      <Name>Fire Storm</Name>
+      <Icon>conflagration1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>829631591</AbilityId>
+          <Description>A conflagration erupts at the selected area burning up to 5 enemies within, causing 5672 Fire damage over 8 seconds. Generates 6 Charge every second.</Description>
+          <AddonId>A31732C67899BD0AE</AddonId>
+          <IsPassive>False</IsPassive>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>18.000000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+          <Channel>true</Channel>
+          <Duration>8.000000</Duration>
+          <Interval>1.000000</Interval>
+          <Radius>7.000000</Radius>
+          <MaxAffected>5</MaxAffected>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Fire Storm</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>10</Key>
+      <Name>Incinerating Flames</Name>
+      <Icon>restorative_flame_a</Icon>
+      <PrereqTraitKey>18</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Heat Wave reduces damage taken by 20% while it is active.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>11</Key>
+      <Name>Improved Flame Bolt</Name>
+      <Icon>energybeam1a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>9626640</AbilityId>
+          <Description>Fire damage increased by 10%.</Description>
+          <AddonId>A0092E41052D6D4FA</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Gives your Flame Bolt a 33% chance on hit to increase your spell damage by 10% for 10 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Gives your Flame Bolt a 66% chance on hit to increase your spell damage by 10% for 10 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Gives your Flame Bolt a 100% chance on hit to increase your spell damage by 10% for 10 seconds.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>12</Key>
+      <Name>Smolder</Name>
+      <Icon>conflagration3</Icon>
+      <PrereqTraitKey>9</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>3</Points>
+          <Description>Your Fire Storm will spread Countdown to up to 5 other enemies within 7 meters when it hits an enemy you have Countdown active on.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>13</Key>
+      <Name>Chain Reaction</Name>
+      <Icon>fiery_chains_01_a</Icon>
+      <PrereqTraitKey>12</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1314902008</AbilityId>
+          <Description></Description>
+          <AddonId>A4E5FCFF8375CEA9C</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>When your Countdown triggers naturally, other Countdown effects you have on up to 5 other enemies within 7 meters will trigger early.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>14</Key>
+      <Name>Unbreakable Bonds</Name>
+      <Icon>elemward1a</Icon>
+      <PrereqTraitKey>3</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>270432095</AbilityId>
+          <Description></Description>
+          <AddonId>A101E775F3766AD49</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Burning Bonds spell no longer breaks on damage.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>15</Key>
+      <Name>Wildfire</Name>
+      <Icon>coalesceheat3</Icon>
+      <PrereqTraitKey>11</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>31992931</AbilityId>
+          <Description></Description>
+          <AddonId>A01E82C63582AD129</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Fireball casts have a 10% chance to reset and reduce the cooldown of your next 3 Flame Bolt casts to 0 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your Fireball casts have a 20% chance to reset and reduce the cooldown of your next 3 Flame Bolt casts to 0 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Your Fireball casts have a 30% chance to reset and reduce the cooldown of your next 3 Flame Bolt casts to 0 seconds.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>16</Key>
+      <Name>Pyromancer&apos;s Blessing</Name>
+      <Icon>elemward1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>577828389</AbilityId>
+          <Description></Description>
+          <AddonId>A2270F625722A98B2</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>While Pyromancer&apos;s Armor is active, damaging Fire spells have a 20% chance to reset the cooldown on Cinder Burst, allow it to be cast instantly and reduce its mana cost by 50%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>17</Key>
+      <Name>Pyromania</Name>
+      <Icon>flamejet2big</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>736053061</AbilityId>
+          <Description></Description>
+          <AddonId>A2BDF47454D3B017F</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the effect of Spell Power on your Fire abilities by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the effect of Spell Power on your Fire abilities by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the effect of Spell Power on your Fire abilities by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases the effect of Spell Power on your Fire abilities by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases the effect of Spell Power on your Fire abilities by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>18</Key>
+      <Name>Heat Wave</Name>
+      <Icon>bloodfire1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>2024808981</AbilityId>
+          <Description>Reduces Fire spell cast time by 50% for 15 seconds. Reduces the mana cost of non-instant Fire abilities by 30%. Fireball does not consume stacks of Pyromancer&apos;s Fury while Heat Wave is active.</Description>
+          <AddonId>A78B02215C52CCFDE</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>60.000004</Cooldown>
+          <CostManaPercent>2.250000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+          <Duration>15.000000</Duration>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>19</Key>
+      <Name>Flash Burn</Name>
+      <Icon>releaseheat2</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Scorch now stuns the target for 5 seconds. Scorch cannot stun the same target more than once every 45 seconds.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>20</Key>
+      <Name>Fire Starter</Name>
+      <Icon>cauterize1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1081525902</AbilityId>
+          <Description></Description>
+          <AddonId>A4076C68E0D50554C</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces the cooldown of Countdown by 4 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reduces the cooldown of Countdown by 8 seconds.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>21</Key>
+      <Name>Burning Fury</Name>
+      <Icon>demolition_specialist</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1002889389</AbilityId>
+          <Description></Description>
+          <AddonId>A3BC6E0AD48D8F2AE</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the critical hit chance of your abilities by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the critical hit chance of your abilities by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the critical hit chance of your abilities by 6%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>22</Key>
+      <Name>Pyromancer&apos;s Vengeance</Name>
+      <Icon>elemental_bolt1b</Icon>
+      <PrereqTraitKey>16</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1920435266</AbilityId>
+          <Description></Description>
+          <AddonId>A727784426DFA9F02</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>While Pyromancer&apos;s Armor is active, casting Fireball generates a stack of Pyromancer&apos;s Vengeance on you, increasing the chance for Pyromancer&apos;s Blessing to affect Cinder Burst by 1% per stack. Max 5 stacks. Lasts 10 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>1</Points>
+          <Description>While Pyromancer&apos;s Armor is active, casting Fireball generates a stack of Pyromancer&apos;s Vengeance on you, increasing the chance for Pyromancer&apos;s Blessing to affect Cinder Burst by 2% per stack. Max 5 stacks. Lasts 10 seconds.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>23</Key>
+      <Name>Pyromancer&apos;s Fury</Name>
+      <Icon>flash2</Icon>
+      <PrereqTraitKey>22</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1290480912</AbilityId>
+          <Description></Description>
+          <AddonId>A4CEB2D1010EA1ED4</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>While Pyromancer&apos;s Armor is active, your damaging Fire abilities, excluding Fireball, apply a stack of Pyromancer&apos;s Fury to you. Fireball will consume a stack of Pyromancer&apos;s Fury to reduce its cast time by 0.3s and increase its damage by 10%. Max 5 stacks.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>While Pyromancer&apos;s Armor is active, your damaging Fire abilities, excluding Fireball, apply a stack of Pyromancer&apos;s Fury to you. Fireball will consume a stack of Pyromancer&apos;s Fury to reduce its cast time by 0.4s and increase its damage by 20%. Max 5 stacks.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>While Pyromancer&apos;s Armor is active, your damaging Fire abilities, excluding Fireball, apply a stack of Pyromancer&apos;s Fury to you. Fireball will consume a stack of Pyromancer&apos;s Fury to reduce its cast time by 0.5s and increase its damage by 30%. Max 5 stacks.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>24</Key>
+      <Name>Ravenous Flames</Name>
+      <Icon>flame_speaker</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-75400380</AbilityId>
+          <Description></Description>
+          <AddonId>AFB817B4441027F3E</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your non-Physical attacks ignore 3% of your target&apos;s Resistances.</Description>
+        </Rank>
+        <Rank>
+          <Points>1</Points>
+          <Description>Your non-Physical attacks ignore 6% of your target&apos;s Resistances.</Description>
+        </Rank>
+        <Rank>
+          <Points>1</Points>
+          <Description>Your non-Physical attacks ignore 9% of your target&apos;s Resistances.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>25</Key>
+      <Name>Spark</Name>
+      <Icon>healing_flare2_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1436395174</AbilityId>
+          <Description></Description>
+          <AddonId>A559DA6A626490FF0</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces the global cooldown of your Fire and Ethereal abilities to 1.25 seconds. Reduces the mana cost of instant Fire abilities by 15%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reduces the global cooldown of your Fire and Ethereal abilities to 1 second. Reduces the mana cost of instant Fire abilities by 30%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>26</Key>
+      <Name>Flame Volley</Name>
+      <Icon>rapid_setup</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>40</MinimumPointsSpent>
+      <DisplayRow>8</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-33845295</AbilityId>
+          <Description>Deals 7463 Fire damage over 3s. Deals an additional 3222 to 3562 Fire damage after 3s.</Description>
+          <AddonId>AFDFB8FD17F175C9A</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>60.000004</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>15.000000</CostManaPercent>
+          <GainHeat>15</GainHeat>
+          <CastTime>Instant</CastTime>
+          <Channel>true</Channel>
+          <Duration>3.000000</Duration>
+          <Interval>0.500000</Interval>
+          <PowerStatCoefficient effect="0" action="0">3.300000</PowerStatCoefficient>
+          <DamageMultiplier effect="0" action="0">0.140000</DamageMultiplier>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>27</Key>
+      <Name>Accelerant</Name>
+      <Icon>blessing_of_the_flames</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1174744150</AbilityId>
+          <Description></Description>
+          <AddonId>A46052C56499FB985</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="4">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Countdown applies Accelerant to the enemy, increasing your damage against the affected target by 2% for 15s. Countdown deals 15% of its damage to the target if its cleansed.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your Countdown applies Accelerant to the enemy, increasing your damage against the affected target by 4% for 15s. Countdown deals 30% of its damage to the target if its cleansed.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Your Countdown applies Accelerant to the enemy, increasing your damage against the affected target by 6% for 15s. Countdown deals 45% of its damage to the target if its cleansed.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Your Countdown applies Accelerant to the enemy, increasing your damage against the affected target by 8% for 15s. Countdown deals 60% of its damage to the target if its cleansed.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+  </Traits>
+  <Abilities>
+    <Ability>
+      <MinimumPointsInSoul>61</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Fusillade</Name>
+      <Icon>detonate_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>60</RequiredLevel>
+        <AbilityId>-95294442</AbilityId>
+        <Description>Casts Fireball on the target once every 0.5 seconds.</Description>
+        <AddonId>AFA51EC16C43FFF90</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>10.000000</CostManaPercent>
+        <GainHeat>30</GainHeat>
+        <CastTime>Instant</CastTime>
+        <Channel>true</Channel>
+        <Interval>0.500000</Interval>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>24</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Cerebral Flare</Name>
+      <Icon>fanaticism</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>24</RequiredLevel>
+        <AbilityId>-68581539</AbilityId>
+        <Description>Restores 5% mana per second.</Description>
+        <AddonId>AFBE9875D85A89C90</AddonId>
+        <IsPassive>False</IsPassive>
+        <CastTime>Instant</CastTime>
+        <Channel>true</Channel>
+        <Duration>10.000000</Duration>
+        <Interval>1.000000</Interval>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Flame Volley</Name>
+      <Icon>rapid_setup</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-33845295</AbilityId>
+        <Description>Deals 7463 Fire damage over 3s. Deals an additional 3222 to 3562 Fire damage after 3s.</Description>
+        <AddonId>AFDFB8FD17F175C9A</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>15.000000</CostManaPercent>
+        <GainHeat>15</GainHeat>
+        <CastTime>Instant</CastTime>
+        <Channel>true</Channel>
+        <Duration>3.000000</Duration>
+        <Interval>0.500000</Interval>
+        <PowerStatCoefficient effect="0" action="0">3.300000</PowerStatCoefficient>
+        <DamageMultiplier effect="0" action="0">0.140000</DamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>20</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Cinder Burst</Name>
+      <Icon>coalesceheat1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>20</RequiredLevel>
+        <AbilityId>33805137</AbilityId>
+        <Description>Deals 3078 to 3401 Fire damage.</Description>
+        <AddonId>A0203D351E4FB52D4</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>15.000000</CostManaPercent>
+        <GainHeat>37</GainHeat>
+        <CastTime>6.000000</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Burning Bonds</Name>
+      <Icon>ensnare1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>173506618</AbilityId>
+        <Description>Roots for 8 seconds or until damaged.</Description>
+        <AddonId>A0A57803A6011387D</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>8.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>12</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Burning Shield</Name>
+      <Icon>releaseheat3a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>12</RequiredLevel>
+        <AbilityId>282137164</AbilityId>
+        <Description>Absorbs 50% of damage taken up to 1243 damage. Lasts 30 seconds.</Description>
+        <AddonId>A10D1124C77D31EE8</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">2.400000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>8</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Internalize Charge</Name>
+      <Icon>releaseheat4b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>8</RequiredLevel>
+        <AbilityId>283776260</AbilityId>
+        <Description>Increases damage done on your next 3 damaging abilities, within 30s, by 10%.</Description>
+        <AddonId>A10EA15048B8158A5</AddonId>
+        <IsPassive>False</IsPassive>
+        <MinimumHeat>50</MinimumHeat>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>4</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Countdown</Name>
+      <Icon>pyroclasty2</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>4</RequiredLevel>
+        <AbilityId>391653731</AbilityId>
+        <Description>Deals 1640 Fire damage after 8 seconds.</Description>
+        <AddonId>A17582963BA1FCFD5</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>8.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+        <Duration>8.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>55</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Searing Bolt</Name>
+      <Icon>elemental_bolt1a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>54</RequiredLevel>
+        <AbilityId>413462230</AbilityId>
+        <Description>Deals 1892 to 2092 Fire damage. Triggers your Countdown.</Description>
+        <AddonId>A18A4EED688B6395E</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>15.000001</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>51</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Fulminate</Name>
+      <Icon>intense_flames</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>50</RequiredLevel>
+        <AbilityId>560530674</AbilityId>
+        <Description>Deals 3931 to 4345 Fire damage.</Description>
+        <AddonId>A216904F261DF5FB2</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <MinimumHeat>60</MinimumHeat>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>32</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Inferno</Name>
+      <Icon>internalizeheat1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>32</RequiredLevel>
+        <AbilityId>623218025</AbilityId>
+        <Description>Deals 1164 to 1287 Fire damage. Only usable on enemies under 40% health.</Description>
+        <AddonId>A25258D6999175549</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>10.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">1.600000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Flicker</Name>
+      <Icon>burning</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>805577881</AbilityId>
+        <Description>Removes all crowd control effects. Teleports forward 15 meters.</Description>
+        <AddonId>A3004249946C9508C</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>20.000000</Cooldown>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Fire Storm</Name>
+      <Icon>conflagration1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>829631591</AbilityId>
+        <Description>A conflagration erupts at the selected area burning up to 5 enemies within, causing 5672 Fire damage over 8 seconds. Generates 6 Charge every second.</Description>
+        <AddonId>A31732C67899BD0AE</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>18.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Channel>true</Channel>
+        <Duration>8.000000</Duration>
+        <Interval>1.000000</Interval>
+        <Radius>7.000000</Radius>
+        <MaxAffected>5</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>40</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Burn</Name>
+      <Icon>deflect1c</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>40</RequiredLevel>
+        <AbilityId>1446889096</AbilityId>
+        <Description>Debilitates for 5 seconds.</Description>
+        <AddonId>A563DC688D3773D05</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>5.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Pyromancer Soul Gift</Name>
+      <Icon>card10a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1570984916</AbilityId>
+        <Description>Increases the Mage&apos;s damage by 1% for each point spent in the Pyromancer soul.</Description>
+        <AddonId>A5DA353D49BA97362</AddonId>
+        <IsPassive>True</IsPassive>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Fireball</Name>
+      <Icon>fireball</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1588471451</AbilityId>
+        <Description>Deals 1334 to 1474 Fire damage. Counts as a Primary Bolt.</Description>
+        <AddonId>A5EAE269BB440BDE8</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>12.500000</CostManaPercent>
+        <GainHeat>15</GainHeat>
+        <CastTime>2.500000</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>2</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Pyromancer&apos;s Armor</Name>
+      <Icon>arcaneshield4</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>2</RequiredLevel>
+        <AbilityId>1724504260</AbilityId>
+        <Description>Increases Fire damage done by 5%. Lasts 1 hour. Counts as a Mage Armor.</Description>
+        <AddonId>A66C9D8C477AFDE3E</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>2.250000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>3600.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>28</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Scorch</Name>
+      <Icon>tactician_infernal_torrent_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>28</RequiredLevel>
+        <AbilityId>1931384788</AbilityId>
+        <Description>Interrupts.</Description>
+        <AddonId>A731E97D4949C18A9</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>10.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Flame Bolt</Name>
+      <Icon>energybeam1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1955350713</AbilityId>
+        <Description>Deals 1310 to 1448 Fire damage.</Description>
+        <AddonId>A748C48B97CF3A780</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>8.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">1.800000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Heat Wave</Name>
+      <Icon>bloodfire1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>2024808981</AbilityId>
+        <Description>Reduces Fire spell cast time by 50% for 15 seconds. Reduces the mana cost of non-instant Fire abilities by 30%. Fireball does not consume stacks of Pyromancer&apos;s Fury while Heat Wave is active.</Description>
+        <AddonId>A78B02215C52CCFDE</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <CostManaPercent>2.250000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>15.000000</Duration>
+      </AbilityRank>
+    </Ability>
+  </Abilities>
+</SoulTree>
+

@@ -1,0 +1,43 @@
+﻿@using PrancingTurtle.Helpers
+@model List<Database.Models.Instance>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Instances</h2>
+@Html.ActionLink("Create a new Instance", "Create", "Instance", null, new { @class = "btn btn-success" })
+<div class="row">
+    <div class="col-lg-12">
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Max Raid Size</th>
+                        <th>Visible</th>
+                        <th>Include in Progression</th>
+                        <th>Include in Lists</th>
+                        <th>Short Name</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.Name</td>
+                            <td>@item.MaxRaidSize</td>
+                            <td>@item.Visible</td>
+                            <td>@item.IncludeInProgression</td>
+                            <td>@item.IncludeInLists</td>
+                            <td>@item.ShortName</td>
+                            <td>@Html.ImageActionLink("Edit", "Instance", new { @id = item.Id }, "text-warning", "fa fa-lg fa-pencil-square-o") |
+                        @Html.ImageActionLink("Delete", "Instance", new { @id = item.Id }, "text-danger", "fa fa-lg fa-times")</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

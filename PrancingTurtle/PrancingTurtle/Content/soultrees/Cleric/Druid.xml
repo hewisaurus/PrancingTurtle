@@ -1,0 +1,1312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SoulTree calling="Cleric" name="Druid">
+  <Traits>
+    <Trait>
+      <Key>0</Key>
+      <Name>Guiding Hand</Name>
+      <Icon>spiritstrike3</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-96632483</AbilityId>
+          <Description></Description>
+          <AddonId>AFA3D815D36B5D5D8</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your damage done and your pet&apos;s damage done by 1%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your damage done and your pet&apos;s damage done by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your damage done and your pet&apos;s damage done by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your damage done and your pet&apos;s damage done by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your damage done and your pet&apos;s damage done by 5%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>1</Key>
+      <Name>Speak Softly</Name>
+      <Icon>sentinel-quietus</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-18885620</AbilityId>
+          <Description></Description>
+          <AddonId>AFEDFD40C1DCBC9A3</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Wisdom by 2%. Reduces your pets&apos; damage taken by 1%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Wisdom by 4%. Reduces your pets&apos; damage taken by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your Wisdom by 6%. Reduces your pets&apos; damage taken by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your Wisdom by 8%. Reduces your pets&apos; damage taken by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your Wisdom by 10%. Reduces your pets&apos; damage taken by 5%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>2</Key>
+      <Name>Heed the Call</Name>
+      <Icon>releaseheat4a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>127127256</AbilityId>
+          <Description></Description>
+          <AddonId>A0793CED8092316C0</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces the cast time of your Summon spells by 3s.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reduces the cast time of your Summon spells by 6s.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>3</Key>
+      <Name>Trickster&apos;s Bolt</Name>
+      <Icon>tactician_curative_bolt</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-82411169</AbilityId>
+          <Description>Deals 582 to 643 Life damage.</Description>
+          <AddonId>AFB16815F5FB12750</AddonId>
+          <IsPassive>False</IsPassive>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>7.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>4</Key>
+      <Name>Carry a Big Stick</Name>
+      <Icon>2h_staff_042</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Fervent Strike&apos;s damage by 5%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Fervent Strike&apos;s damage by 10%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your Fervent Strike&apos;s damage by 15%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>5</Key>
+      <Name>Mercurial</Name>
+      <Icon>spiritblast1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-3914434</AbilityId>
+          <Description></Description>
+          <AddonId>AFFC4453E4AF41511</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your damage done with instant abilities by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your damage done with instant abilities by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your damage done with instant abilities by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your damage done with instant abilities by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your damage done with instant abilities by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>6</Key>
+      <Name>Boundless Growth</Name>
+      <Icon>barbedtrap1</Icon>
+      <BendType>VerticalToHorizontal</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1226935703</AbilityId>
+          <Description></Description>
+          <AddonId>A49218D975B112B19</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases damage done with Life Surge by 5%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases damage done with Life Surge by 10%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases damage done with Life Surge by 15%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>7</Key>
+      <Name>Brutal Impact</Name>
+      <Icon>sovereign_hammer_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>763596759</AbilityId>
+          <Description></Description>
+          <AddonId>A2D838FD768E9A615</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases you and your pet&apos;s Physical damage done by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases you and your pet&apos;s Physical damage done by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases you and your pet&apos;s Physical damage done by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases you and your pet&apos;s Physical damage done by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases you and your pet&apos;s Physical damage done by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>8</Key>
+      <Name>Slumber</Name>
+      <Icon>ressurect4bl</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1662193998</AbilityId>
+          <Description>Puts the enemy to Sleep for 10s.</Description>
+          <AddonId>A6313114E97439373</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>30.000002</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>4.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+          <Duration>10.000000</Duration>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>9</Key>
+      <Name>Grim Silence</Name>
+      <Icon>druid-grim_silence</Icon>
+      <BendType>VerticalToHorizontal</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1473690023</AbilityId>
+          <Description>Interrupts and Debilitates the enemy for 5s.</Description>
+          <AddonId>A57D6B9A76FDC3CA1</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>30.000002</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>4.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>10</Key>
+      <Name>Spirit of the Wood</Name>
+      <Icon>shockwave2</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-8010813</AbilityId>
+          <Description></Description>
+          <AddonId>AFF85C3C33FF3FBCA</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your weapon attacks increase your pet&apos;s Spell Crit by 3% for 5s or until your pet Critically Hits. Max 3 stacks.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your weapon attacks increase your pet&apos;s Spell Crit by 6% for 5s or until your pet Critically Hits. Max 3 stacks.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Your weapon attacks increase your pet&apos;s Spell Crit by 9% for 5s or until your pet Critically Hits. Max 3 stacks.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Your weapon attacks increase your pet&apos;s Spell Crit by 12% for 5s or until your pet Critically Hits. Max 3 stacks.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Your weapon attacks increase your pet&apos;s Spell Crit by 15% for 5s or until your pet Critically Hits. Max 3 stacks.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>11</Key>
+      <Name>Summon: Greater Satyr Protector</Name>
+      <Icon>staggeringshot3a</Icon>
+      <BendType>VerticalToHorizontal</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-36140463</AbilityId>
+          <Description>Summons a Greater Satyr Protector. Best used for Tanking.</Description>
+          <AddonId>AFDD88A51A7170A47</AddonId>
+          <IsPassive>False</IsPassive>
+          <CostManaPercent>4.500000</CostManaPercent>
+          <CastTime>8.000000</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>12</Key>
+      <Name>Savage Force</Name>
+      <Icon>spiritoflion3</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>333949741</AbilityId>
+          <Description></Description>
+          <AddonId>A13E7AB2D4910B270</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases you and your pet&apos;s non-Physical damage done by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases you and your pet&apos;s non-Physical damage done by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases you and your pet&apos;s non-Physical damage done by 9%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>13</Key>
+      <Name>Pierce the Veil</Name>
+      <Icon>shadow_shift_c</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Fae Step increases your movement speed by 25% for 5s.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your Fae Step increases your movement speed by 50% for 5s.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>14</Key>
+      <Name>Essence Strike</Name>
+      <Icon>smite4a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1240865605</AbilityId>
+          <Description>Deals 1164 to 1287 Life damage. Refreshes the Cleric&apos;s active Eruption of Life on the enemy.</Description>
+          <AddonId>A49F61B45AAD84F4E</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Melee Weapon</RequiresWeapon>
+          <Cooldown>10.000000</Cooldown>
+          <MaxRange>3.000000</MaxRange>
+          <CostManaPercent>7.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+          <PowerStatCoefficient effect="0" action="0">1.600000</PowerStatCoefficient>
+          <WeaponDamageMultiplier effect="0" action="0">0.000000E+000</WeaponDamageMultiplier>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>15</Key>
+      <Name>Life Touched</Name>
+      <Icon>sanction_heretic</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>725588010</AbilityId>
+          <Description></Description>
+          <AddonId>A2B3F982A52710B74</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Spell Power and your pet&apos;s Spell Power by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Spell Power and your pet&apos;s Spell Power by 6%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>16</Key>
+      <Name>Curious Precision</Name>
+      <Icon>exposeweakness3</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-38262680</AbilityId>
+          <Description></Description>
+          <AddonId>AFDB828683EE86108</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your chance to Critically Hit by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your chance to Critically Hit by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your chance to Critically Hit by 9%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>17</Key>
+      <Name>Overproliferation</Name>
+      <Icon>untangle</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-44220939</AbilityId>
+          <Description></Description>
+          <AddonId>AFD5D3DF530895643</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the effect of Spell Power on your Eruption of Life by 15% and the number of times it can trigger additional damage by 2.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the effect of Spell Power on your Eruption of Life by 30% and the number of times it can trigger additional damage by 4.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>18</Key>
+      <Name>Intensity of Purpose</Name>
+      <Icon>spiritofturtle3</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your pet&apos;s damage done by 5%. Increases your pet&apos;s&apos; healing done by 10%. Reduces your pet&apos;s damage taken by 5%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your pet&apos;s damage done by 10%. Increases your pet&apos;s&apos; healing done by 20%. Reduces your pet&apos;s damage taken by 10%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your pet&apos;s damage done by 15%. Increases your pet&apos;s&apos; healing done by 30%. Reduces your pet&apos;s damage taken by 15%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>19</Key>
+      <Name>Summon: Satyr Destroyer</Name>
+      <Icon>druid-summon_satyr</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>550912595</AbilityId>
+          <Description>Summons a Greater Satyr Destroyer. Best used for Melee Damage.</Description>
+          <AddonId>A20D64253C28AC0D6</AddonId>
+          <IsPassive>False</IsPassive>
+          <CostManaPercent>4.500000</CostManaPercent>
+          <CastTime>8.000000</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>20</Key>
+      <Name>Summon: Greater Faerie Seer</Name>
+      <Icon>druid_greater_faerie_seer_b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-38457861</AbilityId>
+          <Description>Summons a Greater Faerie Seer. Best used for Ranged Damage.</Description>
+          <AddonId>AFDB52DFBA36C7982</AddonId>
+          <IsPassive>False</IsPassive>
+          <CostManaPercent>4.500000</CostManaPercent>
+          <CastTime>8.000000</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>21</Key>
+      <Name>Teamwork</Name>
+      <Icon>layonhands3</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Combined Effort increases damage taken from the Cleric and the Cleric&apos;s pet by an additional 5%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your Combined Effort increases damage taken from the Cleric and the Cleric&apos;s pet by an additional 10%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Your Combined Effort increases damage taken from the Cleric and the Cleric&apos;s pet by an additional 15%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>22</Key>
+      <Name>Celerity</Name>
+      <Icon>combat_pose1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces your pets&apos; Global Cooldown and cast times by 0.25s.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reduces your pets&apos; Global Cooldown and cast times by 0.5s.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>23</Key>
+      <Name>Resounding Blow</Name>
+      <Icon>holysweep4d</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>40</MinimumPointsSpent>
+      <DisplayRow>8</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1640277529</AbilityId>
+          <Description>Deals 1341 to 1482 damage. Increases damage done by the Cleric&apos;s next damaging ability, within 10s, by 50%.</Description>
+          <AddonId>A61C4A619989EAE62</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Melee Weapon</RequiresWeapon>
+          <Cooldown>15.000001</Cooldown>
+          <MaxRange>3.000000</MaxRange>
+          <CostManaPercent>7.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+          <PowerStatCoefficient effect="0" action="0">2.000000</PowerStatCoefficient>
+          <WeaponDamageMultiplier effect="0" action="0">0.000000E+000</WeaponDamageMultiplier>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+  </Traits>
+  <Abilities>
+    <Ability>
+      <MinimumPointsInSoul>24</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Peace of the Forest</Name>
+      <Icon>generic_ability_011</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>24</RequiredLevel>
+        <AbilityId>-95481715</AbilityId>
+        <Description>Restores 7% mana. Consumes 7% health.</Description>
+        <AddonId>AFA4F108DB3F3CA31</AddonId>
+        <IsPassive>False</IsPassive>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="1">0.000000E+000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>20</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Thorns of Ire</Name>
+      <Icon>venomoustrap1a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>20</RequiredLevel>
+        <AbilityId>-90791839</AbilityId>
+        <Description>Causes the enemy to take 1500 additional damage when hit for 20s. Each attacker may trigger this once every 3s.</Description>
+        <AddonId>AFA96A06177D454AD</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>6</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Trickster&apos;s Bolt</Name>
+      <Icon>tactician_curative_bolt</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>6</RequiredLevel>
+        <AbilityId>-82411169</AbilityId>
+        <Description>Deals 582 to 643 Life damage.</Description>
+        <AddonId>AFB16815F5FB12750</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>36</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Aid of the Forest</Name>
+      <Icon>beastmaster_primal_recovery_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>36</RequiredLevel>
+        <AbilityId>-82340978</AbilityId>
+        <Description>Causes the Cleric&apos;s pet&apos;s damage and healing abilities to restore health based on their Spell Power to both the Cleric and the pet.</Description>
+        <AddonId>AFB17938E9CCF6C5C</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Summon: Satyr Protector</Name>
+      <Icon>druid_summon_satyr_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-74881356</AbilityId>
+        <Description>Summons a Satyr Protector (max level 30). Best used for Tanking.</Description>
+        <AddonId>AFB8966B46F61921F</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>8.000000</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>51</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Spirit of Asphodel</Name>
+      <Icon>coda_of_wrath</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>50</RequiredLevel>
+        <AbilityId>-72634708</AbilityId>
+        <Description>Causes the Cleric&apos;s pet&apos;s damaging abilities to deal additional Life damage based on their Spell Power.</Description>
+        <AddonId>AFBABAEACD3726B23</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>61</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Fae Mimicry</Name>
+      <Icon>beastmaster_shared_bonds_c</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>60</RequiredLevel>
+        <AbilityId>-59428155</AbilityId>
+        <Description>Causes the Cleric&apos;s next 4 single target damaging abilities to deal additional Life damage equal to their initial damage. Does not affect damage over time effects. Lasts 15s.</Description>
+        <AddonId>AFC7532C5F377D933</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>44</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Spirit of Upheaval</Name>
+      <Icon>riftblade-earth_burst_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>44</RequiredLevel>
+        <AbilityId>-46018176</AbilityId>
+        <Description>Causes the Cleric&apos;s pet&apos;s damaging abilities to deal additional Earth damage based on their Spell Power to up to 5 enemies.</Description>
+        <AddonId>AFD41D180BF92326F</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>5.400000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>36</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Summon: Greater Faerie Seer</Name>
+      <Icon>druid_greater_faerie_seer_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>36</RequiredLevel>
+        <AbilityId>-38457861</AbilityId>
+        <Description>Summons a Greater Faerie Seer. Best used for Ranged Damage.</Description>
+        <AddonId>AFDB52DFBA36C7982</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>8.000000</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>21</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Summon: Greater Satyr Protector</Name>
+      <Icon>druid_summon_greater_satyr</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>21</RequiredLevel>
+        <AbilityId>-36140463</AbilityId>
+        <Description>Summons a Greater Satyr Protector. Best used for Tanking.</Description>
+        <AddonId>AFDD88A51A7170A47</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>8.000000</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>54</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Fae Extraction</Name>
+      <Icon>redirect1b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>54</RequiredLevel>
+        <AbilityId>-29466448</AbilityId>
+        <Description>Teleports the enemy to the Cleric.</Description>
+        <AddonId>AFE3E60B06C638AAC</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>15.000001</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>58</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Subtlety</Name>
+      <Icon>riftstalker_toughened_soul_01_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>57</RequiredLevel>
+        <AbilityId>-16864272</AbilityId>
+        <Description>Allows the Cleric&apos;s and the Cleric&apos;s pet&apos;s damaging abilities to ignore 20% of their targets&apos; Armor and Resistance. Lasts 1h.</Description>
+        <AddonId>AFEFEABF05FB02DA1</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>3600.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>48</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Crushing Force</Name>
+      <Icon>holysmite3</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>48</RequiredLevel>
+        <AbilityId>-15699444</AbilityId>
+        <Description>Deals 1533 Earth damage over 15s.</Description>
+        <AddonId>AFF10720C8612F0FD</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>15.000000</Duration>
+        <Interval>1.500000</Interval>
+        <PowerStatCoefficient effect="0" action="0">2.000000</PowerStatCoefficient>
+        <DamageMultiplier effect="0" action="0">0.100000</DamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Friend of the Weald</Name>
+      <Icon>spiritoftree1a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-15627680</AbilityId>
+        <Description></Description>
+        <AddonId>AFF118A604A9774EA</AddonId>
+        <IsPassive>True</IsPassive>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>16</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Through Step</Name>
+      <Icon>silent_footsteps_01_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>16</RequiredLevel>
+        <AbilityId>-5759198</AbilityId>
+        <Description>Causes Fae Step to teleport behind the enemy.</Description>
+        <AddonId>AFFA81F229149D1E7</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>12</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Wild Strike</Name>
+      <Icon>slam3a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>12</RequiredLevel>
+        <AbilityId>136261040</AbilityId>
+        <Description>Deals 402 to 444 damage to up to 5 enemies.</Description>
+        <AddonId>A081F2DB089804D28</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Radius>7.000000</Radius>
+        <MaxAffected>5</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>8</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Eruption of Life</Name>
+      <Icon>barbedtrap1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>8</RequiredLevel>
+        <AbilityId>303032785</AbilityId>
+        <Description>Deals 335 to 370 Life damage. Life Surge deals an additional 116 to 129 Life damage, and reduces the cooldown of Resounding Blow by 1.5s, each time the Cleric hits the enemy over the next 15s, up to 5 times. </Description>
+        <AddonId>A120FE9D14C9C4755</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">0.500000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>2</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Shield of Oak</Name>
+      <Icon>vitalizingshield1b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>2</RequiredLevel>
+        <AbilityId>369850818</AbilityId>
+        <Description>Absorbs 25% of damage taken, up to 1036 damage. Increases movement speed by 5%. Lasts 30s.</Description>
+        <AddonId>A160B79C27B5567B9</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">2.000000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>31</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Summon: Greater Satyr Destroyer</Name>
+      <Icon>druid-summon_satyr</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>31</RequiredLevel>
+        <AbilityId>550912595</AbilityId>
+        <Description>Summons a Greater Satyr Destroyer. Best used for Melee Damage.</Description>
+        <AddonId>A20D64253C28AC0D6</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>8.000000</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Fervent Strike</Name>
+      <Icon>shockwave2</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>722531426</AbilityId>
+        <Description>Deals 670 to 740 damage.</Description>
+        <AddonId>A2B10F4625A2E6EE3</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>3.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">1.000000</PowerStatCoefficient>
+        <WeaponDamageMultiplier effect="0" action="0">0.000000E+000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>24</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Summon: Greater Faerie Healer</Name>
+      <Icon>druid-summon_greater_faerie</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>24</RequiredLevel>
+        <AbilityId>1019014408</AbilityId>
+        <Description>Summons a Greater Faerie Healer. Best used for Healing.</Description>
+        <AddonId>A3CBCED0857B7E7E9</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>8.000000</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Dismiss Pet</Name>
+      <Icon>redirect1a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1086659173</AbilityId>
+        <Description>Dismiss your Pet.</Description>
+        <AddonId>A40C51A65DBA71310</AddonId>
+        <IsPassive>False</IsPassive>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>32</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Hidden Path</Name>
+      <Icon>druid-hidden_path</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>32</RequiredLevel>
+        <AbilityId>1104820851</AbilityId>
+        <Description>Removes all Curses, Diseases, and Poisons from the Cleric and the Cleric&apos;s pet.</Description>
+        <AddonId>A41DA3A7379075728</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>45.000004</Cooldown>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>26</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Essence Strike</Name>
+      <Icon>smite4a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>26</RequiredLevel>
+        <AbilityId>1240865605</AbilityId>
+        <Description>Deals 1164 to 1287 Life damage. Refreshes the Cleric&apos;s active Eruption of Life on the enemy.</Description>
+        <AddonId>A49F61B45AAD84F4E</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>10.000000</Cooldown>
+        <MaxRange>3.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">1.600000</PowerStatCoefficient>
+        <WeaponDamageMultiplier effect="0" action="0">0.000000E+000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>16</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Fae Step</Name>
+      <Icon>shadow_shift_c</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>16</RequiredLevel>
+        <AbilityId>1298500173</AbilityId>
+        <Description>Teleports to the enemy.</Description>
+        <AddonId>A4D658A4D8EFB4B82</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>15.000001</Cooldown>
+        <MaxRange>20.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>20</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Notion Theft</Name>
+      <Icon>paragon_feint</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>20</RequiredLevel>
+        <AbilityId>1322964650</AbilityId>
+        <Description>Interrupts.</Description>
+        <AddonId>A4EDAD6AA6FC94EE4</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>10.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>16</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Grim Silence</Name>
+      <Icon>druid-grim_silence</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>16</RequiredLevel>
+        <AbilityId>1473690023</AbilityId>
+        <Description>Interrupts and Debilitates the enemy for 5s.</Description>
+        <AddonId>A57D6B9A76FDC3CA1</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>24</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Fae Dispersion</Name>
+      <Icon>energyburst5</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>24</RequiredLevel>
+        <AbilityId>1484879043</AbilityId>
+        <Description>Toggleable. Reduces the Greater Faerie Seer&apos;s damage done by 40%, but causes all of her damaging spells to apply to up to 5 enemies. Reduces the Greater Faerie Healer&apos;s healing done by 40%, but causes all of her heals to apply to up to 5 party or raid members.</Description>
+        <AddonId>A588174C32E5A52B4</AddonId>
+        <IsPassive>False</IsPassive>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>28</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Fury of the Fae</Name>
+      <Icon>riftstalker_rift_scavenger_01_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>28</RequiredLevel>
+        <AbilityId>1509914339</AbilityId>
+        <Description>Increases Attack Power and Spell Power by 225 of the Cleric and their pet.</Description>
+        <AddonId>A59FF76E3A9671B6B</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Summon: Faerie Healer</Name>
+      <Icon>druid-summon_faerie</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1555396489</AbilityId>
+        <Description>Summons a Faerie Healer (max level 30). Best used for Healing.</Description>
+        <AddonId>A5CB577899A4B6841</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>8.000000</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>41</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Resounding Blow</Name>
+      <Icon>holysweep4d</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>41</RequiredLevel>
+        <AbilityId>1640277529</AbilityId>
+        <Description>Deals 1341 to 1482 damage. Increases damage done by the Cleric&apos;s next damaging ability, within 10s, by 50%.</Description>
+        <AddonId>A61C4A619989EAE62</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>15.000001</Cooldown>
+        <MaxRange>3.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">2.000000</PowerStatCoefficient>
+        <WeaponDamageMultiplier effect="0" action="0">0.000000E+000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>11</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Slumber</Name>
+      <Icon>ressurect4bl</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>11</RequiredLevel>
+        <AbilityId>1662193998</AbilityId>
+        <Description>Puts the enemy to Sleep for 10s.</Description>
+        <AddonId>A6313114E97439373</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>10.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>4</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Combined Effort</Name>
+      <Icon>intervene2</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>4</RequiredLevel>
+        <AbilityId>1673825006</AbilityId>
+        <Description>Deals 1341 to 1482 damage. Buffs the Cleric for 15s, causing their single target damaging abilities to increase damage taken from the Cleric and the Cleric&apos;s pet by 5% for 5s.</Description>
+        <AddonId>A63C48AEE7A1B7FF4</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>15.000001</Cooldown>
+        <MaxRange>3.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">2.000000</PowerStatCoefficient>
+        <WeaponDamageMultiplier effect="0" action="0">0.000000E+000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>40</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Strength of the Fae</Name>
+      <Icon>druid-strength_of_the_fae</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>40</RequiredLevel>
+        <AbilityId>2106973498</AbilityId>
+        <Description>Reduces damage taken by 50% on both the Cleric and the Cleric&apos;s pet for 10s.</Description>
+        <AddonId>A7D95DD3A78D912A7</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>120.000008</Cooldown>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>10.000000</Duration>
+      </AbilityRank>
+    </Ability>
+  </Abilities>
+</SoulTree>
+

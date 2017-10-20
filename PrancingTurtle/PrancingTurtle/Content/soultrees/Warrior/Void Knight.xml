@@ -1,0 +1,1499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SoulTree calling="Warrior" name="Void Knight">
+  <Traits>
+    <Trait>
+      <Key>0</Key>
+      <Name>Quality Care</Name>
+      <Icon>invigorate1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1487315437</AbilityId>
+          <Description></Description>
+          <AddonId>A58A6A1ED00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>When receiving a single target heal, you have a 10% chance of gaining a Pact.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>When receiving a single target heal, you have a 20% chance of gaining a Pact.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>When receiving a single target heal, you have a 30% chance of gaining a Pact.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>1</Key>
+      <Name>Surge</Name>
+      <Icon>berserk4a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1947595151</AbilityId>
+          <Description></Description>
+          <AddonId>A7415F18F00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Generates additional threat to up to 10 nearby enemies based on Endurance whenever a Pact is gained.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>2</Key>
+      <Name>Empowered Armor</Name>
+      <Icon>curse_of_solitude</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-13339340</AbilityId>
+          <Description></Description>
+          <AddonId>AFF34753400000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases Armor by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases Armor by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases Armor by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases Armor by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases Armor by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>3</Key>
+      <Name>Energy Retention</Name>
+      <Icon>rally1a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>469955733</AbilityId>
+          <Description></Description>
+          <AddonId>A1C02F49500000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Attack Power and Weapon Damage by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Attack Power and Weapon Damage by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your Attack Power and Weapon Damage by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your Attack Power and Weapon Damage by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your Attack Power and Weapon Damage by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>4</Key>
+      <Name>Devourer</Name>
+      <Icon>void_knight-void</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1939647797</AbilityId>
+          <Description></Description>
+          <AddonId>A739CAD3574420A01</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the non Spell damage reduction on Void by 2%, and the Spell damage reduction on Void by 4%. Increases outgoing damage by 5%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the non Spell damage reduction on Void by 4%, and the Spell damage reduction on Void by 8%. Increases outgoing damage by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>5</Key>
+      <Name>Magical Affinity</Name>
+      <Icon>riftstalker_great_fortitude_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-84342564</AbilityId>
+          <Description></Description>
+          <AddonId>AFAF908DC00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases all Resists by 1%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases all Resists by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases all Resists by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases all Resists by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases all Resists by 5%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>6</Key>
+      <Name>Efficient Conversion</Name>
+      <Icon>redirect1a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1431739930</AbilityId>
+          <Description></Description>
+          <AddonId>A55569E1A00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Abilities that consume Pacts cost 2 less Power. Pact duration is increased by 5s. </Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Abilities that consume Pacts cost 4 less Power. Pact duration is increased by 10s. </Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Abilities that consume Pacts cost 6 less Power. Pact duration is increased by 15s. </Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>7</Key>
+      <Name>Accord of Resilience</Name>
+      <Icon>voidknight_ravenous_defence_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-73300499</AbilityId>
+          <Description>Enables Guard. Increases Armor by 3%, and Resistances by 9%. Does not stack with Shield of the Hero. Lasts 1h.</Description>
+          <AddonId>AFBA185EDBBEFFD23</AddonId>
+          <IsPassive>False</IsPassive>
+          <CostEnergy>10</CostEnergy>
+          <CastTime>Instant</CastTime>
+          <Duration>3600.000000</Duration>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>8</Key>
+      <Name>Empowerment</Name>
+      <Icon>riftstalker_planar_refuge_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-75527429</AbilityId>
+          <Description></Description>
+          <AddonId>AFB7F8AFB00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases Base Health by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases Base Health by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases Base Health by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases Base Health by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases Base Health by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>9</Key>
+      <Name>Furious Rage</Name>
+      <Icon>shatter3</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1493185390</AbilityId>
+          <Description>Interrupts.</Description>
+          <AddonId>A5900336E981E3D9F</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Melee Weapon</RequiresWeapon>
+          <Cooldown>8.000000</Cooldown>
+          <MaxRange>20.000000</MaxRange>
+          <CostEnergy>10</CostEnergy>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>10</Key>
+      <Name>Spell Sunder</Name>
+      <Icon>shatter1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1981681650</AbilityId>
+          <Description>Removes 1 Buff. Applies 1 Pact to the Warrior.</Description>
+          <AddonId>A761E0FF2A95D81BF</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Melee Weapon</RequiresWeapon>
+          <Cooldown>10.000000</Cooldown>
+          <MaxRange>35.000000</MaxRange>
+          <CostEnergy>10</CostEnergy>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Unlocks the Spell Sunder ability.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>11</Key>
+      <Name>Destructive Forces</Name>
+      <Icon>surge_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reckless Strike and Ragestorm now deal weapon plus 0.5% of your Attack Power as additional Air damage for each active Pact. Devouring Blow deals 0.5% of your Attack Power for each Attack Point used per Pact as additional Air damage.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reckless Strike and Ragestorm now deal weapon plus 1% of your Attack Power as additional Air damage for each active Pact. Devouring Blow deals 1% of your Attack Power for each Attack Point used per Pact as additional Air damage.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Reckless Strike and Ragestorm now deal weapon plus 1.5% of your Attack Power as additional Air damage for each active Pact. Devouring Blow deals 1.5% of your Attack Power for each Attack Point used per Pact as additional Air damage.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>12</Key>
+      <Name>Spellbreaker</Name>
+      <Icon>magicward4</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1001670511</AbilityId>
+          <Description>Removes 1 Curse. Applies 1 Pact to the Warrior.</Description>
+          <AddonId>A3BB4476FAB8B318F</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>10.000000</Cooldown>
+          <MaxRange>35.000000</MaxRange>
+          <CostEnergy>10</CostEnergy>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Unlocks the Spellbreaker ability.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>13</Key>
+      <Name>Staggering Rage</Name>
+      <Icon>void_knight_staggering_rage_a</Icon>
+      <PrereqTraitKey>9</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Furious Rage debilitates the enemy for 4 seconds on a successful interrupt.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>14</Key>
+      <Name>Rift Summon</Name>
+      <Icon>void_knight-rift_summon</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1949985207</AbilityId>
+          <Description>Teleports the enemy to the Warrior. Roots for 1.5s. Forces the enemy to attack the Warrior for 3s. Awards 1 Attack Point.</Description>
+          <AddonId>A743A69B7C8578E19</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Melee Weapon</RequiresWeapon>
+          <Cooldown>45.000004</Cooldown>
+          <MaxRange>20.000000</MaxRange>
+          <CostEnergy>20</CostEnergy>
+          <GainAttackPoints>1</GainAttackPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Unlocks the Rift Summon ability.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>15</Key>
+      <Name>Residual Absorption</Name>
+      <Icon>magicresist2</Icon>
+      <PrereqTraitKey>12</PrereqTraitKey>
+      <BendType>VerticalToHorizontal</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1614589406</AbilityId>
+          <Description>Reduces damage taken by 15%.</Description>
+          <AddonId>A603CADDED4DEE90B</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces incoming spell damage by 15% for 1.5 seconds after casting Spellbreaker.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reduces incoming spell damage by 15% for 3 seconds after casting Spellbreaker.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>16</Key>
+      <Name>Power Leech</Name>
+      <Icon>souldrain2</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>2047742386</AbilityId>
+          <Description></Description>
+          <AddonId>A7A0E11B200000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>When gaining a pact from Void, Spellbreaker, Spell Sunder or Unstable Reaction you have a 10% chance to gain an additional Pact.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>When gaining a pact from Void, Spellbreaker, Spell Sunder or Unstable Reaction you have a 20% chance to gain an additional Pact.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>When gaining a pact from Void, Spellbreaker, Spell Sunder or Unstable Reaction you have a 30% chance to gain an additional Pact.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>17</Key>
+      <Name>Surging Touch</Name>
+      <Icon>baneful_touch_01_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-60419233</AbilityId>
+          <Description></Description>
+          <AddonId>AFC66135F2E1BA607</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases damage by 5%. Reduces damage taken from Spells by 1%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases damage by 10%. Reduces damage taken from Spells by 2%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>18</Key>
+      <Name>Rift Shield</Name>
+      <Icon>void_knight_rift_shield</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>541541749</AbilityId>
+          <Description>Consume up to 5 Pacts to absorb 636 damage per Pact consumed. Lasts 30s.</Description>
+          <AddonId>A2047457596441A60</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>15.000001</Cooldown>
+          <MaxRange>20.000000</MaxRange>
+          <CostEnergy>20</CostEnergy>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Unlocks the Rift Shield ability.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>19</Key>
+      <Name>Long Reach</Name>
+      <Icon>shadow_assault</Icon>
+      <PrereqTraitKey>14</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-48236023</AbilityId>
+          <Description></Description>
+          <AddonId>AFD1FFA0900000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the range of Summons by 5 meters.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the range of Summons by 10 meters.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>20</Key>
+      <Name>Event Horizon</Name>
+      <Icon>virtuoso_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-48451877</AbilityId>
+          <Description></Description>
+          <AddonId>AFD1CAEDB00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases Absorption value of Absorb shields by 7%. Increases all non Physical damage by 5%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases Absorption value of Absorb shields by 14%. Increases all non Physical damage by 10%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases Absorption value of Absorb shields by 21%. Increases all non Physical damage by 15%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>21</Key>
+      <Name>Refreshing Opportunity</Name>
+      <Icon>energyblast2</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Gaining a Pact has a 10% chance to refresh your Summon abilities.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>22</Key>
+      <Name>Void Storm</Name>
+      <Icon>void_knight_void_storm_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-19886337</AbilityId>
+          <Description>Consumes up to 3 pacts to deal 741 Air damage modified for each Pact consumed to up to 5 enemies in front of the Warrior.</Description>
+          <AddonId>AFED08EFF763541C5</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Melee Weapon</RequiresWeapon>
+          <Cooldown>8.000000</Cooldown>
+          <CostEnergy>20</CostEnergy>
+          <GainAttackPoints>1</GainAttackPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>23</Key>
+      <Name>Rift Distortion</Name>
+      <Icon>scatter_the_shadows</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-99931944</AbilityId>
+          <Description></Description>
+          <AddonId>AFA0B28D833D23D9F</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the range of Discharge, Spark, Shock, and Unstable Reaction by 5. Reduces damage taken from Spells by 4%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>24</Key>
+      <Name>Protective Shield</Name>
+      <Icon>memory_capture</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-90638658</AbilityId>
+          <Description>Consume 1 Pact each second for a maximum of 6s to Absorb 1271 damage per stack, and awarding 1 Attack Point every 2 seconds. Absorbs last 15s.</Description>
+          <AddonId>AFA98F6BE9B863D37</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Melee Weapon</RequiresWeapon>
+          <Cooldown>60.000004</Cooldown>
+          <CostEnergy>10</CostEnergy>
+          <CastTime>Instant</CastTime>
+          <Duration>5.000000</Duration>
+          <Interval>1.000000</Interval>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>25</Key>
+      <Name>Accord of Shifting</Name>
+      <Icon>shadow_warp</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-2644417</AbilityId>
+          <Description>Movement speed is increased by 10%. Damage taken from spells is reduced by 5%. Lasts 1h.</Description>
+          <AddonId>AFFD7A63F6F4868F5</AddonId>
+          <IsPassive>False</IsPassive>
+          <CostEnergy>10</CostEnergy>
+          <CastTime>Instant</CastTime>
+          <Duration>3600.000000</Duration>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>26</Key>
+      <Name>Ambient Engorgement</Name>
+      <Icon>void_knight-pact_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-74474766</AbilityId>
+          <Description></Description>
+          <AddonId>AFB8F9AF200000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+          <Interval>9.000000</Interval>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Gain a Pact every 9 seconds, and increases the damage of Destructive Forces by 15%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Gain a Pact every 6 seconds, and increases the damage of Destructive Forces by 35%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Gain a Pact every 3 seconds, and increases the damage of Destructive Forces by 50%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>27</Key>
+      <Name>Void Summon</Name>
+      <Icon>void_knight-improved_rift_summon</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>40</MinimumPointsSpent>
+      <DisplayRow>8</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-59425144</AbilityId>
+          <Description>Teleports up to 5 enemies near the targeted enemy to the Warrior. Roots affected enemies for 1.5s. Forces affected enemies to attack the Warrior for 3s. Awards 1 Attack Point.</Description>
+          <AddonId>AFC753E885FFD10F9</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Melee Weapon</RequiresWeapon>
+          <Cooldown>45.000004</Cooldown>
+          <MaxRange>20.000000</MaxRange>
+          <CostEnergy>20</CostEnergy>
+          <GainAttackPoints>1</GainAttackPoints>
+          <CastTime>Instant</CastTime>
+          <Radius>7.000000</Radius>
+          <MaxAffected>5</MaxAffected>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>28</Key>
+      <Name>Devouring Shield</Name>
+      <Icon>fire_death_attunement_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-32728897</AbilityId>
+          <Description>Absorbs 2480 damage.</Description>
+          <AddonId>AFE0C98BF643522F7</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>120.000008</Cooldown>
+          <CostEnergy>10</CostEnergy>
+          <CastTime>Instant</CastTime>
+          <PowerStatCoefficient effect="0" action="0">2.640000</PowerStatCoefficient>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Unlocks the Devouring Shield ability.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+  </Traits>
+  <Abilities>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Protective Shield</Name>
+      <Icon>memory_capture</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-90638658</AbilityId>
+        <Description>Consume 1 Pact each second for a maximum of 6s to Absorb 1271 damage per stack, and awarding 1 Attack Point every 2 seconds. Absorbs last 15s.</Description>
+        <AddonId>AFA98F6BE9B863D37</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>60.000004</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <Duration>5.000000</Duration>
+        <Interval>1.000000</Interval>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>58</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Accord of the Rift</Name>
+      <Icon>riftstalker_planar_repulsion_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>57</RequiredLevel>
+        <AbilityId>-74789625</AbilityId>
+        <Description>Increases incoming healing effectiveness by 10%, and outgoing damage by 20%. Grants the effects of Accord of Power, Accord of Resilience, and Accord of Shifting. Lasts 1h. </Description>
+        <AddonId>AFB8ACD07C6DCC381</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Accord of Resilience</Name>
+      <Icon>voidknight_ravenous_defence_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-73300499</AbilityId>
+        <Description>Enables Guard. Increases Armor by 3%, and Resistances by 9%. Does not stack with Shield of the Hero. Lasts 1h.</Description>
+        <AddonId>AFBA185EDBBEFFD23</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <Duration>3600.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>24</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Shock</Name>
+      <Icon>ruthless_stalker</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>24</RequiredLevel>
+        <AbilityId>-72701631</AbilityId>
+        <Description>Debilitates for 5s.</Description>
+        <AddonId>AFBAAA9410F39C3D7</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <Duration>5.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Void Summon</Name>
+      <Icon>void_knight-improved_rift_summon</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-59425144</AbilityId>
+        <Description>Teleports up to 5 enemies near the targeted enemy to the Warrior. Roots affected enemies for 1.5s. Forces affected enemies to attack the Warrior for 3s. Awards 1 Attack Point.</Description>
+        <AddonId>AFC753E885FFD10F9</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>45.000004</Cooldown>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>20</CostEnergy>
+        <GainAttackPoints>1</GainAttackPoints>
+        <CastTime>Instant</CastTime>
+        <Radius>7.000000</Radius>
+        <MaxAffected>5</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>54</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Spell Destruction</Name>
+      <Icon>discombobulate1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>53</RequiredLevel>
+        <AbilityId>-42981935</AbilityId>
+        <Description>Creates a field of negative energy which removes 1 Buff from up to 5 enemies, and 1 Poison, Curse or Disease from up to 5 allies each second for 3s.</Description>
+        <AddonId>AFD7025D154FB9967</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <Duration>3.000000</Duration>
+        <Interval>1.000000</Interval>
+        <Radius>7.000000</Radius>
+        <MaxAffected>5</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>61</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Unstable Void</Name>
+      <Icon>rogue_shadow_shift</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>60</RequiredLevel>
+        <AbilityId>-39284909</AbilityId>
+        <Description>Increases the Warrior&apos;s damage by 20%, in addition to reducing the damage that the Warrior takes by 5%. Increases Base Health by 5%. Gives the effect of Void. Lasts 1h. </Description>
+        <AddonId>AFDA88F536BE268ED</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>11</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <Duration>3600.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Devouring Shield</Name>
+      <Icon>fire_death_attunement_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-32728897</AbilityId>
+        <Description>Absorbs 2480 damage.</Description>
+        <AddonId>AFE0C98BF643522F7</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>120.000008</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">2.640000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>4</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Void Propulsion</Name>
+      <Icon>elemres4b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>4</RequiredLevel>
+        <AbilityId>-28481407</AbilityId>
+        <Description>Hurl the enemy back 15 meters. This ability awards 1 Attack Point.</Description>
+        <AddonId>AFE4D68816C2BD068</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>15.000001</Cooldown>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>20</CostEnergy>
+        <GainAttackPoints>1</GainAttackPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>36</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Accord of Power</Name>
+      <Icon>void_knight-ravenous_strength_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>36</RequiredLevel>
+        <AbilityId>-24685401</AbilityId>
+        <Description>Increases Attack Power and Weapon Contribution by 40%. Lasts 1h.</Description>
+        <AddonId>AFE8754A74377916A</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <Duration>3600.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>2</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Devouring Blow</Name>
+      <Icon>paralyzing_strike_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>2</RequiredLevel>
+        <AbilityId>-24490029</AbilityId>
+        <Description>Deals Air damage based on Attack Points:
+
+1 Point: 1090 damage.
+2 Points: 1644 damage.
+3 Points: 2483 damage.</Description>
+        <AddonId>AFE8A4FD3871425BB</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>20</CostEnergy>
+        <CostAttackPoints>1</CostAttackPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Void Storm</Name>
+      <Icon>void_knight_void_storm_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-19886337</AbilityId>
+        <Description>Consumes up to 3 pacts to deal 741 Air damage modified for each Pact consumed to up to 5 enemies in front of the Warrior.</Description>
+        <AddonId>AFED08EFF763541C5</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>8.000000</Cooldown>
+        <CostEnergy>20</CostEnergy>
+        <GainAttackPoints>1</GainAttackPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>40</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Rift Reversal</Name>
+      <Icon>shadow_stalk</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>40</RequiredLevel>
+        <AbilityId>-16285523</AbilityId>
+        <Description>Spell ability attacks made against the Warrior are reflected back against the attacker:
+
+1 Point: 1 attack, 12s.
+2 Points: 2 attacks, 12s.
+3 Points: 3 attacks, 12s.</Description>
+        <AddonId>AFF0780AD6C044917</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>120.000008</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <CostAttackPoints>1</CostAttackPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>51</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Power Shield</Name>
+      <Icon>rally1a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>50</RequiredLevel>
+        <AbilityId>-15360549</AbilityId>
+        <Description>Consume up to 5 Pacts to reduce incoming damage by 4% per pact consumed for 4s. Adds an absorption shield that absorbs 66 damage per Pact consumed, on up to 5 party or raid members. Lasts 30s. Does not stack with Shield Defense or Crest of Entropy.</Description>
+        <AddonId>AFF159DDBC3BD23F6</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <CostEnergy>22</CostEnergy>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Accord of Shifting</Name>
+      <Icon>shadow_warp</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-2644417</AbilityId>
+        <Description>Movement speed is increased by 10%. Damage taken from spells is reduced by 5%. Lasts 1h.</Description>
+        <AddonId>AFFD7A63F6F4868F5</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <Duration>3600.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>32</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Fusion of Flesh</Name>
+      <Icon>healthchannel3</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>32</RequiredLevel>
+        <AbilityId>8485216</AbilityId>
+        <Description>Absorbs damage equal to 75% of the Warrior&apos;s Maximum Health for 20s.</Description>
+        <AddonId>A008179609E385C6C</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>120.000008</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">0.000000E+000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Void</Name>
+      <Icon>void_knight-void_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>224874144</AbilityId>
+        <Description>Reduces non Spell damage taken by 1%, in addition to reducing Spell damage taken by 3%. Taking ability damage gives a 30% chance to gain a Pact. Lasts 1h.</Description>
+        <AddonId>A0D674EA083DC58F6</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>10.000000</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <Duration>3600.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>16</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Tempest</Name>
+      <Icon>void_knight-tempest</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>16</RequiredLevel>
+        <AbilityId>274863033</AbilityId>
+        <Description>Deals 806 Air damage to up to 10 nearby enemies. Generates significant threat. Awards 1 Attack Point.</Description>
+        <AddonId>A106213B9D7DB0C46</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>5.000000</Cooldown>
+        <CostEnergy>22</CostEnergy>
+        <GainAttackPoints>1</GainAttackPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Rift Shield</Name>
+      <Icon>void_knight_rift_shield</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>541541749</AbilityId>
+        <Description>Consume up to 5 Pacts to absorb 636 damage per Pact consumed. Lasts 30s.</Description>
+        <AddonId>A2047457596441A60</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>15.000001</Cooldown>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>20</CostEnergy>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Gift of the Void Knight</Name>
+      <Icon>soul_voidknight</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>665448778</AbilityId>
+        <Description>Increases Base Health by 1% per point spent in the Void Knight soul. Increases Armor by 1% per point spent in the Void Knight soul. Increases Resistances by 2% per point spent in the Void Knight soul. Base Damage is increased by 0.5% for each Point spent in the Void Knight Soul.</Description>
+        <AddonId>A27A9F14A5DF2513A</AddonId>
+        <IsPassive>True</IsPassive>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>32</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Impunity</Name>
+      <Icon>cautious_stalker</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>32</RequiredLevel>
+        <AbilityId>752045550</AbilityId>
+        <Description>Shields the ally, intercepting 50% of the damage they receive, and replacing the ally&apos;s Toughness with the Warrior&apos;s, for 6s. An ally can only be affected by a tank soul damage intercept once every 2 minutes.</Description>
+        <AddonId>A2CD34DEE57DFCC90</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <Duration>6.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>8</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Spark</Name>
+      <Icon>spiritblast3</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>8</RequiredLevel>
+        <AbilityId>867457943</AbilityId>
+        <Description>Forces the enemy to attack the Warrior for 3s.</Description>
+        <AddonId>A33B45B97DC6A0829</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>8.000000</Cooldown>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Spellbreaker</Name>
+      <Icon>magicward4</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1001670511</AbilityId>
+        <Description>Removes 1 Curse. Applies 1 Pact to the Warrior.</Description>
+        <AddonId>A3BB4476FAB8B318F</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>10.000000</Cooldown>
+        <MaxRange>35.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>20</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Airburst</Name>
+      <Icon>energyburst5</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>20</RequiredLevel>
+        <AbilityId>1171233828</AbilityId>
+        <Description>Forces up to 10 enemies to attack the Warrior for 3s.</Description>
+        <AddonId>A45CF9C24C5AC1997</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>20.000000</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <Radius>10.000000</Radius>
+        <MaxAffected>10</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>28</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Ragestorm</Name>
+      <Icon>elemres4</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>28</RequiredLevel>
+        <AbilityId>1349214407</AbilityId>
+        <Description>Deals weapon plus 1209 to 1337 Air damage to up to 5 enemies. Consumes up to 3 pacts. Awards 1 Attack Point.</Description>
+        <AddonId>A506B60C78F712F5F</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>22</CostEnergy>
+        <GainAttackPoints>1</GainAttackPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>12</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Discharge</Name>
+      <Icon>layonhands2z</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>12</RequiredLevel>
+        <AbilityId>1433238237</AbilityId>
+        <Description>Consumes up to 3 pacts to deal 741 Air damage modified for each Pact consumed. Awards 1 Attack Point.</Description>
+        <AddonId>A556D7ADD948BA35B</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>5.000000</Cooldown>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>20</CostEnergy>
+        <GainAttackPoints>1</GainAttackPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Furious Rage</Name>
+      <Icon>shatter3</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1493185390</AbilityId>
+        <Description>Interrupts.</Description>
+        <AddonId>A5900336E981E3D9F</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>8.000000</Cooldown>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>40</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Void Presence</Name>
+      <Icon>dominator_draining_presence_01_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>40</RequiredLevel>
+        <AbilityId>1563091889</AbilityId>
+        <Description>Damaging abilities generate additional threat based off of the Warrior&apos;s Endurance.</Description>
+        <AddonId>A5D2AE3B194A1B01C</AddonId>
+        <IsPassive>True</IsPassive>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>48</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Unstable Reaction</Name>
+      <Icon>energybeam2a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>48</RequiredLevel>
+        <AbilityId>1588733846</AbilityId>
+        <Description>Deals Air damage to up to 5 enemies in a chain for up to 6s. Generates 1 pact every second:
+
+1 Point: 4477 damage.
+2 Points: 6850 damage.
+3 Points: 10435 damage.</Description>
+        <AddonId>A5EB22796DA3AAD1D</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>15.000001</Cooldown>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>22</CostEnergy>
+        <CostAttackPoints>1</CostAttackPoints>
+        <CastTime>Instant</CastTime>
+        <Channel>true</Channel>
+        <Duration>6.000000</Duration>
+        <Interval>1.000000</Interval>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>44</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Shock Burst</Name>
+      <Icon>ward1zz</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>44</RequiredLevel>
+        <AbilityId>1620250941</AbilityId>
+        <Description>Debilitates up to 5 enemies for 8s.</Description>
+        <AddonId>A6093113D9440BAD8</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>30.000002</Cooldown>
+        <CostEnergy>11</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <Radius>7.000000</Radius>
+        <MaxAffected>5</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Rift Summon</Name>
+      <Icon>void_knight-rift_summon</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1949985207</AbilityId>
+        <Description>Teleports the enemy to the Warrior. Roots for 1.5s. Forces the enemy to attack the Warrior for 3s. Awards 1 Attack Point.</Description>
+        <AddonId>A743A69B7C8578E19</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>45.000004</Cooldown>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>20</CostEnergy>
+        <GainAttackPoints>1</GainAttackPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Reckless Strike</Name>
+      <Icon>swiftstrike1a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1973816291</AbilityId>
+        <Description>Deals 1248 to 1380 Physical damage. Awards 1 Attack Point.</Description>
+        <AddonId>A75A60BE3C8E3EAA7</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>20</CostEnergy>
+        <GainAttackPoints>1</GainAttackPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Spell Sunder</Name>
+      <Icon>shatter1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1981681650</AbilityId>
+        <Description>Removes 1 Buff. Applies 1 Pact to the Warrior.</Description>
+        <AddonId>A761E0FF2A95D81BF</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>10.000000</Cooldown>
+        <MaxRange>35.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Building Fury</Name>
+      <Icon>carpet_bombing_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1988589265</AbilityId>
+        <Description>Finishers gain a bonus to Attack Power contribution based on how many Attack Points were consumed.</Description>
+        <AddonId>A768776D17CF516B9</AddonId>
+        <IsPassive>True</IsPassive>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+  </Abilities>
+</SoulTree>
+

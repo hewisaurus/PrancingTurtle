@@ -1,0 +1,12 @@
+﻿@model string
+@{
+    ViewBag.Title = "Guild Created!";
+}
+
+<h2>@ViewBag.Title</h2>
+<div>
+    <p>Your guild has been created, but requires approval before logs can be uploaded.
+        Approval requires proof, in the form of one or more screenshots, that you hold the rank of Officer, or higher, within the guild that you have just created.</p><br/>
+    <p>Please send the screenshots to <b>hewi@prancingturtle.com</b> with @Html.Raw(string.Format("'<b>Guild Approval - {0}</b>'", Model)) as the subject.</p><br />
+    <p><b>Why require approval?</b> Forcing approval ensures that your guild name won't be reserved and used by unauthorized players.</p>
+</div>

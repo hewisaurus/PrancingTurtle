@@ -1,0 +1,91 @@
+﻿@model PrancingTurtle.Models.ViewModels.BossFight.RankPlayerGuildType
+
+<div class="table-responsive">
+    <table class="table table-condensed table-hover">
+        @if (!Model.Players.Any())
+        {
+            <tr>
+                <td>
+                    <span class="text-warning">No records to show!</span>
+                </td>
+            </tr>
+        }
+        else
+        {
+            var i = 1;
+            foreach (var topRecord in Model.Players)
+            {
+                <tr>
+                    <td width="33">
+                        @if (i == 1)
+                        {
+                            <span class="text-success"><b>#@i</b></span>
+                        }
+                        else if (i <= 5)
+                        {
+                            <span class="text-warning"><b>#@i</b></span>
+                        }
+                        else
+                        {
+                            <span>#@i</span>
+                        }
+
+                    </td>
+                    <td width="26">
+                        @if (topRecord.Guild != null)
+                        {
+                            <i class="fa fa-user text-info" title="@topRecord.Guild.Name"></i>
+                        }
+                    </td>
+                    <td>
+                        @if (topRecord.Guild != null)
+                        {
+                            if (Model.ShowShardName)
+                            {
+                                <span class="@topRecord.DisplayColorClass" title="@topRecord.Guild.Name">@topRecord.Player.DisplayName</span>
+                            }
+                            else
+                            {
+                                <span class="@topRecord.DisplayColorClass" title="@topRecord.Guild.Name">@topRecord.Player.Name</span>
+                            }
+                        }
+                        else
+                        {
+                            if (Model.ShowShardName)
+                            {
+                                <span class="@topRecord.DisplayColorClass">@topRecord.Player.DisplayName</span>
+                            }
+                            else
+                            {
+                                <span class="@topRecord.DisplayColorClass">@topRecord.Player.Name</span>
+                            }
+                        }
+
+                    </td>
+                    <td width="73" style="text-align: right;">
+                        @Html.ActionLink(topRecord.Value.ToString(), Model.DestinationAction, "Encounter", new { @id = topRecord.EncounterId }, null)
+                    </td>
+                    @*@if (topRecord.EncounterPublic)
+                    {
+                        <td>
+                            <i class="fa fa-unlock"></i>
+                        </td>
+                        <td>
+                            @Html.ActionLink(topRecord.Value.ToString(), Model.DestinationAction, "Encounter", new { @id = topRecord.EncounterId }, null)
+                        </td>
+                    }
+                    else
+                    {
+                        <td>
+                            <i class="fa fa-lock" title="This encounter has been set to private"></i>
+                        </td>
+                        <td>
+                            @topRecord.Value
+                        </td>
+                    }*@
+                </tr>
+                    i++;
+            }
+        }
+    </table>
+</div>

@@ -1,0 +1,49 @@
+﻿@model Database.Models.BossFight
+
+@{
+    ViewBag.Title = "Create BossFight";
+}
+
+<div class="row">
+    <div class="col-lg-6">
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <h3 class="panel-title">Create a new BossFight</h3>
+            </div>
+            @using (Html.BeginForm("Create", "BossFight", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal" }))
+            {
+                <div class="panel-body">
+                    @Html.AntiForgeryToken()
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Name, new { @class = "col-md-3 control-label" })
+                        <div class="col-md-9">
+                            @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.Name, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.InstanceId, new { @class = "col-md-3 control-label" })
+                        <div class="col-md-9">
+                            @Html.DropDownListFor(m => m.InstanceId, new SelectList(Model.Instances, "Id", "Name", Model.InstanceId), new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.InstanceId, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.RequiresSpecialProcessing, new { @class = "col-md-3 control-label" })
+                        <div class="col-md-9">
+                            @Html.CheckBoxFor(m => m.RequiresSpecialProcessing)
+                            @Html.ValidationMessageFor(m => m.RequiresSpecialProcessing, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <input type="submit" value="Create" class="btn btn-success" />
+                </div>
+            }
+        </div>
+    </div>
+</div>

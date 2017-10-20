@@ -1,0 +1,510 @@
+﻿@using System.CodeDom
+@using System.Globalization
+@using Database.Models
+@using Microsoft.AspNet.Identity
+@using Common
+@using PrancingTurtle.Helpers
+@model PrancingTurtle.Models.ViewModels.Guild.GuildIndexVM
+
+@{
+    ViewBag.Title = string.Format("Guild: {0}", Model.Guild.Name);
+}
+
+<br />
+
+<div class="container-fluid">
+    <div class="row">
+        @if (Model.IsMember && Model.GuildRank.CanModifyPrivacy)
+        {
+            <div class="col-lg-4 col-lg-offset-2">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Guild Details</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="dd-dt-rep">
+                            <div class="col-lg-4">
+                                <b>Guild Name</b>
+                            </div>
+                            <div class="col-lg-8">@Model.Guild.Name</div>
+                        </div>
+
+                        <div class="dd-dt-rep">
+                            <div class="col-lg-4">
+                                <b>Status</b>
+                            </div>
+                            <div class="col-lg-8">
+                                @Model.Guild.Status.Name
+                                @if (Model.CanBeApproved)
+                                {
+                                    @Html.Raw(" | ")
+                                    <b>@Html.ActionLink("Approve", "Approve", new { id = Model.Guild.Id }, new { @class = "text-info" })</b>
+                                }
+                                @if (Model.CanBeRemoved)
+                                {
+                                    @Html.Raw(" | ")
+                                    <b>@Html.ActionLink("Remove", "Remove", new { id = Model.Guild.Id }, new { @class = "text-danger" })</b>
+                                }
+                            </div>
+                        </div>
+
+                        <div class="dd-dt-rep">
+                            <div class="col-lg-4">
+                                <b>
+                                    Shard
+                                </b>
+                            </div>
+                            <div class="col-lg-8">
+                                @Model.Guild.Shard.DisplayName
+                            </div>
+                        </div>
+
+                        <div class="dd-dt-rep">
+                            <div class="col-lg-4">
+                                <b>
+                                    Registered Members
+                                </b>
+                            </div>
+                            <div class="col-lg-8">
+                                @Model.Members
+                            </div>
+                        </div>
+
+                        <div class="dd-dt-rep">
+                            <div class="col-lg-4">
+                                <b>
+                                    Uploaded Sessions
+                                </b>
+                            </div>
+                            <div class="col-lg-8">
+                                @if (Model.Sessions > 0 && Model.CanLinkToSessions)
+                                {
+                                    <b>@Html.ActionLink(Model.Sessions.ToString(CultureInfo.InvariantCulture), "Guild", "Session", new { @id = Model.Guild.Id }, new { @class = "text-success" })</b>
+                                }
+                                else
+                                {
+                                    @Model.Sessions
+                                }
+                            </div>
+                        </div>
+
+                        <div class="dd-dt-rep">
+                            <div class="col-lg-4">
+                                <b>
+                                    Total Encounters
+                                </b>
+                            </div>
+                            <div class="col-lg-8">
+                                @Model.Encounters
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Guild Privacy</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="dd-dt-rep">
+                            <div class="col-lg-5">
+                                <b>Visibiliy in Lists</b>
+                            </div>
+                            <div class="col-lg-7">
+                                @if (Model.Guild.HideFromLists)
+                                {
+                                    @Html.Raw("Currently private | ")
+                                    @Html.ActionLink("Make public", "SetListsPublic", "Guild", new { @id = Model.Guild.Id }, new { @class = "btn btn-xs btn-success" })
+                                }
+                                else
+                                {
+                                    @Html.Raw("Currently public | ")
+                                    @Html.ActionLink("Make private", "SetListsPrivate", "Guild", new { @id = Model.Guild.Id }, new { @class = "btn btn-xs btn-danger" })
+                                }
+                            </div>
+                        </div>
+                        <div class="dd-dt-rep">
+                            <div class="col-lg-5">
+                                <b>Visibility in Rankings</b>
+                            </div>
+                            <div class="col-lg-7">
+                                @if (Model.Guild.HideFromRankings)
+                                {
+                                    @Html.Raw("Currently private | ")
+                                    @Html.ActionLink("Make public", "SetRankingsPublic", "Guild", new { @id = Model.Guild.Id }, new { @class = "btn btn-xs btn-success" })
+                                }
+                                else
+                                {
+                                    @Html.Raw("Currently public | ")
+                                    @Html.ActionLink("Make private", "SetRankingsPrivate", "Guild", new { @id = Model.Guild.Id }, new { @class = "btn btn-xs btn-danger" })
+                                }
+                            </div>
+                        </div>
+                        <div class="dd-dt-rep">
+                            <div class="col-lg-5">
+                                <b>Visibility in Search</b>
+                            </div>
+                            <div class="col-lg-7">
+                                @if (Model.Guild.HideFromSearch)
+                                {
+                                    @Html.Raw("Currently private | ")
+                                    @Html.ActionLink("Make public", "SetSearchPublic", "Guild", new { @id = Model.Guild.Id }, new { @class = "btn btn-xs btn-success" })
+                                }
+                                else
+                                {
+                                    @Html.Raw("Currently public | ")
+                                    @Html.ActionLink("Make private", "SetSearchPrivate", "Guild", new { @id = Model.Guild.Id }, new { @class = "btn btn-xs btn-danger" })
+                                }
+                            </div>
+                        </div>
+                        <div class="dd-dt-rep">
+                            <div class="col-lg-5">
+                                <b>Guild Roster</b>
+                            </div>
+                            <div class="col-lg-7">
+                                @if (Model.Guild.HideRoster)
+                                {
+                                    @Html.Raw("Currently private | ")
+                                    @Html.ActionLink("Make public", "SetRosterPublic", "Guild", new { @id = Model.Guild.Id }, new { @class = "btn btn-xs btn-success" })
+                                }
+                                else
+                                {
+                                    @Html.Raw("Currently public | ")
+                                    @Html.ActionLink("Make private", "SetRosterPrivate", "Guild", new { @id = Model.Guild.Id }, new { @class = "btn btn-xs btn-danger" })
+                                }
+                            </div>
+                        </div>
+                        <div class="dd-dt-rep">
+                            <div class="col-lg-5">
+                                <b>Session Visibility</b>
+                            </div>
+                            <div class="col-lg-7">
+                                @if (Model.Guild.HideSessions)
+                                {
+                                    @Html.Raw("Currently private | ")
+                                    @Html.ActionLink("Make public", "SetSessionsPublic", "Guild", new { @id = Model.Guild.Id }, new { @class = "btn btn-xs btn-success" })
+                                }
+                                else
+                                {
+                                    @Html.Raw("Currently public | ")
+                                    @Html.ActionLink("Make private", "SetSessionsPrivate", "Guild", new { @id = Model.Guild.Id }, new { @class = "btn btn-xs btn-danger" })
+                                }
+                            </div>
+                        </div>
+                        <div class="dd-dt-rep">
+                            <div class="col-lg-5">
+                                <b>Progression Visibility</b>
+                            </div>
+                            <div class="col-lg-7">
+                                @if (Model.Guild.HideProgression)
+                                {
+                                    @Html.Raw("Currently private | ")
+                                    @Html.ActionLink("Make public", "SetProgressionPublic", "Guild", new { @id = Model.Guild.Id }, new { @class = "btn btn-xs btn-success" })
+                                }
+                                else
+                                {
+                                    @Html.Raw("Currently public | ")
+                                    @Html.ActionLink("Make private", "SetProgressionPrivate", "Guild", new { @id = Model.Guild.Id }, new { @class = "btn btn-xs btn-danger" })
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+        else
+        {
+            <div class="col-lg-8 col-centered">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Guild Details</h3>
+                    </div>
+                    <div class="panel-body">
+
+                        <div class="dd-dt-rep">
+                            <div class="col-lg-2 col-lg-offset-1">
+                                <b>Guild Name</b>
+                            </div>
+                            <div class="col-lg-9">@Model.Guild.Name</div>
+                        </div>
+
+                        <div class="dd-dt-rep">
+                            <div class="col-lg-2 col-lg-offset-1">
+                                <b>Status</b>
+                            </div>
+                            <div class="col-lg-9">
+                                @Model.Guild.Status.Name
+                                @if (Model.CanBeApproved)
+                                {
+                                    @Html.Raw(" | ")
+                                    <b>@Html.ActionLink("Approve", "Approve", new { id = Model.Guild.Id }, new { @class = "text-info" })</b>
+                                }
+                                @if (Model.CanBeRemoved)
+                                {
+                                    @Html.Raw(" | ")
+                                    <b>@Html.ActionLink("Remove", "Remove", new { id = Model.Guild.Id }, new { @class = "text-danger" })</b>
+                                }
+                            </div>
+                        </div>
+
+                        <div class="dd-dt-rep">
+                            <div class="col-lg-2 col-lg-offset-1">
+                                <b>
+                                    Shard
+                                </b>
+                            </div>
+                            <div class="col-lg-9">
+                                @Model.Guild.Shard.DisplayName
+                            </div>
+                        </div>
+
+                        <div class="dd-dt-rep">
+                            <div class="col-lg-2 col-lg-offset-1">
+                                <b>
+                                    Registered Members
+                                </b>
+                            </div>
+                            <div class="col-lg-9">
+                                @Model.Members
+                            </div>
+                        </div>
+
+                        <div class="dd-dt-rep">
+                            <div class="col-lg-2 col-lg-offset-1">
+                                <b>
+                                    Uploaded Sessions
+                                </b>
+                            </div>
+                            <div class="col-lg-9">
+                                @if (Model.Sessions > 0 && Model.CanLinkToSessions)
+                                {
+                                    <b>@Html.ActionLink(Model.Sessions.ToString(CultureInfo.InvariantCulture), "Guild", "Session", new { @id = Model.Guild.Id }, new { @class = "text-success" })</b>
+                                }
+                                else
+                                {
+                                    @Model.Sessions
+                                }
+                            </div>
+                        </div>
+
+                        <div class="dd-dt-rep">
+                            <div class="col-lg-2 col-lg-offset-1">
+                                <b>
+                                    Total Encounters
+                                </b>
+                            </div>
+                            <div class="col-lg-9">
+                                @Model.Encounters
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+
+    </div>
+    @if (Model.IsMember || !Model.Guild.HideRoster)
+    {
+        @* Guild Roster *@
+        <div class="row">
+            <div class="col-lg-8 col-centered">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Guild Members</h3>
+                    </div>
+                    <div class="panel-body">
+                        <table class="table table-responsive table-striped">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Name</th>
+                                    <th>Current Rank</th>
+                                    @if ((Model.GuildRank.CanPromoteUsers && Model.MemberList.Count > 1) || User.IsInRole(UserGroups.Admin))
+                                    {
+                                        <th colspan="3" class="text-center">Modify guild rank for character</th>
+                                    }
+                                    else
+                                    {
+                                        <th colspan="3"></th>
+                                    }
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var member in Model.MemberList)
+                                {
+                                    <tr>
+                                        @if (((Model.GuildRank.CanPromoteUsers && Model.MemberList.Count > 1) || User.IsInRole(UserGroups.Admin)) && member.CanBeModified)
+                                        {
+                                            <td>@Html.ImageActionLink("KickMember", "Guild", new { id = member.Id, gid = member.GuildId }, "text-danger", "fa fa-lg fa-ban")</td>
+                                        }
+                                        else
+                                        {
+                                            <td></td>
+                                        }
+                                        <td>@member.CharacterName</td>
+                                        <td>@member.GuildRank.Name</td>
+                                        @if (((Model.GuildRank.CanPromoteUsers && Model.MemberList.Count > 1) || User.IsInRole(UserGroups.Admin)) && member.CanBeModified)
+                                        {
+                                            foreach (var rank in Model.AvailableRanks.OrderBy(r => r.RankPriority))
+                                            {
+                                                <td class="text-center">
+                                                    @if (rank.RankPriority != member.GuildRank.RankPriority)
+                                                    {
+                                                        if (member.GuildRank.CanPromoteUsers)
+                                                        {
+                                                            // Make sure we pop open a confirmation dialog, we're removing a lot of permissions if we click this!
+                                                            @Html.ActionLink(string.Format("Make {0}", rank.Name), "ChangeRank",
+                                                                new { u = member.Id, g = Model.Guild.Id, r = rank.Id },
+                                                                new { @class = "smalltrpad", onclick = "return confirm('Are you sure you want to do this? This action will prevent this character from being able to promote members or accept applications!');" })
+
+                                                        }
+                                                        else
+                                                        {
+                                                            @Html.ActionLink(string.Format("Make {0}", rank.Name), "ChangeRank",
+                                                                new { u = member.Id, g = Model.Guild.Id, r = rank.Id },
+                                                                new { @class = "smalltrpad" })
+                                                        }
+
+                                                    }
+                                                    else
+                                                    {
+                                                        @Html.Raw(string.Format("<span class=\"text-info\">{0}</span>", rank.Name))
+                                                    }
+                                                </td>
+                                            }
+
+                                            @*<td class="text-danger">@Html.ActionLink("Kick from guild", "KickPlayer", "Guild", new { id = member.Id, gid = member.GuildId }, new { @class="text-danger"})</td>*@
+                                        }
+                                        else
+                                        {
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        }
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+    @if (Model.IsMember && Model.GuildRank.CanApproveUsers)
+    {
+        @* Guild Applications *@
+        if (Model.Applications.Any())
+        {
+            <div class="row">
+                <div class="col-lg-8 col-centered">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Pending Applications</h3>
+                        </div>
+                        <div class="panel-body">
+                            <p>The following users have pending applications to join this guild:</p>
+                            <table class="table table-responsive table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Character</th>
+                                        <th>Message</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var app in Model.Applications)
+                                    {
+                                        <tr>
+                                            <td>@app.Character.CharacterName</td>
+                                            <td>@app.Message</td>
+                                            <td>@Html.ActionLink("Approve", "ApproveApp", new { @id = app.Id }) | @Html.ActionLink("Decline", "DeclineApp", new { @id = app.Id })</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+    @if (Model.IsMember || !Model.Guild.HideProgression)
+    {
+        if (Model.BossFightProgression.Any())
+        {
+            <div class="row">
+                <div class="col-lg-8 col-centered">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Raid Progression</h3>
+                        </div>
+                        <div class="panel-body">
+                            <h4>If an encounter has a number next to it, such as #1 or #10, that represents this guild holds the the n<sup>th</sup> fastest kill time, not the n<sup>th</sup> best parse by kill time by guild.</h4>
+                            <h5>For example, if guild A has killed encounter B in 5:30 and 5:31 and this guild has killed encounter B with a fastest time of 5:35, then the rank will be #3.</h5>
+                            @foreach (var instanceGroup in Model.BossFightProgression.GroupBy(bf => new {bf.InstanceName, bf.InstanceId}))
+                            {
+                                <div class="col-lg-12">
+                                    <div class="row">
+                                        <h4 class="text-info">
+                                            <b>
+                                                @instanceGroup.Key.InstanceName
+                                                @*@Html.Raw("(")*@
+                                                @{ var strList = new List<string>();}
+                                                @foreach (var difficultyGroup in instanceGroup.GroupBy(ig => new {ig.DifficultyId, ig.DifficultyShortName}))
+                                                {
+                                                    strList.Add(string.Format(
+                                                        "{0}/{1} {2}",
+                                                        difficultyGroup.Count(d => d.InstanceName == instanceGroup.Key.InstanceName && d.Killed),
+                                                        difficultyGroup.Count(d => d.InstanceName == instanceGroup.Key.InstanceName),
+                                                        difficultyGroup.Key.DifficultyShortName));
+                                                }
+                                                @if (strList.Count > 1)
+                                                {
+                                                    @Html.Raw("(" + string.Join(", ", strList) + ")")
+                                                }
+                                                else
+                                                {
+                                                    @Html.Raw("(" + strList[0].Trim() + ")")
+                                                }
+                                            </b>
+                                        </h4>
+                                        @*<a class="btn btn-success" href="#">
+                                                @bossFightGroup.Key
+                                            </a>*@
+                                    </div>
+                                    @foreach (var difficultyGroup in instanceGroup.GroupBy(ig => new {ig.DifficultyId, ig.DifficultyName}))
+                                    {
+                                        <div class="row">
+                                            <b>@difficultyGroup.Key.DifficultyName mode</b>
+                                        </div>
+                                        <div class="row">
+                                            @foreach (var bossFight in difficultyGroup)
+                                            {
+                                                if (bossFight.Killed)
+                                                {
+                                                    <i class="fa fa-check text-success"></i>
+                                                    <b>@Html.ActionLink(bossFight.BossFightName, "Guild", "Records", new {id = bossFight.BossFightId, d = bossFight.DifficultyId, g = Model.Guild.Id}, new {@class = "text-warning"})</b>
+                                                    <span title="@bossFight.BestTime">@Html.Raw(string.Format(" (#{0}) ", bossFight.Rank))</span>
+                                                    @*@bossFight.BossFightName*@
+                                                }
+                                                else
+                                                {
+                                                    <i class="fa fa-times text-danger"></i>
+                                                    @bossFight.BossFightName
+                                                }
+                                            }
+                                        </div>
+                                    }
+                                    <hr/>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+</div>

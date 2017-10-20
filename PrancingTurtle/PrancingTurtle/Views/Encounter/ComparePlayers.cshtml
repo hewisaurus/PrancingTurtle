@@ -1,0 +1,241 @@
+﻿
+@using PrancingTurtle.Models.ViewModels
+@model EncounterComparePlayersViewModel
+
+@{
+    ViewBag.Title = string.Format("{0} ({1})", Model.Encounter.BossFight.Name, Model.Encounter.Duration);
+}
+
+@Html.Partial("_EncounterNav2", new EncounterNav(Model.Encounter.Id,
+    Model.Encounter.BossFight.Name, Model.Encounter.BossFight.Instance.Name,
+    Model.Encounter.Duration, Model.Encounter.SuccessfulKill, Model.Session), new ViewDataDictionary { { "link", "compareplayers" } })
+
+<a name="top">&nbsp;</a>
+
+<div class="container container-fluid">
+    <div class="row">
+        <div class="col-lg-10 col-centered">
+            <div class="bs-callout overview">
+                <h3 class="text-center">@Model.PageTitle</h3>
+                <h4 class="text-center">Encounter: @Model.Encounter.BossFight.Name</h4>
+                <h5 class="text-center">@Html.Raw(string.Format("<b>Date:</b> {0} | <b>Fight Length:</b> {1}", Model.Encounter.Date.Add(Model.TimeZoneOffset), Model.Encounter.Duration))</h5>
+            </div>
+            <hr />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-10 col-centered">
+            <div class="alert alert-warning">
+                <p>Some abilities, such as Auto Attacks, show up as different abilities depending on the weapon(s) you have equipped at the time. This is not a bug.</p>
+            </div>
+            <div class="col-lg-8 col-centered">
+                <h4 class="text-info text-center">Overview</h4>
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered">
+                        <thead>
+                            <tr>
+                                <th class="text-center">Rank</th>
+                                <th class="text-center">Player</th>
+                                <th class="text-center">Damage Dealt</th>
+                                <th class="text-center">Average DPS</th>
+                                <th class="text-center">Crits / Hits / Swings / Crit Rate</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @{
+                                int i = 1;
+                                var rank1Player = Model.PlayersToCompare.OrderByDescending(p => p.DamageBreakdown.Abilities.Sum(a => a.TotalDamage)).First();
+                                
+                            }
+                            @foreach (var item in Model.PlayersToCompare.OrderByDescending(p => p.DamageBreakdown.Abilities.Sum(a => a.TotalDamage)))
+                            {
+                                <tr>
+                                    <td class="text-center">#@i</td>
+                                    <td class="@item.Player.DisplayColorClass text-center"><b>@item.Player.Name</b></td>
+                                    <td class="text-center">@item.DamageBreakdown.Abilities.Sum(a => a.TotalDamage)</td>
+                                    <td class="text-center">@(item.DamageBreakdown.Abilities.Sum(a => a.TotalDamage) / (long)Model.Encounter.Duration.TotalSeconds)</td>
+                                    <td class="text-center">
+                                        @string.Format("{0} / {1} / {2} ({3}%)", item.DamageBreakdown.TotalCrits,
+                                     item.DamageBreakdown.TotalHits,
+                                 item.DamageBreakdown.TotalCrits + item.DamageBreakdown.TotalHits,
+                                        item.DamageBreakdown.TotalCritRate.ToString("#.##"))
+                                    </td>
+                                </tr>
+                                i++;
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <h4 class="text-info text-center">Player damage breakdown</h4><div class="table-responsive">
+                <table class="table table-bordered table-text-small">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th style="width: auto !important;"></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th colspan="3" class="text-center success">NORMAL HITS</th>
+                            <th colspan="4" class="text-center warning">CRITICAL HITS</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        @*<tr>
+                            <th></th>
+                            <th>Ability</th>
+                            <th class="text-center">Total Damage</th>
+                            <th class="text-center">DPS</th>
+                            <th class="text-center">% of total DPS</th>
+                            <th class="text-center">Min Hit</th>
+                            <th class="text-center">Avg Hit</th>
+                            <th class="text-center">Max Hit</th>
+                            <th class="text-center">Min Crit</th>
+                            <th class="text-center">Avg Crit</th>
+                            <th class="text-center">Max Crit</th>
+                            <th class="text-center">Crit Rate</th>
+                            <th class="text-center"><span title="Total number of attacks (non-crit + crit)" class="vmid">Swings</span></th>
+                            <th class="text-center">Hits</th>
+                            <th class="text-center">Crits</th>
+                            <th class="text-center">+/- vs #1</th>
+                        </tr>*@
+                    </thead>
+                    <tbody>
+                    @foreach (var item in Model.AbilityDps.OrderByDescending(a => a.HighestTotalDamage))
+                    {
+                        if (item.HighestTotalDamage == 0)
+                        {
+                            continue;
+                        }
+                        <tr>
+                            <td class="text-right">
+                                @if (!string.IsNullOrEmpty(item.IconPath))
+                                {
+                                    <img src="@string.Format("/Content/icons/SoulAbilities/{0}.jpg", @item.IconPath)" height="28" width="28"/>
+                                }
+                            </td>
+                            <td class="alt-row"><b>@item.Name</b></td>
+                            <td class="text-center @item.CellClass">@Html.Raw(string.IsNullOrEmpty(item.DamageType) ? "Unknown" : item.DamageType)</td>
+                            <th class="text-center alt-row">Total Damage</th>
+                            <th class="text-center alt-row">DPS</th>
+                            <th class="text-center alt-row">% of total DPS</th>
+                            <th class="text-center alt-row">Min Hit</th>
+                            <th class="text-center alt-row">Avg Hit</th>
+                            <th class="text-center alt-row">Max Hit</th>
+                            <th class="text-center alt-row">Min Crit</th>
+                            <th class="text-center alt-row">Avg Crit</th>
+                            <th class="text-center alt-row">Max Crit</th>
+                            <th class="text-center alt-row">Crit Rate</th>
+                            <th class="text-center alt-row"><span title="Total number of attacks (non-crit + crit)" class="vmid">Swings</span></th>
+                            <th class="text-center alt-row">Hits</th>
+                            <th class="text-center alt-row">Crits</th>
+                            <th class="text-center alt-row">+/- DPS vs #1</th>
+                        </tr>
+                        var playersForThisAbility = Model.PlayersToCompare
+                            .Where(p => p.DamageBreakdown.Abilities.FirstOrDefault(a => a.AbilityId == item.AbilityId) != null)
+                            .OrderByDescending(p => p.DamageBreakdown.Abilities.First(a => a.AbilityId == item.AbilityId).DamagePerSecond);
+                        var topPlayer = playersForThisAbility.First();
+                        var topAbility = topPlayer.DamageBreakdown.Abilities.First(a => a.AbilityId == item.AbilityId);
+                        if (topAbility.TotalDamage == 0)
+                        {
+                            continue;
+                        }
+                        foreach (var ptc in playersForThisAbility)
+                        {
+                            var thisAbility = ptc.DamageBreakdown.Abilities.First(a => a.AbilityId == item.AbilityId);
+                            if (thisAbility.TotalDamage == 0)
+                            {
+                                continue;
+                            }
+                            string abilityPercentage = ((decimal) thisAbility.TotalDamage/(decimal) topAbility.TotalDamage).ToString("#.##%");
+                            var plusMinus = "N/A";
+                            if (ptc.Player.Id != rank1Player.Player.Id)
+                            {
+                                var rank1PlayerThisAbility = playersForThisAbility.FirstOrDefault(r => r.Player.Id == rank1Player.Player.Id);
+                                if (rank1PlayerThisAbility != null)
+                                {
+                                    var rank1ThisAbility = rank1PlayerThisAbility.DamageBreakdown.Abilities.FirstOrDefault(a => a.AbilityId == item.AbilityId);
+                                    if (rank1ThisAbility != null)
+                                    {
+                                        var diff = rank1ThisAbility.TotalDamage - thisAbility.TotalDamage;
+                                        if (diff > 0)
+                                        {
+                                            plusMinus = string.Format("-{0}", ((decimal) diff/(decimal) rank1ThisAbility.TotalDamage).ToString("#.##%"));
+                                        }
+                                        else if (diff == 0)
+                                        {
+                                            plusMinus = "0%";
+                                        }
+                                        else
+                                        {
+                                            diff = diff*-1;
+                                            plusMinus = string.Format("+{0}", ((decimal) diff/(decimal) rank1ThisAbility.TotalDamage).ToString("#.##%"));
+                                        }
+                                    }
+                                }
+                            }
+                            <tr>
+                                <td></td>
+                                <td class="@ptc.Player.DisplayColorClass">@ptc.Player.Name</td>
+                                <td></td>
+                                <td class="text-center">@thisAbility.TotalDamage</td>
+                                <td class="text-center">@thisAbility.DamagePerSecond</td>
+                                <td class="text-center">@(thisAbility.BreakdownPercentage > 0 ? string.Format("{0}%", thisAbility.BreakdownPercentage.ToString("#.#")) : "0%")</td>
+                                <td class="text-center text-success">@thisAbility.Statistics.MinHit</td>
+                                <td class="text-center text-success">@thisAbility.Statistics.AverageHit</td>
+                                <td class="text-center text-success">@thisAbility.Statistics.MaxHit</td>
+                                <td class="text-center text-warning">@thisAbility.Statistics.MinCrit</td>
+                                <td class="text-center text-warning">@thisAbility.Statistics.AverageCrit</td>
+                                <td class="text-center text-warning">@thisAbility.Statistics.MaxCrit</td>
+                                <td class="text-center text-warning">@(thisAbility.Statistics.CritRate > 0 ? string.Format("{0}%", thisAbility.Statistics.CritRate.ToString("#.#")) : "0%")</td>
+                                <td class="text-center">@thisAbility.Statistics.Swings</td>
+                                <td class="text-center">@thisAbility.Statistics.Hits</td>
+                                <td class="text-center">@thisAbility.Statistics.Crits</td>
+                                @if (plusMinus.StartsWith("-"))
+                                {
+                                    <td class="text-center text-danger"><b>@plusMinus</b></td>
+                                }
+                                else if (plusMinus.StartsWith("+"))
+                                {
+
+                                    <td class="text-center text-success"><b>@plusMinus</b></td>
+                                }
+                                else
+                                {
+                                    <td class="text-center">@plusMinus</td>
+                                }
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td colspan="16">
+                                    <div class="progress progress-striped" style="margin-bottom: 0px !important; height: 4px;">
+                                        <div class="progress-bar progress-bar-success" style="width: @abilityPercentage"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                        <tr>
+                            <td></td>
+                            <td colspan="16">
+                                @item.ComparisonChart
+                            </td>
+                        </tr>
+                        <tr height="30px;"><td></td></tr>
+                    }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <p class="text-center text-muted">Page built in @Model.BuildTime</p>
+</div>

@@ -1,0 +1,246 @@
+﻿@using PrancingTurtle.Models.ViewModels
+@model PrancingTurtle.Models.ViewModels.Encounter.SomethingDoneGraphVM
+
+@{
+    ViewBag.Title = "NeedsATitle";
+}
+
+@Html.Partial("_EncounterNav2", new EncounterNav(Model.Encounter.Id,
+        Model.Encounter.BossFight.Name, Model.Encounter.BossFight.Instance.Name,
+        Model.Encounter.Duration, Model.Encounter.SuccessfulKill), new ViewDataDictionary { { "link", "charactergraph" } })
+
+<a name="top">&nbsp;</a>
+
+<div class="container container-fluid">
+    <div class="row"><br /></div>
+    <div class="row">
+        @Model.Chart
+    </div>
+    <hr />
+    @if (Model.Mode == "ability")
+    {
+        <div class="row">
+            @*<div class="col-lg-10 col-centered">*@
+            @*<div class="bs-callout @string.Format(Model.Encounter.SuccessfulKill ? "bs-callout-success" : "bs-callout-danger")">*@
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th width="18"></th>
+                        <th>Ability</th>
+                        <th class="text-center">Type</th>
+                        <th class="text-center">@Model.TotalHeader <i class="fa fa-question-circle" title="@Model.TotalTooltip"></i></th>
+                        @if (Model.Type == "DPS")
+                        {
+                            <th class="text-center">Absorbed</th>
+                            <th class="text-center">Blocked</th>
+                            <th class="text-center">Intercepted</th>
+                        }
+                        <th class="text-center">@Model.EffectiveHeader <i class="fa fa-question-circle" title="@Model.EffectiveTooltip"></i></th>
+                        <th class="text-center">@Model.TotalAverageHeader <i class="fa fa-question-circle" title="@Model.TotalAverageTooltip"></i></th>
+                        <th class="text-center">@Model.EffectiveAverageHeader <i class="fa fa-question-circle" title="@Model.EffectiveAverageTooltip"></i></th>
+                        <th class="text-center">@Model.PercentageOverallHeader <i class="fa fa-question-circle" title="@Model.PercentageOverallTooltip"></i></th>
+                        <th class="text-center">Swings <i class="fa fa-question-circle" title="@Model.SwingsTooltip"></i></th>
+                        <th class="text-center">Crit Rate</th>
+                        <th class="text-center">Biggest Hit</th>
+                        <th class="text-center">Average Hit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var dmg in Model.AbilityBreakdown)
+                    {
+                        @*<tr class="@dmg.RowClass">*@
+                        <tr>
+                            <td>
+                                @if (!string.IsNullOrEmpty(dmg.Icon))
+                                {
+                                    <img class="smallborder" src="@string.Format("/Content/icons/SoulAbilities/{0}.jpg", @dmg.Icon)" height="18" width="18" />
+                                }
+                                else
+                                {
+                                    <img src="/Content/icons/SoulAbilities/NPCDialogIcon_help.png" height="18" width="18" />
+                                }
+                            </td>
+                            <td><b>@dmg.AbilityName</b></td>
+                            <td class="text-center @dmg.CellClass">@Html.Raw(string.IsNullOrEmpty(dmg.DamageType) ? "Unknown" : dmg.DamageType)</td>
+                            <td class="text-center">@dmg.Total</td>
+                            @if (Model.Type == "DPS")
+                            {
+                                <td class="text-center">@dmg.Absorbed (@dmg.AbsorbedPercentage)</td>
+                                <td class="text-center">@dmg.Blocked (@dmg.BlockedPercentage)</td>
+                                <td class="text-center">@dmg.Intercepted (@dmg.InterceptedPercentage)</td>
+                            }
+                            <td class="text-center">@dmg.Effective</td>
+                            <td class="text-center">@dmg.Average</td>
+                            <td class="text-center">@dmg.AverageEffective</td>
+                            <td class="text-center">
+                                @if (dmg.AbilityName == "All Abilities")
+                                {
+                                    @Html.Raw("100%")
+                                }
+                                else
+                                {
+                                    if (!string.IsNullOrEmpty(dmg.Percentage.ToString("#.##")))
+                                    {
+                                        @Html.Raw(string.Format("{0}%", dmg.Percentage.ToString("#.##")))
+                                        ;
+                                    }
+                                    else
+                                    {
+                                        @Html.Raw("<0.00%")
+                                    }
+                                }
+                            </td>
+                            <td class="text-center">
+                                @if (dmg.AbilityName == "All Abilities")
+                                {
+                                    @Model.TotalSwings
+                                }
+                                else
+                                {
+                                    @dmg.Swings
+                                }
+                            </td>
+                            <td class="text-center">
+                                @if (dmg.AbilityName == "All Abilities" && Model.TotalCrits > 0)
+                                {
+                                    @Html.Raw(((decimal)Model.TotalCrits / (decimal)Model.TotalSwings).ToString("#.##%"))
+                                }
+                                else if (dmg.Crits > 0)
+                                {
+                                    @Html.Raw(((decimal)dmg.Crits / (decimal)dmg.Swings).ToString("#.##%"))
+                                }
+                                else
+                                {
+                                    @Html.Raw("0%")
+                                }
+                            </td>
+                            @if (dmg.BiggestHit == Model.TopBiggestHit && dmg.DamageType != "NA")
+                            {
+                                <td class="text-center info">@dmg.BiggestHit</td>
+                            }
+                            else
+                            {
+                                <td class="text-center">@dmg.BiggestHit</td>
+                            }
+                            @if (dmg.AverageHit == Model.TopAverageHit)
+                            {
+                                <td class="text-center info">@dmg.AverageHit</td>
+                            }
+                            else
+                            {
+                                <td class="text-center">@dmg.AverageHit</td>
+                            }
+
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+            @*</div>*@
+            @*</div>*@
+        </div>
+    }
+    @if (Model.Mode == "target")
+    {
+        <div class="row">
+            @*<div class="col-lg-10 col-centered">
+                <div class="bs-callout @string.Format(Model.Encounter.SuccessfulKill ? "bs-callout-success" : "bs-callout-danger")">*@
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Target</th>
+                        <th class="text-center">Total Damage</th>
+                        <th class="text-center">Average DPS</th>
+                        <th class="text-center">% of overall DPS</th>
+                        <th class="text-center">Swings</th>
+                        <th class="text-center">Crit Rate</th>
+                        <th class="text-center">Biggest Hit</th>
+                        <th class="text-center">Average Hit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var dmg in Model.AbilityBreakdown)
+                    {
+                        <tr class="@dmg.RowClass">
+                            <td><b>@dmg.AbilityName</b></td>
+                            <td class="text-center @dmg.CellClass">@Html.Raw(string.IsNullOrEmpty(dmg.DamageType) ? "Unknown" : dmg.DamageType)</td>
+                            <td class="text-center">@dmg.Total</td>
+                            <td class="text-center">@dmg.Average</td>
+                            <td class="text-center">
+                                @if (dmg.AbilityName == "All Abilities")
+                                {
+                                    @Html.Raw("100%")
+                                }
+                                else
+                                {
+                                    if (!string.IsNullOrEmpty(dmg.Percentage.ToString("#.##")))
+                                    {
+                                        @Html.Raw(string.Format("{0}%", dmg.Percentage.ToString("#.##")));
+                                    }
+                                    else
+                                    {
+                                        @Html.Raw("<0.00%")
+                                    }
+                                }
+                            </td>
+                            <td class="text-center">
+                                @if (dmg.AbilityName == "All Abilities")
+                                {
+                                    @Model.TotalSwings
+                                }
+                                else
+                                {
+                                    @dmg.Swings
+                                }
+                            </td>
+                            <td class="text-center">
+                                @if (dmg.AbilityName == "All Abilities")
+                                {
+                                    @Html.Raw(((decimal)Model.TotalCrits / (decimal)Model.TotalSwings).ToString("#.##%"))
+                                }
+                                else if (dmg.Crits > 0)
+                                {
+                                    @Html.Raw(((decimal)dmg.Crits / (decimal)dmg.Swings).ToString("#.##%"))
+                                }
+                                else
+                                {
+                                    @Html.Raw("0%")
+                                }
+                            </td>
+                            @if (dmg.BiggestHit == Model.TopBiggestHit)
+                            {
+                                <td class="text-center success">@dmg.BiggestHit</td>
+                            }
+                            else
+                            {
+                                <td class="text-center">@dmg.BiggestHit</td>
+                            }
+                            @if (dmg.AverageHit == Model.TopAverageHit)
+                            {
+                                <td class="text-center success">@dmg.AverageHit</td>
+                            }
+                            else
+                            {
+                                <td class="text-center">@dmg.AverageHit</td>
+                            }
+
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+            @*</div>
+                </div>*@
+        </div>
+    }
+    <p class="text-center text-muted">Page built in @Model.BuildTime</p>
+    @if (Model.DebugBuildTime.Any())
+    {
+        <p class="text-center text-muted">
+            @foreach (var timer in Model.DebugBuildTime)
+            {
+                @timer <br />
+            }
+        </p>
+    }
+</div>

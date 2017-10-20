@@ -1,0 +1,1359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SoulTree calling="Cleric" name="Oracle">
+  <Traits>
+    <Trait>
+      <Key>0</Key>
+      <Name>Confidant</Name>
+      <Icon>primal_death_01_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>2120920754</AbilityId>
+          <Description></Description>
+          <AddonId>A7E6AAEB204C9FC8B</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Spell Power by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Spell Power by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your Spell Power by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your Spell Power by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your Spell Power by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>1</Key>
+      <Name>War Mentality</Name>
+      <Icon>biting_wind</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1993317938</AbilityId>
+          <Description></Description>
+          <AddonId>A76CF9E32075A4547</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your damage by 1%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your damage by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your damage by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your damage by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your damage by 5%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>2</Key>
+      <Name>Symbol of Power</Name>
+      <Icon>arcane_ward</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1196605675</AbilityId>
+          <Description></Description>
+          <AddonId>A4752C0EB6774A6E2</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage of your Emblems by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage of your Emblems by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the damage of your Emblems by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases the damage of your Emblems by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases the damage of your Emblems by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>3</Key>
+      <Name>Inspiration of Survival</Name>
+      <Icon>healed</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1831295509</AbilityId>
+          <Description>Buffs all party or raid members, absorbing 10% of incoming damage for 20s, or up to 174 damage, whenever an Insignia is cast. Cannot be applied more than once every 10s.</Description>
+          <AddonId>A6D275A15F79F3537</AddonId>
+          <IsPassive>False</IsPassive>
+          <CostManaPercent>9.000000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>4</Key>
+      <Name>Icy Vigor</Name>
+      <Icon>icy_heart2</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>375926475</AbilityId>
+          <Description></Description>
+          <AddonId>A16682ECB6A10BCE3</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Endurance by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Endurance by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your Endurance by 9%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>5</Key>
+      <Name>Emblem of Pain</Name>
+      <Icon>harbinger_vengeful_shock_b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1249201993</AbilityId>
+          <Description>Deals 728 to 804 Death damage. Applies Emblem of Pain to the Cleric, causing the next non-Emblem single target damaging ability to apply a stack of Agony for 15s. Upon reaching 3 stacks, Agony explodes dealing 801 to 885 Death damage and clearing all stacks. Lasts 30s.</Description>
+          <AddonId>A4A754F49771FE00C</AddonId>
+          <IsPassive>False</IsPassive>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>7.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>6</Key>
+      <Name>Deadly Insignia</Name>
+      <Icon>void_knight_rift_shield_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>2022446208</AbilityId>
+          <Description></Description>
+          <AddonId>A788C14805D9FB286</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage and absorption of your Insignia by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage and absorption of your Insignia by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the damage and absorption of your Insignia by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases the damage and absorption of your Insignia by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases the damage and absorption of your Insignia by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>7</Key>
+      <Name>Greater Exposure</Name>
+      <Icon>void_knight-void_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1940011825</AbilityId>
+          <Description></Description>
+          <AddonId>A73A23B312DD091E4</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the radius of your Inspirations by 5 meters.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the radius of your Inspirations by 10 meters.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>8</Key>
+      <Name>Scouring Waves</Name>
+      <Icon>harbinger_storm_nova</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1628610073</AbilityId>
+          <Description></Description>
+          <AddonId>A61129E194AECB557</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your non-Physical attacks ignore 2% of your target&apos;s Resistances.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your non-Physical attacks ignore 4% of your target&apos;s Resistances.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Your non-Physical attacks ignore 6% of your target&apos;s Resistances.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>9</Key>
+      <Name>Favor of the Current</Name>
+      <Icon>favor_of_the_current</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1897953404</AbilityId>
+          <Description>Increases movement speed by 15% on all party or raid members. Allies can only have 1 Favor or Anthem at a time.</Description>
+          <AddonId>A7120787C09F6FDF8</AddonId>
+          <IsPassive>False</IsPassive>
+          <CostManaPercent>4.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>10</Key>
+      <Name>Anatomy</Name>
+      <Icon>riftstalker_toughened_soul_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>168326535</AbilityId>
+          <Description></Description>
+          <AddonId>A0A0875877FA47213</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the Critical Hit chance of your Insignia by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the Critical Hit chance of your Insignia by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the Critical Hit chance of your Insignia by 9%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>11</Key>
+      <Name>Devouring Emblems</Name>
+      <Icon>champion_mark_of_convergence_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1929650409</AbilityId>
+          <Description></Description>
+          <AddonId>A730420E926E94FD7</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Each Emblem buff increases the damage or healing of your next non-Emblem ability by an additional 3%. Causes area effect abilities to consume Emblem of Pain and instant abilities to consume Emblem of Alacrity.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Each Emblem buff increases the damage or healing of your next non-Emblem ability by an additional 6%. Causes area effect abilities to consume Emblem of Pain and instant abilities to consume Emblem of Alacrity.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>12</Key>
+      <Name>Tainted Emblems</Name>
+      <Icon>purifier_sign_of_anticipation_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>13731759</AbilityId>
+          <Description></Description>
+          <AddonId>A00D187AF4B2ADE03</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Insignia deal an additional 8% of your Spell Power as Death damage to the targeted enemy, on cast, for each Emblem consumed.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your Insignia deal an additional 16% of your Spell Power as Death damage to the targeted enemy, on cast, for each Emblem consumed.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Your Insignia deal an additional 25% of your Spell Power as Death damage to the targeted enemy, on cast, for each Emblem consumed.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>13</Key>
+      <Name>Curse of Consumption</Name>
+      <Icon>curse_of_consumption</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>2146146687</AbilityId>
+          <Description>Increases non-Physical damage taken by the enemy by 7%. Lasts 30s.</Description>
+          <AddonId>A7FEB997FCAE4266D</AddonId>
+          <IsPassive>False</IsPassive>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>4.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+          <Duration>30.000000</Duration>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>14</Key>
+      <Name>Glacial Insignia</Name>
+      <Icon>tactician_glacial_torrent</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>138235363</AbilityId>
+          <Description>Deals 1602 to 1770 Water damage.</Description>
+          <AddonId>A083D4DE3CDD8239D</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>15.000001</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>7.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>15</Key>
+      <Name>Tempered Emblems</Name>
+      <Icon>hardened_stalker</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage bonus provided by Emblem of Ice by 5%. Increases the damage of Agony stack explosions by 50%.  Increases the cast time reduction provided by Emblem of Alacrity by 0.5 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage bonus provided by Emblem of Ice by 10%. Increases the damage of Agony stack explosions by 100%.  Increases the cast time reduction provided by Emblem of Alacrity by 1 second.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the damage bonus provided by Emblem of Ice by 15%. Increases the damage of Agony stack explosions by 150%.  Increases the cast time reduction provided by Emblem of Alacrity by 1.5 seconds.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>16</Key>
+      <Name>Vital Inspiration</Name>
+      <Icon>sentinel_wrathful_exuberance_b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-27785553</AbilityId>
+          <Description></Description>
+          <AddonId>AFE5806AF749DBE71</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Triggering an Inspiration increases affected allies attributes by 1%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Triggering an Inspiration increases affected allies attributes by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Triggering an Inspiration increases affected allies attributes by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Triggering an Inspiration increases affected allies attributes by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Triggering an Inspiration increases affected allies attributes by 5%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>17</Key>
+      <Name>Augmented Affliction</Name>
+      <Icon>dominator_draining_presence_01_b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1420734388</AbilityId>
+          <Description></Description>
+          <AddonId>A54AEAFB47FA47213</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Each Emblem buff consumed increases the duration of Corroded Defense by an additional 5 seconds. Increases the duration of Insignia of Protection by 5 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Each Emblem buff consumed increases the duration of Corroded Defense by an additional 10 seconds. Increases the duration of Insignia of Protection by 10 seconds.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>18</Key>
+      <Name>Cleansing Chant</Name>
+      <Icon>void_knight-insatiable_hunger_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1595200511</AbilityId>
+          <Description>Removes 1 Curse, Disease, or Poison from up to 10 party or raid members around the ally every 3 seconds for 3s.</Description>
+          <AddonId>A5F14D3FF39C8C2C9</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>10.000000</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>4.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+          <Duration>3.000000</Duration>
+          <Interval>3.000000</Interval>
+          <Radius>25.000000</Radius>
+          <MaxAffected>10</MaxAffected>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>19</Key>
+      <Name>Seeping Curse</Name>
+      <Icon>incite_01_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Curse of Consumption and Curse of Frailty now apply an aura around the enemy, debuffing all enemies within 10m of the initial target.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>20</Key>
+      <Name>Glacial Mark</Name>
+      <Icon>icestorm-light</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>343895803</AbilityId>
+          <Description>Applies Glacial Mark to up to 10 party or raid members, causing the next heal on affected allies, while they&apos;re below 50% health, to heal for an additional 305 health. Lasts 30s.</Description>
+          <AddonId>A147F6EFBC3343FB6</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>60.000004</Cooldown>
+          <CostManaPercent>9.000000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+          <Radius>35.000000</Radius>
+          <MaxAffected>10</MaxAffected>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>21</Key>
+      <Name>Vital Swiftness</Name>
+      <Icon>riftblade_frost_strike_01_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>516743888</AbilityId>
+          <Description></Description>
+          <AddonId>A1ECCE2D020E3DB01</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces the global cooldown of Death and Water abilities to 1.25 seconds. Reduces the mana cost of instant Death and Water abilities by 16%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reduces the global cooldown of Death and Water abilities to 1 seconds. Reduces the mana cost of instant Death and Water abilities by 33%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>22</Key>
+      <Name>Empowered</Name>
+      <Icon>void_knight-rift_summon</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>405398380</AbilityId>
+          <Description></Description>
+          <AddonId>A1829E36C63A5B6A2</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the effect of Spell Power on your Emblems and Insignia of Blood by 5%. Insignia no longer consume Emblem of Alacrity.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the effect of Spell Power on your Emblems and Insignia of Blood by 10%. Insignia no longer consume Emblem of Alacrity.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>23</Key>
+      <Name>Battle Fury</Name>
+      <Icon>reaver_crest_of_shadow</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>40</MinimumPointsSpent>
+      <DisplayRow>8</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1436261455</AbilityId>
+          <Description>Resets and reduces the cooldown of the Cleric&apos;s Insignia to 0. Prevents abilities from consuming Emblems. Applies all Emblem buffs on cast. Lasts 10s.</Description>
+          <AddonId>A559B9C4FAB0278BA</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>60.000004</Cooldown>
+          <CostManaPercent>4.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+          <Duration>10.000000</Duration>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>24</Key>
+      <Name>Everlasting Chant</Name>
+      <Icon>virtuoso_b</Icon>
+      <PrereqTraitKey>18</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Cleansing Chant applies a shield, absorbing damage up to an amount equal to 2% of your Maximum Health, to allies it cleanses. Lasts 10s.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>25</Key>
+      <Name>Benevolent Inspiration</Name>
+      <Icon>boon_of_resurgence_c</Icon>
+      <PrereqTraitKey>3</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>900707542</AbilityId>
+          <Description></Description>
+          <AddonId>A35AFB4D67FA47213</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Allies affected by your Inspiration of Survival now receive 5% more healing for 20s.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+  </Traits>
+  <Abilities>
+    <Ability>
+      <MinimumPointsInSoul>36</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Discerning Wave</Name>
+      <Icon>discerning_wave</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>36</RequiredLevel>
+        <AbilityId>-41184301</AbilityId>
+        <Description>Sends a wave out in front of the Cleric, dealing 1933 to 2137 Water damage to enemies hit and applies a shield, absorbing up to 1028 damage, to all party or raid members hit.</Description>
+        <AddonId>AFD8B93D358E550BE</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <CostManaPercent>18.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Channel>true</Channel>
+        <Duration>3.000000</Duration>
+        <Interval>0.500000</Interval>
+        <Radius>30.000000</Radius>
+        <MaxAffected>50</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Emblem of Ice</Name>
+      <Icon>generic_ability_029</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-21021757</AbilityId>
+        <Description>Deals 728 to 804 Water damage. Applies Emblem of Ice to the Cleric, increasing the damage or healing of the next non-Emblem ability by 5%. Lasts 30s.</Description>
+        <AddonId>AFEBF3BC357A4C50A</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>51</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Mass Bestowal</Name>
+      <Icon>shielding_charge</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>50</RequiredLevel>
+        <AbilityId>74844059</AbilityId>
+        <Description>Casts all known Boons and Inspirations.</Description>
+        <AddonId>A0476079B7974B391</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>10.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Glacial Insignia</Name>
+      <Icon>tactician_glacial_torrent</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>138235363</AbilityId>
+        <Description>Deals 1602 to 1770 Water damage.</Description>
+        <AddonId>A083D4DE3CDD8239D</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>15.000001</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>32</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Emblem of Alacrity</Name>
+      <Icon>emblem_of_alactricy</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>32</RequiredLevel>
+        <AbilityId>237355060</AbilityId>
+        <Description>Deals 801 to 885 Water damage. Applies Emblem of Alacrity to the Cleric, reducing the cast time of their next damaging or healing non-Emblem, non-instant, ability by 0.5s and its mana cost by 33%. Lasts 30s.</Description>
+        <AddonId>A0E25C0344040C0B2</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Insignia of Blood</Name>
+      <Icon>insignia_of_blood</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>262260308</AbilityId>
+        <Description>Deals 801 to 885 Death damage.</Description>
+        <AddonId>A0FA1C6545E4F7B62</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>1.500000</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>24</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Inspiration of the Keep</Name>
+      <Icon>voidknight_ravenous_defence_01_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>24</RequiredLevel>
+        <AbilityId>271531824</AbilityId>
+        <Description>Reduces damage taken by 5% on all party or raid members for 20s, whenever an Insignia ability is cast.</Description>
+        <AddonId>A102F3F30AB3735B6</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Glacial Mark</Name>
+      <Icon>icestorm-light</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>343895803</AbilityId>
+        <Description>Applies Glacial Mark to up to 10 party or raid members, causing the next heal on affected allies, while they&apos;re below 50% health, to heal for an additional 305 health. Lasts 30s.</Description>
+        <AddonId>A147F6EFBC3343FB6</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Radius>35.000000</Radius>
+        <MaxAffected>10</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>54</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Resuscitating Chant</Name>
+      <Icon>champion_second_wind_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>53</RequiredLevel>
+        <AbilityId>415100693</AbilityId>
+        <Description>Restores 5 charge, 120 mana, 5 power, and 5 energy each second for 15s on all party or raid members.</Description>
+        <AddonId>A18BDEF154A8812D2</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>120.000008</Cooldown>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Radius>35.000000</Radius>
+      </AbilityRank>
+      <AbilityRank>
+        <Number>2</Number>
+        <RequiredLevel>56</RequiredLevel>
+        <AbilityId>2111308783</AbilityId>
+        <Description>Restores 5 charge, 140 mana, 5 power, and 5 energy each second for 15s on all party or raid members.</Description>
+        <AddonId>A7DD803EF4A8812D2</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>120.000008</Cooldown>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Radius>35.000000</Radius>
+      </AbilityRank>
+      <AbilityRank>
+        <Number>3</Number>
+        <RequiredLevel>59</RequiredLevel>
+        <AbilityId>990644375</AbilityId>
+        <Description>Restores 5 charge, 160 mana, 5 power, and 5 energy each second for 15s on all party or raid members.</Description>
+        <AddonId>A3B0C08974A8812D2</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>120.000008</Cooldown>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Radius>35.000000</Radius>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>48</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Icy Cascade</Name>
+      <Icon>icy_cascade</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>48</RequiredLevel>
+        <AbilityId>473574962</AbilityId>
+        <Description>Restores 453 to 500 health to the ally and consumes all Emblems on the Cleric. Healing is increased by 100% for each Emblem consumed.</Description>
+        <AddonId>A1C3A2E3213919A7F</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>12.500000</CostManaPercent>
+        <CastTime>2.000000</CastTime>
+        <PowerStatCoefficient effect="0" action="0">1.000000</PowerStatCoefficient>
+        <AggroMultiplier effect="0" action="0">0.250000</AggroMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>51</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Insignia of Protection</Name>
+      <Icon>purifier_sign_of_faith</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>50</RequiredLevel>
+        <AbilityId>531305477</AbilityId>
+        <Description>When hit, has a 25% chance to shield the attacker, absorbing up to 30 damage over the next 10s. Lasts 16s. An ally cannot receive this buff more than once every 10s.</Description>
+        <AddonId>A1FAB14056CF79369</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>61</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Defend the Fallen</Name>
+      <Icon>tempest_close_training_z</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>60</RequiredLevel>
+        <AbilityId>733875603</AbilityId>
+        <Description>Applies a shield to up to 10 allies each second, absorbing up to 310 damage over 15s. Increases the damage of all party or raid members by 15%. Lasts 15s.</Description>
+        <AddonId>A2BBE0D93CAE15935</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>120.000008</Cooldown>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>15.000000</Duration>
+        <Interval>1.000000</Interval>
+        <Radius>35.000000</Radius>
+        <MaxAffected>10</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>58</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Premonition</Name>
+      <Icon>harbinger_planar_shield</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>57</RequiredLevel>
+        <AbilityId>752414916</AbilityId>
+        <Description>Applies all Emblem buffs. The next 2 non-Emblem damaging and healing abilities do not consume Emblems.</Description>
+        <AddonId>A2CD8F0C49BAA2B53</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>20</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Corroded Defense</Name>
+      <Icon>corroded_defense</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>20</RequiredLevel>
+        <AbilityId>808444587</AbilityId>
+        <Description>Causes the enemy to take 1500 additional damage when hit for 20s. Duration is increased by 5s for each Emblem consumed when cast. Each attacker may trigger this once every 3s.</Description>
+        <AddonId>A302FE2AB4A4F0838</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>51</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Insignia of Protection Listener</Name>
+      <Icon>Default</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>50</RequiredLevel>
+        <AbilityId>1052579015</AbilityId>
+        <Description></Description>
+        <AddonId>A3EBD14C726E8843F</AddonId>
+        <IsPassive>True</IsPassive>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Emblem of Pain</Name>
+      <Icon>harbinger_vengeful_shock_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1249201993</AbilityId>
+        <Description>Deals 728 to 804 Death damage. Applies Emblem of Pain to the Cleric, causing the next non-Emblem single target damaging ability to apply a stack of Agony for 15s. Upon reaching 3 stacks, Agony explodes dealing 801 to 885 Death damage and clearing all stacks. Lasts 30s.</Description>
+        <AddonId>A4A754F49771FE00C</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>40</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Marshaled Favor</Name>
+      <Icon>rally3</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>40</RequiredLevel>
+        <AbilityId>1368055655</AbilityId>
+        <Description>Reduces ability cost by 5% on all party or raid members. Allies can only have 1 Favor or Anthem at a time.</Description>
+        <AddonId>A518ADF67E38D5115</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Battle Fury</Name>
+      <Icon>reaver_crest_of_shadow</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1436261455</AbilityId>
+        <Description>Resets and reduces the cooldown of the Cleric&apos;s Insignia to 0. Prevents abilities from consuming Emblems. Applies all Emblem buffs on cast. Lasts 10s.</Description>
+        <AddonId>A559B9C4FAB0278BA</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>10.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Oracle Mastery</Name>
+      <Icon>Default</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1463143181</AbilityId>
+        <Description></Description>
+        <AddonId>A5735CB0D2C3D9452</AddonId>
+        <IsPassive>True</IsPassive>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>4</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Boon of Vitality</Name>
+      <Icon>boon_of_vitality_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>4</RequiredLevel>
+        <AbilityId>1534723045</AbilityId>
+        <Description>Increases Endurance by 70 on all party or raid members. Lasts 1h.</Description>
+        <AddonId>A5B7A03E5B1CABA64</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Radius>35.000000</Radius>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Cleansing Chant</Name>
+      <Icon>void_knight-insatiable_hunger_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1595200511</AbilityId>
+        <Description>Removes 1 Curse, Disease, or Poison from up to 10 party or raid members around the ally every 3 seconds for 3s.</Description>
+        <AddonId>A5F14D3FF39C8C2C9</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>10.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>3.000000</Duration>
+        <Interval>3.000000</Interval>
+        <Radius>25.000000</Radius>
+        <MaxAffected>10</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>28</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Curse of Frailty</Name>
+      <Icon>curse_of_frailty</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>28</RequiredLevel>
+        <AbilityId>1734146052</AbilityId>
+        <Description>Increases Physical damage taken by the enemy by 5%. Lasts 30s.</Description>
+        <AddonId>A675CF804DB7DC272</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>30.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>24</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Meditative Chant</Name>
+      <Icon>channelhealth4</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>24</RequiredLevel>
+        <AbilityId>1782875355</AbilityId>
+        <Description>Restores 5% mana each second over 10s.</Description>
+        <AddonId>A6A4484DB2D1D27BC</AddonId>
+        <IsPassive>False</IsPassive>
+        <CastTime>Instant</CastTime>
+        <Channel>true</Channel>
+        <Duration>10.000000</Duration>
+        <Interval>1.000000</Interval>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>44</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Oversight</Name>
+      <Icon>inspiration2</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>44</RequiredLevel>
+        <AbilityId>1795226443</AbilityId>
+        <Description>Emblem and Insignia spells affect to up to 3 enemies. Damaging Emblem and Insignia spells deal 50% less damage.</Description>
+        <AddonId>A6B00FB4B2997AFD4</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>2.250000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Inspiration of Survival</Name>
+      <Icon>healed</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1831295509</AbilityId>
+        <Description>Buffs all party or raid members, absorbing 10% of incoming damage for 20s, or up to 174 damage, whenever an Insignia is cast. Cannot be applied more than once every 10s.</Description>
+        <AddonId>A6D275A15F79F3537</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>2</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Inspiration of Battle</Name>
+      <Icon>generic_ability_020</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>2</RequiredLevel>
+        <AbilityId>1844887525</AbilityId>
+        <Description>Increases Attack Power and Spell Power by 225 and increases Critical Hit chance by 1% on all party or raid members for 20s whenever an Insignia ability is cast.</Description>
+        <AddonId>A6DF6BFE5927FF595</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Favor of the Current</Name>
+      <Icon>favor_of_the_current</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1897953404</AbilityId>
+        <Description>Increases movement speed by 15% on all party or raid members. Allies can only have 1 Favor or Anthem at a time.</Description>
+        <AddonId>A7120787C09F6FDF8</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>11</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Emblem of Pain</Name>
+      <Icon>harbinger_vengeful_shock_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>11</RequiredLevel>
+        <AbilityId>1926827487</AbilityId>
+        <Description></Description>
+        <AddonId>A72D90DDF78C41DB9</AddonId>
+        <IsPassive>False</IsPassive>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>12</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Defensive Favor</Name>
+      <Icon>defensive_favor</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>12</RequiredLevel>
+        <AbilityId>2042676251</AbilityId>
+        <Description>Increases Armor by 2000 and all resists by 65 on all party or raid members. Allies can only have 1 Favor or Anthem at a time.</Description>
+        <AddonId>A79C0C41B1DF2FBAA</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>8</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Wasting Insignia</Name>
+      <Icon>reaver_binding_of_devouring_darkness</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>8</RequiredLevel>
+        <AbilityId>2087863334</AbilityId>
+        <Description>Deals 1686 Death damage over 15s.</Description>
+        <AddonId>A7C7244267D450363</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>15.000000</Duration>
+        <Interval>1.500000</Interval>
+        <PowerStatCoefficient effect="0" action="0">2.200000</PowerStatCoefficient>
+        <DamageMultiplier effect="0" action="0">0.100000</DamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>16</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Boon of Resurgence</Name>
+      <Icon>boon_of_resurgence_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>16</RequiredLevel>
+        <AbilityId>2123835945</AbilityId>
+        <Description>Increases Strength, Dexterity, Intelligence and Wisdom by 70 on all party or raid members. Lasts 1h.</Description>
+        <AddonId>A7E972A2979149653</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Radius>35.000000</Radius>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Curse of Consumption</Name>
+      <Icon>curse_of_consumption</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>2146146687</AbilityId>
+        <Description>Increases non-Physical damage taken by the enemy by 7%. Lasts 30s.</Description>
+        <AddonId>A7FEB997FCAE4266D</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>30.000000</Duration>
+      </AbilityRank>
+    </Ability>
+  </Abilities>
+</SoulTree>
+

@@ -1,0 +1,308 @@
+﻿@section scripts{
+    <script>
+
+        $(document).ready(function () {
+            $(".tabs").tabs();
+
+            $('td.debufflist,td.bufflist').expander({
+                slicePoint: 150,
+                expandText: 'show all',
+                expandEffect: 'fadeIn',
+                userCollapse: false,
+            });
+        });
+
+        function showModal(modalContainerId, containerBodyId, encId, playerId, isOutgoing, graphType) {
+            var url = $(modalContainerId).data('url');
+            $.get(url, { id: encId, p: playerId, outgoing: isOutgoing, type: graphType }, function (data) {
+                $(containerBodyId).html(data);
+                $(modalContainerId).modal({
+                    backdrop: true,
+                    keyboard: false,
+                    show: true
+                });
+            });
+        }
+
+    </script>
+
+}
+@using PrancingTurtle.Models.ViewModels
+@model PrancingTurtle.Models.ViewModels.Encounter.OverviewVM
+@{
+    ViewBag.Title = string.Format("{0} - {1} mode ({2})", Model.Encounter.BossFight.Name, Model.Encounter.EncounterDifficulty.Name, Model.Encounter.Duration);
+}
+
+
+@Html.Partial("_EncounterNav2", new EncounterNav(Model.Encounter.Id,
+        Model.Encounter.BossFight.Name, Model.Encounter.BossFight.Instance.Name,
+        Model.Encounter.Duration, Model.Encounter.SuccessfulKill, Model.Session), new ViewDataDictionary { { "link", "newoverview" } })
+
+<a name="top">&nbsp;</a>
+
+
+<div class="row">
+    <div class="col-lg-10 col-centered">
+        <div class="row">
+            <div style="float: left" width="410px">
+                @if (Model.LoadImage)
+                {
+                    <img src="@string.Format("/Content/images/portrait/{0}.png", Model.Encounter.BossFight.Name.ToLower().Replace(" ", ""))" width="405" height="247" />
+                }
+                else
+                {
+                    <img src="/Content/images/portrait/noportrait.png" width="405" height="247" />
+                }
+            </div>
+            <div style="float: left">
+                @if (Model.Encounter.UploadGuild != null)
+                {
+                    <h2>
+                        <b>@Html.ActionLink(string.Format("<{0}>", Model.Encounter.UploadGuild.Name), "Guild", "Session", new { id = Model.Encounter.UploadGuild.Id }, new { @class = "text-info" })</b>
+                        vs
+                        <b>
+                            @Html.ActionLink(string.Format("{0} ({1} mode)", Model.Encounter.BossFight.Name, Model.Encounter.EncounterDifficulty.Name),
+                                "BossFight", "Session", new { id = Model.Encounter.BossFight.Id, d = Model.Encounter.EncounterDifficultyId }, new { @class = "text-info" })
+                        </b>
+                    @*@Html.Raw(string.Format("<b>&lt;{0}&gt;</b> vs <b>{1}</b>", Model.Encounter.UploadGuild.Name, Model.Encounter.BossFight.Name))*@
+                </h2>
+                }
+                else
+                {
+                    <h2>
+                        <b>@Html.Raw(string.Format("{0} ({1})", Model.Encounter.BossFight.Name, Model.Encounter.BossFight.Instance.Name))</b>
+                    </h2>
+                }
+
+                <h4>@Html.Raw(string.Format("<b>Started:</b> {0}  <b>Fight Length:</b> {1}", Model.Encounter.Date.Add(Model.TimeZoneOffset), Model.Encounter.Duration))</h4>
+                <div>
+                    <h4>
+                        <img src="~/Content/icons/misc/LFP_Roles_Dps.png" height="48" width="48" /> <b>@Model.AverageDps</b> damage done per second<br />
+                        <img src="~/Content/icons/misc/LFP_Roles_Heal.png" height="48" width="48" /> <b>@Model.AverageHps</b> healing done per second<br />
+                        <img src="~/Content/icons/misc/LFP_Roles_Tank.png" height="48" width="48" /> <b>@Model.AverageAps</b> absorption granted per second
+                    </h4>
+                </div>
+            </div>
+        </div>
+        <div class="bs-callout overview">
+            <div class="table-responsive">
+                <table class="table">
+                    <tbody>
+                        <tr class="tr-img">
+                            <td>
+                                <img src="~/Content/icons/misc/emblem_boss.png" height="30" width="30" /><b>Boss:</b>
+                            </td>
+                            <td>@Model.Encounter.BossFight.Name</td>
+                            <td>
+                                <img src="~/Content/icons/misc/Map_POI_Icon.png" height="30" width="30" /><b>Instance:</b>
+                            </td>
+                            <td>@Model.Encounter.BossFight.Instance.Name</td>
+                            <td>
+                                <img src="~/Content/icons/misc/death_icon_marker.png" height="30" width="30" /><b>Deaths:</b>
+                            </td>
+                            <td>@Model.PlayerDeaths</td>
+                        </tr>
+                        <tr class="tr-img">
+                            <td>
+                                <img src="~/Content/icons/misc/btn_menu_social_(normal).png" height="32" width="32" /><b>Guild:</b>
+                            </td>
+                            <td>&lt;@Model.Encounter.UploadGuild.Name&gt;</td>
+                            <td>
+                                <img src="~/Content/icons/misc/btn_menu_me_(normal).png" height="32" width="32" /><b>Uploaded by:</b>
+                            </td>
+                            <td>@Model.Encounter.UploadCharacter.CharacterName</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        @*<tr class="tr-img">
+                                <td>
+                                    <img src="~/Content/icons/misc/LFP_Roles_Dps.png" height="30" width="30"/><b>Encounter DPS</b>
+                                </td>
+                                <td><b>@Model.AverageDps</b></td>
+                                <td>
+                                    <img src="~/Content/icons/misc/LFP_Roles_Heal.png" height="30" width="30"/><b>Encounter HPS</b>
+                                </td>
+                                <td><b>@Model.AverageHps</b></td>
+                                <td>
+                                    <img src="~/Content/icons/misc/LFP_Roles_Heal.png" height="30" width="30"/><b>Encounter APS</b>
+                                </td>
+                                <td><b>@Model.AverageAps</b></td>
+                            </tr>*@
+                        <tr>
+                            <td><b>NPC Casts seen:</b></td>
+                            <td colspan="5" class="debufflist">
+                                @{
+                                    var castList = new List<string>();
+                                    Model.NpcCasts.ForEach(action => castList.Add(string.Format("<span class=\"text-info\" style=\"font-size:smaller;\">{0} ({1})</span>", action.AbilityName, action.NpcName)));
+                                    @Html.Raw(string.Join(", ", castList))
+                                }
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>Debuffs seen:</b></td>
+                            <td colspan="5" class="debufflist">
+                                @{
+                                    var debuffList = new List<string>();
+                                    foreach (var debuff in Model.DebuffActions)
+                                    {
+                                        debuffList.Add(debuff.BoldText 
+                                            ? string.Format("<b><span class=\"{1}\" style=\"font-size:smaller;\">{0}</span></b>", debuff.DebuffName, debuff.TextColour) 
+                                            : string.Format("<span class=\"{1}\" style=\"font-size:smaller;\">{0}</span>", debuff.DebuffName, debuff.TextColour));
+                                        //debuffList.Add(debuff.SourceType == "Npc"
+                                        //    ? string.Format("<b><span class=\"{1}\" style=\"font-size:smaller;\">{0}</span></b>", debuff.DebuffName, debuff.TextColour)
+                                        //    : string.Format("<span class=\"{1}\" style=\"font-size:smaller;\">{0}</span>", debuff.DebuffName, debuff.TextColour));
+                                    }
+                                    @Html.Raw(string.Join(", ", debuffList))
+                                }
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>Buffs seen:</b></td>
+                            <td colspan="5" class="bufflist">
+                                @{
+                                    var buffList = new List<string>();
+                                    foreach (var buff in Model.BuffActions)
+                                    {
+                                        buffList.Add(buff.BoldText
+                                            ? string.Format("<b><span class=\"{1}\" style=\"font-size:smaller;\">{0}</span></b>", buff.BuffName, buff.TextColour)
+                                            : string.Format("<span class=\"{1}\" style=\"font-size:smaller;\">{0}</span>", buff.BuffName, buff.TextColour));
+                                        //if (buff.SourceType == "NPC")
+                                        //{
+                                        //    buffList.Add(string.Format("<b><span class=\"text-danger\" style=\"font-size:smaller;\">{0}</span></b>", buff.BuffName));
+                                        //}
+                                        //else
+                                        //{
+                                        //    buffList.Add(string.Format("<span class=\"text-info\" style=\"font-size:smaller;\">{0}</span>", buff.BuffName));
+                                        //}
+                                    }
+                                    @Html.Raw(string.Join(", ", buffList))
+                                }
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+
+        <div class="bs-callout overview">
+            <h3 class="text-center">Raid Makeup</h3>
+            <h3 class="text-center">
+                <img src="~/Content/icons/roles/raid_icon_role_tank.png" /> @Model.PlayerRoles.Count(p => p.Role == "Tank")
+                <img src="~/Content/icons/roles/raid_icon_role_dps.png" /> @Model.PlayerRoles.Count(p => p.Role == "Damage")
+                <img src="~/Content/icons/roles/raid_icon_role_support.png" /> @Model.PlayerRoles.Count(p => p.Role == "Support")
+                <img src="~/Content/icons/roles/raid_icon_role_heal.png" /> @Model.PlayerRoles.Count(p => p.Role == "Healing")
+            </h3>
+            <div class="table-responsive">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td width="100px">
+                                <img src="~/Content/icons/roles/raid_icon_role_tank.png" /><b>Tanks:</b>
+                            </td>
+                            <td>
+                                @{
+                                    //var tankList = Model.PlayerRoles
+                                    //    .Where(p => p.Role == "Tank")
+                                    //    .OrderBy(p => p.Class).ThenBy(p => p.Name)
+                                    //    .Select(player => Html.ActionLink(player.Name, "Player", "Encounter",
+                                    //        new { id = Model.Encounter.Id, p = player.Id }, new { @class = player.DisplayColorClass }).ToHtmlString()).ToList();
+                                    var tankList = Model.PlayerRoles.Where(p => p.Role == "Tank")
+                                        .OrderBy(p => p.Class).ThenBy(p => p.Name)
+                                        .Select(player => Html.Raw(string.Format("<span class=\"{0}\">{1}</span>", player.DisplayColorClass, player.Name))).ToList();
+
+                                    string tankHtml = "<p>No records</p>";
+                                    if (tankList.Any())
+                                    {
+                                        tankHtml = Html.Raw(string.Join(", ", tankList)).ToHtmlString();
+                                    }
+                                }
+
+                                @Html.Raw(tankHtml)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="~/Content/icons/roles/raid_icon_role_dps.png" /><b>DPS:</b>
+                            </td>
+                            <td>
+                                @{
+                                    //var dpsList = Model.PlayerRoles
+                                    //    .Where(p => p.Role == "Damage")
+                                    //    .OrderBy(p => p.Class).ThenBy(p => p.Name)
+                                    //    .Select(player => Html.ActionLink(player.Name, "Player", "Encounter",
+                                    //        new { id = Model.Encounter.Id, p = player.Id }, new { @class = player.DisplayColorClass }).ToHtmlString()).ToList();
+                                    var dpsList = Model.PlayerRoles.Where(p => p.Role == "Damage")
+                                        .OrderBy(p => p.Class).ThenBy(p => p.Name)
+                                        .Select(player => Html.Raw(string.Format("<span class=\"{0}\">{1}</span>", player.DisplayColorClass, player.Name))).ToList();
+
+                                    string dpsHtml = "<p>No records</p>";
+                                    if (dpsList.Any())
+                                    {
+                                        dpsHtml = Html.Raw(string.Join(", ", dpsList)).ToHtmlString();
+                                    }
+                                }
+
+                                @Html.Raw(dpsHtml)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: left;">
+                                <img src="~/Content/icons/roles/raid_icon_role_support.png" /><b>Supports:</b>
+                            </td>
+                            <td>
+                                @{
+                                    //var supportList = Model.PlayerRoles
+                                    //    .Where(p => p.Role == "Support")
+                                    //    .OrderBy(p => p.Class).ThenBy(p => p.Name)
+                                    //    .Select(player => Html.ActionLink(player.Name, "Player", "Encounter",
+                                    //        new { id = Model.Encounter.Id, p = player.Id }, new { @class = player.DisplayColorClass }).ToHtmlString()).ToList();
+                                    var supportList = Model.PlayerRoles.Where(p => p.Role == "Support")
+                                        .OrderBy(p => p.Class).ThenBy(p => p.Name)
+                                        .Select(player => Html.Raw(string.Format("<span class=\"{0}\">{1}</span>", player.DisplayColorClass, player.Name))).ToList();
+
+                                    string supportHtml = "<p>No records</p>";
+                                    if (supportList.Any())
+                                    {
+                                        supportHtml = Html.Raw(string.Join(", ", supportList)).ToHtmlString();
+                                    }
+                                }
+
+                                @Html.Raw(supportHtml)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="~/Content/icons/roles/raid_icon_role_heal.png" /><b>Healers:</b>
+                            </td>
+                            <td>
+                                @{
+                                    //var healList = Model.PlayerRoles
+                                    //    .Where(p => p.Role == "Healing")
+                                    //    .OrderBy(p => p.Class).ThenBy(p => p.Name)
+                                    //    .Select(player => Html.ActionLink(player.Name, "Player", "Encounter",
+                                    //        new { id = Model.Encounter.Id, p = player.Id }, new { @class = player.DisplayColorClass }).ToHtmlString()).ToList();
+                                    var healList = Model.PlayerRoles.Where(p => p.Role == "Healing")
+                                        .OrderBy(p => p.Class).ThenBy(p => p.Name)
+                                        .Select(player => Html.Raw(string.Format("<span class=\"{0}\">{1}</span>", player.DisplayColorClass, player.Name))).ToList();
+
+                                    string healHtml = "<p>No records</p>";
+                                    if (healList.Any())
+                                    {
+                                        healHtml = Html.Raw(string.Join(", ", healList)).ToHtmlString();
+                                    }
+                                }
+
+                                @Html.Raw(healHtml)
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <p class="text-center text-muted">Page built in @Model.BuildTime</p>
+</div>
+@*</div>*@

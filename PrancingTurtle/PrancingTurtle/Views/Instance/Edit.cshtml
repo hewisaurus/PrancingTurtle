@@ -1,0 +1,70 @@
+﻿@model Database.Models.Instance
+
+@{
+    ViewBag.Title = "Edit Instance";
+}
+
+<div class="row">
+    <div class="col-lg-6">
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <h3 class="panel-title">Edit Instance</h3>
+            </div>
+            @using (Html.BeginForm("Edit", "Instance", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal" }))
+            {
+                <div class="panel-body">
+                    @Html.AntiForgeryToken()
+                    @Html.HiddenFor(m => m.Id)
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Name, new { @class = "col-md-3 control-label" })
+                        <div class="col-md-9">
+                            @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.Name, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.MaxRaidSize, new { @class = "col-md-3 control-label" })
+                        <div class="col-md-9">
+                            @Html.TextBoxFor(m => m.MaxRaidSize, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.MaxRaidSize, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Visible, new { @class = "col-md-3 control-label" })
+                        <div class="col-md-9">
+                            @Html.CheckBoxFor(m => m.Visible)
+                            @Html.ValidationMessageFor(m => m.Visible, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.IncludeInProgression, new { @class = "col-md-3 control-label" })
+                        <div class="col-md-9">
+                            @Html.CheckBoxFor(m => m.IncludeInProgression)
+                            @Html.ValidationMessageFor(m => m.IncludeInProgression, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.IncludeInLists, new { @class = "col-md-3 control-label" })
+                        <div class="col-md-9">
+                            @Html.CheckBoxFor(m => m.IncludeInLists)
+                            @Html.ValidationMessageFor(m => m.IncludeInLists, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.ShortName, new { @class = "col-md-3 control-label" })
+                        <div class="col-md-9">
+                            @Html.TextBoxFor(m => m.ShortName, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.ShortName, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <input type="submit" value="Save" class="btn btn-success" />
+                </div>
+            }
+        </div>
+    </div>
+</div>

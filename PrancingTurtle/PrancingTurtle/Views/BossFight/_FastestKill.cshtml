@@ -1,0 +1,68 @@
+﻿@model IEnumerable<Database.Models.Encounter>
+
+<div class="table-responsive">
+    <table class="table table-condensed">
+        @if (!Model.Any())
+        {
+            <tr>
+                <td>
+                    <span class="text-warning">No records to show!</span>
+                </td>
+            </tr>
+        }
+        else
+        {
+            var i = 1;
+
+            foreach (var kill in Model)
+            {
+                <tr>
+                    <td width="33">
+                        @if (i == 1)
+                        {
+                            <span class="text-success"><b>#@i</b></span>
+                        }
+                        else if (i <= 5)
+                        {
+                            <span class="text-warning"><b>#@i</b></span>
+                        }
+                        else
+                        {
+                            <span>#@i</span>
+                        }
+
+                    </td>
+                    <td>
+                        <b>
+                            @Html.ActionLink(string.Format("<{0}>", kill.UploadGuild.Name), "Index", "Guild", new { @id = kill.GuildId }, new { @class = "text-info-i" })
+                        </b>
+                    </td>
+
+                    <td width="73" style="text-align: right;">
+                        @Html.ActionLink(kill.Duration.ToString(), "Overview", "Encounter", new { @id = kill.Id }, null)
+                    </td>
+
+                    @*@if (kill.IsPublic)
+                    {
+                        <td width="22">
+                            <i class="fa fa-unlock"></i>
+                        </td>
+                        <td width="73">
+                            @Html.ActionLink(kill.Duration.ToString(), "Overview", "Encounter", new { @id = kill.Id }, null)
+                        </td>
+                    }
+                    else
+                    {
+                        <td width="22">
+                            <i class="fa fa-lock" title="This encounter has been set to private"></i>
+                        </td>
+                        <td width="73">
+                            @kill.Duration.ToString()
+                        </td>
+                    }*@
+                </tr>
+                    i++;
+            }
+        }
+    </table>
+</div>

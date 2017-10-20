@@ -1,0 +1,23 @@
+﻿@model Database.Models.Guild
+
+@{
+    ViewBag.Title = "Approve Guild";
+}
+
+<h3>Really approve guild '@Model.Name' ?</h3>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        @Html.ValidationSummary(true)
+
+        <div class="form-group">
+            <div class="col-md-10">
+                <input type="submit" value="Yep, approve this guild" class="btn btn-danger" />
+                @Html.ActionLink("No! I didn't mean to click that!", "Index", new { @id = Model.Id }, new { @class = "btn btn-success" })
+            </div>
+        </div>
+    </div>
+}

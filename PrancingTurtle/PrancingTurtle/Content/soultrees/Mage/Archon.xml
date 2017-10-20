@@ -1,0 +1,1332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SoulTree calling="Mage" name="Archon">
+  <Traits>
+    <Trait>
+      <Key>0</Key>
+      <Name>Blood Pact</Name>
+      <Icon>bleeding_aa</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1670997285</AbilityId>
+          <Description></Description>
+          <AddonId>A63996525677F8E18</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the maximum stack size of your Searing Vitality buff by 1.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the maximum stack size of your Searing Vitality buff by 2.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>1</Key>
+      <Name>Favored Ally</Name>
+      <Icon>righteousness2</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1214309007</AbilityId>
+          <Description></Description>
+          <AddonId>A4860E28F5250BD9C</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the radius of your Archon buff auras by 5 meters and reduces their cast time by 33%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the radius of your Archon buff auras by 10 meters and reduces their cast time by 66%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the radius of your Archon buff auras by 15 meters and reduces their cast time by 100%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>2</Key>
+      <Name>Soul Fire</Name>
+      <Icon>living_flame_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>430352110</AbilityId>
+          <Description></Description>
+          <AddonId>A19A6A6EE37403D1F</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your damage by 1%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your damage by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your damage by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your damage by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your damage by 5%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>3</Key>
+      <Name>Exhilaration</Name>
+      <Icon>bolt_of_radiance_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>2035518545</AbilityId>
+          <Description></Description>
+          <AddonId>A79538C5139B0A916</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your spell critical hits return 0.25% of your maximum Mana.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your spell critical hits return 0.5% of your maximum Mana.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Your spell critical hits return 0.75% of your maximum Mana.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Your spell critical hits return 1% of your maximum Mana.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Your spell critical hits return 1.25% of your maximum Mana.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>4</Key>
+      <Name>Strength of Stone</Name>
+      <Icon>concussion_01_b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Pillaging Stone places a stacking buff on you, increasing your Strength, Dexterity, Wisdom and Intelligence by an amount equal to 8% of the amount debuffed on the enemy. Max 5 stacks. 
+Increases the Strength, Dexterity, Intelligence and Wisdom bonuses your allies gain from your Vitality of Stone by 10%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Pillaging Stone places a stacking buff on you, increasing your Strength, Dexterity, Wisdom and Intelligence by an amount equal to 16% of the amount debuffed on the enemy. Max 5 stacks. 
+Increases the Strength, Dexterity, Intelligence and Wisdom bonuses your allies gain from your Vitality of Stone by 20%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Pillaging Stone places a stacking buff on you, increasing your Strength, Dexterity, Wisdom and Intelligence by an amount equal to 24% of the amount debuffed on the enemy. Max 5 stacks. 
+Increases the Strength, Dexterity, Intelligence and Wisdom bonuses your allies gain from your Vitality of Stone by 30%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>5</Key>
+      <Name>Flowing Sand</Name>
+      <Icon>requital_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>780902264</AbilityId>
+          <Description>Reduces movement speed by 30%. Increases the Mage&apos;s movement speed by 50% for 15s. Removes all movement impairing effects.</Description>
+          <AddonId>A2E8B9F78CB953398</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>60.000004</Cooldown>
+          <MaxRange>35.000000</MaxRange>
+          <CostManaPercent>4.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Flowing Sand</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>6</Key>
+      <Name>Altruist</Name>
+      <Icon>faithful_doctrine_01_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces the mana cost of your abilities by 3% for each Archon aura you have active.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reduces the mana cost of your abilities by 6% for each Archon aura you have active.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>7</Key>
+      <Name>Leeching Flames</Name>
+      <Icon>magicresist1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1700362885</AbilityId>
+          <Description>Deals Fire damage equal to 10% of the Mage&apos;s Maximum Mana over 8s. Returns 10% of the Mage&apos;s mana over 8s.</Description>
+          <AddonId>A65597A85B02D8214</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>30.000002</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>3.380000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+          <Duration>8.000000</Duration>
+          <Interval>1.000000</Interval>
+          <PowerStatCoefficient effect="0" action="0">1.000000</PowerStatCoefficient>
+          <DamageMultiplier effect="0" action="0">0.125000</DamageMultiplier>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Leeching Flames</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>9</Key>
+      <Name>Rising Vengeance</Name>
+      <Icon>ressurection3b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1604803346</AbilityId>
+          <Description></Description>
+          <AddonId>A5FA75B125D536A36</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage done by all of your Archon damaging abilities by 4% and all other abilities by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage done by all of your Archon damaging abilities by 8% and all other abilities by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the damage done by all of your Archon damaging abilities by 12% and all other abilities by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases the damage done by all of your Archon damaging abilities by 16% and all other abilities by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases the damage done by all of your Archon damaging abilities by 20% and all other abilities by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>10</Key>
+      <Name>Speed in Numbers</Name>
+      <Icon>overwhelming_brilliance_01</Icon>
+      <PrereqTraitKey>6</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces the cast time of your spells by 2% for each Archon aura you have active.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reduces the cast time of your spells by 4% for each Archon aura you have active.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>11</Key>
+      <Name>Empowered Aegis</Name>
+      <Icon>invigoration2</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the resistance bonus provided to you from your Crumbling Resistance by 10%. Crumbling Resistance also increases your damage by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the resistance bonus provided to you from your Crumbling Resistance by 20%. Crumbling Resistance also increases your damage by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the resistance bonus provided to you from your Crumbling Resistance by 30%. Crumbling Resistance also increases your damage by 6%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>12</Key>
+      <Name>Lava Field</Name>
+      <Icon>discombobulate3a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>587425654</AbilityId>
+          <Description>Deals 1206 Fire damage over 6s to up to 10 enemies in the target area. Up to 10 party or raid members in the area have their damage increased by 5%.</Description>
+          <AddonId>A2303677658E3BEFD</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>60.000004</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>12.000000</CostManaPercent>
+          <GainHeat>15</GainHeat>
+          <CastTime>2.000000</CastTime>
+          <Duration>6.000000</Duration>
+          <Interval>1.000000</Interval>
+          <Radius>7.000000</Radius>
+          <MaxAffected>10</MaxAffected>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>13</Key>
+      <Name>Mental Flare</Name>
+      <Icon>manadrain1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1186304980</AbilityId>
+          <Description>Restores 30% of the Mage&apos;s mana over 10s.</Description>
+          <AddonId>A46B593D48D579F7C</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>120.000008</Cooldown>
+          <MaxRange>35.000000</MaxRange>
+          <CostManaPercent>1.130000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+          <Duration>10.000000</Duration>
+          <Interval>1.000000</Interval>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Mental Flare</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>14</Key>
+      <Name>Vital Assistance</Name>
+      <Icon>rally3</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-13102974</AbilityId>
+          <Description></Description>
+          <AddonId>AFF381082571F8E2E</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the critical hit chance of your spells by 1%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the critical hit chance of your spells by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the critical hit chance of your spells by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases the critical hit chance of your spells by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases the critical hit chance of your spells by 5%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>15</Key>
+      <Name>Lava Spout</Name>
+      <Icon>cauterize</Icon>
+      <PrereqTraitKey>12</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage bonus allies gain from Lava Field by 5%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage bonus allies gain from Lava Field by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>16</Key>
+      <Name>Swirling Sands</Name>
+      <Icon>requital_01_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>400433274</AbilityId>
+          <Description></Description>
+          <AddonId>A17DE207A772DB62B</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces the cooldown on Flowing Sand by 5 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reduces the cooldown on Flowing Sand by 10 seconds.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>17</Key>
+      <Name>Power in Numbers</Name>
+      <Icon>righteous_invocation_01</Icon>
+      <PrereqTraitKey>10</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1083558995</AbilityId>
+          <Description></Description>
+          <AddonId>A4095CC5347224DE5</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your damage and healing by 3% for each Archon aura you have active.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your damage and healing by 6% for each Archon aura you have active.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>18</Key>
+      <Name>Earthen Barrage</Name>
+      <Icon>archon-earthen_barrage</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1675671410</AbilityId>
+          <Description>Deals 1820 to 2011 Earth damage. Increases Physical Crit and Spell Crit by 3% for 30s on all party and raid members. Counts as a Raid Support ability.</Description>
+          <AddonId>A63E0B772B90F22C7</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>15.000001</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>10.000000</CostManaPercent>
+          <GainHeat>15</GainHeat>
+          <CastTime>2.000000</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Earthen Barrage</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>19</Key>
+      <Name>Waning Power</Name>
+      <Icon>smokeandmirrors3</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>733246659</AbilityId>
+          <Description>Reduces Attack Power and Spell Power by 5%. Increases the Mage&apos;s Spell Power by 10% for 15s.</Description>
+          <AddonId>A2BB474C39A07E11A</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>60.000004</Cooldown>
+          <MaxRange>35.000000</MaxRange>
+          <CostManaPercent>4.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+          <Duration>15.000000</Duration>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Waning Power</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>20</Key>
+      <Name>Purging Flames</Name>
+      <Icon>doctrine_of_bliss_01_c</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Cleansing Flames spell removes 1 buff from up to 10 enemies within the targeted area.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>21</Key>
+      <Name>Wellspring</Name>
+      <Icon>spiritofcrusader2</Icon>
+      <PrereqTraitKey>17</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-32602088</AbilityId>
+          <Description></Description>
+          <AddonId>AFE0E881862E32B7D</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces the damage you take by 2% for each Archon aura you have active.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reduces the damage you take by 4% for each Archon aura you have active.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>22</Key>
+      <Name>Spell Bore</Name>
+      <Icon>piercingenergy2a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-1564979</AbilityId>
+          <Description></Description>
+          <AddonId>AFFE81ECD0B1F1426</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your non-Physical attacks ignore 3% of your target&apos;s Resistances.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your non-Physical attacks ignore 6% of your target&apos;s Resistances.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Your non-Physical attacks ignore 10% of your target&apos;s Resistances.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>23</Key>
+      <Name>Aura Mastery</Name>
+      <Icon>blessing_of_the_flames_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-5143755</AbilityId>
+          <Description></Description>
+          <AddonId>AFFB183356F3F49CC</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces the global cooldown of your Archon Auras to 1 second.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>24</Key>
+      <Name>Earthen Shards</Name>
+      <Icon>nysyrs_rebuke</Icon>
+      <PrereqTraitKey>18</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the Critical Strike bonus from your Earthen Barrage by 1%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the Critical Strike bonus from your Earthen Barrage by 2%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>25</Key>
+      <Name>Inspiration</Name>
+      <Icon>latent_blaze_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-80914257</AbilityId>
+          <Description></Description>
+          <AddonId>AFB2D58AF11E00AD9</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Spell Power by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Spell Power by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your Spell Power by 12%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>26</Key>
+      <Name>Spark Shower</Name>
+      <Icon>surging_flames</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-94204478</AbilityId>
+          <Description>Deals 1820 to 2011 Fire damage. Increases the movement speed of all party or raid members by 15% for 30s.  Counts as a Raid Support ability.</Description>
+          <AddonId>AFA628DC2813A2AEE</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>15.000001</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>10.000000</CostManaPercent>
+          <GainHeat>15</GainHeat>
+          <CastTime>2.000000</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>27</Key>
+      <Name>Patron&apos;s Rage</Name>
+      <Icon>long_range_bombing</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>40</MinimumPointsSpent>
+      <DisplayRow>8</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-81216268</AbilityId>
+          <Description>Deals 10743 Fire damage over 6s. Refreshes all active Archon Aura&apos;s on the Mage instantly.</Description>
+          <AddonId>AFB28BCF463BEF511</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>60.000004</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>15.000000</CostManaPercent>
+          <GainHeat>9</GainHeat>
+          <CastTime>Instant</CastTime>
+          <Channel>true</Channel>
+          <Duration>6.000000</Duration>
+          <Interval>1.000000</Interval>
+          <PowerStatCoefficient effect="0" action="0">2.500000</PowerStatCoefficient>
+          <DamageMultiplier effect="0" action="0">0.143000</DamageMultiplier>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+  </Traits>
+  <Abilities>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Spark Shower</Name>
+      <Icon>surging_flames</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-94204478</AbilityId>
+        <Description>Deals 1820 to 2011 Fire damage. Increases the movement speed of all party or raid members by 15% for 30s.  Counts as a Raid Support ability.</Description>
+        <AddonId>AFA628DC2813A2AEE</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>15.000001</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>10.000000</CostManaPercent>
+        <GainHeat>15</GainHeat>
+        <CastTime>2.000000</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>61</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Point to Point</Name>
+      <Icon>archon_point_to_point</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>60</RequiredLevel>
+        <AbilityId>-85277183</AbilityId>
+        <Description>Places a totem at both the targeted ally&apos;s location and the Mage&apos;s location. Group and raid members near each totem gain a temporary ability allowing them to teleport to the opposing totem&apos;s location. Totems last 5m.</Description>
+        <AddonId>AFAEAC601FAE9DCF9</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>300.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Patron&apos;s Rage</Name>
+      <Icon>long_range_bombing</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-81216268</AbilityId>
+        <Description>Deals 10743 Fire damage over 6s. Refreshes all active Archon Aura&apos;s on the Mage instantly.</Description>
+        <AddonId>AFB28BCF463BEF511</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>15.000000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+        <Channel>true</Channel>
+        <Duration>6.000000</Duration>
+        <Interval>1.000000</Interval>
+        <PowerStatCoefficient effect="0" action="0">2.500000</PowerStatCoefficient>
+        <DamageMultiplier effect="0" action="0">0.143000</DamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>58</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Archon&apos;s Bulwark</Name>
+      <Icon>sentinel-protect_the_flock_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>57</RequiredLevel>
+        <AbilityId>-78136332</AbilityId>
+        <Description>Increases Mage&apos;s Strength, Dexterity, Intelligence and Wisdom by 75, Endurance by 100, damage dealt by 6%, Armor by 2000,  all resists by 75 and reduces the Mage&apos;s cast time by 10%. Does not stack with other Archon self buffs. Counts as a Mage Armor. Lasts 1h. </Description>
+        <AddonId>AFB57BBF466AF23DE</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>2.250000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Archon Soul Gift</Name>
+      <Icon>sentinel-refreshing_communion_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-72778951</AbilityId>
+        <Description>Increases the Mage&apos;s damage by 1% for each point spent in the Archon soul.</Description>
+        <AddonId>AFBA97B39F3F949AF</AddonId>
+        <IsPassive>True</IsPassive>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>24</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Steadfast Return</Name>
+      <Icon>reprieve_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>24</RequiredLevel>
+        <AbilityId>-63256423</AbilityId>
+        <Description>Restores 5% mana per second.</Description>
+        <AddonId>AFC3AC899B76FAA9E</AddonId>
+        <IsPassive>False</IsPassive>
+        <CastTime>Instant</CastTime>
+        <Channel>true</Channel>
+        <Duration>10.000000</Duration>
+        <Interval>1.000000</Interval>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>54</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Granite Salvo</Name>
+      <Icon>archon_rock_slide_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>53</RequiredLevel>
+        <AbilityId>-697177</AbilityId>
+        <Description>Deals 1164 to 1287 Earth damage. Increases Attack Power and Spell Power by 225 for 15s on all party and raid members. Counts as a Primary Bolt.</Description>
+        <AddonId>AFFF55CA71E419158</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <GainHeat>11</GainHeat>
+        <CastTime>1.500000</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>20</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Illuminate</Name>
+      <Icon>riftblade-surging_energy</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>20</RequiredLevel>
+        <AbilityId>74944830</AbilityId>
+        <Description>Causes the enemy to take 1500 additional damage when hit for 20s. Each attacker may trigger this once every 3s.</Description>
+        <AddonId>A0477913E28FF2AA0</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>28</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Volcanic Bomb</Name>
+      <Icon>slam4</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>28</RequiredLevel>
+        <AbilityId>125069375</AbilityId>
+        <Description>Deals 912 to 1009 Earth damage. Deals an additional 961 Fire damage over 6s.  Increases damage done by 5% on all party or raid members for 30s. Counts as a Raid Support ability.</Description>
+        <AddonId>A0774683F85F44D92</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>15.000001</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>10.000000</CostManaPercent>
+        <GainHeat>15</GainHeat>
+        <CastTime>2.000000</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>24</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Cleansing Flames</Name>
+      <Icon>doctrine_of_bliss_01_c</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>24</RequiredLevel>
+        <AbilityId>300153542</AbilityId>
+        <Description>Removes 1 Curse, Disease, or Poison from up to 10 party or raid members in the target area.</Description>
+        <AddonId>A11E3FAC649241796</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>7.200000</CostManaPercent>
+        <CastTime>2.000000</CastTime>
+        <Radius>10.000000</Radius>
+        <MaxAffected>10</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>51</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Burning Purpose</Name>
+      <Icon>ardent_doctrine_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>50</RequiredLevel>
+        <AbilityId>313571780</AbilityId>
+        <Description>Reduces cast time and autoattack delay by 7% on all party or raid members within 20m. Increases the Mage&apos;s cast time and autoattack delay by 7%. Deals 122 to 135 Fire damage to the enemy when the Mage casts a debuff on them. Lasts 5m.</Description>
+        <AddonId>A12B0B9C4C6F91764</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>3.000000</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>44</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Lingering Dust</Name>
+      <Icon>explosive_infestation_01_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>44</RequiredLevel>
+        <AbilityId>337876008</AbilityId>
+        <Description>Increases cast time and autoattack delay by 25% for 20s. Reduces the Mage&apos;s cast time and autoattack delay by 10%. Lasts 5m.</Description>
+        <AddonId>A14239428ABD72B04</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>20.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>8</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Shared Vigor</Name>
+      <Icon>rally1x</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>8</RequiredLevel>
+        <AbilityId>397652411</AbilityId>
+        <Description>Increases Endurance by 70 on all party or raid members within 20m. Reduces the Mage&apos;s Endurance by 59. Lasts 5m.</Description>
+        <AddonId>A17B3B1BB7EBF6551</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>3.000000</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Searing Vitality</Name>
+      <Icon>bleeding_aa</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>494092463</AbilityId>
+        <Description>Deals 920 Fire damage over 8s. Applies Searing Vitality to the Mage each second, increasing Endurance by 14 per stack. Max 5 stacks. Lasts 5m.</Description>
+        <AddonId>A1D7340AFB958C4BE</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+        <Duration>8.000000</Duration>
+        <Interval>1.000000</Interval>
+        <PowerStatCoefficient effect="0" action="0">1.200000</PowerStatCoefficient>
+        <DamageMultiplier effect="0" action="0">0.111000</DamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>16</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Crumbling Resistance</Name>
+      <Icon>archon_crumbling_resistance_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>16</RequiredLevel>
+        <AbilityId>495432690</AbilityId>
+        <Description>Increases non-Physical damage taken by 7%. Increases the Mage&apos;s Resistances by 35. Lasts 5m.</Description>
+        <AddonId>A1D87B3F24F9C6C02</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>300.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Lava Field</Name>
+      <Icon>discombobulate3a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>587425654</AbilityId>
+        <Description>Deals 1206 Fire damage over 6s to up to 10 enemies in the target area. Up to 10 party or raid members in the area have their damage increased by 5%.</Description>
+        <AddonId>A2303677658E3BEFD</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>12.000000</CostManaPercent>
+        <GainHeat>15</GainHeat>
+        <CastTime>2.000000</CastTime>
+        <Duration>6.000000</Duration>
+        <Interval>1.000000</Interval>
+        <Radius>7.000000</Radius>
+        <MaxAffected>10</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Waning Power</Name>
+      <Icon>smokeandmirrors3</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>733246659</AbilityId>
+        <Description>Reduces Attack Power and Spell Power by 5%. Increases the Mage&apos;s Spell Power by 10% for 15s.</Description>
+        <AddonId>A2BB474C39A07E11A</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>15.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Flowing Sand</Name>
+      <Icon>requital_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>780902264</AbilityId>
+        <Description>Reduces movement speed by 30%. Increases the Mage&apos;s movement speed by 50% for 15s. Removes all movement impairing effects.</Description>
+        <AddonId>A2E8B9F78CB953398</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Mental Flare</Name>
+      <Icon>manadrain1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1186304980</AbilityId>
+        <Description>Restores 30% of the Mage&apos;s mana over 10s.</Description>
+        <AddonId>A46B593D48D579F7C</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>120.000008</Cooldown>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>1.130000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>10.000000</Duration>
+        <Interval>1.000000</Interval>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>40</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Arcane Aegis</Name>
+      <Icon>invigoration2a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>40</RequiredLevel>
+        <AbilityId>1327076233</AbilityId>
+        <Description>Increases Resistances by 65, and Armor by 2000, on all party or raid members within 20m. Reduces the Mage&apos;s Resistances by 65 and Armor by 2000. Lasts 5m.</Description>
+        <AddonId>A4F19938980AB8990</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>3.000000</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>12</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Purification</Name>
+      <Icon>heal1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>12</RequiredLevel>
+        <AbilityId>1423579075</AbilityId>
+        <Description>Removes 1 Curse, Disease, or Poison.</Description>
+        <AddonId>A54DA17C39648F045</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>4</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Power Drain</Name>
+      <Icon>healthchannel1b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>4</RequiredLevel>
+        <AbilityId>1557749917</AbilityId>
+        <Description>Reduces damage done by 10%. Increases the Mage&apos;s damage done by 10%. Consumes Charge while active. Charge cannot be gained while active.</Description>
+        <AddonId>A5CD9609D3D22FB7E</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>1.500000</Cooldown>
+        <MaxRange>35.000000</MaxRange>
+        <MinimumHeat>10</MinimumHeat>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>48</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Surging Flare</Name>
+      <Icon>flash1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>48</RequiredLevel>
+        <AbilityId>1644685484</AbilityId>
+        <Description>Deals 1529 to 1690 Fire damage. Reduces cast time by 3% on all party or raid members for 6s. Counts as a Raid Support ability.</Description>
+        <AddonId>A6207E8AC6B7BF61E</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>10.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>10.000000</CostManaPercent>
+        <GainHeat>15</GainHeat>
+        <CastTime>2.000000</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Earthen Barrage</Name>
+      <Icon>archon-earthen_barrage</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1675671410</AbilityId>
+        <Description>Deals 1820 to 2011 Earth damage. Increases Physical Crit and Spell Crit by 3% for 30s on all party and raid members. Counts as a Raid Support ability.</Description>
+        <AddonId>A63E0B772B90F22C7</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>15.000001</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>10.000000</CostManaPercent>
+        <GainHeat>15</GainHeat>
+        <CastTime>2.000000</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Leeching Flames</Name>
+      <Icon>magicresist1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1700362885</AbilityId>
+        <Description>Deals Fire damage equal to 10% of the Mage&apos;s Maximum Mana over 8s. Returns 10% of the Mage&apos;s mana over 8s.</Description>
+        <AddonId>A65597A85B02D8214</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>3.380000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>8.000000</Duration>
+        <Interval>1.000000</Interval>
+        <PowerStatCoefficient effect="0" action="0">1.000000</PowerStatCoefficient>
+        <DamageMultiplier effect="0" action="0">0.125000</DamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>36</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Vitality of Stone</Name>
+      <Icon>mend1f</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>36</RequiredLevel>
+        <AbilityId>1717615199</AbilityId>
+        <Description>Increases Strength, Dexterity, Intelligence, and Wisdom by 54 on all party or raid members within 20m. Reduces the Mage&apos;s Strength, Dexterity, Intelligence, and Wisdom by 54. Lasts 5m.</Description>
+        <AddonId>A6660BA5F8F8CB707</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>3.000000</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>32</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Flaring Power</Name>
+      <Icon>humbling_blow_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>32</RequiredLevel>
+        <AbilityId>1742325987</AbilityId>
+        <Description>Increases Attack Power and Spell Power by 15% on all party or raid members for 30s.</Description>
+        <AddonId>A67D9C8E34456AC35</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>120.000008</Cooldown>
+        <MinimumHeat>50</MinimumHeat>
+        <CastTime>Instant</CastTime>
+        <Radius>35.000000</Radius>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>2</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Ashen Defense</Name>
+      <Icon>castigation1a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>2</RequiredLevel>
+        <AbilityId>1904978992</AbilityId>
+        <Description>Increases Physical damage taken by 5% for 5m. Increases the Mage&apos;s Armor by 714. Lasts 1h.</Description>
+        <AddonId>A718BAC30BE98F331</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>300.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Pillaging Stone</Name>
+      <Icon>concussion_01_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>2127997566</AbilityId>
+        <Description>Deals 777 to 858 Earth damage. Reduces Strength, Dexterity, Wisdom and Intelligence by 61 for 5m. Counts as a Primary Bolt.</Description>
+        <AddonId>A7ED6AA7E3429958F</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>10.000000</CostManaPercent>
+        <GainHeat>15</GainHeat>
+        <CastTime>2.000000</CastTime>
+      </AbilityRank>
+    </Ability>
+  </Abilities>
+</SoulTree>
+

@@ -1,0 +1,86 @@
+﻿@using PrancingTurtle.Helpers
+@model PrancingTurtle.Models.ViewModels.Session.SessionGuildVM
+
+@{
+    ViewBag.Title = string.Format("Sessions for {0}", Model.Guild.Name);
+}
+
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-8 col-centered">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+
+                    <h2>
+                        Sessions for <b>@Html.ActionLink(string.Format("<{0}>", Model.Guild.Name), "Index", "Guild", new { @id = Model.Guild.Id }, new { @class = "text-info" })</b>
+                        @*@string.Format("Sessions for <{0}>", Model.Guild.Name)*@
+                    </h2>
+                    @*<h4>
+                            Legend:
+                            <span class="label label-success">Boss killed</span>
+                            <span class="label label-danger">Boss not killed</span>
+                        </h4>*@
+                </div>
+            </div>
+            <br /><br />
+
+            <div class="table-responsive">
+                <table class="table">
+                    <tr><td colspan="2"></td></tr>
+                    @foreach (var session in Model.Sessions)
+                    {
+                        <tr>
+                            <td class="text-right col-sm-2">
+                                <b>@DateTimeHelpers.TimeAgo(session.Date.Add(Model.TimeZoneOffset))</b>
+                            </td>
+                            <td class="text-left col-sm-10">
+                                @foreach (var instance in session.InstancesSeen)
+                                {
+                                    if (instance.MaxRaidSize != -1)
+                                    {
+                                        <a class="btn-sm btn-default" style="text-decoration: none !important; margin-right: 5px;" href="@string.Format("/Session/Instance/{0}", instance.Id)">
+                                            @instance.Name <span class="text-warning">@string.Format("({0}-man)", instance.MaxRaidSize)</span>
+                                        </a>
+                                    }
+                                    else
+                                    {
+                                        <a class="btn-sm btn-default" style="text-decoration: none !important; margin-right: 5px;" href="@string.Format("/Session/Instance/{0}", instance.Id)">
+                                            @instance.Name
+                                        </a>
+                                    }
+                                }
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-right col-sm-2"></td>
+                            <td class="text-left col-sm-10">
+                                Session:
+                                <b>@Html.ActionLink(string.Format("{0} ({1})", session.Name, session.Duration), "Detail", "Session", new { @id = session.Id }, new { @class = "text-info-i" })</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-right col-sm-2"></td>
+                            <td class="text-left col-sm-10">
+                                <div>
+                                    @foreach (var bossKilled in session.BossesSeen)
+                                    {
+                                        <i class="fa fa-check text-success"></i>
+                                        @bossKilled
+                                    }
+                                    @foreach (var bossNotKilled in session.BossesSeenNotKilled)
+                                    {
+                                        <i class="fa fa-times text-danger"></i>
+                                        @bossNotKilled
+                                    }
+                                </div>
+                            </td>
+                        </tr>
+                        <tr><td></td><td><hr /></td></tr>
+                    }
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

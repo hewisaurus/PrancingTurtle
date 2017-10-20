@@ -1,0 +1,120 @@
+﻿@using PrancingTurtle.Helpers
+@model PrancingTurtle.Models.ViewModels.Navigation.MainNavigation
+
+<li class="dropdown">
+    @if (Model.ShortMenuFormat)
+    {
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-lg fa-question-circle"></i></a>
+    }
+    else
+    {
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Help! <b class="caret"></b></a>
+    }
+    <ul class="dropdown-menu">
+        <li>@Html.ActionLink("About the Prancing Turtle", "About", "Home")</li>
+        <li>@Html.ActionLink("Contact Us", "Contact", "Home")</li>
+        <li>@Html.ActionLink("Changelog / known issues", "Changelog", "Home")</li>
+        <li>@Html.ActionLink("How to submit logs", "SubmitLogs", "Home")</li>
+        <li>@Html.ActionLink("Release Notes", "Index", "ReleaseNotes")</li>
+        <li class="dropdown-submenu">
+            <a href="#">Useful Links</a>
+            <ul class="dropdown-menu">
+                <li><a href="http://www.riftgrate.com" target="_blank">RiftGrate</a></li>
+            </ul>
+        </li>
+    </ul>
+</li>
+
+<li class="dropdown">
+    @if (Model.ShortMenuFormat)
+    {
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-lg fa-bar-chart-o"></i></a>
+    }
+    else
+    {
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ranks / records <b class="caret"></b></a>
+    }
+
+    <ul class="dropdown-menu">
+        <li class="dropdown-submenu">
+            <a href="#">Encounters</a>
+            <ul class="dropdown-menu">
+                @foreach (var instanceGroup in Model.BossFightDifficultyRecords.OrderBy(bfd => bfd.BossFight.Instance.Name).GroupBy(bfd => bfd.BossFight.Instance.Name))
+                {
+                    <li class="dropdown-submenu">
+                        <a href="#">@instanceGroup.Key</a>
+                        <ul class="dropdown-menu">
+                            @foreach (var bossFightGroup in instanceGroup.OrderBy(bfd => bfd.BossFight.Name).GroupBy(bfd => new {bfd.BossFight.Name, bfd.BossFight.Id}))
+                            {
+                                if (bossFightGroup.Count() == 1)
+                                {
+                                    <li>@Html.ActionLink(bossFightGroup.Key.Name, "BossFight", "Session", new {@id = bossFightGroup.Key.Id}, null)</li>
+                                }
+                                else
+                                {
+                                    <li class="dropdown-submenu">
+                                        <a href="#">@bossFightGroup.Key.Name</a>
+                                        <ul class="dropdown-menu">
+                                            @foreach (var bossFightDifficulty in bossFightGroup.OrderBy(bfd => bfd.EncounterDifficulty.Priority))
+                                            {
+                                                <li>@Html.ActionLink(string.Format("{0} mode", bossFightDifficulty.EncounterDifficulty.Name), "BossFight", "Session", new {@id = bossFightGroup.Key.Id, @d = bossFightDifficulty.EncounterDifficulty.Id}, null)</li>
+                                            }
+                                        </ul>
+                                    </li>
+                                }
+                            }
+                        </ul>
+                    </li>
+                }
+            </ul>
+        </li>
+        @if (Model.ShowGuildMenu)
+        {
+            <li class="dropdown-submenu">
+                <a href="#">Guilds</a>
+                <ul class="dropdown-menu">
+                    @foreach (var guildGroup in Model.Guilds.GroupBy(g => g.Name.Substring(0, 1)))
+                    {
+                        <li class="dropdown-submenu">
+                            <a href="#">@guildGroup.Key.ToUpper()</a>
+                            <ul class="dropdown-menu">
+                                @foreach (var guild in guildGroup.OrderBy(g => g.Name))
+                                {
+                                    <li>@Html.ActionLink(guild.Name, "Guild", "Session", new {@id = guild.Id}, null)</li>
+                                }
+                            </ul>
+                        </li>
+                    }
+                </ul>
+            </li>
+        }
+    </ul>
+</li>
+
+@if (Model.LoggedIn)
+{
+    if (Model.ShortMenuFormat)
+    {
+        <li><a href="@Url.Action("Upload", "Session")" class="btn-success"><i class="fa fa-lg fa-cloud-upload"></i></a></li>
+    }
+    else
+    {
+        <li>@Html.ImageActionLink("Upload", "Session", null, "btn-success", "fa fa-lg fa-cloud-upload", "Upload a session", false)</li>
+    }
+}
+
+<form class="navbar-form navbar-left" role="search" action="/">
+    <div class="form-group">
+        <input name="s" type="text" class="form-control" placeholder="Search...">
+    </div>
+    @if (Model.ShortMenuFormat)
+    {
+        <button type="submit" class="btn btn-default"><i class="fa fa-lg fa-sign-in"></i></button>
+    }
+    else
+    {
+        <button type="submit" class="btn btn-default"><b>Search</b></button>
+    }
+</form>
+
+<li>@Html.ImageActionLink("Donate", "Home", null, "btn-warning", "fa fa-lg fa-star", "<b>Donate to PT</b>", false)</li>

@@ -1,0 +1,704 @@
+﻿@using PrancingTurtle.Helpers
+@{
+    ViewBag.Title = "Release Notes for v1.x";
+}
+
+<div class="container container-fluid">
+    <h4>Comments and feedback are always welcome either in-game at <b>hewi@laethys</b>, <b>hewi@hailol</b> or via email at <b>hewi@prancingturtle.com</b>.</h4>
+
+@*<div class="row">
+            <div class="col-lg-6">
+                <h3 class="text-success">Release notes for Version 1.x.x (Month Day, Year)</h3>
+                <hr />
+                <h4>Area heading 1</h4>
+                <ul class="ulstar">
+                    <li>List item 1</li>
+                    <li>List item 2</li>
+                </ul>
+                <br />
+                <h4>Area heading 2</h4>
+                <ul class="ulstar">
+                    <li>List item 1</li>
+                    <li>List item 2</li>
+                </ul>
+            </div>
+        </div>*@
+    <div class="row">
+        <div class="col-lg-6">
+            <h3 class="text-success">Release notes for Version 1.1.10 (May 11th, 2016)</h3>
+            <hr />
+            <h4>Damage / Healing taken pages</h4>
+            <ul class="ulstar">
+                <li>
+                    Fixed an issue that was preventing the correct interaction pages to pop up when looking for incoming damage or healing graphs
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <h3 class="text-success">Release notes for Version 1.1.9 (February 18th, 2016)</h3>
+            <hr />
+            <h4>Leaderboards</h4>
+            <ul class="ulstar">
+                <li>
+                    Fixed a query that was preventing some support leaderboards from displaying correctly
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <h3 class="text-success">Release notes for Version 1.1.8 (February 16th, 2016)</h3>
+            <hr/>
+            <h4>Leaderboards</h4>
+            <ul class="ulstar">
+                <li>
+                    The single-target leaderboard has been enabled for Lady Justice, in the Mind of Madness instance
+                </li>
+                <li>Support leaderboards are here, alongside the rest of the leaderboards for any given encounter. Please report any bugged or strange parses!
+                </li>
+            </ul>
+            <br />
+            <h4>Classes</h4>
+            <ul class="ulstar">
+                <li>
+                    Clerics using defiler are now considered DPS rather than Support
+                </li>
+            </ul>
+            <br />
+            <h4>Sessions and Encounters</h4>
+            <ul class="ulstar">
+                <li>Single target leaderboards for Anrak the Foul in Intrepid Gilded Prophecy should now include encounters parsed from German combat logs</li>
+            </ul>
+            <br />
+            <h4>Graph Display</h4>
+            <ul class="ulstar">
+                <li>Graphs now have a 5-second rolling average display on top of the options that were previously there</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <h3 class="text-success">Release notes for Version 1.1.7 (December 16th, 2015)</h3>
+            <hr />
+            <h4>Menu / navigation</h4>
+            <ul class="ulstar">
+                <li>Under 'My Account', you'll now see two options, 'Menu format' and 'Guild menu'. The menu format allows you to change whether you are
+                    presented with a smaller, icon-based menu or the existing text-based menu. This should help users on mobile devices if the menu is set to icon-only! 
+                Also, You can set whether the menu that displays guilds (sorted by first letter) fron the ranks / records navigation menu.</li>
+            </ul>
+            <br />
+            <h4>Sessions and Encounters</h4>
+            <ul class="ulstar">
+                <li>Added support for French and German logs with regard to some Mind of Madness bosses, Lady Envy, Fauxmire, Lord Arak and the trash mob Pure Evil.</li>
+                <li>
+                    Unsuccessful encounters older than 6 months will be removed over the coming weeks, and sessions that are left with no encounters will also be removed.
+                    The 6-month limit is a tentative one and may be reduced further at a later date.
+                </li>
+                <li>Fixed a bug where the 'Player Damage Taken' page would fail to render for Pure Evil, in the Mind of Madness instance</li>
+                <li>On the session detail page, original session uploaders and guild administrators can now select multiple encounters and remove them simultaneously, rather than
+                    having to do so one by one</li>
+                <li>Removing an encounter now flags it for removal and removes it from the session list. Actual deletion happens in the background and you no longer 
+                have to wait for the removal to complete before being redirected to the encounter list for that particular session.</li>
+            </ul>
+            <br />
+            <h4>Graph Display</h4>
+            <ul class="ulstar">
+                <li>Graphs on DPS/HPS/APS pages as well as player breakdowns have been changed to a spline format, and should be easier to interpret than before.</li>
+                <li>
+                    As the graph displays have changed, particularly on ability and target breakdown pages, only the Total and Average series are displayed by default.
+                    Clicking the name of an ability underneath the graph will toggle the visibility of that particular series on the graph.
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <h3 class="text-success">Release notes for Version 1.1.6 (November 11th, 2015)</h3>
+            <hr />
+            <h4>Sessions</h4>
+            <ul class="ulstar">
+                <li>Session detail pages (where the encounters within the session are listed) now include an overall rank by kill time, and rank by raid DPS</li>
+                <li>The 'find a session' menu has been removed, but if you'd still like to look for sessions by a boss or instance, type the boss name or instance into the search box and hit enter / click Search</li>
+            </ul>
+            <br />
+            <h4>Guilds</h4>
+            <ul class="ulstar">
+                <li>Guild rosters are now sorted by player name rather than rank, so when promoting and demoting players, the list won't jump around and re-sort itself</li>
+                <li>Within the raid progression panel, bosses are broken into the varying difficulty settings, and encounters with only one difficulty are considered 'Normal'</li>
+                <li>The raid progression panel now includes links to track guild performance over time on a specific encounter, as well as player performance over time</li>
+                <li>Guild administrators can now remove guild members via the guild index page. Those with admin access to their guild will see a delete / ban icon next to each member apart from themselves</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <h3 class="text-success">Release notes for Version 1.1.5 (October 23rd, 2015)</h3>
+            <hr />
+            <h4>Leaderboards</h4>
+            <ul class="ulstar">
+                <li>Some internal changes have been put into place in order to resolve some of the issues where leaderboards weren't being updated</li>
+                <li>Primalists now have their own section of the single target leaderboards</li>
+            </ul>
+            <br />
+            <h4>Player role detection</h4>
+            <ul class="ulstar">
+                <li>Rogues that aren't tanking now should not show up as tanks in the event that they use some Riftstalker abilities</li>
+            </ul>
+            <br />
+            <h4>Encounters</h4>
+            <ul class="ulstar">
+                <li>Some encounters across both Hammerknell Fortress and Intrepid Gilded Prophecy have had their HP values tweaked to bring them in line with the correct values in-game</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <h3 class="text-success">Release notes for Version 1.1.4 (October 9th, 2015)</h3>
+            <hr />
+            <h4>Encounters</h4>
+            <ul class="ulstar">
+                <li>Updated HP values for raid bosses in Hammerknell Fortress, Intrepid Gilded Prophecy and The Rhen of Fate</li>
+                <li>Encounters with more than one difficulty setting have been retroactively validated and those that were incorrectly flagged as easy instead of normal, and normal instead of hard, have been updated.</li>
+            </ul>
+            <br />
+            <h4>Primalist</h4>
+            <ul class="ulstar">
+                <li>Detection for Primalist roles should now work as intended and show up on the encounter overview / damage / healing / absorption pages.</li>
+                <li>Primalists now have their own class section on the rank / record pages like the other classes</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <h3 class="text-success">Release notes for Version 1.1.3 (October 2nd, 2015)</h3>
+            <hr />
+            <h4>Player DPS comparison pages</h4>
+            <ul class="ulstar">
+                <li>Each compared ability now has a small chart underneath it, depicting when the ability was used by each player, and the amount of damage it dealt at that point in time</li>
+                <li>The crits / hits / swings / crit rate text at the top of the page has been expanded a little to avoid confusion about the number of each type. Swings indicate the number of times an ability 
+                was used, Crits are critical hits and Hits are non-critical hits.</li>
+            </ul>
+            <br />
+            <h4>Records and ranks</h4>
+            <ul class="ulstar">
+                <li>Single target leaderboards have been added for selected fights in currently supported encounters. More may be added over time, but due to how some encounters are designed, this isn't 
+                feasible for every encounter. Single target DPS statistics are updated at the same time as the rest of the leaderboards - every 15-20 minutes.</li>
+                <li>Encounters currently tracking single target dps: <br/>
+                    <b>Hammerknell Fortress</b>: Murdantix, Sicaron, Estrode, Matron Zamira and Grugonim<br/>
+                    <b>Intrepid Gilded Prophecy</b>: Anrak the Foul, Thalguur, Guurloth, Uruluuk<br />
+                    <b>Tyrant's Forge</b>: Johan<br />
+                    <b>The Rhen of Fate</b>: Ungolok, Drekanoth of Fate and Finric<br />
+                    <b>Mount Sharax</b>: Jinoscoth and The Yrlwalach<br />
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <h3 class="text-success">Release notes for Version 1.1.2 (September 27th, 2015)</h3>
+            <hr />
+            <h4>Encounters</h4>
+            <ul class="ulstar">
+                <li>Added a fix for encounters that exist within two sessions. These should no longer throw exceptions when trying to view encounter details</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <h3 class="text-success">Release notes for Version 1.1.1 (September 17th, 2015)</h3>
+            <h4>Ranking system &amp; records</h4>
+            <ul class="ulstar">
+                <li>
+                    Encounters that are set to private are no longer shown in the ranks/records section. This is only affected by the public or private status of an encounter, and not the session itself.
+                    If an entire session is set to private when it's uploaded, administrators or uploaders still have the ability to change the privacy of each encounter individually if they wish it be
+                    considered for the ranking/record system. To make an encounter public if it's currently set to private, click the lock icon next to it on the session detail screen.
+                </li>
+            </ul>
+            <br />
+            <h4>Recent sessions</h4>
+            <ul class="ulstar">
+                <li>
+                    The most recent sessions on the homepage now don't show sessions that have been marked as private.
+                </li>
+            </ul>
+            <br />
+            <h4>Submitting logs</h4>
+            <ul class="ulstar">
+                <li>
+                    Instructions around how to upload logs via FTP (a much more reliable upload method) have been written. Under the help menu, check out 'How to submit logs' for more information.
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <h3 class="text-success">Release notes for Version 1.1.0 (August 22, 2015)</h3>
+            <h5>It's finally here!</h5>
+            <hr />
+            <h4>Encounter Ranking System</h4>
+            <ul class="ulstar">
+                <li>
+                    The first part of the ranking system has been released, and it includes kill timers as well as DPS/HPS/APS records per fight.
+                    You can find these ranks by clicking the 'Find a session' menu up the top of the screen. <br/>
+                    Find a session -> Encounters -> Pick an instance -> Pick an encounter<br/>
+                    For encounters that have more than one difficulty setting, you can also select which difficulty you'd like to see the rankings and records for.
+                </li>
+                <li>
+                    Different sets of ranks and a way of tracking personal encounter ranks will be added at a later date, but players are encouraged to ensure that they have registered an account,
+                    added their characters and joined guilds. Having your character registered here will mean that when personal tracking is added, you'll be able to see your own stats / records from within
+                    your account management section, rather than having to find each encounter individually.
+                </li>
+                <li>Statistics and ranks are updated every 20 minutes</li>
+            </ul>
+            <br/>
+            <h4>Encounters and sessions</h4>
+            <ul class="ulstar">
+                <li>Difficulty detection has been added for both the Intrepid Gilded Prophecy and Rhen of Fate instances.</li>
+                <li>Some additional checking has been put in place to avoid the 00:00:00 encounters that have been popping up. The checking that was previously put in place was silently crashing, and actually works now!</li>
+                <li>Boss lists on session pages (which ones were and weren't killed during a session) are now sorted by instance, and then by boss name</li>
+                <li>A whole bunch of boss portraits have been updated</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <h3 class="text-success">Release notes for Version 1.0.15 (August 9th, 2015)</h3>
+            <h5>So many internal changes have been happening over the last several weeks. Development has been slower than usual due to time constraints, but it has definitely been continuing!</h5>
+            <hr/>
+            <h4>User Interface</h4>
+            <ul class="ulstar">
+                <li>
+                    Various bits and pieces have been reworked a little and should be a bit friendlier to use. The login page should now render better on mobile devices or screens with smaller resolutions
+                    than a standard desktop PC.
+                </li>
+                <li>
+                    The popup pages for character interaction / breakdown charts now have the player name and the interaction type in the title.
+                </li>
+            </ul>
+            <br />
+            <h4>Rankings</h4>
+            <ul class="ulstar">
+                <li>
+                    The ranking system has been progressing well and was nearly ready for release immediately prior to Trion's release of Rift 3.3. As several encounters now have been given an
+                    easy mode or a hardmode option, proper difficulty detection for these needs to be implemented before the ranking system can be released properly. Sorry for the delay!
+                </li>
+            </ul>
+            <br />
+            <h4>Encounters</h4>
+            <ul class="ulstar">
+                <li>
+                    Added special handling for the Inwar Darktide encounter within Hammerknell Fortress to ensure that the encounter isn't broken or split even with long periods of downtime between phases.
+                    Specifically, the timeout has been increased to 30 seconds for this particular encounter.
+                </li>
+            </ul>
+            <br />
+            <h4>Parsing methods</h4>
+            <ul class="ulstar">
+                <li>
+                    Revamped the process that logs go through after being uploaded (both via web and FTP), that allow more time for users uploading logs via slow
+                    connections that would have previously made uploaded files appear to vanish and never be parsed.
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <h3 class="text-success">Release notes for Version 1.0.14 (June 8th, 2015)</h3>
+            <hr />
+            <h4>Encounters</h4>
+            <ul class="ulstar">
+                <li>Added some more boss portraits: Jinoscoth (Mount Sharax), Ungolok (Rhen of Fate), Skelf Brothers (Rhen of Fate), Drekanoth of Fate (Rhen of Fate),
+                    Finric (Rhen of Fate), Estrode (Hammerknell Fortress), and Inquisitor Garau (Hammerknell Fortress). As with previous portraits, these will show up on
+                the overview pages for matching encounters.</li>
+            </ul>
+            <br />
+            <h4>Parsing methods</h4>
+            <ul class="ulstar">
+                <li>Extended the timeout for encounters to 15 seconds, up from 10. Encounters are deemed finished when no NPCs have taken damage for 15 seconds, and this change helps allow 
+                for situations (particularly seen within the Drekanoth of Fate encounter) where there is a small period of downtime within an encounter that is still active.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <h3 class="text-success">Release notes for Version 1.0.13 (May 21st, 2015)</h3>
+            <hr />
+            <h4>Encounters</h4>
+            <ul class="ulstar">
+                <li>Added some boss portraits! These can be seen on the instance search pages or on the overview for a particular encounter, if a portrait exists, and more will be added over time.</li>
+            </ul>
+            <br />
+            <h4>Bug fixes</h4>
+            <ul class="ulstar">
+                <li>Fixed a bug that occurred while comparing breakdowns where one or more abilities did no damage</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <h3 class="text-success">Release notes for Version 1.0.12 (May 5th, 2015)</h3>
+            <hr />
+            <h4>Encounters</h4>
+            <ul class="ulstar">
+                <li>
+                    Added the ability to copy and paste an encounter's parse, similar to in-game parsing tools. This is visible at the top of each overview page within an encounter, such
+                    as 'Player Damage Done' or 'NPC Healing Taken'
+                </li>
+                <li>
+                    Added the ability to compare DPS breakdowns for players within a single encounter. On the 'Damage Done' pages, 
+                    select the players you'd like to compare, and hit the green compare button down the bottom of the page.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+<div class="row">
+        <div class="col-lg-6">
+            <h3 class="text-success">Release notes for Version 1.0.11 (May 4th, 2015)</h3>
+            <hr />
+            <h4>Login and links</h4>
+            <ul class="ulstar">
+                <li>If you're asked to login after requesting a page, you should properly be redirected to that page after logging in</li>
+                <li>Fixed a bug that broke a bunch of pages if you logged in with an account that contained one or more characters without guilds</li>
+            </ul>
+            <br />
+            <h4>Encounters</h4>
+            <ul class="ulstar">
+                <li>Added support for Expert and Raid practice dummies for French and German combat logs</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <h3 class="text-success">Release notes for Version 1.0.10 (April 27, 2015)</h3>
+            <hr />
+            <h4>Sessions</h4>
+            <ul class="ulstar">
+                <li>
+                    Added support for uploading logs via FTP. See the notes on the top of the upload pages or click
+                    <b>@Html.ActionLink("here", "FTP", "Session", null, new { @class = "text-info" })</b> for more info
+                </li>
+                <li>
+                    There is now search functionality for Guilds, Players and Encounters!
+                    Type your search terms into the search box in the top menu, and hit Enter or the Search button to view the results.
+                </li>
+            </ul>
+            <br />
+            <h4>Languages</h4>
+            <ul class="ulstar">
+                <li>Added limited support for French combatlogs - support for these will improve over time with testing from the guilds that log in French!</li>
+                <li>Drekanoth of Fate encounters will now properly show up in sessions created from German and French combatlogs</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <h3 class="text-success">Release notes for Version 1.0.9 (April 21, 2015)</h3>
+            <hr />
+            <h4>Guild Privacy</h4>
+            <ul class="ulstar">
+                <li>
+                    Added a new option: <b><span class="text-warning">Progression Visibility</span></b>! This setting controls whether users outside of your guild can see your guild's
+                    progression in terms of what boss you have or have not killed. This information is shown on the guild details page, and the default setting for this is <b><span class="text-warning">public</span></b>.
+                </li>
+            </ul>
+            <br />
+            <h4>Guild Details</h4>
+            <ul class="ulstar">
+                <li>
+                    Added a new section under the existing guild details for <b><span class="text-warning">Raid Progression</span></b>. This progression tracker is automatically updated whenever
+                    a new session is uploaded. Here's a snippet of what the tab may look like
+                    <br /><br />
+                    <img src="~/Content/images/releasenotes/1.0.9/RaidProgression.PNG" />
+                </li>
+            </ul>
+            <br />
+            <h4>Navigation</h4>
+            <ul class="ulstar">
+                <li>The navigation menu has changed a little, and the 'Find a session' menu now gives you the ability to find sessions by guild, instance, or boss.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <h3 class="text-success">Release notes for Version 1.0.8 (April 20, 2015)</h3>
+            <hr />
+            <h4>Sessions and Encounters</h4>
+            <ul class="ulstar">
+                <li>Fixed a bug that would cause a very small number of Rune King Molinar &amp; Prince Dollin attempts to not appear in the session list</li>
+                <li>If you navigate to an encounter that you don't have access to, you'll see a message saying so, rather than being redirected straight back to the homepage</li>
+                <li>The instances seen in any given session are now shown next to the session link</li>
+            </ul>
+            <br />
+            <h4>Buffs and Debuffs</h4>
+            <ul class="ulstar">
+                <li>Made some changes to how the buffs and debuffs are stored, so the UI for both of these should be much faster now!</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <h3 class="text-success">Release notes for Version 1.0.7 (April 16, 2015)</h3>
+            <hr />
+            <h4>Guild Privacy</h4>
+            <ul class="ulstar">
+                <li>
+                    In addition to being able to set default privacy for encounters when you upload a session and then being able to modify individual encounter privacy from the session detail page,
+                    guild administrators can now also control various privacy features on a global level. These privacy features are available (for guild administrators) from
+                    @Html.ActionLink("My Account", "Index", "Manage", null, new { @class = "text-info" }) &gt; Guild name &gt; Guild Privacy.
+                    <br /><br />
+                    The default settings look like this:<br />
+                    <img src="~/Content/images/releasenotes/1.0.7/privacydefaults.PNG" /><br />
+                    The current settings are shown, along with an option to toggle them to the opposing value.
+                </li>
+                <li>
+                    The <b><span class="text-warning">Guild Roster</span></b> privacy setting controls whether users outside of your guild can see the list of guild members and their rank.
+                    The default setting for this is <b><span class="text-warning">private</span></b>.
+                </li>
+                <li>
+                    The <b><span class="text-warning">Visibility in Lists</span></b> privacy setting controls whether your guild will appear in lists such as the Guild Sessions navigation menu.
+                    The default setting for this is <b><span class="text-warning">public</span></b>.
+                </li>
+                <li>
+                    The <b><span class="text-warning">Visibility in Rankings</span></b> privacy setting controls whether both guild and member (individual player) parses will be counted in, and shown on
+                    the ranking pages. The default setting for this is <b><span class="text-warning">public</span></b>.
+                </li>
+                <li>
+                    The <b><span class="text-warning">Visibility in Search</span></b> privacy setting controls whether your guild will appear in search results.
+                    The default setting for this is <b><span class="text-warning">public</span></b>.
+                </li>
+                <li>
+                    The <b><span class="text-warning">Session Visibility</span></b> privacy setting controls whether users outside of your guild can see uploaded sessions.
+                    The default setting for this is <b><span class="text-warning">public</span></b>.
+                </li>
+                <li><b>NB:</b> None of these privacy settings prevent players being able to find the guild and apply for it via their 'My Account' section.</li>
+            </ul>
+            <br />
+            <h4>Bug fixes</h4>
+            <ul class="ulstar">
+                <li>Fixed a bug that would redirect users to the homepage instead of showing the buff or debuff uptime graphs</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <h3 class="text-success">Release notes for Version 1.0.6 (April 14, 2015)</h3>
+            <hr />
+            <h4>Encounter detail pages</h4>
+            <ul class="ulstar">
+                <li>Updated the look of the Buff & Debuff graphs to bring them inline with the rest of the site</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <h3 class="text-success">Release notes for Version 1.0.5 (April 9, 2015)</h3>
+            <hr />
+            <h4>Encounter overviews</h4>
+            <ul class="ulstar">
+                <li>Fixed an issue where some tanks were being seen as DPS for the role breakdown. Cached parses won't be updated though, so please let us know if you notice any past encounters with incorrect tanks & they'll be updated.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <h3 class="text-success">Release notes for Version 1.0.4 (April 7, 2015)</h3>
+            <hr />
+            <h4>Sessions</h4>
+            <ul class="ulstar">
+                <li>Sessions can now be renamed by the original uploader or any administrator of the guild the session was uploaded for</li>
+            </ul>
+            <br />
+            <h4>Character and Guild Management</h4>
+            <ul class="ulstar">
+                <li>When you remove a character from your account, if it was the last remaining character in a guild, the guild will also be removed.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <h3 class="text-success">Release notes for Version 1.0.3 (April 6, 2015)</h3>
+            <hr />
+            <h4>Sessions</h4>
+            <ul class="ulstar">
+                <li>Added a link within the encounter nav bar that will let you jump back to the session overview</li>
+                <li>Fixed a bug in the back-end that prevented some sessions from being removed properly</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <h3 class="text-success">Release notes for Version 1.0.2 (April 5, 2015)</h3>
+            <hr />
+            <h4>Encounter detail pages</h4>
+            <ul class="ulstar">
+                <li>Player deaths within encounters (click 'Deaths' on the encounter navigation bar once you're viewing an encounter) now also display source player names, instead of blank text if they were killed by another player rather than an NPC</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <h3 class="text-success">Release notes for Version 1.0.1 (April 3, 2015)</h3>
+            <hr />
+            <h4>Guild Management</h4>
+            <ul class="ulstar">
+                <li>Demoting a character from Administrator to Uploader now has a popup message to confirm the action</li>
+                <li>Guild administrators can no longer 'accidentally' demote themself to Uploader (without a chance to reverse the change). If you're the only character in a guild, the promotion and demotion text links have been disabled.</li>
+            </ul>
+            <br />
+            <h4>Uploading Logs</h4>
+            <ul class="ulstar">
+                <li>
+                    There's now a link underneath the upload controls that will allow you to jump straight to your session's detail page once your log has been uploaded. Don't forget that once your upload has completed, the turtle on the receiving end still has to
+                    unzip your combatlog, parse it, and save the encounters to the database (which can take several minutes, depending on the size of your log)
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 releasenotes">
+            <h3 class="text-success">Release notes for Version 1.0 (April 3, 2015)</h3>
+            <hr />
+            <h4>Release the turtles!</h4>
+            <br />
+            <ul class="ulstar">
+                <li>
+                    First of all, an enormous amount of work has been done to get the site to this point, and it would not have been possible without the number of players and guilds
+                    that have provided logs and/or helped in the early testing. There are lots of you that have helped to varying degrees, but I would particularly like to thank the guilds
+                    <span class="text-warning">&lt;Trinity&gt;</span>, <span class="text-warning">&lt;Coriolis&gt;</span> and <span class="text-warning">&lt;Nefarious&gt;</span>.
+                </li>
+                <li>
+                    The Prancing Turtle has been designed with guilds in mind, and so users are requred to hold the 'Uploader' or higher rank within a guild to be able to upload sessions.
+                    This isn't aimed solely at high-end guilds, but should work for guilds on any level, casual, hardcore or otherwise. Run a regular raid PUG? No problems!
+                </li>
+                <li>Registration is open to everyone and is available by clicking on @Html.ActionLink("Register", "Register", "Account", null, new { @class = "text-info" }) or the Register link in the top right corner of the site.</li>
+                <li>
+                    Character and guild management is accessible from @Html.ActionLink("My Account", "Index", "Manage", null, new { @class = "text-info" }) or clicking the My Account link which in the top right corner of the site.
+                    You'll also find the option to change your password and set your timezone here. Setting a timezone is handy if you want to see sessions and encounters show up in 'local' time.
+                </li>
+                <li>After you login, you'll find the @Html.ImageActionLink("Upload", "Session", null, "text-info", "fa fa-lg fa-cloud-upload", "Upload a session") link in the main menu bar, click it and follow the instructions to begin uploading!</li>
+            </ul>
+            <br />
+            <h4>Guild Management</h4>
+            <ul class="ulstar">
+                <li>
+                    Anyone can create a guild after they have created one or more characters, and guilds should be approved once created. Follow the steps on-screen once you've created a guild to get it approved quickly.
+                </li>
+                <li>
+                    Creating a guild with a particular character will automatically make that character an <span class="text-warning">Administrator</span>
+                    and give it the power to accept or decline applications as well as promote and demote guild members.
+                    Be careful when promoting or demoting users! The roster is sorted by rank and then character name, so adjustments to the ranks can result in the
+                    roster being reordered, which in turn can result in the wrong characters being modified if you are performing subsequent actions too quickly.
+                </li>
+            </ul>
+            <br />
+            <h4>Uploading logs</h4>
+            <ul class="ulstar">
+                <li>
+                    To create a log that you can use to upload here, simply type <b>/combatlog</b> while you're playing Rift. In your general chat tab, you should
+                    see 'Combat logging enabled', and Rift will begin appending data to a file called CombatLog.txt within your Documents/Rift folder. When you have
+                    finished logging, type <b>/combatlog</b> again, and the game will disable combat logging. Your log is now ready to compress!
+                </li>
+                <li>
+                    If you intend on logging a raid (for example), make sure you rename the previous CombatLog.txt to something else (if it exists), as Rift
+                    appends data to a CombatLog.txt file if it finds one. If no such file exists, it will be created when you turn logging on. Renaming or deleting
+                    previous logs ensures that you don't get duplicate encounters, such as last week's raid, or the last dummy parse that you were looking into.
+                </li>
+                <li>
+                    If a character holds the rank of Uploader or higher, it will be able to upload logs on behalf of the guild that it's in.
+                    When uploading, please follow the instructions carefully, as files that are not compressed in .zip format or are named incorrectly will be deleted immediately.
+                    The process itself is fairly simple once you have your log file - ensure that you have disabled combat logging,
+                    compress the log using your tool of choice, rename the .zip file to the filename that you were given when creating the session
+                    (e.g. ai4nt4g7sdfl.zip), and drag &amp; drop it into the upload area!
+                </li>
+                <li>
+                    When creating a session, the 'Make encounters public' box is checked. If you would like to ensure that only guild members can see the detailed encounter information,
+                    for sessions contained in the log you're about to upload, uncheck this box. You can change encounter privacy at any point in the future, but this setting will
+                    determine the initial privacy state of the encounters when they are saved. To characters that are not in your guild, encounter length, raid DPS, the number of player deaths and the
+                    Kill / Wipe result for each encounter are the only details that are visible.
+                </li>
+                <li>
+                    Once the upload completes, the log will be extracted to a temporary folder, parsed by our team of fine-toothed-comb-wielding turtles, and then saved to the database.
+                    The original .zip file is also archived so if something goes horribly wrong (i.e. you accidentally trash an encounter or two),
+                    it can be reimported without having to upload the entire log again.
+                </li>
+                <li>
+                    English and German logs are currently supported, and while logs in other languages may partially work, support has not been added for them.
+                    Contact us if this is an issue!
+                </li>
+            </ul>
+            <br />
+            <h4>Viewing sessions and encounters: The basics</h4>
+            <ul class="ulstar">
+                <li>
+                    A list of the 10 most recent sessions are shown on the home page, but if you are looking for a specific session, you can use the Guild menu item from the main menu
+                    bar to locate the guild, and then the session that you're looking for.
+                </li>
+                <li>
+                    Clicking on a session will show you the session overview, a small amount of detail about the whole session, and a breakdown of the encounters found in the log(s).
+                    To view more information about an encounter, click the 'View Encounter' link next to the encounter record. If you can't see the link, chances are that the
+                    encounter has been set to private, but you'll see some text there to let you know that this is the case.
+                </li>
+                <li>
+                    The original uploader for any given session has the ability to modify privacy on an encounter-by-encounter level by clicking on the lock icon for any
+                    encounter record. Clicking <i class="fa fa-lock text-warning"></i> will change an encounter from private to public, just as clicking <i class="fa fa-unlock text-warning"></i> will
+                    change an encounter from public to private.
+                </li>
+            </ul>
+            <br />
+            <h4>Viewing sessions and encounters: Advanced information</h4>
+            <ul class="ulstar">
+                <li>
+                    Clicking 'View Encounter' will take you to the Encounter Overview page, where you can see basic details about the encounter, the makeup of the group,
+                    Buffs, Debuffs and abilities cast by NPCs. Can't remember the name of the ability that you were supposed to interrupt? Have a look at the overview and find it!
+                </li>
+                <li>
+                    Once you're viewing an encounter, you will get a second navigation bar up the top of the screen that will make it easier to find individual sections of
+                    the encounter detail. View incoming and outgoing damage, healing and absorption on both players and NPCs from the menu options provided. There is also a 'Deaths'
+                    section that will show who was killed by who (and what), along with a detailed page showing all interactions with that player in the 5 seconds leading up to
+                    their death.
+                </li>
+                <li>
+                    All of the individual areas (incoming and outgoing DPS/HPS/APS) have an overall graph, along with a breakdown by character. This quickly shows how each player or NPC
+                    interacted within the given encounter, and separates interactions into groups such as 'to NPCs' or 'from NPCs', as well as players and self.
+                    Next to each total column there are two icons, which allow you to dive a little deeper. <i class="fa fa-line-chart text-warning"></i> will give you a detailed breakdown that
+                    is grouped by <b>ability</b>, and <i class="fa fa-crosshairs text-warning"></i> will give you a detailed breakdown that's grouped by <b>character</b>, whether it's an NPC or a player.
+                    Graphs that are unavailable (usually because there is no data) will display <i class="fa fa-ban text-warning"></i>.
+                </li>
+                <li>
+                    On top of the breakdowns per area (DPS/HPS/APS), you'll see a small <i class="fa fa-smile-o text-success"></i> and <i class="fa fa-frown-o text-danger"></i> next
+                    to each record. Clicking <i class="fa fa-smile-o text-success"></i> will show you the buffs seen (and their timers) on that character for the encounter, just as
+                    <i class="fa fa-frown-o text-danger"></i> will show you the debuffs seen on that character for the encounter.
+                </li>
+            </ul>
+            <br />
+            <h4>Other notes</h4>
+            <ul class="ulstar">
+                <li>
+                    Clerics playing the Defiler soul will show up on breakdowns as a support class, due to the nature of the soul. This doesn't reflect the number of points spent
+                    in the soul or exactly how the soul is being used, but just the fact that the player is a Defiler.
+                </li>
+                <li>
+                    Sessions that are created but have no logs uploaded for them will be removed after 7 days after the initial session creation.
+                </li>
+                <li>
+                    For those people that like statistics, check out the @Html.ActionLink("site stats", "Stats", "Home", null, new { @class = "text-info" }) page!
+                </li>
+                <li>
+                    This site is not maintained by Trion, and while we make the effort to stay ahead of the curve and spend time on PTS to ensure that future logs will work as
+                    expected here, we can't guarantee that this will be the case. However, we can guarantee that we'll make every effort to fix all bugs or issues that we find
+                    (and those that are reported by you)!
+                </li>
+                <li>
+                    Limited support is available in-game via <b>hewi@laethys</b> or <b>hewi@hailol</b>, but the best option is to email <b>hewi@prancingturtle.com</b>!
+                </li>
+                <li>
+                    For the most recent updates and known issues, check out @Html.ActionLink("this page!", "Changelog", "Home", null, new { @class = "text-info" })
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

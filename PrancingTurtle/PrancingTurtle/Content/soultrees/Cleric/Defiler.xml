@@ -1,0 +1,1276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SoulTree calling="Cleric" name="Defiler">
+  <Traits>
+    <Trait>
+      <Key>0</Key>
+      <Name>Horrible Visage</Name>
+      <Icon>summonskeleton1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-27003901</AbilityId>
+          <Description></Description>
+          <AddonId>AFE63F4032442863F</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your damage done by 1%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your damage done by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your damage done by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your damage done by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your damage done by 5%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>1</Key>
+      <Name>Open Minded</Name>
+      <Icon>tactician_necrotic_bolt_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-24032476</AbilityId>
+          <Description></Description>
+          <AddonId>AFE914B240B720702</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Wisdom by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Wisdom by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your Wisdom by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your Wisdom by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your Wisdom by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>2</Key>
+      <Name>Arrogance</Name>
+      <Icon>tempest_identified_weakness_z</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-53825187</AbilityId>
+          <Description></Description>
+          <AddonId>AFCCAB15D7648035F</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces the cast time and mana cost of your Somatic Desecration by 5%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reduces the cast time and mana cost of your Somatic Desecration by 10%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Reduces the cast time and mana cost of your Somatic Desecration by 15%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Reduces the cast time and mana cost of your Somatic Desecration by 20%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Reduces the cast time and mana cost of your Somatic Desecration by 25%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>3</Key>
+      <Name>Obsessive</Name>
+      <Icon>hidden_veil_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-68714674</AbilityId>
+          <Description></Description>
+          <AddonId>AFBE77F4E30DC00B6</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your damage done, healing done, and absorption granted by 1%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your damage done, healing done, and absorption granted by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your damage done, healing done, and absorption granted by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your damage done, healing done, and absorption granted by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your damage done, healing done, and absorption granted by 5%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>4</Key>
+      <Name>Siphon Vitality</Name>
+      <Icon>defiler_siphon_vitality_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-41217628</AbilityId>
+          <Description>Deals 1533 Death damage over 15s. Restores 214 health to the Cleric at the same time.</Description>
+          <AddonId>AFD8B11A497975C37</AddonId>
+          <IsPassive>False</IsPassive>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>7.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+          <Duration>15.000000</Duration>
+          <Interval>1.500000</Interval>
+          <PowerStatCoefficient effect="0" action="0">2.000000</PowerStatCoefficient>
+          <DamageMultiplier effect="0" action="0">0.090909</DamageMultiplier>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>5</Key>
+      <Name>Husk of Indifference</Name>
+      <Icon>defiler_husk_of_indifference_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-18541649</AbilityId>
+          <Description>Absorbs 716 intercepted damage. Lasts 30s.</Description>
+          <AddonId>AFEE513AF2E95D410</AddonId>
+          <IsPassive>False</IsPassive>
+          <CostManaPercent>7.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+          <PowerStatCoefficient effect="0" action="0">2.000000</PowerStatCoefficient>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>6</Key>
+      <Name>Peak of Form</Name>
+      <Icon>paragon-way_of_mountain_b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-66113845</AbilityId>
+          <Description></Description>
+          <AddonId>AFC0F2ECB301BE5FB</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases damage done, healing done, and absorption granted by 2% while above 90% health.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases damage done, healing done, and absorption granted by 4% while above 90% health.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases damage done, healing done, and absorption granted by 6% while above 90% health.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases damage done, healing done, and absorption granted by 8% while above 90% health.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases damage done, healing done, and absorption granted by 10% while above 90% health.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>7</Key>
+      <Name>Tenebrious Distortion</Name>
+      <Icon>dark_containment_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>440446736</AbilityId>
+          <Description></Description>
+          <AddonId>A1A40AF10288207BA</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Marrow Harvest increases non-Physical damage taken by 2.5% for 30s.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your Marrow Harvest increases non-Physical damage taken by 5% for 30s.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>8</Key>
+      <Name>Delicate Alteration</Name>
+      <Icon>necromancer_detonate_bones_02_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-50738198</AbilityId>
+          <Description></Description>
+          <AddonId>AFCF9CBEA4BCB8737</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Foul Growth triggers immediately if purged. Your Marrow Harvest triggers immediately if cleansed.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>9</Key>
+      <Name>Cardial Conversion</Name>
+      <Icon>tempest_adrenalin_boost</Icon>
+      <PrereqTraitKey>5</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>122613774</AbilityId>
+          <Description></Description>
+          <AddonId>A074EF00E6A495799</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Grants a 50% chance whenever you cast a healing spell to apply Husk of Indifference to you.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Grants a 100% chance whenever you cast a healing spell to apply Husk of Indifference to you.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>10</Key>
+      <Name>Change Is Good</Name>
+      <Icon>defiler_hideous_reconstruction_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-76977398</AbilityId>
+          <Description></Description>
+          <AddonId>AFB696B0A059E86C9</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the effect of Spell Power on your Marrow Harvest, Foul Growth, and Hideous Reconstruction by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the effect of Spell Power on your Marrow Harvest, Foul Growth, and Hideous Reconstruction by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the effect of Spell Power on your Marrow Harvest, Foul Growth, and Hideous Reconstruction by 12%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>11</Key>
+      <Name>Summon Beacon of Despair</Name>
+      <Icon>defiler_beacon_of_despair</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-9826210</AbilityId>
+          <Description>Summons an uncontrolled Beacon of Despair at the enemy&apos;s location. Applies Link of Despair, intercepting 50% of the damage taken by the Beacon. The Cleric takes 115% of the intercepted damage. Transfers threat generated by the Cleric to the Beacon. Deals 78 Death damage to attackers when the Beacon is hit. Lasts 5m.</Description>
+          <AddonId>AFF6A105E825E947B</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>15.000001</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>4.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>12</Key>
+      <Name>Scarred Heart</Name>
+      <Icon>rift_affinity</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces damage taken from your Links by 10%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reduces damage taken from your Links by 20%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Reduces damage taken from your Links by 30%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>13</Key>
+      <Name>Feedback</Name>
+      <Icon>defiler_feedback</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-59802722</AbilityId>
+          <Description>Restores 77 to 85 health to up to 5 party or raid members. Restores 25% more health to targets of the Cleric&apos;s Links. Triggers Foul Growth.</Description>
+          <AddonId>AFC6F7B9EDBAD8D08</AddonId>
+          <IsPassive>False</IsPassive>
+          <CostManaPercent>9.000000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+          <Radius>35.000000</Radius>
+          <MaxAffected>5</MaxAffected>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>14</Key>
+      <Name>Metamorphosis</Name>
+      <Icon>dusk_to_dawn_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-93993063</AbilityId>
+          <Description></Description>
+          <AddonId>AFA65C79972E572EF</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Foul Growth increases Maximum Health by 3% for 10s.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your Foul Growth increases Maximum Health by 6% for 10s.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>15</Key>
+      <Name>Dangers to Come</Name>
+      <Icon>tactician_necrotic_engine_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-3035162</AbilityId>
+          <Description></Description>
+          <AddonId>AFFD1AFE67046095E</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your damage done and healing done with Marrow Harvest and Siphon Vitality by 5%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your damage done and healing done with Marrow Harvest and Siphon Vitality by 10%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your damage done and healing done with Marrow Harvest and Siphon Vitality by 15%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>16</Key>
+      <Name>Bond of Pain</Name>
+      <Icon>defiler_bond_of_pain_cc</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-60434978</AbilityId>
+          <Description>Deals 174 to 193 Death damage each time the Cleric is damaged. Lasts 30s.</Description>
+          <AddonId>AFC65D5DEBC63143B</AddonId>
+          <IsPassive>False</IsPassive>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>7.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>17</Key>
+      <Name>Rampant Growth</Name>
+      <Icon>dominator-split_personality</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-16707910</AbilityId>
+          <Description></Description>
+          <AddonId>AFF010EBA096A85C9</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Grants a chance for your damaging abilities to apply Foul Growth to the targets of your Links, based on 150% of the intercept percentage of the Link.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Grants a chance for your damaging abilities to apply Foul Growth to the targets of your Links, based on 300% of the intercept percentage of the Link.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>18</Key>
+      <Name>Bond of Corruption</Name>
+      <Icon>defiler_bond_of_corruption</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-32799686</AbilityId>
+          <Description>Intercepts 10% of all healing received by the enemy. The Cleric receives 125% of the intercepted healing. Lasts 30s.</Description>
+          <AddonId>AFE0B843A7EF3A281</AddonId>
+          <IsPassive>False</IsPassive>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>4.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+          <Duration>30.000000</Duration>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>19</Key>
+      <Name>Dark Impulses</Name>
+      <Icon>shadow_assault_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-82081978</AbilityId>
+          <Description></Description>
+          <AddonId>AFB1B87465DFCAF32</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your damage done, healing done, and absorption granted with Death abilities by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your damage done, healing done, and absorption granted with Death abilities by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your damage done, healing done, and absorption granted with Death abilities by 12%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your damage done, healing done, and absorption granted with Death abilities by 16%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your damage done, healing done, and absorption granted with Death abilities by 20%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>20</Key>
+      <Name>Vicissitude</Name>
+      <Icon>tactician_necrotic_torrent_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-87726367</AbilityId>
+          <Description></Description>
+          <AddonId>AFAC566E1299C79B5</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the effect of Spell Power on your Somatic Desecration, Loathsome Restoration, and Ghastly Restoration by 5%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the effect of Spell Power on your Somatic Desecration, Loathsome Restoration, and Ghastly Restoration by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>21</Key>
+      <Name>Grim Euphoria</Name>
+      <Icon>binding_of_affliction_01_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the bonuses granted by your Blights by 1%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the bonuses granted by your Blights by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the bonuses granted by your Blights by 3%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>22</Key>
+      <Name>Bond of Torment</Name>
+      <Icon>defiler_bond_of_torment</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-68375324</AbilityId>
+          <Description>Causes damaging abilities to restore 33 to 37 health to the Cleric. Lasts 30s.</Description>
+          <AddonId>AFBECACE47D9EAEF0</AddonId>
+          <IsPassive>False</IsPassive>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>7.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>23</Key>
+      <Name>Pain Transmission</Name>
+      <Icon>defiler_pain_transmission_b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>40</MinimumPointsSpent>
+      <DisplayRow>8</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-48752935</AbilityId>
+          <Description>Deals 1149 to 1149 Death damage to up to 3 enemies near the Cleric and the targets of the Cleric&apos;s Links.</Description>
+          <AddonId>AFD1816D95C5B8C1F</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>15.000001</Cooldown>
+          <CostManaPercent>12.000000</CostManaPercent>
+          <CastTime>2.000000</CastTime>
+          <Radius>35.000000</Radius>
+          <MaxAffected>50</MaxAffected>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+  </Traits>
+  <Abilities>
+    <Ability>
+      <MinimumPointsInSoul>24</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Empowered Affliction</Name>
+      <Icon>defiler_empowered_affliction</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>24</RequiredLevel>
+        <AbilityId>-96097180</AbilityId>
+        <Description>Restores 7% mana. Reduces Maximum Health by 5% for 10s. Max 5 stacks.</Description>
+        <AddonId>AFA45AC64A16B55B0</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxStack>5</MaxStack>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>36</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Link of Suffering</Name>
+      <Icon>defiler_link_of_suffering</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>36</RequiredLevel>
+        <AbilityId>-95094960</AbilityId>
+        <Description>Intercepts 15% of damage taken by the ally. The Cleric takes 60% of the intercepted damage. Can only affect 1 ally.</Description>
+        <AddonId>AFA54F750B5F4BDB5</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Mask of Depravity</Name>
+      <Icon>defiler_mask_of_depravity_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-93335305</AbilityId>
+        <Description></Description>
+        <AddonId>AFA6FD0F736832FEA</AddonId>
+        <IsPassive>True</IsPassive>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>8</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Loathsome Restoration</Name>
+      <Icon>defiler_loathsome_restoration_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>8</RequiredLevel>
+        <AbilityId>-88488885</AbilityId>
+        <Description>Restores 305 to 337 health. Triggers Foul Growth.</Description>
+        <AddonId>AFAB9C44B3CB9ACEC</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">0.900000</PowerStatCoefficient>
+        <AggroMultiplier effect="0" action="0">0.250000</AggroMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>4</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Link of Distress</Name>
+      <Icon>defiler_link_of_distress</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>4</RequiredLevel>
+        <AbilityId>-82626150</AbilityId>
+        <Description>Intercepts 5% of damage taken by the ally. The Cleric takes 115% of the intercepted damage. Can only affect 1 ally.</Description>
+        <AddonId>AFB13399A8E5E730D</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>48</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Chimera&apos;s Gift</Name>
+      <Icon>defiler_chimeras_gift_e</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>48</RequiredLevel>
+        <AbilityId>-81170527</AbilityId>
+        <Description>Applies Chimera&apos;s Gift if the Cleric receives a killing blow. Restores health equal to 25% of the Cleric&apos;s Maximum Health. Lasts 5m.</Description>
+        <AddonId>AFB296FA17467DDA1</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>120.000008</Cooldown>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>2</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Marrow Harvest</Name>
+      <Icon>defiler_marrow_harvest</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>2</RequiredLevel>
+        <AbilityId>-78199184</AbilityId>
+        <Description>Deals 1018 to 1126 Death damage after 6s.</Description>
+        <AddonId>AFB56C6706DD8735F</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>6.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>16</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Foul Growth</Name>
+      <Icon>defiler_foul_growth_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>16</RequiredLevel>
+        <AbilityId>-77294840</AbilityId>
+        <Description>Restores 339 to 375 health after 10s. Max 3 stacks.</Description>
+        <AddonId>AFB64930878FEFA00</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>1.500000</CastTime>
+        <Duration>10.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Somatic Desecration</Name>
+      <Icon>defiler_sanguine_desecration</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-75962305</AbilityId>
+        <Description>Deals 970 to 1073 Death damage.</Description>
+        <AddonId>AFB78E83FCAEE5E2C</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>10.000000</CostManaPercent>
+        <CastTime>2.000000</CastTime>
+        <PowerStatCoefficient effect="0" action="0">1.000000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>44</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Feast of the Fallen</Name>
+      <Icon>defiler_feast_of_the _fallen_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>44</RequiredLevel>
+        <AbilityId>-74558805</AbilityId>
+        <Description>Restores 7 to 8 health to up to 5 nearby party or raid members whenever a party or raid member kills an enemy.</Description>
+        <AddonId>AFB8E52ABA7131005</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Rage Blight</Name>
+      <Icon>defiler_rage_blight</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-69853194</AbilityId>
+        <Description>When damaged, applies Rage. Increases damage done by 1% for 10s. Max 5 stacks.</Description>
+        <AddonId>AFBD61FF65C77862B</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>36</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Bond of Torment</Name>
+      <Icon>defiler_bond_of_torment</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>36</RequiredLevel>
+        <AbilityId>-68375324</AbilityId>
+        <Description>Causes damaging abilities to restore 33 to 37 health to the Cleric. Lasts 30s.</Description>
+        <AddonId>AFBECACE47D9EAEF0</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>61</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Unstable Transformation</Name>
+      <Icon>defiler_unstable_transformation_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>60</RequiredLevel>
+        <AbilityId>-68299024</AbilityId>
+        <Description>Reduces damage taken by 50%. Increases healing and absorption received by 50%. When hit, restores 339 to 375 health. Lasts 10s.</Description>
+        <AddonId>AFBEDD6F07A8364D7</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>10.000000</Duration>
+        <PowerStatCoefficient effect="1" action="0">1.000000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>26</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Bond of Pain</Name>
+      <Icon>defiler_bond_of_pain_cc</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>26</RequiredLevel>
+        <AbilityId>-60434978</AbilityId>
+        <Description>Deals 174 to 193 Death damage each time the Cleric is damaged. Lasts 30s.</Description>
+        <AddonId>AFC65D5DEBC63143B</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>21</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Feedback</Name>
+      <Icon>defiler_feedback</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>21</RequiredLevel>
+        <AbilityId>-59802722</AbilityId>
+        <Description>Restores 77 to 85 health to up to 5 party or raid members. Restores 25% more health to targets of the Cleric&apos;s Links. Triggers Foul Growth.</Description>
+        <AddonId>AFC6F7B9EDBAD8D08</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Radius>35.000000</Radius>
+        <MaxAffected>5</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>54</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Ghastly Restoration</Name>
+      <Icon>defiler_hideous_reconstruction</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>53</RequiredLevel>
+        <AbilityId>-53452697</AbilityId>
+        <Description>Restores 407 to 450 health. Triggers Foul Growth.</Description>
+        <AddonId>AFCD0606732C077D4</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>15.000001</Cooldown>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">1.200000</PowerStatCoefficient>
+        <AggroMultiplier effect="0" action="0">0.250000</AggroMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>41</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Pain Transmission</Name>
+      <Icon>defiler_pain_transmission_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>41</RequiredLevel>
+        <AbilityId>-48752935</AbilityId>
+        <Description>Deals 1149 to 1149 Death damage to up to 3 enemies near the Cleric and the targets of the Cleric&apos;s Links.</Description>
+        <AddonId>AFD1816D95C5B8C1F</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>15.000001</Cooldown>
+        <CostManaPercent>12.000000</CostManaPercent>
+        <CastTime>2.000000</CastTime>
+        <Radius>35.000000</Radius>
+        <MaxAffected>50</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>58</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Link of Agony</Name>
+      <Icon>defiler_link_of_agony_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>57</RequiredLevel>
+        <AbilityId>-46634226</AbilityId>
+        <Description>Intercepts 20% of damage taken by the ally. The Cleric takes 50% of the intercepted damage. Can only affect 1 ally.</Description>
+        <AddonId>AFD386B0E4862D1CF</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>6</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Siphon Vitality</Name>
+      <Icon>defiler_siphon_vitality_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>6</RequiredLevel>
+        <AbilityId>-41217628</AbilityId>
+        <Description>Deals 1533 Death damage over 15s. Restores 214 health to the Cleric at the same time.</Description>
+        <AddonId>AFD8B11A497975C37</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>15.000000</Duration>
+        <Interval>1.500000</Interval>
+        <PowerStatCoefficient effect="0" action="0">2.000000</PowerStatCoefficient>
+        <DamageMultiplier effect="0" action="0">0.090909</DamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>12</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Jealous Intervention</Name>
+      <Icon>defiler_jealous_intervention_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>12</RequiredLevel>
+        <AbilityId>-39263833</AbilityId>
+        <Description>Removes 1 Curse, Disease, or Poison.</Description>
+        <AddonId>AFDA8E1A7814CE00F</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>32</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Death&apos;s Embrace</Name>
+      <Icon>defiler_deaths_embrace</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>32</RequiredLevel>
+        <AbilityId>-36493379</AbilityId>
+        <Description>Brings the fallen ally back to life, restoring 50% health and mana. Usable in combat.</Description>
+        <AddonId>AFDD327BDD0828E57</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>300.000000</Cooldown>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>20</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Link of Misery</Name>
+      <Icon>defiler_link_of_misery_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>20</RequiredLevel>
+        <AbilityId>-34090537</AbilityId>
+        <Description>Intercepts 10% of damage taken by the ally. The Cleric takes 90% of the intercepted damage. Can only affect 1 ally.</Description>
+        <AddonId>AFDF7D1D76BA58F3C</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>31</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Bond of Corruption</Name>
+      <Icon>defiler_bond_of_corruption</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>31</RequiredLevel>
+        <AbilityId>-32799686</AbilityId>
+        <Description>Intercepts 10% of all healing received by the enemy. The Cleric receives 125% of the intercepted healing. Lasts 30s.</Description>
+        <AddonId>AFE0B843A7EF3A281</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>30.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>28</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Grief Blight</Name>
+      <Icon>defiler_grief_blight_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>28</RequiredLevel>
+        <AbilityId>-21876532</AbilityId>
+        <Description>When damaged, applies Grief. Increases healing done and absorption granted by 1% for 10s. Max 5 stacks.</Description>
+        <AddonId>AFEB230CC982EE007</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>11</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Husk of Indifference</Name>
+      <Icon>defiler_husk_of_indifference_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>11</RequiredLevel>
+        <AbilityId>-18541649</AbilityId>
+        <Description>Absorbs 716 intercepted damage. Lasts 30s.</Description>
+        <AddonId>AFEE513AF2E95D410</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">2.000000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>16</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Summon Beacon of Despair</Name>
+      <Icon>defiler_beacon_of_despair</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>16</RequiredLevel>
+        <AbilityId>-9826210</AbilityId>
+        <Description>Summons an uncontrolled Beacon of Despair at the enemy&apos;s location. Applies Link of Despair, intercepting 50% of the damage taken by the Beacon. The Cleric takes 115% of the intercepted damage. Transfers threat generated by the Cleric to the Beacon. Deals 78 Death damage to attackers when the Beacon is hit. Lasts 5m.</Description>
+        <AddonId>AFF6A105E825E947B</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>15.000001</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>51</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Unholy Nexus</Name>
+      <Icon>defiler_unholy_nexus_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>50</RequiredLevel>
+        <AbilityId>-7984629</AbilityId>
+        <Description>Spreads the Cleric&apos;s Marrow Harvest, Siphon Vitality, and Bonds to up to 5 other enemies.</Description>
+        <AddonId>AFF862A0B2CA41D11</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>15.000001</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Radius>7.000000</Radius>
+        <MaxAffected>5</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>24</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Hideous Reconstruction</Name>
+      <Icon>defiler_ghastly_restoration_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>24</RequiredLevel>
+        <AbilityId>-1363621</AbilityId>
+        <Description>Restores 716 health over 15s.</Description>
+        <AddonId>AFFEB315B9E4F44E6</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>15.000000</Duration>
+        <Interval>1.500000</Interval>
+        <PowerStatCoefficient effect="0" action="0">2.000000</PowerStatCoefficient>
+        <AggroMultiplier effect="0" action="0">0.250000</AggroMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>4</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Blighted Greed</Name>
+      <Icon>defiler_rage_blight_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>4</RequiredLevel>
+        <AbilityId>113866252</AbilityId>
+        <Description>Buffs the ally causing damage taken by that ally to trigger the effects of the caster&apos;s active Rage Blight or Grief Blight. Can only affect 1 ally. Stacks with other allies Links and Blighted Greed. Cannot be cast while the caster has Links active. </Description>
+        <AddonId>A06C9760C9952A076</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>40</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Explosive Growth</Name>
+      <Icon>tempest_sticky_grenade_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>40</RequiredLevel>
+        <AbilityId>942992055</AbilityId>
+        <Description>Applies 3 stacks of Foul Growth.</Description>
+        <AddonId>A3834EAB74E02C3E7</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>27.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+  </Abilities>
+</SoulTree>
+

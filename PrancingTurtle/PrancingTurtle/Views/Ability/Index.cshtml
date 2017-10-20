@@ -1,0 +1,130 @@
+﻿@model PrancingTurtle.Models.ViewModels.AbilityIndexVm
+@using PagedList.Mvc;
+
+@{
+    ViewBag.Title = "Abilities";
+}
+
+<h2>Abilities</h2>
+
+<div class="table-responsive">
+    <table class="table table-striped table-bordered table-condensed">
+        <thead>
+            @using (Html.BeginForm())
+            {
+                @Html.HiddenFor(model => model.Page)
+                <tr>
+                    <th colspan="8">
+                        Show @Html.DropDownListFor(model => model.PageSize, Model.PageSizes) records per page
+                        <input class="btn btn-success" type="submit" value="Search" />
+                        @Html.ActionLink("Reset Filters", "Index", null, new { @class = "btn btn-danger" })
+                    </th>
+                </tr>
+                <tr class="darkerth">
+                    <th width="18"></th>
+                    <th>
+                        @Html.ActionLink("Ability", "Index", new
+                        {
+                            so = Model.SortParamName,
+                            sn = Model.SearchName,
+                            sa = Model.SearchAbilityId,
+                            ssp = Model.SearchSoulPoints,
+                            sci = Model.SearchClassId,
+                            ssi = Model.SearchSoulId,
+                            ps = Model.PageSize,
+                        })
+                        <i class="@Model.SortParamNameClass floatright"></i>
+                    </th>
+                    <th>
+                        @Html.ActionLink("AbilityID", "Index", new
+                        {
+                            so = Model.SortParamAbility,
+                            sn = Model.SearchName,
+                            sa = Model.SearchAbilityId,
+                            ssp = Model.SearchSoulPoints,
+                            sci = Model.SearchClassId,
+                            ssi = Model.SearchSoulId,
+                            ps = Model.PageSize,
+                        })
+                        <i class="@Model.SortParamAbilityClass floatright"></i>
+                    </th>
+                    <th>Class</th>
+                    <th>Soul</th>
+                    <th>Soul Points</th>
+                    <th>Icon</th>
+                </tr>
+                <tr class="darkerth">
+                    <td></td>
+                    <td>@Html.TextBoxFor(m => m.SearchName, new { @class = "form-control" })</td>
+                    <td>@Html.TextBoxFor(m => m.SearchAbilityId, new { @class = "form-control" })</td>
+                    <td>@Html.DropDownListFor(m => m.SearchClassId, new SelectList(Model.Classes, "Id", "Name", Model.SearchClassId), new { @class = "form-control" })</td>
+                    <td>@Html.DropDownListFor(m => m.SearchSoulId, new SelectList(Model.Souls, "Id", "Name", Model.SearchSoulId), new { @class = "form-control" })</td>
+                    @*<td>@Html.TextBoxFor(m => m.SearchRank, new { @class = "form-control" })</td>
+                        <td>@Html.TextBoxFor(m => m.SearchIcon, new { @class = "form-control" })</td>*@
+                    <td>@Html.TextBoxFor(m => m.SearchSoulPoints, new { @class = "form-control" })</td>
+                    <td></td>
+                </tr>
+            }
+        </thead>
+        <tbody>
+            @foreach (var item in Model.PagedItems)
+            {
+                <tr>
+                    <td>
+                        @if (!string.IsNullOrEmpty(item.Icon))
+                        {
+                            <img src=@string.Format("/Content/icons/SoulAbilities/{0}.jpg", item.Icon) height="18" width="18" title="@item.Description" />
+                        }
+                    </td>
+                    <td class="col-lg-3">@Html.Label(string.Format("{0} (Rank {1})", item.Name, item.RankNumber), new {title= item.Description, @class=item.DisplayClass})
+                        
+                    </td>
+                    <td>@Html.DisplayFor(modelItem => item.AbilityId)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Soul.Class.Name)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Soul.Name)</td>
+                    @*<td>@Html.DisplayFor(modelItem => item.RankNumber)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Icon)</td>*@
+                    <td>@Html.DisplayFor(modelItem => item.MinimumPointsInSoul)</td>
+                    @*<td class="col-md-1">
+                            @Html.ImageActionLink("Details", new { id = item.Id }, "", "fa fa-lg fa-info-circle") |
+                            @Html.ImageActionLink("Edit", new { id = item.Id }, "", "fa fa-lg fa-pencil-square") |
+                            @Html.ImageActionLink("Delete", new { id = item.Id }, "", "fa fa-lg fa-trash-o")
+                        </td>*@
+                    <td>@if (!string.IsNullOrEmpty(item.Icon))
+                        {
+                            @Html.Label(item.Icon)
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div class="row">
+        <div class="col-md-12">
+
+            @Html.PagedListPager(Model.PagedItems, page => Url.Action("Index", new
+                            {
+                                sn = Model.SearchName,
+                                sa = Model.SearchAbilityId,
+                                ssp = Model.SearchSoulPoints,
+                                sci = Model.SearchClassId,
+                                ssi = Model.SearchSoulId,
+                                ps = Model.PageSize,
+                                pn = page
+                            }),
+                                new PagedListRenderOptions()
+                                {
+                                    MaximumPageNumbersToDisplay = 6,
+                                    ContainerDivClasses = new List<string>() { "floatright" },
+                                    DisplayItemSliceAndTotal = true,
+                                    DisplayLinkToFirstPage = PagedListDisplayMode.IfNeeded,
+                                    DisplayLinkToLastPage = PagedListDisplayMode.IfNeeded,
+                                    DisplayEllipsesWhenNotShowingAllPageNumbers = false,
+                                    DisplayPageCountAndCurrentLocation = true,
+                                    ItemSliceAndTotalFormat = "Showing records {0}-{1} of {2}",
+                                    PageCountAndCurrentLocationFormat = "Page {0} of {1}",
+                                    UlElementClasses = new List<string>() { "pagination pagination-sm" }
+                                })
+        </div>
+    </div>
+</div>

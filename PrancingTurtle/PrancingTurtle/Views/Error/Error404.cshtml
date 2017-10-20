@@ -1,0 +1,22 @@
+﻿@model string
+@{
+    ViewBag.Title = "404: Lost Turtle!";
+}
+<div class="row">
+    <div class="col-md-6">
+        <h2>404: Page-fetching turtle MIA</h2>
+        <br />
+        <div class="panel panel-danger">
+            <div class="panel-heading">
+                <h3 class="panel-title">Dude, where's my turtle?</h3>
+            </div>
+            <div class="panel-body">
+                <p>More importantly, where did this page go? I know this little guy was still hungry after his strawberry, but surely he didn't e... actually, your page may have been eaten.</p>
+                <p>Either that, or you typed something in wrong, and a small turtle is still trying to find the page you were after...</p>
+                <img src="~/Content/turtle/turtleStrawberry.jpg" alt="Turtle with strawberry" height="352" width="600"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+@Html.ActionLink("Take me home!", "Index", "Home", null, new { @class = "btn btn-default" })

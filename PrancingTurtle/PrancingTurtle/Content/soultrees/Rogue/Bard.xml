@@ -1,0 +1,1451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SoulTree calling="Rogue" name="Bard">
+  <Traits>
+    <Trait>
+      <Key>0</Key>
+      <Name>Good Health</Name>
+      <Icon>good_health</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1873838232</AbilityId>
+          <Description></Description>
+          <AddonId>A6FB0809800000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Base Health by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Base Health by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your Base Health by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your Base Health by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your Base Health by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>1</Key>
+      <Name>Bardic Inspiration</Name>
+      <Icon>bardic_inspiration</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-15100255</AbilityId>
+          <Description></Description>
+          <AddonId>AFF1996A100000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Codas have a 20% chance per Combo Point to refresh existing Motifs.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>2</Key>
+      <Name>Talented Composer</Name>
+      <Icon>talented_composer</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1401246100</AbilityId>
+          <Description></Description>
+          <AddonId>A5385519400000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the radius of your Motifs, Fanfares and Anthems by 5 meters.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the radius of your Motifs, Fanfares and Anthems by 10 meters.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>3</Key>
+      <Name>Anthem of Glory</Name>
+      <Icon>anthem_of_glory</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>523867370</AbilityId>
+          <Description>Increases Armor by 2000 and all resists by 65 on all party or raid members. Allies can only have 1 Anthem or Favor at a time.</Description>
+          <AddonId>A1F3994EA84754240</AddonId>
+          <IsPassive>False</IsPassive>
+          <CostEnergy>10</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>4</Key>
+      <Name>Street Smart</Name>
+      <Icon>street_smart</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>106566004</AbilityId>
+          <Description></Description>
+          <AddonId>A065A117400000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases damage and healing done by 1%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases damage and healing done by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases damage and healing done by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases damage and healing done by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases damage and healing done by 5%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>5</Key>
+      <Name>Street Performer</Name>
+      <Icon>street_performer</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-4423016</AbilityId>
+          <Description></Description>
+          <AddonId>AFFBC829800000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Whenever your health goes below 30%, your movement speed is increased by 5% and all healing effects on you are increased by 5%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Whenever your health goes below 30%, your movement speed is increased by 10% and all healing effects on you are increased by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>6</Key>
+      <Name>Power Chord</Name>
+      <Icon>power_chord</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1343250481</AbilityId>
+          <Description>Deals 1531 to 1692 Life damage. Awards 2 Combo Points.</Description>
+          <AddonId>A50106031622AF48C</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+          <Cooldown>4.000000</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <CostEnergy>24</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <GainComboPoints>2</GainComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>7</Key>
+      <Name>Extended Grief</Name>
+      <Icon>stunning_blow_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the duration of Coda of Jeopardy, Coda of Cowardice and Coda of Distress by 50%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the duration of Coda of Jeopardy, Coda of Cowardice and Coda of Distress by 100%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>8</Key>
+      <Name>Stage Presence</Name>
+      <Icon>stage_presence</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-53584040</AbilityId>
+          <Description></Description>
+          <AddonId>AFCCE5F5800000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>All healing effects on you are increased by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>All healing effects on you are increased by 4%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>9</Key>
+      <Name>Deafening Music</Name>
+      <Icon>deafening_music</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>902156879</AbilityId>
+          <Description></Description>
+          <AddonId>A35C5D24F00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage of non-physical attacks by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage of non-physical attacks by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the damage of non-physical attacks by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases the damage of non-physical attacks by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases the damage of non-physical attacks by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>10</Key>
+      <Name>Coda of Fury</Name>
+      <Icon>coda_of_fury</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>37198687</AbilityId>
+          <Description>Deals Life damage per Combo Point to up to 5 enemies.
+
+1 Point: 818 damage
+2 Points: 1052 damage
+3 Points: 1364 damage
+4 Points: 1754 damage
+5 Points: 2223 damage</Description>
+          <AddonId>A02379B5FC9B1A000</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+          <MaxRange>30.000000</MaxRange>
+          <CostEnergy>18</CostEnergy>
+          <ConsumesComboPoints>True</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>11</Key>
+      <Name>Improved Anthem of Competence</Name>
+      <Icon>anthem_of_competence</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1304848314</AbilityId>
+          <Description></Description>
+          <AddonId>A4DC667BA00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Anthem of Competence now affects party and raid members when they are in combat.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>12</Key>
+      <Name>Riff</Name>
+      <Icon>riff</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1990860407</AbilityId>
+          <Description>Deals 2390 to 2642 Life damage. Awards 5 Combo Points.</Description>
+          <AddonId>A76AA1E779830CE7B</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+          <Cooldown>30.000002</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <CostEnergy>24</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <GainComboPoints>5</GainComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>13</Key>
+      <Name>Coda of Restoration</Name>
+      <Icon>coda_of_restoration_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1510112149</AbilityId>
+          <Description>Restores additional health per Combo Point on up to 5 party or raid members.
+
+1 Point: 252 health
+2 Points: 310 health
+3 Points: 387 health
+4 Points: 484 health
+5 Points: 600 health</Description>
+          <AddonId>A5A027B955AEBD903</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+          <CostEnergy>18</CostEnergy>
+          <ConsumesComboPoints>True</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+          <Radius>30.000000</Radius>
+          <MaxAffected>5</MaxAffected>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>14</Key>
+      <Name>Triumphant Spirit</Name>
+      <Icon>triumphant_spirit</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>287290575</AbilityId>
+          <Description></Description>
+          <AddonId>A111FB4CF00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases healing done by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases healing done by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases healing done by 12%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases healing done by 16%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases healing done by 20%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>15</Key>
+      <Name>Verse of Captivation</Name>
+      <Icon>verse_of_fascination_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>757298829</AbilityId>
+          <Description>Mesmerizes for 8s or until damaged. Can only affect 1 enemy.</Description>
+          <AddonId>A2D23768D7C544EF7</AddonId>
+          <IsPassive>False</IsPassive>
+          <MaxRange>30.000000</MaxRange>
+          <CostEnergy>10</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+          <Duration>8.000000</Duration>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>16</Key>
+      <Name>Resonance</Name>
+      <Icon>resonance</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>877024351</AbilityId>
+          <Description></Description>
+          <AddonId>A3446545F00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases all of your ally&apos;s attributes by 1% if your ally is affected by Motif of Bravery, Motif of Regeneration and Motif of Tenacity. Lasts 20 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases all of your ally&apos;s attributes by 2% if your ally is affected by Motif of Bravery, Motif of Regeneration and Motif of Tenacity. Lasts 20 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases all of your ally&apos;s attributes by 3% if your ally is affected by Motif of Bravery, Motif of Regeneration and Motif of Tenacity. Lasts 20 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases all of your ally&apos;s attributes by 4% if your ally is affected by Motif of Bravery, Motif of Regeneration and Motif of Tenacity. Lasts 20 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases all of your ally&apos;s attributes by 5% if your ally is affected by Motif of Bravery, Motif of Regeneration and Motif of Tenacity. Lasts 20 seconds.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>17</Key>
+      <Name>Virtuoso</Name>
+      <Icon>virtuoso_b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>971980186</AbilityId>
+          <Description>Causes Combo Points to persist when using Codas. Lasts 15s.</Description>
+          <AddonId>A39EF3D9AD3761DC5</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>60.000004</Cooldown>
+          <CostEnergy>10</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+          <Duration>15.000000</Duration>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>18</Key>
+      <Name>Invigorated Soul</Name>
+      <Icon>cadence</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Cadence heals up to 5 party and raid members for 2% of your Attack Power each time it deals damage.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your Cadence heals up to 5 party and raid members for 4% of your Attack Power each time it deals damage.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Your Cadence heals up to 5 party and raid members for 6% of your Attack Power each time it deals damage.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>19</Key>
+      <Name>Chord of Inspiration</Name>
+      <Icon>power_chord_b</Icon>
+      <PrereqTraitKey>6</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Power Chord heals up to 5 party and raid members for 3% of your Attack Power. Increases the damage of your next Cadence or Cadenza by 5%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your Power Chord heals up to 5 party and raid members for 6% of your Attack Power. Increases the damage of your next Cadence or Cadenza by 10%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Your Power Chord heals up to 5 party and raid members for 9% of your Attack Power. Increases the damage of your next Cadence or Cadenza by 15%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>20</Key>
+      <Name>Improved Motif of Regeneration</Name>
+      <Icon>motif_of_regeneration</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-93706266</AbilityId>
+          <Description></Description>
+          <AddonId>AFA6A27E600000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Motif of Regeneration now affects party and raid members.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>21</Key>
+      <Name>Advanced Music Theory</Name>
+      <Icon>exorcize1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-35880143</AbilityId>
+          <Description></Description>
+          <AddonId>AFDDC833100000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage of Bard attacks by 10%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage of Bard attacks by 20%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage of Bard attacks by 30%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>22</Key>
+      <Name>Reverberation</Name>
+      <Icon>ward1z</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-24355901</AbilityId>
+          <Description></Description>
+          <AddonId>AFE8C5BC300000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Using a Coda has a 20% chance per Combo Point spent, to apply a stacking buff to you, increasing your Attack Power by 8% per stack. Maximum 1 stack.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Using a Coda has a 20% chance per Combo Point spent, to apply a stacking buff to you, increasing your Attack Power by 8% per stack. Maximum 2 stacks.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Using a Coda has a 20% chance per Combo Point spent, to apply a stacking buff to you, increasing your Attack Power by 8% per stack. Maximum 3 stacks.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Using a Coda has a 20% chance per Combo Point spent, to apply a stacking buff to you, increasing your Attack Power by 8% per stack. Maximum 4 stacks.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Using a Coda has a 20% chance per Combo Point spent, to apply a stacking buff to you, increasing your Attack Power by 8% per stack. Maximum 5 stacks.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>23</Key>
+      <Name>Verse of Agony</Name>
+      <Icon>bard_verse_of_agony</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-3372885</AbilityId>
+          <Description>Deals 3538 to 3911 Life damage.</Description>
+          <AddonId>AFFCC88ABE7680A26</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>20.000000</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <CostEnergy>24</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+          <PowerStatCoefficient effect="0" action="0">3.300000</PowerStatCoefficient>
+          <WeaponDamageMultiplier effect="0" action="0">3.300000</WeaponDamageMultiplier>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>24</Key>
+      <Name>Harmonic Distortion</Name>
+      <Icon>bard_harmonic_distortion</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>40</MinimumPointsSpent>
+      <DisplayRow>8</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-5114297</AbilityId>
+          <Description>Each time a Coda is used, the Rogue has a 20% chance per Combo Point to gain Harmonic Energy, increasing damage by 5%. This buff stacks up to 5 times. Harmonic Distortion consumes 1 stack of Harmonic Energy and heals a single ally for 1554 to 1718 health.</Description>
+          <AddonId>AFFB1F647515D4FE5</AddonId>
+          <IsPassive>False</IsPassive>
+          <MaxRange>30.000000</MaxRange>
+          <CostEnergy>24</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+          <PowerStatCoefficient effect="0" action="0">2.200000</PowerStatCoefficient>
+        </Ability>
+        <Ability>
+          <AbilityId>-20742196</AbilityId>
+          <Description></Description>
+          <AddonId>AFEC37FCC00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>25</Key>
+      <Name>Modulation</Name>
+      <Icon>coda_of_wrath</Icon>
+      <PrereqTraitKey>23</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Cadenza reduces the cooldown of Verse of Agony and Verse of Vitality by 1 second per second of channel.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Cadenza reduces the cooldown of Verse of Agony and Verse of Vitality by 2 seconds per second of channel.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+  </Traits>
+  <Abilities>
+    <Ability>
+      <MinimumPointsInSoul>61</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Orchestra of the Planes</Name>
+      <Icon>bard_orchestra_of_the_planes</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>60</RequiredLevel>
+        <AbilityId>-89538427</AbilityId>
+        <Description>Places an aura at the Rogue&apos;s feet, increasing the damage of party or raid members by 15%, healing them for 1165 Health over 15s and dealing 2313 Life damage to up to 5 enemies over 15s.</Description>
+        <AddonId>AFAA9C085A3AD3A8E</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>120.000008</Cooldown>
+        <CostEnergy>26</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Duration>15.000000</Duration>
+        <Interval>1.000000</Interval>
+        <Radius>10.000000</Radius>
+        <MaxAffected>5</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>58</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Verse of Occlusion</Name>
+      <Icon>tactician_ablative_coil_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>57</RequiredLevel>
+        <AbilityId>-72375985</AbilityId>
+        <Description>Places a shield on all party or raid members, absorbing up to 1844 damage. Lasts 30s.</Description>
+        <AddonId>AFBAFA14F4829FC0F</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>120.000008</Cooldown>
+        <CostEnergy>26</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Radius>35.000000</Radius>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>16</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Cadenza</Name>
+      <Icon>power_chord_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>16</RequiredLevel>
+        <AbilityId>-65335436</AbilityId>
+        <Description>Deals 3078 Life damage over 2s. Awards 1 Combo Point each second.</Description>
+        <AddonId>AFC1B0F749E44C343</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>40</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>1</GainComboPoints>
+        <CastTime>Instant</CastTime>
+        <Channel>true</Channel>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>54</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Multiple Oscillations</Name>
+      <Icon>untangle_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>53</RequiredLevel>
+        <AbilityId>-59553057</AbilityId>
+        <Description>Cadence, Cadenza and Power Chord deals damage to 3 enemies but deals 50% less damage.</Description>
+        <AddonId>AFC734ADF682130EF</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Bard Mastery</Name>
+      <Icon>inspiration4</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-24688849</AbilityId>
+        <Description>Increases damage by 0.75%, increases healing by 0.5% and increases Base Health by 0.5% for each point spent in the Bard soul.</Description>
+        <AddonId>AFE87472FA2FE509E</AddonId>
+        <IsPassive>True</IsPassive>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name></Name>
+      <Icon>Default</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-20742196</AbilityId>
+        <Description></Description>
+        <AddonId>AFEC37FCC00000000</AddonId>
+        <IsPassive>True</IsPassive>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Harmonic Distortion</Name>
+      <Icon>bard_harmonic_distortion</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-5114297</AbilityId>
+        <Description>Each time a Coda is used, the Rogue has a 20% chance per Combo Point to gain Harmonic Energy, increasing damage by 5%. This buff stacks up to 5 times. Harmonic Distortion consumes 1 stack of Harmonic Energy and heals a single ally for 1554 to 1718 health.</Description>
+        <AddonId>AFFB1F647515D4FE5</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>24</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">2.200000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Verse of Agony</Name>
+      <Icon>bard_verse_of_agony</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-3372885</AbilityId>
+        <Description>Deals 3538 to 3911 Life damage.</Description>
+        <AddonId>AFFCC88ABE7680A26</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>20.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>24</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">3.300000</PowerStatCoefficient>
+        <WeaponDamageMultiplier effect="0" action="0">3.300000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>8</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Motif of Regeneration</Name>
+      <Icon>motif_of_regeneration_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>8</RequiredLevel>
+        <AbilityId>18574050</AbilityId>
+        <Description>Restores 735 health over 20s. Increases healing received by 5%.</Description>
+        <AddonId>A011B6AE226FDCA3F</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>26</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Radius>35.000000</Radius>
+        <PowerStatCoefficient effect="1" action="0">0.990000</PowerStatCoefficient>
+        <AggroMultiplier effect="1" action="0">0.500000</AggroMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Coda of Fury</Name>
+      <Icon>coda_of_fury</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>37198687</AbilityId>
+        <Description>Deals Life damage per Combo Point to up to 5 enemies.
+
+1 Point: 818 damage
+2 Points: 1052 damage
+3 Points: 1364 damage
+4 Points: 1754 damage
+5 Points: 2223 damage</Description>
+        <AddonId>A02379B5FC9B1A000</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>18</CostEnergy>
+        <ConsumesComboPoints>True</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>44</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Verse of Vitality</Name>
+      <Icon>verse_of_vitality</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>44</RequiredLevel>
+        <AbilityId>135522751</AbilityId>
+        <Description>Restores 699 to 772 health to up to 5 party or raid members.</Description>
+        <AddonId>A0813E9BF2912C322</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <Cooldown>20.000000</Cooldown>
+        <CostEnergy>26</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Radius>30.000000</Radius>
+        <MaxAffected>5</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>40</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Coda of Cowardice</Name>
+      <Icon>coda_of_cowardice</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>40</RequiredLevel>
+        <AbilityId>274374632</AbilityId>
+        <Description>Increases Physical damage taken by 5% for a duration based on Combo Points on the enemy and all nearby enemies.
+
+1 Point: Lasts 6s
+2 Points: Lasts 12s
+3 Points: Lasts 18s
+4 Points: Lasts 24s
+5 Points: Lasts 30s</Description>
+        <AddonId>A105A9FE8C4C8803A</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>16</CostEnergy>
+        <ConsumesComboPoints>True</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Radius>15.000000</Radius>
+        <MaxAffected>50</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>32</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Verse of Purity</Name>
+      <Icon>anthem_of_defiance</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>32</RequiredLevel>
+        <AbilityId>516908212</AbilityId>
+        <Description>Removes 1 Curse, Disease, or Poison from up to 10 party or raid members every 3s for 3s.</Description>
+        <AddonId>A1ECF64B4A1A97DFF</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <Cooldown>10.000000</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Duration>3.000000</Duration>
+        <Interval>3.000000</Interval>
+        <Radius>25.000000</Radius>
+        <MaxAffected>10</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Anthem of Glory</Name>
+      <Icon>anthem_of_glory</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>523867370</AbilityId>
+        <Description>Increases Armor by 2000 and all resists by 65 on all party or raid members. Allies can only have 1 Anthem or Favor at a time.</Description>
+        <AddonId>A1F3994EA84754240</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Verse of Captivation</Name>
+      <Icon>verse_of_fascination_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>757298829</AbilityId>
+        <Description>Mesmerizes for 8s or until damaged. Can only affect 1 enemy.</Description>
+        <AddonId>A2D23768D7C544EF7</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Duration>8.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>51</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Verse of Joy</Name>
+      <Icon>verse_of_joy</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>50</RequiredLevel>
+        <AbilityId>766317719</AbilityId>
+        <Description>Restores 5 charge, 50 mana, 5 power, and 5 energy each second for 15s on all party or raid members.</Description>
+        <AddonId>A2DAD149799991550</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>120.000008</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Radius>35.000000</Radius>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>20</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Coda of Jeopardy</Name>
+      <Icon>coda_of_distress_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>20</RequiredLevel>
+        <AbilityId>874186574</AbilityId>
+        <Description>Causes the enemy to take additional 1447 Physical damage. Each attacker may trigger this once every 3s.
+
+1 Point: 10s
+2 Points: 15s
+3 Points: 20s
+4 Points: 25s
+5 Points: 30s</Description>
+        <AddonId>A341B074E3B22A7D7</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>16</CostEnergy>
+        <ConsumesComboPoints>True</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Virtuoso</Name>
+      <Icon>virtuoso_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>971980186</AbilityId>
+        <Description>Causes Combo Points to persist when using Codas. Lasts 15s.</Description>
+        <AddonId>A39EF3D9AD3761DC5</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Duration>15.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>36</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Coda of Distress</Name>
+      <Icon>coda_of_distress</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>36</RequiredLevel>
+        <AbilityId>1015923578</AbilityId>
+        <Description>Increases non-Physical damage taken by 7% for a duration based on Combo Points on the enemy and all nearby enemies.
+
+1 Point: Lasts 6s
+2 Points: Lasts 12s
+3 Points: Lasts 18s
+4 Points: Lasts 24s
+5 Points: Lasts 30s</Description>
+        <AddonId>A3C8DC37A72AF7186</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>16</CostEnergy>
+        <ConsumesComboPoints>True</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Radius>15.000000</Radius>
+        <MaxAffected>50</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>2</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Coda of Wrath</Name>
+      <Icon>coda_of_wrath_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>2</RequiredLevel>
+        <AbilityId>1179522229</AbilityId>
+        <Description>Deals Life damage per Combo Point.
+
+1 Point: 1363 damage
+2 Points: 1752 damage
+3 Points: 2272 damage
+4 Points: 2921 damage
+5 Points: 3701 damage</Description>
+        <AddonId>A464E14B5320AA383</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>16</CostEnergy>
+        <ConsumesComboPoints>True</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>24</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Motif of Tenacity</Name>
+      <Icon>motif_of_tenacity</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>24</RequiredLevel>
+        <AbilityId>1303653269</AbilityId>
+        <Description>Reduces damage taken by 5% on all party or raid members for 20s.</Description>
+        <AddonId>A4DB42B957C8DB970</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Radius>35.000000</Radius>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Power Chord</Name>
+      <Icon>power_chord</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1343250481</AbilityId>
+        <Description>Deals 1531 to 1692 Life damage. Awards 2 Combo Points.</Description>
+        <AddonId>A50106031622AF48C</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <Cooldown>4.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>24</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>2</GainComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Cadence</Name>
+      <Icon>cadence_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1487673667</AbilityId>
+        <Description>Deals 1923 Life damage over 2s. Awards 1 Combo Point each second.</Description>
+        <AddonId>A58AC1943784B2900</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>40</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>1</GainComboPoints>
+        <CastTime>Instant</CastTime>
+        <Channel>true</Channel>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Coda of Restoration</Name>
+      <Icon>coda_of_restoration_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1510112149</AbilityId>
+        <Description>Restores additional health per Combo Point on up to 5 party or raid members.
+
+1 Point: 252 health
+2 Points: 310 health
+3 Points: 387 health
+4 Points: 484 health
+5 Points: 600 health</Description>
+        <AddonId>A5A027B955AEBD903</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <CostEnergy>18</CostEnergy>
+        <ConsumesComboPoints>True</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Radius>30.000000</Radius>
+        <MaxAffected>5</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Motif of Bravery</Name>
+      <Icon>motif_of_bravery</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1532247126</AbilityId>
+        <Description>Increases Attack Power and Spell Power by 225 and increases Critical Hit chance by 1% on all party or raid members for 20s.</Description>
+        <AddonId>A5B543C56F68674C8</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Radius>35.000000</Radius>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>48</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Anthem of Fervor</Name>
+      <Icon>anthem_of_fervor</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>48</RequiredLevel>
+        <AbilityId>1679203414</AbilityId>
+        <Description>Reduces ability cost by 0% on all party or raid members. Allies can only have 1 Anthem or Favor at a time.</Description>
+        <AddonId>A64169C56C4DF44A6</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>36</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Motif of Encouragement</Name>
+      <Icon>motif_of_encouragement</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>36</RequiredLevel>
+        <AbilityId>1774010323</AbilityId>
+        <Description>Forces up to 5 nearby critters to follow the Rogue for 20s.</Description>
+        <AddonId>A69BD3FD3745F0A98</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Radius>10.000000</Radius>
+        <MaxAffected>5</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>12</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Anthem of Competence</Name>
+      <Icon>anthem_of_competence</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>12</RequiredLevel>
+        <AbilityId>1856182425</AbilityId>
+        <Description>Increases out of combat movement speed by 15% on all party or raid members. Allies can only have 1 Anthem or Favor at a time.</Description>
+        <AddonId>A6EA318992F56E5E7</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Riff</Name>
+      <Icon>riff</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1990860407</AbilityId>
+        <Description>Deals 2390 to 2642 Life damage. Awards 5 Combo Points.</Description>
+        <AddonId>A76AA1E779830CE7B</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>24</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>5</GainComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>28</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Fanfare of Power</Name>
+      <Icon>fanfare_of_power</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>28</RequiredLevel>
+        <AbilityId>2008357338</AbilityId>
+        <Description>Increases Strength, Dexterity, Intelligence and Wisdom by 70 on all party or raid members. Lasts 1h.</Description>
+        <AddonId>A77B519DA20AD56D6</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Radius>35.000000</Radius>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>4</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Fanfare of Vigor</Name>
+      <Icon>fanfare_of_vigor</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>4</RequiredLevel>
+        <AbilityId>2028562086</AbilityId>
+        <Description>Increases Endurance by 70 on all party or raid members. Lasts 1h.</Description>
+        <AddonId>A78E966A67C080D22</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Radius>35.000000</Radius>
+      </AbilityRank>
+    </Ability>
+  </Abilities>
+</SoulTree>
+

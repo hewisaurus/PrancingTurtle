@@ -1,0 +1,1319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SoulTree calling="Cleric" name="Inquisitor">
+  <Traits>
+    <Trait>
+      <Key>0</Key>
+      <Name>Pursuit of Truth</Name>
+      <Icon>vengeful_justice_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-9680215</AbilityId>
+          <Description></Description>
+          <AddonId>AFF6C4AA95159ABF0</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+        <Ability>
+          <AbilityId>819200402</AbilityId>
+          <Description></Description>
+          <AddonId>A30D401921344F6A0</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces pushback when damaged while casting damaging spells by 50%. Increases the range of non-melee damaging abilities by 2.5m.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reduces pushback when damaged while casting damaging spells by 100%. Increases the range of non-melee damaging abilities by 5m. This range increase does not stack with other range increasing effects.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>1</Key>
+      <Name>Castigation</Name>
+      <Icon>spiritblast4bc</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>754538923</AbilityId>
+          <Description></Description>
+          <AddonId>A2CF959AB72D52DAF</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces the cast time and mana cost of your Bolt of Judgment and Bolt of Retribution by 5%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reduces the cast time and mana cost of your Bolt of Judgment and Bolt of Retribution by 10%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Reduces the cast time and mana cost of your Bolt of Judgment and Bolt of Retribution by 15%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Reduces the cast time and mana cost of your Bolt of Judgment and Bolt of Retribution by 20%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Reduces the cast time and mana cost of your Bolt of Judgment and Bolt of Retribution by 25%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>2</Key>
+      <Name>Planar Study</Name>
+      <Icon>generic_ability_027_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-96916751</AbilityId>
+          <Description></Description>
+          <AddonId>AFA392AF109C27858</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Spell Power by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Spell Power by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your Spell Power by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your Spell Power by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your Spell Power by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>3</Key>
+      <Name>Concentration</Name>
+      <Icon>discombobulate2a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-57604493</AbilityId>
+          <Description></Description>
+          <AddonId>AFC910673639B14D9</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the effect of Spell Power on your Bolt of Judgment, Bolt of Retribution, and Nysyr&apos;s Rebuke by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the effect of Spell Power on your Bolt of Judgment, Bolt of Retribution, and Nysyr&apos;s Rebuke by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the effect of Spell Power on your Bolt of Judgment, Bolt of Retribution, and Nysyr&apos;s Rebuke by 9%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>4</Key>
+      <Name>Corporal Punishment</Name>
+      <Icon>holysweep3</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>246217350</AbilityId>
+          <Description></Description>
+          <AddonId>A0EACFA8669D139FC</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your damage done by 1%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your damage done by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your damage done by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your damage done by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your damage done by 5%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>5</Key>
+      <Name>Armor of Treachery</Name>
+      <Icon>castigation1b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>953259656</AbilityId>
+          <Description>Increases Armor by 3% and Base Health by 3%. Lasts 1h.</Description>
+          <AddonId>A38D19688C31286ED</AddonId>
+          <IsPassive>False</IsPassive>
+          <CostManaPercent>4.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+          <Duration>3600.000000</Duration>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>6</Key>
+      <Name>Shroud of Agony</Name>
+      <Icon>riftstalker_great_fortitude_01_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1981413061</AbilityId>
+          <Description>Grants a 20% chance when hit to deal 497 Death damage to up to 10 nearby enemies over 6s. Lasts 1h.</Description>
+          <AddonId>A7619F6C5BC624EF1</AddonId>
+          <IsPassive>False</IsPassive>
+          <CostManaPercent>9.000000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>7</Key>
+      <Name>Agent of Affliction</Name>
+      <Icon>weakening_essence_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-10471611</AbilityId>
+          <Description></Description>
+          <AddonId>AFF60374514127736</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your damage done using delayed and damage over time abilities by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your damage done using delayed and damage over time abilities by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your damage done using delayed and damage over time abilities by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your damage done using delayed and damage over time abilities by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your damage done using delayed and damage over time abilities by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>8</Key>
+      <Name>Contempt</Name>
+      <Icon>flash2</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Vex and Scourge restore health equal to 3% of your Maximum Health over their duration.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your Vex and Scourge restore health equal to 6% of your Maximum Health over their duration.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>9</Key>
+      <Name>Life and Death Concord</Name>
+      <Icon>life_and_death_concord_b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1166409381</AbilityId>
+          <Description></Description>
+          <AddonId>A4585FEA5274C5091</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your damaging Life and Ethereal spells (including each tick of Nysyr&apos;s Rebuke and Soul Stream) reduce the cast time of your next Bolt of Depravity by 0.2s, as well as reducing its mana cost by 3%. Max 4 stacks.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your damaging Life and Ethereal spells (including each tick of Nysyr&apos;s Rebuke and Soul Stream) reduce the cast time of your next Bolt of Depravity by 0.4s, as well as reducing its mana cost by 6%. Max 4 stacks.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Your damaging Life and Ethereal spells (including each tick of Nysyr&apos;s Rebuke and Soul Stream) reduce the cast time of your next Bolt of Depravity by 0.6s, as well as reducing its mana cost by 10%. Max 4 stacks.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>10</Key>
+      <Name>Excommunicate</Name>
+      <Icon>excommunicate</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>645208073</AbilityId>
+          <Description>Knocks the enemy back and snares them, reducing their movement speed by 30%, for up to 10s.</Description>
+          <AddonId>A267518092DE86E48</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>30.000002</Cooldown>
+          <MaxRange>20.000000</MaxRange>
+          <CostManaPercent>4.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>11</Key>
+      <Name>Clinging Spirit</Name>
+      <Icon>shroud_of_agony</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1204606196</AbilityId>
+          <Description></Description>
+          <AddonId>A47CCD4F400D4FD09</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Bolt of Depravity and Soul Drain increase non-Physical damage taken by 2.5% for 30s.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your Bolt of Depravity and Soul Drain increase non-Physical damage taken by 5% for 30s.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>12</Key>
+      <Name>Diligence</Name>
+      <Icon>smite1a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-13050298</AbilityId>
+          <Description></Description>
+          <AddonId>AFF38DE4635328515</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your single target damage done by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your single target damage done by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your single target damage done by 9%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>13</Key>
+      <Name>Approbation</Name>
+      <Icon>sanction_heretic_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-40944195</AbilityId>
+          <Description></Description>
+          <AddonId>AFD8F3DBD5A3A92E5</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your chance to Critically Hit with damage over time abilities by 5%. Your damaging single target channels reduce the cooldown of other single target damaging channels by 1.5s.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your chance to Critically Hit with damage over time abilities by 10%. Your damaging single target channels reduce the cooldown of other single target damaging channels by 3s.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>14</Key>
+      <Name>Perseverance</Name>
+      <Icon>perseverance</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1425827168</AbilityId>
+          <Description>Grants immunity to the next Fear. Lasts 60s.</Description>
+          <AddonId>A54FC656090AC65DF</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>60.000004</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>4.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+          <Duration>60.000000</Duration>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>15</Key>
+      <Name>Mental Resilience</Name>
+      <Icon>holystrength2</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1325849728</AbilityId>
+          <Description></Description>
+          <AddonId>A4F06DC805860F8F7</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the effect of Spell Power on your Vex, Scourge, and Sanction Heretic by 15%. Your single target channeled abilities apply Mental Resilience, increasing your damage by 2% for 30s.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the effect of Spell Power on your Vex, Scourge, and Sanction Heretic by 30%. Your single target channeled abilities apply Mental Resilience, increasing your damage by 4% for 30s.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the effect of Spell Power on your Vex, Scourge, and Sanction Heretic by 45%. Your single target channeled abilities apply Mental Resilience, increasing your damage by 6% for 30s.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>16</Key>
+      <Name>Unified Theory</Name>
+      <Icon>life_and_death_concord_a</Icon>
+      <PrereqTraitKey>9</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-83886038</AbilityId>
+          <Description></Description>
+          <AddonId>AFB00002A25CB5DBB</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>When Life and Death Concord reaches 4 stacks, your next Bolt of Depravity can be cast instantly. Reduces the Global Cooldown of Bolt of Depravity to 1 second. After consuming Unified Theory, you gain 2 stacks of Echoing Concord, reducing the cast time of Bolt of Judgment and Bolt of Retribution by 0.5 seconds.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>17</Key>
+      <Name>Fanaticism</Name>
+      <Icon>fanaticism</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>641965739</AbilityId>
+          <Description>Forces the next damaging Life or Death spell to Critically Hit. Lasts 30s.</Description>
+          <AddonId>A26439EAB4F2FA65D</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>30.000002</Cooldown>
+          <CostManaPercent>4.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>18</Key>
+      <Name>Determination</Name>
+      <Icon>determination1</Icon>
+      <PrereqTraitKey>14</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>The immunity granted by your Perseverance now covers all control effects.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>19</Key>
+      <Name>Circle of Oblivion</Name>
+      <Icon>exorcize2</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>475452316</AbilityId>
+          <Description>Deals 3001 Death damage over 7s to up to 5 enemies in the target area.</Description>
+          <AddonId>A1C56D39C8AEB775F</AddonId>
+          <IsPassive>False</IsPassive>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>18.000000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+          <Channel>true</Channel>
+          <Duration>7.000000</Duration>
+          <Interval>1.000000</Interval>
+          <Radius>7.000000</Radius>
+          <MaxAffected>5</MaxAffected>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>20</Key>
+      <Name>Righteous Indignation</Name>
+      <Icon>doctrine_of_faithful_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-92649684</AbilityId>
+          <Description></Description>
+          <AddonId>AFA7A472C20FFD9E6</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the effect of Spell Power on your Bolt of Judgment, Bolt of Depravity, and Bolt of Retribution by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the effect of Spell Power on your Bolt of Judgment, Bolt of Depravity, and Bolt of Retribution by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the effect of Spell Power on your Bolt of Judgment, Bolt of Depravity, and Bolt of Retribution by 12%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>21</Key>
+      <Name>Symbol of Corruption</Name>
+      <Icon>spiritblast4b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-80719783</AbilityId>
+          <Description></Description>
+          <AddonId>AFB30505934F7C160</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Bolt of Depravity deals an additional 10% of its damage over 3s. This damage is dealt instantly if the enemy already has your Symbol of Corruption.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your Bolt of Depravity deals an additional 20% of its damage over 3s. This damage is dealt instantly if the enemy already has your Symbol of Corruption.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Your Bolt of Depravity deals an additional 30% of its damage over 3s. This damage is dealt instantly if the enemy already has your Symbol of Corruption.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>22</Key>
+      <Name>Armor of Awakening</Name>
+      <Icon>castigation3</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1858105709</AbilityId>
+          <Description>Increases damage done by 10% and Critical Hit chance with damaging abilities by 5%. Lasts 1h.</Description>
+          <AddonId>A6EC0716DB0D1A70C</AddonId>
+          <IsPassive>False</IsPassive>
+          <CostManaPercent>4.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+          <Duration>3600.000000</Duration>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>23</Key>
+      <Name>Zealotry</Name>
+      <Icon>smite5</Icon>
+      <PrereqTraitKey>17</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Fanaticism adds 1 stack of Fanatic&apos;s Faith, increasing your Critical Hit chance with damaging Life or Death spells by 10% per stack. Each Critical Hit with a damaging spell reduces the stack by 1.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your Fanaticism adds 2 stacks of Fanatic&apos;s Faith, increasing your Critical Hit chance with damaging Life or Death spells by 10% per stack. Each Critical Hit with a damaging spell reduces the stack by 1.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Your Fanaticism adds 3 stacks of Fanatic&apos;s Faith, increasing your Critical Hit chance with damaging Life or Death spells by 10% per stack. Each Critical Hit with a damaging spell reduces the stack by 1.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>24</Key>
+      <Name>Cunning Analysis</Name>
+      <Icon>energybolt3</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-65956020</AbilityId>
+          <Description></Description>
+          <AddonId>AFC11974C6050B424</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your single target spells ignore 15% of the target&apos;s Resistance.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your single target spells ignore 30% of the target&apos;s Resistance.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>25</Key>
+      <Name>Bolt of Retribution</Name>
+      <Icon>binding_of_authority_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>40</MinimumPointsSpent>
+      <DisplayRow>8</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-43234639</AbilityId>
+          <Description>Deals 1164 to 1287 Life damage.</Description>
+          <AddonId>AFD6C4AB1AD30F43B</AddonId>
+          <IsPassive>False</IsPassive>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>9.000000</CostManaPercent>
+          <CastTime>2.000000</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+  </Traits>
+  <Abilities>
+    <Ability>
+      <MinimumPointsInSoul>24</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Righteous Deliberation</Name>
+      <Icon>shroudofpenitent2</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>24</RequiredLevel>
+        <AbilityId>-87497130</AbilityId>
+        <Description>Restores 5% mana each second over 10s.</Description>
+        <AddonId>AFAC8E6566CD621F7</AddonId>
+        <IsPassive>False</IsPassive>
+        <CastTime>Instant</CastTime>
+        <Channel>true</Channel>
+        <Duration>10.000000</Duration>
+        <Interval>1.000000</Interval>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Ritual of Judgment</Name>
+      <Icon>redirect4b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-83519199</AbilityId>
+        <Description></Description>
+        <AddonId>AFB0599211E99258A</AddonId>
+        <IsPassive>True</IsPassive>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>58</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Spiritual Scrutiny</Name>
+      <Icon>blindinglight1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>57</RequiredLevel>
+        <AbilityId>-76030669</AbilityId>
+        <Description>Reduces the global cooldown of the Cleric&apos;s abilities by 0.5s, and their mana costs by 33%. Allows the Cleric&apos;s damaging abilities to ignore 20% of their targets&apos; Armor and Resistance. Reduces the cast time of Bolt of Judgment by 1.5s and its damage by 20%. Prevents Bolt of Judgment from consuming Echoing Concord. Lasts 1h.</Description>
+        <AddonId>AFB77DD3356A44239</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>3600.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>41</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Bolt of Retribution</Name>
+      <Icon>binding_of_authority_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>41</RequiredLevel>
+        <AbilityId>-43234639</AbilityId>
+        <Description>Deals 1164 to 1287 Life damage.</Description>
+        <AddonId>AFD6C4AB1AD30F43B</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <CastTime>2.000000</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>61</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Radical Coalescence</Name>
+      <Icon>healing_flare_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>60</RequiredLevel>
+        <AbilityId>-42581126</AbilityId>
+        <Description>Resets the cooldown on all damaging Inquisitor abilities. Grants Unified Theory and Fanaticism. Allows Inquisitor channeled abilities to be cast while moving for 10s.</Description>
+        <AddonId>AFD76437A962C0EA2</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>120.000008</Cooldown>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>54</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Scourge</Name>
+      <Icon>magnify_pain_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>53</RequiredLevel>
+        <AbilityId>-520878</AbilityId>
+        <Description>Deals 2759 Death damage over 15s.</Description>
+        <AddonId>AFFF80D521D397A97</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>3.750000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>15.000000</Duration>
+        <Interval>1.500000</Interval>
+        <PowerStatCoefficient effect="0" action="0">3.600000</PowerStatCoefficient>
+        <DamageMultiplier effect="0" action="0">0.100000</DamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>20</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Soul Drain</Name>
+      <Icon>souldrain4</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>20</RequiredLevel>
+        <AbilityId>76</AbilityId>
+        <Description>Applies Soul Drain to up to 3 enemies near the targeted enemy. For each enemy hit, deals 917 to 1013 Death damage to up to 4 enemies.</Description>
+        <AddonId>A0000004C6838FA21</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>10.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>12.000000</CostManaPercent>
+        <CastTime>2.000000</CastTime>
+        <Radius>7.000000</Radius>
+        <MaxAffected>3</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>2</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Armor of Devotion</Name>
+      <Icon>castigation1c</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>2</RequiredLevel>
+        <AbilityId>28618866</AbilityId>
+        <Description>Increases Critical Hit chance with damaging abilities by 5%. Lasts 1h.</Description>
+        <AddonId>A01B4B0723E98E81B</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>3600.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Bolt of Judgment</Name>
+      <Icon>spiritblast4bc</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>55494125</AbilityId>
+        <Description>Deals 970 to 1073 Life damage.</Description>
+        <AddonId>A034EC5ED761024EA</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>10.000000</CostManaPercent>
+        <CastTime>2.000000</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>16</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Harsh Discipline</Name>
+      <Icon>healthchannel1g</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>16</RequiredLevel>
+        <AbilityId>154245573</AbilityId>
+        <Description>Deals 5310 Death damage over 3s, restoring 15% of the Cleric&apos;s Maximum Health over the same duration.</Description>
+        <AddonId>A093199C517E1A1E6</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>15.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Channel>true</Channel>
+        <Duration>3.000000</Duration>
+        <Interval>1.000000</Interval>
+        <PowerStatCoefficient effect="0" action="0">2.250000</PowerStatCoefficient>
+        <DamageMultiplier effect="0" action="0">0.250000</DamageMultiplier>
+        <PowerStatCoefficient effect="1" action="0">0.000000E+000</PowerStatCoefficient>
+        <AggroMultiplier effect="1" action="0">0.250000</AggroMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>48</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Bewilder</Name>
+      <Icon>confound2</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>48</RequiredLevel>
+        <AbilityId>179474180</AbilityId>
+        <Description>Confuses for 4s. Can only affect 1 enemy.</Description>
+        <AddonId>A0AB28F04A29ADDCB</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>4.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>51</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Nysyr&apos;s Rebuke</Name>
+      <Icon>nysyrs_rebuke</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>50</RequiredLevel>
+        <AbilityId>206273970</AbilityId>
+        <Description>Deals 8142 Life damage over 3s.</Description>
+        <AddonId>A0C4B7DB240F1A970</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>15.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Channel>true</Channel>
+        <Duration>3.000000</Duration>
+        <Interval>1.000000</Interval>
+        <PowerStatCoefficient effect="0" action="0">3.600000</PowerStatCoefficient>
+        <DamageMultiplier effect="0" action="0">0.250000</DamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>31</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Circle of Oblivion</Name>
+      <Icon>exorcize2</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>31</RequiredLevel>
+        <AbilityId>475452316</AbilityId>
+        <Description>Deals 3001 Death damage over 7s to up to 5 enemies in the target area.</Description>
+        <AddonId>A1C56D39C8AEB775F</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>18.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Channel>true</Channel>
+        <Duration>7.000000</Duration>
+        <Interval>1.000000</Interval>
+        <Radius>7.000000</Radius>
+        <MaxAffected>5</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>36</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Judicial Privilege</Name>
+      <Icon>doctrine_of_virtue_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>36</RequiredLevel>
+        <AbilityId>586172645</AbilityId>
+        <Description>Adds 5 stacks of Judicial Privilege. Each stack adds 10% movement speed. When hit, removes 1 stack and restores 10% health. Lasts 20s.</Description>
+        <AddonId>A22F048E5862FB1C5</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>26</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Fanaticism</Name>
+      <Icon>fanaticism</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>26</RequiredLevel>
+        <AbilityId>641965739</AbilityId>
+        <Description>Forces the next damaging Life or Death spell to Critically Hit. Lasts 30s.</Description>
+        <AddonId>A26439EAB4F2FA65D</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>16</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Excommunicate</Name>
+      <Icon>excommunicate</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>16</RequiredLevel>
+        <AbilityId>645208073</AbilityId>
+        <Description>Knocks the enemy back and snares them, reducing their movement speed by 30%, for up to 10s.</Description>
+        <AddonId>A267518092DE86E48</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>20.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>6</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Armor of Treachery</Name>
+      <Icon>castigation1b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>6</RequiredLevel>
+        <AbilityId>953259656</AbilityId>
+        <Description>Increases Armor by 3% and Base Health by 3%. Lasts 1h.</Description>
+        <AddonId>A38D19688C31286ED</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>3600.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>4</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Bolt of Depravity</Name>
+      <Icon>spiritblast4b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>4</RequiredLevel>
+        <AbilityId>1244719305</AbilityId>
+        <Description>Deals 1456 to 1609 Death damage.</Description>
+        <AddonId>A4A30E8C9E6A43F85</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>15.000000</CostManaPercent>
+        <CastTime>3.000000</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>21</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Perseverance</Name>
+      <Icon>perseverance</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>21</RequiredLevel>
+        <AbilityId>1425827168</AbilityId>
+        <Description>Grants immunity to the next Fear. Lasts 60s.</Description>
+        <AddonId>A54FC656090AC65DF</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>60.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>24</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Spiritual Deficiency</Name>
+      <Icon>menacingroar4b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>24</RequiredLevel>
+        <AbilityId>1595568812</AbilityId>
+        <Description>Increases non-Physical damage taken by 7%. Lasts 60s.</Description>
+        <AddonId>A5F1A72ACC7048763</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>60.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>8</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Sanction Heretic</Name>
+      <Icon>sanction_heretic_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>8</RequiredLevel>
+        <AbilityId>1640453314</AbilityId>
+        <Description>Deals 728 to 804 Life damage. Applies Sanction, dealing an additional 766 Life damage over 15s.</Description>
+        <AddonId>A61C754C210696BF7</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>15.000001</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">1.000000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>32</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Trepidation</Name>
+      <Icon>confound1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>32</RequiredLevel>
+        <AbilityId>1735321389</AbilityId>
+        <Description>Fears nearby enemies for 8s or until they receive damage up to an amount equal to 5% of the Cleric&apos;s Maximum Health.</Description>
+        <AddonId>A676EE72DCC5F20EE</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Radius>7.000000</Radius>
+        <MaxAffected>50</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Vex</Name>
+      <Icon>vex</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1752828629</AbilityId>
+        <Description>Deals 1686 Death damage over 15s.</Description>
+        <AddonId>A687A0AD59D162FA5</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>3.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>15.000000</Duration>
+        <Interval>1.500000</Interval>
+        <PowerStatCoefficient effect="0" action="0">2.200000</PowerStatCoefficient>
+        <DamageMultiplier effect="0" action="0">0.100000</DamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>28</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Spiritual Protection</Name>
+      <Icon>magicward1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>28</RequiredLevel>
+        <AbilityId>1855908458</AbilityId>
+        <Description>Increases all Resistances by 65 on all party or raid members.</Description>
+        <AddonId>A6E9EEA6A63F692DC</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>36</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Armor of Awakening</Name>
+      <Icon>castigation3</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>36</RequiredLevel>
+        <AbilityId>1858105709</AbilityId>
+        <Description>Increases damage done by 10% and Critical Hit chance with damaging abilities by 5%. Lasts 1h.</Description>
+        <AddonId>A6EC0716DB0D1A70C</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>3600.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>11</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Shroud of Agony</Name>
+      <Icon>riftstalker_great_fortitude_01_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>11</RequiredLevel>
+        <AbilityId>1981413061</AbilityId>
+        <Description>Grants a 20% chance when hit to deal 497 Death damage to up to 10 nearby enemies over 6s. Lasts 1h.</Description>
+        <AddonId>A7619F6C5BC624EF1</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>40</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Confound</Name>
+      <Icon>tempest_bounce_shot_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>40</RequiredLevel>
+        <AbilityId>2012277402</AbilityId>
+        <Description>Interrupts.</Description>
+        <AddonId>A77F0EA9A9758B569</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>10.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>44</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Aggressive Inquisition</Name>
+      <Icon>manachannel1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>44</RequiredLevel>
+        <AbilityId>2022923252</AbilityId>
+        <Description>Casts Bolt of Depravity on the target once every 0.66 seconds. Does not occur on initial application.</Description>
+        <AddonId>A78935BF4B24E5F3C</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CastTime>Instant</CastTime>
+        <Channel>true</Channel>
+        <Duration>2.000000</Duration>
+        <Interval>0.660000</Interval>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>12</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Purge</Name>
+      <Icon>purge_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>12</RequiredLevel>
+        <AbilityId>2053902436</AbilityId>
+        <Description>Removes 2 Buffs.</Description>
+        <AddonId>A7A6C1064540AEAE0</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>10.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+  </Abilities>
+</SoulTree>
+

@@ -1,0 +1,34 @@
+﻿@model PrancingTurtle.Models.Misc.ValidateExistingSession
+
+<div class="container container-fluid">
+    <div class="col-lg-6 col-centered">
+        <h2>Enter the ID of the session you'd like to upload an addition log for.</h2>
+        <h4>This ID is a number, and can be found by clicking on an existing session and taking note of the last part of the URL, e.g. /Session/Detail/1234.</h4>
+        <h4>You will only be able to add additional logs to a session if you are the owner, or you have the ability to upload logs within the guild that created the session.</h4>
+        <br />
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-horizontal">
+                @Html.ValidationSummary(false)
+
+                <div class="form-group">
+                    <div class="col-lg-3 text-right">
+                        @Html.LabelFor(model => model.SessionId, new { @class = "control-label" })
+                    </div>
+                    <div class="col-lg-9">
+                        @Html.TextBoxFor(model => model.SessionId, new { @class = "form-control" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-3 col-md-9">
+                        <input type="submit" value="Next" class="btn btn-primary" />
+                    </div>
+                </div>
+            </div>
+
+        }
+    </div>
+</div>

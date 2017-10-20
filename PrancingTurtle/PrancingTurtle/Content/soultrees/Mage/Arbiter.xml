@@ -1,0 +1,1383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SoulTree calling="Mage" name="Arbiter">
+  <Traits>
+    <Trait>
+      <Key>0</Key>
+      <Name>Hardened Soul</Name>
+      <Icon>bulwark1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1571739169</AbilityId>
+          <Description></Description>
+          <AddonId>A5DAED621051AF4B4</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Base Health by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Base Health by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your Base Health by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your Base Health by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your Base Health by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>1</Key>
+      <Name>Arcane Protection</Name>
+      <Icon>arkanxshield1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>146515994</AbilityId>
+          <Description></Description>
+          <AddonId>A08BBA81A487C891A</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Block by 1%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Block by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Block by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Block by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Block by 5%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>2</Key>
+      <Name>Flowing Guard</Name>
+      <Icon>warden-crushing_wave</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1332246082</AbilityId>
+          <Description></Description>
+          <AddonId>A4F6876421A364B6F</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Guard is now derived from 5% of your Intelligence. Your Dodge is now derived from 50% of your Wisdom.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your Guard is now derived from 10% of your Intelligence. Your Dodge is now derived from 100% of your Wisdom.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>3</Key>
+      <Name>Storm Front</Name>
+      <Icon>purifier_sign_of_faith_b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1636935113</AbilityId>
+          <Description></Description>
+          <AddonId>A6191A5C96B23F842</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Using a Charge generating ability while above 75 Charge increases your Armor by 10% for 30 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Using a Charge generating ability while above 75 Charge increases your Armor by 20% for 30 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Using a Charge generating ability while above 75 Charge increases your Armor by 30% for 30 seconds.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>4</Key>
+      <Name>Prismatic Ward</Name>
+      <Icon>ward3b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1319469286</AbilityId>
+          <Description></Description>
+          <AddonId>A4EA580E639812FC3</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Resists by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Resists by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your Resists by 9%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your Resists by 12%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your Resists by 15%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>5</Key>
+      <Name>Rejuvenating Charge</Name>
+      <Icon>inspiration3</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1056762073</AbilityId>
+          <Description></Description>
+          <AddonId>A3EFCE8D95F4F86A0</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases incoming healing by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases incoming healing by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases incoming healing by 9%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>6</Key>
+      <Name>Tactical Knowledge</Name>
+      <Icon>exorcize1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1045062407</AbilityId>
+          <Description></Description>
+          <AddonId>A3E4A63077F07CF0D</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Intelligence by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Intelligence by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your Intelligence by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your Intelligence by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your Intelligence by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>7</Key>
+      <Name>Icy Fury</Name>
+      <Icon>riftblade_frost_strike_01_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1527784315</AbilityId>
+          <Description>Deals 670 to 740 Water damage. Reduces the cooldown of Glacial Spike by 5 seconds.</Description>
+          <AddonId>A5B10237BC52AD8E8</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Melee Weapon</RequiresWeapon>
+          <MaxRange>30.000000</MaxRange>
+          <MinimumHeat>15</MinimumHeat>
+          <CastTime>Instant</CastTime>
+          <PowerStatCoefficient effect="1" action="0">1.000000</PowerStatCoefficient>
+          <AggroMultiplier effect="1" action="0">3.000000</AggroMultiplier>
+          <WeaponDamageMultiplier effect="1" action="0">0.000000E+000</WeaponDamageMultiplier>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>8</Key>
+      <Name>Arbiter&apos;s Training</Name>
+      <Icon>flashback</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>277438073</AbilityId>
+          <Description></Description>
+          <AddonId>A10895E790B059749</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage of your Air and Water abilities by 2%. Increases the damage of all other abilities by 1%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage of your Air and Water abilities by 4%. Increases the damage of all other abilities by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the damage of your Air and Water abilities by 6%. Increases the damage of all other abilities by 3%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>9</Key>
+      <Name>Raging Flood</Name>
+      <Icon>warden-healing_flood_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1788329402</AbilityId>
+          <Description></Description>
+          <AddonId>A6A97BDBA2CA9B28A</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases damage and healing done by 1% and increases the amount of Charge your abilities generate by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases damage and healing done by 2% and increases the amount of Charge your abilities generate by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases damage and healing done by 3% and increases the amount of Charge your abilities generate by 9%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases damage and healing done by 4% and increases the amount of Charge your abilities generate by 12%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases damage and healing done by 5% and increases the amount of Charge your abilities generate by 15%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>10</Key>
+      <Name>Freezing Gust</Name>
+      <Icon>remote_clipping_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>508169312</AbilityId>
+          <Description>Interrupts.</Description>
+          <AddonId>A1E4A0C607A4CD62D</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>8.000000</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>4.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>11</Key>
+      <Name>Radiant Vitality</Name>
+      <Icon>shaman-glory_of_the_chosen_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Energized Vitality now also increases your Base Health by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your Energized Vitality now also increases your Base Health by 6%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>12</Key>
+      <Name>Soothing Waters</Name>
+      <Icon>warden-waterjet_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>452193724</AbilityId>
+          <Description>Consumes all Charge when cast, restoring health to the Mage based on the amount of Charge consumed.  At 100 Charge consumed, restores 203 to 225 health.</Description>
+          <AddonId>A1AF3EDBCC2E70A27</AddonId>
+          <IsPassive>False</IsPassive>
+          <MinimumHeat>1</MinimumHeat>
+          <CastTime>Instant</CastTime>
+          <PowerStatCoefficient effect="0" action="0">0.600000</PowerStatCoefficient>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>13</Key>
+      <Name>Freezing Rush</Name>
+      <Icon>energybeam1b</Icon>
+      <PrereqTraitKey>14</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Avalanche now stuns the enemy for up to 3 seconds and applies Storm Front and Arcane Shielding to you if points have been spent in them.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>14</Key>
+      <Name>Avalanche</Name>
+      <Icon>warden-deluge_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1557873126</AbilityId>
+          <Description>Charges at the enemy, dealing 1129 to 1247 Water damage.</Description>
+          <AddonId>A5CDB41E6ABACA280</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>15.000001</Cooldown>
+          <MinRange>3.000000</MinRange>
+          <MaxRange>20.000000</MaxRange>
+          <CostManaPercent>7.500000</CostManaPercent>
+          <GainHeat>15</GainHeat>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>15</Key>
+      <Name>Protection of Wind</Name>
+      <Icon>harbinger_tempest_winds_b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1731767481</AbilityId>
+          <Description></Description>
+          <AddonId>A6738ACB910A5CC00</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage reduction when Blocking an attack by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage reduction when Blocking an attack by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the damage reduction when Blocking an attack by 6%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>16</Key>
+      <Name>Mockery</Name>
+      <Icon>whirlingblades2</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1314250547</AbilityId>
+          <Description></Description>
+          <AddonId>A4E55DF330D2F8983</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Blocking an attack returns 3% of your Maximum Mana.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>17</Key>
+      <Name>Frosted Ward</Name>
+      <Icon>frosted_ward</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1366622010</AbilityId>
+          <Description>Reduces the Mage&apos;s threat by 50% and increases damage and healing done by 5%. Reduces the global cooldown of Arbiter and Ethereal abilities to 1s. Does not stack with Arcane Ward.</Description>
+          <AddonId>A5174FF3AB256CD07</AddonId>
+          <IsPassive>False</IsPassive>
+          <CostManaPercent>4.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>18</Key>
+      <Name>Deadly Shards</Name>
+      <Icon>charge_spike</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>893202065</AbilityId>
+          <Description></Description>
+          <AddonId>A353D2E912F925A65</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the benefit Air and Water abilities gain from your Spell Power by 5%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the benefit Air and Water abilities gain from your Spell Power by 10%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the benefit Air and Water abilities gain from your Spell Power by 15%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>19</Key>
+      <Name>Crystalline Shield</Name>
+      <Icon>shaman-glacial_shield</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>2057794845</AbilityId>
+          <Description>Buffs the group or raid member, if the ally receives a killing blow within 30s the buff is consumed and applies a shield, absorbing damage up to 50% of the target&apos;s Maximum Health. Lasts 15s. Removes Overheated and Recharging on cast.</Description>
+          <AddonId>A7AA7751DC806CDD2</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>120.000008</Cooldown>
+          <MaxRange>35.000000</MaxRange>
+          <CostManaPercent>4.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>20</Key>
+      <Name>Icy Celerity</Name>
+      <Icon>shadow_warp_b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>2130362287</AbilityId>
+          <Description></Description>
+          <AddonId>A7EFABFAF15FA0212</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your movement speed by 5%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your movement speed by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>21</Key>
+      <Name>Empowered Wards</Name>
+      <Icon>harbinger_storm_shroud_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1147153535</AbilityId>
+          <Description></Description>
+          <AddonId>A44602C7F6FB0DC55</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>While Arcane Ward is active, the absorb value of shields applied by Shielding Ward are increased by an additional 2% of your Maximum Health. Frosted Ward now reduces the global cooldown of all Air and Water abilities to 1 second, and causes Storm Front and Arcane Shielding buffs to increase damage and healing by an additional 3% each.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>While Arcane Ward is active, the absorb value of shields applied by Shielding Ward are increased by an additional 4% of your Maximum Health. Frosted Ward now reduces the global cooldown of all Air and Water abilities to 1 second, and causes Storm Front and Arcane Shielding buffs to increase damage and healing by an additional 6% each.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>22</Key>
+      <Name>Shattered Reflection</Name>
+      <Icon>shattered_reflection</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>721551111</AbilityId>
+          <Description>Deals 603 to 667 Air damage to up to 10 enemies around the Mage. Applies an Absorb Shield to the Mage for each enemy hit, Absorbing 10% of damage taken, up to 117 damage. Lasts 8s. Counts as a Slashing attack.</Description>
+          <AddonId>A2B01FF0768DAE7D2</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Melee Weapon</RequiresWeapon>
+          <Cooldown>8.000000</Cooldown>
+          <MaxStack>8</MaxStack>
+          <GainHeat>15</GainHeat>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>23</Key>
+      <Name>Arcane Shielding</Name>
+      <Icon>riftstalker_planebound_aegis</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1130698393</AbilityId>
+          <Description></Description>
+          <AddonId>A4365169900100B99</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces damage you receive by 3%. Using a Charge consuming ability while below 25 Charge reduces the damage you receive from Spells by an additional 7% for 30 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reduces damage you receive by 3%. Using a Charge consuming ability while below 25 Charge reduces the damage you receive from Spells by an additional 15% for 30 seconds.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>24</Key>
+      <Name>Misdirection</Name>
+      <Icon>misdirection</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>40</MinimumPointsSpent>
+      <DisplayRow>8</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>629406282</AbilityId>
+          <Description>Buffs the raid member and all members of their group. Transfers 100% of the threat generated, and 10% of the damage taken, by those allies to the Mage. Lasts 10s.</Description>
+          <AddonId>A2583FA4A452AF80B</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>60.000004</Cooldown>
+          <MaxRange>35.000000</MaxRange>
+          <CostManaPercent>4.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+          <Radius>35.000000</Radius>
+          <MaxAffected>5</MaxAffected>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>25</Key>
+      <Name>Shielding Ward</Name>
+      <Icon>defiler_husk_of_indifference_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>559200792</AbilityId>
+          <Description></Description>
+          <AddonId>A2154BA182D3DF991</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Using a Charge generating ability to bring your Charge to 75 or above applies Shielding Charge and Recharging. Using a Charge consuming ability to bring your Charge to 25 or below applies Frosted Shield and Overheated. Shielding Charge and Frosted Shield are shields which absorb damage up to an amount equal to 3% of your Maximum Health over 10s. Recharging and Overheated block Shielding Charge and Frosted Shield, respectively, from being applied again. 20s duration.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+  </Traits>
+  <Abilities>
+    <Ability>
+      <MinimumPointsInSoul>58</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Shield Surge</Name>
+      <Icon>shield_surge</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>57</RequiredLevel>
+        <AbilityId>-40873499</AbilityId>
+        <Description>Reduces damage taken by 20% for 4s. Removes Overheated and Recharging from the Mage.</Description>
+        <AddonId>AFD9051E5B50EBDE4</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>54</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Vortex</Name>
+      <Icon>vortex</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>53</RequiredLevel>
+        <AbilityId>30346823</AbilityId>
+        <Description>Deals 1341 to 1482 Air damage. Resets and reduces the cooldown of Glacial Spike and Jolting Wave to 0 for 5s.</Description>
+        <AddonId>A01CF0E475E3FB887</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>20.000000</Cooldown>
+        <MaxRange>3.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <GainHeat>15</GainHeat>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="1" action="0">2.000000</PowerStatCoefficient>
+        <AggroMultiplier effect="1" action="0">3.000000</AggroMultiplier>
+        <WeaponDamageMultiplier effect="1" action="0">0.000000E+000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>40</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Counter Shock</Name>
+      <Icon>riftblade_thunder_strike_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>40</RequiredLevel>
+        <AbilityId>176360599</AbilityId>
+        <Description>Deals 536 to 593 Air damage. Causes the Mage&apos;s next 3 damaging abilities to deal an additional 72 Air damage. Lasts 10s. Must be used after Blocking an attack.</Description>
+        <AddonId>A0A830C97AB749453</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>10.000000</Cooldown>
+        <MaxRange>3.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">0.800000</PowerStatCoefficient>
+        <AggroMultiplier effect="0" action="0">3.000000</AggroMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Arbiter Soul Gift</Name>
+      <Icon>Default</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>215113278</AbilityId>
+        <Description></Description>
+        <AddonId>A0CD25E3E4737A71F</AddonId>
+        <IsPassive>True</IsPassive>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>51</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Shield of the North Wind</Name>
+      <Icon>defiler_empowered_affliction_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>50</RequiredLevel>
+        <AbilityId>247181127</AbilityId>
+        <Description>Absorbs damage equal to 100% of the Mage&apos;s Maximum Health. Lasts 10s.</Description>
+        <AddonId>A0EBBAF47F02BCDBA</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>120.000008</Cooldown>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">0.000000E+000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>20</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Arcane Projection</Name>
+      <Icon>archane_projection</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>20</RequiredLevel>
+        <AbilityId>369699227</AbilityId>
+        <Description>Buffs the raid member, greatly reducing their threat with enemies and transferring 100% of the threat generated to the Mage. Lasts 6s.</Description>
+        <AddonId>A1609299B3162341D</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>6.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Soothing Waters</Name>
+      <Icon>warden-waterjet_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>452193724</AbilityId>
+        <Description>Consumes all Charge when cast, restoring health to the Mage based on the amount of Charge consumed.  At 100 Charge consumed, restores 203 to 225 health.</Description>
+        <AddonId>A1AF3EDBCC2E70A27</AddonId>
+        <IsPassive>False</IsPassive>
+        <MinimumHeat>1</MinimumHeat>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">0.600000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Freezing Gust</Name>
+      <Icon>remote_clipping_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>508169312</AbilityId>
+        <Description>Interrupts.</Description>
+        <AddonId>A1E4A0C607A4CD62D</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>8.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>20</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Swirling Winds</Name>
+      <Icon>maelstrom</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>20</RequiredLevel>
+        <AbilityId>536571901</AbilityId>
+        <Description>Increases the damage of all Charge consuming abilities by 20%. Reduces the initial Charge cost for Charge consuming abilities by 33%. Lasts 10s.</Description>
+        <AddonId>A1FFB6FFDBD82DB0C</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <GainHeat>100</GainHeat>
+        <CastTime>Instant</CastTime>
+        <Duration>10.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>24</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Crystallize</Name>
+      <Icon>crystallize</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>24</RequiredLevel>
+        <AbilityId>557642845</AbilityId>
+        <Description>Causes damaging abilities to return 10% of the Mage&apos;s mana. Blocks Charge gain.</Description>
+        <AddonId>A213CF45DAB85CDF5</AddonId>
+        <IsPassive>False</IsPassive>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Misdirection</Name>
+      <Icon>misdirection</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>629406282</AbilityId>
+        <Description>Buffs the raid member and all members of their group. Transfers 100% of the threat generated, and 10% of the damage taken, by those allies to the Mage. Lasts 10s.</Description>
+        <AddonId>A2583FA4A452AF80B</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Radius>35.000000</Radius>
+        <MaxAffected>5</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Shattered Reflection</Name>
+      <Icon>shattered_reflection</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>721551111</AbilityId>
+        <Description>Deals 603 to 667 Air damage to up to 10 enemies around the Mage. Applies an Absorb Shield to the Mage for each enemy hit, Absorbing 10% of damage taken, up to 117 damage. Lasts 8s. Counts as a Slashing attack.</Description>
+        <AddonId>A2B01FF0768DAE7D2</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>8.000000</Cooldown>
+        <MaxStack>8</MaxStack>
+        <GainHeat>15</GainHeat>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Aqueous Blessing</Name>
+      <Icon>warden-overflow_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>767237044</AbilityId>
+        <Description>Reduces incoming damage by 3%. Lasts 1 hour.</Description>
+        <AddonId>A2DBB1BB453386D11</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>2.250000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>3600.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>44</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Icy Command</Name>
+      <Icon>shaman-vengeance_of_winter_storm_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>44</RequiredLevel>
+        <AbilityId>883344857</AbilityId>
+        <Description>Pulls up to 5 enemies to the Mage, forcing them to attack the Mage for 3s.</Description>
+        <AddonId>A34A6C5D94FCF19D0</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <MaxRange>20.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Radius>7.000000</Radius>
+        <MaxAffected>5</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>12</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Biting Wind</Name>
+      <Icon>biting_wind</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>12</RequiredLevel>
+        <AbilityId>1010216154</AbilityId>
+        <Description>Forces the enemy to attack the Mage for 3s.</Description>
+        <AddonId>A3C36ACDA71040B92</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>8.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>3.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>4</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Jolting Wave</Name>
+      <Icon>jolting_wave</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>4</RequiredLevel>
+        <AbilityId>1194743546</AbilityId>
+        <Description>Deals 580 to 641 Air damage to up to 10 enemies around the Mage. Counts as a Slashing attack.</Description>
+        <AddonId>A473656FA742419EB</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>4.000000</Cooldown>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <GainHeat>15</GainHeat>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>8</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Arcane Ward</Name>
+      <Icon>arcane_ward</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>8</RequiredLevel>
+        <AbilityId>1312851827</AbilityId>
+        <Description>Enables Block and Guard. Causes Block to derive from the Mage&apos;s Intelligence. Increases Base Health by 25%, Resistances by 35%, and Armor by 150%. Increases threat generation by 300%. Reduces damage and healing done by 30%. Reduces the global cooldown of Arbiter and Ethereal abilities to 1s. Blocks Charge gain from Verse of Joy and Resuscitating Chant.</Description>
+        <AddonId>A4E408773863D317C</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>36</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Scatter Strike</Name>
+      <Icon>scatter_strike</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>36</RequiredLevel>
+        <AbilityId>1323788678</AbilityId>
+        <Description>Deals 804 to 889 Water damage. Applies a shield to up to 5 allies near the enemy, Absorbing up to 310 damage. Lasts 10s.</Description>
+        <AddonId>A4EE769866A153A7E</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>20.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <MinimumHeat>15</MinimumHeat>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="1" action="0">1.200000</PowerStatCoefficient>
+        <AggroMultiplier effect="1" action="0">3.000000</AggroMultiplier>
+        <WeaponDamageMultiplier effect="1" action="0">0.000000E+000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Frosted Ward</Name>
+      <Icon>frosted_ward</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1366622010</AbilityId>
+        <Description>Reduces the Mage&apos;s threat by 50% and increases damage and healing done by 5%. Reduces the global cooldown of Arbiter and Ethereal abilities to 1s. Does not stack with Arcane Ward.</Description>
+        <AddonId>A5174FF3AB256CD07</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>61</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Ebb and Flow</Name>
+      <Icon>untangle_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>60</RequiredLevel>
+        <AbilityId>1458936408</AbilityId>
+        <Description>Reduces the Mage&apos;s global cooldown to 1s. Reduces mana costs of instant abilities by 33%. Increases the damage of Arbiter abilities by 30% and the damage bonus from Frosted Ward by an additional 10%. Charge generating attacks apply a stack of Glaciate, reducing the duration of the next Overheated effect by 1s per stack. Charge consuming attacks apply a stack of Supercharge, reducing the duration of the next Recharging effect by 1s per stack. Max 20 stacks. Lasts 1h.</Description>
+        <AddonId>A56F59A588FBC7ED6</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>3600.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>16</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Energized Vitality</Name>
+      <Icon>generic_ability_026_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>16</RequiredLevel>
+        <AbilityId>1525947840</AbilityId>
+        <Description>Increases Endurance by 138. Lasts 1h.</Description>
+        <AddonId>A5AF41DC08A08F16B</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>2.250000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>3600.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Icy Fury</Name>
+      <Icon>riftblade_frost_strike_01_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1527784315</AbilityId>
+        <Description>Deals 670 to 740 Water damage. Reduces the cooldown of Glacial Spike by 5 seconds.</Description>
+        <AddonId>A5B10237BC52AD8E8</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>30.000000</MaxRange>
+        <MinimumHeat>15</MinimumHeat>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="1" action="0">1.000000</PowerStatCoefficient>
+        <AggroMultiplier effect="1" action="0">3.000000</AggroMultiplier>
+        <WeaponDamageMultiplier effect="1" action="0">0.000000E+000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>2</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Glacial Spike</Name>
+      <Icon>tactician_glacial_torrent</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>2</RequiredLevel>
+        <AbilityId>1535049282</AbilityId>
+        <Description>Deals 1206 to 1334 Water damage.</Description>
+        <AddonId>A5B7EFE4290E2A984</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>15.000001</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <MinimumHeat>15</MinimumHeat>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Avalanche</Name>
+      <Icon>warden-deluge_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1557873126</AbilityId>
+        <Description>Charges at the enemy, dealing 1129 to 1247 Water damage.</Description>
+        <AddonId>A5CDB41E6ABACA280</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>15.000001</Cooldown>
+        <MinRange>3.000000</MinRange>
+        <MaxRange>20.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <GainHeat>15</GainHeat>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>40</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Threatening Visage</Name>
+      <Icon>warlord_ready_posture</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>40</RequiredLevel>
+        <AbilityId>1560326838</AbilityId>
+        <Description>Damaging abilities generate additional threat based off of the Mage&apos;s Endurance.</Description>
+        <AddonId>A5D00B2B63EFEDEEF</AddonId>
+        <IsPassive>True</IsPassive>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>32</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Shared Agony</Name>
+      <Icon>paladin-graceful_under_pressure_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>32</RequiredLevel>
+        <AbilityId>1617391914</AbilityId>
+        <Description>Shields the ally, intercepting 50% of the damage they receive, and replacing the ally&apos;s Toughness with the Mage&apos;s, for 6s. An ally can only be affected by a tank soul damage intercept up to once every 2 minutes.</Description>
+        <AddonId>A6067712A63C5CB66</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>20.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+        <Duration>6.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>28</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Icy Blast</Name>
+      <Icon>icebolt2</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>28</RequiredLevel>
+        <AbilityId>1692675517</AbilityId>
+        <Description>Deals 482 to 533 Water damage to up to 10 enemies around the enemy.</Description>
+        <AddonId>A64E42DBDDC33E7BF</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>20.000000</MaxRange>
+        <MinimumHeat>15</MinimumHeat>
+        <CastTime>Instant</CastTime>
+        <Radius>10.000000</Radius>
+        <MaxAffected>10</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>48</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Mana Aegis</Name>
+      <Icon>riftstalker_planebound_aegis_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>48</RequiredLevel>
+        <AbilityId>1868904600</AbilityId>
+        <Description>Shields the Mage, absorbing 30% of damage received. Mana is reduced by 15% of the damage absorbed. Lasts 6s.</Description>
+        <AddonId>A6F653898AC0A0C9D</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>6.000000</Duration>
+        <PowerStatCoefficient effect="0" action="0">0.000000E+000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Galvanic Strike</Name>
+      <Icon>galvanic_strike</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1871751762</AbilityId>
+        <Description>Deals 670 to 740 Air damage. Counts as a Slashing attack.</Description>
+        <AddonId>A6F90AA529CA9208E</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>3.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <GainHeat>15</GainHeat>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="1" action="0">1.000000</PowerStatCoefficient>
+        <AggroMultiplier effect="1" action="0">3.000000</AggroMultiplier>
+        <WeaponDamageMultiplier effect="1" action="0">0.000000E+000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>24</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Frozen Volition</Name>
+      <Icon>shaman-vengeance_of_frozen_earth_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>24</RequiredLevel>
+        <AbilityId>1883377297</AbilityId>
+        <Description>Forces up to 10 nearby enemies to attack the Mage for 3s.</Description>
+        <AddonId>A70420E918BB70B54</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>20.000000</Cooldown>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Radius>10.000000</Radius>
+        <MaxAffected>10</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Crystalline Shield</Name>
+      <Icon>shaman-glacial_shield</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>2057794845</AbilityId>
+        <Description>Buffs the group or raid member, if the ally receives a killing blow within 30s the buff is consumed and applies a shield, absorbing damage up to 50% of the target&apos;s Maximum Health. Lasts 15s. Removes Overheated and Recharging on cast.</Description>
+        <AddonId>A7AA7751DC806CDD2</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>120.000008</Cooldown>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>32</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Choking Flood</Name>
+      <Icon>underwaterbreath1a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>32</RequiredLevel>
+        <AbilityId>2111050906</AbilityId>
+        <Description>Pulls the enemy to the Mage&apos;s location and forces them to attack the Mage for 3s. Debilitates the enemy for up to 5s.</Description>
+        <AddonId>A7DD4149A5ACEF042</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>45.000004</Cooldown>
+        <MaxRange>20.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+  </Abilities>
+</SoulTree>
+

@@ -1,0 +1,76 @@
+﻿@using PrancingTurtle.Models.ViewModels
+@model PrancingTurtle.Models.ViewModels.Encounter.DetailVM
+@{
+    ViewBag.Title = string.Format("{0} - {1} mode ({2})", Model.Encounter.BossFight.Name, Model.Encounter.EncounterDifficulty.Name, Model.Encounter.Duration);
+}
+
+
+@Html.Partial("_EncounterNav2", new EncounterNav(Model.Encounter.Id,
+        Model.Encounter.BossFight.Name, Model.Encounter.BossFight.Instance.Name,
+        Model.Encounter.Duration, Model.Encounter.SuccessfulKill, Model.Session), new ViewDataDictionary { { "link", "newdetail" } })
+
+<a name="top">&nbsp;</a>
+
+
+<div class="row">
+    <div class="col-lg-10 col-centered">
+        <div class="row">
+            <div style="float: left" width="410px">
+                @if (Model.LoadImage)
+                {
+                    <img src="@string.Format("/Content/images/portrait/{0}.png", Model.Encounter.BossFight.Name.ToLower().Replace(" ", ""))" width="405" height="247" />
+                }
+                else
+                {
+                    <img src="/Content/images/portrait/noportrait.png" width="405" height="247" />
+                }
+            </div>
+            <div style="float: left">
+                @if (Model.Encounter.UploadGuild != null)
+                {
+                    <h2>
+                        <b>@Html.ActionLink(string.Format("<{0}>", Model.Encounter.UploadGuild.Name), "Guild", "Session", new { id = Model.Encounter.UploadGuild.Id }, new { @class = "text-info" })</b>
+                        vs
+                        <b>
+                            @Html.ActionLink(string.Format("{0} ({1} mode)", Model.Encounter.BossFight.Name, Model.Encounter.EncounterDifficulty.Name),
+                                "BossFight", "Session", new { id = Model.Encounter.BossFight.Id, d = Model.Encounter.EncounterDifficultyId }, new { @class = "text-info" })
+                        </b>
+                        @*@Html.Raw(string.Format("<b>&lt;{0}&gt;</b> vs <b>{1}</b>", Model.Encounter.UploadGuild.Name, Model.Encounter.BossFight.Name))*@
+                    </h2>
+                }
+                else
+                {
+                    <h2>
+                        <b>@Html.Raw(string.Format("{0} ({1})", Model.Encounter.BossFight.Name, Model.Encounter.BossFight.Instance.Name))</b>
+                    </h2>
+                }
+
+                <h4>@Html.Raw(string.Format("<b>Started:</b> {0}  <b>Fight Length:</b> {1}", Model.Encounter.Date.Add(Model.TimeZoneOffset), Model.Encounter.Duration))</h4>
+                <div>
+                    <h4>
+                        <img src="~/Content/icons/misc/LFP_Roles_Dps.png" height="48" width="48" /> <b>@Model.AverageDps</b> damage done per second<br />
+                        <img src="~/Content/icons/misc/LFP_Roles_Heal.png" height="48" width="48" /> <b>@Model.AverageHps</b> healing done per second<br />
+                        <img src="~/Content/icons/misc/LFP_Roles_Tank.png" height="48" width="48" /> <b>@Model.AverageAps</b> absorption granted per second
+                    </h4>
+                </div>
+            </div>
+        </div>
+        <h3>Damage dealt by players</h3>
+        <div class="row">
+            <div class="col-sm-4">
+                @Model.ChartDamageToNpcsByPlane
+            </div>
+            <div class="col-sm-4">
+                @Model.ChartDamageToNpcsByClass
+            </div>
+        </div>
+        <h3>Damage dealt by NPCs</h3>
+        <div class="row">
+            <div class="col-sm-4">
+                @Model.ChartDamageToPlayersByPlane
+            </div>
+        </div>
+    </div>
+    <p class="text-center text-muted">Page built in @Model.BuildTime</p>
+</div>
+@*</div>*@

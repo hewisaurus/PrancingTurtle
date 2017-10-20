@@ -1,0 +1,96 @@
+﻿@using System.Web.Mvc.Html
+@using PagedList.Mvc
+@using PrancingTurtle.Helpers.PagedList
+@using PrancingTurtle.Models.Shared
+@model PrancingTurtle.Models.AbilityRole.AbilityRoleIndexViewModel
+
+@{
+    ViewBag.Title = "Role / Class abilities";
+    var dropDown = Html.DropDownListFor(model => model.PageSize, PagedListHelpers.PageSizeList(Model.PageSize), new { @onchange = "this.form.submit();" });
+    var pageDropDown = Html.Raw(string.Format("Show {0} records per page", dropDown));
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        <h2>Role / class abilities</h2>
+        @*@Html.Partial("OnViews/_LinkByPermission", new Link(Model.RequiredToCreate, Model.ControllerName,
+            "Create", Model.CreateText, ApplicationIcons.AddLarge, StandardObjectAppearance.CreateButton))*@
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    @using (Html.BeginForm())
+                    {
+                        @Html.HiddenFor(model => model.Page)
+                        <tr>
+                            <th colspan="6">
+                                <div class="floatleft floatleft-pad">@pageDropDown</div>
+                                @Html.PagedListPager(Model.PagedItems, page => Url.Action(Model.ActionName, Model.ControllerName, Model.PagerLinkParams(page)), StandardRenderOptions.Standard)
+                                @Html.PagedListPager(Model.PagedItems, page => Url.Action(Model.ActionName, Model.ControllerName, Model.PagerLinkParams(page)), StandardRenderOptions.LeftSide)
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <td>@Html.TextBoxFor(model => model.SearchAbilityName, new { @class = "form-control", placeholder="Filter by ability name" })</td>
+                            <td>@Html.TextBoxFor(model => model.SearchAbilityLogId, new { @class = "form-control", placeholder = "Filter by ability ID" })</td>
+                            <td>@Html.TextBoxFor(model => model.SearchSoul, new {@class = "form-control", placeholder = "Filter by soul"})</td>
+                            <td>@Html.DropDownListFor(model => model.SearchRoleId, new SelectList(Model.Roles, "Id", "Name", Model.SearchRoleId), new { @class = "form-control" })</td>
+                            <td>@Html.DropDownListFor(model => model.SearchClassId, new SelectList(Model.Classes, "Id", "Name", Model.SearchClassId), new { @class = "form-control" })</td>
+                            @Html.Partial("_SearchButtons", new SearchViewModel(Model.ActionName, Model.ControllerName))
+                        </tr>
+
+                        <tr>
+                            <th>
+                                @Html.ActionLink("Ability name", Model.ActionName, Model.ControllerName, Model.AbilityNameLinkParams, null)
+                                <i class="@Model.SortParamAbilityNameClass"></i>
+                            </th>
+                            <th>
+                                @Html.ActionLink("Ability Id", Model.ActionName, Model.ControllerName, Model.AbilityIdLinkParams, null)
+                                <i class="@Model.SortParamAbilityLogIdClass"></i>
+                            </th>
+                            <th>
+                                @Html.ActionLink("Soul", Model.ActionName, Model.ControllerName, Model.SoulLinkParams, null)
+                                <i class="@Model.SortParamSoulClass"></i>
+                            </th>
+                            <th>
+                                @Html.ActionLink("Role", Model.ActionName, Model.ControllerName, Model.RoleIdLinkParams, null)
+                                <i class="@Model.SortParamRoleIdClass"></i>
+                            </th>
+                            <th>
+                                @Html.ActionLink("Class", Model.ActionName, Model.ControllerName, Model.ClassIdLinkParams, null)
+                                <i class="@Model.SortParamClassIdClass"></i>
+                            </th>
+                            @Html.Partial("_ActionTableHeader")
+                        </tr>
+                    }
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.PagedItems)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.AbilityName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.AbilityLogId)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Soul)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Role.Name)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Class.Name)
+                            </td>
+                            @*<td class="text-center">
+                                @Html.Partial("OnViews/_LinkByPermission", new Link(Model.RequiredToView, Model.ControllerName,
+                                "Manage", "", ApplicationIcons.ManageLarge, "", item.Id, false))
+                            </td>*@
+                            <td></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

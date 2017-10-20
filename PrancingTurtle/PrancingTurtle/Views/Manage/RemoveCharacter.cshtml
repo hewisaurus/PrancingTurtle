@@ -1,0 +1,49 @@
+﻿@using PrancingTurtle.Helpers
+@model Database.Models.AuthUserCharacter
+
+@{
+    ViewBag.Title = "Remove Character";
+}
+<br />
+<div class="row">
+    <div class="col-md-8">
+        <div class="panel panel-danger">
+            <div class="panel-heading">
+                <h3 class="panel-title">Warning!</h3>
+            </div>
+            <div class="panel-body">
+                Are you sure you want to remove this character, and all guild membership associated with it?
+                <br /><br />
+                <dl class="dl-horizontal">
+                    <dt>
+                        @Html.DisplayNameFor(model => model.CharacterName)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.CharacterName)
+                    </dd>
+
+                    <dt>
+                        Shard
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Shard.DisplayName)
+                    </dd>
+                </dl>
+            </div>
+            <div class="panel-footer">
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+                    @Html.ValidationSummary(false)
+                    @Html.HiddenFor(model => model.Id)
+                    <div>
+                        @Html.ImageActionLink("Index", "btn", "fa fa-lg fa-arrow-circle-left", "Back") 
+                        <input type="submit" value="Delete" class="btn btn-sm btn-danger" />
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

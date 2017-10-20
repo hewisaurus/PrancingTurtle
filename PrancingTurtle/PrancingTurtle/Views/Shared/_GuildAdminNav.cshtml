@@ -1,0 +1,24 @@
+﻿@model IEnumerable<Database.Models.Guild>
+<li class="dropdown-submenu">
+    <a href="#">Guilds</a>
+    <ul class="dropdown-menu">
+        @foreach (var guild in Model)
+        {
+            @*<li>@Html.ActionLink(guild.Name, "Index", "Guild", new { @id = guild.Id }, null)</li>*@
+
+        }
+        @foreach (var guildGroup in Model.GroupBy(g => g.Name.Substring(0, 1)))
+        {
+            <li class="dropdown-submenu">
+                <a href="#">@guildGroup.Key.ToUpper()</a>
+                <ul class="dropdown-menu">
+                    @foreach (var guild in guildGroup.OrderBy(g => g.Name))
+                    {
+                        <li>@Html.ActionLink(guild.Name, "Index", "Guild", new { @id = guild.Id }, null)</li>
+                    }
+                </ul>
+            </li>
+        }
+    </ul>
+</li>
+

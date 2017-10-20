@@ -1,0 +1,19 @@
+﻿@model string
+@{
+    ViewBag.Title = "Invalid " + Model;
+}
+<br />
+<div class="row">
+    <div class="col-md-6">
+        <div class="panel panel-danger">
+            <div class="panel-heading">
+                <h3 class="panel-title">Error: Invalid @Model!</h3>
+            </div>
+            <div class="panel-body">
+                <p>No @Model was specified, or the specified @Model is invalid.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+@Html.ActionLink("Ok", "Index", "Home", null, new { @class = "btn btn-default" })

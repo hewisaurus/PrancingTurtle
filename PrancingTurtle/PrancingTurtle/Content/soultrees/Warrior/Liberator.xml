@@ -1,0 +1,1287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SoulTree calling="Warrior" name="Liberator">
+  <Traits>
+    <Trait>
+      <Key>0</Key>
+      <Name>Freedom Fighting</Name>
+      <Icon>doctrine_of_dedication_01_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1414775052</AbilityId>
+          <Description></Description>
+          <AddonId>A5453C10C00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Attack Power and Weapon Damage by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Attack Power and Weapon Damage by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your Attack Power and Weapon Damage by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your Attack Power and Weapon Damage by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your Attack Power and Weapon Damage by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>1</Key>
+      <Name>Optimism</Name>
+      <Icon>doctrine_of_faithful_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1087610852</AbilityId>
+          <Description></Description>
+          <AddonId>A40D39FE400000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases healing and absorption done by 1%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases healing and absorption done by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases healing and absorption done by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases healing and absorption done by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases healing and absorption done by 5%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>2</Key>
+      <Name>Liberation Movement</Name>
+      <Icon>paladin_lights_blessing_b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Liberation Treatment affects 1 other party or raid member.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Liberation Treatment affects 2 other party or raid members.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Liberation Treatment affects 3 other party or raid members.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>3</Key>
+      <Name>Dichotomy of Pain</Name>
+      <Icon>dichotomy_of_pain</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>2075301762</AbilityId>
+          <Description>Restores health per Attack Point to the target.
+
+1 Point: 1207 health
+2 Points: 1620 health
+3 Points: 2242 health 
+</Description>
+          <AddonId>A7BB297829721E836</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Melee Weapon</RequiresWeapon>
+          <MaxRange>30.000000</MaxRange>
+          <CostEnergy>22</CostEnergy>
+          <CostAttackPoints>1</CostAttackPoints>
+          <CastTime>Instant</CastTime>
+          <PowerStatCoefficient effect="0" action="0">2.550000</PowerStatCoefficient>
+          <AggroMultiplier effect="0" action="0">0.250000</AggroMultiplier>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>4</Key>
+      <Name>Symbiotic Relationship</Name>
+      <Icon>beastmaster_kinship_01_b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>201434338</AbilityId>
+          <Description></Description>
+          <AddonId>A0C01A4E200000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases damage and healing of Finishers by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases damage and healing of Finishers by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases damage and healing of Finishers by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases damage and healing of Finishers by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases damage and healing of Finishers by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>5</Key>
+      <Name>Pain Management</Name>
+      <Icon>assassin_thread_of_death_b</Icon>
+      <PrereqTraitKey>3</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Dichotomy of Pain heals for additional health over 4s.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Dichotomy of Pain heals for additional health over 8s.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>6</Key>
+      <Name>Neutralize</Name>
+      <Icon>neutralize</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1865207465</AbilityId>
+          <Description>Removes 1 Curse, Poison or Disease.</Description>
+          <AddonId>A6F2CCEA97DBDBE58</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Melee Weapon</RequiresWeapon>
+          <MaxRange>35.000000</MaxRange>
+          <CostEnergy>10</CostEnergy>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>7</Key>
+      <Name>Contingency Planning</Name>
+      <Icon>interdict_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>73202367</AbilityId>
+          <Description></Description>
+          <AddonId>A045CFABF00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases area of effect healing and absorption by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases area of effect healing and absorption by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases area of effect healing and absorption by 9%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases area of effect healing and absorption by 12%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases area of effect healing and absorption by 15%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>8</Key>
+      <Name>Comfort Zone</Name>
+      <Icon>defiler_chimeras_gift_b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Persecute and Mass Oppression heals up to 10 party or raid members for 10% of your Attack Power.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Persecute and Mass Oppression heals up to 10 party or raid members for 20% of your Attack Power.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>9</Key>
+      <Name>Redress</Name>
+      <Icon>redress</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>650718995</AbilityId>
+          <Description>Buffs all party or raid members, reducing damage taken by 5% and increasing healing received by 5%. Lasts 8s.</Description>
+          <AddonId>A26C92F13E56F1D87</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Melee Weapon</RequiresWeapon>
+          <Cooldown>60.000004</Cooldown>
+          <CostEnergy>10</CostEnergy>
+          <CastTime>Instant</CastTime>
+          <Radius>30.000000</Radius>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>10</Key>
+      <Name>Resource Saving</Name>
+      <Icon>street_smart</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-14437542</AbilityId>
+          <Description></Description>
+          <AddonId>AFF23B35A00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces the cost of area of effect abilities by 5%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reduces the cost of area of effect abilities by 10%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Reduces the cost of area of effect abilities by 15%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>11</Key>
+      <Name>Critical Thinking</Name>
+      <Icon>doctrine_of_faithful_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1641636526</AbilityId>
+          <Description></Description>
+          <AddonId>A61D962AE00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Critical Hit attacks and Critical Heals give you 2 Power.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your Critical Hit attacks and Critical Heals give you 4 Power.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>12</Key>
+      <Name>Search and Rescue</Name>
+      <Icon>coda_of_cowardice_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1634034429</AbilityId>
+          <Description></Description>
+          <AddonId>A616562FD00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces the global cooldown of Liberation Treatment, Prolonged Recovery and Mass Casualty Response by 0.1s. Reduces their cost by 1.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reduces the global cooldown of Liberation Treatment, Prolonged Recovery and Mass Casualty Response by 0.2s. Reduces their cost by 2.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Reduces the global cooldown of Liberation Treatment, Prolonged Recovery and Mass Casualty Response by 0.3s. Reduces their cost by 3.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Reduces the global cooldown of Liberation Treatment, Prolonged Recovery and Mass Casualty Response by 0.4s. Reduces their cost by 4.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Reduces the global cooldown of Liberation Treatment, Prolonged Recovery and Mass Casualty Response by 0.5s. Reduces their cost by 5.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>13</Key>
+      <Name>Aegis of Advocacy</Name>
+      <Icon>aegis_of_advocacy</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>170493406</AbilityId>
+          <Description>Healing Finishers add a buff on the Warrior, reducing damage taken by 3% per stack. Stacks up to 3 times. Lasts 1h. Only 1 Aegis can be active at a time.</Description>
+          <AddonId>A0A2985DE36E14239</AddonId>
+          <IsPassive>False</IsPassive>
+          <CostEnergy>10</CostEnergy>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>14</Key>
+      <Name>Medical Fellowship</Name>
+      <Icon>talented_composer</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1511146323</AbilityId>
+          <Description></Description>
+          <AddonId>A5A12435300000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases all Attack Point generating healing and absorption abilities by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases all Attack Point generating healing and absorption abilities by 12%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases all Attack Point generating healing and absorption abilities by 18%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>15</Key>
+      <Name>Zealous Advocate</Name>
+      <Icon>purifier_sign_of_daring_a</Icon>
+      <PrereqTraitKey>13</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Aegis of Advocacy also increases damage done by 1% per stack.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Aegis of Advocacy also increases damage done by 2% per stack.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>16</Key>
+      <Name>Additional Aid</Name>
+      <Icon>purifier_sign_of_wrath_a</Icon>
+      <PrereqTraitKey>9</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces the damage taken and increases the healing received from Redress by an additional 1%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reduces the damage taken and increases the healing received from Redress by an additional 2%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>17</Key>
+      <Name>Conflict Avoidance</Name>
+      <Icon>conflict_avoidance</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>944260682</AbilityId>
+          <Description>Stuns surrounding enemies for 3s.</Description>
+          <AddonId>A3848464A1323670D</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Melee Weapon</RequiresWeapon>
+          <Cooldown>30.000002</Cooldown>
+          <CostEnergy>10</CostEnergy>
+          <CastTime>Instant</CastTime>
+          <Radius>7.000000</Radius>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>18</Key>
+      <Name>Ameliorate</Name>
+      <Icon>ameliorate</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1534573450</AbilityId>
+          <Description>Restores 2218 health to up to 10 surrounding party or raid members over 4s. Awards 1 Attack Point. The Warrior gains an additional Attack Point per two seconds of channel.</Description>
+          <AddonId>A5B77BB8A61A73E16</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Melee Weapon</RequiresWeapon>
+          <Cooldown>15.000001</Cooldown>
+          <CostEnergy>29</CostEnergy>
+          <GainAttackPoints>1</GainAttackPoints>
+          <CastTime>Instant</CastTime>
+          <Channel>true</Channel>
+          <Duration>4.000000</Duration>
+          <Interval>2.000000</Interval>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>19</Key>
+      <Name>Nonviolence Training</Name>
+      <Icon>paladin-graceful_under_pressure_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1313037955</AbilityId>
+          <Description></Description>
+          <AddonId>A4E435E8300000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Weapon and Attack Power contribution to healing and absorption abilities by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Weapon and Attack Power contribution to healing and absorption abilities by 12%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your Weapon and Attack Power contribution to healing and absorption abilities by 18%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your Weapon and Attack Power contribution to healing and absorption abilities by 24%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your Weapon and Attack Power contribution to healing and absorption abilities by 30%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>20</Key>
+      <Name>Rescue and Restore</Name>
+      <Icon>purifier_sign_of_faith_cc</Icon>
+      <PrereqTraitKey>18</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Ameliorate causes affected group members to take 3% less damage.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Ameliorate causes affected group members to take 6% less damage.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>21</Key>
+      <Name>Counteract</Name>
+      <Icon>counteract</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>564724872</AbilityId>
+          <Description>Removes 1 Curse, Disease, or Poison from up to 10 party or raid members.</Description>
+          <AddonId>A21A904886D7EA283</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Melee Weapon</RequiresWeapon>
+          <Cooldown>10.000000</Cooldown>
+          <CostEnergy>10</CostEnergy>
+          <CastTime>Instant</CastTime>
+          <Radius>30.000000</Radius>
+          <MaxAffected>10</MaxAffected>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>22</Key>
+      <Name>Sustenance</Name>
+      <Icon>motif_of_grandeur</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Quick Remedy restores additional health over 6s.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Quick Remedy restores additional health over 12s.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>23</Key>
+      <Name>Extraordinary Care</Name>
+      <Icon>extraordinary_care</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>40</MinimumPointsSpent>
+      <DisplayRow>8</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>2033827355</AbilityId>
+          <Description>Absorbs 50% of damage up to 2306 and restores 431 health every 3s for 15s.</Description>
+          <AddonId>A7939BE1B8B7E2E9B</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Melee Weapon</RequiresWeapon>
+          <Cooldown>15.000001</Cooldown>
+          <MaxRange>35.000000</MaxRange>
+          <CostEnergy>20</CostEnergy>
+          <CastTime>Instant</CastTime>
+          <PowerStatCoefficient effect="0" action="0">2.200000</PowerStatCoefficient>
+          <PowerStatCoefficient effect="1" action="0">0.410000</PowerStatCoefficient>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+  </Traits>
+  <Abilities>
+    <Ability>
+      <MinimumPointsInSoul>12</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Prolonged Recovery</Name>
+      <Icon>prolonged_recovery</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>12</RequiredLevel>
+        <AbilityId>-87949635</AbilityId>
+        <Description>Restores 1399 health over 15s. Requires 1 Attack Point. Stacks up to 3 times.</Description>
+        <AddonId>AFAC1FEBDA67931DC</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>35.000000</MaxRange>
+        <CostEnergy>20</CostEnergy>
+        <CostAttackPoints>1</CostAttackPoints>
+        <CastTime>Instant</CastTime>
+        <Duration>15.000000</Duration>
+        <Interval>3.000000</Interval>
+        <PowerStatCoefficient effect="0" action="0">1.400000</PowerStatCoefficient>
+        <AggroMultiplier effect="0" action="0">0.250000</AggroMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>8</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>First Aid</Name>
+      <Icon>first_aid</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>8</RequiredLevel>
+        <AbilityId>75349275</AbilityId>
+        <Description>Restores 951 to 1051 health. Awards 1 Attack Point.</Description>
+        <AddonId>A047DBD1BBA2BB754</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>35.000000</MaxRange>
+        <CostEnergy>20</CostEnergy>
+        <GainAttackPoints>1</GainAttackPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">0.900000</PowerStatCoefficient>
+        <AggroMultiplier effect="0" action="0">0.250000</AggroMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Aegis of Advocacy</Name>
+      <Icon>aegis_of_advocacy</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>170493406</AbilityId>
+        <Description>Healing Finishers add a buff on the Warrior, reducing damage taken by 3% per stack. Stacks up to 3 times. Lasts 1h. Only 1 Aegis can be active at a time.</Description>
+        <AddonId>A0A2985DE36E14239</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Persecute</Name>
+      <Icon>persecute</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>364214852</AbilityId>
+        <Description>Deals 1248 to 1380 Earth damage. Awards 1 Attack Point.</Description>
+        <AddonId>A15B57A44C06461EB</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>20</CostEnergy>
+        <GainAttackPoints>1</GainAttackPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">0.900000</PowerStatCoefficient>
+        <WeaponDamageMultiplier effect="0" action="0">1.350000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>40</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Fast Relief</Name>
+      <Icon>fast_relief</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>40</RequiredLevel>
+        <AbilityId>384461274</AbilityId>
+        <Description>Restores 1346 to 1487 health. Awards 1 Attack Point.</Description>
+        <AddonId>A16EA69DA46405750</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>35.000000</MaxRange>
+        <CostEnergy>20</CostEnergy>
+        <GainAttackPoints>1</GainAttackPoints>
+        <CastTime>1.500000</CastTime>
+        <PowerStatCoefficient effect="0" action="0">1.350000</PowerStatCoefficient>
+        <AggroMultiplier effect="0" action="0">0.250000</AggroMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>20</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Adrenaline Overdrive</Name>
+      <Icon>adrenaline_overdrive</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>20</RequiredLevel>
+        <AbilityId>416993549</AbilityId>
+        <Description>Casts a buff on a party or raid member. Each time the target is healed by the Warrior, the target gains a buff, increasing Max Health by 1%. Stacks up to 3 times. Lasts 1h.</Description>
+        <AddonId>A18DAD10DCDF7FDAC</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>35.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>44</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Mass Casualty Response</Name>
+      <Icon>mass_casualty_response</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>44</RequiredLevel>
+        <AbilityId>463405171</AbilityId>
+        <Description>Restores 527 health over 15s to all party and raid members. Requires 1 Attack Point. Stacks up to 3 times.</Description>
+        <AddonId>A1B9F007386671245</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <CostEnergy>22</CostEnergy>
+        <CostAttackPoints>1</CostAttackPoints>
+        <CastTime>Instant</CastTime>
+        <Radius>30.000000</Radius>
+        <MaxAffected>20</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Counteract</Name>
+      <Icon>counteract</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>564724872</AbilityId>
+        <Description>Removes 1 Curse, Disease, or Poison from up to 10 party or raid members.</Description>
+        <AddonId>A21A904886D7EA283</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>10.000000</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <Radius>30.000000</Radius>
+        <MaxAffected>10</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>51</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Mass Rescue</Name>
+      <Icon>mass_rescue</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>50</RequiredLevel>
+        <AbilityId>580663069</AbilityId>
+        <Description>Adds an absorption shield that absorbs 2075 damage to up to 10 party or raid members.</Description>
+        <AddonId>A229C371DBE60CB22</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>60.000004</Cooldown>
+        <CostEnergy>22</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <Radius>30.000000</Radius>
+        <MaxAffected>10</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>32</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Group Assistance</Name>
+      <Icon>group_assistance</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>32</RequiredLevel>
+        <AbilityId>648535309</AbilityId>
+        <Description>Restores 514 to 568 health to up to 10 party or raid members. Awards 1 Attack Point.</Description>
+        <AddonId>A26A7DD0D4E3D52CA</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <CostEnergy>22</CostEnergy>
+        <GainAttackPoints>1</GainAttackPoints>
+        <CastTime>Instant</CastTime>
+        <Radius>30.000000</Radius>
+        <MaxAffected>10</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Redress</Name>
+      <Icon>redress</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>650718995</AbilityId>
+        <Description>Buffs all party or raid members, reducing damage taken by 5% and increasing healing received by 5%. Lasts 8s.</Description>
+        <AddonId>A26C92F13E56F1D87</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>60.000004</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <Radius>30.000000</Radius>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>2</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Castigate</Name>
+      <Icon>castigate</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>2</RequiredLevel>
+        <AbilityId>711764820</AbilityId>
+        <Description>Deals additional Earth damage per Attack Point. Gains an absorption shield that absorbs 50% damage.
+
+1 Point: 1035 damage, absorbs up to 328 damage
+2 Points: 1562 damage, absorbs up to 398 damage
+3 Points: 2358 damage, absorbs up to 502 damage</Description>
+        <AddonId>A2A6CAB54A875EBC7</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>20</CostEnergy>
+        <CostAttackPoints>1</CostAttackPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">1.700000</PowerStatCoefficient>
+        <WeaponDamageMultiplier effect="0" action="0">2.550000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Conflict Avoidance</Name>
+      <Icon>conflict_avoidance</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>944260682</AbilityId>
+        <Description>Stuns surrounding enemies for 3s.</Description>
+        <AddonId>A3848464A1323670D</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>30.000002</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <Radius>7.000000</Radius>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>4</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Aegis of Sanctuary</Name>
+      <Icon>aegis_of_sanctuary</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>4</RequiredLevel>
+        <AbilityId>1083704368</AbilityId>
+        <Description>Using any damaging abilities give the Warrior a 20% chance to gain an absorption shield, absorbing up to 770 damage. Can be triggered at most once every 10s. Lasts 1h. Only 1 Aegis can be active at a time.</Description>
+        <AddonId>A409804304A5F084B</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>58</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Corrective Measures</Name>
+      <Icon>corrective_measures</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>57</RequiredLevel>
+        <AbilityId>1341868731</AbilityId>
+        <Description>Puts a buff on the Warrior that restores 1384 health to up to 10 surrounding party or raid members over 15s. Requires 3 Attack Points.</Description>
+        <AddonId>A4FFB4ABBDFECD0E9</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>15.000001</Cooldown>
+        <CostEnergy>22</CostEnergy>
+        <CostAttackPoints>3</CostAttackPoints>
+        <CastTime>Instant</CastTime>
+        <Duration>15.000000</Duration>
+        <Interval>3.000000</Interval>
+        <Radius>30.000000</Radius>
+        <MaxAffected>10</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>24</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Mass Oppression</Name>
+      <Icon>mass_oppression</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>24</RequiredLevel>
+        <AbilityId>1397380747</AbilityId>
+        <Description>Deals 898 to 993 Earth damage to up to 5 enemies in a beam. Awards 1 Attack Point.</Description>
+        <AddonId>A534A568B4AEFE0D8</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <CostEnergy>22</CostEnergy>
+        <GainAttackPoints>1</GainAttackPoints>
+        <CastTime>Instant</CastTime>
+        <MaxAffected>5</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>16</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Deliverance</Name>
+      <Icon>deliverance</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>16</RequiredLevel>
+        <AbilityId>1397638946</AbilityId>
+        <Description>Restores 1016 to 1123 health to up to 10 party or raid members. Requires 2 Attack Points.</Description>
+        <AddonId>A534E4722B8335FB8</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <CostEnergy>22</CostEnergy>
+        <CostAttackPoints>2</CostAttackPoints>
+        <CastTime>1.500000</CastTime>
+        <Radius>30.000000</Radius>
+        <MaxAffected>10</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>48</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Continuous Treatment</Name>
+      <Icon>continuous_treatment</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>48</RequiredLevel>
+        <AbilityId>1518427205</AbilityId>
+        <Description>Casts a buff on a party or raid member. Every 10s, the target gains an absorption shield that absorbs up to 507 damage. Lasts 1h.</Description>
+        <AddonId>A5A815C45E28661D4</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>35.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <Duration>3600.000000</Duration>
+        <Interval>10.000000</Interval>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Ameliorate</Name>
+      <Icon>ameliorate</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1534573450</AbilityId>
+        <Description>Restores 2218 health to up to 10 surrounding party or raid members over 4s. Awards 1 Attack Point. The Warrior gains an additional Attack Point per two seconds of channel.</Description>
+        <AddonId>A5B77BB8A61A73E16</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>15.000001</Cooldown>
+        <CostEnergy>29</CostEnergy>
+        <GainAttackPoints>1</GainAttackPoints>
+        <CastTime>Instant</CastTime>
+        <Channel>true</Channel>
+        <Duration>4.000000</Duration>
+        <Interval>2.000000</Interval>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>36</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Soul Redemption</Name>
+      <Icon>soul_redemption</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>36</RequiredLevel>
+        <AbilityId>1599842465</AbilityId>
+        <Description>Brings the fallen ally back to life, restoring 50% health and mana. Usable in combat.</Description>
+        <AddonId>A5F5BA8A108A5111A</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>300.000000</Cooldown>
+        <MaxRange>35.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>28</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Quick Remedy</Name>
+      <Icon>quick_remedy</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>28</RequiredLevel>
+        <AbilityId>1864092352</AbilityId>
+        <Description>Restores 1594 to 1761 health. Awards 3 Attack Points.</Description>
+        <AddonId>A6F1BCAC07885ACE7</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>15.000001</Cooldown>
+        <MaxRange>35.000000</MaxRange>
+        <CostEnergy>20</CostEnergy>
+        <GainAttackPoints>3</GainAttackPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">1.600000</PowerStatCoefficient>
+        <AggroMultiplier effect="0" action="0">0.250000</AggroMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Neutralize</Name>
+      <Icon>neutralize</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1865207465</AbilityId>
+        <Description>Removes 1 Curse, Poison or Disease.</Description>
+        <AddonId>A6F2CCEA97DBDBE58</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>35.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Liberator Mastery</Name>
+      <Icon>inspiration4</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>2000253693</AbilityId>
+        <Description>Increases healing and absorption done by 1% for each point spent in the Liberator soul.</Description>
+        <AddonId>A773972FDCF8E5EEE</AddonId>
+        <IsPassive>True</IsPassive>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>61</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Medical Facility</Name>
+      <Icon>medical_facility</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>60</RequiredLevel>
+        <AbilityId>2014840934</AbilityId>
+        <Description>Removes the cast time for Deliverance and Fast Relief. Removes the Attack Point requirement for Deliverance. Awards 2 Attack Points. Lasts for 6s. </Description>
+        <AddonId>A781808662A146214</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>60.000004</Cooldown>
+        <CastTime>Instant</CastTime>
+        <Duration>6.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Extraordinary Care</Name>
+      <Icon>extraordinary_care</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>2033827355</AbilityId>
+        <Description>Absorbs 50% of damage up to 2306 and restores 431 health every 3s for 15s.</Description>
+        <AddonId>A7939BE1B8B7E2E9B</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>15.000001</Cooldown>
+        <MaxRange>35.000000</MaxRange>
+        <CostEnergy>20</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">2.200000</PowerStatCoefficient>
+        <PowerStatCoefficient effect="1" action="0">0.410000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Dichotomy of Pain</Name>
+      <Icon>dichotomy_of_pain</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>2075301762</AbilityId>
+        <Description>Restores health per Attack Point to the target.
+
+1 Point: 1207 health
+2 Points: 1620 health
+3 Points: 2242 health 
+</Description>
+        <AddonId>A7BB297829721E836</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>22</CostEnergy>
+        <CostAttackPoints>1</CostAttackPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">2.550000</PowerStatCoefficient>
+        <AggroMultiplier effect="0" action="0">0.250000</AggroMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>54</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Positive Reaction</Name>
+      <Icon>positive_reaction</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>53</RequiredLevel>
+        <AbilityId>2098888769</AbilityId>
+        <Description>Distributes 15% of overhealing the target receives from you to up to 5 other party or raid members. Can only affect 1 ally. Lasts 1h.</Description>
+        <AddonId>A7D1A8041BB079480</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>35.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Liberation Treatment</Name>
+      <Icon>liberation_treatment</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>2099227289</AbilityId>
+        <Description>Restores 1764 health over 10s.</Description>
+        <AddonId>A7D1FAA99379297E5</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>35.000000</MaxRange>
+        <CostEnergy>20</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <Duration>10.000000</Duration>
+        <Interval>2.000000</Interval>
+        <PowerStatCoefficient effect="0" action="0">1.760000</PowerStatCoefficient>
+        <AggroMultiplier effect="0" action="0">0.250000</AggroMultiplier>
+      </AbilityRank>
+    </Ability>
+  </Abilities>
+</SoulTree>
+

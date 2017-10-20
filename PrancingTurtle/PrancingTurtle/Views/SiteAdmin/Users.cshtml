@@ -1,0 +1,50 @@
+﻿@using System.Globalization
+
+@model PrancingTurtle.Models.ViewModels.SiteAdmin.SAUsersVM
+
+@{
+    ViewBag.Title = "User list";
+}
+
+<h2>User list</h2>
+<br/>
+
+<div class="table-responsive">
+    <table class="table table-striped table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Email Address</th>
+                <th>Email Confirmed</th>
+                <th>Last Login Timestamp</th>
+                <th>Last login address</th>
+                <th>Timezone</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Users)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EmailConfirmed)
+                    </td>
+                    <td>
+                        @if (item.LastLoggedIn != null)
+                        {
+                            @Html.Raw(((DateTime) item.LastLoggedIn).Add(Model.TimeZoneOffset).ToString())
+                        }
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LastLoginAddress)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TimeZone)
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+   
+</div>

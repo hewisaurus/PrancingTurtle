@@ -1,0 +1,1360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SoulTree calling="Mage" name="Dominator">
+  <Traits>
+    <Trait>
+      <Key>0</Key>
+      <Name>Mental Fortitude</Name>
+      <Icon>rally1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-270803</AbilityId>
+          <Description></Description>
+          <AddonId>AFFFBDE2D533A3383</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+        <Ability>
+          <AbilityId>133714528</AbilityId>
+          <Description></Description>
+          <AddonId>A07F8526026B61AA4</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Maximum Mana by 2%. Increases the range of non-melee damaging abilities by 1 meter. Increased range does not stack with the other range increasing effects.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Maximum Mana by 4%. Increases the range of non-melee damaging abilities by 2 meters. Increased range does not stack with the other range increasing effects.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your Maximum Mana by 6%. Increases the range of non-melee damaging abilities by 3 meters. Increased range does not stack with the other range increasing effects.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your Maximum Mana by 8%. Increases the range of non-melee damaging abilities by 4 meters. Increased range does not stack with the other range increasing effects.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your Maximum Mana by 10%. Increases the range of non-melee damaging abilities by 5 meters. Increased range does not stack with the other range increasing effects.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>1</Key>
+      <Name>Quick Thinking</Name>
+      <Icon>inspiration1a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>731178454</AbilityId>
+          <Description></Description>
+          <AddonId>A2B94E5D61FAE1EFC</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces the cast time of your next spell by 0.25 seconds after casting a control or movement impairing spell. This is not triggered by snare abilities or effects.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reduces the cast time of your next spell by 0.5 seconds after casting a control or movement impairing spell. This is not triggered by snare abilities or effects.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>2</Key>
+      <Name>Extended Feedback</Name>
+      <Icon>lightingbolt4y</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1377754716</AbilityId>
+          <Description></Description>
+          <AddonId>A521EDE5C5AD22302</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the duration of Voltaic Feedback by 5s, and the number of times it can proc by 2.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the duration of Voltaic Feedback by 5s, and the number of times it can proc by 4.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>3</Key>
+      <Name>Acumen</Name>
+      <Icon>magicward2</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1578732916</AbilityId>
+          <Description></Description>
+          <AddonId>A5E198D747EE3DFF8</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Intelligence by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Intelligence by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your Intelligence by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your Intelligence by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your Intelligence by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>4</Key>
+      <Name>Priest&apos;s Lament</Name>
+      <Icon>righteousness1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>196325882</AbilityId>
+          <Description>Grants a 60% chance to be Interrupted and Debilitated for 3s whenever the enemy uses a beneficial ability. Can occur up to 5 times. Lasts up to 20s.</Description>
+          <AddonId>A0BB3B1FA9F291A03</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>20.000000</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>4.500000</CostManaPercent>
+          <GainHeat>9</GainHeat>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Priest&apos;s Lament</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>5</Key>
+      <Name>Hastened Reflection</Name>
+      <Icon>paragon-improved_predicatable_movements_b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-4674392</AbilityId>
+          <Description></Description>
+          <AddonId>AFFB8ACA8334BD472</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces the cooldown of Reflective Command by 2 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reduces the cooldown of Reflective Command by 4 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Reduces the cooldown of Reflective Command by 6 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Reduces the cooldown of Reflective Command by 8 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Reduces the cooldown of Reflective Command by 10 seconds.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>6</Key>
+      <Name>Microburst</Name>
+      <Icon>energyburst3f</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Allows your Storm Shackle to trigger an additional time and increases its duration by 2 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Allows your Storm Shackle to trigger an additional 2 times and increases its duration by 4 seconds.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>7</Key>
+      <Name>Malevolent Shield</Name>
+      <Icon>voidknight_catalyze_01_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-83532341</AbilityId>
+          <Description>Absorbs 50% of healing done to the enemy, up to a total of 1346 health over 10s. If cleansed, Malevolent Shield reapplies itself.</Description>
+          <AddonId>AFB0565CB56F61F8D</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>20.000000</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>7.500000</CostManaPercent>
+          <GainHeat>9</GainHeat>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Arresting Presence</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>8</Key>
+      <Name>Swift Control</Name>
+      <Icon>confound3</Icon>
+      <PrereqTraitKey>11</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>321122809</AbilityId>
+          <Description></Description>
+          <AddonId>A1323F1F940394BD3</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>After successfully controlling an enemy, using Transmogrify, Mass Exhaustion or Death&apos;s Edict, your casting speed is increased by 10% for 5 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>After successfully controlling an enemy, using Transmogrify, Mass Exhaustion or Death&apos;s Edict, your casting speed is increased by 20% for 5 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>After successfully controlling an enemy, using Transmogrify, Mass Exhaustion or Death&apos;s Edict, your casting speed is increased by 30% for 5 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>After successfully controlling an enemy, using Transmogrify, Mass Exhaustion or Death&apos;s Edict, your casting speed is increased by 40% for 5 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>After successfully controlling an enemy, using Transmogrify, Mass Exhaustion or Death&apos;s Edict, your casting speed is increased by 50% for 5 seconds.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>9</Key>
+      <Name>Transference</Name>
+      <Icon>redirect2a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>526391744</AbilityId>
+          <Description>Deals 1018 Death damage. Drains charge, mana, energy, and power. Reduces mana, energy, and power regeneration by 25%. Increases energy and power cost by 50% and mana costs by 125%. Lasts 7s.</Description>
+          <AddonId>A1F6019C067CD574C</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>30.000002</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>7.500000</CostManaPercent>
+          <GainHeat>9</GainHeat>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Transference</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>10</Key>
+      <Name>Clinging Form</Name>
+      <Icon>spiritofmongoose2</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1501124554</AbilityId>
+          <Description></Description>
+          <AddonId>A597957CA25026AA4</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the duration of your Transmogrify ability by 2 seconds and reduces the cooldown by 5 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the duration of your Transmogrify ability by 4 seconds and reduces the cooldown by 10 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the duration of your Transmogrify ability by 6 seconds and reduces the cooldown by 15 seconds.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>11</Key>
+      <Name>Dominant Personality</Name>
+      <Icon>paragon-predicatable_movements_b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-59514312</AbilityId>
+          <Description></Description>
+          <AddonId>AFC73E23871D52373</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>After successfully controlling an enemy using Transmogrify, Mass Exhaustion or Death&apos;s Edict, your spell power is increased by 4% for 5 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>After successfully controlling an enemy using Transmogrify, Mass Exhaustion or Death&apos;s Edict, your spell power is increased by 8% for 5 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>After successfully controlling an enemy using Transmogrify, Mass Exhaustion or Death&apos;s Edict, your spell power is increased by 12% for 5 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>After successfully controlling an enemy using Transmogrify, Mass Exhaustion or Death&apos;s Edict, your spell power is increased by 16% for 5 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>After successfully controlling an enemy using Transmogrify, Mass Exhaustion or Death&apos;s Edict, your spell power is increased by 20% for 5 seconds.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>12</Key>
+      <Name>Improved Mana Wrench</Name>
+      <Icon>manachannel1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>133898031</AbilityId>
+          <Description></Description>
+          <AddonId>A07FB1F2F10057901</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage of your Mana Wrench by 3%, the mana returned and drained per second by an additional 0.5% of your maximum mana,the energy drained per second by 1 and reduces the cooldown on Mana Wrench by 5 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage of your Mana Wrench by 6%, the mana returned and drained per second by an additional 1% of your maximum mana,the energy drained per second by 2 and reduces the cooldown on Mana Wrench by 10 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the damage of your Mana Wrench by 10%, the mana returned and drained per second by an additional 1.5% of your maximum mana,the energy drained per second by 3 and reduces the cooldown on Mana Wrench by 15 seconds.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>13</Key>
+      <Name>Reflective Presence</Name>
+      <Icon>magicward1a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>698444565</AbilityId>
+          <Description>Applies Reflective Presence to all party or raid members within 35 meters, reflecting the next hostile spell cast on them within 10s. Consumes 50 Charge when cast.</Description>
+          <AddonId>A29A16B1598BD6291</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>30.000002</Cooldown>
+          <MinimumHeat>50</MinimumHeat>
+          <CastTime>Instant</CastTime>
+          <Radius>35.000000</Radius>
+          <MaxAffected>50</MaxAffected>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reflective Presence</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>14</Key>
+      <Name>Split Personality</Name>
+      <Icon>dominator-split_personality</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>2134527667</AbilityId>
+          <Description>Transforms the Mage into a shade. Summons 3 matching shades that each deal 582 to 643 Death damage. Lasts 20s.</Description>
+          <AddonId>A7F3A4EB3E4A70B6F</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>120.000008</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>7.500000</CostManaPercent>
+          <CastTime>2.500000</CastTime>
+          <Duration>20.000000</Duration>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Split Personality</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>15</Key>
+      <Name>Splintered Mind</Name>
+      <Icon>shadow_blitz_b</Icon>
+      <PrereqTraitKey>14</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>442961230</AbilityId>
+          <Description></Description>
+          <AddonId>A1A670D4E77A90172</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces the cast time of Split Personality by 50% and reduces its cooldown by 30 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reduces the cast time of Split Personality by 100% and reduces its cooldown by 1 minute.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>16</Key>
+      <Name>Essence of Control</Name>
+      <Icon>generic_ability_027</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-80304025</AbilityId>
+          <Description></Description>
+          <AddonId>AFB36A8670EECB1F6</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces the global cooldown of your non-damaging abilities to 1.25 seconds and reduces their mana cost by 16%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reduces the global cooldown of your non-damaging abilities to 1 second and reduces their mana cost by 33%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>17</Key>
+      <Name>Traitorous Influence</Name>
+      <Icon>hasted_time</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1069106000</AbilityId>
+          <Description>Applies Traitorous Influence for 15s or until triggered 5 times. Causes damaging and healing abilities used by each to deal 772 Death damage to up to 6 enemies. Damaged enemies also lose mana, energy, and power.</Description>
+          <AddonId>A3FB94350B0DFE271</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>30.000002</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>9.000000</CostManaPercent>
+          <GainHeat>9</GainHeat>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Traitorous Influence</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>18</Key>
+      <Name>Quicken Form</Name>
+      <Icon>riftblade-surging_energy_c</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>2132459453</AbilityId>
+          <Description></Description>
+          <AddonId>A7F1ABFBD0FADD3E1</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces the cast time of your Transmogrify to 0.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>19</Key>
+      <Name>Durable Control</Name>
+      <Icon>void_knight-rift_summon_a</Icon>
+      <PrereqTraitKey>18</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>87405243</AbilityId>
+          <Description></Description>
+          <AddonId>A0535B2BB52AAC261</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Causes your Transmogrify and Mass Exhaustion effectsto break after the enemy receives damage equal to 1.5% of your maximum Health, plus 0.15%  of your maximum Health for each point spent in the Dominator soul. This only occurs with enemies above 85% Health.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Causes your Transmogrify and Mass Exhaustion effects to break after the enemy receives damage equal to 3% of your maximum Health, plus 0.3%  of your maximum Health for each point spent in the Dominator soul. This only occurs with enemies above 85% Health.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>20</Key>
+      <Name>Prolonged Break</Name>
+      <Icon>confound1</Icon>
+      <PrereqTraitKey>14</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the duration of your Split Personality by 5 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the duration of your Split Personality by 10 seconds.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>21</Key>
+      <Name>Gathering Spirits</Name>
+      <Icon>necropotence4</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-51549612</AbilityId>
+          <Description></Description>
+          <AddonId>AFCED6A544E393FFA</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the number of stacks applied by Haunting Pain by 1. Reduces the cast time of Haunting Pain by 0.5 seconds and its cooldown by 5 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the number of stacks applied by Haunting Pain by 2. Reduces the cast time of Haunting Pain by 0.5 seconds and its cooldown by 10 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the number of stacks applied by Haunting Pain by 3. Reduces the cast time of Haunting Pain by 0.5 seconds and its cooldown by 15 seconds.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>22</Key>
+      <Name>Broken Spirits</Name>
+      <Icon>reign_of_despair</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-7968784</AbilityId>
+          <Description></Description>
+          <AddonId>AFF8667F02F15BB70</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage of your Dominator abilities by 10%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage of your Dominator abilities by 20%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>23</Key>
+      <Name>Arresting Presence</Name>
+      <Icon>ward1z</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>785437101</AbilityId>
+          <Description>Debilitates up to 10 enemies within 7m of the initial target for up to 5s. Debuffs the initial target for 15s, interrupting them each second.</Description>
+          <AddonId>A2ED0D1AD728617AE</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>30.000002</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <MinimumHeat>30</MinimumHeat>
+          <CastTime>Instant</CastTime>
+          <Duration>15.000000</Duration>
+          <Interval>1.000000</Interval>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>24</Key>
+      <Name>Control Flash</Name>
+      <Icon>shatter1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-87262559</AbilityId>
+          <Description></Description>
+          <AddonId>AFACC7AA1361ADC1F</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces the casting time of your Storm Shackle and Mass Exhaustion by 50% and their mana cost by 12%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reduces the casting time of your Storm Shackle and Mass Exhaustion by 100% and their mana cost by 25%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>25</Key>
+      <Name>Malevolent Bolt</Name>
+      <Icon>distorted_shadows_b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>40</MinimumPointsSpent>
+      <DisplayRow>8</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-41341638</AbilityId>
+          <Description>Deals 801 to 885 Death damage. Debuffs the enemy for up to 5s, causing them to take 689 Death damage the next time they use an ability. Stacks up to 3 times. Counts as a Primary Bolt.</Description>
+          <AddonId>AFD892D3A4965A6DF</AddonId>
+          <IsPassive>False</IsPassive>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>7.500000</CostManaPercent>
+          <GainHeat>11</GainHeat>
+          <CastTime>1.500000</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+  </Traits>
+  <Abilities>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Malevolent Shield</Name>
+      <Icon>voidknight_catalyze_01_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-83532341</AbilityId>
+        <Description>Absorbs 50% of healing done to the enemy, up to a total of 1346 health over 10s. If cleansed, Malevolent Shield reapplies itself.</Description>
+        <AddonId>AFB0565CB56F61F8D</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>20.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>48</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Void Wall</Name>
+      <Icon>elementalward2a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>48</RequiredLevel>
+        <AbilityId>-73397287</AbilityId>
+        <Description>Surrounds the targeted area with a wall of deathly energy for 6s. Enemies entering the wall take 611 to 675 Death damage and an additional 920 Death damage over 8s.</Description>
+        <AddonId>AFBA00BD99E6CA331</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+        <Duration>6.000000</Duration>
+        <Radius>10.000000</Radius>
+        <MaxAffected>8</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>58</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Lightning Wall</Name>
+      <Icon>dominator_lighting_wall_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>57</RequiredLevel>
+        <AbilityId>-67325522</AbilityId>
+        <Description>Creates a 15 meter long wall in front of the Mage. Enemies in the wall take 524 to 579 Air damage each second and an additional 766 Air damage over 3s.</Description>
+        <AddonId>AFBFCB1AE9D127A0E</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <MinimumHeat>60</MinimumHeat>
+        <CastTime>Instant</CastTime>
+        <Duration>10.000000</Duration>
+        <MaxAffected>8</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>54</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Nyx&apos;s Orb</Name>
+      <Icon>dominator_nyxs_orb_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>53</RequiredLevel>
+        <AbilityId>-47346634</AbilityId>
+        <Description>Fires a slow moving ball of lightning at the targeted location, dealing 1529 to 1690 Air damage to enemies within 3 meters of it as it travels.</Description>
+        <AddonId>AFD2D8C366C8DD7D1</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>12.000000</CostManaPercent>
+        <GainHeat>15</GainHeat>
+        <CastTime>2.000000</CastTime>
+        <Duration>7.500000</Duration>
+        <Radius>3.000000</Radius>
+        <MaxAffected>8</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Malevolent Bolt</Name>
+      <Icon>distorted_shadows_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-41341638</AbilityId>
+        <Description>Deals 801 to 885 Death damage. Debuffs the enemy for up to 5s, causing them to take 689 Death damage the next time they use an ability. Stacks up to 3 times. Counts as a Primary Bolt.</Description>
+        <AddonId>AFD892D3A4965A6DF</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <GainHeat>11</GainHeat>
+        <CastTime>1.500000</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>44</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Gravity Void</Name>
+      <Icon>void_knight-improved_rift_summon</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>44</RequiredLevel>
+        <AbilityId>-37563748</AbilityId>
+        <Description>Deals 1310 to 1448 Death damage to up to 8 enemies in the target area. All enemies hit are thrown into the air.</Description>
+        <AddonId>AFDC2D29CACA0DCEC</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <GainHeat>11</GainHeat>
+        <CastTime>1.500000</CastTime>
+        <Radius>7.000000</Radius>
+        <MaxAffected>8</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Dominator Soul Gift</Name>
+      <Icon>holystrength2</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-33694334</AbilityId>
+        <Description>Increases the Mage&apos;s damage by 1% for each point spent in the Dominator soul.</Description>
+        <AddonId>AFDFDDD8259924D2C</AddonId>
+        <IsPassive>True</IsPassive>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>61</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Pain Armor</Name>
+      <Icon>dominator_pain_armor_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>60</RequiredLevel>
+        <AbilityId>-20344054</AbilityId>
+        <Description>Increases the Mage&apos;s damage by 15% and reduces the cooldown of Arresting Presence by 10s. When damaged by a single target ability, drains 3 Power, Energy or Mana equal to 3% of the Mage&apos;s Max Mana from the attacker. Lasts 1h. Counts as a Mage Armor.</Description>
+        <AddonId>AFEC9930A5C94B8C0</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>2.250000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>24</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Mental Focus</Name>
+      <Icon>ironwill1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>24</RequiredLevel>
+        <AbilityId>-19162497</AbilityId>
+        <Description>Restores 5% mana per second.</Description>
+        <AddonId>AFEDB9A7F88C44054</AddonId>
+        <IsPassive>False</IsPassive>
+        <CastTime>Instant</CastTime>
+        <Channel>true</Channel>
+        <Duration>10.000000</Duration>
+        <Interval>1.000000</Interval>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Priest&apos;s Lament</Name>
+      <Icon>righteousness1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>196325882</AbilityId>
+        <Description>Grants a 60% chance to be Interrupted and Debilitated for 3s whenever the enemy uses a beneficial ability. Can occur up to 5 times. Lasts up to 20s.</Description>
+        <AddonId>A0BB3B1FA9F291A03</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>20.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>16</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Deny</Name>
+      <Icon>ebon_fury_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>16</RequiredLevel>
+        <AbilityId>309243247</AbilityId>
+        <Description>Removes up to 3 Curses, Diseases or Poisons.</Description>
+        <AddonId>A126EAD6F6DD1344E</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>10.000000</Cooldown>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>2</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Thunder Blast</Name>
+      <Icon>lighting2</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>2</RequiredLevel>
+        <AbilityId>399134225</AbilityId>
+        <Description>Deals 931 to 1030 Air damage. Interrupts and knocks the enemy back.</Description>
+        <AddonId>A17CA4E11966D37C9</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>15.000001</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>12</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Mana Wrench</Name>
+      <Icon>manachannel1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>12</RequiredLevel>
+        <AbilityId>400474527</AbilityId>
+        <Description>Deals 4296 Death damage over 6s. Drains mana, energy, and power. Restores 4% of the Mage&apos;s mana each second.</Description>
+        <AddonId>A17DEC19F957D35ED</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>25.000002</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>15.000000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+        <Channel>true</Channel>
+        <Duration>6.000000</Duration>
+        <Interval>1.000000</Interval>
+        <PowerStatCoefficient effect="0" action="0">1.000000</PowerStatCoefficient>
+        <DamageMultiplier effect="0" action="0">0.180000</DamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Transference</Name>
+      <Icon>redirect2a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>526391744</AbilityId>
+        <Description>Deals 1018 Death damage. Drains charge, mana, energy, and power. Reduces mana, energy, and power regeneration by 25%. Increases energy and power cost by 50% and mana costs by 125%. Lasts 7s.</Description>
+        <AddonId>A1F6019C067CD574C</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>24</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Degeneration</Name>
+      <Icon>rogue_shadow_shift</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>24</RequiredLevel>
+        <AbilityId>600104832</AbilityId>
+        <Description>Removes 1 buff.</Description>
+        <AddonId>A23C4DF80B99E4528</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>15.000001</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>6.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Reflective Presence</Name>
+      <Icon>magicward1a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>698444565</AbilityId>
+        <Description>Applies Reflective Presence to all party or raid members within 35 meters, reflecting the next hostile spell cast on them within 10s. Consumes 50 Charge when cast.</Description>
+        <AddonId>A29A16B1598BD6291</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <MinimumHeat>50</MinimumHeat>
+        <CastTime>Instant</CastTime>
+        <Radius>35.000000</Radius>
+        <MaxAffected>50</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>20</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Storm Shackle</Name>
+      <Icon>energyburst3f</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>20</RequiredLevel>
+        <AbilityId>754080588</AbilityId>
+        <Description>Applies Storm Shackle for 10s. Roots for 3s. Causes movement to deal 1422 Air damage to up to 8 enemies. Damaged enemies are also Snared for 5s.</Description>
+        <AddonId>A2CF25B4C5817236C</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>12.000000</CostManaPercent>
+        <GainHeat>15</GainHeat>
+        <CastTime>2.000000</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Transmogrify</Name>
+      <Icon>spiritofmongoose2</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>761434721</AbilityId>
+        <Description>Transforms the enemy into a harmless squirrel for 30s or until damaged. Can only affect 1 enemy.</Description>
+        <AddonId>A2D62926146BB4719</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>15.000001</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>2.000000</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Arresting Presence</Name>
+      <Icon>ward1z</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>785437101</AbilityId>
+        <Description>Debilitates up to 10 enemies within 7m of the initial target for up to 5s. Debuffs the initial target for 15s, interrupting them each second.</Description>
+        <AddonId>A2ED0D1AD728617AE</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <MinimumHeat>30</MinimumHeat>
+        <CastTime>Instant</CastTime>
+        <Duration>15.000000</Duration>
+        <Interval>1.000000</Interval>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>32</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Death&apos;s Edict</Name>
+      <Icon>binding_of_affliction_01_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>32</RequiredLevel>
+        <AbilityId>858516648</AbilityId>
+        <Description>Stuns the enemy for up to 4s and snares them by 30% for 10s.</Description>
+        <AddonId>A332BECA8744008A1</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <GainHeat>10</GainHeat>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>51</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Mass Betrayal</Name>
+      <Icon>hasted_time_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>50</RequiredLevel>
+        <AbilityId>1006296471</AbilityId>
+        <Description>Applies Mass Betrayal to up to 10 enemies for 15s or until triggered 5 times. Causes abilities used by each to deal 724 Death damage to up to 6 nearby enemies. Damaged enemies also lose mana, energy, and power.</Description>
+        <AddonId>A3BFADD972C9D0810</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>120.000008</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Traitorous Influence</Name>
+      <Icon>hasted_time</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1069106000</AbilityId>
+        <Description>Applies Traitorous Influence for 15s or until triggered 5 times. Causes damaging and healing abilities used by each to deal 772 Death damage to up to 6 enemies. Damaged enemies also lose mana, energy, and power.</Description>
+        <AddonId>A3FB94350B0DFE271</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>36</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Mass Exhaustion</Name>
+      <Icon>dominator-mass_exhaustion_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>36</RequiredLevel>
+        <AbilityId>1193936885</AbilityId>
+        <Description>Confuses all enemies in the target area for 30s or until damaged.</Description>
+        <AddonId>A472A07F568038394</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.200000</CostManaPercent>
+        <GainHeat>13</GainHeat>
+        <CastTime>2.000000</CastTime>
+        <Radius>7.000000</Radius>
+        <MaxAffected>5</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Neural Prod</Name>
+      <Icon>lighting_fury_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1326911991</AbilityId>
+        <Description>Deals 582 to 643 Air damage. Counts as a Primary Bolt.</Description>
+        <AddonId>A4F1711F78C56475B</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">0.800000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>40</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Grasping Void</Name>
+      <Icon>dusk_to_dawn_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>40</RequiredLevel>
+        <AbilityId>1420246794</AbilityId>
+        <Description>Deals 1310 Death damage over 6s to enemies in the targeted area. While inside the targeted area, and Grasping Void is active, enemies are snared, reducing their movement speed by 15%.</Description>
+        <AddonId>A54A73F0A9320EA46</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+        <Duration>6.000000</Duration>
+        <Interval>1.000000</Interval>
+        <Radius>7.000000</Radius>
+        <MaxAffected>5</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>28</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Haunting Pain</Name>
+      <Icon>necropotence4</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>28</RequiredLevel>
+        <AbilityId>1657292953</AbilityId>
+        <Description>Applies 10 stacks of Haunting Pain. Deals 613 Death damage over 16s per stack. Movement by the enemy will remove 1 stack of Haunting Pain per second.</Description>
+        <AddonId>A62C8489959243510</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>2.000000</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>8</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Reflective Command</Name>
+      <Icon>deflect2</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>8</RequiredLevel>
+        <AbilityId>1988267697</AbilityId>
+        <Description>Causes the next hostile spell cast on the ally to be reflected back at the caster. Lasts 10s.</Description>
+        <AddonId>A76828EB12F614011</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>20.000000</Cooldown>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>4</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Voltaic Feedback</Name>
+      <Icon>void_knight_staggering_rage_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>4</RequiredLevel>
+        <AbilityId>2033646588</AbilityId>
+        <Description>Deals 230 Air damage whenever the enemy deals damage. Deals 230 Air damage to the enemy and the target of the heal whenever the enemy casts a single target heal. Can occur up to 5 times total. Lasts 15s. Can only affect 1 enemy.</Description>
+        <AddonId>A7936FBFC7ADA2292</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">0.300000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Split Personality</Name>
+      <Icon>dominator-split_personality</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>2134527667</AbilityId>
+        <Description>Transforms the Mage into a shade. Summons 3 matching shades that each deal 582 to 643 Death damage. Lasts 20s.</Description>
+        <AddonId>A7F3A4EB3E4A70B6F</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>120.000008</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>2.500000</CastTime>
+        <Duration>20.000000</Duration>
+      </AbilityRank>
+    </Ability>
+  </Abilities>
+</SoulTree>
+

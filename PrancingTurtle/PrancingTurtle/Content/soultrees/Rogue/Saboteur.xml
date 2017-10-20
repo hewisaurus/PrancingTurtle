@@ -1,0 +1,1341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SoulTree calling="Rogue" name="Saboteur">
+  <Traits>
+    <Trait>
+      <Key>0</Key>
+      <Name>Advanced Combat Training</Name>
+      <Icon>long_range_bombing</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1771573454</AbilityId>
+          <Description></Description>
+          <AddonId>A699810CE00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases all damage by 1%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases all damage by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases all damage by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases all damage by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases all damage by 5%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>1</Key>
+      <Name>Nimble Fingers</Name>
+      <Icon>nimble_fingers</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>844425067</AbilityId>
+          <Description></Description>
+          <AddonId>A3254E76B00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Dexterity by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Dexterity by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your Dexterity by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your Dexterity by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your Dexterity by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>2</Key>
+      <Name>Armor Fragmentation</Name>
+      <Icon>charge_blast</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1767492350</AbilityId>
+          <Description></Description>
+          <AddonId>A6959CAFE00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Blast Charge and Shrapnel Charge ignore 25% of your enemy&apos;s Armor when detonated.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your Blast Charge and Shrapnel Charge ignore 50% of your enemy&apos;s Armor when detonated.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>3</Key>
+      <Name>Barbed Trap</Name>
+      <Icon>shreddingtrap1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1124096204</AbilityId>
+          <Description>Places a trap at the Rogue&apos;s location for 60s. When triggered, bleeds 3171 health over 10s. Only 1 trap can be placed at a time.</Description>
+          <AddonId>A430058CCB32E5DF6</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+          <Cooldown>15.000001</Cooldown>
+          <CostEnergy>24</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>1.000000</CastTime>
+          <Interruptible>false</Interruptible>
+          <Radius>0.250000</Radius>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>4</Key>
+      <Name>Mass Destruction</Name>
+      <Icon>tactician_sabotage_core</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>2071028293</AbilityId>
+          <Description></Description>
+          <AddonId>A7B71624500000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage of area of effect attacks by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage of area of effect attacks by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the damage of area of effect attacks by 12%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases the damage of area of effect attacks by 16%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases the damage of area of effect attacks by 20%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>5</Key>
+      <Name>Increased Explosive Power</Name>
+      <Icon>increased_explosive_power</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>20608017</AbilityId>
+          <Description></Description>
+          <AddonId>A013A741100000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage of your Charges by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage of your Charges by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the damage of your Charges by 9%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases the damage of your Charges by 12%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases the damage of your Charges by 15%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>6</Key>
+      <Name>Entangling Trap</Name>
+      <Icon>snaretrap1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>72</AbilityId>
+          <Description>Places a trap at the Rogue&apos;s location for 60s. When triggered, Roots up to 8 enemies in the area for 8s or until damaged. Only 1 trap can be placed at a time.</Description>
+          <AddonId>A0000004836290D94</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+          <Cooldown>15.000001</Cooldown>
+          <CostEnergy>10</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>1.000000</CastTime>
+          <Interruptible>false</Interruptible>
+          <Radius>0.250000</Radius>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>7</Key>
+      <Name>Military Strategist</Name>
+      <Icon>remote_clipping_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1341045474</AbilityId>
+          <Description></Description>
+          <AddonId>A4FEEBAE200000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your maximum Energy by 5. Increases the damage of all Saboteur area of effect abilities by 5%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your maximum Energy by 10. Increases the damage of all Saboteur area of effect abilities by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>8</Key>
+      <Name>Combat Wounds</Name>
+      <Icon>beastmaster_strike_to_maim_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>50487688</AbilityId>
+          <Description></Description>
+          <AddonId>A0302618800000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage of all over time attacks by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage of all over time attacks by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the damage of all over time attacks by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases the damage of all over time attacks by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases the damage of all over time attacks by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>9</Key>
+      <Name>Time Bomb</Name>
+      <Icon>bomb_time</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1336172055</AbilityId>
+          <Description>Deals 1247 to 1378 Earth damage to up to 8 enemies after 8s.</Description>
+          <AddonId>A4FA45E17E1059612</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+          <Cooldown>8.000000</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <CostEnergy>26</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+          <Radius>7.000000</Radius>
+          <MaxAffected>8</MaxAffected>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>10</Key>
+      <Name>Silent Setup</Name>
+      <Icon>silent_setup</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>You have a 33% chance of not adding threat to the enemy when attaching Charges.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>You have a 66% chance of not adding threat to the enemy when attaching Charges.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>You have a 100% chance of not adding threat to the enemy when attaching Charges.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>11</Key>
+      <Name>Combined Arms</Name>
+      <Icon>combat_survival</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Fragmentation Bomb detonates all Charges on the primary target. Existing Combo Points on the target triggers Shrapnel Bomb, dealing Physical damage to surrounding enemies.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>12</Key>
+      <Name>Annihilation Bomb</Name>
+      <Icon>bomb_annihilation</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>258397458</AbilityId>
+          <Description>Deals 2600 to 2873 Earth damage to up to 8 enemies.</Description>
+          <AddonId>A0F66D512A134B26B</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+          <Cooldown>30.000002</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <CostEnergy>26</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>13</Key>
+      <Name>Bomb Specialist</Name>
+      <Icon>bomb_specialist</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>385001503</AbilityId>
+          <Description></Description>
+          <AddonId>A16F2A81F00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage of your Bombs by 4%. Reduces the Energy Cost of Bombs by 1.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage of your Bombs by 8%. Reduces the Energy Cost of Bombs by 2.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the damage of your Bombs by 12%. Reduces the Energy Cost of Bombs by 3.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases the damage of your Bombs by 16%. Reduces the Energy Cost of Bombs by 4.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases the damage of your Bombs by 20%. Reduces the Energy Cost of Bombs by 5.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>14</Key>
+      <Name>Residual Shrapnel</Name>
+      <Icon>charge_shrapnel</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>580212594</AbilityId>
+          <Description></Description>
+          <AddonId>A2295577200000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Blast Charge and Shrapnel Charge deal an additional 20% damage over 6 seconds.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>15</Key>
+      <Name>Carpet Bombing</Name>
+      <Icon>carpet_bombing_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1485015144</AbilityId>
+          <Description>Resets the cooldown on all Bombs. Causes the next 3 Bombs to have no cooldown.</Description>
+          <AddonId>A5883886816D07FBC</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>60.000004</Cooldown>
+          <CostEnergy>10</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>16</Key>
+      <Name>Demolition Specialist</Name>
+      <Icon>demolition_specialist</Icon>
+      <PrereqTraitKey>12</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Annihilation Bomb detonates all Charges on the primary target. Existing Combo Points on the target triggers Shrapnel Bomb, dealing Physical damage to surrounding enemies.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>17</Key>
+      <Name>Trench Warfare</Name>
+      <Icon>snaretrap2</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>17186856</AbilityId>
+          <Description></Description>
+          <AddonId>A0106402800000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage contribution from your weapon and Attack Power to your Detonate, Bombs, Traps and Land Mines by 5%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage contribution from your weapon and Attack Power to your Detonate, Bombs, Traps and Land Mines by 10%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the damage contribution from your weapon and Attack Power to your Detonate, Bombs, Traps and Land Mines by 15%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases the damage contribution from your weapon and Attack Power to your Detonate, Bombs, Traps and Land Mines by 20%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases the damage contribution from your weapon and Attack Power to your Detonate, Bombs, Traps and Land Mines by 25%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>18</Key>
+      <Name>Land Mines</Name>
+      <Icon>land_mines</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>997369916</AbilityId>
+          <Description>Places 4 Land Mines around the Rogue for 60s. Each deals 2948 to 3259 Earth damage and knocks the enemy up into the air when triggered.</Description>
+          <AddonId>A3B72A83C8CA67AD7</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+          <Cooldown>15.000001</Cooldown>
+          <CostEnergy>24</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>1.000000</CastTime>
+          <Interruptible>false</Interruptible>
+          <Duration>60.000000</Duration>
+          <Radius>0.250000</Radius>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>19</Key>
+      <Name>Charge Booster</Name>
+      <Icon>increased_explosive_power_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1216403240</AbilityId>
+          <Description></Description>
+          <AddonId>A4880D72814B40208</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage contribution from your weapon and Attack Power to Shrapnel Charge and Caltrop Charge by 8%, and to Blast Charge and Spike Charge by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage contribution from your weapon and Attack Power to Shrapnel Charge and Caltrop Charge by 16%, and to Blast Charge and Spike Charge by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the damage contribution from your weapon and Attack Power to Shrapnel Charge and Caltrop Charge by 24%, and to Blast Charge and Spike Charge by 12%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases the damage contribution from your weapon and Attack Power to Shrapnel Charge and Caltrop Charge by 32%, and to Blast Charge and Spike Charge by 16%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases the damage contribution from your weapon and Attack Power to Shrapnel Charge and Caltrop Charge by 40%, and to Blast Charge and Spike Charge by 20%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>20</Key>
+      <Name>Improved Entangling Trap</Name>
+      <Icon>snaretrap1</Icon>
+      <PrereqTraitKey>6</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Entangling Trap no longer breaks on damage.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>21</Key>
+      <Name>Improved Chemical Bomb</Name>
+      <Icon>bomb_chemical</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>906616456</AbilityId>
+          <Description></Description>
+          <AddonId>A3609DE8800000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage Chemical Bomb by 10%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage Chemical Bomb by 20%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>22</Key>
+      <Name>Trap Extension</Name>
+      <Icon>snaretrap3a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-74438518</AbilityId>
+          <Description>Enables the Rogue to set Traps and Land Mines at a ground target location.</Description>
+          <AddonId>AFB90288A8ABEFD2A</AddonId>
+          <IsPassive>False</IsPassive>
+          <CostEnergy>10</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>23</Key>
+      <Name>Cloud Maker</Name>
+      <Icon>saboteur_cloud_maker</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>40</MinimumPointsSpent>
+      <DisplayRow>8</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-85236694</AbilityId>
+          <Description>Adds a time bomb that deals 870 to 961 Earth damage to up to 5 enemies after 4s. This adds another time bomb on affected enemies, dealing  an additional 870 to 961 Earth damage to up to 5 enemies after 4s.</Description>
+          <AddonId>AFAEB642A2E4CD5C0</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+          <Cooldown>30.000002</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <CostEnergy>26</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+          <Radius>7.000000</Radius>
+          <MaxAffected>5</MaxAffected>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+  </Traits>
+  <Abilities>
+    <Ability>
+      <MinimumPointsInSoul>58</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Immolation Trap</Name>
+      <Icon>explosivetrap2</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>57</RequiredLevel>
+        <AbilityId>-97960781</AbilityId>
+        <Description>Places a trap at the Rogue&apos;s location for 60s. When triggered, it ignites the ground, dealing 1768 to 1955 Fire damage up to 8 enemies in the area over 0s. Only 1 trap can be placed at a time.</Description>
+        <AddonId>AFA293CB330C29FF1</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <Cooldown>15.000001</Cooldown>
+        <CostEnergy>26</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>1.000000</CastTime>
+        <Interruptible>false</Interruptible>
+        <Radius>0.250000</Radius>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Cloud Maker</Name>
+      <Icon>saboteur_cloud_maker</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-85236694</AbilityId>
+        <Description>Adds a time bomb that deals 870 to 961 Earth damage to up to 5 enemies after 4s. This adds another time bomb on affected enemies, dealing  an additional 870 to 961 Earth damage to up to 5 enemies after 4s.</Description>
+        <AddonId>AFAEB642A2E4CD5C0</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>26</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Radius>7.000000</Radius>
+        <MaxAffected>5</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>61</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Molotov Cocktail</Name>
+      <Icon>saboteur_molotov_cocktail_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>60</RequiredLevel>
+        <AbilityId>-77063558</AbilityId>
+        <Description>Throws a Molotov Cocktail towards the target, dealing 691 Fire damage along the projectile&apos;s trail and 3114 Fire damage over 10s to up to 8 enemies in the target area.</Description>
+        <AddonId>AFB681A7A3303B7C7</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>25.000000</MaxRange>
+        <CostEnergy>26</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Trap Extension</Name>
+      <Icon>snaretrap3a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-74438518</AbilityId>
+        <Description>Enables the Rogue to set Traps and Land Mines at a ground target location.</Description>
+        <AddonId>AFB90288A8ABEFD2A</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>54</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Spike Bomb</Name>
+      <Icon>barbedtrap3</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>53</RequiredLevel>
+        <AbilityId>-54188557</AbilityId>
+        <Description>Deals 293 to 324 damage per second to up to 8 enemies in the target area. Lasts 10s. Also applies Thistle Spike to affected enemies, increasing damage taken from the Rogue by 1% per stack. Thistle Spike stacks up to 15 times.</Description>
+        <AddonId>AFCC525F358A2EEB1</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <Cooldown>10.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>26</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>32</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Embers Bomb</Name>
+      <Icon>charge_ember</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>32</RequiredLevel>
+        <AbilityId>-35141359</AbilityId>
+        <Description>Deals 1037 to 1147 Earth damage to up to 8 enemies. Increases non-Physical damage taken by 5% for 30s on each enemy hit. </Description>
+        <AddonId>AFDE7C9119E611AF2</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <Cooldown>10.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>26</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Saboteur Mastery</Name>
+      <Icon>generic_ability_023</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-25303567</AbilityId>
+        <Description>Increases damage by 1% for each point spent in the Saboteur soul.</Description>
+        <AddonId>AFE7DE5F1ACFF80A2</AddonId>
+        <IsPassive>True</IsPassive>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>48</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Enfeebling Trap</Name>
+      <Icon>shreddingtrap3a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>48</RequiredLevel>
+        <AbilityId>-8577781</AbilityId>
+        <Description>Places a trap at the Rogue&apos;s location for 60s. When triggered, stuns the enemy for 4s. Only 1 trap can be placed at a time.</Description>
+        <AddonId>AFF7D1D0BA8A6E738</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <Cooldown>15.000001</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>1.000000</CastTime>
+        <Interruptible>false</Interruptible>
+        <Radius>0.250000</Radius>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>24</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Splinter Bomb</Name>
+      <Icon>charge_splinter</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>24</RequiredLevel>
+        <AbilityId>-7439369</AbilityId>
+        <Description>Deals 1037 to 1147 Earth damage to up to 8 enemies. Reduces Armor by 170 for 30s on each enemy hit.</Description>
+        <AddonId>AFF8E7BF797D975F7</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <Cooldown>10.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>26</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Entangling Trap</Name>
+      <Icon>snaretrap1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>72</AbilityId>
+        <Description>Places a trap at the Rogue&apos;s location for 60s. When triggered, Roots up to 8 enemies in the area for 8s or until damaged. Only 1 trap can be placed at a time.</Description>
+        <AddonId>A0000004836290D94</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <Cooldown>15.000001</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>1.000000</CastTime>
+        <Interruptible>false</Interruptible>
+        <Radius>0.250000</Radius>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Blast Charge</Name>
+      <Icon>charge_blast</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>121846104</AbilityId>
+        <Description>When detonated, deals 891 to 985 damage. Awards 1 Combo Point.</Description>
+        <AddonId>A074339588AB8CA7C</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>24</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>1</GainComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>44</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>High Explosives</Name>
+      <Icon>last_stand</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>44</RequiredLevel>
+        <AbilityId>210039379</AbilityId>
+        <Description>Your targeted direct damage bombs and Detonate cause enemies to bleed over 10s. Stacks up to 3 times.</Description>
+        <AddonId>A0C84F2533C348C06</AddonId>
+        <IsPassive>True</IsPassive>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Annihilation Bomb</Name>
+      <Icon>bomb_annihilation</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>258397458</AbilityId>
+        <Description>Deals 2600 to 2873 Earth damage to up to 8 enemies.</Description>
+        <AddonId>A0F66D512A134B26B</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>26</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>36</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Booby Trap</Name>
+      <Icon>barbedtrap4a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>36</RequiredLevel>
+        <AbilityId>487814189</AbilityId>
+        <Description>Places a trap at the Rogue&apos;s location for 60s. When triggered, deals 1768 to 1955 damage to up to 8 enemies in the area. Only 1 trap can be placed at a time.</Description>
+        <AddonId>A1D13742D830835D4</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <Cooldown>15.000001</Cooldown>
+        <CostEnergy>26</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>1.000000</CastTime>
+        <Interruptible>false</Interruptible>
+        <Radius>0.250000</Radius>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>12</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Chemical Bomb</Name>
+      <Icon>bomb_chemical</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>12</RequiredLevel>
+        <AbilityId>629936091</AbilityId>
+        <Description>Deals 1743 Earth damage over 10s to up to 8 enemies in the target area.</Description>
+        <AddonId>A258C0FDB8752F4E5</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <Cooldown>10.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>26</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>51</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Rapid Setup</Name>
+      <Icon>rapid_setup</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>50</RequiredLevel>
+        <AbilityId>815585515</AbilityId>
+        <Description>Causes the next Charge ability to apply 5 stacks and award 5 Combo Points.</Description>
+        <AddonId>A309CD8EB59829D63</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Duration>30.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>20</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Incriminate</Name>
+      <Icon>generic_ability_032</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>20</RequiredLevel>
+        <AbilityId>838336891</AbilityId>
+        <Description>Transfers all threat generated to the ally for 6s.</Description>
+        <AddonId>A31F8017B739CE84A</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Duration>6.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>8</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Spike Charge</Name>
+      <Icon>charge_spike</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>8</RequiredLevel>
+        <AbilityId>926605295</AbilityId>
+        <Description>When detonated, bleeds 1787 health per stack over 10s. Awards 1 Combo Point.</Description>
+        <AddonId>A373ADFEF6F4CDD3E</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>24</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>1</GainComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>16</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Shrapnel Charge</Name>
+      <Icon>charge_shrapnel</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>16</RequiredLevel>
+        <AbilityId>948073550</AbilityId>
+        <Description>When detonated, deals 534 to 590 damage to up to 8 enemies. Awards 1 Combo Point.</Description>
+        <AddonId>A3882744EAB106D82</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>26</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>1</GainComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Land Mines</Name>
+      <Icon>land_mines</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>997369916</AbilityId>
+        <Description>Places 4 Land Mines around the Rogue for 60s. Each deals 2948 to 3259 Earth damage and knocks the enemy up into the air when triggered.</Description>
+        <AddonId>A3B72A83C8CA67AD7</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <Cooldown>15.000001</Cooldown>
+        <CostEnergy>24</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>1.000000</CastTime>
+        <Interruptible>false</Interruptible>
+        <Duration>60.000000</Duration>
+        <Radius>0.250000</Radius>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Barbed Trap</Name>
+      <Icon>shreddingtrap1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1124096204</AbilityId>
+        <Description>Places a trap at the Rogue&apos;s location for 60s. When triggered, bleeds 3171 health over 10s. Only 1 trap can be placed at a time.</Description>
+        <AddonId>A430058CCB32E5DF6</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <Cooldown>15.000001</Cooldown>
+        <CostEnergy>24</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>1.000000</CastTime>
+        <Interruptible>false</Interruptible>
+        <Radius>0.250000</Radius>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Charges</Name>
+      <Icon>elemres4d</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1185700425</AbilityId>
+        <Description>Charges have increased effects based on how many are placed on an enemy when detonated. You may only place 5 total Charges on a single enemy at one time. All Charges count as Poisons.</Description>
+        <AddonId>A46AC5A494A1A58B8</AddonId>
+        <IsPassive>True</IsPassive>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>4</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Fragmentation Bomb</Name>
+      <Icon>bomb_fragment_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>4</RequiredLevel>
+        <AbilityId>1322163253</AbilityId>
+        <Description>Deals 1383 to 1529 damage to up to 8 enemies.</Description>
+        <AddonId>A4ECE9C35477A6D5D</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <Cooldown>10.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>26</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Time Bomb</Name>
+      <Icon>bomb_time</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1336172055</AbilityId>
+        <Description>Deals 1247 to 1378 Earth damage to up to 8 enemies after 8s.</Description>
+        <AddonId>A4FA45E17E1059612</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <Cooldown>8.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>26</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Radius>7.000000</Radius>
+        <MaxAffected>8</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Carpet Bombing</Name>
+      <Icon>carpet_bombing_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1485015144</AbilityId>
+        <Description>Resets the cooldown on all Bombs. Causes the next 3 Bombs to have no cooldown.</Description>
+        <AddonId>A5883886816D07FBC</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>40</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Choking Gas Bomb</Name>
+      <Icon>bomb_choking_gas_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>40</RequiredLevel>
+        <AbilityId>1634616125</AbilityId>
+        <Description>Debilitates all enemies in the target area for 8s.</Description>
+        <AddonId>A616E433D91526562</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Detonate</Name>
+      <Icon>detonate</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1689572409</AbilityId>
+        <Description>Detonates Charges and deals additional damage per Combo Point.
+
+1 Point: 907 damage
+2 Points: 1166 damage
+3 Points: 1512 damage
+4 Points: 1944 damage
+5 Points: 2463 damage</Description>
+        <AddonId>A64B4D4392A8B762B</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>16</CostEnergy>
+        <ConsumesComboPoints>True</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">2.350000</PowerStatCoefficient>
+        <WeaponDamageMultiplier effect="0" action="0">2.350000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Adhesive Bomb</Name>
+      <Icon>bomb_adhesive</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>2068068022</AbilityId>
+        <Description>Snares all enemies in the target area for 8s.</Description>
+        <AddonId>A7B4436B69D2D165C</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <Cooldown>15.000001</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>28</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Caltrop Charge</Name>
+      <Icon>charge_caltrop</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>28</RequiredLevel>
+        <AbilityId>2072274435</AbilityId>
+        <Description>When detonated, bleeds 1070 health per stack over 10s to up to 8 enemies. Awards 1 Combo Point.</Description>
+        <AddonId>A7B8466033A29F646</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>26</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>1</GainComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+  </Abilities>
+</SoulTree>
+

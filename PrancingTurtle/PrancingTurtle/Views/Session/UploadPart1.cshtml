@@ -1,0 +1,106 @@
+﻿@model PrancingTurtle.Models.ViewModels.Session.UploadSessionVM
+
+@{
+    ViewBag.Title = "Upload a session";
+}
+
+@section scripts{
+    <script>
+        $(function () {
+            jQuery('#SessionDate').datetimepicker(
+            {
+                step: 15
+            });
+        });
+
+    </script>
+}
+
+<div class="container container-fluid">
+    <div class="row">
+        @using (Html.BeginForm())
+        {
+            <div class="col-lg-8 col-centered">
+                <h2>Upload a session</h2>
+                <br />
+                <div class="panel panel-primary">
+
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Session Details</h3>
+                    </div>
+                    <div class="panel-body">
+
+                        @Html.AntiForgeryToken()
+
+                        <div class="form-horizontal">
+                            @Html.ValidationSummary(false)
+
+                            <div class="form-group">
+                                <div class="col-lg-3 text-right">
+                                @Html.LabelFor(model => model.Name, new {@class = "control-label"})
+                                    <i class="fa fa-lg fa-info-circle" title="This is the name that will be visible to others."></i>
+                                </div>
+                                <div class="col-lg-9">
+                                    @Html.TextBoxFor(model => model.Name, new {@class = "form-control"})
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-lg-3 text-right">
+                                    @Html.LabelFor(model => model.UploadCharacterId, new { @class = "control-label" })
+                                    <i class="fa fa-lg fa-info-circle" title="You need to be in a guild and hold a rank of Uploader or Administrator to be able to upload. Any characters that meet that requirement will be listed here."></i>
+                                </div>
+                                
+                                <div class="col-lg-9">
+                                    @Html.DropDownListFor(model => model.UploadCharacterId, new SelectList(Model.Characters, "Id", "FullDisplayName", Model.UploadCharacterId), new {@class = "form-control"})
+                                </div>
+
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-lg-3 text-right">
+                                    @Html.LabelFor(model => model.SessionDate, new { @class = "control-label" })
+                                    <i class="fa fa-lg fa-info-circle" title="Knowing the approximate start time of the session helps us ensure accuracy when reading times from the combat log."></i>
+                                </div>
+                                
+
+                                <div class="col-lg-9">
+                                    <input id="SessionDate" name="SessionDate" type="text" class="form-control" style="float: left; margin-right: 5px;">
+
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-lg-3 text-right">
+                                    @Html.LabelFor(model => model.Public, new { @class = "control-label" })
+                                    <i class="fa fa-lg fa-info-circle" title="This checkbox controls the default privacy of every encounter uploaded within this session. All encounters can also be made public or private later if required."></i>
+                                </div>
+                                <div class="col-lg-9">
+                                    @Html.CheckBoxFor(model => model.Public, new {@class = "checkbox checkbox-inline", @style = "float: left; margin-right:5px;"})
+                                </div>
+                            </div>
+
+                            @*<div class="form-group">
+                                    <div class="col-md-offset-3 col-md-9">
+                                        <input type="submit" value="Next" class="btn btn-primary" />
+                                    </div>
+                                </div>*@
+                        </div>
+
+                    </div>
+                    <div class="panel-footer">
+                        <div class="row">
+                            <div class="col-md-offset-3 col-md-9">
+                                <input type="submit" value="Next" class="btn btn-primary"/>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<link rel="stylesheet" type="text/css" href="/Content/datetimepicker/jquery.datetimepicker.css" />
+<script src="/Scripts/datetimepicker/jquery.datetimepicker.js"></script>

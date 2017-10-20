@@ -1,0 +1,1370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SoulTree calling="Cleric" name="Justicar">
+  <Traits>
+    <Trait>
+      <Key>0</Key>
+      <Name>Stronghold</Name>
+      <Icon>ward4</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-51692641</AbilityId>
+          <Description></Description>
+          <AddonId>AFCEB3B9F331F354A</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Base Health by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Base Health by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your Base Health by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your Base Health by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your Base Health by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>1</Key>
+      <Name>Armor of Virtue</Name>
+      <Icon>armor_of_virtue_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1535043083</AbilityId>
+          <Description></Description>
+          <AddonId>A5B7EE60B75FF7667</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Wisdom by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Wisdom by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your Wisdom by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your Wisdom by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your Wisdom by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>2</Key>
+      <Name>Moment of Truth</Name>
+      <Icon>flare_of_light_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-81389306</AbilityId>
+          <Description></Description>
+          <AddonId>AFB26190656323A5B</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your damage and healing using Convictions by 5%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your damage and healing using Convictions by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>3</Key>
+      <Name>Reparation</Name>
+      <Icon>reparation_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Salvation heals up to 1 additional party or raid members.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your Salvation heals up to 2 additional party or raid members.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Your Salvation heals up to 3 additional party or raid members.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Your Salvation heals up to 4 additional party or raid members.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Your Salvation heals up to 5 additional party or raid members.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>4</Key>
+      <Name>Life&apos;s Devotion</Name>
+      <Icon>lifes_devotion_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-65480033</AbilityId>
+          <Description></Description>
+          <AddonId>AFC18DA9F5948483D</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases healing done with Salvation when using Justicar abilities by 5%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases healing done with Salvation when using Justicar abilities by 10%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases healing done with Salvation when using Justicar abilities by 15%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>5</Key>
+      <Name>Doctrine of Bliss</Name>
+      <Icon>doctrine_of_bliss_01_b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1985551240</AbilityId>
+          <Description>Restores 373 to 412 health. Consumes 1 Conviction.</Description>
+          <AddonId>A76591B88A856B283</AddonId>
+          <IsPassive>False</IsPassive>
+          <CostManaPercent>7.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>6</Key>
+      <Name>Precept of Refuge</Name>
+      <Icon>defensivestrike1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1299258785</AbilityId>
+          <Description>Deals 786 to 869 Life damage. Increases the Cleric&apos;s Block by 5% for 8s. Requires a shield.</Description>
+          <AddonId>A4D711DA1A66B8221</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>5.000000</Cooldown>
+          <MaxRange>3.000000</MaxRange>
+          <CostManaPercent>7.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+          <Duration>8.000000</Duration>
+          <PowerStatCoefficient effect="1" action="0">1.170000</PowerStatCoefficient>
+          <AggroMultiplier effect="1" action="0">2.000000</AggroMultiplier>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>7</Key>
+      <Name>Stalwart Citadel</Name>
+      <Icon>bulwark1a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1263310397</AbilityId>
+          <Description></Description>
+          <AddonId>A4B4C963D2704D929</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Block is now derived from 50% of your Wisdom.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your Block is now derived from 100% of your Wisdom.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>8</Key>
+      <Name>Confidence</Name>
+      <Icon>reprieve_01</Icon>
+      <BendType>VerticalToHorizontal</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-43071235</AbilityId>
+          <Description></Description>
+          <AddonId>AFD6EC8FD6545A60C</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+          <Interval>6.000000</Interval>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Grants a Conviction every 6 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Grants a Conviction every 3 seconds.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>9</Key>
+      <Name>Light Makes Right</Name>
+      <Icon>doctrine_of_faithful_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>806542081</AbilityId>
+          <Description></Description>
+          <AddonId>A3012DB013779DB55</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Casting Hammer of Duty or Hammer of Faith applies a buff to you, increasing your Life damage by 2% for each Conviction consumed by the Hammer. Lasts 15s.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>10</Key>
+      <Name>Shield of Faith</Name>
+      <Icon>spiritofsaints3</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>365846182</AbilityId>
+          <Description></Description>
+          <AddonId>A15CE5EA626C50C4C</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces your damage taken by 1%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reduces your damage taken by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Reduces your damage taken by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Reduces your damage taken by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Reduces your damage taken by 5%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>11</Key>
+      <Name>Mien of Leadership</Name>
+      <Icon>requital_01_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>413766657</AbilityId>
+          <Description>Enables Guard. Increases Base Health, Armor, and Resistances by 35%. Increases threat generation by 400%. Reduces damage done, healing done, and absorption granted with non-Justicar abilities by 40%.</Description>
+          <AddonId>A18A99401C513B261</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>15.000001</Cooldown>
+          <CostManaPercent>4.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>12</Key>
+      <Name>Healer&apos;s Creed</Name>
+      <Icon>spiritofvaliant1a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1863103625</AbilityId>
+          <Description></Description>
+          <AddonId>A6F0CB48931C2648B</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your healing received by 5%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your healing received by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>13</Key>
+      <Name>Mien of Honor</Name>
+      <Icon>overwhelming_brilliance_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1916547586</AbilityId>
+          <Description>Reduces threat generation by 50%. Increases damage and healing done by 5%. Causes casting Hammer of Duty or Hammer of Faith to apply a buff to the Cleric for 15s, increasing their damage by 2% for each Conviction consumed by the Hammer.</Description>
+          <AddonId>A723C320268298CCD</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>15.000001</Cooldown>
+          <CostManaPercent>4.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>14</Key>
+      <Name>Devout Deflection</Name>
+      <Icon>deflection1a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1254275259</AbilityId>
+          <Description></Description>
+          <AddonId>A4AC2B8BB6B989F57</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Guard is now derived from 5% of your Wisdom. Your Dodge is now derived from 50% of your Intelligence.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your Guard is now derived from 10% of your Wisdom. Your Dodge is now derived from 100% of your Intelligence.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>15</Key>
+      <Name>Dominance</Name>
+      <Icon>paladin_face_slam</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-90195981</AbilityId>
+          <Description></Description>
+          <AddonId>AFA9FB7F30A9EA043</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the effect of Spell Power on your Hammer of Duty and Hammer of Faith by 25%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the effect of Spell Power on your Hammer of Duty and Hammer of Faith by 50%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the effect of Spell Power on your Hammer of Duty and Hammer of Faith by 75%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>16</Key>
+      <Name>Interdict</Name>
+      <Icon>interdict_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1946401743</AbilityId>
+          <Description>Interrupts the enemy and nearby enemies.</Description>
+          <AddonId>A7403BBCFAF89FCAB</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>10.000000</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>4.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>17</Key>
+      <Name>Commitment</Name>
+      <Icon>defstrike3</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1544670164</AbilityId>
+          <Description></Description>
+          <AddonId>A5C11CBD43465E67A</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your regain 2% mana when you Block.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your regain 4% mana when you Block.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>18</Key>
+      <Name>Just Cause</Name>
+      <Icon>generic_ability_016</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-61872026</AbilityId>
+          <Description></Description>
+          <AddonId>AFC4FE866317E539B</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Maximum Convictions by 1.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Maximum Convictions by 2.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your Maximum Convictions by 3.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>19</Key>
+      <Name>Light of Creation</Name>
+      <Icon>blindinglight3</Icon>
+      <BendType>VerticalToHorizontal</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-93147190</AbilityId>
+          <Description></Description>
+          <AddonId>AFA72AFCA58FD3B50</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your damage done with Strike of Judgment, Reckoning, Bolt of Radiance, and Doctrine of Authority by 15%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your damage done with Strike of Judgment, Reckoning, Bolt of Radiance, and Doctrine of Authority by 30%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your damage done with Strike of Judgment, Reckoning, Bolt of Radiance, and Doctrine of Authority by 45%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>20</Key>
+      <Name>Thorvin&apos;s Law</Name>
+      <Icon>deflect2</Icon>
+      <BendType>VerticalToHorizontal</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-27796981</AbilityId>
+          <Description></Description>
+          <AddonId>AFE57DA0B212CC623</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Resistances by 10%. Reduces your damage taken from Spells by 5%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Resistances by 20%. Reduces your damage taken from Spells by 10%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your Resistances by 30%. Reduces your damage taken from Spells by 15%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>21</Key>
+      <Name>Absolution</Name>
+      <Icon>absolution_01_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1297021479</AbilityId>
+          <Description>Brings the fallen ally back to life, restoring 100% health and 50% mana. Usable in combat.</Description>
+          <AddonId>A4D4EFA27574FDC9A</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>300.000000</Cooldown>
+          <MaxRange>35.000000</MaxRange>
+          <CostManaPercent>4.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>22</Key>
+      <Name>Strike of Retribution</Name>
+      <Icon>smite2</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-10330795</AbilityId>
+          <Description>Deals 402 to 444 Life damage. Must be used after the Cleric has Blocked.</Description>
+          <AddonId>AFF625D555A57E90C</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Melee Weapon</RequiresWeapon>
+          <Cooldown>6.000000</Cooldown>
+          <MaxRange>3.000000</MaxRange>
+          <CostManaPercent>7.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+          <PowerStatCoefficient effect="0" action="0">0.600000</PowerStatCoefficient>
+          <AggroMultiplier effect="0" action="0">2.000000</AggroMultiplier>
+          <WeaponDamageMultiplier effect="0" action="0">0.000000E+000</WeaponDamageMultiplier>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>23</Key>
+      <Name>Divine Right</Name>
+      <Icon>resolve2</Icon>
+      <BendType>VerticalToHorizontal</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-13661963</AbilityId>
+          <Description></Description>
+          <AddonId>AFF2F88F5065862FB</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Overhealing you receive from your Doctrines generates an absorb shield equal to 2% of your Maximum Health. Can occur up to once every 10 seconds. Causes Doctrine of Bliss and Doctrine of Loyalty to consume up to 1 additional Conviction on cast, increasing the healing by 100% for each additional Conviction.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Overhealing you receive from your Doctrines generates an absorb shield equal to 4% of your Maximum Health. Can occur up to once every 10 seconds. Causes Doctrine of Bliss and Doctrine of Loyalty to consume up to 2 additional Convictions on cast, increasing the healing by 100% for each additional Conviction.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Overhealing you receive from your Doctrines generates an absorb shield equal to 6% of your Maximum Health. Can occur up to once every 10 seconds. Causes Doctrine of Bliss and Doctrine of Loyalty to consume up to 3 additional Convictions on cast, increasing the healing by 100% for each additional Conviction.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>24</Key>
+      <Name>Unshakable Faith</Name>
+      <Icon>defensivestrike2</Icon>
+      <BendType>VerticalToHorizontal</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-66226041</AbilityId>
+          <Description></Description>
+          <AddonId>AFC0D78871FA76686</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Block Absorption by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Block Absorption by 4%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>25</Key>
+      <Name>Hammer of Faith</Name>
+      <Icon>hammer_of_virtue_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>40</MinimumPointsSpent>
+      <DisplayRow>8</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-85041758</AbilityId>
+          <Description>Consumes all Convictions. Deals 120 to 133 Life damage for each Conviction to the enemy and up to 10 additional enemies.</Description>
+          <AddonId>AFAEE5DA267AC4EFA</AddonId>
+          <IsPassive>False</IsPassive>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>9.000000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+  </Traits>
+  <Abilities>
+    <Ability>
+      <MinimumPointsInSoul>58</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Doctrine of Glory</Name>
+      <Icon>cavalier_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>57</RequiredLevel>
+        <AbilityId>-94048933</AbilityId>
+        <Description>Consumes all Convictions. Reduces damage taken by 2.86% per Conviction consumed. Lasts 4s.</Description>
+        <AddonId>AFA64ED5B71F3A99C</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>41</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Hammer of Faith</Name>
+      <Icon>hammer_of_virtue_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>41</RequiredLevel>
+        <AbilityId>-85041758</AbilityId>
+        <Description>Consumes all Convictions. Deals 120 to 133 Life damage for each Conviction to the enemy and up to 10 additional enemies.</Description>
+        <AddonId>AFAEE5DA267AC4EFA</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>54</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Reckoning</Name>
+      <Icon>smite1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>53</RequiredLevel>
+        <AbilityId>-65354533</AbilityId>
+        <Description>Deals 874 to 965 Life damage. Increases movement speed by 15% for 10s.</Description>
+        <AddonId>AFC1AC4DBD5944784</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">1.200000</PowerStatCoefficient>
+        <AggroMultiplier effect="0" action="0">2.000000</AggroMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>61</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Total Assurance</Name>
+      <Icon>doctrine_of_loyalty_01_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>60</RequiredLevel>
+        <AbilityId>-60843264</AbilityId>
+        <Description>Grants 7 Convictions. Increases damage and healing of the next 2 Conviction consuming abilities by 50%. Lasts 30s.</Description>
+        <AddonId>AFC5F9B00B44E9A75</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>4</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Hammer of Duty</Name>
+      <Icon>generic_ability_013</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>4</RequiredLevel>
+        <AbilityId>-43974202</AbilityId>
+        <Description>Consumes all Convictions. Deals 201 to 222 Life damage for each Conviction.</Description>
+        <AddonId>AFD6101C64C8F9A58</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>36</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Strike of Retribution</Name>
+      <Icon>smite2</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>36</RequiredLevel>
+        <AbilityId>-10330795</AbilityId>
+        <Description>Deals 402 to 444 Life damage. Must be used after the Cleric has Blocked.</Description>
+        <AddonId>AFF625D555A57E90C</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>6.000000</Cooldown>
+        <MaxRange>3.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">0.600000</PowerStatCoefficient>
+        <AggroMultiplier effect="0" action="0">2.000000</AggroMultiplier>
+        <WeaponDamageMultiplier effect="0" action="0">0.000000E+000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Faith in Action</Name>
+      <Icon>doctrine_of_virtue_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>24282980</AbilityId>
+        <Description></Description>
+        <AddonId>A017287645DAA0795</AddonId>
+        <IsPassive>True</IsPassive>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Salvation</Name>
+      <Icon>salvation_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>67113915</AbilityId>
+        <Description>Causes damaging abilities to restore 35 to 39 health to the Cleric. Restores twice as much health when using single target Justicar abilities. Restores a quarter of that health when using non-Justicar area effect abilities. Restores 5% of that health when using non-channeled, non-Justicar, ground targeted area effect abilities. Generates no threat.</Description>
+        <AddonId>A040013BBA78A4491</AddonId>
+        <IsPassive>True</IsPassive>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>4</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Cavalier</Name>
+      <Icon>conviction_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>4</RequiredLevel>
+        <AbilityId>211641305</AbilityId>
+        <Description>Causes Life-based damaging abilities to grant a Conviction for 30s.</Description>
+        <AddonId>A0C9D63D967C04D66</AddonId>
+        <IsPassive>True</IsPassive>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>44</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Rebuke</Name>
+      <Icon>redirect4b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>44</RequiredLevel>
+        <AbilityId>361496699</AbilityId>
+        <Description>Pulls up to 5 enemies to the Cleric, forcing them to attack the Cleric for 3s.</Description>
+        <AddonId>A158C007B3BBA0EF6</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <MaxRange>20.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Radius>7.000000</Radius>
+        <MaxAffected>5</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>16</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Mien of Leadership</Name>
+      <Icon>requital_01_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>16</RequiredLevel>
+        <AbilityId>413766657</AbilityId>
+        <Description>Enables Guard. Increases Base Health, Armor, and Resistances by 35%. Increases threat generation by 400%. Reduces damage done, healing done, and absorption granted with non-Justicar abilities by 40%.</Description>
+        <AddonId>A18A99401C513B261</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>15.000001</Cooldown>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>2</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Bolt of Radiance</Name>
+      <Icon>bolt_of_radiance_01_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>2</RequiredLevel>
+        <AbilityId>436858804</AbilityId>
+        <Description>Deals 1006 to 1112 Life damage.</Description>
+        <AddonId>A1A09EFB440FCA57C</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>8.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>24</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Righteous Imperative</Name>
+      <Icon>ressurection3bb</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>24</RequiredLevel>
+        <AbilityId>519389657</AbilityId>
+        <Description>Forces up to 10 nearby enemies to attack the Cleric for 3s.</Description>
+        <AddonId>A1EF541D9302B6651</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>20.000000</Cooldown>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Radius>10.000000</Radius>
+        <MaxAffected>10</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>32</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Resplendent Embrace</Name>
+      <Icon>paladin-preservation</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>32</RequiredLevel>
+        <AbilityId>997293584</AbilityId>
+        <Description>Increases Maximum Health by 20%. Increases healing received by 50%. Lasts 10s.</Description>
+        <AddonId>A3B717E109EF7265C</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>120.000008</Cooldown>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>10.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>32</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Intercede</Name>
+      <Icon>paladin_shield_of_the_vengeful</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>32</RequiredLevel>
+        <AbilityId>1235429077</AbilityId>
+        <Description>Shields the ally, intercepting 50% of the damage they receive, and replacing the ally&apos;s Toughness with the Cleric&apos;s, for 6s. An ally can only be affected by a tank soul damage intercept up to once every 2 minutes.</Description>
+        <AddonId>A49A326D588E2346C</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>20.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>6.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>31</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Absolution</Name>
+      <Icon>absolution_01_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>31</RequiredLevel>
+        <AbilityId>1297021479</AbilityId>
+        <Description>Brings the fallen ally back to life, restoring 100% health and 50% mana. Usable in combat.</Description>
+        <AddonId>A4D4EFA27574FDC9A</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>300.000000</Cooldown>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>11</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Precept of Refuge</Name>
+      <Icon>defensivestrike1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>11</RequiredLevel>
+        <AbilityId>1299258785</AbilityId>
+        <Description>Deals 786 to 869 Life damage. Increases the Cleric&apos;s Block by 5% for 8s. Requires a shield.</Description>
+        <AddonId>A4D711DA1A66B8221</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>5.000000</Cooldown>
+        <MaxRange>3.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>8.000000</Duration>
+        <PowerStatCoefficient effect="1" action="0">1.170000</PowerStatCoefficient>
+        <AggroMultiplier effect="1" action="0">2.000000</AggroMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>8</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Provoke</Name>
+      <Icon>piety2a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>8</RequiredLevel>
+        <AbilityId>1320857460</AbilityId>
+        <Description>Forces the enemy to attack the Cleric for 3s.</Description>
+        <AddonId>A4EBAAF7455A0CE9F</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>8.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>3.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>40</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Thorvin&apos;s Wrath</Name>
+      <Icon>paladin_lights_blessing_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>40</RequiredLevel>
+        <AbilityId>1446887114</AbilityId>
+        <Description>Damaging abilities generate additional threat based off of the Cleric&apos;s Endurance.</Description>
+        <AddonId>A563DBECA4EF5347E</AddonId>
+        <IsPassive>True</IsPassive>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>28</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Sovereignty</Name>
+      <Icon>virtuous_conviction_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>28</RequiredLevel>
+        <AbilityId>1507966295</AbilityId>
+        <Description>Stuns for 2s.</Description>
+        <AddonId>A59E1BD579C0516B4</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>20.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>2.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>48</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Reprieve</Name>
+      <Icon>layinghands1x</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>48</RequiredLevel>
+        <AbilityId>1555582549</AbilityId>
+        <Description>Restores 100% of the Cleric&apos;s health and 50% of the Cleric&apos;s Maximum Health to the target of the Cleric&apos;s Righteous Mandate.</Description>
+        <AddonId>A5CB84E55BC27F73F</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Radius>35.000000</Radius>
+        <PowerStatCoefficient effect="1" action="0">0.000000E+000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>20</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Doctrine of Loyalty</Name>
+      <Icon>righteous_invocation_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>20</RequiredLevel>
+        <AbilityId>1730478653</AbilityId>
+        <Description>Restores 101 to 112 health on up to 10 party or raid members. Consumes 1 Conviction.</Description>
+        <AddonId>A6725023DD527DA93</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>36</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Just Defense</Name>
+      <Icon>paladin-reprisal</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>36</RequiredLevel>
+        <AbilityId>1745856916</AbilityId>
+        <Description>Absorbs damage equal to 50% of the Cleric&apos;s Maximum Health. Lasts 10s.</Description>
+        <AddonId>A680FA994B8E41D02</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">0.000000E+000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>21</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Mien of Honor</Name>
+      <Icon>overwhelming_brilliance_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>21</RequiredLevel>
+        <AbilityId>1916547586</AbilityId>
+        <Description>Reduces threat generation by 50%. Increases damage and healing done by 5%. Causes casting Hammer of Duty or Hammer of Faith to apply a buff to the Cleric for 15s, increasing their damage by 2% for each Conviction consumed by the Hammer.</Description>
+        <AddonId>A723C320268298CCD</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>15.000001</Cooldown>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>26</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Interdict</Name>
+      <Icon>interdict_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>26</RequiredLevel>
+        <AbilityId>1946401743</AbilityId>
+        <Description>Interrupts the enemy and nearby enemies.</Description>
+        <AddonId>A7403BBCFAF89FCAB</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>10.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>16</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Even Justice</Name>
+      <Icon>even_justice_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>16</RequiredLevel>
+        <AbilityId>1970897476</AbilityId>
+        <Description>Deals 402 to 444 Life damage to up to 10 enemies within 7m of the Cleric.</Description>
+        <AddonId>A757982446FF36D7F</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>6</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Doctrine of Bliss</Name>
+      <Icon>doctrine_of_bliss_01_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>6</RequiredLevel>
+        <AbilityId>1985551240</AbilityId>
+        <Description>Restores 373 to 412 health. Consumes 1 Conviction.</Description>
+        <AddonId>A76591B88A856B283</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>24</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Purpose</Name>
+      <Icon>generic_ability_024_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>24</RequiredLevel>
+        <AbilityId>1991851906</AbilityId>
+        <Description>Causes weapon attacks to restore 10% mana to the Cleric. Blocks Conviction gains.</Description>
+        <AddonId>A76B93F826E12B56C</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>1.500000</Cooldown>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>40</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Censure</Name>
+      <Icon>paladin-life_rapture_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>40</RequiredLevel>
+        <AbilityId>2011478686</AbilityId>
+        <Description>Deals 1412 Life damage over 15s, and reduces the Hit chance of the enemy by 5%. Spreads to up to 10 enemies if hit by the Cleric&apos;s Hammer of Faith.</Description>
+        <AddonId>A77E4BA9E3E8D6BA5</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>15.000000</Duration>
+        <Interval>1.500000</Interval>
+        <PowerStatCoefficient effect="0" action="0">2.000000</PowerStatCoefficient>
+        <AggroMultiplier effect="0" action="0">3.000000</AggroMultiplier>
+        <DamageMultiplier effect="0" action="0">0.100000</DamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Strike of Judgment</Name>
+      <Icon>strike_of_judgement_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>2037559528</AbilityId>
+        <Description>Deals 670 to 740 Life damage.</Description>
+        <AddonId>A7972B0E833DD1F62</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>3.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="1" action="0">1.000000</PowerStatCoefficient>
+        <AggroMultiplier effect="1" action="0">2.000000</AggroMultiplier>
+        <WeaponDamageMultiplier effect="1" action="0">0.000000E+000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>12</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Righteous Mandate</Name>
+      <Icon>faithful_doctrine_01_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>12</RequiredLevel>
+        <AbilityId>2105010482</AbilityId>
+        <Description>Causes the Cleric&apos;s Salvation to heal the ally as well. Can only affect 1 ally. Lasts 1h.</Description>
+        <AddonId>A7D77E932B02DCBBB</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>3600.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>51</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Doctrine of Authority</Name>
+      <Icon>spiritstrike5</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>50</RequiredLevel>
+        <AbilityId>2132984583</AbilityId>
+        <Description>Deals 1609 to 1778 Life damage. Restores 153 to 169 health to up to 5 party or raid members. Removes 1 Conviction.</Description>
+        <AddonId>A7F22C30780C72F82</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>15.000001</Cooldown>
+        <MaxRange>3.000000</MaxRange>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">2.400000</PowerStatCoefficient>
+        <AggroMultiplier effect="0" action="0">3.000000</AggroMultiplier>
+        <WeaponDamageMultiplier effect="0" action="0">0.000000E+000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+  </Abilities>
+</SoulTree>
+

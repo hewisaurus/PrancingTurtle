@@ -1,0 +1,32 @@
+﻿@using PrancingTurtle.Helpers
+@model Database.QueryModels.Misc.RankPlayerGuild
+
+@if (Model != null)
+{
+    <h3 style="margin: 6px">
+        @*<img src="~/Content/icons/misc/LFP_Roles_Heal.png" height="40" width="40" title="Healing done per second" />*@
+        Top HPS:
+
+        <span class="@Model.DisplayColorClass">@Model.Player.DisplayName</span>
+        @if (Model.Guild != null)
+        {
+            <span>@Html.Raw(string.Format("&lt;{0}&gt;", Model.Guild.Name))</span>
+        }
+        <b>@Model.Value hps</b>
+
+
+        @*@if (Model.TopHit > 0)
+        {
+            @Html.Raw(" | ")
+            if (!string.IsNullOrEmpty(Model.AbilityIcon))
+            {
+                <img src="@string.Format("/Content/icons/SoulAbilities/{0}.jpg", Model.AbilityIcon)" height="36" width="36" title="@Model.AbilityName" style="margin-top: -3px;" />
+            }
+            <span>@Model.AbilityName: <b>@Model.TopHit</b></span>
+        }*@
+        @if (Model.EncounterPublic)
+        {
+            @Html.ImageActionLink("PlayerHealingDone", "Encounter", new { @id = Model.EncounterId }, "text-success", "fa fa-external-link-square")
+        }
+    </h3>
+}

@@ -1,0 +1,298 @@
+﻿@using Common
+@using PrancingTurtle.Helpers
+@model PrancingTurtle.Models.ViewModels.Session.SessionDetailVM
+
+@{
+    ViewBag.Title = string.Format("Session: {0}", Model.Session.Name);
+}
+
+@*<h2>@string.Format("Session: {0}", Model.Session.Name) @{if (Model.CanBeRemoved){@Html.ImageActionLink("RemoveSession", "Session", new {@id=Model.Session.Id}, "text-danger", "fa fa-lg fa-remove")}}</h2>*@
+
+<div class="container-fluid">
+    <div class="col-lg-10 col-centered">
+        <div class="bs-callout overview">
+            <h3 class="text-center">@Model.Session.Name</h3>
+            <p class="text-center">
+                @if (Model.CanBeReimported)
+                {
+                    @Html.ActionLink("Reimport", "ReimportSession", "Session", new { @id = Model.Session.Id },
+                        new
+                        {
+                            @class = "btn btn-xs btn-primary",
+                            @style = "padding-right:5px;",
+                            title = "Click this button to remove all the encounters for this session, and parse the log(s) again. This process will take a few minutes."
+                        })
+                }
+                @if (Model.CanBeRemoved)
+                {
+                    @Html.ActionLink("Remove", "RemoveSession", "Session", new { @id = Model.Session.Id },
+                        new
+                        {
+                            @class = "btn btn-xs btn-danger",
+                            @style = "padding-right:5px;",
+                            title = "Click this button if you wish to completely remove this session. This will also remove individual & group rankings for all encounters within this session."
+                        })
+                }
+                @if (Model.CanBeRenamed)
+                {
+                    @Html.ActionLink("Rename", "Rename", "Session", new { @id = Model.Session.Id },
+                        new
+                        {
+                            @class = "btn btn-xs btn-success",
+                            @style = "padding-right:5px;",
+                            title = "Click this button if you wish to rename the session."
+                        })
+                }
+            </p>
+            <br />
+            @if (!Model.Encounters.Any())
+            {
+                <div class="row">
+                    <div class="col-lg-8 col-centered alert alert-warning">
+                        <h4>No encounters found!</h4>
+                        @if (Model.FirstLog == null)
+                        {
+                            <p>It looks like this session hasn't been uploaded yet, but the original log record can't be found. If you're the original creator of this session, remove it and create a new one!</p>
+                        }
+                        else
+                        {
+                            <p>
+                                It looks like this session hasn't been uploaded yet. To add encounters into this session, zip up the combatlog and rename it to <b>@string.Format("{0}.zip", Model.FirstLog.Token)</b> before uploading.
+                            </p>
+                        }
+
+                    </div>
+                </div>
+                <br />
+            }
+            <div class="form-horizontal col-lg-10 col-centered">
+                <div class="form-group">
+                    <div class="col-lg-2 col-lg-offset-1"><b>Session start:</b></div>
+                    <div class="col-lg-3">@Model.Session.Date.Add(Model.TimeZoneOffset)</div>
+                    <div class="col-lg-2"><b>Total Encounters:</b></div>
+                    <div class="col-lg-3">@Model.Encounters.Count</div>
+                </div>
+                <div class="form-group">
+                    <div class="col-lg-2 col-lg-offset-1"><b>Session length:</b></div>
+                    <div class="col-lg-3">@Model.Session.Duration</div>
+                    @*<div class="col-lg-2"><b>Log size:</b></div>
+                        <div class="col-lg-3">@Model.Session.SessionSizeReadable</div>*@
+                    <div class="col-lg-2"><b>Active time:</b></div>
+                    <div class="col-lg-3">@Model.ActiveTimeReadable (@Model.ActiveTimePercentage)</div>
+                </div>
+                <div class="form-group">
+                    <div class="col-lg-2 col-lg-offset-1">
+                        <b>Created by:</b>
+                    </div>
+                    <div class="col-lg-3">
+                        @if (Model.Session.AuthUserCharacter.GuildId != null)
+                        {
+                            @Html.Raw(Model.Session.AuthUserCharacter.DisplayName + " ")
+                            @Html.ActionLink(string.Format("<{0}>", Model.Session.AuthUserCharacter.Guild.Name), "Index", "Guild", new { @id = Model.Session.AuthUserCharacter.GuildId }, new { @class = "text-info" })
+                        }
+                        else
+                        {
+                            @Model.Session.AuthUserCharacter.FullDisplayName
+                        }
+
+                    </div>
+                    <div class="col-lg-2">
+                        <b>Uploaders:</b>
+                    </div>
+                    <div class="col-lg-3">
+                        @foreach (var uploader in Model.Uploaders)
+                        {
+                            <p>@uploader</p>
+                        }
+                    </div>
+                </div>
+                @if (Model.DebugMode)
+                {
+                    <div class="form-group">
+                        <div class="col-lg-2 col-lg-offset-1">
+                            <b>Total player time:</b>
+                        </div>
+                        <div class="col-lg-3">@Model.Session.TotalPlayTimeReadable</div>
+                        <div class="col-lg-2">
+                            <b>Log filename:</b>
+                        </div>
+                        <div class="col-lg-3">
+                            @Model.Session.Filename
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+@*<h2>@string.Format("Session: {0}", Model.Session.Name)</h2>
+    @if (Model.CanBeRemoved)
+    {
+        @Html.ActionLink("Remove session", "RemoveSession", "Session", new { @id = Model.Session.Id }, new { @class = "text-danger", @style = "padding-right:5px;" })
+    }
+    @if (Model.CanBeReimported)
+    {
+        @Html.ActionLink("Reimport session", "ReimportSession", "Session", new { @id = Model.Session.Id }, new { @class = "text-info" })
+    }
+
+    <div class="container-fluid">
+        <div class="col-lg-10 col-centered">*@
+@*@if (!Model.Encounters.Any() && !string.IsNullOrEmpty(Model.Session.UploadToken))
+    {
+        <div class="row">
+            <div class="alert alert-warning">
+                <h4>No encounters found!</h4>
+                <p>It looks like this session hasn't been uploaded yet. To add encounters into this session, zip up the combatlog and rename it to <b>@Model.UploadFilename</b> before uploading.</p>
+            </div>
+        </div>
+    }
+    <div class="row">
+        <dl class="dl-horizontal">
+            <dt>Date</dt>
+            <dd>@Model.Session.Date.Add(Model.TimeZoneOffset)</dd>
+        </dl>
+        <dl class="dl-horizontal">
+            <dt>Duration</dt>
+            <dd>@Model.Session.Duration</dd>
+        </dl>
+        <dl class="dl-horizontal">
+            <dt>Uploaded By</dt>
+            <dd>@Model.Session.AuthUserCharacter.FullDisplayName</dd>
+        </dl>
+        <dl class="dl-horizontal">
+            <dt>Total Encounters</dt>
+            <dd>@Model.Encounters.Count</dd>
+        </dl>
+    </div>*@
+<div class="row">
+    <h3>Encounters</h3>
+    <div class="table-responsive">
+        @using (Html.BeginForm("RemoveSelectedEncounters", "Session", FormMethod.Post))
+        {
+            @Html.HiddenFor(m => m.Session.Id)
+            <table class="table table-striped table-condensed table-hover">
+                <thead>
+                    <tr>
+                        @if (Model.CanBeRemoved)
+                        {
+                            <th class="text-center" width="90px">Delete</th>
+                        }
+                        <th class="text-center">#</th>
+                        <th class="text-center">Time</th>
+                        <th class="text-center">Boss</th>
+                        @if (Model.Encounters.Any(e => e.SuccessfulKill))
+                        {
+                            <th class="text-center">Difficulty</th>
+                        }
+                        <th class="text-center">Fight Length</th>
+                        <th class="text-center">Overall rank (time)</th>
+                        <th class="text-center">Outgoing DPS</th>
+                        <th class="text-center">Overall rank (DPS)</th>
+                        <th class="text-center">Deaths</th>
+                        <th class="text-center">Outcome</th>
+                        <th class="text-center">Status</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{ var encNumber = 1; }
+                    @foreach (var encounter in Model.Encounters)
+                    {
+                        @*<tr class="@encounter.SuccessClass">*@
+                        <tr>
+                            @if (Model.CanBeRemoved)
+                            {
+                                @*<td class="text-center">@Html.ImageActionLink("RemoveEncounter", "Encounter", new { @id = encounter.Id }, "", "fa fa-lg fa-trash-o text-warning", "Remove")</td>*@
+                                <td class="text-center">@Html.CheckBox(string.Format("chkRemoveEncounter{0}", encounter.Id), false)</td>
+                            }
+                            <td class="text-center">@encNumber</td>
+                            <td class="text-center">@encounter.Date.Add(Model.TimeZoneOffset).ToShortTimeString()</td>
+                            @if (User.IsInRole(UserGroups.Admin))
+                            {
+                                <td class="text-center">
+                                    @Html.ActionLink(encounter.BossFight.Name, "BossFight", "Session", new { id = encounter.BossFightId, d = encounter.EncounterDifficultyId }, null)
+                                    @*@encounter.BossFight.Name*@
+                                    @if (encounter.ValidForRanking)
+                                    {
+                                        <i class="fa fa-lg fa-check-circle text-success"></i>
+                                    }
+                                    else
+                                    {
+                                        <i class="fa fa-lg fa-exclamation-circle text-warning"></i>
+                                    }
+                                </td>
+                            }
+                            else
+                            {
+                                <td class="text-center">
+                                    @Html.ActionLink(encounter.BossFight.Name, "BossFight","Session", new { id = encounter.BossFightId, d = encounter.EncounterDifficultyId}, null)
+                                    @*@encounter.BossFight.Name*@
+                                </td>
+                            }
+                            @if (Model.Encounters.Any(e => e.SuccessfulKill))
+                            {
+                                if (encounter.SuccessfulKill)
+                                {
+                                    <td class="text-center">
+                                        <span class="@encounter.EncounterDifficulty.DisplayClass">@string.Format("{0} mode", encounter.EncounterDifficulty.Name)</span>
+                                    </td>
+                                }
+                                else
+                                {
+                                    <td class="text-center">-</td>
+                                }
+                            }
+                            <td class="text-center">@encounter.Duration</td>
+                            <td class="text-center">@encounter.OverallKillTimeRank</td>
+                            <td class="text-center">@encounter.AverageDps</td>
+                            <td class="text-center">@encounter.OverallDPSRank</td>
+                            <td class="text-center">@encounter.PlayerDeaths</td>
+                            <td class="text-center @encounter.SuccessClass">@string.Format("{0}", encounter.SuccessfulKill ? "Kill" : "Wipe")</td>
+                            <td class="text-center">
+                                @if (encounter.IsPublic)
+                                {
+                                    if (encounter.CanModifyPrivacy)
+                                    {
+                                        @Html.ImageActionLink("MakePrivate", "Encounter", new { @eid = encounter.Id, @sid = Model.Session.Id }, "", "fa fa-lg fa-unlock")
+                                    }
+                                    else
+                                    {
+                                        <i class="fa fa-lg fa-unlock"></i>
+                                    }
+                                }
+                                else
+                                {
+                                    if (encounter.CanModifyPrivacy)
+                                    {
+                                        @Html.ImageActionLink("MakePublic", "Encounter", new { @eid = encounter.Id, @sid = Model.Session.Id }, "", "fa fa-lg fa-lock")
+                                    }
+                                    else
+                                    {
+                                        <i class="fa fa-lg fa-lock"></i>
+                                    }
+                                }
+                            </td>
+                            @if (encounter.IsViewable)
+                            {
+                                <td width="120px">@Html.ActionLink("View Encounter", "Overview", "Encounter", new { @id = encounter.Id }, null)</td>
+                            }
+                            else
+                            {
+                                <td width="auto"></td>
+                            }
+                        </tr>
+                            encNumber++;
+                    }
+                </tbody>
+            </table>
+
+            if (Model.CanBeRemoved)
+            {
+                <input type="submit" value="Remove selected encounters" class="btn btn-danger" />
+            }
+        }
+    </div>
+</div>
+@*</div>
+    </div>*@

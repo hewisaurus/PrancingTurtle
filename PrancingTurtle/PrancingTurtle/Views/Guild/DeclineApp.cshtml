@@ -1,0 +1,37 @@
+﻿@using PrancingTurtle.Helpers
+@{
+    ViewBag.Title = "Decline Guild Application";
+}
+
+<br />
+
+<div class="row">
+    <div class="col-lg-6 col-centered">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Decline Guild Application</h3>
+            </div>
+            <div class="panel-body">
+
+                <h4>Are you sure you wish to decline the application for @Model.Character.CharacterName?</h4>
+
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+
+                    <div class="form-horizontal">
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+                                <input type="submit" value="Yes" class="btn btn-success" />
+                                @Html.ActionLink("No", "Index", new { @id = Model.GuildId }, new { @class = "btn btn-danger" })
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+            <div class="panel-footer">
+                @Html.ImageActionLink("Index", "Guild", new { @id = Model.GuildId }, "text-warning", "fa fa-lg fa-arrow-circle-left", "Back")
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+﻿@model int
+@{
+    ViewBag.Title = "Application Approved";
+}
+
+<br />
+
+<div class="row">
+    <div class="col-lg-6 col-centered">
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <h3 class="panel-title">Application Approved!</h3>
+            </div>
+            <div class="panel-body">
+
+                <h4>You have successfully approved this application.</h4>
+
+                @Html.ActionLink("Click here to go back to the guild management page", "Index", new { @id = Model }, new { @class = "text-warning" })
+            </div>
+        </div>
+    </div>
+</div>

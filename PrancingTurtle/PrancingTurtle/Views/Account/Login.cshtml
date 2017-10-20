@@ -1,0 +1,89 @@
+﻿@model PrancingTurtle.Models.LoginViewModel
+
+@{
+    ViewBag.Title = "Log in";
+}
+
+
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        <section class="login-form">
+            @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "login" }))
+            {
+                @Html.AntiForgeryToken()
+                <img src="~/Content/turtle/turtleTwitter.png" height="100" width="100" />
+                
+                <h2 class="text-center">
+                    Login to PrancingTurtle
+                </h2>
+                @Html.ValidationSummary(false, "", new { @class = "alert-danger nobullet" })
+
+                @Html.TextBoxFor(m => m.Email, new { @class = "form-control input-lg fullwidth", placeholder = "Your email address" })
+                @Html.PasswordFor(m => m.Password, new { @class = "form-control input-lg fullwidth", placeholder = "Password" })
+                <button type="submit" name="go" class="btn btn-lg btn-success btn-block">Login</button>
+
+                
+            }
+
+            <br/>
+            @Html.Raw(string.Format("<b>{0}</b>, <b>{1}</b> or <b>{2}</b>",
+                     @Html.ActionLink("Create an account", "Register", null, new {@class="text-info"}),
+                                   @Html.ActionLink("reset a forgotten password", "ForgotPassword", null, new { @class = "text-info" }),
+                                        @Html.ActionLink("resend the verification email!", "Reverify", null, new { @class = "text-info" })))
+        </section>
+    </div>
+    <div class="col-md-4"></div>
+</div>
+@*<h2>@ViewBag.Title.</h2>
+<div class="row">
+    <div class="col-md-8">
+        <section id="loginForm">
+            @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+            {
+                @Html.AntiForgeryToken()
+                @Html.HiddenFor(m => m.PostLoginUser)
+                @Html.HiddenFor(m => m.ReturnUrl)
+                <hr />
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
+                    <div class="col-md-10">
+                        @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <div class="checkbox checkbox-inline">
+                            @Html.CheckBoxFor(m => m.RememberMe)
+                            @Html.LabelFor(m => m.RememberMe)
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Log in" class="btn btn-default" />
+                    </div>
+                </div>
+                <br />
+                <div class="form-group">
+                    <div class="col-md-12">
+                        @Html.ActionLink("Register a new account", "Register") | @Html.ActionLink("Resend verification email", "Reverify") | @Html.ActionLink("Help, I've forgotten my password!", "ForgotPassword")
+                    </div>
+                </div>
+            }
+        </section>
+    </div>
+</div>*@
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

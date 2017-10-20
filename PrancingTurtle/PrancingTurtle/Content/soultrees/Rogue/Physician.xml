@@ -1,0 +1,1320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SoulTree calling="Rogue" name="Physician">
+  <Traits>
+    <Trait>
+      <Key>0</Key>
+      <Name>High Metabolism</Name>
+      <Icon>defiler_jealous_intervention_cc</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1390290023</AbilityId>
+          <Description></Description>
+          <AddonId>A52DE246700000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Attack Power and Weapon Damage by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Attack Power and Weapon Damage by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your Attack Power and Weapon Damage by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your Attack Power and Weapon Damage by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your Attack Power and Weapon Damage by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>1</Key>
+      <Name>Antiseptic</Name>
+      <Icon>invigorate1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>616808280</AbilityId>
+          <Description></Description>
+          <AddonId>A24C3BF5800000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases healing and absorption done by 1%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases healing and absorption done by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases healing and absorption done by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases healing and absorption done by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases healing and absorption done by 5%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>2</Key>
+      <Name>Improved Urgent Care</Name>
+      <Icon>sentinel_wrathful_exuberance_b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>887509556</AbilityId>
+          <Description></Description>
+          <AddonId>A34E6523400000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces the cooldown of Urgent Care by 2s.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reduces the cooldown of Urgent Care by 4s.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>3</Key>
+      <Name>Medicinal Leeching</Name>
+      <Icon>medicinal_leeching</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>477945964</AbilityId>
+          <Description>Deals 1434 Earth damage over 8s. Heals the Rogue for 780 health over 8s. Awards 1 Combo Point.</Description>
+          <AddonId>A1C7CE06C7BEC62F9</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+          <Cooldown>8.000000</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <CostEnergy>24</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <GainComboPoints>1</GainComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>4</Key>
+      <Name>Gene Amplification</Name>
+      <Icon>voidknight_catalyze_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>449448019</AbilityId>
+          <Description></Description>
+          <AddonId>A1ACA085300000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Critical Hit chance by 1%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Critical Hit chance by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your Critical Hit chance by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your Critical Hit chance by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your Critical Hit chance by 5%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>5</Key>
+      <Name>Residual Care</Name>
+      <Icon>beastmaster_shared_bonds_c</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Urgent Care heals 2 other allies for 12% of the amount healed.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Urgent Care heals 2 other allies for 24% of the amount healed.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Urgent Care heals 2 other allies for 36% of the amount healed.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Urgent Care heals 2 other allies for 48% of the amount healed.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Urgent Care heals 2 other allies for 60% of the amount healed.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>6</Key>
+      <Name>Bloodletting</Name>
+      <Icon>defiler_bond_of_pain_e</Icon>
+      <PrereqTraitKey>3</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Medicinal Leeching heals up to 4 other party or raid members at 33% effectiveness.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Medicinal Leeching heals up to 4 other party or raid members at 66% effectiveness.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Medicinal Leeching heals up to 4 other party or raid members at 100% effectiveness.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>7</Key>
+      <Name>Detoxification</Name>
+      <Icon>detoxification</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>410171607</AbilityId>
+          <Description>Removes 1 Curse, Poison or Disease.</Description>
+          <AddonId>A1872B8D769C37A4E</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+          <MaxRange>35.000000</MaxRange>
+          <CostEnergy>10</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>8</Key>
+      <Name>Biofeedback</Name>
+      <Icon>sentinel_wrathful_exuberance</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1137094655</AbilityId>
+          <Description>Restores 16888 health over 5s. Reduces damage taken by 15%. Allows movement.</Description>
+          <AddonId>A43C6AFFF6D66A7D6</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+          <Cooldown>60.000004</Cooldown>
+          <MaxRange>35.000000</MaxRange>
+          <CostEnergy>5</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+          <Channel>true</Channel>
+          <Duration>5.000000</Duration>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>9</Key>
+      <Name>Paramedic Training</Name>
+      <Icon>heal1a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1341336522</AbilityId>
+          <Description></Description>
+          <AddonId>A4FF32BCA00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases healing and absorption done with single target abilities by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases healing and absorption done with single target abilities by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases healing and absorption done with single target abilities by 9%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases healing and absorption done with single target abilities by 12%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases healing and absorption done with single target abilities by 15%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>10</Key>
+      <Name>Combination Therapy</Name>
+      <Icon>restore1</Icon>
+      <PrereqTraitKey>7</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Detoxification heals the target for 12.5% of your Attack Power</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Detoxification heals the target for 25% of your Attack Power</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>11</Key>
+      <Name>Adrenaline Shot</Name>
+      <Icon>adrenaline_shot</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1718699638</AbilityId>
+          <Description>Instantly recovers 50 Energy.</Description>
+          <AddonId>A667146769D9572F0</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>20.000000</Cooldown>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>12</Key>
+      <Name>Extended Therapy</Name>
+      <Icon>paladin-preservation_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1968355375</AbilityId>
+          <Description></Description>
+          <AddonId>A7552B82F00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the healing done by Maintenance Therapy and Group Therapy by 10%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the healing done by Maintenance Therapy and Group Therapy by 20%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>13</Key>
+      <Name>Advanced Medical Studies</Name>
+      <Icon>generic_ability_027_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>2011711453</AbilityId>
+          <Description></Description>
+          <AddonId>A77E847DD00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Weapon and Attack Power contribution to healing and absorption abilities by 5%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Weapon and Attack Power contribution to healing and absorption abilities by 10%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your Weapon and Attack Power contribution to healing and absorption abilities by 15%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your Weapon and Attack Power contribution to healing and absorption abilities by 20%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your Weapon and Attack Power contribution to healing and absorption abilities by 25%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>14</Key>
+      <Name>Self Help</Name>
+      <Icon>sentinel_wrathful_exuberance_cc</Icon>
+      <PrereqTraitKey>8</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Biofeedback heals for an additional 10%. Increases the absorption amount of Preventive Medication by 5%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Biofeedback heals for an additional 20%. Increases the absorption amount of Preventive Medication by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>15</Key>
+      <Name>Mass Detox</Name>
+      <Icon>immunization</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>551577794</AbilityId>
+          <Description>Removes 1 Curse, Disease, or Poison from up to 10 party or raid members.</Description>
+          <AddonId>A20E068C2C0CD89F9</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+          <Cooldown>10.000000</Cooldown>
+          <CostEnergy>10</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+          <Radius>25.000000</Radius>
+          <MaxAffected>10</MaxAffected>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>16</Key>
+      <Name>Cognitive Enhancement</Name>
+      <Icon>spiritual_will</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>2101058434</AbilityId>
+          <Description></Description>
+          <AddonId>A7D3B9B826E4DE34C</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Combo Point generating abilities increases the healing of your next Finisher by 2% per stack. Stacks up to 3 times. Lasts 15s.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your Combo Point generating abilities increases the healing of your next Finisher by 4% per stack. Stacks up to 3 times. Lasts 15s.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Your Combo Point generating abilities increases the healing of your next Finisher by 6% per stack. Stacks up to 3 times. Lasts 15s.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>17</Key>
+      <Name>Simultaneous Treatment</Name>
+      <Icon>simultaneous_treatment</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1897269016</AbilityId>
+          <Description>Causes 30% of overhealing recieved by raid members from the Physician&apos;s single target abilities to be transferred into an absorb shield. Caps at 5% of the target&apos;s Max Hit Points. Lasts 1 hr. </Description>
+          <AddonId>A711607184FB28342</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+          <CostEnergy>10</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+          <Duration>3600.000000</Duration>
+          <Interval>10.000000</Interval>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>18</Key>
+      <Name>Reverse Genetics</Name>
+      <Icon>defiler_grief_blight</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1313430493</AbilityId>
+          <Description></Description>
+          <AddonId>A4E495BDD00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases healing and absorption done with Physician Finishers by 5%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases healing and absorption done with Physician Finishers by 10%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases healing and absorption done with Physician Finishers by 15%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases healing and absorption done with Physician Finishers by 20%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases healing and absorption done with Physician Finishers by 25%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>19</Key>
+      <Name>Applied Medical Practices</Name>
+      <Icon>faithful_doctrine_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1973499899</AbilityId>
+          <Description></Description>
+          <AddonId>A75A137FB00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces the cooldown of Causal Treatment and Massive Therapy by 5s and increases their healing done by 10%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reduces the cooldown of Causal Treatment and Massive Therapy by 10s and increases their healing done by 20%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>20</Key>
+      <Name>Sequential Treatment</Name>
+      <Icon>chloromancer_void_life_01</Icon>
+      <PrereqTraitKey>17</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the cap of Simultaneous Treatment by 5% of the target&apos;s Max Hit Points.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the cap of Simultaneous Treatment by 10% of the target&apos;s Max Hit Points.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>21</Key>
+      <Name>Expectant Treatment</Name>
+      <Icon>expectant_treatment</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>361512347</AbilityId>
+          <Description>Absorbs 2631 damage. Lasts 10s. Awards 1 Combo Point.</Description>
+          <AddonId>A158C3D9B89A7A0A0</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+          <Cooldown>6.000000</Cooldown>
+          <MaxRange>35.000000</MaxRange>
+          <CostEnergy>20</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <GainComboPoints>1</GainComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>22</Key>
+      <Name>Emergency Response</Name>
+      <Icon>emergency_response</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>40</MinimumPointsSpent>
+      <DisplayRow>8</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>2106245619</AbilityId>
+          <Description>Restores health equal to 100% of the Rogue&apos;s Maximum Health. Absorbs 2199 damage as well.</Description>
+          <AddonId>A7D8AC1F35CE775D2</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+          <Cooldown>60.000004</Cooldown>
+          <MaxRange>35.000000</MaxRange>
+          <CostEnergy>5</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+          <PowerStatCoefficient effect="0" action="0">0.000000E+000</PowerStatCoefficient>
+          <AggroMultiplier effect="0" action="0">0.250000</AggroMultiplier>
+          <PowerStatCoefficient effect="1" action="0">2.750000</PowerStatCoefficient>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+  </Traits>
+  <Abilities>
+    <Ability>
+      <MinimumPointsInSoul>8</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Active Treatment</Name>
+      <Icon>active_treatment</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>8</RequiredLevel>
+        <AbilityId>-38581808</AbilityId>
+        <Description>Restores 1059 to 1171 health. Awards 1 Combo Point.</Description>
+        <AddonId>AFDB349D0594F9099</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <MaxRange>35.000000</MaxRange>
+        <CostEnergy>24</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>1</GainComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Surgical Strike</Name>
+      <Icon>surgical_strike</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>81530612</AbilityId>
+        <Description>Deals 670 to 741 Earth damage. Heals the Rogue for 179 to 197 health. Awards 1 Combo Point.</Description>
+        <AddonId>A04DC0EF496341F49</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>24</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>1</GainComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>54</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Supportive Care</Name>
+      <Icon>supportive_care</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>53</RequiredLevel>
+        <AbilityId>143820054</AbilityId>
+        <Description>Buffs a single party or raid member. Whenever you cast a single target Physician heal or absorb, the target gains a 50% absorption shield. Lasts 1 hr. Absorbs up to 914 damage. Can only be used on 1 party or raid member at a time.</Description>
+        <AddonId>A089285165047002F</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <MaxRange>35.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Duration>3600.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>40</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Pandemic</Name>
+      <Icon>defiler_loathsome_restoration_d</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>40</RequiredLevel>
+        <AbilityId>266307757</AbilityId>
+        <Description>Buffs the Rogue, causing Surgical Strike and Plasma Strike to deal additional 744 Earth damage to up to 5 enemies. Causes Surgical Strike and Plasma Strike to heal up to 4 party or raid members. Increases the healing done by Surgical Strike, Plasma Strike and Medicinal Leeching by 50%. Reduces Energy Regeneration Rate by 5/s. Lasts until cancelled.</Description>
+        <AddonId>A0FDF88AD93810707</AddonId>
+        <IsPassive>False</IsPassive>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>4</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Preventive Medication</Name>
+      <Icon>preventive_medication</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>4</RequiredLevel>
+        <AbilityId>282490000</AbilityId>
+        <Description>When hit, the Rogue gains an absorption shield that absorbs 50% damage taken up to 742 damage. Can be triggered at most once every 20s. Lasts 1h.</Description>
+        <AddonId>A10D674909D6AEB94</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>20</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Viral Infection</Name>
+      <Icon>poisoned</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>20</RequiredLevel>
+        <AbilityId>300423142</AbilityId>
+        <Description>Debuffs a single enemy, causing any of your Physician healing or absorb abilities to deal 1783 damage. Lasts 10 min. Can only be used on 1 enemy at a time.</Description>
+        <AddonId>A11E817E66A79DD07</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Duration>600.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Expectant Treatment</Name>
+      <Icon>expectant_treatment</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>361512347</AbilityId>
+        <Description>Absorbs 2631 damage. Lasts 10s. Awards 1 Combo Point.</Description>
+        <AddonId>A158C3D9B89A7A0A0</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <Cooldown>6.000000</Cooldown>
+        <MaxRange>35.000000</MaxRange>
+        <CostEnergy>20</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>1</GainComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Detoxification</Name>
+      <Icon>detoxification</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>410171607</AbilityId>
+        <Description>Removes 1 Curse, Poison or Disease.</Description>
+        <AddonId>A1872B8D769C37A4E</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <MaxRange>35.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Medicinal Leeching</Name>
+      <Icon>medicinal_leeching</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>477945964</AbilityId>
+        <Description>Deals 1434 Earth damage over 8s. Heals the Rogue for 780 health over 8s. Awards 1 Combo Point.</Description>
+        <AddonId>A1C7CE06C7BEC62F9</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <Cooldown>8.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>24</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>1</GainComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Mass Detox</Name>
+      <Icon>immunization</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>551577794</AbilityId>
+        <Description>Removes 1 Curse, Disease, or Poison from up to 10 party or raid members.</Description>
+        <AddonId>A20E068C2C0CD89F9</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <Cooldown>10.000000</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Radius>25.000000</Radius>
+        <MaxAffected>10</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>2</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Plasma Strike</Name>
+      <Icon>plasma_strike</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>2</RequiredLevel>
+        <AbilityId>580547903</AbilityId>
+        <Description>Deals additional Earth damage per Combo Point. Restores health to the Rogue per Combo Point.
+
+1 Point: 679 damage, 294 health
+2 Points: 873 damage, 325 health
+3 Points: 1132 damage, 362 health
+4 Points: 1456 damage, 403 health
+5 Points: 1845 damage, 450 health</Description>
+        <AddonId>A229A753F8E3B8F7C</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>16</CostEnergy>
+        <ConsumesComboPoints>True</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>51</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Massive Therapy</Name>
+      <Icon>massive_therapy</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>50</RequiredLevel>
+        <AbilityId>586550469</AbilityId>
+        <Description>Restores additional health per Combo Point.
+
+1 Point: 2318 health
+2 Points: 2820 health
+3 Points: 3490 health
+4 Points: 4328 health
+5 Points: 5333 health</Description>
+        <AddonId>A22F60CC5B5B3C37F</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <Cooldown>40.000000</Cooldown>
+        <MaxRange>35.000000</MaxRange>
+        <CostEnergy>16</CostEnergy>
+        <ConsumesComboPoints>True</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">7.000000</PowerStatCoefficient>
+        <AggroMultiplier effect="0" action="0">0.500000</AggroMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>12</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Maintenance Therapy</Name>
+      <Icon>maintenance_therapy</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>12</RequiredLevel>
+        <AbilityId>773681108</AbilityId>
+        <Description>Restores additional health per Combo Point.
+
+1 Point: 1232 health, 435 health over 6s
+2 Points: 1485 health, 508 health over 6s
+3 Points: 1823 health, 597 health over 6s
+4 Points: 2246 health, 696 health over 6s
+5 Points: 2753 health, 810 health over 6s</Description>
+        <AddonId>A2E1D6FD45662614E</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <MaxRange>35.000000</MaxRange>
+        <CostEnergy>16</CostEnergy>
+        <ConsumesComboPoints>True</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">3.530000</PowerStatCoefficient>
+        <AggroMultiplier effect="0" action="0">0.500000</AggroMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Biofeedback</Name>
+      <Icon>sentinel_wrathful_exuberance</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1137094655</AbilityId>
+        <Description>Restores 16888 health over 5s. Reduces damage taken by 15%. Allows movement.</Description>
+        <AddonId>A43C6AFFF6D66A7D6</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <Cooldown>60.000004</Cooldown>
+        <MaxRange>35.000000</MaxRange>
+        <CostEnergy>5</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Channel>true</Channel>
+        <Duration>5.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>48</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Precise Diagnosis</Name>
+      <Icon>generic_ability_026_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>48</RequiredLevel>
+        <AbilityId>1197253701</AbilityId>
+        <Description>Instantly awards the Rogue 5 Combo Points.</Description>
+        <AddonId>A475CA44594BFB781</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>20.000000</Cooldown>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>5</GainComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>61</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Life Insurance</Name>
+      <Icon>paladin-preservation_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>60</RequiredLevel>
+        <AbilityId>1389727474</AbilityId>
+        <Description>Buffs a single ally with an absorption shield that absorbs 5883 damage. Lasts up to 10s. If the target receives a killing blow within that time, restores 50% health. Can only be used on 1 ally at a time.</Description>
+        <AddonId>A52D58EF2B55774DF</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <Cooldown>60.000004</Cooldown>
+        <MaxRange>35.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">6.880000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>44</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Alternative Treatment</Name>
+      <Icon>untangle_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>44</RequiredLevel>
+        <AbilityId>1541815226</AbilityId>
+        <Description>Causes all Physician Combo Point generating heals and absorbs to affect up to 5 party or raid members, heals are 50% less effective (70% in PVP) while absorbs are 50% less effective. Reduces Energy Regeneration Rate by 5/s. Lasts until cancelled.</Description>
+        <AddonId>A5BE63BBA9AC5A76E</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>8.000000</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>28</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Mass Blood Transfusion</Name>
+      <Icon>mass_blood_transfusion</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>28</RequiredLevel>
+        <AbilityId>1550809148</AbilityId>
+        <Description>Deals 2168 to 2396 Earth damage over 4s to up to 5 enemies. Heals the Rogue for 169 to 187 health for each enemy hit. Allows movement.</Description>
+        <AddonId>A5C6F783C9DE8BFC1</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <CostEnergy>30</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Channel>true</Channel>
+        <Duration>4.000000</Duration>
+        <Interval>1.000000</Interval>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>32</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Causal Treatment</Name>
+      <Icon>biofeedback</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>32</RequiredLevel>
+        <AbilityId>1621415636</AbilityId>
+        <Description>Restores 2415 to 2669 health. Awards 2 Combo Points.</Description>
+        <AddonId>A60A4D6D46523FD26</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <Cooldown>10.000000</Cooldown>
+        <MaxRange>35.000000</MaxRange>
+        <CostEnergy>36</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>2</GainComboPoints>
+        <CastTime>1.500000</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Adrenaline Shot</Name>
+      <Icon>adrenaline_shot</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1718699638</AbilityId>
+        <Description>Instantly recovers 50 Energy.</Description>
+        <AddonId>A667146769D9572F0</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>20.000000</Cooldown>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Physician Mastery</Name>
+      <Icon>inspiration4</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1785898280</AbilityId>
+        <Description>Increases healing and absorption done by 1% for each point spent in the Physician soul.</Description>
+        <AddonId>A6A72A528734CFBF0</AddonId>
+        <IsPassive>True</IsPassive>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>24</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Preemptive Therapy</Name>
+      <Icon>preemptive_therapy</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>24</RequiredLevel>
+        <AbilityId>1854733082</AbilityId>
+        <Description>Absorbs damage per Combo Point. Lasts up to 15s.
+
+1 Point: Absorbs 1242 damage
+2 Points: Absorbs 1529 damage
+3 Points: Absorbs 1910 damage
+4 Points: Absorbs 2387 damage
+5 Points: Absorbs 2961 damage</Description>
+        <AddonId>A6E8CFB1A96C0F08A</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <MaxRange>35.000000</MaxRange>
+        <CostEnergy>16</CostEnergy>
+        <ConsumesComboPoints>True</ConsumesComboPoints>
+        <CastTime>1.500000</CastTime>
+        <PowerStatCoefficient effect="0" action="0">3.490000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>16</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Group Therapy</Name>
+      <Icon>group_therapy</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>16</RequiredLevel>
+        <AbilityId>1889486536</AbilityId>
+        <Description>Restores health per Combo Point to up to 10 party or raid members over 15s.
+
+1 Point: 878 health
+2 Points: 1051 health
+3 Points: 1280 health
+4 Points: 1567 health
+5 Points: 1912 health</Description>
+        <AddonId>A709F46C856107C8B</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <MaxRange>35.000000</MaxRange>
+        <CostEnergy>18</CostEnergy>
+        <ConsumesComboPoints>True</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Radius>30.000000</Radius>
+        <MaxAffected>10</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Simultaneous Treatment</Name>
+      <Icon>simultaneous_treatment</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1897269016</AbilityId>
+        <Description>Causes 30% of overhealing recieved by raid members from the Physician&apos;s single target abilities to be transferred into an absorb shield. Caps at 5% of the target&apos;s Max Hit Points. Lasts 1 hr. </Description>
+        <AddonId>A711607184FB28342</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Duration>3600.000000</Duration>
+        <Interval>10.000000</Interval>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>36</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Kiss of Life</Name>
+      <Icon>kiss_of_life</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>36</RequiredLevel>
+        <AbilityId>1927669553</AbilityId>
+        <Description>Brings the fallen ally back to life, restoring 50% health and mana. Usable in combat.</Description>
+        <AddonId>A72E5E73166B95DD1</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>300.000000</Cooldown>
+        <MaxRange>35.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Urgent Care</Name>
+      <Icon>urgent_care</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>2019895836</AbilityId>
+        <Description>Restores 2914 to 3221 health.</Description>
+        <AddonId>A78652A1CAC5F41C5</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <Cooldown>10.000000</Cooldown>
+        <MaxRange>35.000000</MaxRange>
+        <CostEnergy>24</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">3.520000</PowerStatCoefficient>
+        <AggroMultiplier effect="0" action="0">0.500000</AggroMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>58</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Intensive Care</Name>
+      <Icon>bard_harmonic_distortion_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>57</RequiredLevel>
+        <AbilityId>2072223209</AbilityId>
+        <Description>All healing and absorption abilities that are Builders or Finishers are increased by 50% for 10s. </Description>
+        <AddonId>A7B839DE92DA3A304</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>120.000008</Cooldown>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Duration>10.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Emergency Response</Name>
+      <Icon>emergency_response</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>2106245619</AbilityId>
+        <Description>Restores health equal to 100% of the Rogue&apos;s Maximum Health. Absorbs 2199 damage as well.</Description>
+        <AddonId>A7D8AC1F35CE775D2</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Ranged Weapon</RequiresWeapon>
+        <Cooldown>60.000004</Cooldown>
+        <MaxRange>35.000000</MaxRange>
+        <CostEnergy>5</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">0.000000E+000</PowerStatCoefficient>
+        <AggroMultiplier effect="0" action="0">0.250000</AggroMultiplier>
+        <PowerStatCoefficient effect="1" action="0">2.750000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+  </Abilities>
+</SoulTree>
+

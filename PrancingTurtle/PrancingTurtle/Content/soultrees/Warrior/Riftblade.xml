@@ -1,0 +1,1399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SoulTree calling="Warrior" name="Riftblade">
+  <Traits>
+    <Trait>
+      <Key>0</Key>
+      <Name>Elemental Empowerment</Name>
+      <Icon>lightingbolt4</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-64647095</AbilityId>
+          <Description></Description>
+          <AddonId>AFC25904900000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases damage by 2%</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases damage by 4%</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases damage by 6%</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>1</Key>
+      <Name>Elemental Flux</Name>
+      <Icon>chainlighting1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Blade buffs gain an additional 3% chance to hit.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Blade buffs gain an additional 6% chance to hit.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Blade buffs gain an additional 9% chance to hit.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Blade buffs gain an additional 12% chance to hit.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Blade buffs gain an additional 15% chance to hit.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>2</Key>
+      <Name>Windspear</Name>
+      <Icon>lance1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1505512909</AbilityId>
+          <Description>Stuns the target for 3s.</Description>
+          <AddonId>A59BC4DCD4FAA5B41</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Melee Weapon</RequiresWeapon>
+          <Cooldown>30.000002</Cooldown>
+          <MaxRange>20.000000</MaxRange>
+          <CostEnergy>10</CostEnergy>
+          <CastTime>Instant</CastTime>
+          <Radius>7.000000</Radius>
+          <MaxAffected>1</MaxAffected>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Unlocks the Windspear ability.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>3</Key>
+      <Name>Elemental Touch</Name>
+      <Icon>souldrain3</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>679718004</AbilityId>
+          <Description></Description>
+          <AddonId>A2883AC74539F854E</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your non-finisher ability attacks have a 33% chance to deal an additional 3% of your Attack Power as Air damage. </Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your non-finisher ability attacks have a 66% chance to deal an additional 3% of your Attack Power as Air damage.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Your non-finisher ability attacks have a 100% chance to deal an additional 3% of your Attack Power as Air damage.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>4</Key>
+      <Name>Elemental Precision</Name>
+      <Icon>shaman-glory_of_the_chosen</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>922020252</AbilityId>
+          <Description></Description>
+          <AddonId>A36F4E99C00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Non Physical attacks ignore 2% of the target’s Resists.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Non Physical attacks ignore 4% of the target’s Resists.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Non Physical attacks ignore 6% of the target’s Resists.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Non Physical attacks ignore 8% of the target’s Resists.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Non Physical attacks ignore 10% of the target’s Resists.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>5</Key>
+      <Name>Burning Blood</Name>
+      <Icon>bleeding_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1631921368</AbilityId>
+          <Description></Description>
+          <AddonId>A614524D86DD7AED3</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>When struck in Melee combat, there is a 10% chance that the enemy will be hit for 6% of Attack Power as Fire damage.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>When struck in Melee combat, there is a 20% chance that the enemy will be hit for 6% of Attack Power as Fire damage.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>When struck in Melee combat, there is a 30% chance that the enemy will be hit for 6% of Attack Power as Fire damage.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>6</Key>
+      <Name>Affinity</Name>
+      <Icon>archon_crumbling_resistance_01_b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-55548242</AbilityId>
+          <Description></Description>
+          <AddonId>AFCB066AE00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces incoming damage from non Physical attacks by 2%. Increases non Physical damage by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reduces incoming damage from non Physical attacks by 4%. Increases non Physical damage by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Reduces incoming damage from non Physical attacks by 6%. Increases non Physical damage by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Reduces incoming damage from non Physical attacks by 8%. Increases non Physical damage by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Reduces incoming damage from non Physical attacks by 10%. Increases non Physical damage by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>7</Key>
+      <Name>Blade of Elemental Affinity</Name>
+      <Icon>holysweep3aa</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>574912446</AbilityId>
+          <Description>Builders have a 25% chance to heal the Warrior 20% of Attack Power. Only 1 blade spell can be active at a time. Lasts 1h.</Description>
+          <AddonId>A224477BE4EFA9265</AddonId>
+          <IsPassive>False</IsPassive>
+          <CostEnergy>10</CostEnergy>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Unlocks the Blade of Elemental Affinity ability.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>8</Key>
+      <Name>Fork</Name>
+      <Icon>cripplingshot1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-58172091</AbilityId>
+          <Description>Spear abilities hit up to 5 enemies but deal 50% less damage.</Description>
+          <AddonId>AFC885D45D36CEB86</AddonId>
+          <IsPassive>False</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Unlocks the Fork ability.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>9</Key>
+      <Name>Elemental Caress</Name>
+      <Icon>energyblast1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>969362245</AbilityId>
+          <Description></Description>
+          <AddonId>A39C74B45229FC475</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces the threat generated by damage effects by 25%. Increases damage by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reduces the threat generated by damage effects by 50%. Increases damage by 4%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>10</Key>
+      <Name>Improved Avatar</Name>
+      <Icon>absolution_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1788078131</AbilityId>
+          <Description></Description>
+          <AddonId>A6A93E83300000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases Avatar of Wind to 13%, Avatar of Water to 7%, Avatar of Flame damage by 10%, Avatar of the Rift to 20%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases Avatar of Wind to 16%, Avatar of Water to 10%, Avatar of Flame damage by 20%, Avatar of the Rift to 25%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>11</Key>
+      <Name>Burst Capacitor</Name>
+      <Icon>virtuoso_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-45619114</AbilityId>
+          <Description></Description>
+          <AddonId>AFD47E85600000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increase Damage of Bursts and Scald by 8%</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increase Damage of Bursts and Scald by 16%</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increase Damage of Bursts and Scald by 24%</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increase Damage of Bursts and Scald by 32%</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increase Damage of Bursts and Scald by 40%</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>12</Key>
+      <Name>Surging Energy</Name>
+      <Icon>riftblade-surging_energy_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1479236641</AbilityId>
+          <Description></Description>
+          <AddonId>A582B5C21204F0083</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Grants a 25% chance that the Power cost of your next Attack Point generating ability is reduced by 25% on a successful hit.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Grants a 50% chance that the Power cost of your next Attack Point generating ability is reduced by 25% on a successful hit.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>13</Key>
+      <Name>Stoneshield</Name>
+      <Icon>riftblade_stone_shield_01_b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>230076056</AbilityId>
+          <Description>Absorbs 50% of damage taken up to 2757 damage. Lasts 30s. This Ability is not affected by the Global Cooldown.</Description>
+          <AddonId>A0DB6AE988ACBDE8F</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>30.000002</Cooldown>
+          <CostEnergy>10</CostEnergy>
+          <CastTime>Instant</CastTime>
+          <PowerStatCoefficient effect="0" action="0">2.860000</PowerStatCoefficient>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Unlocks Stoneshield ability.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>14</Key>
+      <Name>Quick Burst</Name>
+      <Icon>sanction_heretic_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-18623644</AbilityId>
+          <Description></Description>
+          <AddonId>AFEE3D36400000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases Attack Power and Weapon Damage contribution to Burst attacks by 40%. Power cost of Burst attacks is reduced by 40%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>15</Key>
+      <Name>Elemental Weapon</Name>
+      <Icon>generic_ability_021</Icon>
+      <PrereqTraitKey>3</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>2110576641</AbilityId>
+          <Description></Description>
+          <AddonId>A7DCCD80100000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage done by Elemental Touch by 50%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage done by Elemental Touch by 100%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>16</Key>
+      <Name>Synergy</Name>
+      <Icon>cabalist_sigil_of_ravaging_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-41210563</AbilityId>
+          <Description></Description>
+          <AddonId>AFD8B2D3D4C00205D</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduce the Power cost of Teleports by 50%. Increases the damage of all Finishers by 5%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>17</Key>
+      <Name>Downpour</Name>
+      <Icon>warden-deluge_a</Icon>
+      <PrereqTraitKey>19</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increase duration on Rift Storm by 1 second.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increase duration on Rift Storm by 2 seconds.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>18</Key>
+      <Name>Enhanced Burst</Name>
+      <Icon>energyburst3f</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>209649187</AbilityId>
+          <Description></Description>
+          <AddonId>A0C7EFE2300000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Hitting with a Burst ability increases the damage of non Physical attacks by 10% for 6 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Hitting with a Burst ability increases the damage of non Physical attacks by 20% for 6 seconds.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>19</Key>
+      <Name>Rift Storm</Name>
+      <Icon>generic_ability_031</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>476643581</AbilityId>
+          <Description>Applies Rift Storm to the Warrior, dealing additional Air damage per Attack Point over 6s to up to 5 enemies:
+
+1 Point: 1077 damage.
+2 Points: 1625 damage.
+3 Points: 2453 damage.</Description>
+          <AddonId>A1C6900FD40B56F2A</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>30.000002</Cooldown>
+          <CostEnergy>22</CostEnergy>
+          <CostAttackPoints>1</CostAttackPoints>
+          <CastTime>Instant</CastTime>
+          <Duration>6.000000</Duration>
+          <Interval>1.000000</Interval>
+          <Radius>7.000000</Radius>
+          <MaxAffected>5</MaxAffected>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Unlocks the Rift Storm ability.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>20</Key>
+      <Name>Scald</Name>
+      <Icon>bomb_choking_gas_a</Icon>
+      <PrereqTraitKey>26</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Enemies damaged by Icy Burst while under the effects of Fiery Burst take 3%, 6%, or 9% of Attack Power as Air Damage based on Attack Points used.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Enemies damaged by Icy Burst while under the effects of Fiery Burst take 6%, 12%, or 18% of Attack Power as Air Damage based on Attack Points used.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>21</Key>
+      <Name>Rift Familiarity</Name>
+      <Icon>scatter_the_shadows</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-20519994</AbilityId>
+          <Description></Description>
+          <AddonId>AFEC6E3C600000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the range of Teleports by 3 meters, and Elemental damage by 5%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the range of Teleports by 6 meters, and Elemental damage by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>22</Key>
+      <Name>Rift Barrage</Name>
+      <Icon>purge</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-31074456</AbilityId>
+          <Description>Stuns up to 8 enemies for 3s.</Description>
+          <AddonId>AFE25D76873B07A06</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Melee Weapon</RequiresWeapon>
+          <Cooldown>60.000004</Cooldown>
+          <MaxRange>20.000000</MaxRange>
+          <CostEnergy>11</CostEnergy>
+          <CastTime>Instant</CastTime>
+          <Radius>10.000000</Radius>
+          <MaxAffected>8</MaxAffected>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Unlocks the Rift Barrage ability.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>23</Key>
+      <Name>Avatar of Flame</Name>
+      <Icon>demolition_specialist</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-25886028</AbilityId>
+          <Description>Ability hits have a 20% chance to deal 689 Fire damage back to the attacker. Only 1 Avatar spell can be active at a time. Lasts 1 hour.</Description>
+          <AddonId>AFE7502B4E5899525</AddonId>
+          <IsPassive>False</IsPassive>
+          <CostEnergy>10</CostEnergy>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Unlocks the Avatar of Flame ability.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>24</Key>
+      <Name>Intensify</Name>
+      <Icon>flashback_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-23303184</AbilityId>
+          <Description></Description>
+          <AddonId>AFE9C6BF000000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases Critical Hit Damage and Critical Hit chance by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases Critical Hit Damage and Critical Hit chance by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases Critical Hit Damage and Critical Hit chance by 6%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>25</Key>
+      <Name>Rift Implosion</Name>
+      <Icon>shadow_blitz_b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>40</MinimumPointsSpent>
+      <DisplayRow>8</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>35920450</AbilityId>
+          <Description>Debuffs the enemy, causing any elemental attacks from the Warrior to apply Implosion Surge to the enemy. After 8s, deals 1393 Air damage, increased by 15% per Implosion Surge on the Enemy, maximum of 5. Awards 1 Attack Point.</Description>
+          <AddonId>A02241A426F3737D3</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Melee Weapon</RequiresWeapon>
+          <MaxRange>20.000000</MaxRange>
+          <CostEnergy>20</CostEnergy>
+          <GainAttackPoints>1</GainAttackPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Unlocks the Rift Implosion ability.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>26</Key>
+      <Name>Fiery Burst</Name>
+      <Icon>slam4a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>411115433</AbilityId>
+          <Description>Causes the Warrior&apos;s next attack ability to deal additional Fire damage per Attack Point over 15s. Lasts 15s:
+
+1 Point: 718 damage.
+2 Points: 1083 damage.
+3 Points: 1635 damage.</Description>
+          <AddonId>A18811FA9A44AC000</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>15.000001</Cooldown>
+          <CostEnergy>15</CostEnergy>
+          <CostAttackPoints>1</CostAttackPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Unlocks Fiery Burst ability.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>27</Key>
+      <Name>Improved Frost Strike</Name>
+      <Icon>shaman-vengeance_of_frozen_earth_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the amount Frost Strike enhances Elemental Strike damage by 10%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the amount Frost Strike enhances Elemental Strike damage by 20%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+  </Traits>
+  <Abilities>
+    <Ability>
+      <MinimumPointsInSoul>32</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Rift Travel</Name>
+      <Icon>scatter_the_shadows</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>32</RequiredLevel>
+        <AbilityId>-87529854</AbilityId>
+        <Description>Teleports to the target location.</Description>
+        <AddonId>AFAC8668257BE9F16</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>45.000004</Cooldown>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>58</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Burst Synergy</Name>
+      <Icon>bomb_fragment_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>57</RequiredLevel>
+        <AbilityId>-73394494</AbilityId>
+        <Description>Your next burst has 3 charges instead of 1.</Description>
+        <AddonId>AFBA016C22EBECEA8</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <Duration>15.000001</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Gift of the Riftblade</Name>
+      <Icon>soul_riftblade</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-71412052</AbilityId>
+        <Description>Base Damage is increased by 1% for each Point spent in the Riftblade Soul.</Description>
+        <AddonId>AFBBE56ACC69FACB8</AddonId>
+        <IsPassive>True</IsPassive>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Fork</Name>
+      <Icon>cripplingshot1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-58172091</AbilityId>
+        <Description>Spear abilities hit up to 5 enemies but deal 50% less damage.</Description>
+        <AddonId>AFC885D45D36CEB86</AddonId>
+        <IsPassive>False</IsPassive>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>61</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Blade of the Ascended</Name>
+      <Icon>2h_sword_069a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>60</RequiredLevel>
+        <AbilityId>-38256167</AbilityId>
+        <Description>Grants Storm Blade, Blade of Elemental Affinity, Planar Blade, and Blade of the Ascended which reduces the Power cost of non Physical Finishers by 2 and the damage of Riftblade abilities by 30%. Lasts 1h.</Description>
+        <AddonId>AFDB841D9DAB8E8AA</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Rift Barrage</Name>
+      <Icon>purge</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-31074456</AbilityId>
+        <Description>Stuns up to 8 enemies for 3s.</Description>
+        <AddonId>AFE25D76873B07A06</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>60.000004</Cooldown>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>11</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <Radius>10.000000</Radius>
+        <MaxAffected>8</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Avatar of Flame</Name>
+      <Icon>demolition_specialist</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-25886028</AbilityId>
+        <Description>Ability hits have a 20% chance to deal 689 Fire damage back to the attacker. Only 1 Avatar spell can be active at a time. Lasts 1 hour.</Description>
+        <AddonId>AFE7502B4E5899525</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>54</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Rift Spear</Name>
+      <Icon>2h_staff_078a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>53</RequiredLevel>
+        <AbilityId>-22031241</AbilityId>
+        <Description>Deals 1664 to 1839 Air damage to the target and up to 8 enemies along the path of the projectile. Awards 1 Attack Point.</Description>
+        <AddonId>AFEAFD4777C0A0A9B</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>22</CostEnergy>
+        <GainAttackPoints>1</GainAttackPoints>
+        <CastTime>Instant</CastTime>
+        <Radius>7.000000</Radius>
+        <MaxAffected>1</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Rift Implosion</Name>
+      <Icon>shadow_blitz_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>35920450</AbilityId>
+        <Description>Debuffs the enemy, causing any elemental attacks from the Warrior to apply Implosion Surge to the enemy. After 8s, deals 1393 Air damage, increased by 15% per Implosion Surge on the Enemy, maximum of 5. Awards 1 Attack Point.</Description>
+        <AddonId>A02241A426F3737D3</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>20</CostEnergy>
+        <GainAttackPoints>1</GainAttackPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>8</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Flamespear</Name>
+      <Icon>critical2a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>8</RequiredLevel>
+        <AbilityId>115904938</AbilityId>
+        <Description>Deals 2337 Fire damage over 15s. Awards 1 Attack Point.</Description>
+        <AddonId>A06E891AA7A595DFA</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>4.000000</Cooldown>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>20</CostEnergy>
+        <GainAttackPoints>1</GainAttackPoints>
+        <CastTime>Instant</CastTime>
+        <Radius>7.000000</Radius>
+        <MaxAffected>1</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>44</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Planar Blade</Name>
+      <Icon>shockwave3d</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>44</RequiredLevel>
+        <AbilityId>148138694</AbilityId>
+        <Description>Ability hits have a 25% chance to refresh Riftwalk and Rift Travel. Increases the damage of Riftblade abilities by 10%. Only 1 blade spell can be active at a time. Lasts 1h.</Description>
+        <AddonId>A08D46AC6608339A7</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Stoneshield</Name>
+      <Icon>riftblade_stone_shield_01_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>230076056</AbilityId>
+        <Description>Absorbs 50% of damage taken up to 2757 damage. Lasts 30s. This Ability is not affected by the Global Cooldown.</Description>
+        <AddonId>A0DB6AE988ACBDE8F</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">2.860000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>12</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Frost Strike</Name>
+      <Icon>riftblade_frost_strike_01_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>12</RequiredLevel>
+        <AbilityId>273821893</AbilityId>
+        <Description>Deals 1064 to 1177 Water damage. Increases elemental Strike damage by 10% for 15s. Awards 1 Attack Point.</Description>
+        <AddonId>A105230C5890FDE26</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>20</CostEnergy>
+        <GainAttackPoints>1</GainAttackPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="1" action="0">0.770000</PowerStatCoefficient>
+        <WeaponDamageMultiplier effect="1" action="0">1.150000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>2</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Icy Burst</Name>
+      <Icon>shaman-vengeance_of_winter_storm_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>2</RequiredLevel>
+        <AbilityId>328860256</AbilityId>
+        <Description>The Warrior&apos;s weapon is coated in Ice for 15 seconds. The next attack ability that hits deals extra Water damage:
+
+1 Point: 513 damage.
+2 Points: 774 damage.
+3 Points: 1168 damage.</Description>
+        <AddonId>A139A02604BCAF884</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>15</CostEnergy>
+        <CostAttackPoints>1</CostAttackPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Fiery Burst</Name>
+      <Icon>slam4a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>411115433</AbilityId>
+        <Description>Causes the Warrior&apos;s next attack ability to deal additional Fire damage per Attack Point over 15s. Lasts 15s:
+
+1 Point: 718 damage.
+2 Points: 1083 damage.
+3 Points: 1635 damage.</Description>
+        <AddonId>A18811FA9A44AC000</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>15.000001</Cooldown>
+        <CostEnergy>15</CostEnergy>
+        <CostAttackPoints>1</CostAttackPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Rift Storm</Name>
+      <Icon>generic_ability_031</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>476643581</AbilityId>
+        <Description>Applies Rift Storm to the Warrior, dealing additional Air damage per Attack Point over 6s to up to 5 enemies:
+
+1 Point: 1077 damage.
+2 Points: 1625 damage.
+3 Points: 2453 damage.</Description>
+        <AddonId>A1C6900FD40B56F2A</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <CostEnergy>22</CostEnergy>
+        <CostAttackPoints>1</CostAttackPoints>
+        <CastTime>Instant</CastTime>
+        <Duration>6.000000</Duration>
+        <Interval>1.000000</Interval>
+        <Radius>7.000000</Radius>
+        <MaxAffected>5</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>36</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Thunder Strike</Name>
+      <Icon>riftblade_thunder_strike_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>36</RequiredLevel>
+        <AbilityId>490337432</AbilityId>
+        <Description>Deals 749 to 828 Air damage to up to 5 enemies. Awards 1 Attack Point.</Description>
+        <AddonId>A1D39F498E34BB556</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <CostEnergy>22</CostEnergy>
+        <GainAttackPoints>1</GainAttackPoints>
+        <CastTime>Instant</CastTime>
+        <Radius>7.000000</Radius>
+        <MaxAffected>5</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>24</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Avatar of Water</Name>
+      <Icon>riftblade-avatar_of_water_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>24</RequiredLevel>
+        <AbilityId>501920592</AbilityId>
+        <Description>Reduces damage taken by 5%. Only 1 Avatar spell can be active at a time. Lasts 1h.</Description>
+        <AddonId>A1DEAB3506CDE4844</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <Duration>3600.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Blade of Elemental Affinity</Name>
+      <Icon>holysweep3aa</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>574912446</AbilityId>
+        <Description>Builders have a 25% chance to heal the Warrior 20% of Attack Power. Only 1 blade spell can be active at a time. Lasts 1h.</Description>
+        <AddonId>A224477BE4EFA9265</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>51</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Avatar of the Rift</Name>
+      <Icon>ebon_fury_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>50</RequiredLevel>
+        <AbilityId>586213503</AbilityId>
+        <Description>Enhances Elemental Ability damage by 15%, in addition to reducing the Power cost of Elemental Builders by 2. Only 1 Avatar spell can be active at a time. Lasts 1h.</Description>
+        <AddonId>A22F0E87F6F12ACEC</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <Duration>3600.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>16</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Riftwalk</Name>
+      <Icon>generic_ability_022</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>16</RequiredLevel>
+        <AbilityId>909489591</AbilityId>
+        <Description>Teleports to behind the enemy. Deals 316 to 349 Air damage. Awards 1 Attack Point.</Description>
+        <AddonId>A3635B5B7D0F1874F</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>20</CostEnergy>
+        <GainAttackPoints>1</GainAttackPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>40</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Storm Burst</Name>
+      <Icon>chainlighting5a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>40</RequiredLevel>
+        <AbilityId>1058361955</AbilityId>
+        <Description>Causes the Warrior&apos;s next attack ability to deal additional Air damage per Attack Point to up to 5 enemies. Affected enemies lose 10% of their Mana, 10 Energy or 10 Power. Lasts 15s:
+
+1 Point: 520 damage.
+2 Points: 785 damage.
+3 Points: 1185 damage.</Description>
+        <AddonId>A3F15526328C9C32D</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>8.000000</Cooldown>
+        <CostEnergy>17</CostEnergy>
+        <CostAttackPoints>1</CostAttackPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>4</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Avatar of Wind</Name>
+      <Icon>generic_ability_025_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>4</RequiredLevel>
+        <AbilityId>1115947072</AbilityId>
+        <Description>Increases Dodge by 3% and movement speed by 10%. Lasts 1h.</Description>
+        <AddonId>A4284004052949299</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <Duration>3600.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Windspear</Name>
+      <Icon>lance1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1505512909</AbilityId>
+        <Description>Stuns the target for 3s.</Description>
+        <AddonId>A59BC4DCD4FAA5B41</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <Radius>7.000000</Radius>
+        <MaxAffected>1</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Building Fury</Name>
+      <Icon>carpet_bombing_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1519821007</AbilityId>
+        <Description>Finishers gain a bonus to Attack Power contribution based on how many Attack Points were consumed.</Description>
+        <AddonId>A5A96A0CF7CF516B9</AddonId>
+        <IsPassive>True</IsPassive>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Storm Blade</Name>
+      <Icon>shockwave3</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1557281695</AbilityId>
+        <Description>Non-finisher ability hits have a 25% chance to deal 172 Air damage. Only 1 blade spell can be active at a time.  Lasts 1 hour.</Description>
+        <AddonId>A5CD23B9F9C33368B</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>20</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Earth Burst</Name>
+      <Icon>riftblade-earth_burst_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>20</RequiredLevel>
+        <AbilityId>1634370869</AbilityId>
+        <Description>Causes the Warrior&apos;s next attack ability to deal additional Earth damage per Attack Point to up to 5 enemies. Lasts 15s:
+
+1 Point: 520 damage.
+2 Points: 785 damage.
+3 Points: 1185 damage.</Description>
+        <AddonId>A616A85353AB3DB1F</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>8.000000</Cooldown>
+        <CostEnergy>17</CostEnergy>
+        <CostAttackPoints>1</CostAttackPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Searing Strike</Name>
+      <Icon>shockwave1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1897016662</AbilityId>
+        <Description>Deals 1248 to 1380 Fire damage. Awards 1 Attack Point.</Description>
+        <AddonId>A71122D5669026794</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>20</CostEnergy>
+        <GainAttackPoints>1</GainAttackPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="1" action="0">0.900000</PowerStatCoefficient>
+        <WeaponDamageMultiplier effect="1" action="0">1.350000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>28</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Stonespear</Name>
+      <Icon>2h_polearm_019_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>28</RequiredLevel>
+        <AbilityId>1936866306</AbilityId>
+        <Description>Interrupts</Description>
+        <AddonId>A73723C02BF6828CF</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>8.000000</Cooldown>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <Radius>7.000000</Radius>
+        <MaxAffected>1</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>48</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Rift Strike</Name>
+      <Icon>shadow_assault</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>48</RequiredLevel>
+        <AbilityId>1980969236</AbilityId>
+        <Description>Deals 2220 to 2453 Air damage. Increases the Warrior&apos;s non Physical damage by 25% for 20s. Awards 1 Attack Point.</Description>
+        <AddonId>A76133114B9D2550D</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>15.000001</Cooldown>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>20</CostEnergy>
+        <GainAttackPoints>1</GainAttackPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">1.600000</PowerStatCoefficient>
+        <WeaponDamageMultiplier effect="0" action="0">2.400000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+  </Abilities>
+</SoulTree>
+

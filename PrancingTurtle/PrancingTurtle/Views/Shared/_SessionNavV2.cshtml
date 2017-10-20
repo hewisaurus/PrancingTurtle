@@ -1,0 +1,34 @@
+﻿@model PrancingTurtle.Models.ViewModels.Navigation.SessionNavigation
+
+<li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ranks / records <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+        @foreach (var instanceGroup in Model.BossFightDifficultyRecords.OrderBy(bfd => bfd.BossFight.Instance.Name).GroupBy(bfd => bfd.BossFight.Instance.Name))
+        {
+            <li class="dropdown-submenu">
+                <a href="#">@instanceGroup.Key</a>
+                <ul class="dropdown-menu">
+                    @foreach (var bossFightGroup in instanceGroup.OrderBy(bfd => bfd.BossFight.Name).GroupBy(bfd => new { bfd.BossFight.Name, bfd.BossFight.Id }))
+                    {
+                        if (bossFightGroup.Count() == 1)
+                        {
+                            <li>@Html.ActionLink(bossFightGroup.Key.Name, "BossFight", "Session", new {@id = bossFightGroup.Key.Id}, null)</li>
+                        }
+                        else
+                        {
+                            <li class="dropdown-submenu">
+                                <a href="#">@bossFightGroup.Key.Name</a>
+                                <ul class="dropdown-menu">
+                                    @foreach (var bossFightDifficulty in bossFightGroup.OrderBy(bfd => bfd.EncounterDifficulty.Priority))
+                                    {
+                                        <li>@Html.ActionLink(string.Format("{0} mode", bossFightDifficulty.EncounterDifficulty.Name), "BossFight", "Session", new {@id =bossFightGroup.Key.Id, @d = bossFightDifficulty.EncounterDifficulty.Id}, null)</li>
+                                    }
+                                </ul>
+                            </li>
+                        }
+                    }
+                </ul>
+            </li>
+        }
+    </ul>
+</li>

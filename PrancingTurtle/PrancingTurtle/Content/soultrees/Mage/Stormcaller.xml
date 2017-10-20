@@ -1,0 +1,1181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SoulTree calling="Mage" name="Stormcaller">
+  <Traits>
+    <Trait>
+      <Key>0</Key>
+      <Name>Conductive Medium</Name>
+      <Icon>purge_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>433076634</AbilityId>
+          <Description></Description>
+          <AddonId>A19D0399A6B345F6C</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Casting a Charge consuming ability applies a stack of Conductive medium to you, increasing your damage by 1% per stack. Max 3 stacks. Lasts 15s. While out of combat, you gain a stack of Conductive Medium every 4s.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Casting a Charge consuming ability applies a stack of Conductive medium to you, increasing your damage by 2% per stack. Max 3 stacks. Lasts 15s. While out of combat, you gain a stack of Conductive Medium every 2s.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>1</Key>
+      <Name>High Voltage</Name>
+      <Icon>jaggedlighting2a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1428481129</AbilityId>
+          <Description></Description>
+          <AddonId>A5524E4694A60DD5B</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="4">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases damage done by 1%. Reduces damage taken by 1.25%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases damage done by 2%. Reduces damage taken by 2.5%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases damage done by 3%. Reduces damage taken by 3.75%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases damage done by 4%. Reduces damage taken by 5%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>2</Key>
+      <Name>Cyclogenesis</Name>
+      <Icon>generic_ability_026_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>679238530</AbilityId>
+          <Description></Description>
+          <AddonId>A287C5B823B71BADE</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the Critical Hit chance of your abilities by 1%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the Critical Hit chance of your abilities by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the Critical Hit chance of your abilities by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases the Critical Hit chance of your abilities by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases the Critical Hit chance of your abilities by 5%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>3</Key>
+      <Name>Vengeful Storm</Name>
+      <Icon>harbinger_storm_shroud_a</Icon>
+      <PrereqTraitKey>25</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Living Storm has a 33% chance to reapply itself to another enemy within 10m if its current target dies.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Living Storm has a 66% chance to reapply itself to another enemy within 10m if its current target dies.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Living Storm has a 100% chance to reapply itself to another enemy within 10m if its current target dies.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>4</Key>
+      <Name>Charged Atmosphere</Name>
+      <Icon>dominator_nyxs_orb_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>345030185</AbilityId>
+          <Description></Description>
+          <AddonId>A1490BE296E238819</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Damaging Air abilities, that do not consume Electrified stacks, have a 33% chance to generate an additional stack of Electrified when cast.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Damaging Air abilities, that do not consume Electrified stacks, have a 66% chance to generate an additional stack of Electrified when cast.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Damaging Air abilities, that do not consume Electrified stacks, have a 100% chance to generate an additional stack of Electrified when cast.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>5</Key>
+      <Name>Lightning Rod</Name>
+      <Icon>dark_harbor</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1655147371</AbilityId>
+          <Description></Description>
+          <AddonId>A62A78B6B54A1CA05</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces the pushback caused by damaging attacks while casting area effect spells by 100%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>7</Key>
+      <Name>Perfect Conditions</Name>
+      <Icon>jaggedlighting2</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-60894664</AbilityId>
+          <Description></Description>
+          <AddonId>AFC5ED23863C1D343</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces the mana cost of your area effect abilities by 10%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reduces the mana cost of your area effect abilities by 20%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Reduces the mana cost of your area effect abilities by 30%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>8</Key>
+      <Name>Hailstorm</Name>
+      <Icon>icestormdark</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>2079842969</AbilityId>
+          <Description>Deals 3034 Water damage over 10s to up to 8 enemies in the target area. Snares enemies hit, reducing their movement speed by 30%, for up to 10s. Can only have 1 instance of Hailstorm active at a time.</Description>
+          <AddonId>A7BF7E2997DCDB56B</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>15.000001</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <MinimumHeat>25</MinimumHeat>
+          <CastTime>2.500000</CastTime>
+          <Duration>10.000000</Duration>
+          <Interval>1.000000</Interval>
+          <Radius>7.000000</Radius>
+          <MaxAffected>8</MaxAffected>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>9</Key>
+      <Name>Supercell</Name>
+      <Icon>lightingbolt5</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1480478069</AbilityId>
+          <Description></Description>
+          <AddonId>A583E4D752A4E2F0C</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage of your Air and Water abilities by 2%</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage of your Air and Water abilities by 4%</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the damage of your Air and Water abilities by 6%</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases the damage of your Air and Water abilities by 8%</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases the damage of your Air and Water abilities by 10%</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>10</Key>
+      <Name>Relentless Hail</Name>
+      <Icon>icestorm-light</Icon>
+      <PrereqTraitKey>8</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-90156342</AbilityId>
+          <Description></Description>
+          <AddonId>AFAA052CA33708F04</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces the cast time of Hailstorm to 0.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>11</Key>
+      <Name>Superconductor</Name>
+      <Icon>chainlighting4</Icon>
+      <PrereqTraitKey>0</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>183408217</AbilityId>
+          <Description></Description>
+          <AddonId>A0AEE96591F3A662E</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the maximum number of Conductive Medium stacks you can have by 1.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the maximum number of Conductive Medium stacks you can have by 2.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>12</Key>
+      <Name>Voltaic Strength</Name>
+      <Icon>void_knight-tempest</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="6">
+        <Rank>
+          <Points>1</Points>
+          <Description>Electrified stacks increase the damage of your Stormcaller single target Air and Water abilities by 1% per stack and all other single target Air and Water abilities by 0.5% per stack.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Electrified stacks increase the damage of your Stormcaller single target Air and Water abilities by 2% per stack and all other single target Air and Water abilities by 1% per stack.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Electrified stacks increase the damage of your Stormcaller single target Air and Water abilities by 3% per stack and all other single target Air and Water abilities by 1.5% per stack.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Electrified stacks increase the damage of your Stormcaller single target Air and Water abilities by 4% per stack and all other single target Air and Water abilities by 2% per stack.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Electrified stacks increase the damage of your Stormcaller single target Air and Water abilities by 5% per stack and all other single target Air and Water abilities by 2.5% per stack.</Description>
+        </Rank>
+        <Rank>
+          <Points>6</Points>
+          <Description>Electrified stacks increase the damage of your Stormcaller single target Air and Water abilities by 6% per stack and all other single target Air and Water abilities by 3% per stack.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>13</Key>
+      <Name>Storm Energy</Name>
+      <Icon>void_knight_void_storm</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1039174089</AbilityId>
+          <Description></Description>
+          <AddonId>A3DF089C95F8E6D56</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Spell Power by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Spell Power by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your Spell Power by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your Spell Power by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your Spell Power by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>14</Key>
+      <Name>Endless Storm</Name>
+      <Icon>doctrine_of_bliss_01</Icon>
+      <PrereqTraitKey>3</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>936003339</AbilityId>
+          <Description></Description>
+          <AddonId>A37CA470B60CC5F55</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Damage from Electrified generating abilities has a 33% chance to refresh Living Storm.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Damage from Electrified generating abilities has a 66% chance to refresh Living Storm.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Damage from Electrified generating abilities has a 100% chance to refresh Living Storm.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>15</Key>
+      <Name>Charged Field</Name>
+      <Icon>lightingbolt4y</Icon>
+      <PrereqTraitKey>18</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Supercharges your Lightning Field, causing each enemy damaged by Lightning Field to chain damage to up to 3 enemies within 10m.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>16</Key>
+      <Name>Lightning Storm</Name>
+      <Icon>stormcaller_lightning_storm_02_b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>938286815</AbilityId>
+          <Description>Deals 2488 Air damage over 4s to up to 8 enemies within 7m of the initial target. Generates a stack of Electrified and 6 Charge each second.</Description>
+          <AddonId>A37ED1EDFB0F75584</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>30.000002</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>18.000000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+          <Channel>true</Channel>
+          <Duration>4.000000</Duration>
+          <Interval>1.000000</Interval>
+          <Radius>7.000000</Radius>
+          <MaxAffected>8</MaxAffected>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>17</Key>
+      <Name>Recharge</Name>
+      <Icon>untangle_b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>755176936</AbilityId>
+          <Description></Description>
+          <AddonId>A2D0315E86D1E865C</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Electrified consuming abilities generate an additional 3 Charge for each stack of Electrified they consume.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Electrified consuming abilities generate an additional 6 Charge for each stack of Electrified they consume.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>18</Key>
+      <Name>Lightning Field</Name>
+      <Icon>lightingbolt4</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>137477283</AbilityId>
+          <Description>Deals 524 to 579 Air damage to up to 2 enemies within 7m of the initial target. Each stack of Electrified consumed, beyond the first, increases the number of enemies hit by 2.</Description>
+          <AddonId>A0831BCA396D7AB1A</AddonId>
+          <IsPassive>False</IsPassive>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>9.000000</CostManaPercent>
+          <GainHeat>9</GainHeat>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>19</Key>
+      <Name>Lightning Barrage</Name>
+      <Icon>stormcaller_lightning_storm_01</Icon>
+      <PrereqTraitKey>16</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>942453876</AbilityId>
+          <Description></Description>
+          <AddonId>A382CB474401E27A5</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Lightning Storm can be cast while moving.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>20</Key>
+      <Name>Self Sustaining</Name>
+      <Icon>generic_ability_031</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>191608847</AbilityId>
+          <Description></Description>
+          <AddonId>A0B6BB80F21E7A1BD</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Electrified consuming abilities reduce the cooldown of all Stormcaller area effect abilities by 1s for each stack of Electrified consumed.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Electrified consuming abilities reduce the cooldown of all Stormcaller area effect abilities by 2s for each stack of Electrified consumed.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Electrified consuming abilities reduce the cooldown of all Stormcaller area effect abilities by 3s for each stack of Electrified consumed.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>21</Key>
+      <Name>Unstable Atmosphere</Name>
+      <Icon>warden-downpour</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1856864996</AbilityId>
+          <Description></Description>
+          <AddonId>A6EAD82E44C03D6B4</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the effect of Spell Power on your damaging Air and Water abilities by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the effect of Spell Power on your damaging Air and Water abilities by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the effect of Spell Power on your damaging Air and Water abilities by 9%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>22</Key>
+      <Name>Supercharge</Name>
+      <Icon>stormcaller_lightning_storm_01_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-9600509</AbilityId>
+          <Description></Description>
+          <AddonId>AFF6D820347EF14E2</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the maximum stack size of your Electrified effects by 1.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the maximum stack size of your Electrified effects by 2.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>23</Key>
+      <Name>Colliding Storms</Name>
+      <Icon>chainlighting5</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Raging Storm now procs Forked Lightning every 2s.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>24</Key>
+      <Name>Lightning Arc</Name>
+      <Icon>stormcaller_lightning_arc</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>40</MinimumPointsSpent>
+      <DisplayRow>8</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-50341835</AbilityId>
+          <Description>Chains lightning to up to 10 enemies, dealing 524 to 579 Air damage to up to 5 enemies near each enemy hit by the chain. Generates a stack of Electrified on the Mage for each enemy hit by the chain.</Description>
+          <AddonId>AFCFFD83559DED1D3</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>60.000004</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>9.000000</CostManaPercent>
+          <GainHeat>11</GainHeat>
+          <CastTime>1.500000</CastTime>
+          <Radius>15.000000</Radius>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>25</Key>
+      <Name>Living Storm</Name>
+      <Icon>energy_overload1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>976255491</AbilityId>
+          <Description>Deals 1057 Air damage over 16s to up to 8 enemies within 7m of the initial target. Can only affect 1 enemy.</Description>
+          <AddonId>A3A307A036F02406C</AddonId>
+          <IsPassive>False</IsPassive>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>9.000000</CostManaPercent>
+          <GainHeat>9</GainHeat>
+          <CastTime>Instant</CastTime>
+          <Duration>16.000000</Duration>
+          <Interval>1.000000</Interval>
+          <Radius>7.000000</Radius>
+          <MaxAffected>8</MaxAffected>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+  </Traits>
+  <Abilities>
+    <Ability>
+      <MinimumPointsInSoul>30</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Storm Armor</Name>
+      <Icon>flashback</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>30</RequiredLevel>
+        <AbilityId>-59430402</AbilityId>
+        <Description>Reduces damage taken by 5%. Increases single target Air and Water damage by 20%. Knocks back attackers. Can occur up to once every 5s. Causes gaining a stack of Electrified to reduce the cooldown of Icicle by 1s. Increases damage of Forked Lightning by 150%, reduces the number of targets hit by Forked Lightning to 1. Lasts 1h. Counts as a Mage Armor. Shares a 5s cooldown with Tempest Armor.</Description>
+        <AddonId>AFC7529FE74DF637A</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>5.000000</Cooldown>
+        <CostManaPercent>2.250000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>3600.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>55</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Tempest Armor</Name>
+      <Icon>hardened_stalker</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>54</RequiredLevel>
+        <AbilityId>-53665753</AbilityId>
+        <Description>Causes Living Storm to deal an additional 19 Air damage to up to 8 enemies within 7m each time the Mage gains a stack of Electrified. Lasts 1h. Counts as a Mage Armor. Shares a 5s cooldown with Storm Armor.</Description>
+        <AddonId>AFCCD2027BAEA498A</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>5.000000</Cooldown>
+        <CostManaPercent>2.250000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>3600.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Lightning Arc</Name>
+      <Icon>stormcaller_lightning_arc</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-50341835</AbilityId>
+        <Description>Chains lightning to up to 10 enemies, dealing 524 to 579 Air damage to up to 5 enemies near each enemy hit by the chain. Generates a stack of Electrified on the Mage for each enemy hit by the chain.</Description>
+        <AddonId>AFCFFD83559DED1D3</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <GainHeat>11</GainHeat>
+        <CastTime>1.500000</CastTime>
+        <Radius>15.000000</Radius>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>24</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Gathering Storm</Name>
+      <Icon>maelstrom_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>24</RequiredLevel>
+        <AbilityId>-40221873</AbilityId>
+        <Description>Restores 5% mana per second.</Description>
+        <AddonId>AFD9A434FF33EAA7F</AddonId>
+        <IsPassive>False</IsPassive>
+        <CastTime>Instant</CastTime>
+        <Channel>true</Channel>
+        <Duration>10.000000</Duration>
+        <Interval>1.000000</Interval>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Lightning Field</Name>
+      <Icon>lightingbolt4</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>137477283</AbilityId>
+        <Description>Deals 524 to 579 Air damage to up to 2 enemies within 7m of the initial target. Each stack of Electrified consumed, beyond the first, increases the number of enemies hit by 2.</Description>
+        <AddonId>A0831BCA396D7AB1A</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>35</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Cyclone</Name>
+      <Icon>generic_ability_025</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>35</RequiredLevel>
+        <AbilityId>259059859</AbilityId>
+        <Description>Pulls up to 8 enemies to the target&apos;s location. Interrupts and removes 1 buff from affected enemies. Counts as an area effect ability.</Description>
+        <AddonId>A0F70F0935625CCC5</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>120.000008</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>5.400000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>10</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Ride the Wind</Name>
+      <Icon>tumble1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>10</RequiredLevel>
+        <AbilityId>284086316</AbilityId>
+        <Description>Increases movement speed by 50% for 10s. Removes all control and movement impairing effects.</Description>
+        <AddonId>A10EED02C3540592F</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>20.000000</Cooldown>
+        <MinimumHeat>30</MinimumHeat>
+        <CastTime>Instant</CastTime>
+        <Duration>10.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>61</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Perfect Storm</Name>
+      <Icon>harbinger_storm_nova_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>60</RequiredLevel>
+        <AbilityId>513104495</AbilityId>
+        <Description>Casts Eye of the Storm and Hailstorm at the enemy’s location and channels Lightning Storm on the enemy. Does not trigger cooldowns of these abilities.</Description>
+        <AddonId>A1E955A6F81A82AE8</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>120.000008</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <MinimumHeat>50</MinimumHeat>
+        <CastTime>Instant</CastTime>
+        <Channel>true</Channel>
+        <Duration>6.000000</Duration>
+        <Interval>1.000000</Interval>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Electrified</Name>
+      <Icon>jaggedlighting1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>537458702</AbilityId>
+        <Description>Applied to the Mage by Raging Storm, Forked Lightning, Lightning Storm and Lightning Arc. Lasts 30s. Max 3 stacks.</Description>
+        <AddonId>A2008F80E73B475A1</AddonId>
+        <IsPassive>True</IsPassive>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>2</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Icicle</Name>
+      <Icon>icebolt1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>2</RequiredLevel>
+        <AbilityId>775964852</AbilityId>
+        <Description>Deals 1514 to 1673 Water damage. Snares the enemy, reducing their movement speed by 30% for 6s.</Description>
+        <AddonId>A2E4048B4A5325EB0</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>10.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <MinimumHeat>15</MinimumHeat>
+        <CastTime>1.500000</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>51</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Eye of the Storm</Name>
+      <Icon>eye_of_the_storm</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>50</RequiredLevel>
+        <AbilityId>819233816</AbilityId>
+        <Description>Deals 3679 Water damage over 10s to up to 8 enemies in the target area. Snares enemies hit, reducing their movement speed by 30%, for up to 10s. Can only have 1 instance of Eye of the Storm active at a time.</Description>
+        <AddonId>A30D4841878E4FEB4</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <MinimumHeat>50</MinimumHeat>
+        <CastTime>Instant</CastTime>
+        <Duration>10.000000</Duration>
+        <Interval>1.000000</Interval>
+        <Radius>7.000000</Radius>
+        <MaxAffected>8</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Lightning Storm</Name>
+      <Icon>stormcaller_lightning_storm_02_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>938286815</AbilityId>
+        <Description>Deals 2488 Air damage over 4s to up to 8 enemies within 7m of the initial target. Generates a stack of Electrified and 6 Charge each second.</Description>
+        <AddonId>A37ED1EDFB0F75584</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>18.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Channel>true</Channel>
+        <Duration>4.000000</Duration>
+        <Interval>1.000000</Interval>
+        <Radius>7.000000</Radius>
+        <MaxAffected>8</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>4</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Thunder Shock</Name>
+      <Icon>riftblade-surging_energy_c</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>4</RequiredLevel>
+        <AbilityId>970148500</AbilityId>
+        <Description>Deals 582 to 643 Air damage. Damage is increased by 15% per stack of Electrified on the Mage. Counts as a Primary Bolt.</Description>
+        <AddonId>A39D34A947158A683</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>6.000000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Living Storm</Name>
+      <Icon>energy_overload1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>976255491</AbilityId>
+        <Description>Deals 1057 Air damage over 16s to up to 8 enemies within 7m of the initial target. Can only affect 1 enemy.</Description>
+        <AddonId>A3A307A036F02406C</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+        <Duration>16.000000</Duration>
+        <Interval>1.000000</Interval>
+        <Radius>7.000000</Radius>
+        <MaxAffected>8</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Raging Storm</Name>
+      <Icon>souldrain1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1051526167</AbilityId>
+        <Description>Deals 4976 Air damage over 4s. Generates a stack of Electrified and 5 Charge each second.</Description>
+        <AddonId>A3EAD04171EAC264C</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>15.000001</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>15.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Channel>true</Channel>
+        <Duration>4.000000</Duration>
+        <Interval>1.000000</Interval>
+        <PowerStatCoefficient effect="0" action="0">1.650000</PowerStatCoefficient>
+        <DamageMultiplier effect="0" action="0">0.200000</DamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>40</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Storm Locus</Name>
+      <Icon>magicresist2</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>40</RequiredLevel>
+        <AbilityId>1054758192</AbilityId>
+        <Description>Curses the enemy, applying a debuff to up to 8 enemies within 7m increasing damage they receive from the Mage by 20%. This damage amount is reduced by 2% for each enemy affected beyond the first. Reapplies itself to another enemy within 10m if the initial target dies. Lasts 60s. Does not generate threat. Can only affect 1 enemy.</Description>
+        <AddonId>A3EDE55309BC4403D</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Forked Lightning</Name>
+      <Icon>chainlighting1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1234335622</AbilityId>
+        <Description>Deals 436 to 482 Air damage to up to 8 enemies. Applies a stack of Electrified to the Mage.</Description>
+        <AddonId>A4992778687056289</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <GainHeat>11</GainHeat>
+        <CastTime>1.500000</CastTime>
+        <Radius>10.000000</Radius>
+        <MaxAffected>8</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Stormcaller Soul Gift</Name>
+      <Icon>stormcaller_lightning_storm_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1548106661</AbilityId>
+        <Description>Increases the Mage&apos;s damage by 1% for each point spent in the Stormcaller soul.</Description>
+        <AddonId>A5C463BA553C6FB82</AddonId>
+        <IsPassive>True</IsPassive>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>45</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Icy Vortex</Name>
+      <Icon>void_knight-improved_rift_summon_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>45</RequiredLevel>
+        <AbilityId>1842798307</AbilityId>
+        <Description>Reduces damage taken by 25%. When hit, snares the attacker, reducing their movement speed by 20%, for up to 10s. Lasts 10s.</Description>
+        <AddonId>A6DD6DEE38114F4F3</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <CostManaPercent>2.250000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>10.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>20</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Static Flux</Name>
+      <Icon>elemres4</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>20</RequiredLevel>
+        <AbilityId>1913845381</AbilityId>
+        <Description>Increases Air and Water damage done by 10% for 15s. Applies the Mage&apos;s maximum number of Electrified stacks.</Description>
+        <AddonId>A7212F68530C9F4CC</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>15.000001</Cooldown>
+        <MinimumHeat>30</MinimumHeat>
+        <CastTime>Instant</CastTime>
+        <Duration>15.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>16</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Wind Chill</Name>
+      <Icon>secondwind2</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>16</RequiredLevel>
+        <AbilityId>1933608601</AbilityId>
+        <Description>Knocks back up to 5 enemies in front of the Mage. Snares affected enemies, reducing their movement speed by 30%, for up to 10s.</Description>
+        <AddonId>A73408699E73EBC9E</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+        <Radius>10.000000</Radius>
+        <MaxAffected>5</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Hailstorm</Name>
+      <Icon>icestormdark</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>2079842969</AbilityId>
+        <Description>Deals 3034 Water damage over 10s to up to 8 enemies in the target area. Snares enemies hit, reducing their movement speed by 30%, for up to 10s. Can only have 1 instance of Hailstorm active at a time.</Description>
+        <AddonId>A7BF7E2997DCDB56B</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>15.000001</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <MinimumHeat>25</MinimumHeat>
+        <CastTime>2.500000</CastTime>
+        <Duration>10.000000</Duration>
+        <Interval>1.000000</Interval>
+        <Radius>7.000000</Radius>
+        <MaxAffected>8</MaxAffected>
+      </AbilityRank>
+    </Ability>
+  </Abilities>
+</SoulTree>
+

@@ -1,0 +1,116 @@
+﻿@using PrancingTurtle.Helpers
+@model PrancingTurtle.Models.ViewModels.ManageIndexVM
+@{
+    ViewBag.Title = "My Account";
+}
+<div class="row">
+    <div class="col-lg-8 col-centered">
+        <h2>@ViewBag.Title</h2>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-8 col-centered">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">My details</h3>
+            </div>
+            <div class="panel-body">
+                <p>@string.Format("Current Timezone: {0}", Model.TimeZoneDisplay) (@Html.ActionLink("Change my timezone", "TimeZone", null, new { @class = "text-info" }))</p>
+                <p>@Html.ImageActionLink("ChangePassword", "Manage", null, "text-info", "fa fa-lg fa-cog", "Change my password")</p>
+                @*<p>@Html.Raw(string.Format("Last login: <strong>{0}</strong> (local time) from <b>{1}</b>", Model.LastLoggedIn, Model.LastLoginAddress))</p>*@
+                @if (Model.ShortMenuFormat)
+                {
+                    <p>
+                        Menu format: Icons only @Html.ActionLink("Set to text-based menu", "SetTextMenu", "Manage", null, new { @class = "btn btn-xs btn-success" })
+                    </p>
+                }
+                else
+                {
+                    <p>
+                        Menu format: Text-based @Html.ActionLink("Set to icon-based menu", "SetIconMenu", "Manage", null, new { @class = "btn btn-xs btn-success" })
+                    </p>
+                }
+                @if (Model.ShowGuildMenu)
+                {
+                    <p>
+                        Guild menu: Currently visible @Html.ActionLink("Hide guild menu", "HideGuildMenu", "Manage", null, new { @class = "btn btn-xs btn-success" })
+                    </p>
+                }
+                else
+                {
+                    <p>
+                        Guild menu: Currently invisible @Html.ActionLink("Show guild menu", "ShowGuildMenu", "Manage", null, new { @class = "btn btn-xs btn-success" })
+                    </p>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-8 col-centered">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">My characters</h3>
+            </div>
+            <div class="panel-body">
+                @Html.ImageActionLink("CreateCharacter", "Manage", null, "text-info", "fa fa-lg fa-plus-circle", "Add a new character")
+                <hr />
+                @if (Model.Characters.Any())
+                {
+                    <table class="table table-responsive table-striped">
+                        <thead>
+                            <tr>
+                                <th>Shard</th>
+                                <th>Character</th>
+                                <th>Guild</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var character in Model.Characters.OrderBy(c => c.CharacterName))
+                            {
+                                <tr>
+                                    <td>
+                                        @character.ShardName
+                                    </td>
+                                    <td>
+                                        @*@Html.ActionLink(character.CharacterName, "PlayerSessions", new { id = character.GuildId })*@
+                                        @character.CharacterName
+                                    </td>
+                                    <td>
+                                        @if (character.GuildId == null)
+                                        {
+                                            if (string.IsNullOrEmpty(character.PendingApplicationGuildName))
+                                            {
+                                                @Html.ActionLink("Join a guild", "JoinGuild", new { id = character.Id, sid = character.ShardId })
+                                                @Html.Raw(" | ")
+                                                @Html.ActionLink("Create a guild", "CreateGuild", new { id = character.Id })
+                                            }
+                                            else
+                                            {
+                                                @Html.Raw(string.Format("Application pending: {0}", character.PendingApplicationGuildName))
+                                            }
+                                        }
+                                        else
+                                        {
+                                            @Html.ActionLink(character.GuildName, "Index", "Guild", new { id = character.GuildId }, null)
+                                            @Html.Raw(string.Format(" ({0})", character.GuildRank.Name))
+                                        }
+                                    </td>
+                                    <td>
+                                        @Html.ImageActionLink("RemoveCharacter", "Manage", new { id = character.Id }, "", "fa fa-lg fa-trash-o", "Remove Character")
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                }
+                else
+                {
+                    <p>No characters are currently linked to your account!</p>
+                }
+            </div>
+        </div>
+    </div>
+</div>

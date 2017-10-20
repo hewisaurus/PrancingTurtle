@@ -1,0 +1,111 @@
+﻿@model IEnumerable<Database.Models.NewsRecentChanges>
+@{
+    ViewBag.Title = "Changelog";
+}
+
+@section scripts{
+    <script>
+
+        $(document).ready(function () {
+
+            $('div.recentlyupdated,div.knownissues,div.workingon').expander({
+                slicePoint: 600,
+                sliceOn: '<p hidden',
+                expandText: 'show all',
+                expandEffect: 'fadeIn',
+                userCollapse: false
+            });
+        });
+
+    </script>
+}
+
+<br />
+<h4>Comments and feedback are always welcome either in-game at <b>hewi@laethys</b>, <b>hewi@hailol</b> or via email at <b>hewi@prancingturtle.com</b>.</h4>
+
+<div class="recentlyupdated">
+    <h3 class="text-success">Recently updated:</h3>
+    <ul class="ulstar">
+        @foreach (var item in Model)
+        {
+            <li>@item.PrintedFullObject</li>
+        }
+        @*<li>
+            23/06/2015 - Added some stricter encounter success conditions in order to ensure better ranking accuracy
+        </li>
+        <li>23/06/2015 - Added better support for the Inwar Darktide encounter, although sessions may show the encounter split into two as the phases are so far apart!</li>
+        <li>
+            08/06/2015 - Extended the timeout for encounters to 15 seconds, up from 10. Encounters are deemed finished when no NPCs have taken damage for 15 seconds,
+            and this change helps allow for situations (particularly seen within the Drekanoth of Fate encounter) where there is a small period
+            of downtime within an encounter that is still active.
+        </li>
+        <p hidden></p>
+        <li>08/06/2015 - Added some more boss portraits. Check out the release notes for full details.</li>
+        <li>21/05/2015 - Fixed a bug that occurred while comparing breakdowns where one or more abilities did no damage</li>
+        <li>
+            21/05/2015 - Added some boss portraits! These can be seen on the instance search pages or on the overview for a particular encounter, if a portrait exists.
+            More will be added over time.
+        </li>
+        <li>09/05/2015 - Added the ability to compare DPS breakdowns for players within a single encounter. On the 'Damage Done' pages,
+            select the players you'd like to compare, and hit the green compare button down the bottom of the page. Currently, only Player Damage Done is comparable - the others will be coming soon!</li>
+        <li>09/05/2015 - Added the ability to copy and paste an encounter's parse, similar to in-game parsing tools. This is visible at the top of each overview page within an encounter, such
+            as 'Player Damage Done' or 'NPC Healing Taken'</li>
+        <li>04/05/2015 - Added support for Expert and Raid practice dummies for French and German combat logs</li>
+        <li>04/05/2015 - If you're asked to login after requesting a page, you should properly be redirected to that page after logging in</li>
+        <li>04/05/2015 - Fixed a bug that broke a bunch of pages if you logged in with an account that contained one or more characters without guilds</li>
+        <li>27/04/2015 - Added limited support for French combatlogs - support for these will improve over time with testing from the guilds that log in French!</li>
+        <li>27/04/2015 - Drekanoth of Fate encounters will now properly show up in sessions created from German and French combatlogs</li>
+        <li>27/04/2015 - There is now search functionality for Guilds, Players and Encounters!
+            Type your search terms into the search box in the top menu, and hit Enter or the Search button to view the results.</li>
+        <li>27/04/2015 - Added support for uploading logs via FTP. See the notes on the top of the upload pages or click <b>@Html.ActionLink("here", "FTP", "Session")</b> for more info</li>
+        <li>21/04/2015 - Added a new guild privacy setting: Progression Visibility. Check out the new 'Raid progression' section under your guild info!</li>
+        <li>21/04/2015 - Changed the 'Guild Sessions' menu to 'Find a session', which now includes sessions filtered by instance or boss</li>
+        <li>20/04/2015 - The instances seen in any given session are now shown next to the session link</li>
+        <li>20/04/2015 - If you navigate to an encounter that you don't have access to, you'll see a message saying so, rather than being redirected straight back to the homepage</li>
+        <li>20/04/2015 - Made some changes to how the buffs and debuffs are stored, so the UI for both of these should be much faster now!</li>
+        <li>20/04/2015 - Fixed a bug that would cause a very small number of Rune King Molinar &amp; Prince Dollin attempts to not appear in the session list</li>
+        <li>16/04/2015 - Fixed a bug that would redirect users to the homepage instead of showing the buff or debuff uptime graphs</li>
+        <li>16/04/2015 - Sessions created by guilds who have their sessions set to private don't show up in the 'recent session' list unless you're a member of that guild.</li>
+        <li>15/04/2015 - Additional privacy controls for guilds - check out the @Html.ActionLink("Release Notes", "V1", "ReleaseNotes", null, new {@class = "text-info"}) for more details!</li>
+        <li>14/04/2015 - Updated the look of the Buff &amp; Debuff graphs to bring them inline with the rest of the site</li>
+        <li>09/04/2015 - Fixed an issue where some tanks were being seen as DPS for the role breakdown. Cached parses won't be updated though, so please let us know if you notice any past encounters with incorrect tanks &amp; they'll be updated.</li>
+        <li>07/04/2015 - When you remove a character from your account, if it was the last remaining character in a guild, the guild will also be removed.</li>
+        <li>07/04/2015 - Sessions can now be renamed by the original uploader or any administrator of the guild the session was uploaded for</li>
+        <li>06/04/2015 - Added a link within the encounter nav bar that will let you jump back to the session overview</li>
+        <li>06/04/2015 - Fixed a bug in the back-end that prevented some sessions from being removed properly</li>
+        <li>05/04/2015 - Encounter deaths now also display source player names, instead of just deaths to NPCs</li>
+        <li>03/04/2015 - Added a link to the upload page so that you can jump directly to your session after your log has been uploaded</li>
+        <li>03/04/2015 - Demoting a character from Administrator to Uploader now has a popup message to confirm the action</li>*@
+    </ul>
+</div>
+<hr />
+<div class="workingon">
+    <h3 class="text-info">Turtle task list:</h3>
+    <ul class="ulstar">
+        <li>Detail pages designed specifically around support classes</li>
+        <li>Tracking of buff and debuff stacks</li>
+        <li>Hybrid HPS/APS graphs and tables that show total output for healers who also increase player absorption</li>
+        <p hidden></p>
+        <li>Statuses and historical logging for sessions</li>
+        <li>In-depth encounter information and breakdowns, separate from the encounter overviews</li>
+        <li>Creating a section within an encounter for 'mechanic failures', to see who has failed to avoid or follow specific mechanics</li>
+        <li>Guild administrators should also be able to change encounter privacy, not just the original uploader</li>
+        <li>Links to make all encounter public or private within a session from the detail pages</li>
+    </ul>
+</div>
+<hr />
+<div class="knownissues">
+    <h3 class="text-warning">Known Issues:</h3>
+    <ul class="ulstar">
+        <li>Some errors are popping up when a session has been uploaded twice and some encounters are recognised as duplicates. 
+        A fix will go in for this, but to avoid this in the future, please upload via FTP</li>
+        <li>Searching for an encounter by name hasn't been updated to show the difficulty options if you use the search box up the top of the site</li>
+        <li>
+            If you upload a session that spans more than 24 hours, the order of the encounters may get mixed up due to them being sorted by time, rather than date.
+            For now, work around this by splitting the sessions up so that you don't cover more than 24-hour periods.
+        </li>
+        <li>Wild Growth and Power Core aren't currently showing up on the Buff/Debuff tracking pages as the debuff portions of the abilities don't actually hit the combat log</li>
+        <li>Raid buffs that already exist on players when entering combat aren't able to be tracked.. buffs need to be refreshed in combat in order to show up here</li>
+        <p hidden></p>
+    </ul>
+</div>

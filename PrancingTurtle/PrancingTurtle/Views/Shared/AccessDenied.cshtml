@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "Access Denied";
+}
+<br />
+<div class="row">
+    <div class="col-md-6">
+        <div class="panel panel-danger">
+            <div class="panel-heading">
+                <h3 class="panel-title">Access denied!</h3>
+            </div>
+            <div class="panel-body">
+                <p>You don't have the correct permission to access this area. If you think this is incorrect or something has gone wrong, contact your guild's administrator, or send an email to <b>hewi@prancingturtle.com</b>.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+@Html.ActionLink("Ok", "Index", "Home", null, new { @class = "btn btn-primary" })

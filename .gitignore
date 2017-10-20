@@ -286,3 +286,9 @@ __pycache__/
 *.btm.cs
 *.odx.cs
 *.xsd.cs
+/PrancingTurtle/PrancingTurtle/ConnectionStrings.config
+/PrancingTurtle/PrancingTurtle/Helpers/Mail/AccountInfo.cs
+/PrancingTurtle/PrancingTurtle/Helpers/Authorization/ApplicationSid.cs
+/PrancingTurtle/AutoExtracterAsync/App.config
+/PrancingTurtle/AutoParser/App.config
+/PrancingTurtle/Common/UserGroups.cs

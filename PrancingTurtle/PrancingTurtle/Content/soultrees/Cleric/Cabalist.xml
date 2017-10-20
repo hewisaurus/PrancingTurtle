@@ -1,0 +1,1609 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SoulTree calling="Cleric" name="Cabalist">
+  <Traits>
+    <Trait>
+      <Key>0</Key>
+      <Name>Stroke of Genius</Name>
+      <Icon>talented_composer</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>135784946</AbilityId>
+          <Description></Description>
+          <AddonId>A0817E9F26FEE8128</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Wisdom by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Wisdom by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your Wisdom by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your Wisdom by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your Wisdom by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>1</Key>
+      <Name>Secrets of the Deep</Name>
+      <Icon>binding_of_atrophy_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-40642937</AbilityId>
+          <Description></Description>
+          <AddonId>AFD93D68730B4ED4D</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your damage done by 1%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your damage done by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your damage done by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your damage done by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your damage done by 5%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>2</Key>
+      <Name>Death&apos;s Grasp</Name>
+      <Icon>necropotence4b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>2107032455</AbilityId>
+          <Description></Description>
+          <AddonId>A7D96C38774D5F935</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the effect of Spell Power on your Shadow&apos;s Touch and Bound Fate by 2%. Reduces the cast time and mana cost  of Shadow&apos;s Touch by 5%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the effect of Spell Power on your Shadow&apos;s Touch and Bound Fate by 4%. Reduces the cast time and mana cost  of Shadow&apos;s Touch by 10%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the effect of Spell Power on your Shadow&apos;s Touch and Bound Fate by 6%. Reduces the cast time and mana cost  of Shadow&apos;s Touch by 15%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases the effect of Spell Power on your Shadow&apos;s Touch and Bound Fate by 8%. Reduces the cast time and mana cost  of Shadow&apos;s Touch by 20%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases the effect of Spell Power on your Shadow&apos;s Touch and Bound Fate by 10%. Reduces the cast time and mana cost  of Shadow&apos;s Touch by 25%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>3</Key>
+      <Name>Entropy</Name>
+      <Icon>elemres4</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>508764314</AbilityId>
+          <Description></Description>
+          <AddonId>A1E53209A0A6679E4</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your damage done using delayed and damage over time abilities by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your damage done using delayed and damage over time abilities by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your damage done using delayed and damage over time abilities by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your damage done using delayed and damage over time abilities by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your damage done using delayed and damage over time abilities by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>4</Key>
+      <Name>Unbounded Obliteration</Name>
+      <Icon>concussion_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1910028771</AbilityId>
+          <Description>Increases damage done with area effect abilities by 3%. Increases all Resistances by 3%. Shares a cooldown with Condensed Obliteration and Focused Obliteration.</Description>
+          <AddonId>A71D8B9E391914422</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>5.000000</Cooldown>
+          <CostManaPercent>4.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+          <Duration>3600.000000</Duration>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>5</Key>
+      <Name>Broad Strokes</Name>
+      <Icon>goblin_sketches</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>889441928</AbilityId>
+          <Description></Description>
+          <AddonId>A3503CE8816CA5D5A</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the radius of your damaging area effect abilities by 1m. </Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the radius of your damaging area effect abilities by 2m. </Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the radius of your damaging area effect abilities by 3m. </Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>6</Key>
+      <Name>Explosive Energies</Name>
+      <Icon>humbling_blow_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>826298456</AbilityId>
+          <Description></Description>
+          <AddonId>A314050584BF98186</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your damage done with area effect abilities by 2%. Reduces your threat generation by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your damage done with area effect abilities by 4%. Reduces your threat generation by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your damage done with area effect abilities by 6%. Reduces your threat generation by 12%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your damage done with area effect abilities by 8%. Reduces your threat generation by 16%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your damage done with area effect abilities by 10%. Reduces your threat generation by 20%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>7</Key>
+      <Name>Dark Passage</Name>
+      <Icon>shadow_warp_b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>134347599</AbilityId>
+          <Description>Removes all crowd control effects. Teleports forward 15m.</Description>
+          <AddonId>A0801FB4FD5EFF8EE</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>20.000000</Cooldown>
+          <CostManaPercent>4.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>8</Key>
+      <Name>Sigil of Spirits</Name>
+      <Icon>shroud_of_agony_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-43665616</AbilityId>
+          <Description>Increases non-Physical damage taken by 5% on up to 10 enemies. Lasts 30s.</Description>
+          <AddonId>AFD65B7304BB52CBC</AddonId>
+          <IsPassive>False</IsPassive>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>4.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+          <Radius>7.000000</Radius>
+          <MaxAffected>10</MaxAffected>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>9</Key>
+      <Name>Affinity for Death</Name>
+      <Icon>drainlife1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>589878332</AbilityId>
+          <Description></Description>
+          <AddonId>A2328D43C0472B3B9</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your damage done with Bound Fate and Tyranny of Death by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your damage done with Bound Fate and Tyranny of Death by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your damage done with Bound Fate and Tyranny of Death by 9%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>10</Key>
+      <Name>Shackles of Fate</Name>
+      <Icon>cabalist-binding_waters_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>988873710</AbilityId>
+          <Description></Description>
+          <AddonId>A3AF103EE356C6B16</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Bound Fate has a 50% chance to spread your Tyranny of Death from the target to each enemy it hits.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your Bound Fate has a 100% chance to spread your Tyranny of Death from the target to each enemy it hits.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>11</Key>
+      <Name>Maelstrom</Name>
+      <Icon>maelstrom</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>205999360</AbilityId>
+          <Description>Pulls up to 8 enemies to the target&apos;s location. Snares each enemy hit for 8s.</Description>
+          <AddonId>A0C474D00CE8F0CEE</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>60.000004</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>4.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>12</Key>
+      <Name>Leviathan&apos;s Mark</Name>
+      <Icon>underwaterbreath2a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>165760562</AbilityId>
+          <Description></Description>
+          <AddonId>A09E14E32192E1E13</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your damage done with Curses and Dark Water by 5%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your damage done with Curses and Dark Water by 10%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your damage done with Curses and Dark Water by 15%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>13</Key>
+      <Name>Pain of the Chosen</Name>
+      <Icon>primal_death_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-18077526</AbilityId>
+          <Description></Description>
+          <AddonId>AFEEC28AA40DA51A1</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Critical Hit chance with Curses and Dark Water by 5%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Critical Hit chance with Curses and Dark Water by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>14</Key>
+      <Name>Dark Manifesto</Name>
+      <Icon>generic_ability_027</Icon>
+      <BendType>VerticalToHorizontal</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-49496445</AbilityId>
+          <Description></Description>
+          <AddonId>AFD0CBE8368B6216F</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the effect of Spell Power on your Tyranny of Death and Well of Souls by 3%. Your Cabalist Curses cause their initial target to take an additional 2% damage from your attacks.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the effect of Spell Power on your Tyranny of Death and Well of Souls by 6%. Your Cabalist Curses cause their initial target to take an additional 4% damage from your attacks.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the effect of Spell Power on your Tyranny of Death and Well of Souls by 9%. Your Cabalist Curses cause their initial target to take an additional 6% damage from your attacks.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases the effect of Spell Power on your Tyranny of Death and Well of Souls by 12%. Your Cabalist Curses cause their initial target to take an additional 8% damage from your attacks.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases the effect of Spell Power on your Tyranny of Death and Well of Souls by 15%. Your Cabalist Curses cause their initial target to take an additional 10% damage from your attacks.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>15</Key>
+      <Name>Reversal of Fortune</Name>
+      <Icon>redirect2</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>955459047</AbilityId>
+          <Description>Causes the next hostile spell cast on the ally to be reflected back at the caster. Lasts 10s.</Description>
+          <AddonId>A38F325E75D31FF64</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>30.000002</Cooldown>
+          <CostManaPercent>4.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>16</Key>
+      <Name>Swift Disintegration</Name>
+      <Icon>plague_01_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-66908864</AbilityId>
+          <Description></Description>
+          <AddonId>AFC030D40250FDD5D</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the effect of Spell Power on your Bound Fate and Disintegration by 15%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the effect of Spell Power on your Bound Fate and Disintegration by 30%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>17</Key>
+      <Name>Ravaging Darkness</Name>
+      <Icon>binding_of_affliction_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1983313270</AbilityId>
+          <Description></Description>
+          <AddonId>A7636F5764CA40793</AddonId>
+          <IsPassive>False</IsPassive>
+          <MaxRange>40.000000</MaxRange>
+        </Ability>
+        <Ability>
+          <AbilityId>503981636</AbilityId>
+          <Description>Deals 874 to 965 Death damage to up to 8 enemies. Restores 4% health and mana to the Cleric for each enemy hit. Counts as an Obliteration ability.</Description>
+          <AddonId>A1E0A26448503761E</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>60.000004</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <CastTime>Instant</CastTime>
+        </Ability>
+        <Ability>
+          <AbilityId>1101238366</AbilityId>
+          <Description>Deals 1048 to 1159 Death damage to up to 5 enemies. Restores 6% health and mana to the Cleric for each enemy hit. Counts as an Obliteration ability. Requires Condensed Obliteration.</Description>
+          <AddonId>A41A3905E17A9BF1F</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>60.000004</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <CastTime>Instant</CastTime>
+        </Ability>
+        <Ability>
+          <AbilityId>377708454</AbilityId>
+          <Description>Deals 1456 to 1609 Death damage. Restores 15% health and mana. Counts as an Obliteration ability. Requires Focused Obliteration.</Description>
+          <AddonId>A16835FA67BDC18F8</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>60.000004</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>18</Key>
+      <Name>Death&apos;s Dominion</Name>
+      <Icon>binding_of_death_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>434577981</AbilityId>
+          <Description></Description>
+          <AddonId>A19E7223D647EC584</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Death damage by 5%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Death damage by 10%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your Death damage by 15%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>19</Key>
+      <Name>Eccentric</Name>
+      <Icon>creeping_death_01_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-175191</AbilityId>
+          <Description></Description>
+          <AddonId>AFFFD53A9191E0ADA</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Critical hit chance with Shadow&apos;s Touch, Bound Fate and Tyranny of Death by 2%. Gives your Curses a 20% chance to apply all known Curses when cast.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Critical hit chance with Shadow&apos;s Touch, Bound Fate and Tyranny of Death by 4%. Gives your Curses a 40% chance to apply all known Curses when cast.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your Critical hit chance with Shadow&apos;s Touch, Bound Fate and Tyranny of Death by 6%. Gives your Curses a 60% chance to apply all known Curses when cast.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your Critical hit chance with Shadow&apos;s Touch, Bound Fate and Tyranny of Death by 8%. Gives your Curses a 80% chance to apply all known Curses when cast.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your Critical hit chance with Shadow&apos;s Touch, Bound Fate and Tyranny of Death by 10%. Gives your Curses a 100% chance to apply all known Curses when cast.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>20</Key>
+      <Name>Mass Reversal</Name>
+      <Icon>redirect1</Icon>
+      <PrereqTraitKey>15</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-79174147</AbilityId>
+          <Description>Applies Reversal of Fortune to all party or raid members. Causes the next hostile spell cast on the ally to be reflected back at the caster. Lasts 10s.</Description>
+          <AddonId>AFB47E5FD91D42B41</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>45.000004</Cooldown>
+          <CostManaPercent>4.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+          <Radius>35.000000</Radius>
+          <MaxAffected>50</MaxAffected>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>21</Key>
+      <Name>Dominion</Name>
+      <Icon>riftstalker_planar_repulsion_01_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>40</MinimumPointsSpent>
+      <DisplayRow>8</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>797084090</AbilityId>
+          <Description>Resets the cooldown on all Sigils. Causes the next 3 Sigils to have no cooldown. Does not affect Sigil of Catastrophe. Lasts 1m.</Description>
+          <AddonId>A2F8289BA7D4E4412</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>60.000004</Cooldown>
+          <CostManaPercent>4.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+  </Traits>
+  <Abilities>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Symbol of the Ancient</Name>
+      <Icon>anthem_of_fervor_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-94305342</AbilityId>
+        <Description></Description>
+        <AddonId>AFA6103C2243CFBE5</AddonId>
+        <IsPassive>True</IsPassive>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>36</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Mass Reversal</Name>
+      <Icon>redirect1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>36</RequiredLevel>
+        <AbilityId>-79174147</AbilityId>
+        <Description>Applies Reversal of Fortune to all party or raid members. Causes the next hostile spell cast on the ally to be reflected back at the caster. Lasts 10s.</Description>
+        <AddonId>AFB47E5FD91D42B41</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>45.000004</Cooldown>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Radius>35.000000</Radius>
+        <MaxAffected>50</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>20</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Shadow Breach</Name>
+      <Icon>distorted_shadows</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>20</RequiredLevel>
+        <AbilityId>-66312946</AbilityId>
+        <Description>Grants Stealth while stationary. Restores 2.5% health each second. Lasts 10s. Resets the cooldown of Dark Passage.</Description>
+        <AddonId>AFC0C250E88CD71DE</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>16</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Sigil of Spirits</Name>
+      <Icon>shroud_of_agony_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>16</RequiredLevel>
+        <AbilityId>-43665616</AbilityId>
+        <Description>Increases non-Physical damage taken by 5% on up to 10 enemies. Lasts 30s.</Description>
+        <AddonId>AFD65B7304BB52CBC</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Radius>7.000000</Radius>
+        <MaxAffected>10</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>61</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Unleash Oblivion</Name>
+      <Icon>elemres4b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>60</RequiredLevel>
+        <AbilityId>-23112702</AbilityId>
+        <Description>Deals 874 to 965 Death damage to all enemies near the initial target&apos;s location in an expanding ring. After 2.5s, the ring contracts back inwards, dealing the same damage again. Triggers Tyranny of Death.</Description>
+        <AddonId>AFE9F54024F36D2F9</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>15.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>2.500000</Duration>
+        <Interval>0.500000</Interval>
+        <Radius>7.000000</Radius>
+        <MaxAffected>10</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>24</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Esoteric Estimations</Name>
+      <Icon>generic_ability_010</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>24</RequiredLevel>
+        <AbilityId>-21620222</AbilityId>
+        <Description>Restores 5% mana each second over 10s.</Description>
+        <AddonId>AFEB61A02A8CED25D</AddonId>
+        <IsPassive>False</IsPassive>
+        <CastTime>Instant</CastTime>
+        <Channel>true</Channel>
+        <Duration>10.000000</Duration>
+        <Interval>1.000000</Interval>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>54</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Sigil of Catastrophe</Name>
+      <Icon>hasted_time_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>53</RequiredLevel>
+        <AbilityId>-11916818</AbilityId>
+        <Description>Applies all Sigils to up to 10 enemies.</Description>
+        <AddonId>AFF4A29EE75F66758</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Radius>7.000000</Radius>
+        <MaxAffected>10</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>48</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Well of Souls</Name>
+      <Icon>reign_of_despair</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>48</RequiredLevel>
+        <AbilityId>-7363976</AbilityId>
+        <Description>Deals 1930 Death damage over 15s to up to 8 enemies within 7m of the enemy&apos;s location at the time Well of Souls is cast. Up to 8 enemies within Well of Souls take an additional 10% damage from the Cleric&apos;s Cabalist Curses, Disintegration and Bound Fate for 15s. Only one instance of Well of Souls can be active at a time.</Description>
+        <AddonId>AFF8FA27854EFB9CD</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>15.000000</Duration>
+        <Interval>1.500000</Interval>
+        <Radius>7.000000</Radius>
+        <MaxAffected>8</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>28</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Disintegration</Name>
+      <Icon>rogue_shadow_shift</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>28</RequiredLevel>
+        <AbilityId>19301821</AbilityId>
+        <Description>Deals 1379 Death damage to up to 8 enemies. Triggers Tyranny of Death. Counts as an Obliteration ability.</Description>
+        <AddonId>A012685BD974ACDE7</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>15.000001</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Radius>7.000000</Radius>
+        <MaxAffected>8</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>4</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Tyranny of Death</Name>
+      <Icon>tyranny_of_death</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>4</RequiredLevel>
+        <AbilityId>71003279</AbilityId>
+        <Description>Deals 558 to 617 Death damage to up to 8 enemies after 10s. Triggers early if the enemy dies or is damaged by the Cleric&apos;s Tyranny of Death. Counts as an Obliteration ability.</Description>
+        <AddonId>A043B6C8F900A84D7</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>28</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Disintegration</Name>
+      <Icon>rogue_shadow_shift</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>28</RequiredLevel>
+        <AbilityId>102330072</AbilityId>
+        <Description>Deals 2299 Death damage, split equally among up to 5 enemies. Total damage is increased by 60% for each additional enemy hit.  Triggers Tyranny of Death. Counts as an Obliteration ability. Requires Condensed Obliteration.</Description>
+        <AddonId>A06196ED89E990D57</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>15.000001</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Radius>7.000000</Radius>
+        <MaxAffected>5</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>11</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Dark Passage</Name>
+      <Icon>shadow_warp_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>11</RequiredLevel>
+        <AbilityId>134347599</AbilityId>
+        <Description>Removes all crowd control effects. Teleports forward 15m.</Description>
+        <AddonId>A0801FB4FD5EFF8EE</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>20.000000</Cooldown>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>21</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Maelstrom</Name>
+      <Icon>maelstrom</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>21</RequiredLevel>
+        <AbilityId>205999360</AbilityId>
+        <Description>Pulls up to 8 enemies to the target&apos;s location. Snares each enemy hit for 8s.</Description>
+        <AddonId>A0C474D00CE8F0CEE</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Bound Fate</Name>
+      <Icon>entropy_embrace</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>1</RequiredLevel>
+        <AbilityId>207892514</AbilityId>
+        <Description>Deals 349 to 386 Death damage to up to 8 enemies. Counts as an Obliteration ability.</Description>
+        <AddonId>A0C643022A665F81E</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>58</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Curse of Anarchy</Name>
+      <Icon>shadow_blitz_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>57</RequiredLevel>
+        <AbilityId>230857555</AbilityId>
+        <Description>Applies Curse of Anarchy for 15s to up to 8 enemies. Deals 68 to 75 Death damage to up to 3 enemies every 1.5s. Counts as an Obliteration ability.</Description>
+        <AddonId>A0DC29B5347088A05</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Radius>7.000000</Radius>
+        <MaxAffected>8</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>12</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Curse of Solitude</Name>
+      <Icon>curse_of_solitude</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>12</RequiredLevel>
+        <AbilityId>244704852</AbilityId>
+        <Description>Applies Curse of Solitude for 15s. Deals 218 to 241 Death damage to up to 5 enemies every 1.5s. Can only affect 1 enemy. Counts as an Obliteration ability. Requires Condensed Obliteration.</Description>
+        <AddonId>A0E95E6545B950848</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>15.000000</Duration>
+        <Interval>1.500000</Interval>
+        <Radius>7.000000</Radius>
+        <MaxAffected>5</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>28</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Disintegration</Name>
+      <Icon>rogue_shadow_shift</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>28</RequiredLevel>
+        <AbilityId>278320208</AbilityId>
+        <Description>Deals 2759 Death damage. Triggers Tyranny of Death. Counts as an Obliteration ability. Requires Focused Obliteration.</Description>
+        <AddonId>A1096D450B83BAC14</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>15.000001</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">3.600000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>2</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Curse of Discord</Name>
+      <Icon>cabalist_sigil_of_ravaging_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>2</RequiredLevel>
+        <AbilityId>358129831</AbilityId>
+        <Description>Deals 1533 Death damage over 15s.</Description>
+        <AddonId>A1558A0A78E6B08B0</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>15.000000</Duration>
+        <Interval>1.500000</Interval>
+        <PowerStatCoefficient effect="0" action="0">2.000000</PowerStatCoefficient>
+        <DamageMultiplier effect="0" action="0">0.100000</DamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Ravaging Darkness</Name>
+      <Icon>binding_of_affliction_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>377708454</AbilityId>
+        <Description>Deals 1456 to 1609 Death damage. Restores 15% health and mana. Counts as an Obliteration ability. Requires Focused Obliteration.</Description>
+        <AddonId>A16835FA67BDC18F8</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Ravaging Darkness</Name>
+      <Icon>binding_of_affliction_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>503981636</AbilityId>
+        <Description>Deals 874 to 965 Death damage to up to 8 enemies. Restores 4% health and mana to the Cleric for each enemy hit. Counts as an Obliteration ability.</Description>
+        <AddonId>A1E0A26448503761E</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>24</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Howling Death</Name>
+      <Icon>menacingroar2a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>24</RequiredLevel>
+        <AbilityId>566459495</AbilityId>
+        <Description>Grants immunity to the next Debilitate or Interrupt. Lasts 2m.</Description>
+        <AddonId>A21C37C6793B6059B</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>120.000008</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>120.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>44</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Sigil of Ruin</Name>
+      <Icon>incapacitate_01_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>44</RequiredLevel>
+        <AbilityId>581026723</AbilityId>
+        <Description>Stuns up to 10 enemies for 2s.</Description>
+        <AddonId>A22A1C3A379A65BDC</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Radius>7.000000</Radius>
+        <MaxAffected>10</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Bound Fate</Name>
+      <Icon>entropy_embrace</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>1</RequiredLevel>
+        <AbilityId>633492851</AbilityId>
+        <Description>Deals 728 to 804 Death damage. Counts as an Obliteration ability. Requires Focused Obliteration.</Description>
+        <AddonId>A25C25573B1368EB4</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>0.200000</Duration>
+        <PowerStatCoefficient effect="0" action="0">1.000000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Shadow&apos;s Touch</Name>
+      <Icon>darkbolt3</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>670966642</AbilityId>
+        <Description>Deals 970 to 1073 Death damage.</Description>
+        <AddonId>A27FE2372814D25F2</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>10.000000</CostManaPercent>
+        <CastTime>2.000000</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>51</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Sign of Asias</Name>
+      <Icon>ebon_fury_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>50</RequiredLevel>
+        <AbilityId>689907604</AbilityId>
+        <Description>Increases the damage of Shadow&apos;s Touch by 25% and causes it to apply a stack of Darkness, dealing Death damage over 15s. Max 3 stacks. Causes Curses to deal additional damage based on Spell Power when they expire or 300% of this damage if the Curse is cleansed. Lasts 1h.</Description>
+        <AddonId>A291F2794617B3CE7</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>3600.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>4</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Tyranny of Death</Name>
+      <Icon>tyranny_of_death</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>4</RequiredLevel>
+        <AbilityId>714261819</AbilityId>
+        <Description>Deals 908 to 1003 Death damage, split equally among up to 3 enemies after 10s. Total damage is increased by 80% for each additional enemy hit. Triggers early if the enemy dies or is damaged by the Cleric&apos;s Tyranny of Death. Counts as an Obliteration ability. Requires Condensed Obliteration.</Description>
+        <AddonId>A2A92C53B91CBE3D9</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>4</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Tyranny of Death</Name>
+      <Icon>tyranny_of_death</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>4</RequiredLevel>
+        <AbilityId>796314650</AbilityId>
+        <Description>Deals 931 to 1030 Death damage after 10s. Triggers early if the enemy is damaged by the Cleric&apos;s Tyranny of Death. Counts as an Obliteration ability. Requires Focused Obliteration.</Description>
+        <AddonId>A2F76CC1AC17735E5</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>41</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Dominion</Name>
+      <Icon>riftstalker_planar_repulsion_01_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>41</RequiredLevel>
+        <AbilityId>797084090</AbilityId>
+        <Description>Resets the cooldown on all Sigils. Causes the next 3 Sigils to have no cooldown. Does not affect Sigil of Catastrophe. Lasts 1m.</Description>
+        <AddonId>A2F8289BA7D4E4412</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>26</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Reversal of Fortune</Name>
+      <Icon>redirect2</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>26</RequiredLevel>
+        <AbilityId>955459047</AbilityId>
+        <Description>Causes the next hostile spell cast on the ally to be reflected back at the caster. Lasts 10s.</Description>
+        <AddonId>A38F325E75D31FF64</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>40</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Sigil of Secrecy</Name>
+      <Icon>sigil_of_lurking_decay_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>40</RequiredLevel>
+        <AbilityId>993979380</AbilityId>
+        <Description>Interrupts and Debilitates up to 10 enemies for 5s.</Description>
+        <AddonId>A3B3EEBF486850C74</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Radius>7.000000</Radius>
+        <MaxAffected>10</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Ravaging Darkness</Name>
+      <Icon>binding_of_affliction_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1101238366</AbilityId>
+        <Description>Deals 1048 to 1159 Death damage to up to 5 enemies. Restores 6% health and mana to the Cleric for each enemy hit. Counts as an Obliteration ability. Requires Condensed Obliteration.</Description>
+        <AddonId>A41A3905E17A9BF1F</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Bound Fate</Name>
+      <Icon>entropy_embrace</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1239273864</AbilityId>
+        <Description></Description>
+        <AddonId>A49DDD1883A96744B</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>40.000000</MaxRange>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>58</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Curse of Anarchy</Name>
+      <Icon>shadow_blitz_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>57</RequiredLevel>
+        <AbilityId>1308420565</AbilityId>
+        <Description></Description>
+        <AddonId>A4DFCE9D5186A1C8E</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>40.000000</MaxRange>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>36</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Focused Obliteration</Name>
+      <Icon>shadow_assault</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>36</RequiredLevel>
+        <AbilityId>1378668873</AbilityId>
+        <Description>Increases damage done by 3%. Increases all Resistances by 3%. Greatly increases the damage of Obliteration abilities and causes them to deal single target damage. Shares a cooldown with Condensed Obliteration and Unbounded Obliteration.</Description>
+        <AddonId>A522CD149F0D76F33</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>5.000000</Cooldown>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>3600.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>58</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Curse of Anarchy</Name>
+      <Icon>shadow_blitz_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>57</RequiredLevel>
+        <AbilityId>1443873753</AbilityId>
+        <Description>Deals 3066 Death damage over 15s. Counts as an Obliteration ability. Requires Focused Obliteration.</Description>
+        <AddonId>A560FC3D994798CDF</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>15.000000</Duration>
+        <Interval>1.500000</Interval>
+        <PowerStatCoefficient effect="0" action="0">4.000000</PowerStatCoefficient>
+        <DamageMultiplier effect="0" action="0">0.100000</DamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>12</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Curse of Solitude</Name>
+      <Icon>curse_of_solitude</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>12</RequiredLevel>
+        <AbilityId>1462461707</AbilityId>
+        <Description>Deals 2299 Death damage over 15s. Can only affect 1 enemy. Counts as an Obliteration ability. Requires Focused Obliteration.</Description>
+        <AddonId>A572B650B35CB2749</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="2" action="0">3.000000</PowerStatCoefficient>
+        <DamageMultiplier effect="2" action="0">0.100000</DamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>16</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Sigil of Woe</Name>
+      <Icon>generic_ability_020_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>16</RequiredLevel>
+        <AbilityId>1478151106</AbilityId>
+        <Description>Removes 1 Buff from up to 10 enemies.</Description>
+        <AddonId>A581ACBC25E2C4D62</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>15.000001</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Radius>7.000000</Radius>
+        <MaxAffected>10</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>28</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Disintegration</Name>
+      <Icon>rogue_shadow_shift</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>28</RequiredLevel>
+        <AbilityId>1485101365</AbilityId>
+        <Description></Description>
+        <AddonId>A5884D9352075AEF0</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>40.000000</MaxRange>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>4</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Tyranny of Death</Name>
+      <Icon>tyranny_of_death</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>4</RequiredLevel>
+        <AbilityId>1744003103</AbilityId>
+        <Description></Description>
+        <AddonId>A67F3601F71E545F5</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>40.000000</MaxRange>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>12</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Curse of Solitude</Name>
+      <Icon>curse_of_solitude</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>12</RequiredLevel>
+        <AbilityId>1833711009</AbilityId>
+        <Description>Applies Curse of Solitude for 15s. Deals 130 to 144 Death damage to up to 8 enemies every 1.5s. Can only affect 1 enemy. Counts as an Obliteration ability.</Description>
+        <AddonId>A6D4C35A12D549B62</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>15.000000</Duration>
+        <Interval>1.500000</Interval>
+        <Radius>7.000000</Radius>
+        <MaxAffected>8</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>36</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Condensed Obliteration</Name>
+      <Icon>dominator-mass_exhaustion_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>36</RequiredLevel>
+        <AbilityId>1883117475</AbilityId>
+        <Description>Increases damage done with area effect abilities by 3%. Increases all Resistances by 3%. Increases the damage of Obliteration abilities and causes them to affect up to 5 targets. Shares a cooldown with Focused Obliteration and Unbounded Obliteration.</Description>
+        <AddonId>A703E17A3D5C31ACA</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>5.000000</Cooldown>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>3600.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>6</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Unbounded Obliteration</Name>
+      <Icon>concussion_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>6</RequiredLevel>
+        <AbilityId>1910028771</AbilityId>
+        <Description>Increases damage done with area effect abilities by 3%. Increases all Resistances by 3%. Shares a cooldown with Condensed Obliteration and Focused Obliteration.</Description>
+        <AddonId>A71D8B9E391914422</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>5.000000</Cooldown>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>3600.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Bound Fate</Name>
+      <Icon>entropy_embrace</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>1</RequiredLevel>
+        <AbilityId>1931657053</AbilityId>
+        <Description>Deals 568 to 628 Death damage, split equally among up to 5 enemies. Total damage is increased by 60% for each additional enemy hit. Counts as an Obliteration ability. Requires Condensed Obliteration.</Description>
+        <AddonId>A7322BF5DAB5BAD8D</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>58</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Curse of Anarchy</Name>
+      <Icon>shadow_blitz_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>57</RequiredLevel>
+        <AbilityId>1949481407</AbilityId>
+        <Description>Applies Curse of Anarchy to up to 5 enemies. Deals 2851 Death damage over 15s. Total damage is increased by 80% for each additional enemy affected. Can affect a maximum of 5 enemies at a time. Counts as an Obliteration ability. Requires Condensed Obliteration.</Description>
+        <AddonId>A7432B9BF2791AB5A</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Radius>50.000000</Radius>
+        <MaxAffected>50</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>31</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Ravaging Darkness</Name>
+      <Icon>binding_of_affliction_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>31</RequiredLevel>
+        <AbilityId>1983313270</AbilityId>
+        <Description></Description>
+        <AddonId>A7636F5764CA40793</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>40.000000</MaxRange>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>8</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Dark Water</Name>
+      <Icon>dark_waters_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>8</RequiredLevel>
+        <AbilityId>2066686359</AbilityId>
+        <Description>Deals 728 to 804 Death damage. Applies a stack of Darkness, dealing an additional 766 Death damage over 15s. Max 3 stacks.</Description>
+        <AddonId>A7B2F2197C6D4A07A</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>12</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Curse of Solitude</Name>
+      <Icon>curse_of_solitude</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>12</RequiredLevel>
+        <AbilityId>2109670848</AbilityId>
+        <Description></Description>
+        <AddonId>A7DBF05C07B49A05F</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>40.000000</MaxRange>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>32</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Sigil of Binding</Name>
+      <Icon>magicward4</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>32</RequiredLevel>
+        <AbilityId>2119894282</AbilityId>
+        <Description>Snares up to 10 enemies for 5s.</Description>
+        <AddonId>A7E5B050AC43B64B8</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>15.000001</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Radius>7.000000</Radius>
+        <MaxAffected>10</MaxAffected>
+      </AbilityRank>
+    </Ability>
+  </Abilities>
+</SoulTree>
+

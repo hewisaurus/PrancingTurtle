@@ -1,0 +1,1394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SoulTree calling="Mage" name="Elemental Summoner">
+  <Traits>
+    <Trait>
+      <Key>0</Key>
+      <Name>Velocity</Name>
+      <Icon>spiritblast4bc</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1539652760</AbilityId>
+          <Description></Description>
+          <AddonId>A5BC53C98244CD035</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Decreases the cast time of your Crystalline Missiles spell by 0.1 second, its mana cost by 6% and causes Crystalline Missiles and Volcanic Eruption to increase your pet&apos;s damage by 2% for 10 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Decreases the cast time of your Crystalline Missiles spell by 0.2 seconds, its mana cost by 12% and causes Crystalline Missiles and Volcanic Eruption to increase your pet&apos;s damage by 4% for 10 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Decreases the cast time of your Crystalline Missiles spell by 0.3 seconds, its mana cost by 18% and causes Crystalline Missiles and Volcanic Eruption to increase your pet&apos;s damage by 6% for 10 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Decreases the cast time of your Crystalline Missiles spell by 0.4 seconds, its mana cost by 24% and causes Crystalline Missiles and Volcanic Eruption to increase your pet&apos;s damage by 8% for 10 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Decreases the cast time of your Crystalline Missiles spell by 0.5 seconds, its mana cost by 30% and causes Crystalline Missiles and Volcanic Eruption to increase your pet&apos;s damage by 10% for 10 seconds.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>1</Key>
+      <Name>Biting Cold</Name>
+      <Icon>icestorm-light</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>6923736</AbilityId>
+          <Description></Description>
+          <AddonId>A0069A5D81C627250</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the critical hit chance of your abilities by 1%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the critical hit chance of your abilities by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the critical hit chance of your abilities by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases the critical hit chance of your abilities by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases the critical hit chance of your abilities by 5%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>2</Key>
+      <Name>Ice Shield</Name>
+      <Icon>arcaneshield3</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1407482819</AbilityId>
+          <Description>Absorbs 1036 damage. Lasts 30s.</Description>
+          <AddonId>A53E47BC3A67F7298</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>30.000002</Cooldown>
+          <CostManaPercent>7.500000</CostManaPercent>
+          <GainHeat>9</GainHeat>
+          <CastTime>Instant</CastTime>
+          <PowerStatCoefficient effect="0" action="0">2.000000</PowerStatCoefficient>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>3</Key>
+      <Name>Charged</Name>
+      <Icon>lighting2a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1814813338</AbilityId>
+          <Description></Description>
+          <AddonId>A6C2BDA9A4059E710</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage and critical strike chance of your Lightning Strike spell by 5%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage and critical hit chance of your Lightning Strike spell by 10%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the damage and critical hit chance of your Lightning Strike spell by 15%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>4</Key>
+      <Name>Elemental Link</Name>
+      <Icon>releaseheat4a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1765348817</AbilityId>
+          <Description></Description>
+          <AddonId>A693915D10C36D2F6</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your damage by 1%. 
+Increases your pets damage by 4%. 
+Reduces damage done to your defensive pets by 1%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your damage by 2%. 
+Increases your pets damage by 8%. 
+Reduces damage done to your defensive pets by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your damage by 3%. 
+Increases your pets damage by 12%. 
+Reduces damage done to your defensive pets by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your damage by 4%. 
+Increases your pets damage by 16%. 
+Reduces damage done to your defensive pets by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your damage by 5%. 
+Increases your pets damage by 20%. 
+Reduces damage done to your defensive pets by 5%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>5</Key>
+      <Name>Stone Armor</Name>
+      <Icon>ward4</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>546928955</AbilityId>
+          <Description>Increases Armor by 594. Reduces damage done to the Mage&apos;s pet by 5%. Lasts 1h. Counts as a Mage Armor.</Description>
+          <AddonId>A2099793BAADDD560</AddonId>
+          <IsPassive>False</IsPassive>
+          <CostManaPercent>2.250000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+          <Duration>3600.000000</Duration>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>6</Key>
+      <Name>Ashen Armor</Name>
+      <Icon>restorative_flame</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-11648077</AbilityId>
+          <Description></Description>
+          <AddonId>AFF4E43B337FA936C</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Ignite increases the critical hit chance of your pets abilities by 10%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your Ignite increases the critical hit chance of your pets abilities by 20%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Your Ignite increases the critical hit chance of your pets abilities by 30%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>7</Key>
+      <Name>Tempest</Name>
+      <Icon>energyblast1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>916193761</AbilityId>
+          <Description></Description>
+          <AddonId>A369C01E15DBFD7F7</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases damage and healing from your Critical Hits by 1%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases damage and healing from your Critical Hits by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases damage and healing from your Critical Hits by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases damage and healing from your Critical Hits by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases damage and healing from your Critical Hits by 5%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>8</Key>
+      <Name>Icy Gale</Name>
+      <Icon>removeheat1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>878886553</AbilityId>
+          <Description>Knocks back up to 3 enemies in front of the Mage. Snares each enemy for 6s.</Description>
+          <AddonId>A3462BE9922477643</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>30.000002</Cooldown>
+          <CostManaPercent>4.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+          <Radius>10.000000</Radius>
+          <MaxAffected>3</MaxAffected>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>10</Key>
+      <Name>Weathered</Name>
+      <Icon>requital_01_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the health of your pets by 10%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the health of your pets by 20%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the health of your pets by 30%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases the health of your pets by 40%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases the health of your pets by 50%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>11</Key>
+      <Name>Elemental Surge</Name>
+      <Icon>paladin-preservation_b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-93239210</AbilityId>
+          <Description></Description>
+          <AddonId>AFA7148560B827AAE</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your damage by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your damage by 4%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>12</Key>
+      <Name>Cycle of Earth</Name>
+      <Icon>riftblade-earth_burst_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-59273813</AbilityId>
+          <Description></Description>
+          <AddonId>AFC778DAB309C1766</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Casting a damaging Earth spell increases the damage of your next Air spell, within 10 seconds, by 7%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Casting a damaging Earth spell increases the damage of your next Air spell, within 10 seconds, by 15%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>14</Key>
+      <Name>Planar Expansion</Name>
+      <Icon>magicresist2</Icon>
+      <PrereqTraitKey>17</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your pets’ damage by 6% 
+Your Air Elemental&apos;s Electrify increases your spell power by an additional 1%.
+Your Earth Elemental’s Thud reduces damage dealt to the Elemental by 2% for 5 seconds.
+</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your pets’ damage by 12% 
+Your Air Elemental&apos;s Electrify increases your spell power by an additional 2%.
+Your Earth Elemental’s Thud reduces damage dealt to the Elemental by 4% for 5 seconds.
+</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your pets’ damage by 18% 
+Your Air Elemental&apos;s Electrify increases your spell power by an additional 3%.
+Your Earth Elemental’s Thud reduces damage dealt to the Elemental by 6% for 5 seconds.
+</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your pets’ damage by 24% 
+Your Air Elemental&apos;s Electrify increases your spell power by an additional 4%.
+Your Earth Elemental’s Thud reduces damage dealt to the Elemental by 8% for 5 seconds.
+</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your pets’ damage by 30% 
+Your Air Elemental&apos;s Electrify increases your spell power by an additional 5%.
+Your Earth Elemental’s Thud reduces damage dealt to the Elemental by 10% for 5 seconds.
+</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>15</Key>
+      <Name>Synergize</Name>
+      <Icon>doctrine_of_bliss_01_b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>2068471789</AbilityId>
+          <Description>Causes damaging abilities to restore 3 Charge to the Mage. Lasts 1h.</Description>
+          <AddonId>A7B4A5FED0AABC313</AddonId>
+          <IsPassive>False</IsPassive>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>2.250000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>13</Key>
+      <Name>Cycle of Fire</Name>
+      <Icon>healing_flare</Icon>
+      <PrereqTraitKey>24</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-84521776</AbilityId>
+          <Description></Description>
+          <AddonId>AFAF64CD02E74C429</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Casting a damaging Fire spell increases the damage of your next Earth spell, within 10 seconds, by 7%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Casting a damaging Fire spell increases the damage of your next Earth spell, within 10 seconds, by 15%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>16</Key>
+      <Name>Intensify Elements</Name>
+      <Icon>elementalres2b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>973481141</AbilityId>
+          <Description>Increases damage done by 100%. Increases the Mage&apos;s elemental damage done by 50%. Lasts 15s.</Description>
+          <AddonId>A3A0624B596699D94</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>120.000008</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>2.250000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+          <Duration>15.000000</Duration>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>17</Key>
+      <Name>Greater Elemental Affinity</Name>
+      <Icon>resolve1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>2082098365</AbilityId>
+          <Description>Summons a Greater Air Elemental. Best used for Damage.</Description>
+          <AddonId>A7C1A4CBD6BA6F0CC</AddonId>
+          <IsPassive>False</IsPassive>
+          <CostManaPercent>9.000000</CostManaPercent>
+          <CastTime>8.000000</CastTime>
+        </Ability>
+        <Ability>
+          <AbilityId>199916107</AbilityId>
+          <Description>Summons a Greater Earth Elemental. Best used for Tanking.</Description>
+          <AddonId>A0BEA7A4B85DA745B</AddonId>
+          <IsPassive>False</IsPassive>
+          <CostManaPercent>9.000000</CostManaPercent>
+          <CastTime>8.000000</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Grants you the ability to summon Greater Air and Earth Elementals. Reduces area effect damage done to your Elemental pets by 65%, plus an additional 1% for every point spent in the Elementalist soul above 21, to a maximum of 95%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>18</Key>
+      <Name>Icy Carapace</Name>
+      <Icon>shaman-vengeance_of_frozen_earth_c</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1932291756</AbilityId>
+          <Description>Deals 459 Water damage over 8s. Deals 1091 to 1206 Water damage and removes Icy Carapace if the enemy is hit by Air damage from the Mage.</Description>
+          <AddonId>A732C6EAC4D3726E2</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>10.000000</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>7.500000</CostManaPercent>
+          <GainHeat>9</GainHeat>
+          <CastTime>Instant</CastTime>
+          <Duration>8.000000</Duration>
+          <Interval>1.000000</Interval>
+          <PowerStatCoefficient effect="0" action="0">0.600000</PowerStatCoefficient>
+          <DamageMultiplier effect="0" action="0">0.111000</DamageMultiplier>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>19</Key>
+      <Name>Abrasion</Name>
+      <Icon>generic_ability_018</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-61935787</AbilityId>
+          <Description></Description>
+          <AddonId>AFC4EEF55518E552A</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>You and your pet&apos;s attacks ignore 2% of your target&apos;s Armor and Resistances.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>You and your pet&apos;s attacks ignore 4% of your target&apos;s Armor and Resistances.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>20</Key>
+      <Name>Cycle of Air</Name>
+      <Icon>scatter_the_shadows</Icon>
+      <PrereqTraitKey>12</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-72641881</AbilityId>
+          <Description></Description>
+          <AddonId>AFBAB92A76B88D683</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Casting a damaging Air spell increases the damage of your next Water spell, within 10 seconds, by 7%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Casting a damaging Air spell increases the damage of your next Water spell, within 10 seconds, by 15%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>21</Key>
+      <Name>Sudden Storm</Name>
+      <Icon>warden-deluge_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-29745830</AbilityId>
+          <Description></Description>
+          <AddonId>AFE3A1D5A3FAD437E</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces the cast time of Stormbolt by 50%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reduces the cast time of Stormbolt by 100%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>22</Key>
+      <Name>Rushing Wind</Name>
+      <Icon>untangle_b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces your pet&apos;s global cooldown to 1.25 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reduces your pet&apos;s global cooldown to 1 second.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>23</Key>
+      <Name>Volcanic Eruption</Name>
+      <Icon>charge_blast</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-33615708</AbilityId>
+          <Description>Channels 1613 Fire and 1613 Earth damage over 3s.</Description>
+          <AddonId>AFDFF10A480C20898</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>20.000000</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>15.000000</CostManaPercent>
+          <GainHeat>9</GainHeat>
+          <CastTime>Instant</CastTime>
+          <Channel>true</Channel>
+          <Duration>3.000000</Duration>
+          <Interval>1.000000</Interval>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>24</Key>
+      <Name>Cycle of Water</Name>
+      <Icon>doctrine_of_authority_01_a</Icon>
+      <PrereqTraitKey>20</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-1890387</AbilityId>
+          <Description></Description>
+          <AddonId>AFFE327AD269E0ABC</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Casting a damaging Water spell increases the damage of your next Fire spell, within 10 seconds, by 7%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Casting a damaging Water spell increases the damage of your next Fire spell, within 10 seconds, by 15%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>25</Key>
+      <Name>Elemental Burst</Name>
+      <Icon>elementalist_elemental_burst_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>40</MinimumPointsSpent>
+      <DisplayRow>8</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-13582503</AbilityId>
+          <Description>Deals 363 to 401 Air, Earth, Fire and Water damage.</Description>
+          <AddonId>AFF30BF5932ED4E60</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>15.000001</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>7.500000</CostManaPercent>
+          <GainHeat>9</GainHeat>
+          <CastTime>Instant</CastTime>
+          <PowerStatCoefficient effect="0" action="0">0.500000</PowerStatCoefficient>
+          <PowerStatCoefficient effect="1" action="0">0.500000</PowerStatCoefficient>
+          <PowerStatCoefficient effect="2" action="0">0.500000</PowerStatCoefficient>
+          <PowerStatCoefficient effect="3" action="0">0.500000</PowerStatCoefficient>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+  </Traits>
+  <Abilities>
+    <Ability>
+      <MinimumPointsInSoul>58</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Prismatic Armor</Name>
+      <Icon>elementalist_prismatic_armor</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>57</RequiredLevel>
+        <AbilityId>-77248977</AbilityId>
+        <Description>Increases all of the Mage&apos;s resists by 100, their damage by 15% and gives damaging attacks a 20% chance to reduce the Mage&apos;s global cooldown to 1 second for 10s. Counts as a Mage Armor. Lasts 1h.</Description>
+        <AddonId>AFB65462F7C986454</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>2.250000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>3600.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>54</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Reclaim Elements</Name>
+      <Icon>heroicsurge1a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>53</RequiredLevel>
+        <AbilityId>-62548485</AbilityId>
+        <Description>Sacrifices the Mage&apos;s pet, restoring 50% of the mage&apos;s Maximum health and buffs the Mage for 15s, increasing their damage by 50% and causes their damaging attacks to deal an additional 7 to 8 Fire damage.</Description>
+        <AddonId>AFC4595FB8AF7A6D7</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>120.000008</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>3.750000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>61</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Prismatic Volley</Name>
+      <Icon>elementalist_prismatic_valley</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>60</RequiredLevel>
+        <AbilityId>-62447417</AbilityId>
+        <Description>Channels 1064 Air, Earth, Fire and Water damage over 4s.</Description>
+        <AddonId>AFC4720C793070B39</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>15.000000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+        <Channel>true</Channel>
+        <Duration>4.000000</Duration>
+        <Interval>1.000000</Interval>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Elementalist Soul Gift</Name>
+      <Icon>beastmaster_strike_to_maim_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-53204124</AbilityId>
+        <Description>Increases your damage by 0.5%, and your pet&apos;s damage by 4%, for each point spent in the Elementalist soul.</Description>
+        <AddonId>AFCD42B644077CD72</AddonId>
+        <IsPassive>True</IsPassive>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>48</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Raging Elements</Name>
+      <Icon>surge_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>48</RequiredLevel>
+        <AbilityId>-50655527</AbilityId>
+        <Description>Increases the Mage&apos;s pet&apos;s damage by 30% for 30s. Consumes 50 Charge on cast.</Description>
+        <AddonId>AFCFB0ED985AAFB12</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <MinimumHeat>50</MinimumHeat>
+        <CastTime>Instant</CastTime>
+        <Duration>30.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Volcanic Eruption</Name>
+      <Icon>charge_blast</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-33615708</AbilityId>
+        <Description>Channels 1613 Fire and 1613 Earth damage over 3s.</Description>
+        <AddonId>AFDFF10A480C20898</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>20.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>15.000000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+        <Channel>true</Channel>
+        <Duration>3.000000</Duration>
+        <Interval>1.000000</Interval>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>32</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Stormbolt</Name>
+      <Icon>riftblade_frost_strike_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>32</RequiredLevel>
+        <AbilityId>-26386050</AbilityId>
+        <Description>Deals 461 to 509 Air and 461 to 509 Water damage.</Description>
+        <AddonId>AFE6D617E35D52E0D</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>6.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <GainHeat>11</GainHeat>
+        <CastTime>1.500000</CastTime>
+        <PowerStatCoefficient effect="0" action="0">0.630000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>51</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Summon: Fire Elemental</Name>
+      <Icon>internalizeheat3b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>50</RequiredLevel>
+        <AbilityId>-15866134</AbilityId>
+        <Description>Summons a Fire Elemental. Best used for Melee Damage.</Description>
+        <AddonId>AFF0DE6EA4EBF1676</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <CastTime>8.000000</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Elemental Burst</Name>
+      <Icon>elementalist_elemental_burst_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-13582503</AbilityId>
+        <Description>Deals 363 to 401 Air, Earth, Fire and Water damage.</Description>
+        <AddonId>AFF30BF5932ED4E60</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>15.000001</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">0.500000</PowerStatCoefficient>
+        <PowerStatCoefficient effect="1" action="0">0.500000</PowerStatCoefficient>
+        <PowerStatCoefficient effect="2" action="0">0.500000</PowerStatCoefficient>
+        <PowerStatCoefficient effect="3" action="0">0.500000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>44</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Elemental Armor</Name>
+      <Icon>arcaneshield2</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>44</RequiredLevel>
+        <AbilityId>14766023</AbilityId>
+        <Description>Increases Armor by 702, elemental damage done by 15%, and Charge gains by 15%. Lasts 1h. Counts as a Mage Armor.</Description>
+        <AddonId>A00E14FC7B618A712</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>2.250000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>3600.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Crystalline Missiles</Name>
+      <Icon>spiritblast4bc</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>103100092</AbilityId>
+        <Description>Deals 970 to 1073 Earth damage. Counts as a Primary Bolt.</Description>
+        <AddonId>A06252EBC63E47110</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>10.000000</CostManaPercent>
+        <GainHeat>15</GainHeat>
+        <CastTime>2.000000</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Summon: Greater Earth Elemental</Name>
+      <Icon>steelskin2</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>199916107</AbilityId>
+        <Description>Summons a Greater Earth Elemental. Best used for Tanking.</Description>
+        <AddonId>A0BEA7A4B85DA745B</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <CastTime>8.000000</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>20</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Quicken Elements</Name>
+      <Icon>healthchannel3</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>20</RequiredLevel>
+        <AbilityId>213624278</AbilityId>
+        <Description>Restores 15% health to the Mage&apos;s primary pet every second for 5s.</Description>
+        <AddonId>A0CBBA5D65C49235C</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Channel>true</Channel>
+        <Duration>5.000000</Duration>
+        <Interval>1.000000</Interval>
+        <PowerStatCoefficient effect="0" action="0">1.000000</PowerStatCoefficient>
+        <AggroMultiplier effect="0" action="0">0.250000</AggroMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>8</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Ignite</Name>
+      <Icon>sacrificepet1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>8</RequiredLevel>
+        <AbilityId>445883247</AbilityId>
+        <Description>Deals 401 Fire damage. Deals an additional 577 Fire damage over 16s.</Description>
+        <AddonId>A1A93A36F78E9C716</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">0.500000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>2</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Lightning Strike</Name>
+      <Icon>lighting2a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>2</RequiredLevel>
+        <AbilityId>509409020</AbilityId>
+        <Description>Deals 1703 to 1883 Air damage.</Description>
+        <AddonId>A1E5CF6FC53D70C63</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>10.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>12.500000</CostManaPercent>
+        <GainHeat>22</GainHeat>
+        <CastTime>2.500000</CastTime>
+        <PowerStatCoefficient effect="0" action="0">1.400000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Stone Armor</Name>
+      <Icon>ward4</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>546928955</AbilityId>
+        <Description>Increases Armor by 594. Reduces damage done to the Mage&apos;s pet by 5%. Lasts 1h. Counts as a Mage Armor.</Description>
+        <AddonId>A2099793BAADDD560</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>2.250000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>3600.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>24</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Channel Elements</Name>
+      <Icon>healthchannel3a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>24</RequiredLevel>
+        <AbilityId>547633495</AbilityId>
+        <Description>Restores 5% mana per second.</Description>
+        <AddonId>A20A439574F947EBE</AddonId>
+        <IsPassive>False</IsPassive>
+        <CastTime>Instant</CastTime>
+        <Channel>true</Channel>
+        <Duration>10.000000</Duration>
+        <Interval>1.000000</Interval>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>12</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Summon: Lesser Air Elemental</Name>
+      <Icon>whirlwind4</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>12</RequiredLevel>
+        <AbilityId>607802644</AbilityId>
+        <Description>Summons a Lesser Air Elemental (max level 30). Best used for Damage.</Description>
+        <AddonId>A243A551426A0C4EC</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <CastTime>8.000000</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Icy Gale</Name>
+      <Icon>removeheat1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>878886553</AbilityId>
+        <Description>Knocks back up to 3 enemies in front of the Mage. Snares each enemy for 6s.</Description>
+        <AddonId>A3462BE9922477643</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Radius>10.000000</Radius>
+        <MaxAffected>3</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Dismiss Pet</Name>
+      <Icon>redirect1a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>962684404</AbilityId>
+        <Description>Dismiss your pet.</Description>
+        <AddonId>A396165F4464E82E4</AddonId>
+        <IsPassive>False</IsPassive>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Intensify Elements</Name>
+      <Icon>elementalres2b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>973481141</AbilityId>
+        <Description>Increases damage done by 100%. Increases the Mage&apos;s elemental damage done by 50%. Lasts 15s.</Description>
+        <AddonId>A3A0624B596699D94</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>120.000008</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>2.250000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>15.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>40</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Rushing Elements</Name>
+      <Icon>purifier_sign_of_faith_cc</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>40</RequiredLevel>
+        <AbilityId>1003440962</AbilityId>
+        <Description>Reduces the Mage&apos;s global cooldown to 1 second for 15 seconds.</Description>
+        <AddonId>A3BCF4B42E8C6042C</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <CostManaPercent>2.250000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>15.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>4</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Elemental Forces</Name>
+      <Icon>elemresist1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>4</RequiredLevel>
+        <AbilityId>1146907731</AbilityId>
+        <Description>Causes the Mage&apos;s next 5 damaging abilities to deal an additional 74 random elemental damage. Cannot trigger Icy Carapace or a Cycle buff.</Description>
+        <AddonId>A445C6C53C9EC9D48</AddonId>
+        <IsPassive>False</IsPassive>
+        <MinimumHeat>60</MinimumHeat>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Summon: Lesser Earth Elemental</Name>
+      <Icon>ironskin1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1261921627</AbilityId>
+        <Description>Summons a Lesser Earth Elemental (max level 30). Best used for Tanking.</Description>
+        <AddonId>A4B37655B510D46CC</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <CastTime>8.000000</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Ice Shield</Name>
+      <Icon>arcaneshield3</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1407482819</AbilityId>
+        <Description>Absorbs 1036 damage. Lasts 30s.</Description>
+        <AddonId>A53E47BC3A67F7298</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">2.000000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>16</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Burning Ground</Name>
+      <Icon>conflagration2</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>16</RequiredLevel>
+        <AbilityId>1757230855</AbilityId>
+        <Description>Deals 1791 Fire damage over 8s to up to 8 enemies in the target area.</Description>
+        <AddonId>A68BD37077C0C5B12</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>8.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>12.000000</CostManaPercent>
+        <GainHeat>15</GainHeat>
+        <CastTime>2.000000</CastTime>
+        <Duration>8.000000</Duration>
+        <Interval>2.000000</Interval>
+        <Radius>7.000000</Radius>
+        <MaxAffected>8</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>24</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Summon: Water Elemental</Name>
+      <Icon>riftblade-avatar_of_water</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>24</RequiredLevel>
+        <AbilityId>1806891771</AbilityId>
+        <Description>Summons a Water Elemental. Best used for Crowd Control.</Description>
+        <AddonId>A6BB2FAFB2AF46162</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <CastTime>8.000000</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>36</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Sever Bonds</Name>
+      <Icon>magicward4</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>36</RequiredLevel>
+        <AbilityId>1916380728</AbilityId>
+        <Description>Removes all control and movement impairing effects from both the Mage and their pet.</Description>
+        <AddonId>A7239A6387452A33C</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <CostManaPercent>2.250000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Icy Carapace</Name>
+      <Icon>shaman-vengeance_of_frozen_earth_c</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1932291756</AbilityId>
+        <Description>Deals 459 Water damage over 8s. Deals 1091 to 1206 Water damage and removes Icy Carapace if the enemy is hit by Air damage from the Mage.</Description>
+        <AddonId>A732C6EAC4D3726E2</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>10.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+        <Duration>8.000000</Duration>
+        <Interval>1.000000</Interval>
+        <PowerStatCoefficient effect="0" action="0">0.600000</PowerStatCoefficient>
+        <DamageMultiplier effect="0" action="0">0.111000</DamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Synergize</Name>
+      <Icon>doctrine_of_bliss_01_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>2068471789</AbilityId>
+        <Description>Causes damaging abilities to restore 3 Charge to the Mage. Lasts 1h.</Description>
+        <AddonId>A7B4A5FED0AABC313</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>2.250000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Summon: Greater Air Elemental</Name>
+      <Icon>generic_ability_025</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>2082098365</AbilityId>
+        <Description>Summons a Greater Air Elemental. Best used for Damage.</Description>
+        <AddonId>A7C1A4CBD6BA6F0CC</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <CastTime>8.000000</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>28</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Fast Summon</Name>
+      <Icon>generic_ability_031_2</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>28</RequiredLevel>
+        <AbilityId>2103897830</AbilityId>
+        <Description>Causes the next pet summon to be cast instantly. Lasts 15s.</Description>
+        <AddonId>A7D66EEE61F786645</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>120.000008</Cooldown>
+        <CostManaPercent>1.130000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+  </Abilities>
+</SoulTree>
+

@@ -1,0 +1,1420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SoulTree calling="Rogue" name="Assassin">
+  <Traits>
+    <Trait>
+      <Key>0</Key>
+      <Name>Ruthlessness</Name>
+      <Icon>critical_sweep1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>272077625</AbilityId>
+          <Description></Description>
+          <AddonId>A1037933900000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Critical Hit chance by 1%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Critical Hit chance by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your Critical Hit chance by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your Critical Hit chance by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your Critical Hit chance by 5%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>1</Key>
+      <Name>Improved Final Blow</Name>
+      <Icon>sweep2</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1918847274</AbilityId>
+          <Description></Description>
+          <AddonId>A725F492A00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage of your Final Blow by 5% and Critical Hit chance by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage of your Final Blow by 10% and Critical Hit chance by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the damage of your Final Blow by 15% and Critical Hit chance by 9%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>2</Key>
+      <Name>Improved Savage Strike</Name>
+      <Icon>disabling3a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>686380693</AbilityId>
+          <Description></Description>
+          <AddonId>A28E9569500000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage of your Savage Strike by 5% and Critical Hit chance by 5%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage of your Savage Strike by 10% and Critical Hit chance by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>3</Key>
+      <Name>Serrated Blades</Name>
+      <Icon>staggeringshot1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>2070928788</AbilityId>
+          <Description></Description>
+          <AddonId>A7B6FDD9400000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your melee weapon abilities have a 50% chance to cause the target to bleed for 20% of your weapon&apos;s damage over 6 seconds. Can be applied up to 3 times.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your melee weapon abilities have a 50% chance to cause the target to bleed for 40% of your weapon&apos;s damage over 6 seconds. Can be applied up to 3 times.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Your melee weapon abilities have a 50% chance to cause the target to bleed for 60% of your weapon&apos;s damage over 6 seconds. Can be applied up to 3 times.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>4</Key>
+      <Name>Puncture</Name>
+      <Icon>exposeweakness2a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>682253116</AbilityId>
+          <Description>Deals 365 to 403 damage. Ignores Armor. Bleeds 1466 health over 10s. Awards 1 Combo Point.</Description>
+          <AddonId>A28AA5B3CB279BB8B</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Melee Weapon</RequiresWeapon>
+          <MaxRange>3.000000</MaxRange>
+          <CostEnergy>24</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <GainComboPoints>1</GainComboPoints>
+          <CastTime>Instant</CastTime>
+          <PowerStatCoefficient effect="0" action="0">0.340000</PowerStatCoefficient>
+          <WeaponDamageMultiplier effect="0" action="0">0.340000</WeaponDamageMultiplier>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>5</Key>
+      <Name>Murderous Intent</Name>
+      <Icon>finalstrike2</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>508873468</AbilityId>
+          <Description></Description>
+          <AddonId>A1E54CAFC00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Physical damage by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Physical damage by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your Physical damage by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your Physical damage by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your Physical damage by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>6</Key>
+      <Name>Cruel Vengeance</Name>
+      <Icon>cruel_vengeance_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>458067944</AbilityId>
+          <Description></Description>
+          <AddonId>A1B4D8FE800000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Critical Hit attacks increase your damage by 2% for 10 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your Critical Hit attacks increase your damage by 4% for 10 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Your Critical Hit attacks increase your damage by 6% for 10 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Your Critical Hit attacks increase your damage by 8% for 10 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Your Critical Hit attacks increase your damage by 10% for 10 seconds.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>7</Key>
+      <Name>Foul Play</Name>
+      <Icon>foul_play_02</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1418517295</AbilityId>
+          <Description>Stuns for 4s.</Description>
+          <AddonId>A548CDB2F539EDF4C</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Melee Weapon</RequiresWeapon>
+          <Cooldown>30.000002</Cooldown>
+          <MaxRange>3.000000</MaxRange>
+          <CostEnergy>10</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+          <Duration>4.000000</Duration>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>8</Key>
+      <Name>Silent Footsteps</Name>
+      <Icon>silent_footsteps_01_b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1193969407</AbilityId>
+          <Description></Description>
+          <AddonId>A472A86FF00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the difficulty of detecting you while stealthing by 30% and increases your movement speed while stealthing by 30%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>9</Key>
+      <Name>Magnify Pain</Name>
+      <Icon>magnify_pain_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>506003212</AbilityId>
+          <Description></Description>
+          <AddonId>A1E28FF0C00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Critical Hit attacks debuff the target, increasing damage taken from you by 1% for 10 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your Critical Hit attacks debuff the target, increasing damage taken from you by 2% for 10 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Your Critical Hit attacks debuff the target, increasing damage taken from you by 3% for 10 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Your Critical Hit attacks debuff the target, increasing damage taken from you by 4% for 10 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Your Critical Hit attacks debuff the target, increasing damage taken from you by 5% for 10 seconds.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>10</Key>
+      <Name>Heartseeker</Name>
+      <Icon>exposeweak1a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-57152294</AbilityId>
+          <Description></Description>
+          <AddonId>AFC97ECDA00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage of Assassin attacks by 3%. Increases Attack Power and Weapon Damage by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage of Assassin attacks by 6%. Increases Attack Power and Weapon Damage by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the damage of Assassin attacks by 9%. Increases Attack Power and Weapon Damage by 9%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the damage of Assassin attacks by 12%. Increases Attack Power and Weapon Damage by 12%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the damage of Assassin attacks by 15%. Increases Attack Power and Weapon Damage by 15%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>11</Key>
+      <Name>Backstab</Name>
+      <Icon>backstab</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>2032109103</AbilityId>
+          <Description>Deals 1941 to 2145 damage. Deals 25% less damage when not behind the target. Awards 1 Combo Point.</Description>
+          <AddonId>A791F862FDD91B766</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Melee Weapon</RequiresWeapon>
+          <Cooldown>6.000000</Cooldown>
+          <MaxRange>3.000000</MaxRange>
+          <CostEnergy>24</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <GainComboPoints>1</GainComboPoints>
+          <CastTime>Instant</CastTime>
+          <PowerStatCoefficient effect="0" action="0">1.810000</PowerStatCoefficient>
+          <WeaponDamageMultiplier effect="0" action="0">1.810000</WeaponDamageMultiplier>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>12</Key>
+      <Name>Poison Potency</Name>
+      <Icon>poison_gas_02</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1714460080</AbilityId>
+          <Description></Description>
+          <AddonId>A663095B000000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage your Poison abilities deal by 5%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage your Poison abilities deal by 10%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the damage your Poison abilities deal by 15%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>13</Key>
+      <Name>Subterfuge</Name>
+      <Icon>silent_footsteps_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1878209782</AbilityId>
+          <Description></Description>
+          <AddonId>A6FF334F600000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage of your From Stealth attacks by 10%. They also have a 50% chance of gaining an additional Combo Point.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage of your From Stealth attacks by 20%. They also have a 100% chance of gaining an additional Combo Point.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>14</Key>
+      <Name>Improved Stealth</Name>
+      <Icon>stealth_w</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1276820636</AbilityId>
+          <Description></Description>
+          <AddonId>A4C1ABC9C00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Stealth now lasts until cancelled.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>15</Key>
+      <Name>Poison Mastery</Name>
+      <Icon>necropotence1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1076471700</AbilityId>
+          <Description></Description>
+          <AddonId>A4029A79400000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the Weapon damage and Attack Power bonus of your Poison-coated weapons by 2% and the chance to apply Poison to your enemy by 10%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the Weapon damage and Attack Power bonus of your Poison-coated weapons by 4% and the chance to apply Poison to your enemy by 20%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the Weapon damage and Attack Power bonus of your Poison-coated weapons by 6% and the chance to apply Poison to your enemy by 30%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases the Weapon damage and Attack Power bonus of your Poison-coated weapons by 8% and the chance to apply Poison to your enemy by 40%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases the Weapon damage and Attack Power bonus of your Poison-coated weapons by 10% and the chance to apply Poison to your enemy by 50%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>16</Key>
+      <Name>Physical Trauma</Name>
+      <Icon>physical_trauma_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1574239940</AbilityId>
+          <Description></Description>
+          <AddonId>A5DD4FEC400000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases damage of all your damage over time effects by 10%. Your Impale causes targets to take an additional 10% damage from your Final Blow.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases damage of all your damage over time effects by 20%. Your Impale causes targets to take an additional 20% damage from your Final Blow.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>17</Key>
+      <Name>Advanced Flanking</Name>
+      <Icon>backstab_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>262465108</AbilityId>
+          <Description></Description>
+          <AddonId>A0FA4E65400000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the Critical Hit chance of Backstab by 5%. Increases the Critical Hit chance of your From Stealth attacks by 25%. Decreases penalty on Backstab by 10%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the Critical Hit chance of Backstab by 10%. Increases the Critical Hit chance of your From Stealth attacks by 50%. Decreases penalty on Backstab by 20%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>18</Key>
+      <Name>Enduring Brew</Name>
+      <Icon>poisontwo3</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>327845350</AbilityId>
+          <Description>Restores 4860 health and 30 energy.</Description>
+          <AddonId>A138A85E6914E72D1</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Melee Weapon</RequiresWeapon>
+          <Cooldown>60.000004</Cooldown>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+          <PowerStatCoefficient effect="0" action="0">6.880000</PowerStatCoefficient>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>19</Key>
+      <Name>Slip Away</Name>
+      <Icon>slip_away_03</Icon>
+      <PrereqTraitKey>14</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1110447249</AbilityId>
+          <Description>Applies Stealth and removes movement impairing effects. Prevents damage from breaking Stealth for 3s.</Description>
+          <AddonId>A42301491BDB4A6E9</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>120.000008</Cooldown>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>20</Key>
+      <Name>Blinding Powder</Name>
+      <Icon>poison_gas_01_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>258544968</AbilityId>
+          <Description>Confuses for 10s or until damaged.</Description>
+          <AddonId>A0F6915487D760195</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Melee Weapon</RequiresWeapon>
+          <Cooldown>60.000004</Cooldown>
+          <MaxRange>20.000000</MaxRange>
+          <CostEnergy>10</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+          <Duration>10.000000</Duration>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>21</Key>
+      <Name>Cloak and Dagger</Name>
+      <Icon>stalking_phase</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>658814692</AbilityId>
+          <Description></Description>
+          <AddonId>A2744B6E400000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>After using any From Stealth attack, you deal 5% more damage and take 5% less damage for 15 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>After using any From Stealth attack, you deal 10% more damage and take 10% less damage for 15 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>After using any From Stealth attack, you deal 15% more damage and take 15% less damage for 15 seconds.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>22</Key>
+      <Name>Manslaughter</Name>
+      <Icon>double_cross_01_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-79626451</AbilityId>
+          <Description></Description>
+          <AddonId>AFB40FF2D00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Assassin Finishers have a 20% chance per Combo Point to apply Expose Weakness to the enemy.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>23</Key>
+      <Name>Enfeebling Poison</Name>
+      <Icon>puncture2</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-48440762</AbilityId>
+          <Description>Grants weapon ability attacks a 50% chance to deal an additional 184 Water damage and causes the enemy to deal 10% less damage to the Rogue. Lasts 1h.</Description>
+          <AddonId>AFD1CDA46D1BEBA56</AddonId>
+          <IsPassive>False</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>24</Key>
+      <Name>Thread of Death</Name>
+      <Icon>assassin_thread_of_death_b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>40</MinimumPointsSpent>
+      <DisplayRow>8</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-45670405</AbilityId>
+          <Description>Allows the next ability that requires Stealth to be used while out of Stealth. Lasts 5s.</Description>
+          <AddonId>AFD471FFB96499F4E</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>30.000002</Cooldown>
+          <CostEnergy>10</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+  </Traits>
+  <Abilities>
+    <Ability>
+      <MinimumPointsInSoul>51</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Serpent Pose</Name>
+      <Icon>slipaway1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>50</RequiredLevel>
+        <AbilityId>-99715933</AbilityId>
+        <Description></Description>
+        <AddonId>AFA0E74A324A164B7</AddonId>
+        <IsPassive>True</IsPassive>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Enfeebling Poison</Name>
+      <Icon>puncture2</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-48440762</AbilityId>
+        <Description>Grants weapon ability attacks a 50% chance to deal an additional 184 Water damage and causes the enemy to deal 10% less damage to the Rogue. Lasts 1h.</Description>
+        <AddonId>AFD1CDA46D1BEBA56</AddonId>
+        <IsPassive>False</IsPassive>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Thread of Death</Name>
+      <Icon>assassin_thread_of_death_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-45670405</AbilityId>
+        <Description>Allows the next ability that requires Stealth to be used while out of Stealth. Lasts 5s.</Description>
+        <AddonId>AFD471FFB96499F4E</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Assassin Mastery</Name>
+      <Icon>puncture2</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-41118083</AbilityId>
+        <Description>Increases damage by 1% for each point spent in the Assassin soul.</Description>
+        <AddonId>AFD8C967DCC242BB6</AddonId>
+        <IsPassive>True</IsPassive>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>54</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Malicious Poison</Name>
+      <Icon>staggeringshot3</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>53</RequiredLevel>
+        <AbilityId>-31916536</AbilityId>
+        <Description>Grants weapon ability attacks a 50% chance to deal an additional 344 Water damage and return 2 Energy. Lasts 1h.</Description>
+        <AddonId>AFE18FE08EC647923</AddonId>
+        <IsPassive>False</IsPassive>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>58</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Leaping Plunge</Name>
+      <Icon>assassin_leaping_plunge</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>57</RequiredLevel>
+        <AbilityId>-23559629</AbilityId>
+        <Description>Leaps to the enemy, dealing 897 to 992 Water damage. Roots for 1.5s. Counts as a Poison. Awards 1 Combo Point.</Description>
+        <AddonId>AFE988233252F2F77</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>8.000000</Cooldown>
+        <MinRange>3.000000</MinRange>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>24</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>1</GainComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>61</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Master of Poisons</Name>
+      <Icon>reaver_explosive_infestation_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>60</RequiredLevel>
+        <AbilityId>-19261227</AbilityId>
+        <Description>The Rogue can activate up to 3 Weapon Enchantments at a time.</Description>
+        <AddonId>AFEDA18D57A580A57</AddonId>
+        <IsPassive>True</IsPassive>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>8</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Incapacitate</Name>
+      <Icon>incapacitate_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>8</RequiredLevel>
+        <AbilityId>170383177</AbilityId>
+        <Description>Incapacitates for 45s or until damaged. Cannot be used on enemies in combat. Can only affect 1 enemy. Does not break Stealth.</Description>
+        <AddonId>A0A27D749828A00ED</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Duration>45.000004</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Blinding Powder</Name>
+      <Icon>poison_gas_01_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>258544968</AbilityId>
+        <Description>Confuses for 10s or until damaged.</Description>
+        <AddonId>A0F6915487D760195</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>60.000004</Cooldown>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Duration>10.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Enduring Brew</Name>
+      <Icon>poisontwo3</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>327845350</AbilityId>
+        <Description>Restores 4860 health and 30 energy.</Description>
+        <AddonId>A138A85E6914E72D1</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>60.000004</Cooldown>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">6.880000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Savage Strike</Name>
+      <Icon>disabling3a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>349025614</AbilityId>
+        <Description>Deals 911 to 1007 damage. Awards 1 Combo Point.</Description>
+        <AddonId>A14CDB54E71B8D1E5</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>24</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>1</GainComboPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">0.850000</PowerStatCoefficient>
+        <WeaponDamageMultiplier effect="0" action="0">0.850000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>16</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Paralyzing Strike</Name>
+      <Icon>paralyzing_strike_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>16</RequiredLevel>
+        <AbilityId>516130849</AbilityId>
+        <Description>Deals 964 to 1066 Water damage. Stuns for 4s. Counts as a Poison. Awards 2 Combo Points.</Description>
+        <AddonId>A1EC388217372A979</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>24</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>2</GainComboPoints>
+        <CastTime>Instant</CastTime>
+        <Duration>4.000000</Duration>
+        <PowerStatCoefficient effect="1" action="0">0.900000</PowerStatCoefficient>
+        <WeaponDamageMultiplier effect="1" action="0">0.900000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>12</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Elusiveness</Name>
+      <Icon>survival2</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>12</RequiredLevel>
+        <AbilityId>529096083</AbilityId>
+        <Description>Greatly reduces the chance of being detected while stealthed for 5s.</Description>
+        <AddonId>A1F895D9346D85C64</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>15.000001</Cooldown>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Duration>5.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>44</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Debilitating Dart</Name>
+      <Icon>debilitating_poison_01_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>44</RequiredLevel>
+        <AbilityId>597316748</AbilityId>
+        <Description>Debuffs the target. Weapon ability attacks from the Rogue on the target deal an additional 689 Water damage, snare and drain the enemy&apos;s mana, energy, and power. Lasts 10s.</Description>
+        <AddonId>A239A548C096F5206</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Puncture</Name>
+      <Icon>exposeweakness2a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>682253116</AbilityId>
+        <Description>Deals 365 to 403 damage. Ignores Armor. Bleeds 1466 health over 10s. Awards 1 Combo Point.</Description>
+        <AddonId>A28AA5B3CB279BB8B</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>24</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>1</GainComboPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">0.340000</PowerStatCoefficient>
+        <WeaponDamageMultiplier effect="0" action="0">0.340000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>32</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Impale</Name>
+      <Icon>exposeweak1b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>32</RequiredLevel>
+        <AbilityId>746420189</AbilityId>
+        <Description>Bleeds additional health per Combo Point over 20s.
+
+1 Point: 1705 health
+2 Points: 2185 health
+3 Points: 2824 health
+4 Points: 3623 health
+5 Points: 4581 health</Description>
+        <AddonId>A2C7D77DD880DA5A8</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>16</CostEnergy>
+        <ConsumesComboPoints>True</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Duration>20.000000</Duration>
+        <Interval>2.000000</Interval>
+        <PowerStatCoefficient effect="0" action="0">4.060000</PowerStatCoefficient>
+        <DamageMultiplier effect="0" action="0">0.090000</DamageMultiplier>
+        <WeaponDamageMultiplier effect="0" action="0">4.060000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>12</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Leeching Poison</Name>
+      <Icon>debilitating_poison_01_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>12</RequiredLevel>
+        <AbilityId>760347139</AbilityId>
+        <Description>Grants weapon ability attacks a 50% chance to deal an additional 184 Water damage and restore 130 health to the Rogue. Lasts 1h.</Description>
+        <AddonId>A2D51FA035CD10A74</AddonId>
+        <IsPassive>False</IsPassive>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>4</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Assassinate</Name>
+      <Icon>generic_ability_015_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>4</RequiredLevel>
+        <AbilityId>782047870</AbilityId>
+        <Description>Deals 1768 to 1955 damage. Ignores Armor. Only usable from behind. Awards 2 Combo Points.</Description>
+        <AddonId>A2E9D1A7E433963CE</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>30</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>2</GainComboPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">1.650000</PowerStatCoefficient>
+        <WeaponDamageMultiplier effect="0" action="0">1.650000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>20</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Lethal Poison</Name>
+      <Icon>poisonone2a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>20</RequiredLevel>
+        <AbilityId>791409760</AbilityId>
+        <Description>Grants weapon ability attacks a 50% chance to deal an additional 184 Water damage and increase the chance for the enemy to be Critically Hit by 5% for 15s. Lasts 1h.</Description>
+        <AddonId>A2F2BF460AE144D01</AddonId>
+        <IsPassive>False</IsPassive>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>28</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Jagged Strike</Name>
+      <Icon>roguestrike1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>28</RequiredLevel>
+        <AbilityId>1106879997</AbilityId>
+        <Description>Bleeds 4176 health over 10s. Awards 2 Combo Points.</Description>
+        <AddonId>A41F9A5FDB8B38115</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>30</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>2</GainComboPoints>
+        <CastTime>Instant</CastTime>
+        <Duration>10.000000</Duration>
+        <Interval>2.000000</Interval>
+        <PowerStatCoefficient effect="0" action="0">3.700000</PowerStatCoefficient>
+        <DamageMultiplier effect="0" action="0">0.170000</DamageMultiplier>
+        <WeaponDamageMultiplier effect="0" action="0">3.700000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Slip Away</Name>
+      <Icon>slip_away_03</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1110447249</AbilityId>
+        <Description>Applies Stealth and removes movement impairing effects. Prevents damage from breaking Stealth for 3s.</Description>
+        <AddonId>A42301491BDB4A6E9</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>120.000008</Cooldown>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>36</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Poison Malice</Name>
+      <Icon>poisontwo4</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>36</RequiredLevel>
+        <AbilityId>1269554358</AbilityId>
+        <Description>Increases Poison Buff damage done by 125%. When hit in melee, deals 179 Water damage to the attacker. Lasts 15s.</Description>
+        <AddonId>A4BABDCB642BC8B7C</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Duration>15.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>24</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Expose Weakness</Name>
+      <Icon>exposeweakness4</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>24</RequiredLevel>
+        <AbilityId>1284210197</AbilityId>
+        <Description>Increases damage taken from the Rogue by 6% for 20s. Does not break Stealth.</Description>
+        <AddonId>A4C8B7E158FC90435</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>20.000000</Cooldown>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Duration>20.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>48</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Poison Gas</Name>
+      <Icon>poison_gas_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>48</RequiredLevel>
+        <AbilityId>1418092908</AbilityId>
+        <Description>Confuses nearby enemies for 6s or until damaged.</Description>
+        <AddonId>A5486616CA5D0B820</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Radius>7.000000</Radius>
+        <MaxAffected>50</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Foul Play</Name>
+      <Icon>foul_play_02</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1418517295</AbilityId>
+        <Description>Stuns for 4s.</Description>
+        <AddonId>A548CDB2F539EDF4C</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Duration>4.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>2</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Final Blow</Name>
+      <Icon>sweep2</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>2</RequiredLevel>
+        <AbilityId>1456828312</AbilityId>
+        <Description>Deals additional damage per Combo Point. 
+1 Point: 938 damage
+2 Points: 1201 damage
+3 Points: 1553 damage
+4 Points: 1992 damage
+5 Points: 2519 damage</Description>
+        <AddonId>A56D56F9880B9C590</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>16</CostEnergy>
+        <ConsumesComboPoints>True</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">2.350000</PowerStatCoefficient>
+        <WeaponDamageMultiplier effect="0" action="0">2.350000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>51</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Serpent Strike</Name>
+      <Icon>generic_ability_002</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>50</RequiredLevel>
+        <AbilityId>1574361608</AbilityId>
+        <Description>Deals 2655 to 2935 Water damage. Counts as a Poison. Awards 1 Combo Point. Cooldown is set to 8s if used after a Critical Hit.</Description>
+        <AddonId>A5DD6DA083C49F2F6</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>20.000000</Cooldown>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>1</GainComboPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">2.430000</PowerStatCoefficient>
+        <WeaponDamageMultiplier effect="0" action="0">2.430000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Virulent Poison</Name>
+      <Icon>poisonone2b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1660365089</AbilityId>
+        <Description>Grants weapon ability attacks a 50% chance to deal an additional 206 Water damage. Lasts 1h.</Description>
+        <AddonId>A62F729218983E527</AddonId>
+        <IsPassive>False</IsPassive>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>40</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Hidden Veil</Name>
+      <Icon>hidden_veil_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>40</RequiredLevel>
+        <AbilityId>1807052095</AbilityId>
+        <Description>Delays the breaking of Stealth from damage taken for 15s.</Description>
+        <AddonId>A6BB56D3F616D3588</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>4</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Stealth</Name>
+      <Icon>stealth_w</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>4</RequiredLevel>
+        <AbilityId>1903177846</AbilityId>
+        <Description>Stealths for 30s, until damaged, or until an ability is used. Reduces movement speed by 30%. Cannot be used in combat.</Description>
+        <AddonId>A71703076769B30DF</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>10.000000</Cooldown>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Backstab</Name>
+      <Icon>backstab</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>2032109103</AbilityId>
+        <Description>Deals 1941 to 2145 damage. Deals 25% less damage when not behind the target. Awards 1 Combo Point.</Description>
+        <AddonId>A791F862FDD91B766</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>6.000000</Cooldown>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>24</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>1</GainComboPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">1.810000</PowerStatCoefficient>
+        <WeaponDamageMultiplier effect="0" action="0">1.810000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+  </Abilities>
+</SoulTree>
+

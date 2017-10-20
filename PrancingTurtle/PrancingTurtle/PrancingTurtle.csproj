@@ -1,0 +1,2277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.3.1\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.3.1\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7303CFD1-CE63-413F-BDB5-83C3011F2062}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PrancingTurtle</RootNamespace>
+    <AssemblyName>PrancingTurtle</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="BotDetect, Version=3.0.16.0, Culture=neutral, PublicKeyToken=74616036388b765f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Captcha.3.0.16.0\lib\net45\BotDetect.dll</HintPath>
+    </Reference>
+    <Reference Include="BotDetect.Web.UI.Mvc, Version=3.0.16.0, Culture=neutral, PublicKeyToken=74616036388b765f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Captcha.3.0.16.0\lib\net45\BotDetect.Web.UI.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Common.Logging.3.4.1\lib\net40\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Core, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Common.Logging.Core.3.4.1\lib\net40\Common.Logging.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Dapper, Version=1.50.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.1.50.2\lib\net451\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNet.Highcharts, Version=4.0.0.0, Culture=neutral, PublicKeyToken=88854f873df851bf, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotNet.Highcharts.4.0\lib\DotNet.Highcharts.dll</HintPath>
+    </Reference>
+    <Reference Include="Glimpse.Ado, Version=1.7.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Glimpse.Ado.1.7.3\lib\net45\Glimpse.Ado.dll</HintPath>
+    </Reference>
+    <Reference Include="Glimpse.AspNet, Version=1.9.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Glimpse.AspNet.1.9.2\lib\net45\Glimpse.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Glimpse.Core, Version=1.8.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Glimpse.1.8.6\lib\net45\Glimpse.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Glimpse.Mvc5, Version=1.5.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Glimpse.Mvc5.1.5.3\lib\net45\Glimpse.Mvc5.dll</HintPath>
+    </Reference>
+    <Reference Include="Hangfire.Core, Version=1.6.15.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Hangfire.Core.1.6.15\lib\net45\Hangfire.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Hangfire.MySql, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Hangfire.MySqlStorage.1.0.5\lib\net45\Hangfire.MySql.dll</HintPath>
+    </Reference>
+    <Reference Include="Hangfire.StructureMap, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Hangfire.StructureMap.1.6.0\lib\net45\net45\Hangfire.StructureMap.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.TelemetryCorrelation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.TelemetryCorrelation.1.0.0\lib\net45\Microsoft.AspNet.TelemetryCorrelation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.3.1.0\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.1.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.1.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.1.0\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.3.1.0\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.3.1.0\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.3.1.0\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.1.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.3.1.0\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.6.9.9\lib\net45\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.4.12\lib\net45\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog.Targets.Syslog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=a15d6ba50060b73f, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.Targets.Syslog.4.0.1\lib\net45\NLog.Targets.Syslog.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList.Mvc, Version=4.5.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Quartz, Version=2.6.0.0, Culture=neutral, PublicKeyToken=f6b8c98a402cc8a4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Quartz.2.6.0\lib\net40\Quartz.dll</HintPath>
+    </Reference>
+    <Reference Include="StructureMap, Version=4.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\StructureMap.4.5.2\lib\net45\StructureMap.dll</HintPath>
+    </Reference>
+    <Reference Include="StructureMap.Web, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\structuremap.web.4.0.0.315\lib\net40\StructureMap.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.4.0\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebActivatorEx.2.2.0\lib\net40\WebActivatorEx.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease, Version=1.6.5135.21930, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="App_Start\StructuremapMvc.cs" />
+    <Compile Include="Controllers\AbilityController.cs" />
+    <Compile Include="Controllers\AbilityRoleController.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BossFightController.cs" />
+    <Compile Include="Controllers\EncounterController.cs" />
+    <Compile Include="Controllers\ErrorController.cs" />
+    <Compile Include="Controllers\GuildController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\InstanceController.cs" />
+    <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PtApiController.cs" />
+    <Compile Include="Controllers\RecordsController.cs" />
+    <Compile Include="Controllers\ReleaseNotesController.cs" />
+    <Compile Include="Controllers\SessionController.cs" />
+    <Compile Include="Controllers\SilentUpdateController.cs" />
+    <Compile Include="DependencyResolution\ControllerConvention.cs" />
+    <Compile Include="DependencyResolution\DefaultRegistry.cs" />
+    <Compile Include="DependencyResolution\IoC.cs" />
+    <Compile Include="DependencyResolution\Registries\AuthenticationRegistry.cs" />
+    <Compile Include="DependencyResolution\Registries\LoggingRegistry.cs" />
+    <Compile Include="DependencyResolution\Registries\RepositoryRegistry.cs" />
+    <Compile Include="DependencyResolution\Registries\SchedulingRegistry.cs" />
+    <Compile Include="DependencyResolution\StructureMapDependencyScope.cs" />
+    <Compile Include="DependencyResolution\StructureMapScopeModule.cs" />
+    <Compile Include="GlimpseSecurityPolicy.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\Authorization\ApplicationSid.cs" />
+    <Compile Include="Helpers\Authorization\ApplicationSid.example.cs" />
+    <Compile Include="Helpers\Authorization\CustomAuthorization.cs" />
+    <Compile Include="Helpers\BooleanSearchFilters.cs" />
+    <Compile Include="Helpers\BurstCalculation\BurstCalculator.cs" />
+    <Compile Include="Helpers\ChartColors.cs" />
+    <Compile Include="Helpers\ChartDefaults.cs" />
+    <Compile Include="Helpers\Charts\EncounterCharts.cs" />
+    <Compile Include="Helpers\Charts\IEncounterCharts.cs" />
+    <Compile Include="Helpers\Charts\IRecordCharts.cs" />
+    <Compile Include="Helpers\Charts\RecordCharts.cs" />
+    <Compile Include="Helpers\ClientIpAddress.cs" />
+    <Compile Include="Helpers\Controllers\BaseController.cs" />
+    <Compile Include="Helpers\DataTables\CustomDataTableBuilder.cs" />
+    <Compile Include="Helpers\DataTables\CustomDataTableParam.cs" />
+    <Compile Include="Helpers\DateTimeHelpers.cs" />
+    <Compile Include="Helpers\DefaultSortingCssClasses.cs" />
+    <Compile Include="Helpers\Enums.cs" />
+    <Compile Include="Helpers\HighChartExtensions.cs" />
+    <Compile Include="Helpers\Mail\AccountInfo.cs" />
+    <Compile Include="Helpers\Mail\MailCommonStrings.cs" />
+    <Compile Include="Helpers\Mail\Mailer.cs" />
+    <Compile Include="Helpers\ModelBinder\TrimModelBinder.cs" />
+    <Compile Include="Helpers\MvcHtmlExtensions.cs" />
+    <Compile Include="Helpers\PagedListPageSizes.cs" />
+    <Compile Include="Helpers\PagedList\PagedListHelpers.cs" />
+    <Compile Include="Helpers\PagedList\StandardRenderOptions.cs" />
+    <Compile Include="Helpers\PlaceholderAttribute.cs" />
+    <Compile Include="Helpers\Scheduling\Jobs\AddMissingEncounterNpcs.cs" />
+    <Compile Include="Helpers\Scheduling\Jobs\AddMissingEncounterPlayerRoles.cs" />
+    <Compile Include="Helpers\Scheduling\Jobs\EncounterPlayerStatistics.cs" />
+    <Compile Include="Helpers\Scheduling\Jobs\MarkOldWipesForDeletion.cs" />
+    <Compile Include="Helpers\Scheduling\Jobs\RemoveOrphanedPlayerRecords.cs" />
+    <Compile Include="Helpers\Scheduling\Jobs\UpdatePlayerNames.cs" />
+    <Compile Include="Helpers\Scheduling\Jobs\ZeroDurationEncounters.cs" />
+    <Compile Include="Helpers\Scheduling\ScheduledTasks.cs" />
+    <Compile Include="Helpers\Scheduling\StructureMapJobFactory.cs" />
+    <Compile Include="Helpers\UnixTimeConversion.cs" />
+    <Compile Include="Helpers\UriActionHelper.cs" />
+    <Compile Include="Helpers\UserAuthorisationInfo.cs" />
+    <Compile Include="Helpers\ViewModelMethods.cs" />
+    <Compile Include="Models\Ability.cs" />
+    <Compile Include="Models\AbilityBreakdown.cs" />
+    <Compile Include="Models\AbilityRole\AbilityRoleIndexViewModel.cs" />
+    <Compile Include="Models\AbilityStatistics.cs" />
+    <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\API\Guild.cs" />
+    <Compile Include="Models\DatabaseType\BuffEvent.cs" />
+    <Compile Include="Models\EncounterDeathEvent.cs" />
+    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Misc\BossFightProgressionOLD.cs" />
+    <Compile Include="Models\Misc\BuffUpDown.cs" />
+    <Compile Include="Models\Misc\FlashViewModel.cs" />
+    <Compile Include="Models\Misc\InteractionByCharacter.cs" />
+    <Compile Include="Models\Misc\PlayerRole.cs" />
+    <Compile Include="Models\Misc\ValidateExistingSession.cs" />
+    <Compile Include="Models\PlayerComparison.cs" />
+    <Compile Include="Models\Shared\SearchViewModel.cs" />
+    <Compile Include="Models\TopDamageDone.cs" />
+    <Compile Include="Models\ViewModels\AbilityIndexVM.cs" />
+    <Compile Include="Models\ViewModels\BossFightIndexVM.cs" />
+    <Compile Include="Models\ViewModels\BossFight\RankPlayerGuildType.cs" />
+    <Compile Include="Models\ViewModels\BuffIndexVM.cs" />
+    <Compile Include="Models\ViewModels\ChangePasswordVM.cs" />
+    <Compile Include="Models\ViewModels\ChangeTimeZoneVM.cs" />
+    <Compile Include="Models\ViewModels\CreateGuildVM.cs" />
+    <Compile Include="Models\ViewModels\EncounterComparePlayersViewModel.cs" />
+    <Compile Include="Models\ViewModels\EncounterDetail-PlayersVM.cs" />
+    <Compile Include="Models\ViewModels\EncounterDetailViewModel.cs" />
+    <Compile Include="Models\ViewModels\EncounterNav.cs" />
+    <Compile Include="Models\ViewModels\EncounterOverviewViewModel.cs" />
+    <Compile Include="Models\ViewModels\EncounterPlayerDetailViewModel.cs" />
+    <Compile Include="Models\ViewModels\EncounterSupportVM.cs" />
+    <Compile Include="Models\ViewModels\Encounter\BuffsVM.cs" />
+    <Compile Include="Models\ViewModels\Encounter\CharacterBuffs.cs" />
+    <Compile Include="Models\ViewModels\Encounter\CharacterTargetBreakdownVM.cs" />
+    <Compile Include="Models\ViewModels\Encounter\DeathVM.cs" />
+    <Compile Include="Models\ViewModels\Encounter\DetailVM.cs" />
+    <Compile Include="Models\ViewModels\Encounter\EncounterDeathDetailViewModel.cs" />
+    <Compile Include="Models\ViewModels\Encounter\InteractionVM.cs" />
+    <Compile Include="Models\ViewModels\Encounter\NpcSomethingDone.cs" />
+    <Compile Include="Models\ViewModels\Encounter\NpcSomethingTaken.cs" />
+    <Compile Include="Models\ViewModels\Encounter\OutgoingDamageBreakdownVM.cs" />
+    <Compile Include="Models\ViewModels\Encounter\OverviewVM.cs" />
+    <Compile Include="Models\ViewModels\Encounter\PlayerDamageDonePartialVM.cs" />
+    <Compile Include="Models\ViewModels\Encounter\PlayerSomethingDone.cs" />
+    <Compile Include="Models\ViewModels\Encounter\PlayerSomethingDonePartialVM.cs" />
+    <Compile Include="Models\ViewModels\Encounter\PlayerSomethingTaken.cs" />
+    <Compile Include="Models\ViewModels\Encounter\PlayerVM.cs" />
+    <Compile Include="Models\ViewModels\Encounter\SingleTypeOverviewVM.cs" />
+    <Compile Include="Models\ViewModels\Encounter\SomethingDoneGraphVM.cs" />
+    <Compile Include="Models\ViewModels\GuildNav\GuildNavGuild.cs" />
+    <Compile Include="Models\ViewModels\GuildNav\GuildNavShard.cs" />
+    <Compile Include="Models\ViewModels\Guild\GuildIndexVM.cs" />
+    <Compile Include="Models\ViewModels\Home\HomeIndexVM.cs" />
+    <Compile Include="Models\ViewModels\InstanceIndexVM.cs" />
+    <Compile Include="Models\ViewModels\JoinGuildVM.cs" />
+    <Compile Include="Models\ViewModels\MainIndexVM.cs" />
+    <Compile Include="Models\ViewModels\ManageIndexVM.cs" />
+    <Compile Include="Models\ViewModels\Navigation\MainNavigation.cs" />
+    <Compile Include="Models\ViewModels\Navigation\SessionNavigation.cs" />
+    <Compile Include="Models\ViewModels\PasswordResetViewModel.cs" />
+    <Compile Include="Models\ViewModels\Records\BossFightRecords.cs" />
+    <Compile Include="Models\ViewModels\Records\ClassRecords.cs" />
+    <Compile Include="Models\ViewModels\Records\GuildRecords.cs" />
+    <Compile Include="Models\ViewModels\ResetPasswordViewModel.cs" />
+    <Compile Include="Models\ViewModels\ReverifyViewModel.cs" />
+    <Compile Include="Models\ViewModels\Session\RemoveEncountersVM.cs" />
+    <Compile Include="Models\ViewModels\Session\SessionBossFightVM.cs" />
+    <Compile Include="Models\ViewModels\Session\SessionDetailVM.cs" />
+    <Compile Include="Models\ViewModels\Session\SessionGuildVM.cs" />
+    <Compile Include="Models\ViewModels\Session\SessionIndexVM.cs" />
+    <Compile Include="Models\ViewModels\Session\SessionInstanceVM.cs" />
+    <Compile Include="Models\ViewModels\Session\SessionPlayerVM.cs" />
+    <Compile Include="Models\ViewModels\Session\UploadSessionVM.cs" />
+    <Compile Include="Models\ViewModels\SiteAdmin\SAUsersVM.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Startup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\datetimepicker\jquery.datetimepicker.css" />
+    <Content Include="Content\favicon.ico" />
+    <Content Include="Content\fontawesome\css\font-awesome.css" />
+    <Content Include="Content\fontawesome\css\font-awesome.min.css" />
+    <Content Include="Content\fontawesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\fullcalendar.css" />
+    <Content Include="Content\fullcalendar.print.css" />
+    <Content Include="Content\icons\classes\Calling_Cleric.png" />
+    <Content Include="Content\icons\classes\Calling_Mage.png" />
+    <Content Include="Content\icons\classes\Calling_Primalist.png" />
+    <Content Include="Content\icons\classes\Calling_Rogue.png" />
+    <Content Include="Content\icons\classes\Calling_Warrior.png" />
+    <Content Include="Content\icons\misc\btn_menu_me_%28normal%29.png" />
+    <Content Include="Content\icons\misc\btn_menu_social_%28normal%29.png" />
+    <Content Include="Content\icons\misc\death_icon_marker.png" />
+    <Content Include="Content\icons\misc\emblem_boss.png" />
+    <Content Include="Content\icons\misc\indicator_friendly_flagged.png" />
+    <Content Include="Content\icons\misc\indicator_hostile_flagged.png" />
+    <Content Include="Content\icons\misc\LFP_Roles_DPS.png" />
+    <Content Include="Content\icons\misc\LFP_Roles_Heal.png" />
+    <Content Include="Content\icons\misc\LFP_Roles_Tank.png" />
+    <Content Include="Content\icons\misc\Map_POI_Icon.png" />
+    <Content Include="Content\icons\roles\emblem_deathcon.png" />
+    <Content Include="Content\icons\roles\raid_icon_role_dps.png" />
+    <Content Include="Content\icons\roles\raid_icon_role_heal.png" />
+    <Content Include="Content\icons\roles\raid_icon_role_support.png" />
+    <Content Include="Content\icons\roles\raid_icon_role_tank.png" />
+    <Content Include="Content\icons\smallsouls\soul_arbiter.jpg" />
+    <Content Include="Content\icons\smallsouls\soul_archon.jpg" />
+    <Content Include="Content\icons\smallsouls\soul_assassin.jpg" />
+    <Content Include="Content\icons\smallsouls\soul_bard.jpg" />
+    <Content Include="Content\icons\smallsouls\soul_beastmaster.jpg" />
+    <Content Include="Content\icons\smallsouls\soul_bladedancer.jpg" />
+    <Content Include="Content\icons\smallsouls\soul_cablist.jpg" />
+    <Content Include="Content\icons\smallsouls\soul_champion.jpg" />
+    <Content Include="Content\icons\smallsouls\soul_chloromancer.jpg" />
+    <Content Include="Content\icons\smallsouls\soul_cleric.jpg" />
+    <Content Include="Content\icons\smallsouls\soul_defiler.jpg" />
+    <Content Include="Content\icons\smallsouls\soul_dominator.jpg" />
+    <Content Include="Content\icons\smallsouls\soul_druid.jpg" />
+    <Content Include="Content\icons\smallsouls\soul_elementalist.jpg" />
+    <Content Include="Content\icons\smallsouls\soul_harbinger.jpg" />
+    <Content Include="Content\icons\smallsouls\soul_icon_slot.jpg" />
+    <Content Include="Content\icons\smallsouls\soul_icon_slot2.jpg" />
+    <Content Include="Content\icons\smallsouls\soul_inquisitor.jpg" />
+    <Content Include="Content\icons\smallsouls\soul_justicar.jpg" />
+    <Content Include="Content\icons\smallsouls\soul_liberator.jpg" />
+    <Content Include="Content\icons\smallsouls\soul_mage.jpg" />
+    <Content Include="Content\icons\smallsouls\soul_marksman.jpg" />
+    <Content Include="Content\icons\smallsouls\soul_necromancer.jpg" />
+    <Content Include="Content\icons\smallsouls\soul_nightblade.jpg" />
+    <Content Include="Content\icons\smallsouls\soul_oracle.jpg" />
+    <Content Include="Content\icons\smallsouls\soul_paladin.jpg" />
+    <Content Include="Content\icons\smallsouls\soul_paragon.jpg" />
+    <Content Include="Content\icons\smallsouls\soul_physician.jpg" />
+    <Content Include="Content\icons\smallsouls\soul_purifier.jpg" />
+    <Content Include="Content\icons\smallsouls\soul_pyromancer.jpg" />
+    <Content Include="Content\icons\smallsouls\soul_ranger.jpg" />
+    <Content Include="Content\icons\smallsouls\soul_reaver.jpg" />
+    <Content Include="Content\icons\smallsouls\soul_redemption.jpg" />
+    <Content Include="Content\icons\smallsouls\soul_riftblade.jpg" />
+    <Content Include="Content\icons\smallsouls\soul_riftstalker.jpg" />
+    <Content Include="Content\icons\smallsouls\soul_rogue.jpg" />
+    <Content Include="Content\icons\smallsouls\soul_saboteur.jpg" />
+    <Content Include="Content\icons\smallsouls\soul_sentinel.jpg" />
+    <Content Include="Content\icons\smallsouls\soul_shaman.jpg" />
+    <Content Include="Content\icons\smallsouls\soul_stormcaller.jpg" />
+    <Content Include="Content\icons\smallsouls\soul_tactician.jpg" />
+    <Content Include="Content\icons\smallsouls\soul_tempest.jpg" />
+    <Content Include="Content\icons\smallsouls\soul_voidknight.jpg" />
+    <Content Include="Content\icons\smallsouls\soul_warden.jpg" />
+    <Content Include="Content\icons\smallsouls\soul_warlock.jpg" />
+    <Content Include="Content\icons\smallsouls\soul_warlord.jpg" />
+    <Content Include="Content\icons\smallsouls\soul_warrior.jpg" />
+    <Content Include="Content\icons\SoulAbilities\1h_axe_061_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\1h_mace_049.jpg" />
+    <Content Include="Content\icons\SoulAbilities\1h_shield_031a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\1h_shield_048a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\1h_shield_054a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\1h_sword_035.jpg" />
+    <Content Include="Content\icons\SoulAbilities\2h_axe_036_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\2h_axe_043_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\2h_polearm_019_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\2h_staff_042.jpg" />
+    <Content Include="Content\icons\SoulAbilities\2h_staff_078a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\2h_staff_earth_epic_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\2h_sword_019.jpg" />
+    <Content Include="Content\icons\SoulAbilities\2h_sword_066a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\2h_sword_069a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\2h_sword_078_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\2h_sword_life_mundane_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\absolution_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\absolution_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\active_treatment.jpg" />
+    <Content Include="Content\icons\SoulAbilities\adrenaline_overdrive.jpg" />
+    <Content Include="Content\icons\SoulAbilities\adrenaline_shot.jpg" />
+    <Content Include="Content\icons\SoulAbilities\aegis_of_advocacy.jpg" />
+    <Content Include="Content\icons\SoulAbilities\aegis_of_sanctuary.jpg" />
+    <Content Include="Content\icons\SoulAbilities\ambidextrous.jpg" />
+    <Content Include="Content\icons\SoulAbilities\ameliorate.jpg" />
+    <Content Include="Content\icons\SoulAbilities\anthem_of_competence.jpg" />
+    <Content Include="Content\icons\SoulAbilities\anthem_of_fervor.jpg" />
+    <Content Include="Content\icons\SoulAbilities\anthem_of_fervor_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\anthem_of_glory.jpg" />
+    <Content Include="Content\icons\SoulAbilities\arcaneshield2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\arcaneshield3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\arcaneshield4.jpg" />
+    <Content Include="Content\icons\SoulAbilities\arcane_ward.jpg" />
+    <Content Include="Content\icons\SoulAbilities\archane_projection.jpg" />
+    <Content Include="Content\icons\SoulAbilities\archon-earthen_barrage.jpg" />
+    <Content Include="Content\icons\SoulAbilities\archon_crumbling_resistance_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\archon_crumbling_resistance_01_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\archon_point_to_point.jpg" />
+    <Content Include="Content\icons\SoulAbilities\archon_rock_slide.jpg" />
+    <Content Include="Content\icons\SoulAbilities\archon_rock_slide_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\ardent_doctrine_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\ardent_doctrine_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\arkanxshield1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\armor_of_virtue_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\assassin_leaping_plunge.jpg" />
+    <Content Include="Content\icons\SoulAbilities\assassin_thread_of_death_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\auto_attack_1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\awareness_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\backstab.jpg" />
+    <Content Include="Content\icons\SoulAbilities\backstab_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\baneful_touch_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\baneful_touch_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\barbedtrap1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\barbedtrap3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\barbedtrap4a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\bardic_inspiration.jpg" />
+    <Content Include="Content\icons\SoulAbilities\bard_harmonic_distortion.jpg" />
+    <Content Include="Content\icons\SoulAbilities\bard_harmonic_distortion_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\bard_orchestra_of_the_planes.jpg" />
+    <Content Include="Content\icons\SoulAbilities\bard_verse_of_agony.jpg" />
+    <Content Include="Content\icons\SoulAbilities\beastmaster-greater_corporeal_manifestation.jpg" />
+    <Content Include="Content\icons\SoulAbilities\beastmaster-lesser_corporeal_manifestation_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\beastmaster_beast_whisperer_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\beastmaster_bond_of_might_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\beastmaster_comp_intervention.jpg" />
+    <Content Include="Content\icons\SoulAbilities\beastmaster_enraged_companion_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\beastmaster_enraged_companion_aura_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\beastmaster_kinship_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\beastmaster_kinship_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\beastmaster_kinship_01_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\beastmaster_primal_recovery_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\beastmaster_protective_companion_aura_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\beastmaster_shared_bonds.jpg" />
+    <Content Include="Content\icons\SoulAbilities\beastmaster_shared_bonds_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\beastmaster_shared_bonds_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\beastmaster_shared_bonds_c.jpg" />
+    <Content Include="Content\icons\SoulAbilities\beastmaster_strike_to_maim.jpg" />
+    <Content Include="Content\icons\SoulAbilities\beastmaster_strike_to_maim_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\beastmaster_strike_to_maim_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\beastmaster_survival_of_the_fittest_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\beastmaster_ties_that_bind.jpg" />
+    <Content Include="Content\icons\SoulAbilities\bell_bronze.jpg" />
+    <Content Include="Content\icons\SoulAbilities\berserk1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\berserk1a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\berserk1b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\berserk2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\berserk3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\berserk4a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\berserk4b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\binding_of_affliction_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\binding_of_affliction_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\binding_of_atrophy_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\binding_of_authority_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\binding_of_death_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\biofeedback.jpg" />
+    <Content Include="Content\icons\SoulAbilities\biting_wind.jpg" />
+    <Content Include="Content\icons\SoulAbilities\blackout_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\blackout_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\bladedancer_hundred_blades_c.jpg" />
+    <Content Include="Content\icons\SoulAbilities\blade_tempo.jpg" />
+    <Content Include="Content\icons\SoulAbilities\blazeofglory1a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\blazeofglory3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\bleeding.jpg" />
+    <Content Include="Content\icons\SoulAbilities\bleeding_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\bleeding_aa.jpg" />
+    <Content Include="Content\icons\SoulAbilities\blessing_of_the_flames.jpg" />
+    <Content Include="Content\icons\SoulAbilities\blessing_of_the_flames_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\blindinglight1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\blindinglight2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\blindinglight3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\bloodfire1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\bolster_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\bolt_of_radiance_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\bolt_of_radiance_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\bomb_adhesive.jpg" />
+    <Content Include="Content\icons\SoulAbilities\bomb_annihilation.jpg" />
+    <Content Include="Content\icons\SoulAbilities\bomb_chemical.jpg" />
+    <Content Include="Content\icons\SoulAbilities\bomb_choking_gas.jpg" />
+    <Content Include="Content\icons\SoulAbilities\bomb_choking_gas_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\bomb_fragment_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\bomb_specialist.jpg" />
+    <Content Include="Content\icons\SoulAbilities\bomb_time.jpg" />
+    <Content Include="Content\icons\SoulAbilities\boon_of_resurgence_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\boon_of_resurgence_c.jpg" />
+    <Content Include="Content\icons\SoulAbilities\boon_of_vitality_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\broken_sextant.jpg" />
+    <Content Include="Content\icons\SoulAbilities\bulwark1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\bulwark1a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\burning.jpg" />
+    <Content Include="Content\icons\SoulAbilities\cabalist-binding_waters_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\cabalist_sigil_of_ravaging.jpg" />
+    <Content Include="Content\icons\SoulAbilities\cabalist_sigil_of_ravaging_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\cadence.jpg" />
+    <Content Include="Content\icons\SoulAbilities\cadence_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\campfire1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\card10a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\carpet_bombing.jpg" />
+    <Content Include="Content\icons\SoulAbilities\carpet_bombing_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\castigate.jpg" />
+    <Content Include="Content\icons\SoulAbilities\castigation1a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\castigation1b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\castigation1c.jpg" />
+    <Content Include="Content\icons\SoulAbilities\castigation3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\cauterize.jpg" />
+    <Content Include="Content\icons\SoulAbilities\cauterize1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\cautious_stalker.jpg" />
+    <Content Include="Content\icons\SoulAbilities\cavalier_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\cavalier_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\censure_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\chainlighting1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\chainlighting2b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\chainlighting4.jpg" />
+    <Content Include="Content\icons\SoulAbilities\chainlighting5.jpg" />
+    <Content Include="Content\icons\SoulAbilities\chainlighting5a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\champion-bull_rush.jpg" />
+    <Content Include="Content\icons\SoulAbilities\champion-destroyers_bearing.jpg" />
+    <Content Include="Content\icons\SoulAbilities\champion_mark_of_convergence_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\champion_second_wind_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\champion_thunderous_strike.jpg" />
+    <Content Include="Content\icons\SoulAbilities\champion_thunderous_strike_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\channelhealth1a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\channelhealth2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\channelhealth3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\channelhealth4.jpg" />
+    <Content Include="Content\icons\SoulAbilities\charge1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\charge2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\charge3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\charge3a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\charge4z.jpg" />
+    <Content Include="Content\icons\SoulAbilities\charge_blast.jpg" />
+    <Content Include="Content\icons\SoulAbilities\charge_caltrop.jpg" />
+    <Content Include="Content\icons\SoulAbilities\charge_ember.jpg" />
+    <Content Include="Content\icons\SoulAbilities\charge_shrapnel.jpg" />
+    <Content Include="Content\icons\SoulAbilities\charge_spike.jpg" />
+    <Content Include="Content\icons\SoulAbilities\charge_splinter.jpg" />
+    <Content Include="Content\icons\SoulAbilities\chloromancer-natural_conversion.jpg" />
+    <Content Include="Content\icons\SoulAbilities\chloromancer_entropic_veil_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\chloromancer_entropic_veil_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\chloromancer_void_life_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\chloromancer_void_life_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\cleave1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\close_combat.jpg" />
+    <Content Include="Content\icons\SoulAbilities\coalesceheat1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\coalesceheat3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\coda_of_cowardice.jpg" />
+    <Content Include="Content\icons\SoulAbilities\coda_of_cowardice_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\coda_of_distress.jpg" />
+    <Content Include="Content\icons\SoulAbilities\coda_of_distress_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\coda_of_fury.jpg" />
+    <Content Include="Content\icons\SoulAbilities\coda_of_fury_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\coda_of_restoration_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\coda_of_wrath.jpg" />
+    <Content Include="Content\icons\SoulAbilities\coda_of_wrath_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\combat_culmination.jpg" />
+    <Content Include="Content\icons\SoulAbilities\combat_pose.jpg" />
+    <Content Include="Content\icons\SoulAbilities\combat_pose1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\combat_pose1_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\combat_survival.jpg" />
+    <Content Include="Content\icons\SoulAbilities\concussion_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\concussion_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\concussion_01_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\concussive_blast_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\conflagration1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\conflagration2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\conflagration3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\conflict_avoidance.jpg" />
+    <Content Include="Content\icons\SoulAbilities\confound1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\confound2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\confound3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\continuous_treatment.jpg" />
+    <Content Include="Content\icons\SoulAbilities\controlled_fire.jpg" />
+    <Content Include="Content\icons\SoulAbilities\conviction_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\corrective_measures.jpg" />
+    <Content Include="Content\icons\SoulAbilities\corroded_defense.jpg" />
+    <Content Include="Content\icons\SoulAbilities\counteract.jpg" />
+    <Content Include="Content\icons\SoulAbilities\creeping_death_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\creeping_death_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\cripplingshot1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\critical2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\critical2a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\critical4.jpg" />
+    <Content Include="Content\icons\SoulAbilities\criticalstrike1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\criticalsweep1b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\criticalsweep3c.jpg" />
+    <Content Include="Content\icons\SoulAbilities\critical_sweep1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\cruel_vengeance_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\crystallize.jpg" />
+    <Content Include="Content\icons\SoulAbilities\curse_of_consumption.jpg" />
+    <Content Include="Content\icons\SoulAbilities\curse_of_frailty.jpg" />
+    <Content Include="Content\icons\SoulAbilities\curse_of_solitude.jpg" />
+    <Content Include="Content\icons\SoulAbilities\dancing_steel.jpg" />
+    <Content Include="Content\icons\SoulAbilities\darkball1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\darkball2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\darkball2z.jpg" />
+    <Content Include="Content\icons\SoulAbilities\darkball4.jpg" />
+    <Content Include="Content\icons\SoulAbilities\darkbolt2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\darkbolt3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\darkbolt5.jpg" />
+    <Content Include="Content\icons\SoulAbilities\dark_containment_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\dark_harbor.jpg" />
+    <Content Include="Content\icons\SoulAbilities\dark_malady_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\dark_waters.jpg" />
+    <Content Include="Content\icons\SoulAbilities\dark_waters_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\deafening_music.jpg" />
+    <Content Include="Content\icons\SoulAbilities\debilitating_poison_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\debilitating_poison_01_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\Default.jpg" />
+    <Content Include="Content\icons\SoulAbilities\defensivestrike1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\defensivestrike2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\defensivestrike3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\defensive_favor.jpg" />
+    <Content Include="Content\icons\SoulAbilities\defer_death.jpg" />
+    <Content Include="Content\icons\SoulAbilities\defiler_beacon_of_despair.jpg" />
+    <Content Include="Content\icons\SoulAbilities\defiler_bond_of_corruption.jpg" />
+    <Content Include="Content\icons\SoulAbilities\defiler_bond_of_pain_cc.jpg" />
+    <Content Include="Content\icons\SoulAbilities\defiler_bond_of_pain_e.jpg" />
+    <Content Include="Content\icons\SoulAbilities\defiler_bond_of_torment.jpg" />
+    <Content Include="Content\icons\SoulAbilities\defiler_chimeras_gift_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\defiler_chimeras_gift_e.jpg" />
+    <Content Include="Content\icons\SoulAbilities\defiler_chimeras_gift_w.jpg" />
+    <Content Include="Content\icons\SoulAbilities\defiler_deaths_embrace.jpg" />
+    <Content Include="Content\icons\SoulAbilities\defiler_deaths_embrace_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\defiler_empowered_affliction.jpg" />
+    <Content Include="Content\icons\SoulAbilities\defiler_empowered_affliction_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\defiler_empowered_affliction_cc.jpg" />
+    <Content Include="Content\icons\SoulAbilities\defiler_feast_of_the _fallen_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\defiler_feedback.jpg" />
+    <Content Include="Content\icons\SoulAbilities\defiler_foul_growth_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\defiler_ghastly_restoration_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\defiler_ghastly_restoration_g.jpg" />
+    <Content Include="Content\icons\SoulAbilities\defiler_grief_blight.jpg" />
+    <Content Include="Content\icons\SoulAbilities\defiler_grief_blight_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\defiler_hideous_reconstruction.jpg" />
+    <Content Include="Content\icons\SoulAbilities\defiler_hideous_reconstruction_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\defiler_husk_of_indifference_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\defiler_jealous_intervention_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\defiler_jealous_intervention_cc.jpg" />
+    <Content Include="Content\icons\SoulAbilities\defiler_link_of_agony.jpg" />
+    <Content Include="Content\icons\SoulAbilities\defiler_link_of_agony_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\defiler_link_of_distress.jpg" />
+    <Content Include="Content\icons\SoulAbilities\defiler_link_of_misery_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\defiler_link_of_suffering.jpg" />
+    <Content Include="Content\icons\SoulAbilities\defiler_loathsome_restoration_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\defiler_loathsome_restoration_d.jpg" />
+    <Content Include="Content\icons\SoulAbilities\defiler_loathsome_restoration_g.jpg" />
+    <Content Include="Content\icons\SoulAbilities\defiler_marrow_harvest.jpg" />
+    <Content Include="Content\icons\SoulAbilities\defiler_mask_of_depravity_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\defiler_pain_transmission_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\defiler_rage_blight.jpg" />
+    <Content Include="Content\icons\SoulAbilities\defiler_rage_blight_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\defiler_sanguine_desecration.jpg" />
+    <Content Include="Content\icons\SoulAbilities\defiler_siphon_vitality_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\defiler_unholy_nexus_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\defiler_unstable_transformation_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\deflect1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\deflect1a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\deflect1c.jpg" />
+    <Content Include="Content\icons\SoulAbilities\deflect2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\deflection1a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\deflection2a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\deflection2b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\deflection3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\deflection4b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\deflection4c.jpg" />
+    <Content Include="Content\icons\SoulAbilities\deflection4cc.jpg" />
+    <Content Include="Content\icons\SoulAbilities\deflection4ccc.jpg" />
+    <Content Include="Content\icons\SoulAbilities\defstrike2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\defstrike3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\deliverance.jpg" />
+    <Content Include="Content\icons\SoulAbilities\demolition_specialist.jpg" />
+    <Content Include="Content\icons\SoulAbilities\determination1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\detonate.jpg" />
+    <Content Include="Content\icons\SoulAbilities\detonate_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\detoxification.jpg" />
+    <Content Include="Content\icons\SoulAbilities\devouring_mist.jpg" />
+    <Content Include="Content\icons\SoulAbilities\devout_conviction_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\dichotomy_of_pain.jpg" />
+    <Content Include="Content\icons\SoulAbilities\diffuse_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\dirtytricks1a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\dirtytricks3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\dirtytricks4.jpg" />
+    <Content Include="Content\icons\SoulAbilities\disabling1a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\disabling2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\disabling3a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\disabling4.jpg" />
+    <Content Include="Content\icons\SoulAbilities\discerning_wave.jpg" />
+    <Content Include="Content\icons\SoulAbilities\discombobulate1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\discombobulate2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\discombobulate2a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\discombobulate3a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\disenchant1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\distorted_shadows.jpg" />
+    <Content Include="Content\icons\SoulAbilities\distorted_shadows_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\divert_rage_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\doctrine_of_authority_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\doctrine_of_authority_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\doctrine_of_bliss_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\doctrine_of_bliss_01_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\doctrine_of_bliss_01_c.jpg" />
+    <Content Include="Content\icons\SoulAbilities\doctrine_of_dedication_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\doctrine_of_faithful_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\doctrine_of_loyalty_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\doctrine_of_virtue_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\dominator-mass_exhaustion.jpg" />
+    <Content Include="Content\icons\SoulAbilities\dominator-mass_exhaustion_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\dominator-split_personality.jpg" />
+    <Content Include="Content\icons\SoulAbilities\dominator_draining_presence_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\dominator_draining_presence_01_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\dominator_lighting_wall_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\dominator_nyxs_orb_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\dominator_nyxs_orb_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\dominator_pain_armor.jpg" />
+    <Content Include="Content\icons\SoulAbilities\dominator_pain_armor_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\double_cross_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\double_cross_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\double_shot_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\double_shot_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\drainlife1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\drainlife3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\drowning2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\druid-grim_silence.jpg" />
+    <Content Include="Content\icons\SoulAbilities\druid-hidden_path.jpg" />
+    <Content Include="Content\icons\SoulAbilities\druid-spiteful_spirit_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\druid-strength_of_the_fae.jpg" />
+    <Content Include="Content\icons\SoulAbilities\druid-summon_faerie.jpg" />
+    <Content Include="Content\icons\SoulAbilities\druid-summon_greater_faerie.jpg" />
+    <Content Include="Content\icons\SoulAbilities\druid-summon_satyr.jpg" />
+    <Content Include="Content\icons\SoulAbilities\druid_greater_faerie_seer_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\druid_summon_greater_satyr.jpg" />
+    <Content Include="Content\icons\SoulAbilities\druid_summon_satyr_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\dusk_to_dawn_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\dusk_to_dawn_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\ebon_fury_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\ebon_terror_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\elementalist_elemental_burst_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\elementalist_prismatic_armor.jpg" />
+    <Content Include="Content\icons\SoulAbilities\elementalist_prismatic_valley.jpg" />
+    <Content Include="Content\icons\SoulAbilities\elementalist_prismatic_valley_z.jpg" />
+    <Content Include="Content\icons\SoulAbilities\elementalres2b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\elementalward2a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\elemental_attunement1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\elemental_bolt1a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\elemental_bolt1b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\elemres4.jpg" />
+    <Content Include="Content\icons\SoulAbilities\elemres4b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\elemres4d.jpg" />
+    <Content Include="Content\icons\SoulAbilities\elemresist1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\elemward1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\elemward1a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\emblem_of_alactricy.jpg" />
+    <Content Include="Content\icons\SoulAbilities\embolden2a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\emergency_response.jpg" />
+    <Content Include="Content\icons\SoulAbilities\enchanting_material_21c.jpg" />
+    <Content Include="Content\icons\SoulAbilities\ench_material_15.jpg" />
+    <Content Include="Content\icons\SoulAbilities\energybeam1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\energybeam1a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\energybeam1b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\energybeam2a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\energyblast1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\energyblast2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\energybolt3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\energybolt4.jpg" />
+    <Content Include="Content\icons\SoulAbilities\energyburst3f.jpg" />
+    <Content Include="Content\icons\SoulAbilities\energyburst5.jpg" />
+    <Content Include="Content\icons\SoulAbilities\energy_overload1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\enhanced_weapon_enchantments_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\enraged_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\ensnare1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\entropy_embrace.jpg" />
+    <Content Include="Content\icons\SoulAbilities\escape_artist_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\even_justice_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\excommunicate.jpg" />
+    <Content Include="Content\icons\SoulAbilities\exorcize1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\exorcize2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\expectant_treatment.jpg" />
+    <Content Include="Content\icons\SoulAbilities\explosivetrap2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\explosive_infestation_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\exposeweak1a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\exposeweak1b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\exposeweakness1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\exposeweakness2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\exposeweakness2a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\exposeweakness3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\exposeweakness4.jpg" />
+    <Content Include="Content\icons\SoulAbilities\extraordinary_care.jpg" />
+    <Content Include="Content\icons\SoulAbilities\eye_of_the_storm.jpg" />
+    <Content Include="Content\icons\SoulAbilities\faithful_doctrine_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\faithful_doctrine_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\fanaticism.jpg" />
+    <Content Include="Content\icons\SoulAbilities\fanfare_of_power.jpg" />
+    <Content Include="Content\icons\SoulAbilities\fanfare_of_vigor.jpg" />
+    <Content Include="Content\icons\SoulAbilities\fast_relief.jpg" />
+    <Content Include="Content\icons\SoulAbilities\fatique.jpg" />
+    <Content Include="Content\icons\SoulAbilities\favor_of_the_current.jpg" />
+    <Content Include="Content\icons\SoulAbilities\fiery_chains_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\fiery_spike_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\finalstrike1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\finalstrike2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\finalstrike3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\finalstrike3a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\fireball.jpg" />
+    <Content Include="Content\icons\SoulAbilities\fire_and_forget.jpg" />
+    <Content Include="Content\icons\SoulAbilities\fire_death_attunement_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\first_aid.jpg" />
+    <Content Include="Content\icons\SoulAbilities\flamejet2big.jpg" />
+    <Content Include="Content\icons\SoulAbilities\flame_speaker.jpg" />
+    <Content Include="Content\icons\SoulAbilities\flame_speaker_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\flame_thrust_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\flame_thrust_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\flare_of_light_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\flash1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\flash2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\flashback.jpg" />
+    <Content Include="Content\icons\SoulAbilities\flashback_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\fleeting_instincts_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\fleeting_instincts_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\fleeting_instincts_02.jpg" />
+    <Content Include="Content\icons\SoulAbilities\fleeting_instincts_02_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\fleeting_instincts_02_c.jpg" />
+    <Content Include="Content\icons\SoulAbilities\flesh_rot_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\flesh_rot_01_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\foul_play_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\foul_play_02.jpg" />
+    <Content Include="Content\icons\SoulAbilities\frosted_ward.jpg" />
+    <Content Include="Content\icons\SoulAbilities\frost_hammer1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\galvanic_strike.jpg" />
+    <Content Include="Content\icons\SoulAbilities\generic_ability_002.jpg" />
+    <Content Include="Content\icons\SoulAbilities\generic_ability_004.jpg" />
+    <Content Include="Content\icons\SoulAbilities\generic_ability_007.jpg" />
+    <Content Include="Content\icons\SoulAbilities\generic_ability_007_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\generic_ability_008.jpg" />
+    <Content Include="Content\icons\SoulAbilities\generic_ability_009_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\generic_ability_010.jpg" />
+    <Content Include="Content\icons\SoulAbilities\generic_ability_011.jpg" />
+    <Content Include="Content\icons\SoulAbilities\generic_ability_012_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\generic_ability_012_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\generic_ability_013.jpg" />
+    <Content Include="Content\icons\SoulAbilities\generic_ability_014_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\generic_ability_015.jpg" />
+    <Content Include="Content\icons\SoulAbilities\generic_ability_015_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\generic_ability_015_z.jpg" />
+    <Content Include="Content\icons\SoulAbilities\generic_ability_016.jpg" />
+    <Content Include="Content\icons\SoulAbilities\generic_ability_017.jpg" />
+    <Content Include="Content\icons\SoulAbilities\generic_ability_018.jpg" />
+    <Content Include="Content\icons\SoulAbilities\generic_ability_019.jpg" />
+    <Content Include="Content\icons\SoulAbilities\generic_ability_020.jpg" />
+    <Content Include="Content\icons\SoulAbilities\generic_ability_020_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\generic_ability_021.jpg" />
+    <Content Include="Content\icons\SoulAbilities\generic_ability_022.jpg" />
+    <Content Include="Content\icons\SoulAbilities\generic_ability_023.jpg" />
+    <Content Include="Content\icons\SoulAbilities\generic_ability_024.jpg" />
+    <Content Include="Content\icons\SoulAbilities\generic_ability_024_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\generic_ability_025.jpg" />
+    <Content Include="Content\icons\SoulAbilities\generic_ability_025_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\generic_ability_026_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\generic_ability_027.jpg" />
+    <Content Include="Content\icons\SoulAbilities\generic_ability_027_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\generic_ability_029.jpg" />
+    <Content Include="Content\icons\SoulAbilities\generic_ability_031.jpg" />
+    <Content Include="Content\icons\SoulAbilities\generic_ability_031_2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\generic_ability_032.jpg" />
+    <Content Include="Content\icons\SoulAbilities\goblin_sketches.jpg" />
+    <Content Include="Content\icons\SoulAbilities\goo7b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\good_health.jpg" />
+    <Content Include="Content\icons\SoulAbilities\greater_fire_05.jpg" />
+    <Content Include="Content\icons\SoulAbilities\grim_blade_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\grim_blade_01_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\group_assistance.jpg" />
+    <Content Include="Content\icons\SoulAbilities\group_therapy.jpg" />
+    <Content Include="Content\icons\SoulAbilities\growing_energy_02.jpg" />
+    <Content Include="Content\icons\SoulAbilities\guardian_phase.jpg" />
+    <Content Include="Content\icons\SoulAbilities\hammer_of_virtue_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\harbinger_binding_fetters.jpg" />
+    <Content Include="Content\icons\SoulAbilities\harbinger_blademark.jpg" />
+    <Content Include="Content\icons\SoulAbilities\harbinger_blademark_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\harbinger_blade_rush.jpg" />
+    <Content Include="Content\icons\SoulAbilities\harbinger_blazing_light.jpg" />
+    <Content Include="Content\icons\SoulAbilities\harbinger_charged_blade.jpg" />
+    <Content Include="Content\icons\SoulAbilities\harbinger_charged_blade_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\harbinger_conditioned_response.jpg" />
+    <Content Include="Content\icons\SoulAbilities\harbinger_conditioned_response_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\harbinger_disabling_shock_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\harbinger_eldritch_armor.jpg" />
+    <Content Include="Content\icons\SoulAbilities\harbinger_empyrean_ascension_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\harbinger_empyrean_ascension_d.jpg" />
+    <Content Include="Content\icons\SoulAbilities\harbinger_empyrean_ascension_e.jpg" />
+    <Content Include="Content\icons\SoulAbilities\harbinger_energy_beam.jpg" />
+    <Content Include="Content\icons\SoulAbilities\harbinger_essence_of_wind_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\harbinger_introspection.jpg" />
+    <Content Include="Content\icons\SoulAbilities\harbinger_introspection_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\harbinger_lighting_blade.jpg" />
+    <Content Include="Content\icons\SoulAbilities\harbinger_lighting_blade_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\harbinger_lucent_slash.jpg" />
+    <Content Include="Content\icons\SoulAbilities\harbinger_lucent_slash_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\harbinger_luminous_weapon_c.jpg" />
+    <Content Include="Content\icons\SoulAbilities\harbinger_phantom_blades.jpg" />
+    <Content Include="Content\icons\SoulAbilities\harbinger_phantom_blades2_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\harbinger_phantom_blades2_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\harbinger_phantom_blades_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\harbinger_phase_step.jpg" />
+    <Content Include="Content\icons\SoulAbilities\harbinger_phase_step_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\harbinger_piercing_beam.jpg" />
+    <Content Include="Content\icons\SoulAbilities\harbinger_planar_retreat.jpg" />
+    <Content Include="Content\icons\SoulAbilities\harbinger_planar_retreat_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\harbinger_planar_retreat_z.jpg" />
+    <Content Include="Content\icons\SoulAbilities\harbinger_planar_shield.jpg" />
+    <Content Include="Content\icons\SoulAbilities\harbinger_reapers_blade.jpg" />
+    <Content Include="Content\icons\SoulAbilities\harbinger_rending_slash.jpg" />
+    <Content Include="Content\icons\SoulAbilities\harbinger_rending_slash_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\harbinger_storm_fury_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\harbinger_storm_nova.jpg" />
+    <Content Include="Content\icons\SoulAbilities\harbinger_storm_nova_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\harbinger_storm_nova_c.jpg" />
+    <Content Include="Content\icons\SoulAbilities\harbinger_storm_shroud_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\harbinger_storm_shroud_z.jpg" />
+    <Content Include="Content\icons\SoulAbilities\harbinger_storm_slash.jpg" />
+    <Content Include="Content\icons\SoulAbilities\harbinger_storm_slash_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\harbinger_tempest_winds_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\harbinger_tempest_wind_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\harbinger_vengeful_shock_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\harbinger_vengeful_shock_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\harbinger_vorpal_slash.jpg" />
+    <Content Include="Content\icons\SoulAbilities\hardened_stalker.jpg" />
+    <Content Include="Content\icons\SoulAbilities\hasted_time.jpg" />
+    <Content Include="Content\icons\SoulAbilities\hasted_time_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\headshot1b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\headshot2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\headshot3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\heal1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\heal1a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\heal2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\heal2z.jpg" />
+    <Content Include="Content\icons\SoulAbilities\heal3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\healed.jpg" />
+    <Content Include="Content\icons\SoulAbilities\healing_flame.jpg" />
+    <Content Include="Content\icons\SoulAbilities\healing_flare.jpg" />
+    <Content Include="Content\icons\SoulAbilities\healing_flare2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\healing_flare2_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\healing_flare_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\healing_flare_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\healthchannel1b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\healthchannel1g.jpg" />
+    <Content Include="Content\icons\SoulAbilities\healthchannel2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\healthchannel3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\healthchannel3a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\healthchannel3b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\heavybleeding.jpg" />
+    <Content Include="Content\icons\SoulAbilities\hellfire_blades_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\heroicsurge1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\heroicsurge1a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\hidden_veil_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\hit_and_run.jpg" />
+    <Content Include="Content\icons\SoulAbilities\holysmite3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\holysmite4.jpg" />
+    <Content Include="Content\icons\SoulAbilities\holystrength2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\holystrength3a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\holystrength3c.jpg" />
+    <Content Include="Content\icons\SoulAbilities\holysweep1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\holysweep3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\holysweep3a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\holysweep3aa.jpg" />
+    <Content Include="Content\icons\SoulAbilities\holysweep3c.jpg" />
+    <Content Include="Content\icons\SoulAbilities\holysweep4d.jpg" />
+    <Content Include="Content\icons\SoulAbilities\humbling_blow_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\icebolt1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\icebolt2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\icebolt4a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\icestorm-light.jpg" />
+    <Content Include="Content\icons\SoulAbilities\icestormdark.jpg" />
+    <Content Include="Content\icons\SoulAbilities\icy_cascade.jpg" />
+    <Content Include="Content\icons\SoulAbilities\icy_heart1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\icy_heart2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\illumination_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\illumination_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\immunization.jpg" />
+    <Content Include="Content\icons\SoulAbilities\incapacitate_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\incapacitate_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\incite_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\incite_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\increased_explosive_power.jpg" />
+    <Content Include="Content\icons\SoulAbilities\increased_explosive_power_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\infestation_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\infestation_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\insignia_of_blood.jpg" />
+    <Content Include="Content\icons\SoulAbilities\inspiration1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\inspiration1a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\inspiration2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\inspiration3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\inspiration4.jpg" />
+    <Content Include="Content\icons\SoulAbilities\intense_flames.jpg" />
+    <Content Include="Content\icons\SoulAbilities\interdict_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\internalizeheat1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\internalizeheat3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\internalizeheat3b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\intervene1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\intervene2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\intimidatingweapon1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\intimidatingweapon2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\invigorate1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\invigorate2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\invigoration1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\invigoration2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\invigoration2a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\invigoration3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\invoker_prerogative1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\ironskin1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\ironwill1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\ironwill2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\ironwill2a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\jaggedlighting1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\jaggedlighting2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\jaggedlighting2a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\jolting_wave.jpg" />
+    <Content Include="Content\icons\SoulAbilities\keen_eye.jpg" />
+    <Content Include="Content\icons\SoulAbilities\kick1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\kick3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\kick4.jpg" />
+    <Content Include="Content\icons\SoulAbilities\killer_instinct.jpg" />
+    <Content Include="Content\icons\SoulAbilities\killing_focus_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\kiss_of_life.jpg" />
+    <Content Include="Content\icons\SoulAbilities\lance1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\lance1_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\land_mines.jpg" />
+    <Content Include="Content\icons\SoulAbilities\last_stand.jpg" />
+    <Content Include="Content\icons\SoulAbilities\last_stand_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\latent_blaze.jpg" />
+    <Content Include="Content\icons\SoulAbilities\latent_blaze_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\layinghands1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\layinghands1x.jpg" />
+    <Content Include="Content\icons\SoulAbilities\layonhands2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\layonhands2z.jpg" />
+    <Content Include="Content\icons\SoulAbilities\layonhands3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\layonhands4aa.jpg" />
+    <Content Include="Content\icons\SoulAbilities\layonhands5.jpg" />
+    <Content Include="Content\icons\SoulAbilities\liberation_treatment.jpg" />
+    <Content Include="Content\icons\SoulAbilities\life-drain3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\life-drain5.jpg" />
+    <Content Include="Content\icons\SoulAbilities\lifedrain4.jpg" />
+    <Content Include="Content\icons\SoulAbilities\lifes_devotion_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\life_and_death_concord_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\life_and_death_concord_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\lighting1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\lighting2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\lighting2a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\lightingbolt4.jpg" />
+    <Content Include="Content\icons\SoulAbilities\lightingbolt4y.jpg" />
+    <Content Include="Content\icons\SoulAbilities\lightingbolt5.jpg" />
+    <Content Include="Content\icons\SoulAbilities\lighting_fury.jpg" />
+    <Content Include="Content\icons\SoulAbilities\lighting_fury_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\living_flame_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\long_range_bombing.jpg" />
+    <Content Include="Content\icons\SoulAbilities\maelstrom.jpg" />
+    <Content Include="Content\icons\SoulAbilities\maelstrom_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\magicresist1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\magicresist2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\magicresist3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\magicward1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\magicward1a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\magicward2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\magicward3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\magicward4.jpg" />
+    <Content Include="Content\icons\SoulAbilities\magnify_pain_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\maintenance_therapy.jpg" />
+    <Content Include="Content\icons\SoulAbilities\malicious_strike_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\manachannel1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\manadrain1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\map3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\marksman_pedestal_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\massive_therapy.jpg" />
+    <Content Include="Content\icons\SoulAbilities\mass_blood_transfusion.jpg" />
+    <Content Include="Content\icons\SoulAbilities\mass_casualty_response.jpg" />
+    <Content Include="Content\icons\SoulAbilities\mass_oppression.jpg" />
+    <Content Include="Content\icons\SoulAbilities\mass_rescue.jpg" />
+    <Content Include="Content\icons\SoulAbilities\mass_subdue.jpg" />
+    <Content Include="Content\icons\SoulAbilities\master_archer_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\medical_facility.jpg" />
+    <Content Include="Content\icons\SoulAbilities\medicinal_leeching.jpg" />
+    <Content Include="Content\icons\SoulAbilities\memory_capture.jpg" />
+    <Content Include="Content\icons\SoulAbilities\menacingroar2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\menacingroar2a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\menacingroar3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\menacingroar4b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\mend1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\mend1c.jpg" />
+    <Content Include="Content\icons\SoulAbilities\mend1f.jpg" />
+    <Content Include="Content\icons\SoulAbilities\mend2a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\mend2b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\mend4.jpg" />
+    <Content Include="Content\icons\SoulAbilities\mirrorandsmoke2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\misdirection.jpg" />
+    <Content Include="Content\icons\SoulAbilities\mortalshot1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\mortalshot1b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\mortalshot2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\motif_of_bravery.jpg" />
+    <Content Include="Content\icons\SoulAbilities\motif_of_encouragement.jpg" />
+    <Content Include="Content\icons\SoulAbilities\motif_of_grandeur.jpg" />
+    <Content Include="Content\icons\SoulAbilities\motif_of_regeneration.jpg" />
+    <Content Include="Content\icons\SoulAbilities\motif_of_regeneration_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\motif_of_tenacity.jpg" />
+    <Content Include="Content\icons\SoulAbilities\necromancer-corpse_explosion.jpg" />
+    <Content Include="Content\icons\SoulAbilities\necromancer-feign_death.jpg" />
+    <Content Include="Content\icons\SoulAbilities\necromancer-summon_zealot.jpg" />
+    <Content Include="Content\icons\SoulAbilities\necromancer-summon_zealot_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\necromancer_ancient_tomb_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\necromancer_condemn.jpg" />
+    <Content Include="Content\icons\SoulAbilities\necromancer_detonate_bones_02_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\necropotence1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\necropotence2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\necropotence4.jpg" />
+    <Content Include="Content\icons\SoulAbilities\necropotence4a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\necropotence4b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\necropotence4z.jpg" />
+    <Content Include="Content\icons\SoulAbilities\neutralize.jpg" />
+    <Content Include="Content\icons\SoulAbilities\nightblade_blazing_path.jpg" />
+    <Content Include="Content\icons\SoulAbilities\nightblade_dark_descent.jpg" />
+    <Content Include="Content\icons\SoulAbilities\nightblade_dark_descent_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\nightstalker_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\nimble_fingers.jpg" />
+    <Content Include="Content\icons\SoulAbilities\NPCDialogIcon_help.png" />
+    <Content Include="Content\icons\SoulAbilities\nysyrs_rebuke.jpg" />
+    <Content Include="Content\icons\SoulAbilities\opportunity_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\opportunity_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\overwhelming_brilliance_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\paladin-graceful_under_pressure_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\paladin-life_rapture_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\paladin-preservation.jpg" />
+    <Content Include="Content\icons\SoulAbilities\paladin-preservation_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\paladin-preservation_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\paladin-reprisal.jpg" />
+    <Content Include="Content\icons\SoulAbilities\paladin-scales_of_justice.jpg" />
+    <Content Include="Content\icons\SoulAbilities\paladin-vengeful_wrath.jpg" />
+    <Content Include="Content\icons\SoulAbilities\paladin_face_slam.jpg" />
+    <Content Include="Content\icons\SoulAbilities\paladin_lights_blessing1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\paladin_lights_blessing_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\paladin_lights_blessing_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\paladin_shield_of_the_vengeful.jpg" />
+    <Content Include="Content\icons\SoulAbilities\paladin_shield_of_the_vengeful_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\paragon-improved_predicatable_movements_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\paragon-predicatable_movements_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\paragon-predicatable_movements_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\paragon-way_of_mountain_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\paragon-way_of_mountain_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\paragon-way_of_mountain_c.jpg" />
+    <Content Include="Content\icons\SoulAbilities\paragon_alacricity.jpg" />
+    <Content Include="Content\icons\SoulAbilities\paragon_alacricity_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\paragon_analyze_weakness.jpg" />
+    <Content Include="Content\icons\SoulAbilities\paragon_analyze_weakness_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\paragon_analyze_weakness_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\paragon_feint.jpg" />
+    <Content Include="Content\icons\SoulAbilities\paragon_flowing_strikes.jpg" />
+    <Content Include="Content\icons\SoulAbilities\paragon_improved_flowing_strikes_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\paragon_improved_flowing_strikes_01_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\paragon_path_of_the_tempest_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\paragon_path_of_the_tempest_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\paragon_shifting_blades_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\paragon_way_of_the_river_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\paragon_way_of_the_river_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\paralyzing_strike_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\persecute.jpg" />
+    <Content Include="Content\icons\SoulAbilities\perseverance.jpg" />
+    <Content Include="Content\icons\SoulAbilities\pet_dire-wolf.jpg" />
+    <Content Include="Content\icons\SoulAbilities\pet_dire-wolf_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\pet_raptor.jpg" />
+    <Content Include="Content\icons\SoulAbilities\pet_razorbeast.jpg" />
+    <Content Include="Content\icons\SoulAbilities\pet_razorbeast_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\phantom_blow_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\physical_trauma_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\piercingenergy2a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\piercingenergy3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\piercingshot1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\piercingshot2a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\piercingshot3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\piercingshot3a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\piercing_shot_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\piercing_shot_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\piety2a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\piety3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\pin_down_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\plague_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\plane_of_life_1h_dagger.jpg" />
+    <Content Include="Content\icons\SoulAbilities\plane_of_life_1h_sword.jpg" />
+    <Content Include="Content\icons\SoulAbilities\plane_of_life_2h_polearm.jpg" />
+    <Content Include="Content\icons\SoulAbilities\plant13b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\plant14a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\plant3b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\plant47.jpg" />
+    <Content Include="Content\icons\SoulAbilities\plasma_strike.jpg" />
+    <Content Include="Content\icons\SoulAbilities\plate_102_chest.jpg" />
+    <Content Include="Content\icons\SoulAbilities\plate_116_chest_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\poisoned.jpg" />
+    <Content Include="Content\icons\SoulAbilities\poisonone2a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\poisonone2b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\poisontwo3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\poisontwo4.jpg" />
+    <Content Include="Content\icons\SoulAbilities\poison_gas_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\poison_gas_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\poison_gas_02.jpg" />
+    <Content Include="Content\icons\SoulAbilities\positive_reaction.jpg" />
+    <Content Include="Content\icons\SoulAbilities\power_chord.jpg" />
+    <Content Include="Content\icons\SoulAbilities\power_chord_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\power_chord_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\preemptive_therapy.jpg" />
+    <Content Include="Content\icons\SoulAbilities\preventive_medication.jpg" />
+    <Content Include="Content\icons\SoulAbilities\primal_death_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\primal_death_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\prolonged_recovery.jpg" />
+    <Content Include="Content\icons\SoulAbilities\provoke1a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\puncture2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\purge.jpg" />
+    <Content Include="Content\icons\SoulAbilities\purge_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\purifier_firewall_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\purifier_sign_of_anticipation_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\purifier_sign_of_anticipation_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\purifier_sign_of_daring_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\purifier_sign_of_faith.jpg" />
+    <Content Include="Content\icons\SoulAbilities\purifier_sign_of_faith_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\purifier_sign_of_faith_cc.jpg" />
+    <Content Include="Content\icons\SoulAbilities\purifier_sign_of_wrath_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\purifier_symbol_of_the_sun.jpg" />
+    <Content Include="Content\icons\SoulAbilities\purifier_symbol_of_the_torch_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\pyroclasty1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\pyroclasty2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\quick_reflexes.jpg" />
+    <Content Include="Content\icons\SoulAbilities\quick_reload_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\quick_remedy.jpg" />
+    <Content Include="Content\icons\SoulAbilities\rainofarrows1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\rainofarrows1z.jpg" />
+    <Content Include="Content\icons\SoulAbilities\rainofarrows2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\rainofarrows4a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\rally1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\rally1a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\rally1x.jpg" />
+    <Content Include="Content\icons\SoulAbilities\rally3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\rampage1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\rampage2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\rapidshot1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\rapidshot1a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\rapidshot2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\rapidshot3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\rapidshot4.jpg" />
+    <Content Include="Content\icons\SoulAbilities\rapidshot4a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\rapid_setup.jpg" />
+    <Content Include="Content\icons\SoulAbilities\reaver_binding_of_devouring_darkness.jpg" />
+    <Content Include="Content\icons\SoulAbilities\reaver_crest_of_shadow.jpg" />
+    <Content Include="Content\icons\SoulAbilities\reaver_explosive_infestation_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\reaver_explosive_infestation_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\reaver_explosive_infestation_r.jpg" />
+    <Content Include="Content\icons\SoulAbilities\reaver_plague_eater.jpg" />
+    <Content Include="Content\icons\SoulAbilities\redirect1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\redirect1a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\redirect1b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\redirect2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\redirect2a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\redirect4a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\redirect4b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\redress.jpg" />
+    <Content Include="Content\icons\SoulAbilities\reign_of_despair.jpg" />
+    <Content Include="Content\icons\SoulAbilities\releaseheat2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\releaseheat3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\releaseheat3a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\releaseheat4.jpg" />
+    <Content Include="Content\icons\SoulAbilities\releaseheat4a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\releaseheat4b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\remote_clipping.jpg" />
+    <Content Include="Content\icons\SoulAbilities\remote_clipping_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\removeheat1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\reparation_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\repelling_shot.jpg" />
+    <Content Include="Content\icons\SoulAbilities\reprieve_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\requital_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\requital_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\resolve1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\resolve2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\resonance.jpg" />
+    <Content Include="Content\icons\SoulAbilities\ressurect4b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\ressurect4bl.jpg" />
+    <Content Include="Content\icons\SoulAbilities\ressurect4y.jpg" />
+    <Content Include="Content\icons\SoulAbilities\ressurection1za.jpg" />
+    <Content Include="Content\icons\SoulAbilities\ressurection3b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\ressurection3bb.jpg" />
+    <Content Include="Content\icons\SoulAbilities\restorative_flame.jpg" />
+    <Content Include="Content\icons\SoulAbilities\restorative_flame2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\restorative_flame_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\restore1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\restore1a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\restore2b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\retreat.jpg" />
+    <Content Include="Content\icons\SoulAbilities\retribution1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\revitalize1c.jpg" />
+    <Content Include="Content\icons\SoulAbilities\ricochet1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\ricochet2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\riff.jpg" />
+    <Content Include="Content\icons\SoulAbilities\riftblade-avatar_of_water.jpg" />
+    <Content Include="Content\icons\SoulAbilities\riftblade-avatar_of_water_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\riftblade-earth_burst_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\riftblade-surging_energy.jpg" />
+    <Content Include="Content\icons\SoulAbilities\riftblade-surging_energy_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\riftblade-surging_energy_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\riftblade-surging_energy_c.jpg" />
+    <Content Include="Content\icons\SoulAbilities\riftblade_frost_strike_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\riftblade_frost_strike_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\riftblade_stone_shield_01_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\riftblade_thunder_strike_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\riftstalker_great_fortitude_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\riftstalker_great_fortitude_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\riftstalker_planar_refuge_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\riftstalker_planar_refuge_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\riftstalker_planar_repulsion_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\riftstalker_planar_repulsion_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\riftstalker_planebound_aegis.jpg" />
+    <Content Include="Content\icons\SoulAbilities\riftstalker_planebound_aegis_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\riftstalker_rift_scavenger_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\riftstalker_rift_scavenger_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\riftstalker_rift_scavenger_01_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\riftstalker_soul_coalescense.jpg" />
+    <Content Include="Content\icons\SoulAbilities\riftstalker_soul_coalescense_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\riftstalker_toughened_soul_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\riftstalker_toughened_soul_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\riftstalker_unseen_fury_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\rift_affinity.jpg" />
+    <Content Include="Content\icons\SoulAbilities\rift_prison.jpg" />
+    <Content Include="Content\icons\SoulAbilities\righteousness1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\righteousness2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\righteousness2a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\righteousness3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\righteous_healing_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\righteous_healing_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\righteous_invocation_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\rogueshottwo3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\roguestrike1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\roguestrike1a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\roguestrike2a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\rogue_shadow_shift.jpg" />
+    <Content Include="Content\icons\SoulAbilities\rudeawake1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\ruthless_stalker.jpg" />
+    <Content Include="Content\icons\SoulAbilities\saboteur_cloud_maker.jpg" />
+    <Content Include="Content\icons\SoulAbilities\saboteur_molotov_cocktail_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\sacrificepet1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\sacrificepet2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\sacrificepet3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\sacrificepet4a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\sacrificepet4b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\salvation_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\sanction_heretic.jpg" />
+    <Content Include="Content\icons\SoulAbilities\sanction_heretic_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\scatter_strike.jpg" />
+    <Content Include="Content\icons\SoulAbilities\scatter_the_shadows.jpg" />
+    <Content Include="Content\icons\SoulAbilities\scourge_of_darkness_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\scourge_of_darkness_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\scrape1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\scrape2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\scrape3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\secondwind1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\secondwind2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\secondwind2a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\sentinel-cleansing_prayer.jpg" />
+    <Content Include="Content\icons\SoulAbilities\sentinel-cleansing_prayer_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\sentinel-healing_benediction.jpg" />
+    <Content Include="Content\icons\SoulAbilities\sentinel-healing_benediction_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\sentinel-protect_the_flock_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\sentinel-quietus.jpg" />
+    <Content Include="Content\icons\SoulAbilities\sentinel-refreshing_communion.jpg" />
+    <Content Include="Content\icons\SoulAbilities\sentinel-refreshing_communion_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\sentinel_wrathful_exuberance.jpg" />
+    <Content Include="Content\icons\SoulAbilities\sentinel_wrathful_exuberance_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\sentinel_wrathful_exuberance_cc.jpg" />
+    <Content Include="Content\icons\SoulAbilities\shadow_assault.jpg" />
+    <Content Include="Content\icons\SoulAbilities\shadow_assault_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\shadow_blitz.jpg" />
+    <Content Include="Content\icons\SoulAbilities\shadow_blitz_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\shadow_blitz_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\shadow_shift.jpg" />
+    <Content Include="Content\icons\SoulAbilities\shadow_shift_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\shadow_shift_c.jpg" />
+    <Content Include="Content\icons\SoulAbilities\shadow_stalk.jpg" />
+    <Content Include="Content\icons\SoulAbilities\shadow_stalk_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\shadow_warp.jpg" />
+    <Content Include="Content\icons\SoulAbilities\shadow_warp_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\shaman-courage_of_the_bear.jpg" />
+    <Content Include="Content\icons\SoulAbilities\shaman-courage_of_the_bear_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\shaman-courage_of_the_jaguar.jpg" />
+    <Content Include="Content\icons\SoulAbilities\shaman-glacial_shield.jpg" />
+    <Content Include="Content\icons\SoulAbilities\shaman-glory_of_the_chosen.jpg" />
+    <Content Include="Content\icons\SoulAbilities\shaman-glory_of_the_chosen_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\shaman-lighting_hammer.jpg" />
+    <Content Include="Content\icons\SoulAbilities\shaman-vengeance_of_bitter_wind.jpg" />
+    <Content Include="Content\icons\SoulAbilities\shaman-vengeance_of_frozen_earth_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\shaman-vengeance_of_frozen_earth_c.jpg" />
+    <Content Include="Content\icons\SoulAbilities\shaman-vengeance_of_winter_storm.jpg" />
+    <Content Include="Content\icons\SoulAbilities\shaman-vengeance_of_winter_storm_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\shatter1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\shatter3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\shatter3a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\shattered_reflection.jpg" />
+    <Content Include="Content\icons\SoulAbilities\shielded.jpg" />
+    <Content Include="Content\icons\SoulAbilities\shielding_charge.jpg" />
+    <Content Include="Content\icons\SoulAbilities\shield_surge.jpg" />
+    <Content Include="Content\icons\SoulAbilities\shockwave1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\shockwave2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\shockwave2a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\shockwave3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\shockwave3d.jpg" />
+    <Content Include="Content\icons\SoulAbilities\shreddingtrap1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\shreddingtrap3a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\shroudofpenitence1a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\shroudofpenitent2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\shroud_of_agony.jpg" />
+    <Content Include="Content\icons\SoulAbilities\shroud_of_agony_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\side_steps.jpg" />
+    <Content Include="Content\icons\SoulAbilities\sigil_of_lurking_decay_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\sigil_of_lurking_decay_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\silent_footsteps_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\silent_footsteps_01_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\silent_setup.jpg" />
+    <Content Include="Content\icons\SoulAbilities\simultaneous_treatment.jpg" />
+    <Content Include="Content\icons\SoulAbilities\single_minded_focus.jpg" />
+    <Content Include="Content\icons\SoulAbilities\skeleton2c.jpg" />
+    <Content Include="Content\icons\SoulAbilities\slam2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\slam3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\slam3a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\slam4.jpg" />
+    <Content Include="Content\icons\SoulAbilities\slam4a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\slipaway1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\slip_away_03.jpg" />
+    <Content Include="Content\icons\SoulAbilities\smelting1a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\smite1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\smite1a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\smite2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\smite4a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\smite5.jpg" />
+    <Content Include="Content\icons\SoulAbilities\smokeandmirrors1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\smokeandmirrors3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\smother_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\snaretrap1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\snaretrap2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\snaretrap3a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\souldrain1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\souldrain2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\souldrain3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\souldrain4.jpg" />
+    <Content Include="Content\icons\SoulAbilities\soul_beastmaster.jpg" />
+    <Content Include="Content\icons\SoulAbilities\soul_champion.jpg" />
+    <Content Include="Content\icons\SoulAbilities\soul_paladin.jpg" />
+    <Content Include="Content\icons\SoulAbilities\soul_paragon.jpg" />
+    <Content Include="Content\icons\SoulAbilities\soul_reaver.jpg" />
+    <Content Include="Content\icons\SoulAbilities\soul_redemption.jpg" />
+    <Content Include="Content\icons\SoulAbilities\soul_riftblade.jpg" />
+    <Content Include="Content\icons\SoulAbilities\soul_rogue.jpg" />
+    <Content Include="Content\icons\SoulAbilities\soul_tempest.jpg" />
+    <Content Include="Content\icons\SoulAbilities\soul_voidknight.jpg" />
+    <Content Include="Content\icons\SoulAbilities\soul_warlord.jpg" />
+    <Content Include="Content\icons\SoulAbilities\sovereign_hammer_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\spiritblast1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\spiritblast3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\spiritblast4b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\spiritblast4bc.jpg" />
+    <Content Include="Content\icons\SoulAbilities\spiritbolt1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\spiritofcrusader1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\spiritofcrusader2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\spiritoflion2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\spiritoflion3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\spiritofmongoose2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\spiritofsaints1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\spiritofsaints3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\spiritofsorcery1a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\spiritoftree1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\spiritoftree1a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\spiritofturtle2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\spiritofturtle3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\spiritofvaliant1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\spiritofvaliant1a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\spiritstrike3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\spiritstrike5.jpg" />
+    <Content Include="Content\icons\SoulAbilities\spiritual_will.jpg" />
+    <Content Include="Content\icons\SoulAbilities\spirit_of_lion1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\stage_presence.jpg" />
+    <Content Include="Content\icons\SoulAbilities\staggeringshot1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\staggeringshot3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\stalking_phase.jpg" />
+    <Content Include="Content\icons\SoulAbilities\stalking_phase_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\static_shot.jpg" />
+    <Content Include="Content\icons\SoulAbilities\stealth_w.jpg" />
+    <Content Include="Content\icons\SoulAbilities\stealth_z.jpg" />
+    <Content Include="Content\icons\SoulAbilities\steelskin2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\steelskin3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\sterilize1_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\stormcaller_lightning_arc.jpg" />
+    <Content Include="Content\icons\SoulAbilities\stormcaller_lightning_storm_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\stormcaller_lightning_storm_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\stormcaller_lightning_storm_02_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\strafe_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\street_performer.jpg" />
+    <Content Include="Content\icons\SoulAbilities\street_smart.jpg" />
+    <Content Include="Content\icons\SoulAbilities\strike_of_judgement_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\strong_constitution_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\stunning_blow_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\summonskel5.jpg" />
+    <Content Include="Content\icons\SoulAbilities\summonskeleton1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\summonskeleton2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\supportive_care.jpg" />
+    <Content Include="Content\icons\SoulAbilities\surge_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\surgical_strike.jpg" />
+    <Content Include="Content\icons\SoulAbilities\surging_flames.jpg" />
+    <Content Include="Content\icons\SoulAbilities\survival2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\survival3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\sweep2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\sweep3b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\sweep3c.jpg" />
+    <Content Include="Content\icons\SoulAbilities\sweep4.jpg" />
+    <Content Include="Content\icons\SoulAbilities\sweep4a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\sweep4b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\swiftstrike1a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\swiftstrike2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\swordsmith1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tactician_ablative_coil_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tactician_ablative_coil_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tactician_ablative_coil_c.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tactician_barrier_augument_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tactician_barrier_augument_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tactician_barrier_augument_c.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tactician_curative_beam.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tactician_curative_bolt.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tactician_curative_core_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tactician_curative_engine.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tactician_curative_primer_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tactician_curative_torrent.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tactician_devastative_augument.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tactician_empyrean_bolt.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tactician_empyrean_core_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tactician_empyrean_engine.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tactician_empyrean_primer.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tactician_fortification_core.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tactician_glacial_torrent.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tactician_infernal_torrent.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tactician_infernal_torrent_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tactician_mass_curative_engine_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tactician_mass_repulsion.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tactician_necrotic_bolt.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tactician_necrotic_bolt_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tactician_necrotic_core.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tactician_necrotic_engine.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tactician_necrotic_engine_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tactician_necrotic_primer.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tactician_necrotic_torrent.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tactician_necrotic_torrent_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tactician_power_core_z.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tactician_sabotage_core.jpg" />
+    <Content Include="Content\icons\SoulAbilities\talented_composer.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tempest_adrenalin_boost.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tempest_bounce_shot_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tempest_brace.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tempest_camouflage.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tempest_close_training_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tempest_close_training_z.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tempest_difficult_target.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tempest_difficult_target_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tempest_difficult_target_z.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tempest_endgame.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tempest_endgame_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tempest_evasive_redirection.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tempest_focus_fire.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tempest_identified_weakness_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tempest_identified_weakness_z.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tempest_mantlet.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tempest_physical_training_w.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tempest_physical_training_y.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tempest_physical_training_z.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tempest_sticky_grenade_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\track_humanoids_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\triage1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\triage2a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\triage3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\trinket31.jpg" />
+    <Content Include="Content\icons\SoulAbilities\trinket4.jpg" />
+    <Content Include="Content\icons\SoulAbilities\triumphant_spirit.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tumble1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\twilight_force_01_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\twin_strike.jpg" />
+    <Content Include="Content\icons\SoulAbilities\twin_strike_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\tyranny_of_death.jpg" />
+    <Content Include="Content\icons\SoulAbilities\undertow.jpg" />
+    <Content Include="Content\icons\SoulAbilities\underwaterbreath1a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\underwaterbreath2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\underwaterbreath2a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\underwaterbreath3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\untangle.jpg" />
+    <Content Include="Content\icons\SoulAbilities\untangle_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\urgent_care.jpg" />
+    <Content Include="Content\icons\SoulAbilities\vengeful_justice_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\venomoustrap1a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\venomoustrap2a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\verse_of_fascination.jpg" />
+    <Content Include="Content\icons\SoulAbilities\verse_of_fascination_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\verse_of_joy.jpg" />
+    <Content Include="Content\icons\SoulAbilities\verse_of_vitality.jpg" />
+    <Content Include="Content\icons\SoulAbilities\vex.jpg" />
+    <Content Include="Content\icons\SoulAbilities\virtuoso.jpg" />
+    <Content Include="Content\icons\SoulAbilities\virtuoso_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\virtuoso_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\virtuous_conviction_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\vitalizingshield1b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\vitalizingshield2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\voidknight_catalyze_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\voidknight_catalyze_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\voidknight_ravenous_defence_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\voidknight_ravenous_defence_01_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\void_knight-improved_rift_summon.jpg" />
+    <Content Include="Content\icons\SoulAbilities\void_knight-improved_rift_summon_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\void_knight-insatiable_hunger_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\void_knight-pact_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\void_knight-ravenous_strength.jpg" />
+    <Content Include="Content\icons\SoulAbilities\void_knight-ravenous_strength_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\void_knight-rift_summon.jpg" />
+    <Content Include="Content\icons\SoulAbilities\void_knight-rift_summon_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\void_knight-tempest.jpg" />
+    <Content Include="Content\icons\SoulAbilities\void_knight-void.jpg" />
+    <Content Include="Content\icons\SoulAbilities\void_knight-void_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\void_knight_rift_reversal_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\void_knight_rift_shield.jpg" />
+    <Content Include="Content\icons\SoulAbilities\void_knight_rift_shield_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\void_knight_staggering_rage_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\void_knight_staggering_rage_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\void_knight_void_storm.jpg" />
+    <Content Include="Content\icons\SoulAbilities\void_knight_void_storm_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\vortex.jpg" />
+    <Content Include="Content\icons\SoulAbilities\ward1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\ward1z.jpg" />
+    <Content Include="Content\icons\SoulAbilities\ward1zz.jpg" />
+    <Content Include="Content\icons\SoulAbilities\ward2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\ward3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\ward3b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\ward4.jpg" />
+    <Content Include="Content\icons\SoulAbilities\warden-crushing_wave.jpg" />
+    <Content Include="Content\icons\SoulAbilities\warden-deluge_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\warden-downpour.jpg" />
+    <Content Include="Content\icons\SoulAbilities\warden-healing_cataract.jpg" />
+    <Content Include="Content\icons\SoulAbilities\warden-healing_flood.jpg" />
+    <Content Include="Content\icons\SoulAbilities\warden-healing_flood_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\warden-orbs_of_the_tide.jpg" />
+    <Content Include="Content\icons\SoulAbilities\warden-overflow_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\warden-overflow_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\warden-tidal_surge.jpg" />
+    <Content Include="Content\icons\SoulAbilities\warden-waterjet.jpg" />
+    <Content Include="Content\icons\SoulAbilities\warden-waterjet_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\warlord-cutting_distraction_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\warlord-killing_field.jpg" />
+    <Content Include="Content\icons\SoulAbilities\warlord_deadly_posture.jpg" />
+    <Content Include="Content\icons\SoulAbilities\warlord_defensive_posture2_b.jpg" />
+    <Content Include="Content\icons\SoulAbilities\warlord_everything_isaweapon.jpg" />
+    <Content Include="Content\icons\SoulAbilities\warlord_king_of_the_hill_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\warlord_ready_posture.jpg" />
+    <Content Include="Content\icons\SoulAbilities\warlord_ready_posture_a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\warlord_recovery_posture.jpg" />
+    <Content Include="Content\icons\SoulAbilities\weakening_essence_01.jpg" />
+    <Content Include="Content\icons\SoulAbilities\weaponsmith1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\weaponsmith1a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\weaponsmith2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\weapon_barrage.jpg" />
+    <Content Include="Content\icons\SoulAbilities\whirlingblades1.jpg" />
+    <Content Include="Content\icons\SoulAbilities\whirlingblades2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\whirlingblades3.jpg" />
+    <Content Include="Content\icons\SoulAbilities\whirlingblades3a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\whirlwind1a.jpg" />
+    <Content Include="Content\icons\SoulAbilities\whirlwind2.jpg" />
+    <Content Include="Content\icons\SoulAbilities\whirlwind4.jpg" />
+    <Content Include="Content\icons\Souls\Arbiter.png" />
+    <Content Include="Content\icons\Souls\Archon.png" />
+    <Content Include="Content\icons\Souls\Assassin.png" />
+    <Content Include="Content\icons\Souls\Bard.png" />
+    <Content Include="Content\icons\Souls\Beastmaster.png" />
+    <Content Include="Content\icons\Souls\berserker.png" />
+    <Content Include="Content\icons\Souls\Bladedancer.png" />
+    <Content Include="Content\icons\Souls\Cabalist.png" />
+    <Content Include="Content\icons\Souls\Champion.png" />
+    <Content Include="Content\icons\Souls\Chloromancer.png" />
+    <Content Include="Content\icons\Souls\Defiler.png" />
+    <Content Include="Content\icons\Souls\Dominator.png" />
+    <Content Include="Content\icons\Souls\Druid.png" />
+    <Content Include="Content\icons\Souls\Elementalist.png" />
+    <Content Include="Content\icons\Souls\Harbinger.png" />
+    <Content Include="Content\icons\Souls\Inquisitor.png" />
+    <Content Include="Content\icons\Souls\Justicar.png" />
+    <Content Include="Content\icons\Souls\liberator.png" />
+    <Content Include="Content\icons\Souls\Marksman.png" />
+    <Content Include="Content\icons\Souls\Necromancer.png" />
+    <Content Include="Content\icons\Souls\Nightblade.png" />
+    <Content Include="Content\icons\Souls\oracle.png" />
+    <Content Include="Content\icons\Souls\Paladin.png" />
+    <Content Include="Content\icons\Souls\Paragon.png" />
+    <Content Include="Content\icons\Souls\physician.png" />
+    <Content Include="Content\icons\Souls\preserver.png" />
+    <Content Include="Content\icons\Souls\Primalist.png" />
+    <Content Include="Content\icons\Souls\Purifier.png" />
+    <Content Include="Content\icons\Souls\Pyromancer.png" />
+    <Content Include="Content\icons\Souls\Ranger.png" />
+    <Content Include="Content\icons\Souls\Reaver.png" />
+    <Content Include="Content\icons\Souls\Riftblade.png" />
+    <Content Include="Content\icons\Souls\Riftstalker.png" />
+    <Content Include="Content\icons\Souls\Saboteur.png" />
+    <Content Include="Content\icons\Souls\Sentinel.png" />
+    <Content Include="Content\icons\Souls\Shaman.png" />
+    <Content Include="Content\icons\Souls\Stormcaller.png" />
+    <Content Include="Content\icons\Souls\Tactician.png" />
+    <Content Include="Content\icons\Souls\Tempest.png" />
+    <Content Include="Content\icons\Souls\titan.png" />
+    <Content Include="Content\icons\Souls\typhoon.png" />
+    <Content Include="Content\icons\Souls\Void_Knight.png" />
+    <Content Include="Content\icons\Souls\vulcanist.png" />
+    <Content Include="Content\icons\Souls\Warden.png" />
+    <Content Include="Content\icons\Souls\Warlock.png" />
+    <Content Include="Content\icons\Souls\Warlord.png" />
+    <Content Include="Content\images\instance\coa.jpg" />
+    <Content Include="Content\images\instance\mom.jpg" />
+    <Content Include="Content\images\portrait\anrakthefoul.png" />
+    <Content Include="Content\images\portrait\drekanothoffate.png" />
+    <Content Include="Content\images\portrait\estrode.png" />
+    <Content Include="Content\images\portrait\fauxmire.png" />
+    <Content Include="Content\images\portrait\finric.png" />
+    <Content Include="Content\images\portrait\grugonim.png" />
+    <Content Include="Content\images\portrait\guurloth.png" />
+    <Content Include="Content\images\portrait\inquisitorgarau.png" />
+    <Content Include="Content\images\portrait\inwardarktide.png" />
+    <Content Include="Content\images\portrait\jinoscoth.png" />
+    <Content Include="Content\images\portrait\ladyenvy.png" />
+    <Content Include="Content\images\portrait\lordarak.png" />
+    <Content Include="Content\images\portrait\matronzamira.png" />
+    <Content Include="Content\images\portrait\murdantix.png" />
+    <Content Include="Content\images\portrait\noportrait.png" />
+    <Content Include="Content\images\portrait\pagura.png" />
+    <Content Include="Content\images\portrait\pillarsofjustice.png" />
+    <Content Include="Content\images\portrait\runekingmolinar.png" />
+    <Content Include="Content\images\portrait\sicaron.png" />
+    <Content Include="Content\images\portrait\skelfbrothers.png" />
+    <Content Include="Content\images\portrait\soulrenderzilas.png" />
+    <Content Include="Content\images\portrait\thalguur.png" />
+    <Content Include="Content\images\portrait\ungolok.png" />
+    <Content Include="Content\images\portrait\uruluuk.png" />
+    <Content Include="Content\images\portrait\vladmalprime.png" />
+    <Content Include="Content\images\portrait\zilas.png" />
+    <Content Include="Content\images\releasenotes\1.0.7\privacydefaults.PNG" />
+    <Content Include="Content\images\releasenotes\1.0.9\RaidProgression.PNG" />
+    <Content Include="Content\PagedList.css" />
+    <Content Include="Content\soultrees\Cleric\Cabalist.xml" />
+    <Content Include="Content\soultrees\Cleric\Defiler.xml" />
+    <Content Include="Content\soultrees\Cleric\Druid.xml" />
+    <Content Include="Content\soultrees\Cleric\Inquisitor.xml" />
+    <Content Include="Content\soultrees\Cleric\Justicar.xml" />
+    <Content Include="Content\soultrees\Cleric\Oracle.xml" />
+    <Content Include="Content\soultrees\Cleric\PlanarAttunement.xml" />
+    <Content Include="Content\soultrees\Cleric\Purifier.xml" />
+    <Content Include="Content\soultrees\Cleric\Sentinel.xml" />
+    <Content Include="Content\soultrees\Cleric\Shaman.xml" />
+    <Content Include="Content\soultrees\Cleric\Warden.xml" />
+    <Content Include="Content\soultrees\Mage\Arbiter.xml" />
+    <Content Include="Content\soultrees\Mage\Archon.xml" />
+    <Content Include="Content\soultrees\Mage\Chloromancer.xml" />
+    <Content Include="Content\soultrees\Mage\Dominator.xml" />
+    <Content Include="Content\soultrees\Mage\Elemental Summoner.xml" />
+    <Content Include="Content\soultrees\Mage\Harbinger.xml" />
+    <Content Include="Content\soultrees\Mage\Necromancer.xml" />
+    <Content Include="Content\soultrees\Mage\PlanarAttunement.xml" />
+    <Content Include="Content\soultrees\Mage\Pyromancer.xml" />
+    <Content Include="Content\soultrees\Mage\Stormcaller.xml" />
+    <Content Include="Content\soultrees\Mage\Warlock.xml" />
+    <Content Include="Content\soultrees\Rogue\Assassin.xml" />
+    <Content Include="Content\soultrees\Rogue\Bard.xml" />
+    <Content Include="Content\soultrees\Rogue\Bladedancer.xml" />
+    <Content Include="Content\soultrees\Rogue\Marksman.xml" />
+    <Content Include="Content\soultrees\Rogue\Nightblade.xml" />
+    <Content Include="Content\soultrees\Rogue\Physician.xml" />
+    <Content Include="Content\soultrees\Rogue\PlanarAttunement.xml" />
+    <Content Include="Content\soultrees\Rogue\Ranger.xml" />
+    <Content Include="Content\soultrees\Rogue\Riftstalker.xml" />
+    <Content Include="Content\soultrees\Rogue\Saboteur.xml" />
+    <Content Include="Content\soultrees\Rogue\Tactician.xml" />
+    <Content Include="Content\soultrees\Warrior\Beastmaster.xml" />
+    <Content Include="Content\soultrees\Warrior\Champion.xml" />
+    <Content Include="Content\soultrees\Warrior\Liberator.xml" />
+    <Content Include="Content\soultrees\Warrior\Paladin.xml" />
+    <Content Include="Content\soultrees\Warrior\Paragon.xml" />
+    <Content Include="Content\soultrees\Warrior\PlanarAttunement.xml" />
+    <Content Include="Content\soultrees\Warrior\Reaver.xml" />
+    <Content Include="Content\soultrees\Warrior\Riftblade.xml" />
+    <Content Include="Content\soultrees\Warrior\Tempest.xml" />
+    <Content Include="Content\soultrees\Warrior\Void Knight.xml" />
+    <Content Include="Content\soultrees\Warrior\Warlord.xml" />
+    <Content Include="Content\superhero\bootstrap.css" />
+    <Content Include="Content\superhero\bootstrap.min.css" />
+    <Content Include="Content\themes\base\accordion.css" />
+    <Content Include="Content\themes\base\all.css" />
+    <Content Include="Content\themes\base\autocomplete.css" />
+    <Content Include="Content\themes\base\base.css" />
+    <Content Include="Content\themes\base\button.css" />
+    <Content Include="Content\themes\base\core.css" />
+    <Content Include="Content\themes\base\datepicker.css" />
+    <Content Include="Content\themes\base\dialog.css" />
+    <Content Include="Content\themes\base\draggable.css" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_444444_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_555555_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_777620_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_777777_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\menu.css" />
+    <Content Include="Content\themes\base\progressbar.css" />
+    <Content Include="Content\themes\base\resizable.css" />
+    <Content Include="Content\themes\base\selectable.css" />
+    <Content Include="Content\themes\base\selectmenu.css" />
+    <Content Include="Content\themes\base\slider.css" />
+    <Content Include="Content\themes\base\sortable.css" />
+    <Content Include="Content\themes\base\spinner.css" />
+    <Content Include="Content\themes\base\tabs.css" />
+    <Content Include="Content\themes\base\theme.css" />
+    <Content Include="Content\themes\base\tooltip.css" />
+    <Content Include="Content\themes\flick\jquery-ui.css" />
+    <Content Include="Content\themes\redmond\jquery-ui.css" />
+    <Content Include="Content\turtle\happytrtl.jpg" />
+    <Content Include="Content\turtle\logo.png" />
+    <Content Include="Content\turtle\strawberry.jpg" />
+    <Content Include="Content\turtle\turtle.jpg" />
+    <Content Include="Content\turtle\turtle.png" />
+    <Content Include="Content\turtle\turtle10.png" />
+    <Content Include="Content\turtle\turtle11.png" />
+    <Content Include="Content\turtle\turtle12.png" />
+    <Content Include="Content\turtle\turtle3.png" />
+    <Content Include="Content\turtle\turtle4.png" />
+    <Content Include="Content\turtle\turtle5.png" />
+    <Content Include="Content\turtle\turtle6.png" />
+    <Content Include="Content\turtle\turtle7.png" />
+    <Content Include="Content\turtle\turtle8.png" />
+    <Content Include="Content\turtle\turtle9.png" />
+    <Content Include="Content\turtle\turtleStrawberry.jpg" />
+    <Content Include="Content\turtle\turtleTwitter.png" />
+    <Content Include="Content\turtle\turtleupload.jpg" />
+    <Content Include="Content\uploadify\jquery.uploadify.js" />
+    <Content Include="Content\uploadify\jquery.uploadify.min.js" />
+    <Content Include="Content\uploadify\uploadify-cancel.png" />
+    <Content Include="Content\uploadify\uploadify.css" />
+    <Content Include="Content\uploadify\uploadify.swf" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\fontawesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\fontawesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\fontawesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\fontawesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\fontawesome\fonts\FontAwesome.otf" />
+    <Content Include="Content\fontawesome\less\bordered-pulled.less" />
+    <Content Include="Content\fontawesome\less\core.less" />
+    <Content Include="Content\fontawesome\less\fixed-width.less" />
+    <Content Include="Content\fontawesome\less\font-awesome.less" />
+    <Content Include="Content\fontawesome\less\icons.less" />
+    <Content Include="Content\fontawesome\less\larger.less" />
+    <Content Include="Content\fontawesome\less\list.less" />
+    <Content Include="Content\fontawesome\less\mixins.less" />
+    <Content Include="Content\fontawesome\less\path.less" />
+    <Content Include="Content\fontawesome\less\rotated-flipped.less" />
+    <Content Include="Content\fontawesome\less\spinning.less" />
+    <Content Include="Content\fontawesome\less\stacked.less" />
+    <Content Include="Content\fontawesome\less\variables.less" />
+    <Content Include="Content\fontawesome\scss\font-awesome.scss" />
+    <Content Include="Content\fontawesome\scss\_bordered-pulled.scss" />
+    <Content Include="Content\fontawesome\scss\_core.scss" />
+    <Content Include="Content\fontawesome\scss\_fixed-width.scss" />
+    <Content Include="Content\fontawesome\scss\_icons.scss" />
+    <Content Include="Content\fontawesome\scss\_larger.scss" />
+    <Content Include="Content\fontawesome\scss\_list.scss" />
+    <Content Include="Content\fontawesome\scss\_mixins.scss" />
+    <Content Include="Content\fontawesome\scss\_path.scss" />
+    <Content Include="Content\fontawesome\scss\_rotated-flipped.scss" />
+    <Content Include="Content\fontawesome\scss\_spinning.scss" />
+    <Content Include="Content\fontawesome\scss\_stacked.scss" />
+    <Content Include="Content\fontawesome\scss\_variables.scss" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Compile Include="Helpers\Mail\AccountInfo.example.cs" />
+    <Content Include="ConnectionStrings.config" />
+    <Content Include="ConnectionStrings.example.config" />
+    <None Include="job_scheduling_data_2_0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\datetimepicker\jquery.datetimepicker.js" />
+    <Content Include="Scripts\dropzone\basic.css" />
+    <Content Include="Scripts\dropzone\basic.min.css" />
+    <Content Include="Scripts\dropzone\dropzone-amd-module.js" />
+    <Content Include="Scripts\dropzone\dropzone-amd-module.min.js" />
+    <Content Include="Scripts\dropzone\dropzone.css" />
+    <Content Include="Scripts\dropzone\dropzone.js" />
+    <Content Include="Scripts\dropzone\dropzone.min.css" />
+    <Content Include="Scripts\dropzone\dropzone.min.js" />
+    <Content Include="Scripts\fb\fbjs.js" />
+    <Content Include="Scripts\fullcalendar.js" />
+    <Content Include="Scripts\fullcalendar.min.js" />
+    <Content Include="Scripts\gcal.js" />
+    <Content Include="Scripts\Highcharts-4.0.1\js\adapters\standalone-framework.js" />
+    <Content Include="Scripts\Highcharts-4.0.1\js\adapters\standalone-framework.src.js" />
+    <Content Include="Scripts\Highcharts-4.0.1\js\highcharts-3d.js" />
+    <Content Include="Scripts\Highcharts-4.0.1\js\highcharts-3d.src.js" />
+    <Content Include="Scripts\Highcharts-4.0.1\js\highcharts-all.js" />
+    <Content Include="Scripts\Highcharts-4.0.1\js\highcharts-more.js" />
+    <Content Include="Scripts\Highcharts-4.0.1\js\highcharts-more.src.js" />
+    <Content Include="Scripts\Highcharts-4.0.1\js\highcharts.js" />
+    <Content Include="Scripts\Highcharts-4.0.1\js\highcharts.src.js" />
+    <Content Include="Scripts\Highcharts-4.0.1\js\modules\canvas-tools.js" />
+    <Content Include="Scripts\Highcharts-4.0.1\js\modules\canvas-tools.src.js" />
+    <Content Include="Scripts\Highcharts-4.0.1\js\modules\data.js" />
+    <Content Include="Scripts\Highcharts-4.0.1\js\modules\data.src.js" />
+    <Content Include="Scripts\Highcharts-4.0.1\js\modules\drilldown.js" />
+    <Content Include="Scripts\Highcharts-4.0.1\js\modules\drilldown.src.js" />
+    <Content Include="Scripts\Highcharts-4.0.1\js\modules\exporting.js" />
+    <Content Include="Scripts\Highcharts-4.0.1\js\modules\exporting.src.js" />
+    <Content Include="Scripts\Highcharts-4.0.1\js\modules\funnel.js" />
+    <Content Include="Scripts\Highcharts-4.0.1\js\modules\funnel.src.js" />
+    <Content Include="Scripts\Highcharts-4.0.1\js\modules\heatmap.js" />
+    <Content Include="Scripts\Highcharts-4.0.1\js\modules\heatmap.src.js" />
+    <Content Include="Scripts\Highcharts-4.0.1\js\modules\no-data-to-display.js" />
+    <Content Include="Scripts\Highcharts-4.0.1\js\modules\no-data-to-display.src.js" />
+    <Content Include="Scripts\Highcharts-4.0.1\js\modules\solid-gauge.js" />
+    <Content Include="Scripts\Highcharts-4.0.1\js\modules\solid-gauge.src.js" />
+    <Content Include="Scripts\Highcharts-4.0.1\js\themes\dark-blue.js" />
+    <Content Include="Scripts\Highcharts-4.0.1\js\themes\dark-green.js" />
+    <Content Include="Scripts\Highcharts-4.0.1\js\themes\dark-unica.js" />
+    <Content Include="Scripts\Highcharts-4.0.1\js\themes\gray.js" />
+    <Content Include="Scripts\Highcharts-4.0.1\js\themes\grid-light.js" />
+    <Content Include="Scripts\Highcharts-4.0.1\js\themes\grid.js" />
+    <Content Include="Scripts\Highcharts-4.0.1\js\themes\sand-signika.js" />
+    <Content Include="Scripts\Highcharts-4.0.1\js\themes\skies.js" />
+    <Content Include="NLog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="NLog.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Scripts\jquery-2.2.4.intellisense.js" />
+    <Content Include="Scripts\jquery-2.2.4.js" />
+    <Content Include="Scripts\jquery-2.2.4.min.js" />
+    <Content Include="Scripts\jquery-2.2.4.min.map" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery-ui-1.12.1.js" />
+    <Content Include="Scripts\jquery-ui-1.12.1.min.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\jq\jquery.expander.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\npm.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.matchmedia.addListener.js" />
+    <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\twitter\twjs.js" />
+    <Content Include="Views\Account\ConfirmEmail.cshtml" />
+    <Content Include="Views\Account\ForgotPassword.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\ResetPassword.cshtml" />
+    <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Manage\ChangePassword.cshtml" />
+    <Content Include="Views\Manage\Index.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\Lockout.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\AbilityRole\Index.cshtml" />
+    <Content Include="Views\Ability\Index.cshtml" />
+    <Content Include="Views\Account\ConfirmationFailed.cshtml" />
+    <Content Include="Views\Account\ConfirmationRequired.cshtml" />
+    <Content Include="Views\Account\PasswordResetSent.cshtml" />
+    <Content Include="Views\Account\ResetFailed.cshtml" />
+    <Content Include="Views\Account\ReverificationSent.cshtml" />
+    <Content Include="Views\Account\Reverify.cshtml" />
+    <Content Include="Views\BossFight\Create.cshtml" />
+    <Content Include="Views\BossFight\Delete.cshtml" />
+    <Content Include="Views\BossFight\Edit.cshtml" />
+    <Content Include="Views\BossFight\Index.cshtml" />
+    <Content Include="Views\BossFight\_FastestKill.cshtml" />
+    <Content Include="Views\BossFight\_TopSingleAps.cshtml" />
+    <Content Include="Views\BossFight\_TopSingleDps.cshtml" />
+    <Content Include="Views\BossFight\_TopSingleHps.cshtml" />
+    <Content Include="Views\BossFight\_TopXPS.cshtml" />
+    <Content Include="Views\Encounter\Buffs.cshtml" />
+    <Content Include="Views\Encounter\CharacterTargetBreakdown.cshtml" />
+    <Content Include="Views\Encounter\ComparePlayers.cshtml" />
+    <Content Include="Views\Encounter\ComparePlayersHealing.cshtml" />
+    <Content Include="Views\Encounter\DeathEvents.cshtml" />
+    <Content Include="Views\Encounter\Deaths.cshtml" />
+    <Content Include="Views\Encounter\Debuffs.cshtml" />
+    <Content Include="Views\Encounter\Detail.cshtml" />
+    <Content Include="Views\Encounter\Interaction.cshtml" />
+    <Content Include="Views\Encounter\NpcSomethingDone.cshtml" />
+    <Content Include="Views\Encounter\NpcSomethingTaken.cshtml" />
+    <Content Include="Views\Encounter\Overview.cshtml" />
+    <Content Include="Views\Encounter\PlayerSomethingDone.cshtml" />
+    <Content Include="Views\Encounter\PlayerSomethingTaken.cshtml" />
+    <Content Include="Views\Encounter\RemoveEncounter.cshtml" />
+    <Content Include="Views\Encounter\SomethingDoneGraph.cshtml" />
+    <Content Include="Views\Encounter\_Private.cshtml" />
+    <Content Include="Views\Encounter\_RowPartial.cshtml" />
+    <Content Include="Views\Encounter\_TestModal.cshtml" />
+    <Content Include="Views\Error\Error404.cshtml" />
+    <Content Include="Views\Guild\AppApproved.cshtml" />
+    <Content Include="Views\Guild\AppDeclined.cshtml" />
+    <Content Include="Views\Guild\Approve.cshtml" />
+    <Content Include="Views\Guild\ApproveApp.cshtml" />
+    <Content Include="Views\Guild\DeclineApp.cshtml" />
+    <Content Include="Views\Guild\Index.cshtml" />
+    <Content Include="Views\Guild\KickMember.cshtml" />
+    <Content Include="Views\Guild\Remove.cshtml" />
+    <Content Include="Views\Home\Changelog.cshtml" />
+    <Content Include="Views\Home\Donate.cshtml" />
+    <Content Include="Views\Home\Donated.cshtml" />
+    <Content Include="Views\Home\RemoveEncounter.cshtml" />
+    <Content Include="Views\Home\Search.cshtml" />
+    <Content Include="Views\Home\Stats.cshtml" />
+    <Content Include="Views\Home\SubmitLogs.cshtml" />
+    <Content Include="Views\Instance\Create.cshtml" />
+    <Content Include="Views\Instance\Delete.cshtml" />
+    <Content Include="Views\Instance\Edit.cshtml" />
+    <Content Include="Views\Instance\Index.cshtml" />
+    <Content Include="Views\Manage\CreateCharacter.cshtml" />
+    <Content Include="Views\Manage\CreateGuild.cshtml" />
+    <Content Include="Views\Manage\GuildCreated.cshtml" />
+    <Content Include="Views\Manage\JoinGuild.cshtml" />
+    <Content Include="Views\Manage\PasswordChangeSuccess.cshtml" />
+    <Content Include="Views\Manage\RemoveCharacter.cshtml" />
+    <Content Include="Views\Manage\TimeZone.cshtml" />
+    <Content Include="Views\Records\Guild.cshtml" />
+    <Content Include="Views\Records\GuildPrivate.cshtml" />
+    <Content Include="Views\ReleaseNotes\V1.cshtml" />
+    <Content Include="Views\Session\BossFight.cshtml" />
+    <Content Include="Views\Session\Detail.cshtml" />
+    <Content Include="Views\Session\FTP.cshtml" />
+    <Content Include="Views\Session\Guild.cshtml" />
+    <Content Include="Views\Session\Index.cshtml" />
+    <Content Include="Views\Session\Instance.cshtml" />
+    <Content Include="Views\Session\Partials\_BossFightRecords.cshtml" />
+    <Content Include="Views\Session\Player.cshtml" />
+    <Content Include="Views\Session\Private.cshtml" />
+    <Content Include="Views\Session\ReimportSession.cshtml" />
+    <Content Include="Views\Session\RemoveEncounters.cshtml" />
+    <Content Include="Views\Session\RemoveSession.cshtml" />
+    <Content Include="Views\Session\Rename.cshtml" />
+    <Content Include="Views\Session\Upload.cshtml" />
+    <Content Include="Views\Session\UploadPart1.cshtml" />
+    <Content Include="Views\Session\UploadPart2.cshtml" />
+    <Content Include="Views\Session\UploadPart3.cshtml" />
+    <Content Include="Views\Session\VerifyExistingSession.cshtml" />
+    <Content Include="Views\Shared\AccessDenied.cshtml" />
+    <Content Include="Views\Shared\CantUpload.cshtml" />
+    <Content Include="Views\Shared\InvalidResource.cshtml" />
+    <Content Include="Views\Shared\_ActionTableHeader.cshtml" />
+    <Content Include="Views\Shared\_Alert.cshtml" />
+    <Content Include="Views\Shared\_EncounterNav2.cshtml" />
+    <Content Include="Views\Shared\_GoogleAnalytics.cshtml" />
+    <Content Include="Views\Shared\_GuildAdminNav.cshtml" />
+    <Content Include="Views\Shared\_GuildNav.cshtml" />
+    <Content Include="Views\Shared\_Host.cshtml" />
+    <Content Include="Views\Shared\_MainNavigation.cshtml" />
+    <Content Include="Views\Shared\_SearchButtons.cshtml" />
+    <Content Include="Views\Shared\_SessionNavV2.cshtml" />
+    <Content Include="Views\SiteAdmin\Users.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="UploadedFiles\" />
+    <Folder Include="Views\Setup\" />
+    <Folder Include="Views\SilentUpdate\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{5a57143d-3ce3-439b-ab79-e43d1953f4e3}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Database\Database.csproj">
+      <Project>{6eaa90b4-69bd-4694-8981-c0735442ae19}</Project>
+      <Name>Database</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Logging\Logging.csproj">
+      <Project>{c0a7aad2-1981-4195-90b3-9f633086d369}</Project>
+      <Name>Logging</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3412</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:3400/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.3.1\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.3.1\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

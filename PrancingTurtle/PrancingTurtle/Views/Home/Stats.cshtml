@@ -1,0 +1,39 @@
+﻿@model Database.QueryModels.SiteStats
+
+@{
+    ViewBag.Title = "Site Stats";
+}
+
+<h2>Site stats, according to скачущий черепаха</h2>
+<h6>Whoa, the turtle is Russian now?!</h6>
+<br/>
+<h4>There are <span class="text-info">@Model.TotalUsers</span> registered users, with <span class="text-info">@Model.TotalCharacters</span> characters in <span class="text-info">@Model.TotalGuilds</span> guilds</h4>
+<h4><span class="text-info">@Model.TotalSessions</span> sessions have been uploaded, containing a total of <span class="text-info">@Model.TotalEncounters</span> encounters</h4>
+<h4>Back-to-back, these sessions span <span class="text-info">@Model.TotalDuration.Days</span> @Html.Raw(Model.TotalDuration.Days == 1 ? "day" : "days"),
+    <span class="text-info">@Model.TotalDuration.Hours</span> @Html.Raw(Model.TotalDuration.Hours == 1 ? "hour" : "hours"),
+    <span class="text-info">@Model.TotalDuration.Minutes</span> @Html.Raw(Model.TotalDuration.Minutes == 1 ? "minute" : "minutes") and
+    <span class="text-info">@Model.TotalDuration.Seconds</span> @Html.Raw(Model.TotalDuration.Seconds == 1 ? "second" : "seconds"), averaging 
+    <span class="text-info">@Model.AverageSessionDuration.Hours</span> @Html.Raw(Model.AverageSessionDuration.Hours == 1 ? "hour" : "hours"),
+    <span class="text-info">@Model.AverageSessionDuration.Minutes</span> @Html.Raw(Model.AverageSessionDuration.Minutes == 1 ? "minute" : "minutes") and
+    <span class="text-info">@Model.AverageSessionDuration.Seconds</span> @Html.Raw(Model.AverageSessionDuration.Seconds == 1 ? "second" : "seconds") per session.</h4>
+<h4>In terms of /played time, <span class="text-info">@Model.TotalPlayers</span> unique players have logged a total of
+    <span class="text-info">@Model.TotalTimeSpan.Days</span> @Html.Raw(Model.TotalTimeSpan.Days == 1 ? "day" : "days"),
+    <span class="text-info">@Model.TotalTimeSpan.Hours</span> @Html.Raw(Model.TotalTimeSpan.Hours == 1 ? "hour" : "hours"),
+    <span class="text-info">@Model.TotalTimeSpan.Minutes</span> @Html.Raw(Model.TotalTimeSpan.Minutes == 1 ? "minute" : "minutes") and 
+    <span class="text-info">@Model.TotalTimeSpan.Seconds</span> @Html.Raw(Model.TotalTimeSpan.Seconds == 1 ? "second" : "seconds").</h4>
+<br/>
+<h4>There are approximately:</h4>
+<h4><span class="text-info">@Model.TotalDamageRecords</span> damage records (~<span class="text-info">@Model.AverageDamageRecords</span> per encounter)</h4>
+<h4><span class="text-info">@Model.TotalHealingRecords</span> healing records (~<span class="text-info">@Model.AverageHealingRecords</span> per encounter)</h4>
+<h4><span class="text-info">@Model.TotalShieldingRecords</span> absorption records (~<span class="text-info">@Model.AverageShieldingRecords</span> per encounter)</h4>
+@if (Model.TotalLogSize > 0)
+{
+    string logSize = (((decimal)Model.TotalLogSize) / 1024 / 1024).ToString("#.##") + "mb";
+    if (Model.TotalLogSize > 1000000000)
+    {
+        logSize = (((decimal)Model.TotalLogSize)/1024/1024/1024).ToString("#.##") + "gb";
+    }
+    
+    <br/>
+    <h4>So far, our amazing turtles have sifted through <span class="text-info">@Model.TotalLogLines</span> combatlog lines and <span class="text-info">@logSize</span> worth of logs to bring you the stats you see here.</h4>
+}

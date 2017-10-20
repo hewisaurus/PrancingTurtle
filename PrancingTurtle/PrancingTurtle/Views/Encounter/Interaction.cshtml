@@ -1,0 +1,505 @@
+﻿@using PrancingTurtle.Models.ViewModels
+@model PrancingTurtle.Models.ViewModels.Encounter.InteractionVm
+
+@{
+    ViewBag.Title = Model.PageTitle;
+}
+
+@Html.Partial("_EncounterNav2", new EncounterNav(Model.Encounter.Id,
+        Model.Encounter.BossFight.Name, Model.Encounter.BossFight.Instance.Name,
+        Model.Encounter.Duration, Model.Encounter.SuccessfulKill), new ViewDataDictionary { { "link", "character graph" } })
+
+<a name="top">&nbsp;</a>
+
+<div class="container container-fluid">
+    <div class="row"><br /></div>
+<div class="row">
+    @Model.SplineChart
+</div>
+<hr/>
+    @*<div class="row">
+        @Model.Chart
+    </div>
+    <hr />*@
+    @if (Model.Mode == "ability")
+    {
+        <div class="row">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th width="18"></th>
+                        <th>Ability</th>
+                        @if (Model.Type == "dps")
+                        {
+                        <th class="text-center">Type</th>
+                        }
+                        <th class="text-center">@Model.TotalHeader <i class="fa fa-question-circle" title="@Model.TotalTooltip"></i></th>
+                        @switch (Model.Type)
+                        {
+                            case "dps":
+                                if (Model.ShowAbsorbed)
+                                {
+                        <th class="text-center">Absorbed</th>
+                    }
+                    if (Model.ShowBlocked)
+                    {
+                        <th class="text-center">Blocked</th>
+                    }
+                    if (Model.ShowIgnored)
+                    {
+                        <th class="text-center">Ignored</th>
+                    }
+                    if (Model.ShowIntercepted)
+                    {
+                        <th class="text-center">Intercepted</th>
+                    }
+                    break;
+                            case "hps":
+                        <th class="text-center">Overhealing</th>
+                    break;
+                        }
+                        @if (Model.Type == "dps" || Model.Type == "hps")
+                        {
+                        <th class="text-center">@Model.EffectiveHeader <i class="fa fa-question-circle" title="@Model.EffectiveTooltip"></i></th>
+                        }
+                        <th class="text-center">@Model.TotalAverageHeader <i class="fa fa-question-circle" title="@Model.TotalAverageTooltip"></i></th>
+                        @if (Model.Type == "dps" || Model.Type == "hps")
+                        {
+                        <th class="text-center">@Model.EffectiveAverageHeader <i class="fa fa-question-circle" title="@Model.EffectiveAverageTooltip"></i></th>
+                        }
+                        <th class="text-center">@Model.PercentageOverallHeader <i class="fa fa-question-circle" title="@Model.PercentageOverallTooltip"></i></th>
+                        <th class="text-center">Swings <i class="fa fa-question-circle" title="@Model.SwingsTooltip"></i></th>
+                        <th class="text-center">Crit Rate</th>
+                        <th class="text-center">Biggest Hit</th>
+                        <th class="text-center">Average Hit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var dmg in Model.Breakdown)
+                    {
+                    <tr>
+                        <td>
+                            @if (!string.IsNullOrEmpty(dmg.Icon))
+                                {
+                                <img class="smallborder" src="@string.Format("/Content/icons/SoulAbilities/{0}.jpg", @dmg.Icon)" height="18" width="18" />
+                                }
+                                else
+                                {
+                                <img src="/Content/icons/SoulAbilities/NPCDialogIcon_help.png" height="18" width="18" />
+                                }
+                        </td>
+                        <td><b>@dmg.AbilityName</b></td>
+                        @if (Model.Type == "dps")
+                            {
+                            <td class="text-center @dmg.CellClass">@Html.Raw(string.IsNullOrEmpty(dmg.DamageType) ? "Unknown" : dmg.DamageType)</td>
+                            }
+                        <td class="text-center">@dmg.Total</td>
+                        @switch (Model.Type)
+                            {
+                                case "dps":
+                                    if (Model.ShowAbsorbed)
+                                    {
+                            <td class="text-center">@dmg.Absorbed (@dmg.AbsorbedPercentage)</td> }
+                    if (Model.ShowBlocked)
+                    {
+                            <td class="text-center">@dmg.Blocked (@dmg.BlockedPercentage)</td>
+                    }
+                    if (Model.ShowIgnored)
+                    {
+                            <td class="text-center">@dmg.Ignored (@dmg.IgnoredPercentage)</td>
+                    }
+                    if (Model.ShowIntercepted)
+                    {
+                            <td class="text-center">@dmg.Intercepted (@dmg.InterceptedPercentage)</td>
+                    }
+                    break;
+                                case "hps":
+                            <td class="text-center">@dmg.Overhealing (@dmg.OverhealingPercentage)</td>
+                    break;
+                            }
+                        @if (Model.Type == "dps" || Model.Type == "hps")
+                            {
+                            <td class="text-center">@dmg.Effective (@dmg.EffectivePercentage)</td>
+                            }
+                        <td class="text-center">@dmg.Average</td>
+                        @if (Model.Type == "dps" || Model.Type == "hps")
+                            {
+                            <td class="text-center text-warning"><b>@dmg.AverageEffective</b></td>
+                            }
+                        <td class="text-center">
+                            @if (dmg.TopRecord)
+                                {
+                                @Html.Raw("100%")
+                                }
+                                else
+                                {
+                                    if (!string.IsNullOrEmpty(dmg.Percentage.ToString("#.##")))
+                                    {
+                                @Html.Raw(string.Format("{0}%", dmg.Percentage.ToString("#.##")))
+                                    }
+                                    else
+                                    {
+                                @Html.Raw("<0.00%")
+                                    }
+                                }
+                        </td>
+                        <td class="text-center">
+                            @if (dmg.TopRecord)
+                            {
+                            @Model.TotalSwings
+                                }
+                                else
+                                {
+                            @dmg.Swings
+                                }
+                    </td>
+                    <td class="text-center">
+                        @if (dmg.TopRecord && Model.TotalCrits > 0)
+                                {
+                                @Html.Raw(((decimal)Model.TotalCrits / (decimal)Model.TotalSwings).ToString("#.##%"))
+                                }
+                                else if (dmg.Crits > 0)
+                                {
+                                @Html.Raw(((decimal)dmg.Crits / (decimal)dmg.Swings).ToString("#.##%"))
+                                }
+                                else
+                                {
+                                @Html.Raw("0%")
+                                }
+                    </td>
+                    @if (dmg.BiggestHit == Model.TopBiggestHit && dmg.DamageType != "NA")
+                            {
+                            <td class="text-center info">@dmg.BiggestHit</td>
+                            }
+                            else
+                            {
+                            <td class="text-center">@dmg.BiggestHit</td>
+                            }
+                    @if (dmg.AverageHit == Model.TopAverageHit && dmg.DamageType != "NA")
+                            {
+                            <td class="text-center info">@dmg.AverageHit</td>
+                            }
+                            else
+                            {
+                            <td class="text-center">@dmg.AverageHit</td>
+                            }
+
+                </tr>
+                        if (dmg.TopRecord)
+                        {
+                            if (Model.Type == "hps")
+                            {
+                    <tr>
+                        <td colspan="12">
+                            <div class="progress progress-striped" style="margin-bottom: 0px !important; background-color: transparent; height: 8px; box-shadow: none">
+                                <div class="progress-bar progress-bar-success" style="width: 100%"></div>
+                            </div>
+                        </td>
+                    </tr>
+                            }
+                            else if (Model.Type == "dps")
+                            {
+                    <tr>
+                        <td colspan="16">
+                            <div class="progress progress-striped" style="margin-bottom: 0px !important; background-color: transparent; height: 8px; box-shadow: none">
+                                <div class="progress-bar progress-bar-success" style="width: 100%"></div>
+                            </div>
+                        </td>
+                    </tr>
+                            }
+                            else if (Model.Type == "aps")
+                            {
+                    <tr>
+                        <td colspan="9">
+                            <div class="progress progress-striped" style="margin-bottom: 0px !important; background-color: transparent; height: 8px; box-shadow: none">
+                                <div class="progress-bar progress-bar-success" style="width: 100%"></div>
+                            </div>
+                        </td>
+                    </tr>
+                            }
+                        }
+                        else
+                        {
+                            if (Model.Type == "hps")
+                            {
+                    <tr>
+                        <td colspan="12">
+                            <div class="progress progress-striped" style="margin-bottom: 0px !important; height: 8px;">
+                                <div class="progress-bar progress-bar-success" style="width: @dmg.ProgressBarPercentage"></div>
+                            </div>
+                        </td>
+                    </tr>
+                            }
+                            else if (Model.Type == "dps")
+                            {
+                    <tr>
+                        <td colspan="16">
+                            <div class="progress progress-striped" style="margin-bottom: 0px !important; height: 8px;">
+                                <div class="progress-bar progress-bar-success" style="width: @dmg.ProgressBarPercentage"></div>
+                            </div>
+                        </td>
+                    </tr>
+                            }
+                            else if (Model.Type == "aps")
+                            {
+                    <tr>
+                        <td colspan="9">
+                            <div class="progress progress-striped" style="margin-bottom: 0px !important; height: 8px;">
+                                <div class="progress-bar progress-bar-success" style="width: @dmg.ProgressBarPercentage"></div>
+                            </div>
+                        </td>
+                    </tr>
+                            }
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+    @if (Model.Mode == "target")
+    {
+        <div class="row">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th width="18"></th>
+                        <th>Name</th>
+                        <th class="text-center">@Model.TotalHeader <i class="fa fa-question-circle" title="@Model.TotalTooltip"></i></th>
+                        @switch (Model.Type)
+                        {
+                            case "dps":
+                                if (Model.ShowAbsorbed)
+                                {
+                                    <th class="text-center">Absorbed</th>
+                    }
+                    if (Model.ShowBlocked)
+                    {
+                        <th class="text-center">Blocked</th>
+                    }
+                    if (Model.ShowIgnored)
+                    {
+                        <th class="text-center">Ignored</th>
+                    }
+                    if (Model.ShowIntercepted)
+                    {
+                        <th class="text-center">Intercepted</th>
+                    }
+                    if (Model.ShowOverkilled)
+                    {
+                        <th class="text-center">Overkilled</th>
+                    }
+                    break;
+                            case "hps":
+                            <th class="text-center">Overhealing</th>
+                    break;
+                        }
+                        @if (Model.Type == "dps" || Model.Type == "hps")
+                        {
+                            <th class="text-center">@Model.EffectiveHeader <i class="fa fa-question-circle" title="@Model.EffectiveTooltip"></i></th>
+                        }
+                        <th class="text-center">@Model.TotalAverageHeader <i class="fa fa-question-circle" title="@Model.TotalAverageTooltip"></i></th>
+                        @if (Model.Type == "dps" || Model.Type == "hps")
+                        {
+                            <th class="text-center">@Model.EffectiveAverageHeader <i class="fa fa-question-circle" title="@Model.EffectiveAverageTooltip"></i></th>
+                        }
+                        <th class="text-center">@Model.PercentageOverallHeader <i class="fa fa-question-circle" title="@Model.PercentageOverallTooltip"></i></th>
+                        <th class="text-center">Swings <i class="fa fa-question-circle" title="@Model.SwingsTooltip"></i></th>
+                        <th class="text-center">Crit Rate</th>
+                        <th class="text-center">Biggest Hit</th>
+                        <th class="text-center">Average Hit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var dmg in Model.Breakdown)
+                    {
+                        <tr>
+                            <td></td>
+                            <td><b>@Html.Raw(Model.Outgoing ? dmg.TargetName : dmg.SourceName)</b></td>
+                            <td class="text-center">@dmg.Total</td>
+                            @switch (Model.Type)
+                            {
+                                case "dps":
+                                    if (Model.ShowAbsorbed)
+                                    {
+                                        <td class="text-center">@dmg.Absorbed (@dmg.AbsorbedPercentage)</td>
+                            }
+                                         if (Model.ShowBlocked) {
+                                            <td class="text-center">@dmg.Blocked (@dmg.BlockedPercentage)</td> }
+
+                    if (Model.ShowIgnored)
+                    {
+                        <td class="text-center">@dmg.Ignored (@dmg.IgnoredPercentage)</td>
+                    }
+                    if (Model.ShowIntercepted)
+                    {
+                        <td class="text-center">@dmg.Intercepted (@dmg.InterceptedPercentage)</td>
+                    }
+                    if (Model.ShowOverkilled)
+                    {
+                        if (dmg.Overkilled > 0)
+                        {
+                            <td class="text-center text-danger">@dmg.Overkilled</td>
+                        }
+                        else
+                        {
+                            <td class="text-center">@dmg.Overkilled</td>
+                        }
+
+                    }
+                    break;
+                                case "hps":
+                                <td class="text-center">@dmg.Overhealing (@dmg.OverhealingPercentage)</td>
+                    break;
+                            }
+                            @if (Model.Type == "dps" || Model.Type == "hps")
+                            {
+                                <td class="text-center">@dmg.Effective (@dmg.EffectivePercentage)</td>
+                            }
+                            <td class="text-center">@dmg.Average</td>
+                            @if (Model.Type == "dps" || Model.Type == "hps")
+                            {
+                                <td class="text-center text-warning"><b>@dmg.AverageEffective</b></td>
+                            }
+                            <td class="text-center">
+                                @if (dmg.TopRecord)
+                                {
+                                    @Html.Raw("100%")
+                                }
+                                else
+                                {
+                                    if (!string.IsNullOrEmpty(dmg.Percentage.ToString("#.##")))
+                                    {
+                                        @Html.Raw(string.Format("{0}%", dmg.Percentage.ToString("#.##")))
+                                        ;
+                                    }
+                                    else
+                                    {
+                                        @Html.Raw("<0.00%")
+                                    }
+                                }
+                            </td>
+                            <td class="text-center">
+                                @if (dmg.TopRecord)
+                                {
+                                    @Model.TotalSwings
+                                }
+                                else
+                                {
+                                    @dmg.Swings
+                                }
+                            </td>
+                            <td class="text-center">
+                                @if (dmg.TopRecord && Model.TotalCrits > 0)
+                                {
+                                    @Html.Raw(((decimal)Model.TotalCrits / (decimal)Model.TotalSwings).ToString("#.##%"))
+                                }
+                                else if (dmg.Crits > 0)
+                                {
+                                    @Html.Raw(((decimal)dmg.Crits / (decimal)dmg.Swings).ToString("#.##%"))
+                                }
+                                else
+                                {
+                                    @Html.Raw("0%")
+                                }
+                            </td>
+                            @if (dmg.BiggestHit == Model.TopBiggestHit && dmg.DamageType != "NA")
+                            {
+                                <td class="text-center info">@dmg.BiggestHit</td>
+                            }
+                            else
+                            {
+                                <td class="text-center">@dmg.BiggestHit</td>
+                            }
+                            @if (dmg.AverageHit == Model.TopAverageHit && dmg.DamageType != "NA")
+                            {
+                                <td class="text-center info">@dmg.AverageHit</td>
+                            }
+                            else
+                            {
+                                <td class="text-center">@dmg.AverageHit</td>
+                            }
+
+                        </tr>
+                        if (dmg.TopRecord)
+                        {
+                            if (Model.Type == "hps")
+                            {
+                                <tr>
+                                    <td colspan="12">
+                                        <div class="progress progress-striped" style="margin-bottom: 0px !important; background-color: transparent; height: 8px; box-shadow: none">
+                                            <div class="progress-bar progress-bar-success" style="width: 100%"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                            else if (Model.Type == "dps")
+                            {
+                                <tr>
+                                    <td colspan="16">
+                                        <div class="progress progress-striped" style="margin-bottom: 0px !important; background-color: transparent; height: 8px; box-shadow: none">
+                                            <div class="progress-bar progress-bar-success" style="width: 100%"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                            else if (Model.Type == "aps")
+                            {
+                                <tr>
+                                    <td colspan="9">
+                                        <div class="progress progress-striped" style="margin-bottom: 0px !important; background-color: transparent; height: 8px; box-shadow: none">
+                                            <div class="progress-bar progress-bar-success" style="width: 100%"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        }
+                        else
+                        {
+                            if (Model.Type == "hps")
+                            {
+                                <tr>
+                                    <td colspan="12">
+                                        <div class="progress progress-striped" style="margin-bottom: 0px !important; height: 8px; box-shadow: none">
+                                            <div class="progress-bar progress-bar-success" style="width: @dmg.ProgressBarPercentage"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                            else if (Model.Type == "dps")
+                            {
+                                <tr>
+                                    <td colspan="16">
+                                        <div class="progress progress-striped" style="margin-bottom: 0px !important; height: 8px;">
+                                            <div class="progress-bar progress-bar-success" style="width: @dmg.ProgressBarPercentage"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                            else if (Model.Type == "aps")
+                            {
+                                <tr>
+                                    <td colspan="9">
+                                        <div class="progress progress-striped" style="margin-bottom: 0px !important; height: 8px;">
+                                            <div class="progress-bar progress-bar-success" style="width: @dmg.ProgressBarPercentage"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+
+    <p class="text-center text-muted">Page built in @Model.BuildTime</p>
+    @if (Model.DebugBuildTime.Any())
+    {
+        <p class="text-center text-muted">
+            @foreach (var timer in Model.DebugBuildTime)
+            {
+                @timer <br />
+            }
+        </p>
+    }
+</div>

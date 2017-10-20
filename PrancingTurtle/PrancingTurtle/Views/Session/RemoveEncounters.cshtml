@@ -1,0 +1,28 @@
+﻿@model PrancingTurtle.Models.ViewModels.Session.RemoveEncountersVM
+@{
+    ViewBag.Title = string.Format("Remove selected {0} {1}?", Model.EncounterIds.Count, Model.EncounterIds.Count == 1 ? "encounter" : "encounters");
+}
+
+<h2>Really remove the selected @Model.EncounterIds.Count @Html.Raw(Model.EncounterIds.Count == 1 ? "encounter" : "encounters")?</h2>
+
+@using (Html.BeginForm("RemoveEncountersConfirmed","Session", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        @Html.ValidationSummary(true)
+        @Html.HiddenFor(m => m.SessionId)
+        @*@Html.HiddenFor(m => m.EncounterIds)*@
+        @for (int i = 0; i < Model.EncounterIds.Count; i++)
+        {
+            @Html.HiddenFor(m => Model.EncounterIds[i])
+        }
+
+        <div class="form-group">
+            <div class="col-md-10">
+                <input type="submit" value="Yep, remove plox!" class="btn btn-success" />
+                @Html.ActionLink("No! I didn't mean to click that!", "Detail", new { @id = Model.SessionId }, new { @class = "btn btn-danger" })
+            </div>
+        </div>
+    </div>
+}

@@ -1,0 +1,1315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SoulTree calling="Mage" name="Warlock">
+  <Traits>
+    <Trait>
+      <Key>0</Key>
+      <Name>Improved Void Bolt</Name>
+      <Icon>darkbolt3</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>912714411</AbilityId>
+          <Description></Description>
+          <AddonId>A3666EAAB389F8F1E</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces the casting time of your Void Bolt spell by 8% and its mana cost by 10%. Reduces the amount of pushback suffered while casting Void Bolt and Life Leech by 33%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reduces the casting time of your Void Bolt spell by 16% and its mana cost by 20%. Reduces the amount of pushback suffered while casting Void Bolt and Life Leech by 66%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Reduces the casting time of your Void Bolt spell by 24% and its mana cost by 30%. Reduces the amount of pushback suffered while casting Void Bolt and Life Leech by 100%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>1</Key>
+      <Name>Magical Affinity</Name>
+      <Icon>elemental_attunement1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>822811281</AbilityId>
+          <Description></Description>
+          <AddonId>A310B1A911A1E6E2A</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the amount of Charge your abilities generate by 5%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the amount of Charge your abilities generate by 10%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the amount of Charge your abilities generate by 15%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases the amount of Charge your abilities generate by 20%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases the amount of Charge your abilities generate by 25%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>2</Key>
+      <Name>Greater Contamination</Name>
+      <Icon>dirtytricks3</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage bonus of Contaminate by 5%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage bonus of Contaminate by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>3</Key>
+      <Name>Crippling Terror</Name>
+      <Icon>assassin_thread_of_death_b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>348275000</AbilityId>
+          <Description></Description>
+          <AddonId>A14C24138779BE662</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the benefit your damage over time abilities gain from Spell Power by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the benefit your damage over time abilities gain from Spell Power by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the benefit your damage over time abilities gain from Spell Power by 12%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>4</Key>
+      <Name>Opportunity</Name>
+      <Icon>redirect1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>337202986</AbilityId>
+          <Description></Description>
+          <AddonId>A14194F2A1816F629</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your spell casts have a 2% chance to reduce the cast time of your next spell by 100%, mana cost by 40% and its global cooldown to 1s. Can occur once every 3s at most.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your spell casts have a 4% chance to reduce the cast time of your next spell by 100%, mana cost by 40% and its global cooldown to 1s. Can occur once every 3s at most.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Your spell casts have a 6% chance to reduce the cast time of your next spell by 100%, mana cost by 40% and its global cooldown to 1s. Can occur once every 3s at most.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Your spell casts have an 8% chance to reduce the cast time of your next spell by 100%, mana cost by 40% and its global cooldown to 1s. Can occur once every 3s at most.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Your spell casts have a 10% chance to reduce the cast time of your next spell by 100%, mana cost by 40% and its global cooldown to 1s. Can occur once every 3s at most.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>5</Key>
+      <Name>Seeping Corruption</Name>
+      <Icon>void_knight-void_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-13443699</AbilityId>
+          <Description></Description>
+          <AddonId>AFF32DD8D43CA5BEB</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your damage over time abilities ignore 10% of your target&apos;s Resistances.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your damage over time abilities ignore 20% of your target&apos;s Resistances.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Your damage over time abilities ignore 30% of your target&apos;s Resistances.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>7</Key>
+      <Name>Vitality</Name>
+      <Icon>holystrength3a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1200381260</AbilityId>
+          <Description></Description>
+          <AddonId>A478C5D4C3420387B</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Base Health by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Base Health by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your Base Health by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your Base Health by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your Base Health by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>8</Key>
+      <Name>Neddra&apos;s Grasp</Name>
+      <Icon>drainlife3</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1426525974</AbilityId>
+          <Description>Deals 482 Death damage whenever the enemy uses an ability. Can occur up to 5 times. Lasts 15s.</Description>
+          <AddonId>A55070F16971D9268</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>10.000000</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>7.500000</CostManaPercent>
+          <GainHeat>9</GainHeat>
+          <CastTime>Instant</CastTime>
+          <PowerStatCoefficient effect="0" action="0">0.600000</PowerStatCoefficient>
+          <PowerStatCoefficient effect="2" action="0">0.600000</PowerStatCoefficient>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Neddra&apos;s Grasp</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>9</Key>
+      <Name>Improved Draining Bolt</Name>
+      <Icon>piercingenergy3</Icon>
+      <PrereqTraitKey>10</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage of Draining Bolt by 5%, and the healing by 0.5% of your Maximum Health, for each of your Death based damage over time effects on the enemy.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage of Draining Bolt by 10%, and the healing by 1% of your Maximum Health, for each of your Death based damage over time effects on the enemy.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>10</Key>
+      <Name>Draining Bolt</Name>
+      <Icon>darkbolt5</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>408072910</AbilityId>
+          <Description>Deals 1310 to 1448 Death damage and healing the Mage for 10% of their Maximum Health.</Description>
+          <AddonId>A1852B2CE6520A991</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>30.000002</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>7.500000</CostManaPercent>
+          <GainHeat>9</GainHeat>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Draining Bolt</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>11</Key>
+      <Name>Neddra&apos;s Torture</Name>
+      <Icon>fatique</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1787331256</AbilityId>
+          <Description>Deals 1091 to 1206 Death damage after 8s. If a damage over time effect is cleansed from the enemy, Neddra&apos;s Torture explodes dealing 1422 to 1571 Death damage to the cleanser and Debilitating them for 3s. Can occur a number of times equal to half the number of the Mage&apos;s Death based damage over time effects on the enemy plus 1. Max 4 procs.</Description>
+          <AddonId>A6A8882B822B7FE40</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>8.000000</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>7.500000</CostManaPercent>
+          <GainHeat>9</GainHeat>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>12</Key>
+      <Name>Swift Corruption</Name>
+      <Icon>ruthless_stalker</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-39174447</AbilityId>
+          <Description></Description>
+          <AddonId>AFDAA3ED1411186F5</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces the global cooldown of your damage over time and Ethereal abilities to 1.25 seconds and their mana cost by 16%. Increases the chance for your damage over time abilities to critically hit by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reduces the global cooldown of your damage over time and Ethereal abilities to 1 second and their mana cost by 33%. Increases the chance for your damage over time abilities to critically hit by 4%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>13</Key>
+      <Name>Dark Power</Name>
+      <Icon>ebon_fury_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>622265515</AbilityId>
+          <Description></Description>
+          <AddonId>A251704AB328AA5AE</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+        <Ability>
+          <AbilityId>1373749890</AbilityId>
+          <Description></Description>
+          <AddonId>A51E1C28200BC4B47</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage of your damage over time abilities by 3%. Increases the range of non-melee damaging abilities by 1 meter. Increased range does not stack with the other range increasing effects.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage of your damage over time abilities by 6%. Increases the range of non-melee damaging abilities by 2 meters. Increased range does not stack with the other range increasing effects.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the damage of your damage over time abilities by 9%. Increases the range of non-melee damaging abilities by 3 meters. Increased range does not stack with the other range increasing effects.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases the damage of your damage over time abilities by 12%. Increases the range of non-melee damaging abilities by 4 meters. Increased range does not stack with the other range increasing effects.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases the damage of your damage over time abilities by 15%. Increases the range of non-melee damaging abilities by 5 meters. Increased range does not stack with the other range increasing effects.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>14</Key>
+      <Name>Radiate Death</Name>
+      <Icon>summonskel5</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>415991213</AbilityId>
+          <Description>Spreads Dark Touch and Neddra&apos;s Grasp to up to 6 additional enemies.</Description>
+          <AddonId>A18CB85AD76646086</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>20.000000</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>4.500000</CostManaPercent>
+          <GainHeat>9</GainHeat>
+          <CastTime>Instant</CastTime>
+          <Radius>10.000000</Radius>
+          <MaxAffected>6</MaxAffected>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Radiate Death</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>15</Key>
+      <Name>Improved Mage Armor</Name>
+      <Icon>voidknight_ravenous_defence_01_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1122876121</AbilityId>
+          <Description></Description>
+          <AddonId>A42EDBAD934830E85</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Mage Armor buffs increase the damage you deal by 2%, in addition to their normal effects.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your Mage Armor buffs increase the damage you deal by 4%, in addition to their normal effects.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Your Mage Armor buffs increase the damage you deal by 6%, in addition to their normal effects.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Your Mage Armor buffs increase the damage you deal by 8%, in addition to their normal effects.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Your Mage Armor buffs increase the damage you deal by 10%, in addition to their normal effects.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>16</Key>
+      <Name>Neddra&apos;s Essence</Name>
+      <Icon>summonskeleton1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1978709104</AbilityId>
+          <Description>Reduces damage taken by 80% for 7s.</Description>
+          <AddonId>A75F0B47069DE0947</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>120.000008</Cooldown>
+          <CostManaPercent>2.250000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+          <Duration>7.000000</Duration>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Neddra&apos;s Essence</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>17</Key>
+      <Name>Improved Life Leech</Name>
+      <Icon>drainlife1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the base damage done by your Life Leech by 20%, the benefit it receives from your Spell power by 20%, the duration by 2 seconds and increases the amount of healing done by an additional 1% of your maximum health.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the base damage done by your Life Leech by 40%, the benefit it receives from your Spell power by 40%, the duration by 4 seconds and increases the amount of healing done by an additional 2% of your maximum health.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the base damage done by your Life Leech by 60%, the benefit it receives from your Spell power by 60%, the duration by 6 seconds and increases the amount of healing done by an additional 3% of your maximum health.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>18</Key>
+      <Name>Lingering Pain</Name>
+      <Icon>flash2</Icon>
+      <PrereqTraitKey>17</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>639630724</AbilityId>
+          <Description></Description>
+          <AddonId>A261FFD840704305E</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Gives your Primary Bolt abilities a 50% chance to refresh the duration of Life Leech on the enemy.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Gives your Primary Bolt abilities a 100% chance to refresh the duration of Life Leech on the enemy.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>19</Key>
+      <Name>Expanded Contagion</Name>
+      <Icon>cabalist_sigil_of_ravaging</Icon>
+      <PrereqTraitKey>14</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Gives your Radiate Death a 33% chance to spread Life Leech, Atrophy, Necrosis, Electrified and Deathly Calling.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Gives your Radiate Death a 66% chance to spread Life Leech, Atrophy, Necrosis, Electrified and Deathly Calling.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Gives your Radiate Death a 100% chance to spread Life Leech, Atrophy, Necrosis, Electrified and Deathly Calling.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>20</Key>
+      <Name>Void Decimation</Name>
+      <Icon>shadow_blitz</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Void Bolt, Neddra&apos;s Torture and Void Barrage damage by 2% for each of your Death based damage over time effects on the enemy.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Void Bolt, Neddra&apos;s Torture and Void Barrage damage by 4% for each of your Death based damage over time effects on the enemy.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your Void Bolt, Neddra&apos;s Torture and Void Barrage damage by 6% for each of your Death based damage over time effects on the enemy.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your Void Bolt, Neddra&apos;s Torture and Void Barrage damage by 8% for each of your Death based damage over time effects on the enemy.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your Void Bolt, Neddra&apos;s Torture and Void Barrage damage by 10% for each of your Death based damage over time effects on the enemy.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>21</Key>
+      <Name>Persist</Name>
+      <Icon>dirtytricks1a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-41702020</AbilityId>
+          <Description>Refreshes all of the Mage&apos;s active Death based damage over time effects on the enemy.</Description>
+          <AddonId>AFD83AD7C7ED5E2D5</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>20.000000</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>7.500000</CostManaPercent>
+          <GainHeat>9</GainHeat>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>22</Key>
+      <Name>Conflux</Name>
+      <Icon>curse_of_solitude</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>40</MinimumPointsSpent>
+      <DisplayRow>8</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-3398260</AbilityId>
+          <Description>Causes the Mage&apos;s next 10 Death based damage over time effects to deal an additional 509 to 563 Death damage when they are applied.</Description>
+          <AddonId>AFFCC258C169142B5</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>45.000004</Cooldown>
+          <CostManaPercent>7.500000</CostManaPercent>
+          <GainHeat>9</GainHeat>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>23</Key>
+      <Name>Choke</Name>
+      <Icon>secondwind1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1472223050</AbilityId>
+          <Description>Interrupts the enemy and Debilitates for 5s.</Description>
+          <AddonId>A57C0574AA3EB505B</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>30.000002</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>4.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+  </Traits>
+  <Abilities>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Opportunity</Name>
+      <Icon>redirect1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-95170530</AbilityId>
+        <Description>Cast time of next spell reduced by 100%.</Description>
+        <AddonId>AFA53D01E75C43B86</AddonId>
+        <IsPassive>False</IsPassive>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>61</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Void Barrage</Name>
+      <Icon>darkball4</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>60</RequiredLevel>
+        <AbilityId>-89843867</AbilityId>
+        <Description>Deals 5770 Death damage over 3s. Initial damage refreshes all of the Mage&apos;s active Death damage over time effects on the enemy.</Description>
+        <AddonId>AFAA517652A3473AC</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>20.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+        <Channel>true</Channel>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>48</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Atrophy</Name>
+      <Icon>generic_ability_027</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>48</RequiredLevel>
+        <AbilityId>-73435607</AbilityId>
+        <Description>Deals 1992 Death damage over 16s. Damage increases each second.</Description>
+        <AddonId>AFB9F7629479DF854</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>6.000000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+        <Duration>16.000000</Duration>
+        <Interval>2.000000</Interval>
+        <PowerStatCoefficient effect="0" action="0">2.600000</PowerStatCoefficient>
+        <DamageMultiplier effect="0" action="0">0.070000</DamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>54</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Deathly Pall</Name>
+      <Icon>shadow_blitz_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>53</RequiredLevel>
+        <AbilityId>-71430080</AbilityId>
+        <Description>Applies all Death damage over time effects removed by the Mage&apos;s Salvage Corruption ability to the enemy.</Description>
+        <AddonId>AFBBE10403F5BF0B7</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>5.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>3.750000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>54</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Salvage Corruption</Name>
+      <Icon>dominator_draining_presence_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>53</RequiredLevel>
+        <AbilityId>-59502705</AbilityId>
+        <Description>Removes all of the Mage&apos;s Death damage over time effects on the enemy, storing them on the Mage for up to 30s. Stored effects can be reapplied to an enemy using the Deathly Pall ability.</Description>
+        <AddonId>AFC740F8F749E6948</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>5.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>2.250000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>8</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Contaminate</Name>
+      <Icon>dirtytricks3</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>8</RequiredLevel>
+        <AbilityId>-48761057</AbilityId>
+        <Description>Increases damage done by the Mage&apos;s damage over time effects by 20%. Each damage over time ability cast consumes 10 Charge. Damage over time abilities cannot generate Charge while active. Does not trigger a global cooldown.</Description>
+        <AddonId>AFD17F71F98085600</AddonId>
+        <IsPassive>False</IsPassive>
+        <MinimumHeat>10</MinimumHeat>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Persist</Name>
+      <Icon>dirtytricks1a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-41702020</AbilityId>
+        <Description>Refreshes all of the Mage&apos;s active Death based damage over time effects on the enemy.</Description>
+        <AddonId>AFD83AD7C7ED5E2D5</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>20.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>48</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Consuming Agony</Name>
+      <Icon>defiler_loathsome_restoration_g</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>48</RequiredLevel>
+        <AbilityId>-27666901</AbilityId>
+        <Description>Deals 1194 to 1319 Death damage. Damage is increased by 20% for each of the caster&apos;s Death based damage over time effects on the enemy.</Description>
+        <AddonId>AFE59D62B52FF71EB</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>10.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>15.000000</CostManaPercent>
+        <GainHeat>29</GainHeat>
+        <CastTime>4.000000</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>58</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Death&apos;s Door</Name>
+      <Icon>generic_ability_020</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>57</RequiredLevel>
+        <AbilityId>-15917885</AbilityId>
+        <Description>Deals 2299 Death damage over 8s. Can only be used on enemies below 50% health.</Description>
+        <AddonId>AFF0D1CC33CC6094C</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>10.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Conflux</Name>
+      <Icon>curse_of_solitude</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-3398260</AbilityId>
+        <Description>Causes the Mage&apos;s next 10 Death based damage over time effects to deal an additional 509 to 563 Death damage when they are applied.</Description>
+        <AddonId>AFFCC258C169142B5</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>45.000004</Cooldown>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>51</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Empowered Darkness</Name>
+      <Icon>necropotence1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>50</RequiredLevel>
+        <AbilityId>301593466</AbilityId>
+        <Description>Increases damage done by 40% for 15s.</Description>
+        <AddonId>A11F9F37A2A980B95</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <MinimumHeat>75</MinimumHeat>
+        <CastTime>Instant</CastTime>
+        <Duration>15.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Draining Bolt</Name>
+      <Icon>darkbolt5</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>408072910</AbilityId>
+        <Description>Deals 1310 to 1448 Death damage and healing the Mage for 10% of their Maximum Health.</Description>
+        <AddonId>A1852B2CE6520A991</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Radiate Death</Name>
+      <Icon>summonskel5</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>415991213</AbilityId>
+        <Description>Spreads Dark Touch and Neddra&apos;s Grasp to up to 6 additional enemies.</Description>
+        <AddonId>A18CB85AD76646086</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>20.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+        <Radius>10.000000</Radius>
+        <MaxAffected>6</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Life Leech</Name>
+      <Icon>drainlife1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>573446963</AbilityId>
+        <Description>Deals 1226 Death damage over 10s and heals the Mage for 3% of their maximum health over 10s.</Description>
+        <AddonId>A222E1B336F8C0394</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <GainHeat>11</GainHeat>
+        <CastTime>1.500000</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>2</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Dark Touch</Name>
+      <Icon>darkball2z</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>2</RequiredLevel>
+        <AbilityId>646858846</AbilityId>
+        <Description>Deals 1686 Death damage over 16s.</Description>
+        <AddonId>A268E485E3C52DD65</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+        <Duration>16.000000</Duration>
+        <Interval>2.000000</Interval>
+        <PowerStatCoefficient effect="0" action="0">2.200000</PowerStatCoefficient>
+        <DamageMultiplier effect="0" action="0">0.111000</DamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>28</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Mortality</Name>
+      <Icon>channelhealth4</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>28</RequiredLevel>
+        <AbilityId>714617022</AbilityId>
+        <Description>Deals 6445 to 7124 Death damage over 6s to up to 5 nearby enemies, healing the Mage for the damage done. Consumes Charge while active. Cannot be affected by crowd control abilities while casting.</Description>
+        <AddonId>A2A9830BE8A7539BF</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <MinimumHeat>10</MinimumHeat>
+        <CastTime>Instant</CastTime>
+        <Channel>true</Channel>
+        <Duration>6.000000</Duration>
+        <Interval>1.000000</Interval>
+        <Radius>8.000000</Radius>
+        <MaxAffected>5</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>4</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Dark Armor</Name>
+      <Icon>darkball2</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>4</RequiredLevel>
+        <AbilityId>742316164</AbilityId>
+        <Description>Increases damage dealt by damage over time abilities by 5%. When hit, deals 80 Death damage to the attacker. Lasts 1h. Counts as a Mage Armor.</Description>
+        <AddonId>A2C3ED88433E2F15E</AddonId>
+        <IsPassive>False</IsPassive>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>44</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Mass Fear</Name>
+      <Icon>finalstrike3a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>44</RequiredLevel>
+        <AbilityId>927188724</AbilityId>
+        <Description>Fears up to 5 nearby enemies for 10s or until damaged.</Description>
+        <AddonId>A3743C6F49C83B31B</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Radius>7.000000</Radius>
+        <MaxAffected>5</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>20</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Devouring Shadows</Name>
+      <Icon>poisoned</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>20</RequiredLevel>
+        <AbilityId>1001182568</AbilityId>
+        <Description>Deals 4254 Death damage over 6s to up to 8 enemies. Generates 6 Charge every 1s.</Description>
+        <AddonId>A3BACD5687AAACAB4</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>18.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Channel>true</Channel>
+        <Duration>6.000000</Duration>
+        <Interval>1.000000</Interval>
+        <Radius>7.000000</Radius>
+        <MaxAffected>8</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>24</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Sacrifice Life: Damage</Name>
+      <Icon>sacrificepet3</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>24</RequiredLevel>
+        <AbilityId>1133456236</AbilityId>
+        <Description>Increase Death damage done by 20%, and all other damage done by 10% for 15s. Consumes 15% health.</Description>
+        <AddonId>A438F2B6C4AA4EBF4</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <CostManaPercent>2.250000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>15.000000</Duration>
+        <PowerStatCoefficient effect="0" action="0">1.000000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>32</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Warlock Armor</Name>
+      <Icon>darkball1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>32</RequiredLevel>
+        <AbilityId>1145695696</AbilityId>
+        <Description>When hit, deals 80 Death damage to the attacker and restores 30 health. Increases damage done by damage over time abilities by 5%. Grants damaging Death spells a 20% chance to make your next Consuming Agony, within 8s, instant and reduce its mana cost by 50%. Cannot occur more than once every 10s. Lasts 1h. Counts as a Mage Armor.</Description>
+        <AddonId>A4449EDD03D27DD70</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="1" action="0">0.120000</PowerStatCoefficient>
+        <AggroMultiplier effect="1" action="0">0.250000</AggroMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>36</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Defile</Name>
+      <Icon>void_knight-rift_summon_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>36</RequiredLevel>
+        <AbilityId>1282932639</AbilityId>
+        <Description>Deals 1992 Death damage over 16s. Increases the chance for damage over time abilities to critically hit the enemy by 3%. Drains Charge while active (does not block Charge gain).</Description>
+        <AddonId>A4C77FF9F75FC11A5</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <MinimumHeat>10</MinimumHeat>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>40</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Aversion</Name>
+      <Icon>defiler_empowered_affliction_cc</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>40</RequiredLevel>
+        <AbilityId>1338281782</AbilityId>
+        <Description>Interrupts.</Description>
+        <AddonId>A4FC48F3683FC6C9E</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>10.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Neddra&apos;s Grasp</Name>
+      <Icon>drainlife3</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1426525974</AbilityId>
+        <Description>Deals 482 Death damage whenever the enemy uses an ability. Can occur up to 5 times. Lasts 15s.</Description>
+        <AddonId>A55070F16971D9268</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>10.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">0.600000</PowerStatCoefficient>
+        <PowerStatCoefficient effect="2" action="0">0.600000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Choke</Name>
+      <Icon>secondwind1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1472223050</AbilityId>
+        <Description>Interrupts the enemy and Debilitates for 5s.</Description>
+        <AddonId>A57C0574AA3EB505B</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Neddra&apos;s Torture</Name>
+      <Icon>fatique</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1787331256</AbilityId>
+        <Description>Deals 1091 to 1206 Death damage after 8s. If a damage over time effect is cleansed from the enemy, Neddra&apos;s Torture explodes dealing 1422 to 1571 Death damage to the cleanser and Debilitating them for 3s. Can occur a number of times equal to half the number of the Mage&apos;s Death based damage over time effects on the enemy plus 1. Max 4 procs.</Description>
+        <AddonId>A6A8882B822B7FE40</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>8.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>12</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Neddra&apos;s Might</Name>
+      <Icon>channelhealth3</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>12</RequiredLevel>
+        <AbilityId>1790739682</AbilityId>
+        <Description>Increases Endurance by 70 on all party or raid members. Lasts 1h.</Description>
+        <AddonId>A6ABC84E2D92B114E</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>2.250000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Radius>35.000000</Radius>
+        <MaxAffected>50</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>24</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Sacrifice Life: Mana</Name>
+      <Icon>sacrificepet4b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>24</RequiredLevel>
+        <AbilityId>1793162193</AbilityId>
+        <Description>Restores 7% mana. Consumes 7% health.</Description>
+        <AddonId>A6AE17BD1BEE7999D</AddonId>
+        <IsPassive>False</IsPassive>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="1">1.000000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Warlock Soul Gift</Name>
+      <Icon>invoker_prerogative1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1843334233</AbilityId>
+        <Description>Increases the Mage&apos;s damage by 1% for each point spent in the Warlock soul.</Description>
+        <AddonId>A6DDF0C59B3B94A39</AddonId>
+        <IsPassive>True</IsPassive>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>16</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Fear</Name>
+      <Icon>finalstrike3</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>16</RequiredLevel>
+        <AbilityId>1949993914</AbilityId>
+        <Description>Fears for 10s or until damaged. Can only affect 1 enemy.</Description>
+        <AddonId>A743A8BBA54FFD6EF</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>1.500000</CastTime>
+        <Duration>10.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Neddra&apos;s Essence</Name>
+      <Icon>summonskeleton1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1978709104</AbilityId>
+        <Description>Reduces damage taken by 80% for 7s.</Description>
+        <AddonId>A75F0B47069DE0947</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>120.000008</Cooldown>
+        <CostManaPercent>2.250000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>7.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Void Bolt</Name>
+      <Icon>darkbolt3</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1988160741</AbilityId>
+        <Description>Deals 874 to 965 Death damage. Counts as a Primary Bolt.</Description>
+        <AddonId>A7680ECE56E195070</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>10.000000</CostManaPercent>
+        <GainHeat>15</GainHeat>
+        <CastTime>2.000000</CastTime>
+      </AbilityRank>
+    </Ability>
+  </Abilities>
+</SoulTree>
+

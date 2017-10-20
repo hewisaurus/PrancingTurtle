@@ -1,0 +1,1400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SoulTree calling="Warrior" name="Paladin">
+  <Traits>
+    <Trait>
+      <Key>0</Key>
+      <Name>Stalwart Shield</Name>
+      <Icon>bulwark1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1521303676</AbilityId>
+          <Description></Description>
+          <AddonId>A5AAD407C00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Block by 0.5%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Block by 1%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your Block by 1.5%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your Block by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your Block by 3%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>1</Key>
+      <Name>Unyielding Defense</Name>
+      <Icon>1h_shield_048a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>562518850</AbilityId>
+          <Description></Description>
+          <AddonId>A21875B4200000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage reduction when blocking by 1%. Reduces damage taken from Spells by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage reduction when blocking by 2%. Reduces damage taken from Spells by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the damage reduction when blocking by 3%. Reduces damage taken from Spells by 9%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>2</Key>
+      <Name>Shield of the Hero</Name>
+      <Icon>1h_shield_054a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>862002525</AbilityId>
+          <Description>Enables Guard. Increases Armor by 3% and all Resists by 9%. Maximum active Shield buffs: 1. Does not stack with Accord of Resilience. Lasts 1h</Description>
+          <AddonId>A33611D5D1EF5312E</AddonId>
+          <IsPassive>False</IsPassive>
+          <CostEnergy>10</CostEnergy>
+          <CastTime>Instant</CastTime>
+          <Duration>3600.000000</Duration>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>When active, Heroic Visage increases chance to block and hit.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>3</Key>
+      <Name>Pacification</Name>
+      <Icon>blindinglight3</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-40232767</AbilityId>
+          <Description></Description>
+          <AddonId>AFD9A18C15287E1E8</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage of Pacifying Strike, and Righteous Blow by 5%. Your Pacifying Strike also reduces the damage you take by 1% for 15s.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage of Pacifying Strike, and Righteous Blow by 10%. Your Pacifying Strike also reduces the damage you take by 2% for 15s.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the damage of Pacifying Strike, and Righteous Blow by 15%. Your Pacifying Strike also reduces the damage you take by 3% for 15s.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>4</Key>
+      <Name>A Good Defense</Name>
+      <Icon>plate_102_chest</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1795591797</AbilityId>
+          <Description></Description>
+          <AddonId>A6B068E7500000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases Damage of attacks and heals that generate Attack Points by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases Damage of attacks and heals that generate Attack Points by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases Damage of attacks and heals that generate Attack Points by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases Damage of attacks and heals that generate Attack Points by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases Damage of attacks and heals that generate Attack Points by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>5</Key>
+      <Name>Light&apos;s Hammer</Name>
+      <Icon>smite2</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1274495851</AbilityId>
+          <Description>Stuns for 3s.</Description>
+          <AddonId>A4BF7436B593C9847</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Melee Weapon</RequiresWeapon>
+          <Cooldown>60.000004</Cooldown>
+          <MaxRange>20.000000</MaxRange>
+          <CostEnergy>10</CostEnergy>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Unlocks Light&apos;s Hammer, a damaging ranged strike that also stuns the target.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>6</Key>
+      <Name>Steady Aggression</Name>
+      <Icon>defensivestrike2</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the duration of Aggressive Block by 2 seconds, and the damage bonus of Aggressive Block by 1%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the duration of Aggressive Block by 4 seconds, and the damage bonus of Aggressive Block by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the duration of Aggressive Block by 6 seconds, and the damage bonus of Aggressive Block by 5%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>7</Key>
+      <Name>Enduring</Name>
+      <Icon>doctrine_of_virtue_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-85247574</AbilityId>
+          <Description></Description>
+          <AddonId>AFAEB39AA00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Base Health by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Base Health by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your Base Health by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your Base Health by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your Base Health by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>8</Key>
+      <Name>Aggressive Guardian</Name>
+      <Icon>invigoration1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>329187601</AbilityId>
+          <Description></Description>
+          <AddonId>A139F011100000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases damage of attacks that must follow a Block by 3%, in addition to increasing all threat generated by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases damage of attacks that must follow a Block by 6%, in addition to increasing all threat generated by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases damage of attacks that must follow a Block by 9%, in addition to increasing all threat generated by 9%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>9</Key>
+      <Name>Face Slam</Name>
+      <Icon>paladin_face_slam</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1542933015</AbilityId>
+          <Description>Interrupts.</Description>
+          <AddonId>A5BF74A176BE8056A</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Melee Weapon</RequiresWeapon>
+          <Cooldown>8.000000</Cooldown>
+          <MaxRange>20.000000</MaxRange>
+          <CostEnergy>10</CostEnergy>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>10</Key>
+      <Name>Hardened Defenses</Name>
+      <Icon>requital_01_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-74160655</AbilityId>
+          <Description></Description>
+          <AddonId>AFB9465F100000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Resistances by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Resistances by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your Resistances by 6%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>11</Key>
+      <Name>Touch of Life</Name>
+      <Icon>layonhands5</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>321851503</AbilityId>
+          <Description>Restores full health.</Description>
+          <AddonId>A132F106FF887F85C</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Melee Weapon</RequiresWeapon>
+          <Cooldown>120.000008</Cooldown>
+          <CostEnergy>10</CostEnergy>
+          <CastTime>Instant</CastTime>
+          <PowerStatCoefficient effect="0" action="0">1.000000</PowerStatCoefficient>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>12</Key>
+      <Name>Balance of Power</Name>
+      <Icon>shielded</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1583510656</AbilityId>
+          <Description></Description>
+          <AddonId>A5E62748003D5DB20</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Attacks that must follow a Block deal an additional 20% of your Endurance as Life damage.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Attacks that must follow a Block deal an additional 40% of your Endurance as Life damage.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Attacks that must follow a Block deal an additional 60% of your Endurance as Life damage.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>13</Key>
+      <Name>Resolution</Name>
+      <Icon>healing_flare_b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-66170185</AbilityId>
+          <Description></Description>
+          <AddonId>AFC0E52B700000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces the cooldown of your Light&apos;s Balm and Light&apos;s Blessing by 1 second.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reduces the cooldown of your Light&apos;s Balm and Light&apos;s Blessing by 2 seconds.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>14</Key>
+      <Name>Shield of the Vengeful</Name>
+      <Icon>paladin_shield_of_the_vengeful_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-98025025</AbilityId>
+          <Description>Increases damage by 25%. Maximum active Shield buffs: 1. Lasts 1h.</Description>
+          <AddonId>AFA2841BF792FCE2C</AddonId>
+          <IsPassive>False</IsPassive>
+          <CostEnergy>10</CostEnergy>
+          <CastTime>Instant</CastTime>
+          <Duration>3600.000000</Duration>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>15</Key>
+      <Name>Front Line Training</Name>
+      <Icon>righteous_invocation_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the number of enemies hit with Sweeping Strikes, Judgment and Light&apos;s Decree by 1.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the number of enemies hit with Sweeping Strikes, Judgment and Light&apos;s Decree by 2.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>16</Key>
+      <Name>Light&apos;s Domination</Name>
+      <Icon>excommunicate</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-15663560</AbilityId>
+          <Description>Stuns up to 5 enemies up to 20 meters in front of the Paladin for 3s. Awards 1 Attack Point.</Description>
+          <AddonId>AFF10FE38281E01D2</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Melee Weapon</RequiresWeapon>
+          <Cooldown>60.000004</Cooldown>
+          <CostEnergy>10</CostEnergy>
+          <GainAttackPoints>1</GainAttackPoints>
+          <CastTime>Instant</CastTime>
+          <Radius>20.000000</Radius>
+          <MaxAffected>5</MaxAffected>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>17</Key>
+      <Name>Martial Shield</Name>
+      <Icon>arcaneshield4</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>521245720</AbilityId>
+          <Description></Description>
+          <AddonId>A1F11941800000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Each successful block has a 10% chance of increasing Attack Points by 1.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Each successful block has a 25% chance of increasing Attack Points by 1.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>18</Key>
+      <Name>Invigoration</Name>
+      <Icon>reprieve_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-48645051</AbilityId>
+          <Description></Description>
+          <AddonId>AFD19BC4560C2EBD0</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>For 15 seconds after you block an attack, your damage is increased by 2%. This effect can stack up to 5 times.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>For 15 seconds after you block an attack, your damage is increased by 5%. This effect can stack up to 5 times.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>19</Key>
+      <Name>Vengeful Wrath</Name>
+      <Icon>paladin-vengeful_wrath</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>202471296</AbilityId>
+          <Description></Description>
+          <AddonId>A0C11778000000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Attack Power and Weapon Damage by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Attack Power and Weapon Damage by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your Attack Power and Weapon Damage by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your Attack Power and Weapon Damage by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your Attack Power and Weapon Damage by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>20</Key>
+      <Name>Divine Grace</Name>
+      <Icon>paladin_lights_blessing_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-9409410</AbilityId>
+          <Description></Description>
+          <AddonId>AFF706C7E00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the healing of your Light&apos;s Balm and Light&apos;s Blessing by 3%, in addition to increasing Life damage by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the healing of your Light&apos;s Balm and Light&apos;s Blessing by 6%, in addition to increasing Life damage by 12%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>21</Key>
+      <Name>Brutal Response</Name>
+      <Icon>smite4a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-64250553</AbilityId>
+          <Description></Description>
+          <AddonId>AFC2B9D4700000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases threat from attacks that must follow a Block further based on Endurance and reduces the cost of these attacks by 50%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>22</Key>
+      <Name>Light&apos;s Favor</Name>
+      <Icon>heal3</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-54518399</AbilityId>
+          <Description></Description>
+          <AddonId>AFCC01D8100000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces the cooldown of your Touch of Life and Life&apos;s Rapture by 10 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reduces the cooldown of your Touch of Life and Life&apos;s Rapture by 20 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Reduces the cooldown of your Touch of Life and Life&apos;s Rapture by 30 seconds.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>23</Key>
+      <Name>Light&apos;s Protection</Name>
+      <Icon>doctrine_of_faithful_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-15952020</AbilityId>
+          <Description>For the next 12s, incoming heals are increased by 15%. This does not effect Touch of Life or Life’s Rapture.</Description>
+          <AddonId>AFF0C976C5B694F38</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>60.000004</Cooldown>
+          <CostEnergy>10</CostEnergy>
+          <CastTime>Instant</CastTime>
+          <Duration>12.000000</Duration>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>24</Key>
+      <Name>Blessed Aegis</Name>
+      <Icon>castigation1b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-45162097</AbilityId>
+          <Description></Description>
+          <AddonId>AFD4EE18F00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Allows You to have 2 active Shield buffs, and increases Base Health by 5%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>25</Key>
+      <Name>Shield Defense</Name>
+      <Icon>castigation3</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>40</MinimumPointsSpent>
+      <DisplayRow>8</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-98924078</AbilityId>
+          <Description>The Warrior takes 35% less damage for 10s. Shares a cooldown with Crest of Entropy. Does not stack with Aegis of Light, Crest of Consumption, or Power Shield.</Description>
+          <AddonId>AFA1A89D25BE4F842</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>60.000004</Cooldown>
+          <CostEnergy>10</CostEnergy>
+          <CastTime>Instant</CastTime>
+          <Duration>10.000000</Duration>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+  </Traits>
+  <Abilities>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Shield Defense</Name>
+      <Icon>castigation3</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-98924078</AbilityId>
+        <Description>The Warrior takes 35% less damage for 10s. Shares a cooldown with Crest of Entropy. Does not stack with Aegis of Light, Crest of Consumption, or Power Shield.</Description>
+        <AddonId>AFA1A89D25BE4F842</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <Duration>10.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Shield of the Vengeful</Name>
+      <Icon>paladin_shield_of_the_vengeful_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-98025025</AbilityId>
+        <Description>Increases damage by 25%. Maximum active Shield buffs: 1. Lasts 1h.</Description>
+        <AddonId>AFA2841BF792FCE2C</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <Duration>3600.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>58</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Aegis of the Light</Name>
+      <Icon>hammer_of_virtue_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>57</RequiredLevel>
+        <AbilityId>-92749611</AbilityId>
+        <Description>Reduces incoming damage by 20% for 4s. Heal up to 5 group or raid members within 35 meters for 217. Does not stack with Shield Defense or Crest of Entropy.</Description>
+        <AddonId>AFA78C0D582C9F2E5</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>30.000002</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <Duration>4.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>12</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Light&apos;s Balm</Name>
+      <Icon>righteous_healing_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>12</RequiredLevel>
+        <AbilityId>-64114415</AbilityId>
+        <Description>Heals for 1027 to 1135.</Description>
+        <AddonId>AFC2DB111F0A92E78</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>3.000000</Cooldown>
+        <MaxRange>35.000000</MaxRange>
+        <CostEnergy>20</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">1.320000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>36</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Light&apos;s Reprisal</Name>
+      <Icon>paladin-reprisal</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>36</RequiredLevel>
+        <AbilityId>-63327825</AbilityId>
+        <Description>Deals 1376 to 1521 Life damage to up to 5 enemies. Must be used after the Warrior has Blocked.</Description>
+        <AddonId>AFC39B1AFBC3B8551</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>16.000000</Cooldown>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>6</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <Radius>7.000000</Radius>
+        <MaxAffected>5</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>28</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Light&apos;s Vengeance</Name>
+      <Icon>paladin_lights_blessing1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>28</RequiredLevel>
+        <AbilityId>-47254853</AbilityId>
+        <Description>Deals 2412 to 2412 Life damage over 15s. Must be used after the Warrior has Blocked.</Description>
+        <AddonId>AFD2EF2BB715EFD36</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>8.000000</Cooldown>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>5</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <Duration>15.000000</Duration>
+        <Interval>3.000000</Interval>
+        <PowerStatCoefficient effect="0" action="0">1.650000</PowerStatCoefficient>
+        <AggroMultiplier effect="0" action="0">5.000000</AggroMultiplier>
+        <DamageMultiplier effect="0" action="0">0.170000</DamageMultiplier>
+        <WeaponDamageMultiplier effect="0" action="0">2.480000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>61</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Protector&apos;s Fury</Name>
+      <Icon>conviction_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>60</RequiredLevel>
+        <AbilityId>-46407649</AbilityId>
+        <Description>Increases damage by 25%, reduces damage taken by 5%, and increases healing received by 5%. Lasts 1h.</Description>
+        <AddonId>AFD3BE01F8084F1D9</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <Duration>3600.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>54</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Light&apos;s Benediction</Name>
+      <Icon>overwhelming_brilliance_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>53</RequiredLevel>
+        <AbilityId>-36055070</AbilityId>
+        <Description>Deals Life damage to the enemy. Reduces damage taken by 7%. Lasts 15s:
+
+1 Point: 1090 damage.
+2 Points: 1644 damage.
+3 Points: 2483 damage.</Description>
+        <AddonId>AFDD9D7E2A8F0E50B</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>20</CostEnergy>
+        <CostAttackPoints>1</CostAttackPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">1.700000</PowerStatCoefficient>
+        <AggroMultiplier effect="0" action="0">5.000000</AggroMultiplier>
+        <WeaponDamageMultiplier effect="0" action="0">2.550000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>40</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Light&apos;s Blessing</Name>
+      <Icon>paladin_lights_blessing_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>40</RequiredLevel>
+        <AbilityId>-33946828</AbilityId>
+        <Description>Heals for 1540 to 1702.</Description>
+        <AddonId>AFDFA0334A0189A9F</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>8.000000</Cooldown>
+        <MaxRange>35.000000</MaxRange>
+        <CostEnergy>20</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">1.980000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Light&apos;s Protection</Name>
+      <Icon>doctrine_of_faithful_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-15952020</AbilityId>
+        <Description>For the next 12s, incoming heals are increased by 15%. This does not effect Touch of Life or Life’s Rapture.</Description>
+        <AddonId>AFF0C976C5B694F38</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <Duration>12.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Light&apos;s Domination</Name>
+      <Icon>excommunicate</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-15663560</AbilityId>
+        <Description>Stuns up to 5 enemies up to 20 meters in front of the Paladin for 3s. Awards 1 Attack Point.</Description>
+        <AddonId>AFF10FE38281E01D2</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>60.000004</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <GainAttackPoints>1</GainAttackPoints>
+        <CastTime>Instant</CastTime>
+        <Radius>20.000000</Radius>
+        <MaxAffected>5</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>40</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Divine Edict</Name>
+      <Icon>righteousness2</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>40</RequiredLevel>
+        <AbilityId>-6259212</AbilityId>
+        <Description>Damaging abilities generate additional threat based off of the Warrior&apos;s Endurance.</Description>
+        <AddonId>AFFA07DF4B14E6C15</AddonId>
+        <IsPassive>True</IsPassive>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>24</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Righteous Charge</Name>
+      <Icon>defstrike3</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>24</RequiredLevel>
+        <AbilityId>29068291</AbilityId>
+        <Description>Charges at the enemy, dealing 2774 to 3066 Physical damage. Roots for 1.5s. Awards 1 Attack Point.</Description>
+        <AddonId>A01BB8C035B6A96DD</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>15.000001</Cooldown>
+        <MinRange>3.000000</MinRange>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>20</CostEnergy>
+        <GainAttackPoints>1</GainAttackPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>44</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Shield of the Chosen</Name>
+      <Icon>generic_ability_016</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>44</RequiredLevel>
+        <AbilityId>66400259</AbilityId>
+        <Description>Increases Block by 5%. Maximum active Shield buffs: 1. Lasts 1h.</Description>
+        <AddonId>A03F53003A62FFD1E</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <Duration>3600.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Paladin&apos;s Gift</Name>
+      <Icon>soul_paladin</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>73994924</AbilityId>
+        <Description>Increases Endurance by 1.5% per point spent in the Paladin soul. Increases Armor by 1% per point spent in the Paladin soul. Increases Resistances by 2% per point spent in the Paladin soul. Base Damage is increased by 0.5% for each Point spent in the Paladin Soul.</Description>
+        <AddonId>A046912AC72160B18</AddonId>
+        <IsPassive>True</IsPassive>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>8</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Interfere</Name>
+      <Icon>harbinger_lucent_slash_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>8</RequiredLevel>
+        <AbilityId>99169393</AbilityId>
+        <Description>Forces the enemy to attack the Warrior for 3s.</Description>
+        <AddonId>A05E934712DEB9B9F</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>8.000000</Cooldown>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>32</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Amnesty</Name>
+      <Icon>ressurect4b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>32</RequiredLevel>
+        <AbilityId>212956968</AbilityId>
+        <Description>Shields the ally, intercepting 50% of the damage they receive, and replacing the ally&apos;s Toughness with the Warrior&apos;s, for 6s. An ally can only be affected by a tank soul damage intercept once every 2 minutes.</Description>
+        <AddonId>A0CB177289DA41C01</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <Duration>6.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Touch of Life</Name>
+      <Icon>layonhands5</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>321851503</AbilityId>
+        <Description>Restores full health.</Description>
+        <AddonId>A132F106FF887F85C</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>120.000008</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">1.000000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>2</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Righteous Blow</Name>
+      <Icon>flare_of_light_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>2</RequiredLevel>
+        <AbilityId>579478336</AbilityId>
+        <Description>Deals Physical damage:
+
+1 Point: 1090 damage.
+2 Points: 1644 damage.
+3 Points: 2483 damage.</Description>
+        <AddonId>A228A2340A139A1E0</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>20</CostEnergy>
+        <CostAttackPoints>1</CostAttackPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="1" action="0">1.700000</PowerStatCoefficient>
+        <AggroMultiplier effect="1" action="0">5.000000</AggroMultiplier>
+        <WeaponDamageMultiplier effect="1" action="0">2.550000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Shield of the Hero</Name>
+      <Icon>1h_shield_054a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>862002525</AbilityId>
+        <Description>Enables Guard. Increases Armor by 3% and all Resists by 9%. Maximum active Shield buffs: 1. Does not stack with Accord of Resilience. Lasts 1h</Description>
+        <AddonId>A33611D5D1EF5312E</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <Duration>3600.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>16</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Sweeping Strike</Name>
+      <Icon>criticalsweep1b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>16</RequiredLevel>
+        <AbilityId>900986686</AbilityId>
+        <Description>Deals 1026 to 1135 Physical damage to up to 10 enemies. Generates significant threat. Awards 1 Attack Point.</Description>
+        <AddonId>A35B3F73E433F3E42</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>5.000000</Cooldown>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>22</CostEnergy>
+        <GainAttackPoints>1</GainAttackPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>4</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Retaliation</Name>
+      <Icon>deflection2a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>4</RequiredLevel>
+        <AbilityId>1200244118</AbilityId>
+        <Description>Deals 1149 to 1270 Physical damage. Must be used after the Warrior has Blocked.</Description>
+        <AddonId>A478A45962ED11763</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>6.000000</Cooldown>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>5</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="1" action="0">0.830000</PowerStatCoefficient>
+        <AggroMultiplier effect="1" action="0">10.000000</AggroMultiplier>
+        <WeaponDamageMultiplier effect="1" action="0">1.240000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>51</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Life&apos;s Rapture</Name>
+      <Icon>paladin-life_rapture_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>50</RequiredLevel>
+        <AbilityId>1211796244</AbilityId>
+        <Description>Reduces damage taken by 10% and restores health equal to 100% of the Warrior&apos;s Maximum Health over 6s on up to 10 party or raid members. The Warrior heals this value instantly.</Description>
+        <AddonId>A483A8B14922C2865</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>120.000008</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <Radius>35.000000</Radius>
+        <MaxAffected>10</MaxAffected>
+        <PowerStatCoefficient effect="1" action="0">1.000000</PowerStatCoefficient>
+        <AggroMultiplier effect="1" action="0">5.000000</AggroMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Light&apos;s Hammer</Name>
+      <Icon>smite2</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1274495851</AbilityId>
+        <Description>Stuns for 3s.</Description>
+        <AddonId>A4BF7436B593C9847</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>60.000004</Cooldown>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Face Slam</Name>
+      <Icon>paladin_face_slam</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1542933015</AbilityId>
+        <Description>Interrupts.</Description>
+        <AddonId>A5BF74A176BE8056A</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>8.000000</Cooldown>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Aggressive Block</Name>
+      <Icon>defstrike2</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1717811945</AbilityId>
+        <Description>Deals 773 to 855 Physical damage. Increases the Warrior&apos;s Block by 3%, and damage done by attacks that must follow a Block by 5% for 15s. Awards 1 Attack Point.</Description>
+        <AddonId>A6663BAE96C8E85E6</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>20</CostEnergy>
+        <GainAttackPoints>1</GainAttackPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">0.450000</PowerStatCoefficient>
+        <AggroMultiplier effect="0" action="0">5.000000</AggroMultiplier>
+        <WeaponDamageMultiplier effect="0" action="0">0.680000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Building Fury</Name>
+      <Icon>carpet_bombing_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1791687720</AbilityId>
+        <Description>Finishers gain a bonus to Attack Power contribution based on how many Attack Points were consumed.</Description>
+        <AddonId>A6ACAFC287CF516B9</AddonId>
+        <IsPassive>True</IsPassive>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>32</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Light&apos;s Decree</Name>
+      <Icon>generic_ability_013</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>32</RequiredLevel>
+        <AbilityId>1804277453</AbilityId>
+        <Description>Deals 2469 to 2729 Life damage to up to 4 enemies. Causes all single target abilities against the enemy to deal an additional 172 damage to up to 5 other enemies. Lasts 12s. Awards 1 Attack Point.</Description>
+        <AddonId>A6B8B16CD6F8B3DB9</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>12.000001</Cooldown>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>20</CostEnergy>
+        <GainAttackPoints>1</GainAttackPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Pacifying Strike</Name>
+      <Icon>spiritstrike5</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1889768018</AbilityId>
+        <Description>Deals 1248 to 1380 Physical damage. Awards 1 Attack Point.</Description>
+        <AddonId>A70A392527C6ED060</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>20</CostEnergy>
+        <GainAttackPoints>1</GainAttackPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="1" action="0">0.900000</PowerStatCoefficient>
+        <AggroMultiplier effect="1" action="0">15.000000</AggroMultiplier>
+        <WeaponDamageMultiplier effect="1" action="0">1.350000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>20</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Judgment</Name>
+      <Icon>doctrine_of_bliss_01_c</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>20</RequiredLevel>
+        <AbilityId>1966120019</AbilityId>
+        <Description>Forces up to 10 nearby enemies to attack the Warrior for 3s.</Description>
+        <AddonId>A75309C536CDDE89C</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>20.000000</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <Radius>10.000000</Radius>
+        <MaxAffected>10</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>48</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Vengeful Decree</Name>
+      <Icon>spiritofcrusader2</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>48</RequiredLevel>
+        <AbilityId>1988948918</AbilityId>
+        <Description>Deals Life damage based on Attack Points to up to 5 enemies:
+
+1 Point: 465 damage.
+2 Points: 902 damage.
+3 Points: 1563 damage.
+</Description>
+        <AddonId>A768CF3B63EE8D6ED</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>22</CostEnergy>
+        <CostAttackPoints>1</CostAttackPoints>
+        <CastTime>Instant</CastTime>
+        <Radius>10.000000</Radius>
+        <MaxAffected>5</MaxAffected>
+      </AbilityRank>
+    </Ability>
+  </Abilities>
+</SoulTree>
+

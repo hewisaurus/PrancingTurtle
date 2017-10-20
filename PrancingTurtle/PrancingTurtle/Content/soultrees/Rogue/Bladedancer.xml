@@ -1,0 +1,1410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SoulTree calling="Rogue" name="Bladedancer">
+  <Traits>
+    <Trait>
+      <Key>0</Key>
+      <Name>Quick Reflexes</Name>
+      <Icon>quick_reflexes</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1036694795</AbilityId>
+          <Description></Description>
+          <AddonId>A3DCAB50B00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Dodge chance by 1%. Increases the Attack Power and Weapon Damage contribution to your melee weapon attacks by 1%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Dodge chance by 2%. Increases the Attack Power and Weapon Damage contribution to your melee weapon attacks by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your Dodge chance by 3%. Increases the Attack Power and Weapon Damage contribution to your melee weapon attacks by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your Dodge chance by 4%. Increases the Attack Power and Weapon Damage contribution to your melee weapon attacks by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your Dodge chance by 5%. Increases the Attack Power and Weapon Damage contribution to your melee weapon attacks by 5%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>1</Key>
+      <Name>Combat Expertise</Name>
+      <Icon>intimidatingweapon1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>619185458</AbilityId>
+          <Description></Description>
+          <AddonId>A24E8053200000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage of your Combo Point generating abilities by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage of your Combo Point generating abilities by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the damage of your Combo Point generating abilities by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases the damage of your Combo Point generating abilities by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases the damage of your Combo Point generating abilities by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>2</Key>
+      <Name>Strike Back</Name>
+      <Icon>deflection4ccc</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1881684685</AbilityId>
+          <Description></Description>
+          <AddonId>A70283ACD00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>You have a 100% chance to strike back at your enemy with both weapons when you block or dodge an attack.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>3</Key>
+      <Name>Reprisal</Name>
+      <Icon>deflection3</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>337457294</AbilityId>
+          <Description>Deals 1018 to 1125 damage. Must be used after the Rogue has Blocked or Dodged. Awards 1 Combo Point.</Description>
+          <AddonId>A141D308E818E3A27</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Melee Weapon</RequiresWeapon>
+          <Cooldown>6.000000</Cooldown>
+          <MaxRange>3.000000</MaxRange>
+          <CostEnergy>10</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <GainComboPoints>1</GainComboPoints>
+          <CastTime>Instant</CastTime>
+          <PowerStatCoefficient effect="0" action="0">0.950000</PowerStatCoefficient>
+          <WeaponDamageMultiplier effect="0" action="0">0.950000</WeaponDamageMultiplier>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>4</Key>
+      <Name>Blade and Fury</Name>
+      <Icon>generic_ability_007_b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Quick Strike and Precision Strike increases the damage of your next Keen Strike or Binary Strike by 10%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your Quick Strike and Precision Strike increases the damage of your next Keen Strike or Binary Strike by 20%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>5</Key>
+      <Name>Improved Deadly Dance</Name>
+      <Icon>combat_pose1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Deadly Dance now increases the damage of your next 3 Combo Point generating abilities by 5% per Combo Point spent. This bonus is applied only to attacks with melee weapons.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Deadly Dance now increases the damage of your next 3 Combo Point generating abilities by 10% per Combo Point spent. This bonus is applied only to attacks with melee weapons.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Deadly Dance now increases the damage of your next 3 Combo Point generating abilities by 15% per Combo Point spent. This bonus is applied only to attacks with melee weapons.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>6</Key>
+      <Name>Sprint</Name>
+      <Icon>tumble1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>265715720</AbilityId>
+          <Description>Increases movement speed by 50% for 15s.</Description>
+          <AddonId>A0FD680088779AB47</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>60.000004</Cooldown>
+          <CostEnergy>10</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+          <Duration>15.000000</Duration>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>7</Key>
+      <Name>Blade Finesse</Name>
+      <Icon>deflect1a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1420134518</AbilityId>
+          <Description></Description>
+          <AddonId>A54A5887600000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage of your Finishers by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage of your Finishers by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the damage of your Finishers by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases the damage of your Finishers by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases the damage of your Finishers by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>8</Key>
+      <Name>Ambidextrous</Name>
+      <Icon>ambidextrous</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>923549927</AbilityId>
+          <Description></Description>
+          <AddonId>A370C40E700000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Dexterity by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Dexterity by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your Dexterity by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your Dexterity by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your Dexterity by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>9</Key>
+      <Name>Blade Tempo</Name>
+      <Icon>blade_tempo</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1951412239</AbilityId>
+          <Description>Increases damage by 30% for 15s.</Description>
+          <AddonId>A7450300FC8778E25</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>120.000008</Cooldown>
+          <CostEnergy>10</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+          <Duration>15.000000</Duration>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>10</Key>
+      <Name>Combat Culmination</Name>
+      <Icon>combat_culmination</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>490555837</AbilityId>
+          <Description></Description>
+          <AddonId>A1D3D49BD6B9A2ADD</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Finishers cause Physical attacks to ignore 2% of your target&apos;s armor per Combo Point for 10 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your Finishers cause Physical attacks to ignore 4% of your target&apos;s armor per Combo Point for 10 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Your Finishers cause Physical attacks to ignore 6% of your target&apos;s armor per Combo Point for 10 seconds.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>11</Key>
+      <Name>Combat Efficiency</Name>
+      <Icon>embolden2a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1783962654</AbilityId>
+          <Description></Description>
+          <AddonId>A6A551C1E00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Finishers give you 1 Energy per Combo Point.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your Finishers give you 2 Energy per Combo Point.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>12</Key>
+      <Name>Meditative Trance</Name>
+      <Icon>paladin-preservation_b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>264342182</AbilityId>
+          <Description>Restores additional health per Combo Point over 12s.
+
+1 Point: 1090 health
+2 Points: 1341 health
+3 Points: 1675 health
+4 Points: 2092 health
+5 Points: 2592 health</Description>
+          <AddonId>A0FC18AA61FF3ED67</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Melee Weapon</RequiresWeapon>
+          <CostEnergy>16</CostEnergy>
+          <ConsumesComboPoints>True</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+          <Duration>12.000000</Duration>
+          <Interval>3.000000</Interval>
+          <PowerStatCoefficient effect="0" action="0">3.670000</PowerStatCoefficient>
+          <AggroMultiplier effect="0" action="0">0.500000</AggroMultiplier>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>13</Key>
+      <Name>Contra Tempo</Name>
+      <Icon>steelskin3</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>389407123</AbilityId>
+          <Description></Description>
+          <AddonId>A1735E19300000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the Attack Power and Weapon Damage contribution to your offhand attacks by 7%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the Attack Power and Weapon Damage contribution to your offhand attacks by 14%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the Attack Power and Weapon Damage contribution to your offhand attacks by 21%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases the Attack Power and Weapon Damage contribution to your offhand attacks by 28%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases the Attack Power and Weapon Damage contribution to your offhand attacks by 35%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>14</Key>
+      <Name>Hack and Slash</Name>
+      <Icon>doctrine_of_authority_01_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-11016241</AbilityId>
+          <Description></Description>
+          <AddonId>AFF57E7CF00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Successful Critical Hits increase your damage by 3% and reduce damage taken by 1%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Successful Critical Hits increase your damage by 6% and reduce damage taken by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Successful Critical Hits increase your damage by 9% and reduce damage taken by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Successful Critical Hits increase your damage by 12% and reduce damage taken by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Successful Critical Hits increase your damage by 15% and reduce damage taken by 5%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>15</Key>
+      <Name>Counterbalance</Name>
+      <Icon>rudeawake1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>175028416</AbilityId>
+          <Description></Description>
+          <AddonId>A0A6EB8C000000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces the cooldown time of all Rhythmic Actions by 15 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces the cooldown time of all Rhythmic Actions by 30 seconds.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>16</Key>
+      <Name>Vivacity</Name>
+      <Icon>discombobulate3a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>2037010444</AbilityId>
+          <Description></Description>
+          <AddonId>A796A500C00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your maximum Energy by 5. Increases the damage of all Bladedancer abilities by 5%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your maximum Energy by 10. Increases the damage of all Bladedancer abilities by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>17</Key>
+      <Name>Dual Mastery</Name>
+      <Icon>harbinger_blademark</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-17988902</AbilityId>
+          <Description></Description>
+          <AddonId>AFEED82DA00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage of your Bladedancer attacks by 5%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage of your Bladedancer attacks by 10%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the damage of your Bladedancer attacks by 15%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>18</Key>
+      <Name>Blade Hustle</Name>
+      <Icon>finalstrike1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-69057550</AbilityId>
+          <Description></Description>
+          <AddonId>AFBE243F200000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+          <Interval>3.000000</Interval>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the duration of your Rhythmic abilities by 3 seconds. You gain Blade Hustle every 3s, increasing the damage of your next Quick Strike or Precision Strike by 5%. Stacks up to 5 times unless consumed.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the duration of your Rhythmic abilities by 6 seconds. You gain Blade Hustle every 3s, increasing the damage of your next Quick Strike or Precision Strike by 10%. Stacks up to 5 times unless consumed.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the duration of your Rhythmic abilities by 9 seconds. You gain Blade Hustle every 3s, increasing the damage of your next Quick Strike or Precision Strike by 15%. Stacks up to 5 times unless consumed.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>19</Key>
+      <Name>Dancing Steel</Name>
+      <Icon>dancing_steel</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>2124791585</AbilityId>
+          <Description>Deals 5371 to 5937 over 6s with each weapon to up to 8 enemies. Grants immunity to crowd control to the Rogue. Allows movement.</Description>
+          <AddonId>A7EA5BF21C273EFE8</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Melee Weapon</RequiresWeapon>
+          <Cooldown>30.000002</Cooldown>
+          <CostEnergy>40</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+          <Channel>true</Channel>
+          <Duration>6.000000</Duration>
+          <Interval>1.000000</Interval>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>20</Key>
+      <Name>Dauntless Strike</Name>
+      <Icon>finalstrike2</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>106049083</AbilityId>
+          <Description>Deals additional damage per Combo Point. Increases the chance for the enemy to be Critically Hit by 5% for a duration based on Combo Points.
+
+1 Point: 938 damage, 20s
+2 Points: 1201 damage, 30s
+3 Points: 1553 damage, 40s
+4 Points: 1992 damage, 50s
+5 Points: 2519 damage, 60s</Description>
+          <AddonId>A06522E3B1A1C4AB0</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Melee Weapon</RequiresWeapon>
+          <MaxRange>3.000000</MaxRange>
+          <CostEnergy>16</CostEnergy>
+          <ConsumesComboPoints>True</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+          <PowerStatCoefficient effect="0" action="0">2.350000</PowerStatCoefficient>
+          <WeaponDamageMultiplier effect="0" action="0">2.350000</WeaponDamageMultiplier>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>21</Key>
+      <Name>Duelist Pose</Name>
+      <Icon>warlord_ready_posture_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-96129820</AbilityId>
+          <Description></Description>
+          <AddonId>AFA452CE400000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Successful Critical Hits with Bladedancer abilities increase your Attack Power and Weapon Damage by 2% per stack. Maximum 5 stacks. Lasts 30s.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Successful Critical Hits with Bladedancer abilities increase your Attack Power and Weapon Damage by 4% per stack. Maximum 5 stacks. Lasts 30s.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>22</Key>
+      <Name>Hundred Blades</Name>
+      <Icon>bladedancer_hundred_blades_c</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>40</MinimumPointsSpent>
+      <DisplayRow>8</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-74491293</AbilityId>
+          <Description>Deals 5371 to 5937 damage over 6s with each weapon to up to 8 enemies in a cone within 20 meters of the Rogue. Allows movement.</Description>
+          <AddonId>AFB8F5A63DA5A1387</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Melee Weapon</RequiresWeapon>
+          <Cooldown>30.000002</Cooldown>
+          <CostEnergy>40</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+          <Channel>true</Channel>
+          <Duration>6.000000</Duration>
+          <Interval>1.000000</Interval>
+          <Radius>20.000000</Radius>
+          <MaxAffected>8</MaxAffected>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>23</Key>
+      <Name>Defensive Pose</Name>
+      <Icon>tempest_close_training_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-12273355</AbilityId>
+          <Description>Increases movement speed by 15%. Reduces damage taken by 5%. Heals for 1% of Maximum Health every 2 seconds. Reduces Energy Regeneration Rate by 5/s. Toggled ability. Lasts until canceled.</Description>
+          <AddonId>AFF44B93591CA40BB</AddonId>
+          <IsPassive>False</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+          <PowerStatCoefficient effect="1" action="0">0.000000E+000</PowerStatCoefficient>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+  </Traits>
+  <Abilities>
+    <Ability>
+      <MinimumPointsInSoul>58</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Binary Strike</Name>
+      <Icon>paragon_shifting_blades_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>57</RequiredLevel>
+        <AbilityId>-89048601</AbilityId>
+        <Description>Deals 1194 to 1320 combined weapon damage. Awards 1 Combo Point.</Description>
+        <AddonId>AFAB139E77D2712F2</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>24</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>1</GainComboPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">1.020000</PowerStatCoefficient>
+        <WeaponDamageMultiplier effect="0" action="0">1.020000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Hundred Blades</Name>
+      <Icon>bladedancer_hundred_blades_c</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-74491293</AbilityId>
+        <Description>Deals 5371 to 5937 damage over 6s with each weapon to up to 8 enemies in a cone within 20 meters of the Rogue. Allows movement.</Description>
+        <AddonId>AFB8F5A63DA5A1387</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>30.000002</Cooldown>
+        <CostEnergy>40</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Channel>true</Channel>
+        <Duration>6.000000</Duration>
+        <Interval>1.000000</Interval>
+        <Radius>20.000000</Radius>
+        <MaxAffected>8</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>54</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Double Strike</Name>
+      <Icon>paragon_path_of_the_tempest_01_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>53</RequiredLevel>
+        <AbilityId>-60449485</AbilityId>
+        <Description>Deals combined weapon damage plus additional damage per Combo Point.
+
+1 Point: 1145 damage
+2 Points: 1450 damage
+3 Points: 1858 damage
+4 Points: 2367 damage
+5 Points: 2979 damage</Description>
+        <AddonId>AFC659D33681BCF67</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>16</CostEnergy>
+        <ConsumesComboPoints>True</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">2.590000</PowerStatCoefficient>
+        <WeaponDamageMultiplier effect="0" action="0">2.590000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>61</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Fated Blades</Name>
+      <Icon>harbinger_phantom_blades</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>60</RequiredLevel>
+        <AbilityId>-41630703</AbilityId>
+        <Description>Increases Attack Power contribution to all Bladedancer attacks by 150% and causes them to completely ignore the enemy&apos;s Armor. Lasts 15s.</Description>
+        <AddonId>AFD84C411CF6C17C7</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>120.000008</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Duration>15.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Bladedancer Mastery</Name>
+      <Icon>combat_pose</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-37259109</AbilityId>
+        <Description>Increases damage by 1% for each point spent in the Bladedancer soul.</Description>
+        <AddonId>AFDC7789B9331636F</AddonId>
+        <IsPassive>True</IsPassive>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Defensive Pose</Name>
+      <Icon>tempest_close_training_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-12273355</AbilityId>
+        <Description>Increases movement speed by 15%. Reduces damage taken by 5%. Heals for 1% of Maximum Health every 2 seconds. Reduces Energy Regeneration Rate by 5/s. Toggled ability. Lasts until canceled.</Description>
+        <AddonId>AFF44B93591CA40BB</AddonId>
+        <IsPassive>False</IsPassive>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="1" action="0">0.000000E+000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>36</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Disassemble</Name>
+      <Icon>disabling4</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>36</RequiredLevel>
+        <AbilityId>68896768</AbilityId>
+        <Description>Debilitates for 6s.</Description>
+        <AddonId>A041B4800A97AD250</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Duration>6.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>44</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Disengage</Name>
+      <Icon>defensivestrike3</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>44</RequiredLevel>
+        <AbilityId>90085581</AbilityId>
+        <Description>Stuns for 4s. Awards 1 Combo Point.</Description>
+        <AddonId>A055E98CDA269CBD9</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>20.000000</Cooldown>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>1</GainComboPoints>
+        <CastTime>Instant</CastTime>
+        <Duration>4.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Keen Strike</Name>
+      <Icon>disabling1a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>93296395</AbilityId>
+        <Description>Deals 911 to 1007 damage. Awards 1 Combo Point.</Description>
+        <AddonId>A058F970B4E96ED0E</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>24</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>1</GainComboPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">0.850000</PowerStatCoefficient>
+        <WeaponDamageMultiplier effect="0" action="0">0.850000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Dauntless Strike</Name>
+      <Icon>finalstrike2</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>106049083</AbilityId>
+        <Description>Deals additional damage per Combo Point. Increases the chance for the enemy to be Critically Hit by 5% for a duration based on Combo Points.
+
+1 Point: 938 damage, 20s
+2 Points: 1201 damage, 30s
+3 Points: 1553 damage, 40s
+4 Points: 1992 damage, 50s
+5 Points: 2519 damage, 60s</Description>
+        <AddonId>A06522E3B1A1C4AB0</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>16</CostEnergy>
+        <ConsumesComboPoints>True</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">2.350000</PowerStatCoefficient>
+        <WeaponDamageMultiplier effect="0" action="0">2.350000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>40</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Dualism</Name>
+      <Icon>deflection1a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>40</RequiredLevel>
+        <AbilityId>145381789</AbilityId>
+        <Description>Allows Quick Strike and Precision Strike to hit twice and add an additional Combo Point for 15s.</Description>
+        <AddonId>A08AA599D54EC42EA</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>120.000008</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Duration>15.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>8</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Flash of Steel</Name>
+      <Icon>charge3</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>8</RequiredLevel>
+        <AbilityId>212560084</AbilityId>
+        <Description>Charges at the enemy, dealing 846 to 936 damage. Roots for 1.5s. Removes all movement impairing effects from the Rogue. Awards 2 Combo Points.</Description>
+        <AddonId>A0CAB68D488191DA7</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>15.000001</Cooldown>
+        <MinRange>3.000000</MinRange>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>24</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>2</GainComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Meditative Trance</Name>
+      <Icon>paladin-preservation_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>264342182</AbilityId>
+        <Description>Restores additional health per Combo Point over 12s.
+
+1 Point: 1090 health
+2 Points: 1341 health
+3 Points: 1675 health
+4 Points: 2092 health
+5 Points: 2592 health</Description>
+        <AddonId>A0FC18AA61FF3ED67</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <CostEnergy>16</CostEnergy>
+        <ConsumesComboPoints>True</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Duration>12.000000</Duration>
+        <Interval>3.000000</Interval>
+        <PowerStatCoefficient effect="0" action="0">3.670000</PowerStatCoefficient>
+        <AggroMultiplier effect="0" action="0">0.500000</AggroMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Sprint</Name>
+      <Icon>tumble1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>265715720</AbilityId>
+        <Description>Increases movement speed by 50% for 15s.</Description>
+        <AddonId>A0FD680088779AB47</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Duration>15.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Reprisal</Name>
+      <Icon>deflection3</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>337457294</AbilityId>
+        <Description>Deals 1018 to 1125 damage. Must be used after the Rogue has Blocked or Dodged. Awards 1 Combo Point.</Description>
+        <AddonId>A141D308E818E3A27</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>6.000000</Cooldown>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>1</GainComboPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">0.950000</PowerStatCoefficient>
+        <WeaponDamageMultiplier effect="0" action="0">0.950000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>48</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Untangle</Name>
+      <Icon>untangle</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>48</RequiredLevel>
+        <AbilityId>545137137</AbilityId>
+        <Description>Removes all crowd control effects. Grants immunity to crowd control for 8s.</Description>
+        <AddonId>A207E21F18888BFCF</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>120.000008</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>20</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Compound Attack</Name>
+      <Icon>charge2</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>20</RequiredLevel>
+        <AbilityId>676725229</AbilityId>
+        <Description>Deals additional damage per Combo Point to up to 5 enemies.
+
+1 Point: 562 damage
+2 Points: 720 damage
+3 Points: 931 damage
+4 Points: 1195 damage
+5 Points: 1511 damage</Description>
+        <AddonId>A285601EDBF8C7BD1</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>18</CostEnergy>
+        <ConsumesComboPoints>True</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Radius>7.000000</Radius>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>12</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Weapon Barrage</Name>
+      <Icon>weapon_barrage</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>12</RequiredLevel>
+        <AbilityId>1036528302</AbilityId>
+        <Description>Interrupts. If Interrupt is successful, Debilitates for  5s.</Description>
+        <AddonId>A3DC82AAEAEB2F5B3</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>10.000000</Cooldown>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>16</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Twin Strike</Name>
+      <Icon>twin_strike_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>16</RequiredLevel>
+        <AbilityId>1062562520</AbilityId>
+        <Description>Deals 546 to 604 damage. Deals 546 to 604 offhand damage to up to 4 other nearby enemies. Awards 1 Combo Point.</Description>
+        <AddonId>A3F556AD86482C8F1</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>26</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>1</GainComboPoints>
+        <CastTime>Instant</CastTime>
+        <Radius>7.000000</Radius>
+        <PowerStatCoefficient effect="1" action="0">0.510000</PowerStatCoefficient>
+        <WeaponDamageMultiplier effect="1" action="0">0.510000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>51</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Blade and Soul Parity</Name>
+      <Icon>revitalize1c</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>50</RequiredLevel>
+        <AbilityId>1122861576</AbilityId>
+        <Description>Rogue abilities no longer cost Energy. Increases Critical Hit chance by 50% and Critical Hit damage by 50% for 15s.</Description>
+        <AddonId>A42ED82088A1FC750</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>120.000008</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Duration>15.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>24</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Precision Strike</Name>
+      <Icon>critical2a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>24</RequiredLevel>
+        <AbilityId>1196909451</AbilityId>
+        <Description>Deals 1029 to 1137 offhand damage. Must be used after the Rogue uses Keen Strike or Binary Strike. Awards 2 Combo Points. Cannot be parried or dodged.</Description>
+        <AddonId>A4757638B5B9F8E1E</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Dual Wield Weapons</RequiresWeapon>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>24</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>2</GainComboPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">0.960000</PowerStatCoefficient>
+        <WeaponDamageMultiplier effect="0" action="0">0.960000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>4</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Quick Strike</Name>
+      <Icon>sweep3b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>4</RequiredLevel>
+        <AbilityId>1277127007</AbilityId>
+        <Description>Deals 1136 to 1255 offhand damage. Must be used after the Rogue uses Keen Strike or Binary Strike. Awards 1 Combo Point.</Description>
+        <AddonId>A4C1F695F8DAAABBF</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Dual Wield Weapons</RequiresWeapon>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>24</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>1</GainComboPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">1.060000</PowerStatCoefficient>
+        <WeaponDamageMultiplier effect="0" action="0">1.060000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>28</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Combat Preparation</Name>
+      <Icon>combat_pose1_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>28</RequiredLevel>
+        <AbilityId>1496501054</AbilityId>
+        <Description>Increases Dexterity by 70 on all party or raid members. Lasts 1h.</Description>
+        <AddonId>A5932CB3E5D051755</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Radius>35.000000</Radius>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>2</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Deadly Dance</Name>
+      <Icon>combat_pose1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>2</RequiredLevel>
+        <AbilityId>1683478228</AbilityId>
+        <Description>Bladedancer Finishers increase the damage of the Rogue&apos;s next Combo Point generating ability by 3% per Combo Point used. This bonus is applied only to attacks with melee weapons.</Description>
+        <AddonId>A6457D6D46B7BF06D</AddonId>
+        <IsPassive>True</IsPassive>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>2</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Deadly Strike</Name>
+      <Icon>roguestrike2a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>2</RequiredLevel>
+        <AbilityId>1789543338</AbilityId>
+        <Description>Deals additional damage per Combo Point.
+
+1 Point: 938 damage
+2 Points: 1201 damage
+3 Points: 1553 damage
+4 Points: 1992 damage
+5 Points: 2519 damage</Description>
+        <AddonId>A6AAA43AA85C7634E</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>16</CostEnergy>
+        <ConsumesComboPoints>True</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">2.350000</PowerStatCoefficient>
+        <WeaponDamageMultiplier effect="0" action="0">2.350000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Side Steps</Name>
+      <Icon>side_steps</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1792681436</AbilityId>
+        <Description>Increases Dodge by 50% for 15s.</Description>
+        <AddonId>A6ADA25DCE98B047B</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>120.000008</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Duration>15.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>32</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Double Coup</Name>
+      <Icon>deflection4cc</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>32</RequiredLevel>
+        <AbilityId>1809451313</AbilityId>
+        <Description>Increases the damage of all Bladedancer Combo Point generating attacks by 85% for 15s.</Description>
+        <AddonId>A6BDA0931731F4FC8</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>120.000008</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Duration>15.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Blade Tempo</Name>
+      <Icon>blade_tempo</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1951412239</AbilityId>
+        <Description>Increases damage by 30% for 15s.</Description>
+        <AddonId>A7450300FC8778E25</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>120.000008</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Duration>15.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Dancing Steel</Name>
+      <Icon>dancing_steel</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>2124791585</AbilityId>
+        <Description>Deals 5371 to 5937 over 6s with each weapon to up to 8 enemies. Grants immunity to crowd control to the Rogue. Allows movement.</Description>
+        <AddonId>A7EA5BF21C273EFE8</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>30.000002</Cooldown>
+        <CostEnergy>40</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Channel>true</Channel>
+        <Duration>6.000000</Duration>
+        <Interval>1.000000</Interval>
+      </AbilityRank>
+    </Ability>
+  </Abilities>
+</SoulTree>
+

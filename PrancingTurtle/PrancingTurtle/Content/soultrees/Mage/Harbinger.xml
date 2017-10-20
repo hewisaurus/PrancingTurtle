@@ -1,0 +1,1376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SoulTree calling="Mage" name="Harbinger">
+  <Traits>
+    <Trait>
+      <Key>0</Key>
+      <Name>Leaf on the Wind</Name>
+      <Icon>triage2a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-38731557</AbilityId>
+          <Description></Description>
+          <AddonId>AFDB100DB6E7B4DA7</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Dodge chance by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Dodge chance by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your Dodge chance by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your Dodge chance by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your Dodge chance by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>1</Key>
+      <Name>Eldritch Knowledge</Name>
+      <Icon>talented_composer</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-95812806</AbilityId>
+          <Description></Description>
+          <AddonId>AFA4A033A4A39506D</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Spell Power by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Spell Power by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your Spell Power by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your Spell Power by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your Spell Power by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>2</Key>
+      <Name>Natural Swiftness</Name>
+      <Icon>doctrine_of_authority_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-3488532</AbilityId>
+          <Description></Description>
+          <AddonId>AFFCAC4EC30BB5F77</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your movement speed by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your movement speed by 8%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>3</Key>
+      <Name>Nimble Blade</Name>
+      <Icon>paragon_improved_flowing_strikes_01_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-56086529</AbilityId>
+          <Description></Description>
+          <AddonId>AFCA82FFF5DE75812</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage of your Slashing attacks by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage of your Slashing attacks by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the damage of your Slashing attacks by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases the damage of your Slashing attacks by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases the damage of your Slashing attacks by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>4</Key>
+      <Name>Blazing Light</Name>
+      <Icon>harbinger_blazing_light</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-92460198</AbilityId>
+          <Description>Deals 1533 Life damage over 16s. Increases the Mage&apos;s Dodge chance by 10%.</Description>
+          <AddonId>AFA7D2B5A414C1977</AddonId>
+          <IsPassive>False</IsPassive>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>7.500000</CostManaPercent>
+          <GainHeat>9</GainHeat>
+          <CastTime>Instant</CastTime>
+          <Duration>16.000000</Duration>
+          <Interval>2.000000</Interval>
+          <PowerStatCoefficient effect="0" action="0">2.000000</PowerStatCoefficient>
+          <DamageMultiplier effect="0" action="0">0.111000</DamageMultiplier>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>5</Key>
+      <Name>Magnetic Blade</Name>
+      <Icon>deflection4b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Blade buffs and Lightning Charge increase your Mana Regeneration rate by 2% and increase the damage of your Slashing attacks by 1%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Blade buffs and Lightning Charge increase your Mana Regeneration rate by 4% and increase the damage of your Slashing attacks by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Blade buffs and Lightning Charge increase your Mana Regeneration rate by 6% and increase the damage of your Slashing attacks by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Blade buffs and Lightning Charge increase your Mana Regeneration rate by 8% and increase the damage of your Slashing attacks by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Blade buffs and Lightning Charge increase your Mana Regeneration rate by 10% and increase the damage of your Slashing attacks by 5%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>6</Key>
+      <Name>Intensity</Name>
+      <Icon>bomb_time</Icon>
+      <PrereqTraitKey>7</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage bonus Piercing Beam gives to your Slashing attacks by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage bonus Piercing Beam gives to your Slashing attacks by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the damage bonus Piercing Beam gives to your Slashing attacks by 6%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>7</Key>
+      <Name>Piercing Beam</Name>
+      <Icon>harbinger_piercing_beam</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-47300634</AbilityId>
+          <Description>Deals 536 to 593 Life damage. Increases the damage slashing attacks deal to the enemy by 5% for 30s. Counts as a Slashing attack.</Description>
+          <AddonId>AFD2E3FE678B720BB</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Melee Weapon</RequiresWeapon>
+          <Cooldown>4.000000</Cooldown>
+          <MaxRange>3.000000</MaxRange>
+          <CostManaPercent>7.500000</CostManaPercent>
+          <GainHeat>9</GainHeat>
+          <CastTime>Instant</CastTime>
+          <PowerStatCoefficient effect="0" action="0">0.800000</PowerStatCoefficient>
+          <WeaponDamageMultiplier effect="0" action="0">0.000000E+000</WeaponDamageMultiplier>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>8</Key>
+      <Name>Disabling Shock</Name>
+      <Icon>harbinger_disabling_shock_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-70376451</AbilityId>
+          <Description>Stuns for 5s.</Description>
+          <AddonId>AFBCE23FDCCB100C5</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>30.000002</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>4.500000</CostManaPercent>
+          <GainHeat>9</GainHeat>
+          <CastTime>Instant</CastTime>
+          <Duration>5.000000</Duration>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>9</Key>
+      <Name>Razor&apos;s Edge</Name>
+      <Icon>generic_ability_015</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-23820125</AbilityId>
+          <Description></Description>
+          <AddonId>AFE9488A318A89A26</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces the cast time of your Vorpal Slash by 50%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reduces the cast time of your Vorpal Slash by 100%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>10</Key>
+      <Name>Lightning Riposte</Name>
+      <Icon>harbinger_phantom_blades_b</Icon>
+      <BendType>VerticalToHorizontal</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-38876451</AbilityId>
+          <Description></Description>
+          <AddonId>AFDAECADD769AEF39</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>When you Dodge an attack, you have a 50% chance to deal damage, based on your Spell Power, to the attacker.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>When you Dodge an attack, you have a 100% chance to deal damage, based on your Spell Power, to the attacker.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>11</Key>
+      <Name>Planar Retreat</Name>
+      <Icon>harbinger_planar_retreat</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-62271131</AbilityId>
+          <Description>Teleports the Mage backwards 20 meters. Removes all crowd control effects.</Description>
+          <AddonId>AFC49D165E55982E7</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>30.000002</Cooldown>
+          <CostManaPercent>4.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>12</Key>
+      <Name>Jagged Blades</Name>
+      <Icon>rogueshottwo3</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>487536302</AbilityId>
+          <Description></Description>
+          <AddonId>A1D0F36AE48FE0A14</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage of your Lightning Blade and Reaper&apos;s Blade by 20%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage of your Lightning Blade and Reaper&apos;s Blade by 40%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>13</Key>
+      <Name>Improved Blade Rush</Name>
+      <Icon>embolden2a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-82950755</AbilityId>
+          <Description></Description>
+          <AddonId>AFB0E459D54B2542D</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Allows Blade Rush to be used in combat and gives it a 50% chance to stun the enemy for up to 4 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Allows Blade Rush to be used in combat and gives it a 100% chance to stun the enemy for up to 4 seconds.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>14</Key>
+      <Name>Eldritch Power</Name>
+      <Icon>void_knight-insatiable_hunger_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the cast time reduction provided by the Eldritch Armor proc to 2.25 seconds and reduces the global cooldown of cast time abilities using the proc effect to 1 second.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the cast time reduction provided by the Eldritch Armor proc to 2.5 seconds and reduces the global cooldown of cast time abilities using the proc effect to 0.5 seconds.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>15</Key>
+      <Name>Light Nova</Name>
+      <Icon>blindinglight3</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Lucent Slash will refresh your active Blazing Light on the enemy.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>16</Key>
+      <Name>Insult to Injury</Name>
+      <Icon>ward2</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-54091759</AbilityId>
+          <Description></Description>
+          <AddonId>AFCC6A011051AD4BB</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your successful Critical Hits have a 50% chance to place an absorb shield on you for up to 5 seconds, absorbing up to 5% of your Maximum Health. This cannot occur more than once every 10 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your successful Critical Hits have a 100% chance to place an absorb shield on you for up to 5 seconds, absorbing up to 5% of your Maximum Health. This cannot occur more than once every 10 seconds.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>17</Key>
+      <Name>Conditioned Response</Name>
+      <Icon>harbinger_conditioned_response_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-37274339</AbilityId>
+          <Description>Restores 203 to 225 health to the Mage. Cooldown is reset if the Mage is Critically Hit. Cannot reset more than once every 5s.</Description>
+          <AddonId>AFDC73D1D6942CED4</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>30.000002</Cooldown>
+          <CostManaPercent>7.500000</CostManaPercent>
+          <GainHeat>9</GainHeat>
+          <CastTime>Instant</CastTime>
+          <PowerStatCoefficient effect="0" action="0">0.600000</PowerStatCoefficient>
+          <AggroMultiplier effect="0" action="0">0.250000</AggroMultiplier>
+        </Ability>
+        <Ability>
+          <AbilityId>-37274339</AbilityId>
+          <Description>Restores 203 to 225 health to the Mage. Cooldown is reset if the Mage is Critically Hit. Cannot reset more than once every 5s.</Description>
+          <AddonId>AFDC73D1D6942CED4</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>30.000002</Cooldown>
+          <CostManaPercent>7.500000</CostManaPercent>
+          <GainHeat>9</GainHeat>
+          <CastTime>Instant</CastTime>
+          <PowerStatCoefficient effect="0" action="0">0.600000</PowerStatCoefficient>
+          <AggroMultiplier effect="0" action="0">0.250000</AggroMultiplier>
+        </Ability>
+        <Ability>
+          <AbilityId>-98161107</AbilityId>
+          <Description></Description>
+          <AddonId>AFA262E2D06728F65</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>18</Key>
+      <Name>Phase Step</Name>
+      <Icon>harbinger_phase_step</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-96179687</AbilityId>
+          <Description>Teleports the Mage behind up to 5 enemies, dealing 966 to 1067 Air damage to each.</Description>
+          <AddonId>AFA446A198E4B0E34</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Melee Weapon</RequiresWeapon>
+          <Cooldown>30.000002</Cooldown>
+          <MaxRange>15.000000</MaxRange>
+          <CostManaPercent>9.000000</CostManaPercent>
+          <GainHeat>9</GainHeat>
+          <CastTime>Instant</CastTime>
+          <Radius>7.000000</Radius>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>19</Key>
+      <Name>Desperate Response</Name>
+      <Icon>harbinger_conditioned_response</Icon>
+      <PrereqTraitKey>17</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-33032749</AbilityId>
+          <Description></Description>
+          <AddonId>AFE07F5D3529318A9</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Gives your Conditioned Response a 10% chance to reset its cooldown when you are damaged while below 50% health. Cannot occur more than once every 5 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Gives your Conditioned Response a 20% chance to reset its cooldown when you are damaged while below 50% health. Cannot occur more than once every 5 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Gives your Conditioned Response a 30% chance to reset its cooldown when you are damaged while below 50% health. Cannot occur more than once every 5 seconds.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>20</Key>
+      <Name>Furious Assault</Name>
+      <Icon>whirlingblades2</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-17160158</AbilityId>
+          <Description></Description>
+          <AddonId>AFEFA28222B0E254B</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces the global cooldown generated by your Slashing and Ethereal attacks to 1.25 seconds and reduces their mana cost by 16%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reduces the global cooldown generated by your Slashing and Ethereal attacks to 1 second and reduces their mana cost by 33%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>21</Key>
+      <Name>Blademark</Name>
+      <Icon>harbinger_blademark_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-24997276</AbilityId>
+          <Description>Marks the enemy for 15s. Damaging single target attacks by the Mage on another enemy, deal their damage to the marked enemy as well. Reduces the Mage&apos;s damage by 10%.</Description>
+          <AddonId>AFE8292648D1C7DA0</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>60.000004</Cooldown>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>4.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+          <Duration>15.000000</Duration>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>22</Key>
+      <Name>Healing Reflex</Name>
+      <Icon>coda_of_wrath</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-95008044</AbilityId>
+          <Description></Description>
+          <AddonId>AFA564AD44A416DC0</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Incoming damage has a 5% chance to cause you to heal for 5% of your Maximum Health. Cannot occur more than once every 3 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Incoming damage has a 10% chance to cause you to heal for 5% of your Maximum Health. Cannot occur more than once every 3 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Incoming damage has a 15% chance to cause you to heal for 5% of your Maximum Health. Cannot occur more than once every 3 seconds.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>23</Key>
+      <Name>Living Charge</Name>
+      <Icon>harbinger_charged_blade_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>In addition to its original effects, Charged Blade increases all damage by 5%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>In addition to its original effects, Charged Blade increases all damage by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>24</Key>
+      <Name>Reaper&apos;s Blade</Name>
+      <Icon>harbinger_reapers_blade</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>40</MinimumPointsSpent>
+      <DisplayRow>8</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-34563491</AbilityId>
+          <Description>Summons a deadly scythe of magical energy. Slashing attacks deal an additional 53 Life damage and heals the Mage by 11. All other damaging attacks have a 30% chance to trigger this effect. Increases the Mage&apos;s damage by 10% for 15s if an enemy dies within 5s of the Mage damaging them. Lasts 1h.</Description>
+          <AddonId>AFDF09A5D3F0CB7F5</AddonId>
+          <IsPassive>False</IsPassive>
+          <CostManaPercent>7.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>25</Key>
+      <Name>Combat Mastery</Name>
+      <Icon>weaponsmith1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-22267312</AbilityId>
+          <Description></Description>
+          <AddonId>AFEAC3A50464F24F2</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your damage by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your damage by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your damage by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your damage by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your damage by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+  </Traits>
+  <Abilities>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Phase Step</Name>
+      <Icon>harbinger_phase_step_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-96179687</AbilityId>
+        <Description>Teleports the Mage behind up to 5 enemies, dealing 966 to 1067 Air damage to each.</Description>
+        <AddonId>AFA446A198E4B0E34</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>15.000000</MaxRange>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+        <Radius>7.000000</Radius>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Blazing Light</Name>
+      <Icon>harbinger_blazing_light</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-92460198</AbilityId>
+        <Description>Deals 1533 Life damage over 16s. Increases the Mage&apos;s Dodge chance by 10%.</Description>
+        <AddonId>AFA7D2B5A414C1977</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+        <Duration>16.000000</Duration>
+        <Interval>2.000000</Interval>
+        <PowerStatCoefficient effect="0" action="0">2.000000</PowerStatCoefficient>
+        <DamageMultiplier effect="0" action="0">0.111000</DamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>51</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Tempest Winds</Name>
+      <Icon>harbinger_tempest_wind_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>50</RequiredLevel>
+        <AbilityId>-85018197</AbilityId>
+        <Description>Deals 2964 Air damage over 3s. Deals an additional 847 to 936 Air damage after 3s. Counts as a Slashing attack. Can move while channeling. Requires a Harbinger weapon buff.</Description>
+        <AddonId>AFAEEB9ABDAECE7C3</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>20.000000</Cooldown>
+        <MaxRange>3.000000</MaxRange>
+        <CostManaPercent>15.000000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+        <Channel>true</Channel>
+        <Duration>3.000000</Duration>
+        <Interval>1.000000</Interval>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>4</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Eldritch Armor</Name>
+      <Icon>harbinger_eldritch_armor</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>4</RequiredLevel>
+        <AbilityId>-80555013</AbilityId>
+        <Description>Grants the Mage&apos;s slashing attacks a 40% chance to reduce the cast time of their next ability by 2s and mana cost by 40%. Cannot occur more than once every 3s. Lasts 1h. Counts as a Mage Armor.</Description>
+        <AddonId>AFB32D3FB9FFE6C5E</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>2.250000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>32</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Vengeful Shock</Name>
+      <Icon>harbinger_vengeful_shock_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>32</RequiredLevel>
+        <AbilityId>-76991374</AbilityId>
+        <Description>Deals 1164 to 1287 Air damage. Must be used after the enemy Dodges, Blocks or Resists one of the Mage&apos;s attacks.</Description>
+        <AddonId>AFB693472D05C8866</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>10.000000</Cooldown>
+        <MaxRange>3.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">1.600000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Disabling Shock</Name>
+      <Icon>harbinger_disabling_shock_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-70376451</AbilityId>
+        <Description>Stuns for 5s.</Description>
+        <AddonId>AFBCE23FDCCB100C5</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+        <Duration>5.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>12</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Vorpal Slash</Name>
+      <Icon>harbinger_vorpal_slash</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>12</RequiredLevel>
+        <AbilityId>-70335865</AbilityId>
+        <Description>Deals up to 603 to 667 Life damage. Deals an additional 100% of damage done over 8s.</Description>
+        <AddonId>AFBCEC2877644D13C</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>8.000000</Cooldown>
+        <MaxRange>3.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <GainHeat>11</GainHeat>
+        <CastTime>1.500000</CastTime>
+        <PowerStatCoefficient effect="0" action="0">0.900000</PowerStatCoefficient>
+        <WeaponDamageMultiplier effect="0" action="0">0.000000E+000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>24</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Lucent Slash</Name>
+      <Icon>harbinger_lucent_slash</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>24</RequiredLevel>
+        <AbilityId>-66963788</AbilityId>
+        <Description>Deals 362 to 400 Life damage to up to 5 enemies, and an additional 254 Life damage over 3s.</Description>
+        <AddonId>AFC0236B4E814FDD7</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+        <Radius>7.000000</Radius>
+        <MaxAffected>5</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Planar Retreat</Name>
+      <Icon>harbinger_planar_retreat</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-62271131</AbilityId>
+        <Description>Teleports the Mage backwards 20 meters. Removes all crowd control effects.</Description>
+        <AddonId>AFC49D165E55982E7</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>36</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Glaring Fetters</Name>
+      <Icon>harbinger_binding_fetters</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>36</RequiredLevel>
+        <AbilityId>-60780127</AbilityId>
+        <Description>Snares the enemy, reducing their movement speed by 30% for 10s. Deals 230 Life damage each second the enemy is moving.</Description>
+        <AddonId>AFC6091A1C9C57D7D</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>20.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>28</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Planar Shield</Name>
+      <Icon>harbinger_planar_shield</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>28</RequiredLevel>
+        <AbilityId>-54355690</AbilityId>
+        <Description>Reduces the damage of the next 5 incoming attacks by 5% of the Mage&apos;s Maximum Health. Lasts up to 30s.</Description>
+        <AddonId>AFCC299167C2137B2</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>1.000000</Cooldown>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <MinimumHeat>50</MinimumHeat>
+        <CastTime>Instant</CastTime>
+        <Duration>30.000002</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Piercing Beam</Name>
+      <Icon>harbinger_piercing_beam</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-47300634</AbilityId>
+        <Description>Deals 536 to 593 Life damage. Increases the damage slashing attacks deal to the enemy by 5% for 30s. Counts as a Slashing attack.</Description>
+        <AddonId>AFD2E3FE678B720BB</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>4.000000</Cooldown>
+        <MaxRange>3.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">0.800000</PowerStatCoefficient>
+        <WeaponDamageMultiplier effect="0" action="0">0.000000E+000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>61</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Empyrean Ascension</Name>
+      <Icon>harbinger_empyrean_ascension_e</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>60</RequiredLevel>
+        <AbilityId>-45811147</AbilityId>
+        <Description>Transforms the Mage into a powerful Elemental, reducing the damage they take by 20% and granting them additional temporary abilities. Lasts 15s.</Description>
+        <AddonId>AFD44FA353BBA0C38</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>15.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>20</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Blade Rush</Name>
+      <Icon>harbinger_blade_rush</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>20</RequiredLevel>
+        <AbilityId>-42329234</AbilityId>
+        <Description>Charges at the enemy, dealing 670 to 740 Air damage. Cannot be used in combat.</Description>
+        <AddonId>AFD7A1B6EDEC82E65</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>15.000001</Cooldown>
+        <MinRange>3.000000</MinRange>
+        <MaxRange>20.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>48</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Phantom Blades</Name>
+      <Icon>harbinger_phantom_blades2_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>48</RequiredLevel>
+        <AbilityId>-41627285</AbilityId>
+        <Description>Increases the range of the Mage&apos;s single target melee range attacks to 30m for 15s.</Description>
+        <AddonId>AFD84D16BAF25751A</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>15.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Harbinger Soul Gift</Name>
+      <Icon>generic_ability_017</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-37662603</AbilityId>
+        <Description>Increases the Mage&apos;s damage by 1% for each point spent in the Harbinger soul.</Description>
+        <AddonId>AFDC1507545121FCF</AddonId>
+        <IsPassive>True</IsPassive>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Storm Slash</Name>
+      <Icon>harbinger_storm_slash</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-37368587</AbilityId>
+        <Description>Deals 670 to 740 Air damage.</Description>
+        <AddonId>AFDC5CCF58CDC33C0</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>3.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">1.000000</PowerStatCoefficient>
+        <WeaponDamageMultiplier effect="0" action="0">0.000000E+000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Conditioned Response</Name>
+      <Icon>harbinger_conditioned_response_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-37274339</AbilityId>
+        <Description>Restores 203 to 225 health to the Mage. Cooldown is reset if the Mage is Critically Hit. Cannot reset more than once every 5s.</Description>
+        <AddonId>AFDC73D1D6942CED4</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">0.600000</PowerStatCoefficient>
+        <AggroMultiplier effect="0" action="0">0.250000</AggroMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Eldritch Gift</Name>
+      <Icon>harbinger_eldritch_armor</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-34810661</AbilityId>
+        <Description>Reduces the cast time of the Mage&apos;s next ability by 2 seconds.</Description>
+        <AddonId>AFDECD4DB88C03FAD</AddonId>
+        <IsPassive>False</IsPassive>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Reaper&apos;s Blade</Name>
+      <Icon>harbinger_reapers_blade</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-34563491</AbilityId>
+        <Description>Summons a deadly scythe of magical energy. Slashing attacks deal an additional 53 Life damage and heals the Mage by 11. All other damaging attacks have a 30% chance to trigger this effect. Increases the Mage&apos;s damage by 10% for 15s if an enemy dies within 5s of the Mage damaging them. Lasts 1h.</Description>
+        <AddonId>AFDF09A5D3F0CB7F5</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>58</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Storm Shroud</Name>
+      <Icon>harbinger_storm_shroud_z</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>57</RequiredLevel>
+        <AbilityId>-33076439</AbilityId>
+        <Description>Renders the Mage invisible for up to 10s. Using an ability or taking damage will break this effect.</Description>
+        <AddonId>AFE074B2983F99C9F</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>10.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>54</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Rending Slash</Name>
+      <Icon>harbinger_rending_slash</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>53</RequiredLevel>
+        <AbilityId>-30778561</AbilityId>
+        <Description>Deals 737 to 815 Air damage. Applies a stacking debuff, increasing the Mage&apos;s damage on the enemy by 3% per stack. Max 3 stacks. Lasts 15s.</Description>
+        <AddonId>AFE2A5B3F20BF4C4C</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>3.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">1.100000</PowerStatCoefficient>
+        <WeaponDamageMultiplier effect="0" action="0">0.000000E+000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>24</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Introspection</Name>
+      <Icon>harbinger_introspection</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>24</RequiredLevel>
+        <AbilityId>-25923211</AbilityId>
+        <Description>Causes damaging attacks to return 5% of the Mage&apos;s mana. Reduces the Mage&apos;s damage by 10%. Lasts 10s.</Description>
+        <AddonId>AFE74717576105B11</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Blademark</Name>
+      <Icon>harbinger_blademark</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-24997276</AbilityId>
+        <Description>Marks the enemy for 15s. Damaging single target attacks by the Mage on another enemy, deal their damage to the marked enemy as well. Reduces the Mage&apos;s damage by 10%.</Description>
+        <AddonId>AFE8292648D1C7DA0</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>15.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Lightning Blade</Name>
+      <Icon>harbinger_lighting_blade</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-20193926</AbilityId>
+        <Description>Summons a blade of electrical energy. Slashing attacks deal an additional 63 Air damage. All other damaging attacks have a 5% chance to deal an additional 63 Air damage. Lasts 1h.</Description>
+        <AddonId>AFECBDD7AACA7DFD1</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>2</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Storm&apos;s Fury</Name>
+      <Icon>harbinger_storm_fury_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>2</RequiredLevel>
+        <AbilityId>-19153798</AbilityId>
+        <Description>Deals 1081 to 1195 Air damage. Counts as a Slashing attack.</Description>
+        <AddonId>AFEDBBC7A847B53A8</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>6.000000</Cooldown>
+        <MaxRange>3.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <GainHeat>9</GainHeat>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">1.610000</PowerStatCoefficient>
+        <WeaponDamageMultiplier effect="0" action="0">0.000000E+000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>8</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Charged Blade</Name>
+      <Icon>harbinger_charged_blade</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>8</RequiredLevel>
+        <AbilityId>-15853946</AbilityId>
+        <Description>Increases damage done by the Mage&apos;s slashing attacks by 20%. Each slashing ability consumes 5 Charge. Slashing abilities cannot generate Charge while active. Does not trigger a global cooldown.</Description>
+        <AddonId>AFF0E1686332D2111</AddonId>
+        <IsPassive>False</IsPassive>
+        <MinimumHeat>10</MinimumHeat>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>44</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Essence of Wind</Name>
+      <Icon>harbinger_essence_of_wind_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>44</RequiredLevel>
+        <AbilityId>-14900993</AbilityId>
+        <Description>Increases the Mage&apos;s chance to Dodge by 40%. Lasts 10s.</Description>
+        <AddonId>AFF1CA0FF4EE1D48D</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>45.000004</Cooldown>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>10.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>16</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Luminous Weapon</Name>
+      <Icon>harbinger_luminous_weapon_c</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>16</RequiredLevel>
+        <AbilityId>-14086085</AbilityId>
+        <Description>Summons a blade of living energy. Causes melee attacks to deal an additional 69 to 76 Life damage to up to 5 enemies. Lasts 1h.</Description>
+        <AddonId>AFF29103BD541B20E</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>40</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Distracting Slash</Name>
+      <Icon>champion_thunderous_strike_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>40</RequiredLevel>
+        <AbilityId>53086789</AbilityId>
+        <Description>Interrupts.</Description>
+        <AddonId>A032A0A457CC7F621</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>10.000000</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>4.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Lightning Charge</Name>
+      <Icon>harbinger_phantom_blades</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>2024512759</AbilityId>
+        <Description>Imbues your weapon with electrical energy. Damaging attacks have a 5% chance to deal an additional 63 Air damage. Lasts 1h.</Description>
+        <AddonId>A78AB9CF774D4E2D2</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+  </Abilities>
+</SoulTree>
+

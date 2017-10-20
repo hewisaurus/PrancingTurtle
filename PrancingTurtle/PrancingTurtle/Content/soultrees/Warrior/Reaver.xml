@@ -1,0 +1,1146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SoulTree calling="Warrior" name="Reaver">
+  <Traits>
+    <Trait>
+      <Key>0</Key>
+      <Name>Dire Step</Name>
+      <Icon>shadow_shift_c</Icon>
+      <PrereqTraitKey>17</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1918668020</AbilityId>
+          <Description></Description>
+          <AddonId>A725C8CF400000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increase movement speed by 15% for 3s after Shadow Warping. Removes all damage over time effects from the Warrior.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>1</Key>
+      <Name>Shadow Strength</Name>
+      <Icon>strong_constitution_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>248538397</AbilityId>
+          <Description></Description>
+          <AddonId>A0ED0651D00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases Strength by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases Strength by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases Strength by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases Strength by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases Strength by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>2</Key>
+      <Name>Rancid Cleave</Name>
+      <Icon>charge2</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>778605651</AbilityId>
+          <Description>Deals weapon plus 1004 to 1109 Death damage to up to 5 enemies. Awards 1 Attack Point.</Description>
+          <AddonId>A2E6894536D67B048</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Melee Weapon</RequiresWeapon>
+          <MaxRange>3.000000</MaxRange>
+          <CostEnergy>22</CostEnergy>
+          <GainAttackPoints>1</GainAttackPoints>
+          <CastTime>Instant</CastTime>
+          <Radius>10.000000</Radius>
+          <MaxAffected>5</MaxAffected>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Unlocks Rancid Cleave ability.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>3</Key>
+      <Name>Entropic Embrace</Name>
+      <Icon>entropy_embrace</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>2024284545</AbilityId>
+          <Description></Description>
+          <AddonId>A78A8218100000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases non-physical damage by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases non-physical damage by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases non-physical damage by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases non-physical damage by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases non-physical damage by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>4</Key>
+      <Name>Power Leech</Name>
+      <Icon>riftstalker_planar_repulsion_01_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Those affected by your Dire Corruption deal 1% less damage.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Those affected by your Dire Corruption deal 2% less damage.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Those affected by your Dire Corruption deal 3% less damage.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>5</Key>
+      <Name>Deadly Reach</Name>
+      <Icon>necropotence4a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>685426815</AbilityId>
+          <Description></Description>
+          <AddonId>A28DAC87F00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Augments Binding of Affliction to also increase the range of your ranged Reaver abilities by 3 meters.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Augments Binding of Affliction to also increase the range of your ranged Reaver abilities by 6 meters.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Augments Binding of Affliction to also increase the range of your ranged Reaver abilities by 10 meters.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>6</Key>
+      <Name>Lingering Shadows</Name>
+      <Icon>survival2a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1912929600</AbilityId>
+          <Description></Description>
+          <AddonId>A7204FD40761B7A78</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Infestation has a 50% chance to grant an additional Attack Point.</Description>
+        </Rank>
+        <Rank>
+          <Points>1</Points>
+          <Description>Infestation has a 100% chance to grant an additional Attack Point.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>7</Key>
+      <Name>Reaping Touch</Name>
+      <Icon>criticalblow4m</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>477958715</AbilityId>
+          <Description></Description>
+          <AddonId>A1C7D123B00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Dire Blow does 10% more damage to targets below 30% health.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Dire Blow does 20% more damage to targets below 30% health.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>8</Key>
+      <Name>Planar Attunement</Name>
+      <Icon>magicresist1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>398173982</AbilityId>
+          <Description></Description>
+          <AddonId>A17BBA71E00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases damage done by damage over time abilities by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases damage done by damage over time abilities by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases damage done by damage over time abilities by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases damage done by damage over time abilities by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases damage done by damage over time abilities by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>9</Key>
+      <Name>Plagued Grip</Name>
+      <Icon>void_knight-ravenous_strength</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1124059350</AbilityId>
+          <Description></Description>
+          <AddonId>A42FFC8D600000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Attack Power and Weapon Damage by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Attack Power and Weapon Damage by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your Attack Power and Weapon Damage by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your Attack Power and Weapon Damage by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your Attack Power and Weapon Damage by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>11</Key>
+      <Name>Contagion Mastery</Name>
+      <Icon>darkball2z</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>981941474</AbilityId>
+          <Description></Description>
+          <AddonId>A3A873CE2443632FF</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases critical hit chance of non-physical abilities by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases critical hit chance of non-physical abilities by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases critical hit chance of non-physical abilities by 6%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>12</Key>
+      <Name>Decaying Defenses</Name>
+      <Icon>concussion_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>816638756</AbilityId>
+          <Description></Description>
+          <AddonId>A30ACEB2400000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage of Dire Corruption by 10%. Enemies affected by Flesh Rot have their armor and resists reduced by 5%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>13</Key>
+      <Name>Spasm</Name>
+      <Icon>confound1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-67102006</AbilityId>
+          <Description>Interrupts an enemy.</Description>
+          <AddonId>AFC001ACAA88C1DFC</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>8.000000</Cooldown>
+          <MaxRange>20.000000</MaxRange>
+          <CostEnergy>10</CostEnergy>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>14</Key>
+      <Name>Rapid Infestation</Name>
+      <Icon>poison_gas_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>964882985</AbilityId>
+          <Description></Description>
+          <AddonId>A3982F22900000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces the countdown to detonation of Infestation by 2s and increases damage done by 5%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reduces the countdown to detonation of Infestation by 4s and increases damage done by 10%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Reduces the countdown to detonation of Infestation by 6s and increases damage done by 15%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>16</Key>
+      <Name>Sinister Intent</Name>
+      <Icon>poison_gas_02</Icon>
+      <BendType>VerticalToHorizontal</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1239133933</AbilityId>
+          <Description></Description>
+          <AddonId>A49DBAEED00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the initial damage of Soul Sickness, Necrotic Wounds, and Flesh Rot by 30%. </Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>17</Key>
+      <Name>Shadow Warp</Name>
+      <Icon>tumble1a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1247801938</AbilityId>
+          <Description>Teleports behind the target. Removes movement debuffs.</Description>
+          <AddonId>A4A5FF252A941BD69</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>45.000004</Cooldown>
+          <MaxRange>20.000000</MaxRange>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Unlocks Shadow Warp ability.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>18</Key>
+      <Name>From The Shadows</Name>
+      <Icon>creeping_death_01_b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases damage done by Dire Blow and Ravaging Strike by 2% when striking from behind.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases damage done by Dire Blow and Ravaging Strike by 4% when striking from behind.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases damage done by Dire Blow and Ravaging Strike by 6% when striking from behind.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases damage done by Dire Blow and Ravaging Strike by 8% when striking from behind.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases damage done by Dire Blow and Ravaging Strike by 10% when striking from behind.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>19</Key>
+      <Name>Fester</Name>
+      <Icon>infestation_01_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1709362947</AbilityId>
+          <Description></Description>
+          <AddonId>A65E2CF0300000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Enemies affected by Infestation or Explosive Infestation take 3% more damage from your Death based attacks.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Enemies affected by Infestation or Explosive Infestation take 6% more damage from your Death based attacks.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Enemies affected by Infestation or Explosive Infestation take 9% more damage from your Death based attacks.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Enemies affected by Infestation or Explosive Infestation take 12% more damage from your Death based attacks.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Enemies affected by Infestation or Explosive Infestation take 15% more damage from your Death based attacks.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>20</Key>
+      <Name>Soul Feast</Name>
+      <Icon>life-drain3</Icon>
+      <BendType>VerticalToHorizontal</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1620667334</AbilityId>
+          <Description></Description>
+          <AddonId>A60996BC600000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Soul Sickness, Necrotic Wounds and Flesh Rot heal you 8% of the damage done by their damage over time effects.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>21</Key>
+      <Name>Mind Break</Name>
+      <Icon>menacingroar2a</Icon>
+      <PrereqTraitKey>13</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Spasm now stuns the target for 3s. The target cannot be affected by Mind Break again for 30s.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>22</Key>
+      <Name>Vile Affinity</Name>
+      <Icon>illumination_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1511259861</AbilityId>
+          <Description></Description>
+          <AddonId>A5A13FED500000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces the cooldown of Dire Corruption by 20s and causes those affected by your Soul Sickness to have their outgoing healing reduced by 15%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>23</Key>
+      <Name>Walks with Death</Name>
+      <Icon>dusk_to_dawn_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-74103869</AbilityId>
+          <Description></Description>
+          <AddonId>AFB9543C300000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces the cooldown of Infestation, and Explosive Infestation by 3 seconds. </Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reduces the cooldown of Infestation, and Explosive Infestation by 6 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Reduces the cooldown of Infestation, and Explosive Infestation by 9 seconds.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>24</Key>
+      <Name>Septic Wounds</Name>
+      <Icon>binding_of_atrophy_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1873293065</AbilityId>
+          <Description></Description>
+          <AddonId>A6FA82F0900000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Those affected by your Necrotic Wounds also have their healing received reduced by 15%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>25</Key>
+      <Name>Shadow Strike</Name>
+      <Icon>creeping_death_01_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1527618391</AbilityId>
+          <Description></Description>
+          <AddonId>A5B0D9B5700000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Dire Blow and Ravaging Strike now deal 25% additional Death damage for each Reaver damage over time effect on the target.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>26</Key>
+      <Name>Shadow of Dread</Name>
+      <Icon>defiler_link_of_agony</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>40</MinimumPointsSpent>
+      <DisplayRow>8</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>853303261</AbilityId>
+          <Description>Applies all known Reaver damage over time effects. Awards 1 Attack Point.</Description>
+          <AddonId>A32DC5FDD0FA7591E</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>60.000004</Cooldown>
+          <MaxRange>20.000000</MaxRange>
+          <CostEnergy>10</CostEnergy>
+          <GainAttackPoints>1</GainAttackPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+  </Traits>
+  <Abilities>
+    <Ability>
+      <MinimumPointsInSoul>2</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Dire Blow</Name>
+      <Icon>roguestrike1a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>2</RequiredLevel>
+        <AbilityId>-69883250</AbilityId>
+        <Description>Deals Death damage based on Attack Points.
+
+1 Point: 1080 damage.
+2 Points: 1616 damage.
+3 Points: 2427 damage.</Description>
+        <AddonId>AFBD5AA8E63FE11BC</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>20</CostEnergy>
+        <CostAttackPoints>1</CostAttackPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="1" action="0">1.700000</PowerStatCoefficient>
+        <WeaponDamageMultiplier effect="1" action="0">2.550000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Spasm</Name>
+      <Icon>confound1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-67102006</AbilityId>
+        <Description>Interrupts an enemy.</Description>
+        <AddonId>AFC001ACAA88C1DFC</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>8.000000</Cooldown>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>10</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Dire Corruption</Name>
+      <Icon>necromancer_detonate_bones_02_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>10</RequiredLevel>
+        <AbilityId>-51955505</AbilityId>
+        <Description>Corrupts the target for 30s. The target and up to 10 enemies within 7 meters take 2891 Death damage every 2 seconds over the duration. Awards 1 Attack Point.</Description>
+        <AddonId>AFCE738CF77026B37</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>22</CostEnergy>
+        <GainAttackPoints>1</GainAttackPoints>
+        <CastTime>Instant</CastTime>
+        <Duration>30.000000</Duration>
+        <Interval>2.000000</Interval>
+        <Radius>7.000000</Radius>
+        <MaxAffected>10</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>58</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Explosive Infestation</Name>
+      <Icon>reaver_explosive_infestation_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>57</RequiredLevel>
+        <AbilityId>-30439995</AbilityId>
+        <Description>Effects up to 5 enemies. After 8s, deals 1927 Death damage, increased by 45% per Reaver damage over time effect on the Enemy. Awards an Attack Point.</Description>
+        <AddonId>AFE2F85C5AEC9729E</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>22</CostEnergy>
+        <GainAttackPoints>1</GainAttackPoints>
+        <CastTime>Instant</CastTime>
+        <Radius>7.000000</Radius>
+        <MaxAffected>5</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>61</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Viral Stream</Name>
+      <Icon>binding_of_death_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>61</RequiredLevel>
+        <AbilityId>187176626</AbilityId>
+        <Description>Channels 2982 Death damage over 3s to the target. Damage increased by 30% for each Reaver damage over time effect on the target. Can move while channeling.</Description>
+        <AddonId>A0B2816B218356572</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>30.000000</MaxRange>
+        <CostEnergy>40</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <Channel>true</Channel>
+        <Duration>3.000000</Duration>
+        <Interval>1.000000</Interval>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Soul Sickness</Name>
+      <Icon>necropotence2</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>458094657</AbilityId>
+        <Description>Deals 2920 Death damage over 15s. Awards 1 Attack Point.</Description>
+        <AddonId>A1B4DF8416D99B1F1</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>15.000001</Cooldown>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>18</CostEnergy>
+        <GainAttackPoints>1</GainAttackPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>4</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Binding of Affliction</Name>
+      <Icon>binding_of_affliction_01_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>4</RequiredLevel>
+        <AbilityId>478081866</AbilityId>
+        <Description>Increases damage of non-physical attacks by 5%. Lasts 1h.</Description>
+        <AddonId>A1C7EF34A122CBA96</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>10.000000</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <Duration>3600.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Gift of the Reaver</Name>
+      <Icon>soul_reaver</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>771041545</AbilityId>
+        <Description>Base Damage is increased by 1% for each Point spent in the Reaver Soul.</Description>
+        <AddonId>A2DF5290974AC6659</AddonId>
+        <IsPassive>True</IsPassive>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Rancid Cleave</Name>
+      <Icon>whirlwind4</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>778605651</AbilityId>
+        <Description>Deals weapon plus 1004 to 1109 Death damage to up to 5 enemies. Awards 1 Attack Point.</Description>
+        <AddonId>A2E6894536D67B048</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>22</CostEnergy>
+        <GainAttackPoints>1</GainAttackPoints>
+        <CastTime>Instant</CastTime>
+        <Radius>10.000000</Radius>
+        <MaxAffected>5</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Shadow of Dread</Name>
+      <Icon>defiler_link_of_agony</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>853303261</AbilityId>
+        <Description>Applies all known Reaver damage over time effects. Awards 1 Attack Point.</Description>
+        <AddonId>A32DC5FDD0FA7591E</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <GainAttackPoints>1</GainAttackPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>38</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Stumbling Morass</Name>
+      <Icon>scourge_of_darkness_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>38</RequiredLevel>
+        <AbilityId>909542807</AbilityId>
+        <Description>Corrupts the ground for 30s, up to 10 enemies within the corruption are snared.</Description>
+        <AddonId>A36368597445C7433</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <Duration>30.000000</Duration>
+        <Interval>3.000000</Interval>
+        <Radius>7.000000</Radius>
+        <MaxAffected>10</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Building Fury</Name>
+      <Icon>carpet_bombing_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>929334413</AbilityId>
+        <Description>Finishers gain a bonus to Attack Power contribution based on how many Attack Points were consumed.</Description>
+        <AddonId>A3764848D7CF516B9</AddonId>
+        <IsPassive>True</IsPassive>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>54</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Pestilence</Name>
+      <Icon>fatique</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>53</RequiredLevel>
+        <AbilityId>981443055</AbilityId>
+        <Description>Increases the damage of Reaver damage over time effects by 25%.</Description>
+        <AddonId>A3A7FA1EF5B4F9DA2</AddonId>
+        <IsPassive>True</IsPassive>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>51</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Flesh Rot</Name>
+      <Icon>flesh_rot_01_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>50</RequiredLevel>
+        <AbilityId>1149698657</AbilityId>
+        <Description>Deals 2855 Death damage over 15s. Awards 1 Attack Point.</Description>
+        <AddonId>A44870261210B5F50</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>18</CostEnergy>
+        <GainAttackPoints>1</GainAttackPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Shadow Warp</Name>
+      <Icon>tumble1a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1247801938</AbilityId>
+        <Description>Teleports behind the target. Removes movement debuffs.</Description>
+        <AddonId>A4A5FF252A941BD69</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>45.000004</Cooldown>
+        <MaxRange>20.000000</MaxRange>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>32</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Crest of Entropy</Name>
+      <Icon>hidden_veil_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>32</RequiredLevel>
+        <AbilityId>1286555264</AbilityId>
+        <Description>Absorbs up to 1808 damage. Lasts 15s.</Description>
+        <AddonId>A4CAF468060A5DC01</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">2.200000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>48</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Plague Bringer</Name>
+      <Icon>plague_01_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>48</RequiredLevel>
+        <AbilityId>1303986066</AbilityId>
+        <Description>Causes the Warrior&apos;s Reaver damage over time abilities to affect up to 4 additional enemies, dealing less damage than to the target.</Description>
+        <AddonId>A4DB93F928D708E8B</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>10.000000</Cooldown>
+        <CostEnergy>11</CostEnergy>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>24</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Infestation</Name>
+      <Icon>infestation_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>24</RequiredLevel>
+        <AbilityId>1749513995</AbilityId>
+        <Description>After 8s, deals 2920 Death damage, increased by 45% per Reaver damage over time effect on the Enemy, maximum of 4. Awards an Attack Point.</Description>
+        <AddonId>A6847770BE2838156</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>20</CostEnergy>
+        <GainAttackPoints>1</GainAttackPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>44</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Cloak of Death</Name>
+      <Icon>slip_away_03</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>44</RequiredLevel>
+        <AbilityId>1836398286</AbilityId>
+        <Description>Applies Stealth and removes movement impairing effects. Prevents damage from breaking Stealth for 6s.</Description>
+        <AddonId>A6D7536CEA226F36D</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>90.000008</Cooldown>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>16</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Necrotic Wounds</Name>
+      <Icon>necropotence4a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>16</RequiredLevel>
+        <AbilityId>2032650878</AbilityId>
+        <Description>Deals 2855 Death damage over 15s. Awards 1 Attack Point.</Description>
+        <AddonId>A7927CA7E8F9C3AE7</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>6.000000</Cooldown>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>18</CostEnergy>
+        <GainAttackPoints>1</GainAttackPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Ravaging Strike</Name>
+      <Icon>charge1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>2053801633</AbilityId>
+        <Description>Deals Weapon plus 1248 to 1380 Death damage. Awards 1 Attack Point.</Description>
+        <AddonId>A7A6A86A17A1E03F0</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>20</CostEnergy>
+        <GainAttackPoints>1</GainAttackPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="1" action="0">0.900000</PowerStatCoefficient>
+        <WeaponDamageMultiplier effect="1" action="0">1.350000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+  </Abilities>
+</SoulTree>
+

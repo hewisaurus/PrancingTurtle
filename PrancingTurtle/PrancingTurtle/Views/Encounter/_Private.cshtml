@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Sorry, this encounter is private!";
+}
+<br />
+<div class="row">
+    <div class="col-md-6">
+        <div class="panel panel-danger">
+            <div class="panel-heading">
+                <h3 class="panel-title">Sorry, this encounter is private!</h3>
+            </div>
+            <div class="panel-body">
+                <p>The original uploader or an administrator of this guild have set this encounter to private, so only guild members are able to view it.</p>
+                <p>If you have applied for this guild but still can't see encounters, contact your guild administrator to have your application approved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+@Html.ActionLink("Ok", "Index", "Home", null, new { @class = "btn btn-default" })

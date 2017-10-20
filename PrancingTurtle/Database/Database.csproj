@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6EAA90B4-69BD-4694-8981-C0735442AE19}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Database</RootNamespace>
+    <AssemblyName>Database</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper, Version=1.50.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.1.50.2\lib\net451\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Dapper.Rainbow.MySql, Version=0.6.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.Rainbow.MySql.0.8.2\lib\net451\Dapper.Rainbow.MySql.dll</HintPath>
+    </Reference>
+    <Reference Include="Hangfire.Core, Version=1.6.15.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Hangfire.Core.1.6.15\lib\net45\Hangfire.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.6.9.9\lib\net45\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.5.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DapperDb.cs" />
+    <Compile Include="DapperRepositoryBase.cs" />
+    <Compile Include="Helpers\PagedData.cs" />
+    <Compile Include="Helpers\SqlBuilder.cs" />
+    <Compile Include="Helpers\SqlBuildRepository.cs" />
+    <Compile Include="IConnectionFactory.cs" />
+    <Compile Include="Models\Ability.cs" />
+    <Compile Include="Models\AbilityRole.cs" />
+    <Compile Include="Models\AuthUser.cs" />
+    <Compile Include="Models\AuthUserCharacter.cs" />
+    <Compile Include="Models\AuthUserCharacterGuildApplication.cs" />
+    <Compile Include="Models\BossFight.cs" />
+    <Compile Include="Models\BossFightDifficulty.cs" />
+    <Compile Include="Models\BossFightSingleTargetDetail.cs" />
+    <Compile Include="Models\Buff.cs" />
+    <Compile Include="Models\BuffGroup.cs" />
+    <Compile Include="Models\DamageDone.cs" />
+    <Compile Include="Models\Encounter.cs" />
+    <Compile Include="Models\EncounterBuffAction.cs" />
+    <Compile Include="Models\EncounterBuffEvent.cs" />
+    <Compile Include="Models\EncounterBuffUptime.cs" />
+    <Compile Include="Models\EncounterDeath.cs" />
+    <Compile Include="Models\EncounterDebuffAction.cs" />
+    <Compile Include="Models\EncounterDifficulty.cs" />
+    <Compile Include="Models\EncounterNpc.cs" />
+    <Compile Include="Models\EncounterNpcCast.cs" />
+    <Compile Include="Models\EncounterOverview.cs" />
+    <Compile Include="Models\EncounterPlayerRole.cs" />
+    <Compile Include="Models\EncounterPlayerStatistics.cs" />
+    <Compile Include="Models\Guild.cs" />
+    <Compile Include="Models\GuildRank.cs" />
+    <Compile Include="Models\GuildStatus.cs" />
+    <Compile Include="Models\HealingDone.cs" />
+    <Compile Include="Models\Instance.cs" />
+    <Compile Include="Models\Misc\BossFightProgression.cs" />
+    <Compile Include="Models\Misc\EncounterIdPlayerId.cs" />
+    <Compile Include="Models\Misc\GuildMemberSessionEncounterCount.cs" />
+    <Compile Include="Models\Misc\Leaderboards.cs" />
+    <Compile Include="Models\Misc\TableRowCount.cs" />
+    <Compile Include="Models\NewsRecentChanges.cs" />
+    <Compile Include="Models\NpcDeath.cs" />
+    <Compile Include="Models\Player.cs" />
+    <Compile Include="Models\PlayerClass.cs" />
+    <Compile Include="Models\RoleIcon.cs" />
+    <Compile Include="Models\ScheduledTask.cs" />
+    <Compile Include="Models\Session.cs" />
+    <Compile Include="Models\SessionEncounter.cs" />
+    <Compile Include="Models\SessionLog.cs" />
+    <Compile Include="Models\Shard.cs" />
+    <Compile Include="Models\ShieldingDone.cs" />
+    <Compile Include="Models\SiteNotification.cs" />
+    <Compile Include="Models\Soul.cs" />
+    <Compile Include="MySqlConnectionFactory.cs" />
+    <Compile Include="MySQL\AbilityRole.cs" />
+    <Compile Include="MySQL\AbilitySql.cs" />
+    <Compile Include="MySQL\AliasTs.cs" />
+    <Compile Include="MySQL\Api.cs" />
+    <Compile Include="MySQL\AuthUser.cs" />
+    <Compile Include="MySQL\AuthUserCharacter.cs" />
+    <Compile Include="MySQL\AuthUserCharacterGuildApplication.cs" />
+    <Compile Include="MySQL\AutoExtracter.cs" />
+    <Compile Include="MySQL\AutoParser.cs" />
+    <Compile Include="MySQL\BossFight.cs" />
+    <Compile Include="MySQL\BossFightDifficulty.cs" />
+    <Compile Include="MySQL\BossFightSingleTargetDetail.cs" />
+    <Compile Include="MySQL\Encounter.cs" />
+    <Compile Include="MySQL\EncounterDifficulty.cs" />
+    <Compile Include="MySQL\EncounterNpc.cs" />
+    <Compile Include="MySQL\EncounterOverview.cs" />
+    <Compile Include="MySQL\EncounterPlayerRole.cs" />
+    <Compile Include="MySQL\EncounterPlayerStatistics.cs" />
+    <Compile Include="MySQL\Guild.cs" />
+    <Compile Include="MySQL\GuildRank.cs" />
+    <Compile Include="MySQL\GuildStatus.cs" />
+    <Compile Include="MySQL\Instance.cs" />
+    <Compile Include="MySQL\NewsRecentChanges.cs" />
+    <Compile Include="MySQL\NpcDeath.cs" />
+    <Compile Include="MySQL\Player.cs" />
+    <Compile Include="MySQL\Records.cs" />
+    <Compile Include="MySQL\RecurringTasksSql.cs" />
+    <Compile Include="MySQL\RoleIcon.cs" />
+    <Compile Include="MySQL\ScheduledTask.cs" />
+    <Compile Include="MySQL\Session.cs" />
+    <Compile Include="MySQL\SessionEncounter.cs" />
+    <Compile Include="MySQL\SessionLog.cs" />
+    <Compile Include="MySQL\Shard.cs" />
+    <Compile Include="MySQL\SiteNotification.cs" />
+    <Compile Include="MySQL\SoulSql.cs" />
+    <Compile Include="MySQL\StatisticsSql.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueryModels\CharacterBuffAction.cs" />
+    <Compile Include="QueryModels\CharacterDebuffAction.cs" />
+    <Compile Include="QueryModels\CharacterGuild.cs" />
+    <Compile Include="QueryModels\CharacterInteractionPerSecond.cs" />
+    <Compile Include="QueryModels\CharacterSomethingTakenSourcePerSecond.cs" />
+    <Compile Include="QueryModels\CheckSupportFlags.cs" />
+    <Compile Include="QueryModels\DetailDamageByClass.cs" />
+    <Compile Include="QueryModels\DetailDamageByPlane.cs" />
+    <Compile Include="QueryModels\EncounterCharacterAbilityBreakdownDetail.cs" />
+    <Compile Include="QueryModels\EncounterCharacterActionBreakdown.cs" />
+    <Compile Include="QueryModels\EncounterDamageDoneBasic.cs" />
+    <Compile Include="QueryModels\EncounterDeathEvent.cs" />
+    <Compile Include="QueryModels\EncounterFullOverview.cs" />
+    <Compile Include="QueryModels\EncounterHealingDoneBasic.cs" />
+    <Compile Include="QueryModels\EncounterPlayerDamageDone.cs" />
+    <Compile Include="QueryModels\EncounterPlayerDamageDoneDetail.cs" />
+    <Compile Include="QueryModels\EncounterSomethingDoneBasic.cs" />
+    <Compile Include="QueryModels\EncounterTotalAverage.cs" />
+    <Compile Include="QueryModels\GuildSession.cs" />
+    <Compile Include="QueryModels\Misc\AbilityIdName.cs" />
+    <Compile Include="QueryModels\Misc\AbilityNameIcon.cs" />
+    <Compile Include="QueryModels\Misc\EncounterDateDuration.cs" />
+    <Compile Include="QueryModels\Misc\EncounterInformation.cs" />
+    <Compile Include="QueryModels\Misc\PlayerIdDeathCount.cs" />
+    <Compile Include="QueryModels\Misc\PlayerIdSingleTargetDamage.cs" />
+    <Compile Include="QueryModels\Misc\PlayerSearchResult.cs" />
+    <Compile Include="QueryModels\Misc\RankPlayerGuild.cs" />
+    <Compile Include="QueryModels\Misc\RecordCounts.cs" />
+    <Compile Include="QueryModels\Misc\SearchResult.cs" />
+    <Compile Include="QueryModels\Misc\SessionIdDuration.cs" />
+    <Compile Include="QueryModels\OverviewCharacterSomethingDoneGraph.cs" />
+    <Compile Include="QueryModels\OverviewCharacterSomethingTakenGraph.cs" />
+    <Compile Include="QueryModels\OverviewNpcSomethingDone.cs" />
+    <Compile Include="QueryModels\OverviewNpcSomethingTaken.cs" />
+    <Compile Include="QueryModels\OverviewPlayerSomethingDone.cs" />
+    <Compile Include="QueryModels\OverviewPlayerSomethingTaken.cs" />
+    <Compile Include="QueryModels\Parser\SessionLogInfo.cs" />
+    <Compile Include="QueryModels\Parser\SessionLogTotals.cs" />
+    <Compile Include="QueryModels\Parser\ShortAbility.cs" />
+    <Compile Include="QueryModels\PlayerClassNameCount.cs" />
+    <Compile Include="QueryModels\PlayerDamageDoneTargetPerSecond.cs" />
+    <Compile Include="QueryModels\PlayerIdSoulId.cs" />
+    <Compile Include="QueryModels\PlayerRole.cs" />
+    <Compile Include="QueryModels\SiteStats.cs" />
+    <Compile Include="QueryModels\SiteStatsSessionDuration.cs" />
+    <Compile Include="QueryModels\TotalAverage.cs" />
+    <Compile Include="Repositories\AbilityRepository.cs" />
+    <Compile Include="Repositories\AbilityRoleRepository.cs" />
+    <Compile Include="Repositories\ApiRepository.cs" />
+    <Compile Include="Repositories\AuthenticationRepository.cs" />
+    <Compile Include="Repositories\AuthUserCharacterGuildApplicationRepository.cs" />
+    <Compile Include="Repositories\AuthUserCharacterRepository.cs" />
+    <Compile Include="Repositories\AutoParserRepository.cs" />
+    <Compile Include="Repositories\BossFightDifficultyRepository.cs" />
+    <Compile Include="Repositories\BossFightRepository.cs" />
+    <Compile Include="Repositories\BossFightSingleTargetDetail.cs" />
+    <Compile Include="Repositories\EncounterDifficultyRepository.cs" />
+    <Compile Include="Repositories\EncounterNpcRepository.cs" />
+    <Compile Include="Repositories\EncounterOverviewRepository.cs" />
+    <Compile Include="Repositories\EncounterPlayerRoleRepository.cs" />
+    <Compile Include="Repositories\EncounterPlayerStatisticsRepository.cs" />
+    <Compile Include="Repositories\EncounterRepository.cs" />
+    <Compile Include="Repositories\GuildRankRepository.cs" />
+    <Compile Include="Repositories\GuildRepository.cs" />
+    <Compile Include="Repositories\GuildStatusRepository.cs" />
+    <Compile Include="Repositories\InstanceRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IAbilityRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IAbilityRoleRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IApiRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IAuthenticationRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IAuthUserCharacterGuildApplicationRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IAuthUserCharacterRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IAutoParserRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IBossFightDifficultyRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IBossFightRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IBossFightSingleTargetDetail.cs" />
+    <Compile Include="Repositories\Interfaces\IEncounterDifficultyRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IEncounterNpcRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IEncounterOverviewRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IEncounterPlayerRoleRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IEncounterPlayerStatisticsRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IEncounterRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IGuildRankRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IGuildRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IGuildStatusRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IInstanceRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ILeaderboardRepository.cs" />
+    <Compile Include="Repositories\Interfaces\INavigationRepository.cs" />
+    <Compile Include="Repositories\Interfaces\INewsRecentChangesRepository.cs" />
+    <Compile Include="Repositories\Interfaces\INpcRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IPlayerClassRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IPlayerRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IRecordsRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IRecurringTaskRepo.cs" />
+    <Compile Include="Repositories\Interfaces\IRoleIconRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IScheduledTaskRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ISearchRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ISessionEncounterRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ISessionLogRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ISessionRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IShardRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ISiteNotificationRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ISoulRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IStatRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IUpdateRepository.cs" />
+    <Compile Include="Repositories\LeaderboardRepository.cs" />
+    <Compile Include="Repositories\NavigationRepository.cs" />
+    <Compile Include="Repositories\NewsRecentChangesRepository.cs" />
+    <Compile Include="Repositories\NpcRepository.cs" />
+    <Compile Include="Repositories\PlayerClassRepository.cs" />
+    <Compile Include="Repositories\PlayerRepository.cs" />
+    <Compile Include="Repositories\RecordsRepository.cs" />
+    <Compile Include="Repositories\RecurringTaskRepo.cs" />
+    <Compile Include="Repositories\RoleIconRepository.cs" />
+    <Compile Include="Repositories\ScheduledTaskRepository.cs" />
+    <Compile Include="Repositories\SearchRepository.cs" />
+    <Compile Include="Repositories\SessionEncounterRepository.cs" />
+    <Compile Include="Repositories\SessionLogRepository.cs" />
+    <Compile Include="Repositories\SessionRepository.cs" />
+    <Compile Include="Repositories\ShardRepository.cs" />
+    <Compile Include="Repositories\SiteNotificationRepository.cs" />
+    <Compile Include="Repositories\SoulRepository.cs" />
+    <Compile Include="Repositories\StatRepository.cs" />
+    <Compile Include="Repositories\UpdateRepository.cs" />
+    <Compile Include="SqlBuilder.cs" />
+    <Compile Include="SqlBuilderRepository.cs" />
+    <Compile Include="SQL\Ability.cs" />
+    <Compile Include="SQL\AuthUser.cs" />
+    <Compile Include="SQL\AuthUserCharacter.cs" />
+    <Compile Include="SQL\AuthUserCharacterGuildApplication.cs" />
+    <Compile Include="SQL\Encounter.cs" />
+    <Compile Include="SQL\Guild.cs" />
+    <Compile Include="SQL\Player.cs" />
+    <Compile Include="SQL\PlayerClass.cs" />
+    <Compile Include="SQL\Session.cs" />
+    <Compile Include="SQL\SessionEncounter.cs" />
+    <Compile Include="SQL\SessionLog.cs" />
+    <Compile Include="SQL\Stat.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{5a57143d-3ce3-439b-ab79-e43d1953f4e3}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Logging\Logging.csproj">
+      <Project>{c0a7aad2-1981-4195-90b3-9f633086d369}</Project>
+      <Name>Logging</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

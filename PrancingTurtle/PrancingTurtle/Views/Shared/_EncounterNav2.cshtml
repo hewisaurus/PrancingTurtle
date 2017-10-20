@@ -1,0 +1,118 @@
+﻿@using PrancingTurtle.Helpers
+@model PrancingTurtle.Models.ViewModels.EncounterNav
+@{
+    var activeLink = ViewData["link"].ToString();
+}
+@*<div class="navbar-xs">
+    <div class="navbar-default">*@
+<div class="@Model.NavClass navbar-fixed-top secondNavBar">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#subnavbar-responsive-collapse">
+                @*<span class="icon-bar"></span>
+                    <span class="icon-bar"></span>*@
+                <span class="caret text-info"></span>
+            </button>
+            @*@Html.ImageActionLink("EncounterOverview2", "Home", new { id = Model.Id }, "navbar-brand text-left", Model.Success ? "fa fa-lg fa-smile-o" : "fa fa-lg fa-frown-o", string.Format("{0} ({1})", Model.EncounterName, Model.EncounterLength))*@
+            @if (Model.Session != null)
+            {
+                @Html.ImageActionLink("Detail", "Session", new { id = Model.Session.Id }, "navbar-brand text-left", "fa fa-lg fa-arrow-circle-left", string.Format("Back to {0}", Model.Session.Name))
+                @*<span class="navbar-brand text-left">|</span>*@
+            }
+
+            @Html.ActionLink(string.Format("{0} ({1})", Model.EncounterName, Model.EncounterLength), "Overview", "Encounter", new { id = Model.Id }, new { @class = "navbar-brand text-left" })
+            @*@Html.ImageActionLink("Overview", "Encounter", new { id = Model.Id }, "navbar-brand text-left", Model.Success ? "fa fa-lg fa-thumbs-o-up" : "fa fa-lg fa-thumbs-o-down", string.Format("{0} ({1})", Model.EncounterName, Model.EncounterLength))*@
+            @*<a class="navbar-brand" href="#">@string.Format("{0} ({1})", Model.EncounterName, Model.EncounterLength)</a>*@
+        </div>
+        <div style="height: 1px;" aria-expanded="false" class="navbar-collapse collapse" id="subnavbar-responsive-collapse">
+            <ul class="nav navbar-nav">
+                @if (activeLink == "newoverview")
+                {
+                    <li class="active">@Html.ActionLink("Overview", "Overview", "Encounter", new { id = Model.Id }, null)</li>
+                }
+                else
+                {
+                    <li>@Html.ActionLink("Overview", "Overview", "Encounter", new { id = Model.Id }, null)</li>
+                }
+                @*@if (activeLink == "newdetail") 20160218 removed so I can publish an update
+                {
+                    <li class="active">@Html.ActionLink("Detail", "Detail", "Encounter", new { id = Model.Id }, null)</li>
+                }
+                else
+                {
+                    <li>@Html.ActionLink("Detail", "Detail", "Encounter", new { id = Model.Id }, null)</li>
+                }*@
+                @*<li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Buffs &amp; Debuffs <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Buffs on Players", "NotLinkedYet", "Home", new { id = Model.Id }, null)</li>
+                            <li>@Html.ActionLink("Debuffs on Players", "NotLinkedYet", "Home", new { id = Model.Id }, null)</li>
+                            <li>@Html.ActionLink("Buffs on NPCs", "NotLinkedYet", "Home", new { id = Model.Id }, null)</li>
+                            <li>@Html.ActionLink("Debuffs on NPCs", "NotLinkedYet", "Home", new { id = Model.Id }, null)</li>
+                        </ul>
+                    </li>*@
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Damage <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>@Html.ActionLink("Player Damage Done", "PlayerDamageDone", "Encounter", new { id = Model.Id }, null)</li>
+                        <li>@Html.ActionLink("Player Damage Taken", "PlayerDamageTaken", "Encounter", new { id = Model.Id }, null)</li>
+                        <li>@Html.ActionLink("NPC Damage Done", "NpcDamageDone", "Encounter", new { id = Model.Id }, null)</li>
+                        <li>@Html.ActionLink("NPC Damage Taken", "NpcDamageTaken", "Encounter", new { id = Model.Id }, null)</li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Healing <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>@Html.ActionLink("Player Healing Done", "PlayerHealingDone", "Encounter", new { id = Model.Id }, null)</li>
+                        <li>@Html.ActionLink("Player Healing Taken", "PlayerHealingTaken", "Encounter", new { id = Model.Id }, null)</li>
+                        <li>@Html.ActionLink("NPC Healing Done", "NpcHealingDone", "Encounter", new { id = Model.Id }, null)</li>
+                        <li>@Html.ActionLink("NPC Healing Taken", "NpcHealingTaken", "Encounter", new { id = Model.Id }, null)</li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Absorption <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>@Html.ActionLink("Player Absorption Done", "PlayerShieldingDone", "Encounter", new { id = Model.Id }, null)</li>
+                        <li>@Html.ActionLink("Player Absorption Taken", "PlayerShieldingTaken", "Encounter", new { id = Model.Id }, null)</li>
+                        <li>@Html.ActionLink("NPC Absorption Done", "NpcShieldingDone", "Encounter", new { id = Model.Id }, null)</li>
+                        <li>@Html.ActionLink("NPC Absorption Taken", "NpcShieldingTaken", "Encounter", new { id = Model.Id }, null)</li>
+                    </ul>
+                </li>
+                @if (activeLink == "deaths")
+                {
+                    <li class="active">@Html.ActionLink("Deaths", "Deaths", "Encounter", new { id = Model.Id }, null)</li>
+                }
+                else
+                {
+                    <li>@Html.ActionLink("Deaths", "Deaths", "Encounter", new { id = Model.Id }, null)</li>
+                }
+                @if (activeLink == "playerdetail")
+                {
+                    <li class="active"><a href="#">Player Detail</a></li>
+                }
+                @if (activeLink == "deathdetail")
+                {
+                    <li class="active"><a href="#">Player Death Detail</a></li>
+                }
+                @if (activeLink == "playercomparison")
+                {
+                    <li class="active"><a href="#">Player Comparison</a></li>
+                }
+                @if (activeLink == "observeplayer")
+                {
+                    <li class="active"><a href="#">Observe Player</a></li>
+                }
+                @if (activeLink == "charactergraph")
+                {
+                    <li class="active"><a href="#">Character Graph</a></li>
+                }
+                @if (activeLink == "compareplayers")
+                {
+                    <li class="active"><a href="#">Player Comparison</a></li>
+                }
+            </ul>
+        </div>
+    </div>
+</div>
+@*</div>
+    </div>*@

@@ -1,0 +1,1277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SoulTree calling="Cleric" name="Purifier">
+  <Traits>
+    <Trait>
+      <Key>0</Key>
+      <Name>Flame Speaker</Name>
+      <Icon>flame_speaker</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>858878011</AbilityId>
+          <Description></Description>
+          <AddonId>A3331703B70845046</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the Critical Hit chance of your healing and absorption spells by 1%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the Critical Hit chance of your healing and absorption spells by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the Critical Hit chance of your healing and absorption spells by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases the Critical Hit chance of your healing and absorption spells by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases the Critical Hit chance of your healing and absorption spells by 5%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>1</Key>
+      <Name>Spirit Guidance</Name>
+      <Icon>invoker_prerogative1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>372400144</AbilityId>
+          <Description></Description>
+          <AddonId>A16326010348766E1</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Wisdom by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Wisdom by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your Wisdom by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your Wisdom by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your Wisdom by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>2</Key>
+      <Name>Prudence</Name>
+      <Icon>generic_ability_024</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-54032042</AbilityId>
+          <Description></Description>
+          <AddonId>AFCC789564C231DC5</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your healing done and absorption granted to allies above 90% health by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your healing done and absorption granted to allies above 90% health by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your healing done and absorption granted to allies above 90% health by 9%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>3</Key>
+      <Name>Intensity</Name>
+      <Icon>last_stand_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-84037601</AbilityId>
+          <Description></Description>
+          <AddonId>AFAFDB01F7E9CC66B</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your healing done and absorption granted by 1%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your healing done and absorption granted by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your healing done and absorption granted by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your healing done and absorption granted by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your healing done and absorption granted by 5%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>4</Key>
+      <Name>Caregiver&apos;s Blessing</Name>
+      <Icon>spiritofsaints3</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1179780649</AbilityId>
+          <Description>Causes single target healing and absorption spells to apply Caregiver&apos;s Blessing for 10s. Absorbs 88 damage. Lasts 1h.</Description>
+          <AddonId>A46520629A6E9FB14</AddonId>
+          <IsPassive>False</IsPassive>
+          <CostManaPercent>7.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>5</Key>
+      <Name>Flashover</Name>
+      <Icon>flash1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>620791420</AbilityId>
+          <Description>Forces the next healing or absorption spell to Critically Hit. Lasts 30s.</Description>
+          <AddonId>A2500867C5D84FEDF</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>45.000004</Cooldown>
+          <CostManaPercent>6.000000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>6</Key>
+      <Name>Searing Heat</Name>
+      <Icon>releaseheat2</Icon>
+      <BendType>VerticalToHorizontal</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-28146138</AbilityId>
+          <Description></Description>
+          <AddonId>AFE528626390265DC</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your healing done and absorption granted with single target spells by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your healing done and absorption granted with single target spells by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your healing done and absorption granted with single target spells by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your healing done and absorption granted with single target spells by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your healing done and absorption granted with single target spells by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>7</Key>
+      <Name>Slow Burn</Name>
+      <Icon>elemental_bolt1b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-26806085</AbilityId>
+          <Description></Description>
+          <AddonId>AFE66F8BB411FC568</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your healing done and absorption granted with cast time spells by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your healing done and absorption granted with cast time spells by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your healing done and absorption granted with cast time spells by 6%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>8</Key>
+      <Name>Gesture of Goodwill</Name>
+      <Icon>restore1a</Icon>
+      <BendType>VerticalToHorizontal</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces the duration of your Burnout by 3s.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reduces the duration of your Burnout by 6s.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>9</Key>
+      <Name>Preservation</Name>
+      <Icon>coalesceheat3</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-39710339</AbilityId>
+          <Description></Description>
+          <AddonId>AFDA2117D39B8B17C</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your healing done, damage done, and absorption granted from Fire spells by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your healing done, damage done, and absorption granted from Fire spells by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your healing done, damage done, and absorption granted from Fire spells by 9%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your healing done, damage done, and absorption granted from Fire spells by 12%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your healing done, damage done, and absorption granted from Fire spells by 15%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>10</Key>
+      <Name>Char</Name>
+      <Icon>cauterize1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-87919351</AbilityId>
+          <Description>Deals 1956 to 1956 Fire damage over 15s.</Description>
+          <AddonId>AFAC27509A659D335</AddonId>
+          <IsPassive>False</IsPassive>
+          <MaxRange>30.000000</MaxRange>
+          <CostManaPercent>10.000000</CostManaPercent>
+          <CastTime>2.000000</CastTime>
+          <Duration>15.000000</Duration>
+          <Interval>1.000000</Interval>
+          <PowerStatCoefficient effect="0" action="0">1.910000</PowerStatCoefficient>
+          <DamageMultiplier effect="0" action="0">0.062500</DamageMultiplier>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>11</Key>
+      <Name>Inflame</Name>
+      <Icon>demolition_specialist</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>832349022</AbilityId>
+          <Description></Description>
+          <AddonId>A319CA35E4135FE14</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Flame Lance and Fire Wall cause an additional 10% of their damage over 3s. Allows you to have an additional Fire Wall active, but reduces the damage of Fire Wall by 10%. Reduces the cast time of Char by 50%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your Flame Lance and Fire Wall cause an additional 20% of their damage over 3s. Allows you to have an additional 2 Fire Walls active, but reduces the damage of Fire Wall by 20%. Reduces the cast time of Char by 100%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>12</Key>
+      <Name>Kindling</Name>
+      <Icon>campfire1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-86174686</AbilityId>
+          <Description></Description>
+          <AddonId>AFADD142268D95A6A</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your healing done and absorption granted with Wards and Symbols by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your healing done and absorption granted with Wards and Symbols by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your healing done and absorption granted with Wards and Symbols by 9%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>13</Key>
+      <Name>Latent Blaze</Name>
+      <Icon>latent_blaze</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1347376879</AbilityId>
+          <Description>Restores 1189 to 1314 health if health drops below 30% within 5m.</Description>
+          <AddonId>A504F56EFCA081784</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>45.000004</Cooldown>
+          <MaxRange>35.000000</MaxRange>
+          <CostManaPercent>15.000000</CostManaPercent>
+          <CastTime>3.000000</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>14</Key>
+      <Name>Flare-up</Name>
+      <Icon>pyroclasty1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Symbol of the Torch and Symbol of the Sun reapply if they are destroyed within 1s of being applied.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your Symbol of the Torch and Symbol of the Sun reapply if they are destroyed within 2s of being applied.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Your Symbol of the Torch and Symbol of the Sun reapply if they are destroyed within 3s of being applied.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>15</Key>
+      <Name>Sign of Anticipation</Name>
+      <Icon>generic_ability_023</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-74273856</AbilityId>
+          <Description>Causes the Cleric&apos;s single target healing and absorption spells to apply Sign of Anticipation for 15s. Increases Dodge and Block by 3%. Lasts 1h.</Description>
+          <AddonId>AFB92ABC04E1B9EDA</AddonId>
+          <IsPassive>False</IsPassive>
+          <CostManaPercent>6.000000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>16</Key>
+      <Name>Clear the Coals</Name>
+      <Icon>righteousness1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-48155114</AbilityId>
+          <Description></Description>
+          <AddonId>AFD213616776953B8</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your single target healing and absorption spells have a 5% chance to remove Burnout.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your single target healing and absorption spells have a 10% chance to remove Burnout.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>17</Key>
+      <Name>Hot Streak</Name>
+      <Icon>carpet_bombing</Icon>
+      <PrereqTraitKey>5</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-31425869</AbilityId>
+          <Description></Description>
+          <AddonId>AFE207AB359B88106</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Wards reduce the current cooldown of Flashover by 1.5s.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your Wards reduce the current cooldown of Flashover by 3s.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>18</Key>
+      <Name>Symbol of the Sun</Name>
+      <Icon>purifier_symbol_of_the_sun</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-82235525</AbilityId>
+          <Description>Absorbs 1139 damage. Lasts 30s.</Description>
+          <AddonId>AFB192F7B492B05AB</AddonId>
+          <IsPassive>False</IsPassive>
+          <MaxRange>35.000000</MaxRange>
+          <CostManaPercent>7.500000</CostManaPercent>
+          <CastTime>Instant</CastTime>
+          <PowerStatCoefficient effect="0" action="0">2.200000</PowerStatCoefficient>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>19</Key>
+      <Name>Safe Haven</Name>
+      <Icon>coalesceheat1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-15594070</AbilityId>
+          <Description></Description>
+          <AddonId>AFF120DAA0E9F5EAB</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the effect of Spell Power on your Wards and Symbols by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the effect of Spell Power on your Wards and Symbols by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the effect of Spell Power on your Wards and Symbols by 12%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>20</Key>
+      <Name>Feed the Flames</Name>
+      <Icon>charge_ember</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-31441596</AbilityId>
+          <Description></Description>
+          <AddonId>AFE203D446A17785C</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Applies Feed the Flames to allies when they are affected by a Symbol buff, increasing healing received from Fire abilities by 10%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Applies Feed the Flames to allies when they are affected by a Symbol buff, increasing healing received from Fire abilities by 20%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>21</Key>
+      <Name>Reinforcement</Name>
+      <Icon>elemward1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-68207336</AbilityId>
+          <Description></Description>
+          <AddonId>AFBEF3D180F948404</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Wards reduce damage taken on Blocks and Critical Hits by 2% for 5s.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your Wards reduce damage taken on Blocks and Critical Hits by 4% for 5s.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Your Wards reduce damage taken on Blocks and Critical Hits by 6% for 5s.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>22</Key>
+      <Name>Ward of Scorching</Name>
+      <Icon>restorative_flame</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-56257223</AbilityId>
+          <Description>Restores 589 to 651 health. Absorbs 286 damage. Lasts 10s.</Description>
+          <AddonId>AFCA59539961A4A6C</AddonId>
+          <IsPassive>False</IsPassive>
+          <MaxRange>35.000000</MaxRange>
+          <CostManaPercent>40.000000</CostManaPercent>
+          <CastTime>2.000000</CastTime>
+          <PowerStatCoefficient effect="0" action="0">1.300000</PowerStatCoefficient>
+          <AggroMultiplier effect="0" action="0">0.250000</AggroMultiplier>
+          <PowerStatCoefficient effect="1" action="0">0.600000</PowerStatCoefficient>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>23</Key>
+      <Name>Ward of Fire</Name>
+      <Icon>healing_flame</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>40</MinimumPointsSpent>
+      <DisplayRow>8</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-46623573</AbilityId>
+          <Description>Restores 475 to 525 health. Absorbs 357 damage. Lasts 10s. Healing done by Ward of Flame applies a stacking buff, reducing the cast time of Ward of Fire by 0.5s and the mana cost by 5%, per stack. Max 6 stacks.</Description>
+          <AddonId>AFD3894AB75879ABE</AddonId>
+          <IsPassive>False</IsPassive>
+          <MaxRange>35.000000</MaxRange>
+          <CostManaPercent>15.000000</CostManaPercent>
+          <CastTime>3.000000</CastTime>
+          <PowerStatCoefficient effect="0" action="0">0.700000</PowerStatCoefficient>
+          <AggroMultiplier effect="0" action="0">0.250000</AggroMultiplier>
+          <PowerStatCoefficient effect="1" action="0">0.500000</PowerStatCoefficient>
+        </Ability>
+        <Ability>
+          <AbilityId>1714883100</AbilityId>
+          <Description></Description>
+          <AddonId>A66370A1C12A30957</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+  </Traits>
+  <Abilities>
+    <Ability>
+      <MinimumPointsInSoul>61</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Flame of Life</Name>
+      <Icon>blessing_of_the_flames</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>60</RequiredLevel>
+        <AbilityId>-88105788</AbilityId>
+        <Description>Restores health equal to 150% of the Cleric&apos;s Maximum Health to up to 10 group or raid members over 6s. Reduces damage taken by affected allies by 20%, and increases damage dealt by those allies by 5%.</Description>
+        <AddonId>AFABF9CC466A13DEE</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>90.000008</Cooldown>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Radius>35.000000</Radius>
+        <MaxAffected>10</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>16</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Char</Name>
+      <Icon>cauterize1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>16</RequiredLevel>
+        <AbilityId>-87919351</AbilityId>
+        <Description>Deals 1956 to 1956 Fire damage over 15s.</Description>
+        <AddonId>AFAC27509A659D335</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>10.000000</CostManaPercent>
+        <CastTime>2.000000</CastTime>
+        <Duration>15.000000</Duration>
+        <Interval>1.000000</Interval>
+        <PowerStatCoefficient effect="0" action="0">1.910000</PowerStatCoefficient>
+        <DamageMultiplier effect="0" action="0">0.062500</DamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>31</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Symbol of the Sun</Name>
+      <Icon>purifier_symbol_of_the_sun</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>31</RequiredLevel>
+        <AbilityId>-82235525</AbilityId>
+        <Description>Absorbs 1139 damage. Lasts 30s.</Description>
+        <AddonId>AFB192F7B492B05AB</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">2.200000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>26</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Sign of Anticipation</Name>
+      <Icon>purifier_sign_of_anticipation_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>26</RequiredLevel>
+        <AbilityId>-74273856</AbilityId>
+        <Description>Causes the Cleric&apos;s single target healing and absorption spells to apply Sign of Anticipation for 15s. Increases Dodge and Block by 3%. Lasts 1h.</Description>
+        <AddonId>AFB92ABC04E1B9EDA</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>6.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Disciple of Flame</Name>
+      <Icon>generic_ability_019</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-64370027</AbilityId>
+        <Description></Description>
+        <AddonId>AFC29CA9563260785</AddonId>
+        <IsPassive>True</IsPassive>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>40</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Eruption</Name>
+      <Icon>surging_flames</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>40</RequiredLevel>
+        <AbilityId>-60822153</AbilityId>
+        <Description>When an absorb is applied to an ally by the Cleric while in combat, deals Fire damage to the ally&apos;s target based on the Cleric&apos;s Spell Power. Cannot target the Cleric. Can only affect 1 ally. Lasts 1h.</Description>
+        <AddonId>AFC5FED77702BA98D</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>6.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>48</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Gathering of Flames</Name>
+      <Icon>sterilize1_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>48</RequiredLevel>
+        <AbilityId>-60130203</AbilityId>
+        <Description>Applies Gathering of Flames to up to 10 party or raid members, absorbing 310 damage. Lasts 30s. Restores 203 to 225 health if ended prematurely.</Description>
+        <AddonId>AFC6A7C6553CFAF07</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Radius>35.000000</Radius>
+        <MaxAffected>10</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>36</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Ward of Scorching</Name>
+      <Icon>restorative_flame</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>36</RequiredLevel>
+        <AbilityId>-56257223</AbilityId>
+        <Description>Restores 589 to 651 health. Absorbs 286 damage. Lasts 10s.</Description>
+        <AddonId>AFCA59539961A4A6C</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>40.000000</CostManaPercent>
+        <CastTime>2.000000</CastTime>
+        <PowerStatCoefficient effect="0" action="0">1.300000</PowerStatCoefficient>
+        <AggroMultiplier effect="0" action="0">0.250000</AggroMultiplier>
+        <PowerStatCoefficient effect="1" action="0">0.600000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>2</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Sign of Wrath</Name>
+      <Icon>purifier_sign_of_wrath_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>2</RequiredLevel>
+        <AbilityId>-47602695</AbilityId>
+        <Description>Causes the Cleric&apos;s single target healing and absorption spells to apply Sign of Wrath for 15s. When hit, deals 78 Fire damage to the attacker. Lasts 1h.</Description>
+        <AddonId>AFD29A3F9B3B85053</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>41</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Ward of Fire</Name>
+      <Icon>restorative_flame2</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>41</RequiredLevel>
+        <AbilityId>-46623573</AbilityId>
+        <Description>Restores 475 to 525 health. Absorbs 357 damage. Lasts 10s. Healing done by Ward of Flame applies a stacking buff, reducing the cast time of Ward of Fire by 0.5s and the mana cost by 5%, per stack. Max 6 stacks.</Description>
+        <AddonId>AFD3894AB75879ABE</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>15.000000</CostManaPercent>
+        <CastTime>3.000000</CastTime>
+        <PowerStatCoefficient effect="0" action="0">0.700000</PowerStatCoefficient>
+        <AggroMultiplier effect="0" action="0">0.250000</AggroMultiplier>
+        <PowerStatCoefficient effect="1" action="0">0.500000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>20</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Sign of Daring</Name>
+      <Icon>purifier_sign_of_daring_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>20</RequiredLevel>
+        <AbilityId>-42232271</AbilityId>
+        <Description>Causes the Cleric&apos;s single target healing and absorption spells to apply Sign of Daring for 15s. Increases Armor and all Resistances by 3%. Lasts 1h.</Description>
+        <AddonId>AFD7B96313061DEEC</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>6.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>24</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Soul Brand</Name>
+      <Icon>internalizeheat3b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>24</RequiredLevel>
+        <AbilityId>-23703182</AbilityId>
+        <Description>Restores 7% mana. Reduces Maximum Health by 5% for 10s. Max 5 stacks.</Description>
+        <AddonId>AFE9651729861BC8B</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxStack>5</MaxStack>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>36</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Fire Wall</Name>
+      <Icon>purifier_firewall_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>36</RequiredLevel>
+        <AbilityId>-12802186</AbilityId>
+        <Description>Deals 349 to 386 Fire damage to up to 8 enemies within the wall each second. Lasts 10s.</Description>
+        <AddonId>AFF3CA776A686D796</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>9.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>10.000000</Duration>
+        <MaxAffected>8</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>12</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Ward of Flame</Name>
+      <Icon>healing_flame</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>12</RequiredLevel>
+        <AbilityId>-10440555</AbilityId>
+        <Description>Restores 542 to 599 health over 3s. Applies a stacking absorb shield effect each second, absorbing up to 178 damage per stack. Lasts 10s. Max 3 stacks.</Description>
+        <AddonId>AFF60B095707BFDE8</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>15.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Channel>true</Channel>
+        <Duration>3.000000</Duration>
+        <Interval>1.000000</Interval>
+        <PowerStatCoefficient effect="0" action="0">0.550000</PowerStatCoefficient>
+        <AggroMultiplier effect="0" action="0">0.250000</AggroMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>54</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Sign of Faith</Name>
+      <Icon>purifier_sign_of_faith_cc</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>53</RequiredLevel>
+        <AbilityId>-6268052</AbilityId>
+        <Description>Causes the Cleric&apos;s single target healing and absorption spells to apply Sign of Faith for 15s. Reduces damage taken by 7%. Lasts 1h.</Description>
+        <AddonId>AFFA05B6C7ECB8A78</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>6.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>44</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Rite of the Forge</Name>
+      <Icon>smelting1a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>44</RequiredLevel>
+        <AbilityId>203377588</AbilityId>
+        <Description>Applies Rite of the Forge every 3s, absorbing 1036 damage for 15s. Lasts 15s.</Description>
+        <AddonId>A0C1F4BB4C0AF1CD3</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>120.000008</Cooldown>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>15.000000</Duration>
+        <Interval>3.000000</Interval>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>16</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Cauterize</Name>
+      <Icon>sentinel-cleansing_prayer_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>16</RequiredLevel>
+        <AbilityId>256144441</AbilityId>
+        <Description>Removes 1 Curse, Disease, or Poison.</Description>
+        <AddonId>A0F447439CB2C31BB</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>6.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>4</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Healing Flare</Name>
+      <Icon>healing_flare2</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>4</RequiredLevel>
+        <AbilityId>274748675</AbilityId>
+        <Description>Restores 271 to 300 health.</Description>
+        <AddonId>A106055037A4BEFE4</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">0.800000</PowerStatCoefficient>
+        <AggroMultiplier effect="0" action="0">0.500000</AggroMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Flame Lance</Name>
+      <Icon>holysweep3c</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>439726621</AbilityId>
+        <Description>Deals 970 to 1073 Fire damage.</Description>
+        <AddonId>A1A35B21D4891044E</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>30.000000</MaxRange>
+        <CostManaPercent>10.000000</CostManaPercent>
+        <CastTime>2.000000</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>11</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Flashover</Name>
+      <Icon>flash1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>11</RequiredLevel>
+        <AbilityId>620791420</AbilityId>
+        <Description>Forces the next healing or absorption spell to Critically Hit. Lasts 30s.</Description>
+        <AddonId>A2500867C5D84FEDF</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>45.000004</Cooldown>
+        <CostManaPercent>6.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>24</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Cauterizing Wave</Name>
+      <Icon>bomb_specialist</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>24</RequiredLevel>
+        <AbilityId>694498365</AbilityId>
+        <Description>Removes 1 Curse, Disease, or Poison from up to 10 party or raid members.</Description>
+        <AddonId>A2965343D52D98AB6</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>10.000000</Cooldown>
+        <CostManaPercent>6.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Radius>25.000000</Radius>
+        <MaxAffected>10</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>58</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Fiery Will</Name>
+      <Icon>paragon_alacricity</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>57</RequiredLevel>
+        <AbilityId>764106100</AbilityId>
+        <Description>Increases your damage and healing done with Fire spells by 25%, and absorption granted with Fire spells by 50% for 15s.</Description>
+        <AddonId>A2D8B55747FE03229</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <CostManaPercent>6.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>15.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>8</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Wisdom of the Ages</Name>
+      <Icon>inspiration1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>8</RequiredLevel>
+        <AbilityId>964668683</AbilityId>
+        <Description>Increases Wisdom by 70. Lasts 1h.</Description>
+        <AddonId>A397FAD0BC4352752</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>6.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Duration>3600.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Symbol of the Torch</Name>
+      <Icon>purifier_symbol_of_the_torch_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1049173517</AbilityId>
+        <Description>Absorbs 829 damage. Lasts 30s.</Description>
+        <AddonId>A3E891E0D4E6A0866</AddonId>
+        <IsPassive>False</IsPassive>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">1.600000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>6</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Caregiver&apos;s Blessing</Name>
+      <Icon>spiritofsaints3</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>6</RequiredLevel>
+        <AbilityId>1179780649</AbilityId>
+        <Description>Causes single target healing and absorption spells to apply Caregiver&apos;s Blessing for 10s. Absorbs 88 damage. Lasts 1h.</Description>
+        <AddonId>A46520629A6E9FB14</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostManaPercent>7.500000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>21</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Latent Blaze</Name>
+      <Icon>latent_blaze</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>21</RequiredLevel>
+        <AbilityId>1347376879</AbilityId>
+        <Description>Restores 1189 to 1314 health if health drops below 30% within 5m.</Description>
+        <AddonId>A504F56EFCA081784</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>45.000004</Cooldown>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>15.000000</CostManaPercent>
+        <CastTime>3.000000</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>51</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Spiritual Conflagration</Name>
+      <Icon>ward3</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>50</RequiredLevel>
+        <AbilityId>1568926483</AbilityId>
+        <Description>Restores 1900 health over 4s. Applies Spiritual Conflagration each second, absorbing 1236 damage.</Description>
+        <AddonId>A5D83EB134C61A309</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>15.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+        <Channel>true</Channel>
+        <Duration>4.000000</Duration>
+        <Interval>1.000000</Interval>
+        <PowerStatCoefficient effect="0" action="0">1.380000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>32</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Flash of the Phoenix</Name>
+      <Icon>ressurection1za</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>32</RequiredLevel>
+        <AbilityId>1958844441</AbilityId>
+        <Description>Brings the fallen ally back to life, restoring 50% health and mana. Usable in combat.</Description>
+        <AddonId>A74C19819577CEA4D</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>300.000000</Cooldown>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>6.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>28</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Sterilize</Name>
+      <Icon>sentinel-cleansing_prayer</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>28</RequiredLevel>
+        <AbilityId>1983584365</AbilityId>
+        <Description>Removes all Curses, Diseases, and Poisons.</Description>
+        <AddonId>A763B186D6A4F7852</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>20.000000</Cooldown>
+        <MaxRange>35.000000</MaxRange>
+        <CostManaPercent>6.000000</CostManaPercent>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+  </Abilities>
+</SoulTree>
+

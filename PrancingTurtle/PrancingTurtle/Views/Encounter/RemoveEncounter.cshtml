@@ -1,0 +1,24 @@
+﻿@model Database.Models.Encounter
+
+@{
+    ViewBag.Title = "Remove Encounter";
+}
+
+<h3>Really remove encounter @Model.Id (@Model.BossFight.Name) ?</h3>
+<h4>This operation can't be undone, and may take a few minutes to complete.</h4>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        @Html.ValidationSummary(true)
+
+        <div class="form-group">
+            <div class="col-md-10">
+                <input type="submit" value="Yep, delete this encounter!" class="btn btn-success" />
+                @Html.ActionLink("No! I didn't mean to click that!", "Overview", new { @id = Model.Id }, new { @class = "btn btn-danger" })
+            </div>
+        </div>
+    </div>
+}

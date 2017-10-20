@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Submitting logs";
+}
+
+<div class="container container-fluid">
+    <h2><b>How do I submit logs to this site?</b>
+    </h2>
+    <h5>There are two ways to do this, and both of them require very similar steps. After you create a session and are given a filename to use, such as <b>askh3587sz.zip</b> and have renamed your zipped up log, you have two options for log submission. Make sure that the filename is correct (don't use this example name)!</h5>
+    <h5>The first is the simplest, and this just consists of dragging and dropping your zipped (and renamed) log onto the 'upload' box, which should say something like 'drop your file here'. While this is the simplest, browser-based uploads aren't always reliable, and if you've had issues with this method in the past, there's a better solution!</h5>
+    <h5>
+        The second method of submitting logs uses FTP (file transfer protocol), a much more reliable method of sending files over the internet. You can either use an FTP client for this, or even just use Windows Explorer.
+        For this example, we'll use Windows Explorer. In the address bar, type <b>ftp://ftp.prancingturtle.com</b> and hit ENTER. You should see a blank window - this is normal. Now, all you need to do is
+        drag and drop your zipped up log into there, and windows will handle the upload rather than your browser being responsible for it. Logs are parsed in the exact same way, but uploading via FTP is much, much more reliable than browser-based HTTP uploads.
+    </h5>
+    <h5>If you use an FTP client, ensure that it's set to 'anonymous' authentication, and point it at <b>ftp.prancingturtle.com</b> before uploading files.</h5>
+</div>

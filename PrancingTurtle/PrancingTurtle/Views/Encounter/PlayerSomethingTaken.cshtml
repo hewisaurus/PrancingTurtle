@@ -1,0 +1,213 @@
+﻿@using PrancingTurtle.Helpers
+@using PrancingTurtle.Models.ViewModels
+@model PrancingTurtle.Models.ViewModels.Encounter.PlayerSomethingTaken
+
+@{
+    ViewBag.Title = string.Format("{0} ({1})", Model.Encounter.BossFight.Name, Model.Encounter.Duration);
+}
+
+@section scripts{
+    <script>
+
+        $(document).ready(function () {
+
+            $('div.exporttext').expander({
+                slicePoint: 0,
+                sliceOn: '<p hidden',
+                expandText: 'Show Export Text',
+                expandEffect: 'fadeIn',
+                expandPrefix: '',
+                userCollapse: false
+            });
+        });
+
+    </script>
+}
+
+@Html.Partial("_EncounterNav2", new EncounterNav(Model.Encounter.Id,
+        Model.Encounter.BossFight.Name, Model.Encounter.BossFight.Instance.Name,
+            Model.Encounter.Duration, Model.Encounter.SuccessfulKill, Model.Session), new ViewDataDictionary { { "link", "playersomethingtaken" } })
+
+<a name="top">&nbsp;</a>
+
+<div class="container container-fluid">
+    <div class="row">
+        <div class="col-lg-10 col-centered">
+            <div class="bs-callout overview">
+                <h3 class="text-center">@Model.PageTitle</h3>
+                <h4 class="text-center">Encounter: @Model.Encounter.BossFight.Name</h4>
+                <h5 class="text-center">@Html.Raw(string.Format("<b>Date:</b> {0} | <b>Fight Length:</b> {1}", Model.Encounter.Date.Add(Model.TimeZoneOffset), Model.Encounter.Duration))</h5>
+                @if (!string.IsNullOrEmpty(Model.ExportText))
+                {
+                    <div class="exporttext">
+                        <h5 class="text-center">@Model.ExportText</h5>
+                    </div>
+                }
+            </div>
+            <hr />
+        </div>
+    </div>
+    @*<div class="row">
+        <div class="col-lg-10 col-centered">
+                        @Model.Graph
+                        <hr />
+        </div>
+    </div>*@
+
+    <div class="row">
+        <div class="col-lg-10 col-centered">
+            @Model.SplineGraph
+            <hr />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-10 col-centered">
+            <h3 class="text-center">@Model.PageTitle summary</h3>
+            <h4 class="text-center">The icons below represent different graphs - <i class="fa fa-line-chart"></i> ability breakdowns,<i class="fa fa-crosshairs"></i> source or target breakdowns, and <i class="fa fa-ban"></i> graphs that are unavailable (no data) </h4>
+            <hr/>
+            <table class="table table-hover table-condensed">
+                <thead>
+                <tr>
+                    <th></th>
+                    <th class="text-center">Player</th>
+                    <th class="text-center">@Model.TotalText (@Model.GraphType)</th>
+                    <th></th>
+                    <th class="text-center">@Model.TotalNpcText (@Model.GraphType)</th>
+                    <th></th>
+                    <th class="text-center">@Model.TotalPlayersText (@Model.GraphType)</th>
+                    <th></th>
+                    <th class="text-center">@Model.TotalSelfText (@Model.GraphType)</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                @foreach (var item in Model.Data)
+                {
+                    <tr>
+
+                        <td>
+                            @if (item.PlayerId != -1)
+                            {
+                                <img class="right smallpad" src="@string.Format("/Content/icons/roles/{0}", item.RoleIcon)" title="@item.RoleName" height="18" width="18"/>
+                            }
+                        </td>
+                        <td class="text-center br-over">
+                            @if (item.PlayerId != -1)
+                            {
+                                <span style="font-size: 16px;" class="@item.DisplayColorClass">@item.PlayerName</span>
+                            }
+                            else
+                            {
+                                @item.PlayerName
+                            }
+                        </td>
+                        <td class="text-center br-over">
+                            @Html.Raw(string.Format("{0} ({1})", item.TotalDisplay, Math.Floor(item.Total/Model.Encounter.Duration.TotalSeconds)))
+                        </td>
+                        <td class="text-center br-over">
+                            @if (item.PlayerId != -1 && item.Total > 0)
+                            {
+                                @Html.ImageActionLinkPopup("Encounter", "Interaction",
+                                    string.Format("id={0}&p={1}&outgoing={2}&type={3}&mode=ability&filter=all", Model.Encounter.Id, item.PlayerId, Model.IsOutgoing, Model.GraphType),
+                                    "fa fa-line-chart", "padding:2px 5px;", string.Format("{0} graph for {1} (All sources, by ability)", Model.PageTitle, item.PlayerName))
+                                @Html.ImageActionLinkPopup("Encounter", "Interaction",
+                                    string.Format("id={0}&p={1}&outgoing={2}&type={3}&mode=target&filter=all", Model.Encounter.Id, item.PlayerId, Model.IsOutgoing, Model.GraphType),
+                                    "fa fa-crosshairs", "padding:2px 5px;", string.Format("{0} graph for {1} (All abilities, by source)", Model.PageTitle, item.PlayerName))
+                            }
+                            else
+                            {
+                                <p style="margin: 0">
+                                    <i class="fa fa-ban" style="padding: 2px 5px;" title="No graph to show"></i>
+                                    <i class="fa fa-ban" style="padding: 2px 5px;" title="No graph to show"></i>
+                                </p>
+                            }
+                        </td>
+                        <td class="text-center text-success br-over">
+                            @Html.Raw(string.Format("{0} ({1})", item.TotalFromNpcsDisplay, Math.Floor(item.TotalFromNpcs/Model.Encounter.Duration.TotalSeconds)))
+                        </td>
+                        <td class="text-center br-over">
+                            @if (item.PlayerId != -1 && item.TotalFromNpcs > 0)
+                            {
+                                @Html.ImageActionLinkPopup("Encounter", "Interaction",
+                                    string.Format("id={0}&p={1}&outgoing={2}&type={3}&mode=ability&filter=npcs", Model.Encounter.Id, item.PlayerId, Model.IsOutgoing, Model.GraphType),
+                                    "fa fa-line-chart", "padding:2px 5px;", string.Format("{0} graph for {1} (All NPCs, by ability)", Model.PageTitle, item.PlayerName))
+                                @Html.ImageActionLinkPopup("Encounter", "Interaction",
+                                    string.Format("id={0}&p={1}&outgoing={2}&type={3}&mode=target&filter=npcs", Model.Encounter.Id, item.PlayerId, Model.IsOutgoing, Model.GraphType),
+                                    "fa fa-crosshairs", "padding:2px 5px;", string.Format("{0} graph for {1} (All abilities, by NPC)", Model.PageTitle, item.PlayerName))
+                            }
+                            else
+                            {
+                                <p style="margin: 0">
+                                    <i class="fa fa-ban" style="padding: 2px 5px;" title="No graph to show"></i>
+                                    <i class="fa fa-ban" style="padding: 2px 5px;" title="No graph to show"></i>
+                                </p>
+                            }
+                        </td>
+                        <td class="text-center text-info br-over">
+                            @Html.Raw(string.Format("{0} ({1})", item.TotalFromOtherPlayersDisplay, Math.Floor(item.TotalFromOtherPlayers/Model.Encounter.Duration.TotalSeconds)))
+                        </td>
+                        <td class="text-center br-over">
+                            @if (item.PlayerId != -1 && item.TotalFromOtherPlayers > 0)
+                            {
+                                @Html.ImageActionLinkPopup("Encounter", "Interaction",
+                                    string.Format("id={0}&p={1}&outgoing={2}&type={3}&mode=ability&filter=otherplayers", Model.Encounter.Id, item.PlayerId, Model.IsOutgoing, Model.GraphType),
+                                    "fa fa-line-chart", "padding:2px 5px;", string.Format("{0} graph for {1} (All players, by ability)", Model.PageTitle, item.PlayerName))
+                                @Html.ImageActionLinkPopup("Encounter", "Interaction",
+                                    string.Format("id={0}&p={1}&outgoing={2}&type={3}&mode=target&filter=otherplayers", Model.Encounter.Id, item.PlayerId, Model.IsOutgoing, Model.GraphType),
+                                    "fa fa-crosshairs", "padding:2px 5px;", string.Format("{0} graph for {1} (All abilities, by player)", Model.PageTitle, item.PlayerName))
+                            }
+                            else
+                            {
+                                <p style="margin: 0">
+                                    <i class="fa fa-ban" style="padding: 2px 5px;" title="No graph to show"></i>
+                                    <i class="fa fa-ban" style="padding: 2px 5px;" title="No graph to show"></i>
+                                </p>
+                            }
+                        </td>
+                        <td class="text-center text-danger br-over">
+                            @Html.Raw(string.Format("{0} ({1})", item.TotalFromSelfDisplay, Math.Floor(item.TotalFromSelf/Model.Encounter.Duration.TotalSeconds)))
+                        </td>
+                        <td class="text-center br-over">
+                            @if (item.PlayerId != -1 && item.TotalFromSelf > 0)
+                            {
+                                @Html.ImageActionLinkPopup("Encounter", "Interaction",
+                                    string.Format("id={0}&p={1}&outgoing={2}&type={3}&mode=ability&filter=self", Model.Encounter.Id, item.PlayerId, Model.IsOutgoing, Model.GraphType),
+                                    "fa fa-line-chart", "padding:2px 5px;", string.Format("{0} graph for {1} (All self damage, by ability)", Model.PageTitle, item.PlayerName))
+                            }
+                            else
+                            {
+                                <p style="margin: 0">
+                                    <i class="fa fa-ban" style="padding: 2px 5px;" title="No graph to show"></i>
+                                </p>
+                            }
+                        </td>
+                        <td class="text-center">
+                            @if (item.PlayerId != -1 || !item.PlayerName.Contains("Overall"))
+                            {
+                                if (item.PlayerId != -1)
+                                {
+                                    @Html.ImageActionLink("Buffs", "Encounter", new {@id = Model.Encounter.Id, @target = item.PlayerLogId}, "", "fa fa-smile-o text-success")
+                                    @Html.ImageActionLink("Debuffs", "Encounter", new {@id = Model.Encounter.Id, @target = item.PlayerLogId}, "", "fa fa-frown-o text-danger")
+                                }
+                            }
+                        </td>
+                    </tr>
+                    if (item.PlayerId != -1)
+                    {
+                        <tr>
+                            <td colspan="11">
+                                <div class="progress progress-striped" style="margin-bottom: 0px !important; height: 4px;">
+                                    <div class="progress-bar progress-bar-success" style="width: @item.ProgressBarPercentage"></div>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                }
+                </tbody>
+            </table>
+        </div>
+
+        <p class="text-center text-muted">Page built in @Model.BuildTime</p>
+    </div>
+</div>

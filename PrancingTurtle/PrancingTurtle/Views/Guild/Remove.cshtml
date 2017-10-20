@@ -1,0 +1,24 @@
+﻿@model Database.Models.Guild
+
+@{
+    ViewBag.Title = "Remove Guild";
+}
+
+<h3>Really remove guild '@Model.Name' ?</h3>
+<h4>This operation can't be undone, and will remove all records linked to this guild.</h4>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        @Html.ValidationSummary(true)
+
+        <div class="form-group">
+            <div class="col-md-10">
+                <input type="submit" value="Yep, remove this guild" class="btn btn-danger" />
+                @Html.ActionLink("No! I didn't mean to click that!", "Index", new { @id = Model.Id }, new { @class = "btn btn-success" })
+            </div>
+        </div>
+    </div>
+}

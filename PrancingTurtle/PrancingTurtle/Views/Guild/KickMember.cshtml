@@ -1,0 +1,28 @@
+﻿@model Database.Models.AuthUserCharacter
+
+@{
+    ViewBag.Title = "Kick guild member";
+}
+
+<h3>Are you sure you wish to remove <b>@Model.CharacterName</b> from the guild?</h3>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        @Html.ValidationSummary(false)
+
+        @Html.HiddenFor(m => m.AuthUserId)
+        @Html.HiddenFor(m => m.CharacterName)
+        @Html.HiddenFor(m => m.GuildId)
+        @Html.HiddenFor(m => m.ShardId)
+
+        <div class="form-group">
+            <div class="col-md-10">
+                <input type="submit" value="Yes, remove this member" class="btn btn-success" />
+                @Html.ActionLink("No! I didn't mean to click that!", "Index", new { @id = Model.GuildId }, new { @class = "btn btn-danger" })
+            </div>
+        </div>
+    </div>
+}

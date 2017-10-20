@@ -1,0 +1,252 @@
+﻿@using PrancingTurtle.Helpers
+@model PrancingTurtle.Models.ViewModels.Session.SessionBossFightVM
+
+@{
+    ViewBag.Title = Model.Difficulty != null
+        ? string.Format("Sessions for {0} ({1} mode)", Model.BossFight.Name, Model.Difficulty.Name)
+        : string.Format("Sessions for {0}", Model.BossFight.Name);
+}
+
+
+@section Scripts
+{
+    <script type="text/javascript">
+        equalheight = function(container) {
+
+            var currentTallest = 0,
+                currentRowStart = 0,
+                rowDivs = new Array(),
+                $el,
+                topPosition = 0;
+            $(container)
+                .each(function() {
+
+                    $el = $(this);
+                    $($el).height('auto');
+                    topPostion = $el.position().top;
+
+                    if (currentRowStart != topPostion) {
+                        for (currentDiv = 0; currentDiv < rowDivs.length; currentDiv++) {
+                            rowDivs[currentDiv].height(currentTallest);
+                        }
+                        rowDivs.length = 0; // empty the array
+                        currentRowStart = topPostion;
+                        currentTallest = $el.height();
+                        rowDivs.push($el);
+                    } else {
+                        rowDivs.push($el);
+                        currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
+                    }
+                    for (currentDiv = 0; currentDiv < rowDivs.length; currentDiv++) {
+                        rowDivs[currentDiv].height(currentTallest);
+                    }
+                });
+        }
+
+        $(window)
+            .load(function() {
+                equalheight('#setheights .panel');
+            });
+
+
+        $(window)
+            .resize(function() {
+                equalheight('#setheights .panel');
+            });
+
+        $(function () {
+            $("#vtabs").tabs({
+                beforeLoad: function (event, ui) {
+                    ui.jqXHR.error(function () {
+                        ui.panel.html(
+                          "Uh oh, something went wrong and we couldn't load this tab.");
+                    });
+                }
+            });
+        });
+    </script>
+
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-10 col-centered">
+
+
+            <div class="row">
+                <div style="float: left" width="410px">
+                    @if (Model.LoadImage)
+                    {
+                        <img src="@string.Format("/Content/images/portrait/{0}.png", Model.BossFight.PortraitFilename)" width="405" height="247"/>
+                    }
+                    else
+                    {
+                        <img src="/Content/images/portrait/noportrait.png" width="405" height="247"/>
+                    }
+                </div>
+                <div style="float: left">
+                    @if (Model.Difficulty != null)
+                    {
+                        <h2>
+                            <b>@Model.BossFight.Name</b> @Html.Raw(string.Format("({0} mode) records", Model.Difficulty.Name))
+                        </h2>
+                    }
+                    else
+                    {
+                        <h2>
+                            <b>@Model.BossFight.Name</b>
+                        </h2>
+                    }
+                    @*<h2>
+                    <b>@Model.BossFight.Name</b>
+                </h2>*@
+                    @if (Model.SingleFastestKill != null)
+                    {
+                        <h3>
+                            Fastest kill: <b>
+                                @Html.ActionLink(string.Format("<{0}>", Model.SingleFastestKill.UploadGuild.Name), "Index", "Guild",
+                                    new {@id = Model.SingleFastestKill.GuildId}, new {@class = "text-info-i", style = "margin-left:5px;"})
+                            </b>
+                            @Model.SingleFastestKill.Duration.ToString(@"m\mss\s")
+                            @Html.ImageActionLink("Overview", "Encounter", new {@id = Model.SingleFastestKill.Id}, "text-success", "fa fa-external-link-square")
+
+                        </h3>
+                    }
+                    else
+                    {
+                        <h3>
+                            Fastest kill: No information available!
+                        </h3>
+                    }
+                    @if (Model.SingleTopDps == null)
+                    {
+                        <h3 style="margin: 0">
+                            <img src="~/Content/icons/misc/LFP_Roles_DPS.png" height="40" width="40" title="Damage done per second"/>
+                            Records not currently available
+                        </h3>
+                    }
+                    else
+                    {
+                        @Html.Partial("~/Views/BossFight/_TopSingleDps.cshtml", Model.SingleTopDps)
+                    }
+
+                    @if (Model.SingleTopHps == null)
+                    {
+                        <h3 style="margin: 0">
+                            <img src="~/Content/icons/misc/LFP_Roles_Heal.png" height="40" width="40" title="Healing done per second"/>
+                            Records not currently available
+                        </h3>
+                    }
+                    else
+                    {
+                        @Html.Partial("~/Views/BossFight/_TopSingleHps.cshtml", Model.SingleTopHps)
+                    }
+
+                    @if (Model.SingleTopHps == null)
+                    {
+                        <h3 style="margin: 0">
+                            <img src="~/Content/icons/misc/LFP_Roles_Tank.png" height="40" width="40" title="Absorption granted per second (shielding)"/>
+                            Records not currently available
+                        </h3>
+                    }
+                    else
+                    {
+                        @Html.Partial("~/Views/BossFight/_TopSingleAps.cshtml", Model.SingleTopAps)
+                    }
+
+
+
+                </div>
+            </div>
+            <hr/>
+            @Html.Partial("Partials/_BossFightRecords", Model)
+
+            @*SESSIONS*@
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    @if (Model.Difficulty != null)
+                    {
+                        <h2>
+                            Sessions for <b>@Model.BossFight.Name</b> @Html.Raw(string.Format("({0} mode)", Model.Difficulty.Name))
+                        </h2>
+                    }
+                    else
+                    {
+                        <h2>
+                            Sessions for <b>@Model.BossFight.Name</b>
+                        </h2>
+                    }
+                    @*? string.Format("Sessions for {0} ({1} mode)", Model.BossFight.Name, Model.Difficulty.Name)
+                        : string.Format("Sessions for {0}", Model.BossFight.Name);*@
+                    @*<h2>
+                            Sessions for <b>@Model.BossFight.Name</b>
+                        </h2>*@
+                    <h5>(All sessions that included this encounter)</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="table-responsive">
+                    <table class="table">
+                        <tr><td colspan="2"></td></tr>
+                        @foreach (var guildSession in Model.Sessions)
+                        {
+                            <tr>
+                                <td class="text-right col-sm-3">
+                                    <b>@DateTimeHelpers.TimeAgo(guildSession.Date.Add(Model.TimeZoneOffset))</b>
+                                </td>
+                                <td class="text-left col-sm-9">
+                                    @*<a class="btn-sm btn-default" style="text-decoration: none !important; margin-right: 5px;" href="#">
+                                            @Html.Raw(string.Format("&lt;{0}&gt; ", guildSession.Guild.Name))
+                                        </a>*@
+                                    @Html.ActionLink(string.Format("<{0}>", guildSession.Guild.Name), "Index", "Guild", new {@id = guildSession.Guild.Id}, new {@class = "btn btn-sm btn-default"})
+
+                                    @Html.ActionLink("Info", "Index", "Guild", new {@id = guildSession.Guild.Id}, new {@class = "text-warning-i"}) |
+                                    @Html.ActionLink("Sessions", "Guild", "Session", new {@id = guildSession.Guild.Id}, new {@class = "text-warning-i"})
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-right col-sm-3"></td>
+                                <td class="text-left col-sm-9">
+                                    Session:
+                                    <b>@Html.ActionLink(string.Format("{0} ({1})", guildSession.Name, guildSession.Duration), "Detail", "Session", new {@id = guildSession.Id}, new {@class = "text-info-i"})</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-right col-sm-3"></td>
+                                <td class="text-left col-sm-9">
+                                    @foreach (var bossKilled in guildSession.BossesSeen)
+                                    {
+                                        <i class="fa fa-check text-success"></i>
+                                        @bossKilled
+                                    }
+                                    @foreach (var bossNotKilled in guildSession.BossesSeenNotKilled)
+                                    {
+                                        <i class="fa fa-times text-danger"></i>
+                                        @bossNotKilled
+                                    }
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><hr class="col-sm-4"/></td>
+                            </tr>
+                        }
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    @if (Model.Difficulty != null)
+                    {
+                        @Html.ActionLink("SHOW EARLIER SESSIONS", "BossFight", "Session", new {@o = 1, @d = Model.Difficulty.Id}, new {@class = "btn btn-primary"})
+                    }
+                    else
+                    {
+                        @Html.ActionLink("SHOW EARLIER SESSIONS", "BossFight", "Session", new {@o = 1}, new {@class = "btn btn-primary"})
+                    }
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

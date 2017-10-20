@@ -1,0 +1,1388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SoulTree calling="Warrior" name="Paragon">
+  <Traits>
+    <Trait>
+      <Key>0</Key>
+      <Name>Double Jeopardy</Name>
+      <Icon>weaponsmith1a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1382410872</AbilityId>
+          <Description>Increases critical hit chance while dual wielding.</Description>
+          <AddonId>A5265EA78EEB1918E</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>After successfully hitting with Swift Strike, Setting Moon or Thread the Trees you gain an additional 3% chance to critically hit with Follow Up attacks for 6 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>After successfully hitting with Swift Strike, Setting Moon or Thread the Trees you gain an additional 6% chance to critically hit with Follow Up attacks for 6 seconds.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>After successfully hitting with Swift Strike, Setting Moon or Thread the Trees you gain an additional 9% chance to critically hit with Follow Up attacks for 6 seconds.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>1</Key>
+      <Name>Combat Precision</Name>
+      <Icon>piercingshot3</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1322815479</AbilityId>
+          <Description></Description>
+          <AddonId>A4ED88FF75E8A0BA4</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Physical attacks ignore 2% of the target&apos;s armor.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Physical attacks ignore 4% of the target&apos;s armor.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Physical attacks ignore 6% of the target&apos;s armor.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Physical attacks ignore 8% of the target&apos;s armor.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Physical attacks ignore 10% of the target&apos;s armor.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>4</Key>
+      <Name>Teaching of the Five Rings</Name>
+      <Icon>generic_ability_017</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1660071431</AbilityId>
+          <Description></Description>
+          <AddonId>A62F2AE0707DF61FE</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases Damage of attacks that generate Attack Points by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases Damage of attacks that generate Attack Points by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases Damage of attacks that generate Attack Points by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases Damage of attacks that generate Attack Points by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases Damage of attacks that generate Attack Points by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>5</Key>
+      <Name>Wrist Strike</Name>
+      <Icon>disabling4</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1068710596</AbilityId>
+          <Description>Debilitates for 5s.</Description>
+          <AddonId>A3FB33AC4DCC2A8D1</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Melee Weapon</RequiresWeapon>
+          <Cooldown>30.000002</Cooldown>
+          <MaxRange>3.000000</MaxRange>
+          <CostEnergy>10</CostEnergy>
+          <CastTime>Instant</CastTime>
+          <Duration>5.000000</Duration>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Unlocks the Wrist Strike ability.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>6</Key>
+      <Name>Deadly Parity</Name>
+      <Icon>swordsmith1</Icon>
+      <BendType>VerticalToHorizontal</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1263012131</AbilityId>
+          <Description></Description>
+          <AddonId>A4B4809233827B6C8</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Hitting with a single target Follow Up Attack grants a second strike that does 1 Physical Damage for every 12 Attack Power.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Hitting with a single target Follow Up Attack grants a second strike that does 1 Physical Damage for every 8 Attack Power.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Hitting with a single target Follow Up Attack grants a second strike that does 1 Physical Damage for every 4 Attack Power.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>7</Key>
+      <Name>Weapon Master</Name>
+      <Icon>1h_sword_035</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>740830348</AbilityId>
+          <Description></Description>
+          <AddonId>A2C282C8C0FF6ABF6</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>You gain a 50% chance of generating a second Attack Point when using a Follow Up attack.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>You gain a 100% chance of generating a second Attack Point when using a Follow Up attack.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>8</Key>
+      <Name>Flowing Strikes</Name>
+      <Icon>paragon_flowing_strikes</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>999893150</AbilityId>
+          <Description>Increases critical hit chance</Description>
+          <AddonId>A3B99289E85291D0E</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Hitting with an ability attack grants a 15% chance to increase Critical hit chance by 15% for 15 seconds. </Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Hitting with an ability attack grants a 30% chance to increase Critical hit chance by 15% for 15 seconds. </Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Hitting with an ability attack grants a 45% chance to increase Critical hit chance by 15% for 15 seconds. </Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>11</Key>
+      <Name>Run Like the Wind</Name>
+      <Icon>kick3</Icon>
+      <PrereqTraitKey>18</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>841313125</AbilityId>
+          <Description></Description>
+          <AddonId>A32256B6500000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the duration on Fleet of Foot by 2 seconds and reduces its cooldown by 5 seconds. Increases movement speed by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the duration on Fleet of Foot by 4 seconds and reduces its cooldown by 10 seconds. Increases movement speed by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the duration on Fleet of Foot by 6 seconds and reduces its cooldown by 15 seconds. Increases movement speed by 6%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>13</Key>
+      <Name>Grace of the Five Rings</Name>
+      <Icon>cruel_vengeance_01</Icon>
+      <BendType>VerticalToHorizontal</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>633564900</AbilityId>
+          <Description></Description>
+          <AddonId>A25C36EE400000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your chance to Dodge by 1%, your Attack Power by 2%, and Weapon Contribution by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your chance to Dodge by 2%, your Attack Power by 4%, and Weapon Contribution by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your chance to Dodge by 3%, your Attack Power by 6%, and Weapon Contribution by 6%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>15</Key>
+      <Name>Force of Will</Name>
+      <Icon>magnify_pain_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>502369119</AbilityId>
+          <Description></Description>
+          <AddonId>A1DF18B5F17256991</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases Critical Hit Damage by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases Critical Hit Damage by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases Critical Hit Damage by 6%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>16</Key>
+      <Name>Death Touch</Name>
+      <Icon>piercingenergy3</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1378876150</AbilityId>
+          <Description>Instantly deals 2319 Physical damage that bypasses armor, snares the enemy and reduces their Strength and Dexterity by 80% for 8s. This ability grants 1 Attack Point.</Description>
+          <AddonId>A522FFAF69C3094B7</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Melee Weapon</RequiresWeapon>
+          <Cooldown>15.000001</Cooldown>
+          <MaxRange>3.000000</MaxRange>
+          <CostEnergy>10</CostEnergy>
+          <GainAttackPoints>1</GainAttackPoints>
+          <CastTime>Instant</CastTime>
+          <PowerStatCoefficient effect="2" action="0">1.670000</PowerStatCoefficient>
+          <WeaponDamageMultiplier effect="2" action="0">2.510000</WeaponDamageMultiplier>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Unlocks the Death Touch ability.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>17</Key>
+      <Name>Improved Flowing Strikes</Name>
+      <Icon>paragon_improved_flowing_strikes_01_b</Icon>
+      <PrereqTraitKey>8</PrereqTraitKey>
+      <BendType>VerticalToHorizontal</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1226025</AbilityId>
+          <Description></Description>
+          <AddonId>A0012B52900000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>When Flowing Strikes is triggered, damage is increased by 5%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>When Flowing Strikes is triggered, damage is increased by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>18</Key>
+      <Name>Fleet of Foot</Name>
+      <Icon>kick4</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1209641634</AbilityId>
+          <Description>Increases movement speed by 50% for 15s.</Description>
+          <AddonId>A4819AAA2978F7AB9</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>60.000004</Cooldown>
+          <CostEnergy>10</CostEnergy>
+          <CastTime>Instant</CastTime>
+          <Duration>15.000000</Duration>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Unlocks the Fleet of Foot ability.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>19</Key>
+      <Name>Devoted Training</Name>
+      <Icon>riftstalker_great_fortitude_01_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-94183181</AbilityId>
+          <Description></Description>
+          <AddonId>AFA62E0F331887AFF</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increase Strength by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increase Strength by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increase Strength by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increase Strength by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increase Strength by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>20</Key>
+      <Name>Flinching Strike</Name>
+      <Icon>roguestrike2a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>290261798</AbilityId>
+          <Description>Interrupts.</Description>
+          <AddonId>A114D0B26C789A345</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Melee Weapon</RequiresWeapon>
+          <Cooldown>8.000000</Cooldown>
+          <MaxRange>3.000000</MaxRange>
+          <CostEnergy>10</CostEnergy>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Unlocks the Flinching Strike ability.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>21</Key>
+      <Name>One Two Punch</Name>
+      <Icon>paragon_path_of_the_tempest_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-57984470</AbilityId>
+          <Description></Description>
+          <AddonId>AFC8B3A2A00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases Base Damage of Follow Up attacks by 5%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases Base Damage of Follow Up attacks by 10%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases Base Damage of Follow Up attacks by 15%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>22</Key>
+      <Name>Shield of Will</Name>
+      <Icon>blessing_of_the_flames_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-58149884</AbilityId>
+          <Description>Absorbs 50% of damage taken up to 2757 damage. Lasts 30s. This Ability is not affected by the Global Cooldown.</Description>
+          <AddonId>AFC88B404E866A387</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>30.000002</Cooldown>
+          <CostEnergy>10</CostEnergy>
+          <CastTime>Instant</CastTime>
+          <PowerStatCoefficient effect="0" action="0">2.860000</PowerStatCoefficient>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Unlocks the Shield of Will ability.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>23</Key>
+      <Name>Tranquility</Name>
+      <Icon>paragon_analyze_weakness_b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-96994664</AbilityId>
+          <Description>Deals 2774 to 3066 damage. Debuffs the enemy, reducing ranged damage done to the Warrior by 20% for 15s. Awards 1 Attack Point.</Description>
+          <AddonId>AFA37FA98C6F9C861</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Melee Weapon</RequiresWeapon>
+          <Cooldown>15.000001</Cooldown>
+          <MaxRange>20.000000</MaxRange>
+          <CostEnergy>20</CostEnergy>
+          <GainAttackPoints>1</GainAttackPoints>
+          <CastTime>Instant</CastTime>
+          <PowerStatCoefficient effect="0" action="0">2.000000</PowerStatCoefficient>
+          <WeaponDamageMultiplier effect="0" action="0">3.000000</WeaponDamageMultiplier>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Unlock Tranquility ability.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>24</Key>
+      <Name>Grasping the Horizon</Name>
+      <Icon>harbinger_planar_retreat_z</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-44582999</AbilityId>
+          <Description>Increases the range of Swift Strike, Setting Moon, Reaping Harvest and all Follow Up attacks by 20m for 15s.</Description>
+          <AddonId>AFD57B7A9502AB0A9</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>30.000002</Cooldown>
+          <CostEnergy>10</CostEnergy>
+          <CastTime>Instant</CastTime>
+          <Duration>15.000000</Duration>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>25</Key>
+      <Name>Unleashed</Name>
+      <Icon>shaman-vengeance_of_bitter_wind</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>40</MinimumPointsSpent>
+      <DisplayRow>8</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-90321328</AbilityId>
+          <Description>Successful Follow Up attacks place a stack of Readiness on the Warrior, up to 5 stacks. Each stack increases Attack Power and Weapon Contribution by 4%.</Description>
+          <AddonId>AFA9DCE506C99A7E8</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Successful Follow Up attacks place a stack of Readiness on the Warrior, up to 5 stacks. Each stack increases Attack Power and Weapon Contribution by 4%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>26</Key>
+      <Name>Weapon Familiarity</Name>
+      <Icon>weaponsmith1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-50218666</AbilityId>
+          <Description></Description>
+          <AddonId>AFD01B9563E85F594</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Attack Power and Weapon Damage by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Attack Power and Weapon Damage by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your Attack Power and Weapon Damage by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your Attack Power and Weapon Damage by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your Attack Power and Weapon Damage by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>27</Key>
+      <Name>Swift Finesse</Name>
+      <Icon>weapon_barrage</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1495656130</AbilityId>
+          <Description></Description>
+          <AddonId>A5925E6C227D4B7A7</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage of Flurry and Reaping Harvest by 15%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage of Flurry and Reaping Harvest by 30%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>28</Key>
+      <Name>Analyze Weakness</Name>
+      <Icon>paragon_analyze_weakness</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-25264818</AbilityId>
+          <Description></Description>
+          <AddonId>AFE7E7D4E00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Swift Strike, Reaping Harvest, Setting Moon, and Flurry ignore 10% of enemy Armor. The damage and healing done by Turn the Blade are reduced by 25%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Swift Strike, Reaping Harvest, Setting Moon, and Flurry ignore 20% of enemy Armor. The damage and healing done by Turn the Blade are reduced by 20%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>29</Key>
+      <Name>Precise Strikes</Name>
+      <Icon>riftstalker_rift_scavenger_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-80857461</AbilityId>
+          <Description></Description>
+          <AddonId>AFB2E368B00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the Base Damage of Swift Strike, Reaping Harvest, Setting Moon, and Flurry by 10%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the Base Damage of Swift Strike, Reaping Harvest, Setting Moon, and Flurry by 20%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>30</Key>
+      <Name>Duality</Name>
+      <Icon>life_and_death_concord_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-62969792</AbilityId>
+          <Description></Description>
+          <AddonId>AFC3F284000000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>You may have 2 active Way buffs.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>31</Key>
+      <Name>Sweeping Blades</Name>
+      <Icon>generic_ability_015_z</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-55994207</AbilityId>
+          <Description>Single target ability attacks hit up to 4 additional enemies. Reduces the damage of all attacks by 70%.</Description>
+          <AddonId>AFCA998A1762885E3</AddonId>
+          <IsPassive>False</IsPassive>
+          <CostEnergy>10</CostEnergy>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Unlocks the Sweeping Blades ability.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+  </Traits>
+  <Abilities>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Tranquility</Name>
+      <Icon>paragon_analyze_weakness_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-96994664</AbilityId>
+        <Description>Deals 2774 to 3066 damage. Debuffs the enemy, reducing ranged damage done to the Warrior by 20% for 15s. Awards 1 Attack Point.</Description>
+        <AddonId>AFA37FA98C6F9C861</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>15.000001</Cooldown>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>20</CostEnergy>
+        <GainAttackPoints>1</GainAttackPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">2.000000</PowerStatCoefficient>
+        <WeaponDamageMultiplier effect="0" action="0">3.000000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>20</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Way of the Sun</Name>
+      <Icon>healing_flare_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>20</RequiredLevel>
+        <AbilityId>-91190261</AbilityId>
+        <Description>Follow Up attacks heal the Paragon 20% of Attack Power. Maximum active Way buffs: 1. Lasts 1h.</Description>
+        <AddonId>AFA908C0B8B2FF7F4</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Unleashed</Name>
+      <Icon>shaman-vengeance_of_bitter_wind</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-90321328</AbilityId>
+        <Description>Successful Follow Up attacks place a stack of Readiness on the Warrior, up to 5 stacks. Each stack increases Attack Power and Weapon Contribution by 4%.</Description>
+        <AddonId>AFA9DCE506C99A7E8</AddonId>
+        <IsPassive>True</IsPassive>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Gift of the Paragon</Name>
+      <Icon>soul_paragon</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-87554656</AbilityId>
+        <Description>Base Damage is increased by 1% for each Point spent in the Paragon Soul.</Description>
+        <AddonId>AFAC805A02C6846DE</AddonId>
+        <IsPassive>True</IsPassive>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Shield of Will</Name>
+      <Icon>blessing_of_the_flames_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-58149884</AbilityId>
+        <Description>Absorbs 50% of damage taken up to 2757 damage. Lasts 30s. This Ability is not affected by the Global Cooldown.</Description>
+        <AddonId>AFC88B404E866A387</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">2.860000</PowerStatCoefficient>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Sweeping Blades</Name>
+      <Icon>generic_ability_015_z</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-55994207</AbilityId>
+        <Description>Single target ability attacks hit up to 4 additional enemies. Reduces the damage of all attacks by 70%.</Description>
+        <AddonId>AFCA998A1762885E3</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Grasping the Horizon</Name>
+      <Icon>harbinger_planar_retreat_z</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-44582999</AbilityId>
+        <Description>Increases the range of Swift Strike, Setting Moon, Reaping Harvest and all Follow Up attacks by 20m for 15s.</Description>
+        <AddonId>AFD57B7A9502AB0A9</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <Duration>15.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>61</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Alacrity</Name>
+      <Icon>paragon_alacricity_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>60</RequiredLevel>
+        <AbilityId>-42957801</AbilityId>
+        <Description>For the next 10s, Rising Waterfall, Final Blessing and Reaping Harvest hit twice.</Description>
+        <AddonId>AFD708417A1315A71</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <Duration>10.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>58</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Combat Focus</Name>
+      <Icon>hardened_stalker</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>57</RequiredLevel>
+        <AbilityId>-31587697</AbilityId>
+        <Description>Instantly adds 3 Attack Points to the Warrior. Increases the damage of the next Reaping Harvest by 50%.</Description>
+        <AddonId>AFE1E028FBA54DD15</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>54</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Open the Stream</Name>
+      <Icon>combat_culmination</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>53</RequiredLevel>
+        <AbilityId>-19078107</AbilityId>
+        <Description>Follow Up Attack. Deals 1248 to 1380 Physical damage, in addition to 3662 Physical damage over the next 15s. This ability grants 1 Attack Point.</Description>
+        <AddonId>AFEDCE425AED3A442</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>20</CostEnergy>
+        <GainAttackPoints>1</GainAttackPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="1" action="0">0.900000</PowerStatCoefficient>
+        <WeaponDamageMultiplier effect="1" action="0">1.350000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>32</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Final Blessing</Name>
+      <Icon>2h_sword_078_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>32</RequiredLevel>
+        <AbilityId>-13822694</AbilityId>
+        <Description>Follow Up Attack. Deals 1747 to 1931 Physical damage to an enemy with under 30% health remaining. This ability grants 1 Attack Point.</Description>
+        <AddonId>AFF2D151A9AE244A9</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>20</CostEnergy>
+        <GainAttackPoints>1</GainAttackPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">1.260000</PowerStatCoefficient>
+        <WeaponDamageMultiplier effect="0" action="0">1.890000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>8</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Turn the Blade</Name>
+      <Icon>deflection4c</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>8</RequiredLevel>
+        <AbilityId>272743894</AbilityId>
+        <Description>Reduces the duration of the Global Cooldown by 0.5 seconds, and reduces the Power cost of abilities by 33%. Reduces damage and healing done by 30%.</Description>
+        <AddonId>A1041BDD6C30EA150</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>20</CostEnergy>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Flinching Strike</Name>
+      <Icon>roguestrike2a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>290261798</AbilityId>
+        <Description>Interrupts.</Description>
+        <AddonId>A114D0B26C789A345</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>8.000000</Cooldown>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>16</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Thread the Trees</Name>
+      <Icon>tumble1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>16</RequiredLevel>
+        <AbilityId>340977022</AbilityId>
+        <Description>Charge an enemy, dealing 1172 to 1296 Physical damage to up to 5 enemies along the way. Roots the target enemy for 1.5 seconds. Removes all movement impairing effects from the Warrior. This ability grants 1 Attack Point.</Description>
+        <AddonId>A1452E57E2E8B84B3</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>15.000001</Cooldown>
+        <MinRange>3.000000</MinRange>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>9</CostEnergy>
+        <GainAttackPoints>1</GainAttackPoints>
+        <CastTime>Instant</CastTime>
+        <MaxAffected>5</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Way of the River</Name>
+      <Icon>paragon_way_of_the_river_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>376619830</AbilityId>
+        <Description>Increases Physical Crit by 3%. Maximum active Way buffs: 1. Lasts 1h.</Description>
+        <AddonId>A1672C336AAF86543</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <Duration>3600.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>4</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Rising Waterfall</Name>
+      <Icon>cleave1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>4</RequiredLevel>
+        <AbilityId>432347214</AbilityId>
+        <Description>Follow Up Attack. Deals weapon plus 1565 to 1729 Physical damage. This ability grants 1 Attack Point. </Description>
+        <AddonId>A19C5184EAA07BB57</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>20</CostEnergy>
+        <GainAttackPoints>1</GainAttackPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="1" action="0">1.130000</PowerStatCoefficient>
+        <WeaponDamageMultiplier effect="1" action="0">1.690000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>36</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Way of the Mountain</Name>
+      <Icon>paragon-way_of_mountain_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>36</RequiredLevel>
+        <AbilityId>685165016</AbilityId>
+        <Description>The Warrior cannot be knocked back and takes 5% less damage. Maximum active Way buffs: 1. Lasts 1h.</Description>
+        <AddonId>A28D6C9D889B95A6B</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <Duration>3600.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>2</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Reaping Harvest</Name>
+      <Icon>twin_strike_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>2</RequiredLevel>
+        <AbilityId>753806880</AbilityId>
+        <Description>Strike for weapon plus Physical damage:
+
+1 Point: 1090 damage.
+2 Points: 1644 damage.
+3 Points: 2483 damage.</Description>
+        <AddonId>A2CEE2E2070DC6371</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>20</CostEnergy>
+        <CostAttackPoints>1</CostAttackPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">1.700000</PowerStatCoefficient>
+        <WeaponDamageMultiplier effect="0" action="0">2.550000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>28</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Shifting Blades</Name>
+      <Icon>paragon_shifting_blades_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>28</RequiredLevel>
+        <AbilityId>1051084767</AbilityId>
+        <Description>Follow each of the next 3 single target direct damaging attacks with a second strike:
+
+1 Point: 10% of the damage of the initial attack.
+2 Points: 20% of the damage of the initial attack.
+3 Points: 30% of the damage of the initial attack.
+
+For each point spent in Paragon beyond 28, the percentage of the initial attack per combo point used is increased by 0.36%. 
+</Description>
+        <AddonId>A3EA647DF8335E491</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>15.000001</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <CostAttackPoints>1</CostAttackPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>40</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Predictable Movements</Name>
+      <Icon>paragon-predicatable_movements_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>40</RequiredLevel>
+        <AbilityId>1055842710</AbilityId>
+        <Description>Stuns for 4s.</Description>
+        <AddonId>A3EEEE196C09A4ECE</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <Duration>4.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Wrist Strike</Name>
+      <Icon>disabling4</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1068710596</AbilityId>
+        <Description>Debilitates for 5s.</Description>
+        <AddonId>A3FB33AC4DCC2A8D1</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <Duration>5.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>51</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Strike Like Iron</Name>
+      <Icon>intimidatingweapon2</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>50</RequiredLevel>
+        <AbilityId>1072235379</AbilityId>
+        <Description>Increases the damage of all attacks by 25%.</Description>
+        <AddonId>A3FE90373692BAF3E</AddonId>
+        <IsPassive>True</IsPassive>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>44</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Setting Moon</Name>
+      <Icon>nightstalker_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>44</RequiredLevel>
+        <AbilityId>1161618838</AbilityId>
+        <Description>Deal 1248 to 1380 Physical damage, in addition to increasing the damage of Follow Up attacks by 25% for 20s. This ability grants 1 Attack Point.</Description>
+        <AddonId>A453CE5965C2447BD</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>20</CostEnergy>
+        <GainAttackPoints>1</GainAttackPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">0.900000</PowerStatCoefficient>
+        <WeaponDamageMultiplier effect="0" action="0">1.350000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Fleet of Foot</Name>
+      <Icon>kick4</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1209641634</AbilityId>
+        <Description>Increases movement speed by 50% for 15s.</Description>
+        <AddonId>A4819AAA2978F7AB9</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <Duration>15.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Swift Strike</Name>
+      <Icon>double_cross_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1222018471</AbilityId>
+        <Description>Deals 1248 to 1380 plus weapon damage. Awards 1 Attack Point.</Description>
+        <AddonId>A48D685A78206D644</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>20</CostEnergy>
+        <GainAttackPoints>1</GainAttackPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="1" action="0">0.900000</PowerStatCoefficient>
+        <WeaponDamageMultiplier effect="1" action="0">1.350000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Death Touch</Name>
+      <Icon>piercingenergy3</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1378876150</AbilityId>
+        <Description>Instantly deals 2319 Physical damage that bypasses armor, snares the enemy and reduces their Strength and Dexterity by 80% for 8s. This ability grants 1 Attack Point.</Description>
+        <AddonId>A522FFAF69C3094B7</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>15.000001</Cooldown>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <GainAttackPoints>1</GainAttackPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="2" action="0">1.670000</PowerStatCoefficient>
+        <WeaponDamageMultiplier effect="2" action="0">2.510000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>24</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Flurry</Name>
+      <Icon>whirlingblades3</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>24</RequiredLevel>
+        <AbilityId>1707945038</AbilityId>
+        <Description>Attack hits the target multiple times for 6558 Physical damage over the next 3 seconds. Awards 1 Attack Point every second.</Description>
+        <AddonId>A65CD2C4E72B1829D</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>20</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <Channel>true</Channel>
+        <Duration>3.000000</Duration>
+        <Interval>0.500000</Interval>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Building Fury</Name>
+      <Icon>carpet_bombing_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1864171824</AbilityId>
+        <Description>Finishers gain a bonus to Attack Power contribution based on how many Attack Points were consumed.</Description>
+        <AddonId>A6F1D01307CF516B9</AddonId>
+        <IsPassive>True</IsPassive>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>12</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Focus of Body</Name>
+      <Icon>strong_constitution_01_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>12</RequiredLevel>
+        <AbilityId>1885677192</AbilityId>
+        <Description>Increases Strength by 70 on all party or raid members. Lasts 1h.</Description>
+        <AddonId>A706526885260C3DF</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+        <Radius>35.000000</Radius>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>48</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Way of the Wind</Name>
+      <Icon>secondwind2a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>48</RequiredLevel>
+        <AbilityId>2038337284</AbilityId>
+        <Description>When hitting an enemy with a Follow Up attack or Reaping Harvest, deals an additional 379 Air damage. Maximum active Way buffs: 1. Lasts 1h.</Description>
+        <AddonId>A797E8F04B13E9F09</AddonId>
+        <IsPassive>False</IsPassive>
+        <CostEnergy>10</CostEnergy>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Follow Up Attacks</Name>
+      <Icon>twin_strike</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>2090717930</AbilityId>
+        <Description>Must be the next ability used within 10 seconds of using an ability that generates Attack Points and is not a follow up attack.</Description>
+        <AddonId>A7C9DD2EA3FED172D</AddonId>
+        <IsPassive>True</IsPassive>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+  </Abilities>
+</SoulTree>
+

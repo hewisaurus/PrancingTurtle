@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "Sorry, the records for this guild are private";
+}
+<br />
+<div class="row">
+    <div class="col-md-6">
+        <div class="panel panel-danger">
+            <div class="panel-heading">
+                <h3 class="panel-title">@Html.Raw("Sorry, the records for this guild are private!")</h3>
+            </div>
+            <div class="panel-body">
+                <p>The administrators of this guild have set their 'visibility in rankings' to private, so only guild members are able to view this page.</p>
+                <p>If you have applied for this guild but still get this error message, contact your guild administrator to have your application approved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+@Html.ActionLink("Ok", "Index", "Home", null, new { @class = "btn btn-default" })

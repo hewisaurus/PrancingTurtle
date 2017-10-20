@@ -1,0 +1,111 @@
+﻿@{
+    ViewBag.Title = "Upload a session";
+}
+
+<style type="text/css">
+    .dz-max-files-reached {
+        background-color: red;
+    }
+
+    .dropzone {
+        background-image: url("/Content/turtle/turtleupload.jpg");
+        background-repeat: no-repeat;
+    }
+</style>
+
+
+@section scripts{
+    <script type="text/javascript">
+
+        //File Upload response from the server
+        Dropzone.options.dropzoneForm = {
+            maxFilesize: 300,
+            maxFiles: 5,
+            dictDefaultMessage: 'Drag and drop your zipped log here to upload!',
+            init: function() {
+                this.on("maxfilesexceeded", function(data) {
+                    var res = eval('(' + data.xhr.responseText + ')');
+
+                });
+                this.on("complete", function (file) {
+                    if (this.getUploadingFiles().length === 0 && this.getQueuedFiles().length === 0) {
+                        window.alert('Upload complete!');
+                    }
+                });
+                //this.on("addedfile", function (file) {
+
+                // Create the remove button
+                //var removeButton = Dropzone.createElement("<button>Remove file</button>");
+
+
+                // Capture the Dropzone instance as closure.
+                //var _this = this;
+
+                // Listen to the click event
+                //removeButton.addEventListener("click", function (e) {
+                // Make sure the button click doesn't submit the form:
+                //e.preventDefault();
+                //e.stopPropagation();
+                // Remove the file preview.
+                //_this.removeFile(file);
+                // If you want to the delete the file on the server as well,
+                // you can do the AJAX request here.
+                //});
+
+                // Add the button to the file preview element.
+                //file.previewElement.appendChild(removeButton);
+                //});
+            }
+        };
+    </script>
+
+}
+
+<br />
+
+<div class="container container-fluid">
+    <div class="row">
+        <div class="col-lg-6 col-centered">
+            <div class="alert alert-dismissible alert-warning">
+                <button type="button" class="close" data-dismiss="alert">×</button>
+                <h4>Upload Issues?</h4>
+                <p>
+                    If you're having issues uploading, <b>@Html.ActionLink("check out the alternative uploading method!", "FTP", "Session", null, new { @class = "text-info" })</b>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-8 col-centered">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h4 class="panel-title">Upload your log!</h4>
+                </div>
+                <div class="panel-body">
+                    <h2>It's time to upload your log!</h2>
+                    <h3>Make sure you rename it before dragging and dropping it here.</h3>
+                    <p>
+                        Not sure what you should have renamed it to?
+                        Navigate to your guild's sessions (via the Guild Sessions menu option up the top), click on your
+                        guild, and click on the session that you want to upload the file for. If no log has been uploaded, you
+                        should see a yellow box that says 'no encounters found' - in here, you'll see the filename to upload.
+                    </p>
+                    <hr />
+                    <div class="col-lg-8 col-centered">
+                        <form action="~/Session/SaveUploadedFile" method="post" enctype="multipart/form-data" class="dropzone" id="dropzoneForm">
+                            <div class="fallback">
+                                <input name="file" type="file" multiple />
+                                <input type="submit" value="Upload" />
+                            </div>
+                        </form>
+                    </div>
+
+                    @*</div>*@
+                </div>
+                <div class="panel-footer">
+                    @*@Html.ImageActionLink("Index", "", "fa fa-lg fa-arrow-circle-left", "Back")*@
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

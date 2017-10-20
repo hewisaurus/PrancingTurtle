@@ -1,0 +1,25 @@
+﻿@model Database.Models.BossFight
+
+@{
+    ViewBag.Title = "Delete bossFight";
+}
+
+<div class="row">
+    <div class="col-lg-6">
+        <h2>Delete BossFight</h2>
+        <div class="content">
+            <h5>Do you really want to delete '<b>@Model.Name</b>'? This action cannot be undone!</h5>
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                @Html.HiddenFor(m => m.Id)
+
+                <div>
+                    <input type="submit" value="Delete" class="btn btn-danger" />
+                    @Html.ActionLink("Cancel", "Index", "BossFight", null, new { @class = "btn btn-default" })
+                </div>
+            }
+        </div>
+    </div>
+</div>

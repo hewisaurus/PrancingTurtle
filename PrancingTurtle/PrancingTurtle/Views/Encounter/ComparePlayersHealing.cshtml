@@ -1,0 +1,197 @@
+﻿@using PrancingTurtle.Models.ViewModels
+@model EncounterComparePlayersViewModel
+
+@{
+    ViewBag.Title = string.Format("{0} ({1})", Model.Encounter.BossFight.Name, Model.Encounter.Duration);
+}
+
+@Html.Partial("_EncounterNav2", new EncounterNav(Model.Encounter.Id,
+    Model.Encounter.BossFight.Name, Model.Encounter.BossFight.Instance.Name,
+    Model.Encounter.Duration, Model.Encounter.SuccessfulKill, Model.Session), new ViewDataDictionary { { "link", "compareplayers" } })
+
+<a name="top">&nbsp;</a>
+
+<div class="container container-fluid">
+    <div class="row">
+        <div class="col-lg-10 col-centered">
+            <div class="bs-callout overview">
+                <h3 class="text-center">@Model.PageTitle</h3>
+                <h4 class="text-center">Encounter: @Model.Encounter.BossFight.Name</h4>
+                <h5 class="text-center">@Html.Raw(string.Format("<b>Date:</b> {0} | <b>Fight Length:</b> {1}", Model.Encounter.Date.Add(Model.TimeZoneOffset), Model.Encounter.Duration))</h5>
+            </div>
+            <hr />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-10 col-centered">
+            <div class="col-lg-8 col-centered">
+                <h4 class="text-info text-center">Overview</h4>
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered">
+                        <thead>
+                            <tr>
+                                <th class="text-center">Rank</th>
+                                <th class="text-center">Player</th>
+                                <th class="text-center">Healing Done</th>
+                                <th class="text-center">Average HPS</th>
+                                <th class="text-center">Total Crits / Hits / Crit Rate</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @{
+                                int i = 1;
+                                //var rank1Player = Model.PlayersToCompare.OrderByDescending(p => p.HealingBreakdown.Abilities.Sum(a => a.TotalEffectiveHealing)).First();
+
+                            }
+                            @foreach (var item in Model.PlayersToCompare.OrderByDescending(p => p.HealingBreakdown.Abilities.Sum(a => a.TotalEffectiveHealing)))
+                            {
+                                <tr>
+                                    <td class="text-center">#@i</td>
+                                    <td class="@item.Player.DisplayColorClass text-center"><b>@item.Player.Name</b></td>
+                                    <td class="text-center">@item.HealingBreakdown.Abilities.Sum(a => a.TotalEffectiveHealing)</td>
+                                    <td class="text-center">@(item.HealingBreakdown.Abilities.Sum(a => a.TotalEffectiveHealing) / (long)Model.Encounter.Duration.TotalSeconds)</td>
+                                    <td class="text-center">
+                                        @string.Format("{0} / {1} ({2}%)", item.HealingBreakdown.TotalCrits,
+                                  item.HealingBreakdown.TotalCrits + item.HealingBreakdown.TotalHits,
+                                     item.HealingBreakdown.TotalCritRate.ToString("#.##"))
+                                    </td>
+                                </tr>
+                                i++;
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <h4 class="text-info text-center">Player healing breakdown</h4><div class="table-responsive">
+                <table class="table table-bordered table-text-small">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th style="width: auto !important;"></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th colspan="3" class="text-center success">NORMAL HITS</th>
+                            <th colspan="4" class="text-center warning">CRITICAL HITS</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.AbilityHps.OrderByDescending(a => a.TotalEffectiveHealing))
+                        {
+                            <tr>
+                                <td class="text-right">
+                                    @if (!string.IsNullOrEmpty(item.IconPath))
+                                    {
+                                        <img src="@string.Format("/Content/icons/SoulAbilities/{0}.jpg", @item.IconPath)" height="28" width="28" />
+                                    }
+                                </td>
+                                <td class="alt-row"><b>@item.Name @item.AbilityId</b></td>
+                                <th class="text-center alt-row">Total Healing</th>
+                                <th class="text-center alt-row">HPS</th>
+                                <th class="text-center alt-row">% of total HPS</th>
+                                <th class="text-center alt-row">Min Hit</th>
+                                <th class="text-center alt-row">Avg Hit</th>
+                                <th class="text-center alt-row">Max Hit</th>
+                                <th class="text-center alt-row">Min Crit</th>
+                                <th class="text-center alt-row">Avg Crit</th>
+                                <th class="text-center alt-row">Max Crit</th>
+                                <th class="text-center alt-row">Crit Rate</th>
+                                <th class="text-center alt-row"><span title="Total number of spells (non-crit + crit)" class="vmid">Swings</span></th>
+                                <th class="text-center alt-row">Hits</th>
+                                <th class="text-center alt-row">Crits</th>
+                                <th class="text-center alt-row">+/- HPS vs #1</th>
+                            </tr>
+                                    var playersForThisAbility = Model.PlayersToCompare
+                                        .Where(p => p.HealingBreakdown.Abilities.FirstOrDefault(a => a.Name == item.Name && a.IconPath == item.IconPath) != null)
+                                        .OrderByDescending(p => p.HealingBreakdown.Abilities.First(a => a.Name == item.Name && a.IconPath == item.IconPath).HealingPerSecond);
+                                    //var topPlayer = playersForThisAbility.First();
+                                    var topAbility = Model.TopPlayer.HealingBreakdown.Abilities.First(a => a.Name == item.Name && a.IconPath == item.IconPath);
+                                    foreach (var ptc in playersForThisAbility)
+                                    {
+                                        var thisAbility = ptc.HealingBreakdown.Abilities.First(a => a.Name == item.Name && a.IconPath == item.IconPath);
+                                        string abilityPercentage = ((decimal)thisAbility.TotalEffectiveHealing / (decimal)topAbility.TotalEffectiveHealing).ToString("#.##%");
+                                        var plusMinus = "N/A";
+                                        if (ptc.Player.Id != Model.TopPlayer.Player.Id)
+                                        {
+                                            var rank1PlayerThisAbility = playersForThisAbility.FirstOrDefault(r => r.Player.Id == Model.TopPlayer.Player.Id);
+                                            if (rank1PlayerThisAbility != null)
+                                            {
+                                                var rank1ThisAbility = rank1PlayerThisAbility.HealingBreakdown.Abilities.FirstOrDefault(a => a.Name == item.Name && a.IconPath == item.IconPath);
+                                                if (rank1ThisAbility != null)
+                                                {
+                                                    var diff = rank1ThisAbility.TotalEffectiveHealing - thisAbility.TotalEffectiveHealing;
+                                                    if (diff > 0)
+                                                    {
+                                                        plusMinus = string.Format("-{0}", ((decimal)diff / (decimal)rank1ThisAbility.TotalEffectiveHealing).ToString("#.##%"));
+                                                    }
+                                                    else if (diff == 0)
+                                                    {
+                                                        plusMinus = "0%";
+                                                    }
+                                                    else
+                                                    {
+                                                        diff = diff * -1;
+                                                        plusMinus = string.Format("+{0}", ((decimal)diff / (decimal)rank1ThisAbility.TotalEffectiveHealing).ToString("#.##%"));
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        <tr>
+                                            <td></td>
+                                            <td class="@ptc.Player.DisplayColorClass">@ptc.Player.Name</td>
+                                            <td class="text-center">@thisAbility.TotalEffectiveHealing</td>
+                                            <td class="text-center">@thisAbility.HealingPerSecond</td>
+                                            <td class="text-center">@(thisAbility.BreakdownPercentage > 0 ? string.Format("{0}%", thisAbility.BreakdownPercentage.ToString("#.#")) : "0%")</td>
+                                            <td class="text-center text-success">@thisAbility.Statistics.MinHit</td>
+                                            <td class="text-center text-success">@thisAbility.Statistics.AverageHit</td>
+                                            <td class="text-center text-success">@thisAbility.Statistics.MaxHit</td>
+                                            <td class="text-center text-warning">@thisAbility.Statistics.MinCrit</td>
+                                            <td class="text-center text-warning">@thisAbility.Statistics.AverageCrit</td>
+                                            <td class="text-center text-warning">@thisAbility.Statistics.MaxCrit</td>
+                                            <td class="text-center text-warning">@(thisAbility.Statistics.CritRate > 0 ? string.Format("{0}%", thisAbility.Statistics.CritRate.ToString("#.#")) : "0%")</td>
+                                            <td class="text-center">@thisAbility.Statistics.Swings</td>
+                                            <td class="text-center">@thisAbility.Statistics.Hits</td>
+                                            <td class="text-center">@thisAbility.Statistics.Crits</td>
+                                            @if (plusMinus.StartsWith("-"))
+                                            {
+                                                <td class="text-center text-danger"><b>@plusMinus</b></td>
+                                            }
+                                            else if (plusMinus.StartsWith("+"))
+                                            {
+
+                                                <td class="text-center text-success"><b>@plusMinus</b></td>
+                                            }
+                                            else
+                                            {
+                                                <td class="text-center">@plusMinus</td>
+                                            }
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td colspan="15">
+                                                <div class="progress progress-striped" style="margin-bottom: 0px !important; height: 4px;">
+                                                    <div class="progress-bar progress-bar-success" style="width: @abilityPercentage"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    }
+                                    <tr height="30px;"><td></td></tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <p class="text-center text-muted">Page built in @Model.BuildTime</p>
+</div>

@@ -1,0 +1,1426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SoulTree calling="Rogue" name="Nightblade">
+  <Traits>
+    <Trait>
+      <Key>0</Key>
+      <Name>Primal Death</Name>
+      <Icon>primal_death_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>763001713</AbilityId>
+          <Description></Description>
+          <AddonId>A2D7A7B7100000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the Critical Hit chance of Primal Strike and Dusk Strike by 5%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the Critical Hit chance of Primal Strike and Dusk Strike by 10%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the Critical Hit chance of Primal Strike and Dusk Strike by 15%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>1</Key>
+      <Name>Burning Rage</Name>
+      <Icon>heroicsurge1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-97838745</AbilityId>
+          <Description></Description>
+          <AddonId>AFA2B196700000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases your Attack Power and Weapon Damage by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases your Attack Power and Weapon Damage by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases your Attack Power and Weapon Damage by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases your Attack Power and Weapon Damage by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases your Attack Power and Weapon Damage by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>2</Key>
+      <Name>Blazing Fury</Name>
+      <Icon>illumination_01_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>0</MinimumPointsSpent>
+      <DisplayRow>0</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>457123469</AbilityId>
+          <Description></Description>
+          <AddonId>A1B3F268D00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage of your Combo Point generating abilities by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage of your Combo Point generating abilities by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the damage of your Combo Point generating abilities by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases the damage of your Combo Point generating abilities by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases the damage of your Combo Point generating abilities by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>3</Key>
+      <Name>Coup De Grace</Name>
+      <Icon>grim_blade_01_b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1963578062</AbilityId>
+          <Description></Description>
+          <AddonId>A7509D2CE00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage of your Finishers by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage of your Finishers by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the damage of your Finishers by 6%.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases the damage of your Finishers by 8%.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases the damage of your Finishers by 10%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>4</Key>
+      <Name>Twilight Force</Name>
+      <Icon>twilight_force_01_b</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>5</MinimumPointsSpent>
+      <DisplayRow>1</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>522887827</AbilityId>
+          <Description>Deals 911 to 1007 Death damage and applies State of Sloth to the enemy, reducing movement speed by 30% for 6s. Awards 1 Combo Point.</Description>
+          <AddonId>A1F2AA293A5C1AB89</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Melee Weapon</RequiresWeapon>
+          <MaxRange>20.000000</MaxRange>
+          <CostEnergy>26</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <GainComboPoints>1</GainComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+        <Ability>
+          <AbilityId>226405153</AbilityId>
+          <Description></Description>
+          <AddonId>A0D7EAB2100000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>5</Key>
+      <Name>Unstable State</Name>
+      <Icon>cauterize</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1261237757</AbilityId>
+          <Description></Description>
+          <AddonId>A4B2CF5FD00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage of your non-physical attacks by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage of your non-physical attacks by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the damage of your non-physical attacks by 6%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>6</Key>
+      <Name>Fire and Death Attunement</Name>
+      <Icon>fire_death_attunement_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1159783286</AbilityId>
+          <Description></Description>
+          <AddonId>A4520E37600000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Reduces the damage you take from Fire and Death attacks by 2% and increases the damage of your attacks by 2%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Reduces the damage you take from Fire and Death attacks by 4% and increases the damage of your attacks by 4%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Reduces the damage you take from Fire and Death attacks by 6% and increases the damage of your attacks by 6%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>7</Key>
+      <Name>Advanced State of Sloth</Name>
+      <Icon>defiler_deaths_embrace_b</Icon>
+      <PrereqTraitKey>4</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description>Enemies affected by State of Sloth take 10% more damage from the Rogue.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>8</Key>
+      <Name>Flame Thrust</Name>
+      <Icon>flame_thrust_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>10</MinimumPointsSpent>
+      <DisplayRow>2</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1072857982</AbilityId>
+          <Description>Deals additional Fire damage per Combo Point.
+
+1 Point: 890 damage
+2 Points: 1140 damage
+3 Points: 1473 damage
+4 Points: 1890 damage
+5 Points: 2391 damage</Description>
+          <AddonId>A3FF2837E6F5F0267</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Melee Weapon</RequiresWeapon>
+          <MaxRange>20.000000</MaxRange>
+          <CostEnergy>16</CostEnergy>
+          <ConsumesComboPoints>True</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>9</Key>
+      <Name>Melted Skin</Name>
+      <Icon>bloodfire1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>767036271</AbilityId>
+          <Description></Description>
+          <AddonId>A2DB80B6F00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Hellfire Blades and Smoldering Blades buff you for 15 seconds when they proc, increasing your damage by 3%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your Hellfire Blades and Smoldering Blades buff you for 15 seconds when they proc, increasing your damage by 5%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>10</Key>
+      <Name>Eventide</Name>
+      <Icon>rudeawake1</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>75256300</AbilityId>
+          <Description></Description>
+          <AddonId>A047C51EC00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage of Dusk Strike and Twilight Force by 5%. Reduces the Energy cost of Primal Strike by 1.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage of Dusk Strike and Twilight Force by 10%. Reduces the Energy cost of Primal Strike by 2.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>11</Key>
+      <Name>Ebon Fury</Name>
+      <Icon>ebon_fury_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>302051848</AbilityId>
+          <Description>Dusk Strike and Twilight Force do not cost energy. Lasts 10s.</Description>
+          <AddonId>A1200F2084DDA4898</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>60.000004</Cooldown>
+          <CostEnergy>10</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+          <Duration>10.000000</Duration>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>12</Key>
+      <Name>Lingering Flame</Name>
+      <Icon>intense_flames</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1971755587</AbilityId>
+          <Description></Description>
+          <AddonId>A75869A4300000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>If the enemy is suffering from the effect of Fiery Spike, your Blazing Strike and Flame Thrust have a 6.6% chance per Combo Point to cast Fiery Spike onto them and generate an extra Combo Point.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>If the enemy is suffering from the effect of Fiery Spike, your Blazing Strike and Flame Thrust have a 13.2% chance per Combo Point to cast Fiery Spike onto them and generate an extra Combo Point.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>If the enemy is suffering from the effect of Fiery Spike, your Blazing Strike and Flame Thrust have a 20% chance per Combo Point to cast Fiery Spike onto them and generate an extra Combo Point.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>13</Key>
+      <Name>Death from the Shadows</Name>
+      <Icon>shadow_assault_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-84779344</AbilityId>
+          <Description>Deals 4917 to 5435 Death damage and casts Fiery Spike onto the target. Awards 2 Combo Points.</Description>
+          <AddonId>AFAF25EB08907C42A</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Melee Weapon</RequiresWeapon>
+          <Cooldown>30.000002</Cooldown>
+          <MaxRange>20.000000</MaxRange>
+          <CostEnergy>24</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <GainComboPoints>2</GainComboPoints>
+          <CastTime>Instant</CastTime>
+          <PowerStatCoefficient effect="0" action="0">4.500000</PowerStatCoefficient>
+          <WeaponDamageMultiplier effect="0" action="0">4.500000</WeaponDamageMultiplier>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>14</Key>
+      <Name>Enhanced Weapon Enchantments</Name>
+      <Icon>enhanced_weapon_enchantments_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1802586221</AbilityId>
+          <Description></Description>
+          <AddonId>A6B71486D00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the damage from your weapon enchantments by 30%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the damage from your weapon enchantments by 60%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the damage from your weapon enchantments by 90%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>15</Key>
+      <Name>Heat Retention</Name>
+      <Icon>internalizeheat3</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>17041554</AbilityId>
+          <Description></Description>
+          <AddonId>A0104089200000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>You have a 33% chance to retain heat for 30 seconds each time a damaging ability that generates Combo Points is used, increasing damage done by 3%. When this effect is applied 5 times, your next Finisher deals 30% more damage and removes the effect.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>You have a 66% chance to retain heat for 30 seconds each time a damaging ability that generates Combo Points is used, increasing damage done by 3%. When this effect is applied 5 times, your next Finisher deals 30% more damage and removes the effect.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>You have a 100% chance to retain heat for 30 seconds each time a damaging ability that generates Combo Points is used, increasing damage done by 3%. When this effect is applied 5 times, your next Finisher deals 30% more damage and removes the effect.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>16</Key>
+      <Name>Nightstalker</Name>
+      <Icon>nightstalker_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>20</MinimumPointsSpent>
+      <DisplayRow>4</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>929970117</AbilityId>
+          <Description></Description>
+          <AddonId>A376E37C500000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Blazing Strike, Flame Thrust, Dusk Strike and Twilight Force deal 2% more damage and an additional 10% more damage if the enemy&apos;s health is below 30%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your Blazing Strike, Flame Thrust, Dusk Strike and Twilight Force deal 4% more damage and an additional 20% more damage if the enemy&apos;s health is below 30%.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Your Blazing Strike, Flame Thrust, Dusk Strike and Twilight Force deal 6% more damage and an additional 30% more damage if the enemy&apos;s health is below 30%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>17</Key>
+      <Name>Scourge of Darkness</Name>
+      <Icon>scourge_of_darkness_01_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>25</MinimumPointsSpent>
+      <DisplayRow>5</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1387216370</AbilityId>
+          <Description>Causes the next 10 weapon attacks to deal additional Death damage per Combo Point.
+
+1 Point: 196 damage
+2 Points: 240 damage
+3 Points: 299 damage
+4 Points: 372 damage
+5 Points: 460 damage</Description>
+          <AddonId>A52AF3DF2B27DA6DD</AddonId>
+          <IsPassive>False</IsPassive>
+          <Cooldown>30.000002</Cooldown>
+          <CostEnergy>16</CostEnergy>
+          <ConsumesComboPoints>True</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>18</Key>
+      <Name>Enkindle</Name>
+      <Icon>elemental_bolt1a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>2023293084</AbilityId>
+          <Description></Description>
+          <AddonId>A7899009C00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the maximum stack size of Fiery Spike by 1. Increases the damage of Fiery Spike by 15%.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the maximum stack size of Fiery Spike by 2. Increases the damage of Fiery Spike by 30%.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>19</Key>
+      <Name>Dusk to Dawn</Name>
+      <Icon>dusk_to_dawn_01_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>459303949</AbilityId>
+          <Description>Roots and deals 4322 Death damage over 4s. Applies Nightrage to the Rogue, increasing damage done by Blazing Strike and Flame Thrust by 20% for 60s. Awards 2 Combo Points.</Description>
+          <AddonId>A1B606C0D473CE942</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Melee Weapon</RequiresWeapon>
+          <Cooldown>30.000002</Cooldown>
+          <MaxRange>20.000000</MaxRange>
+          <CostEnergy>24</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <GainComboPoints>2</GainComboPoints>
+          <CastTime>Instant</CastTime>
+          <Duration>0.300000</Duration>
+          <PowerStatCoefficient effect="1" action="0">3.830000</PowerStatCoefficient>
+          <DamageMultiplier effect="1" action="0">0.200000</DamageMultiplier>
+          <WeaponDamageMultiplier effect="1" action="0">3.830000</WeaponDamageMultiplier>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>20</Key>
+      <Name>Ignited Weapons</Name>
+      <Icon>remote_clipping</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>0</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-81802475</AbilityId>
+          <Description></Description>
+          <AddonId>AFB1FCB1500000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="2">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your Blazing Strike, Flame Thrust and Flame Blitz cause the enemy to burn for additional Fire damage equal to 100% of your weapon damage over 4s.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your Blazing Strike, Flame Thrust and Flame Blitz cause the enemy to burn for additional Fire damage equal to 200% of your weapon damage over 4s.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>21</Key>
+      <Name>Dark Malady</Name>
+      <Icon>dark_malady_01</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>15</MinimumPointsSpent>
+      <DisplayRow>3</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>1973222458</AbilityId>
+          <Description>Deals 1286 to 1422 Death damage. Increases the Rogue&apos;s damage done by 20% for 8s. Awards 2 Combo Points.</Description>
+          <AddonId>A759CFC3AD627A585</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Melee Weapon</RequiresWeapon>
+          <MaxRange>20.000000</MaxRange>
+          <CostEnergy>24</CostEnergy>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <GainComboPoints>2</GainComboPoints>
+          <CastTime>Instant</CastTime>
+          <PowerStatCoefficient effect="0" action="0">1.200000</PowerStatCoefficient>
+          <WeaponDamageMultiplier effect="0" action="0">1.200000</WeaponDamageMultiplier>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>22</Key>
+      <Name>Blackout</Name>
+      <Icon>blackout_01</Icon>
+      <PrereqTraitKey>17</PrereqTraitKey>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>35</MinimumPointsSpent>
+      <DisplayRow>7</DisplayRow>
+      <DisplayColumn>2</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>2098747249</AbilityId>
+          <Description></Description>
+          <AddonId>A7D18577100000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="5">
+        <Rank>
+          <Points>1</Points>
+          <Description>Increases the number of charges of Scourge of Darkness by 3.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Increases the number of charges of Scourge of Darkness by 6.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Increases the number of charges of Scourge of Darkness by 9.</Description>
+        </Rank>
+        <Rank>
+          <Points>4</Points>
+          <Description>Increases the number of charges of Scourge of Darkness by 12.</Description>
+        </Rank>
+        <Rank>
+          <Points>5</Points>
+          <Description>Increases the number of charges of Scourge of Darkness by 15.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>23</Key>
+      <Name>Scorch and Wither</Name>
+      <Icon>reaver_explosive_infestation_r</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>30</MinimumPointsSpent>
+      <DisplayRow>6</DisplayRow>
+      <DisplayColumn>3</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-10595700</AbilityId>
+          <Description></Description>
+          <AddonId>AFF5E528C00000000</AddonId>
+          <IsPassive>True</IsPassive>
+          <ConsumesComboPoints>False</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="3">
+        <Rank>
+          <Points>1</Points>
+          <Description>Your non-Physical attacks ignore 5% of the enemy&apos;s resistance.</Description>
+        </Rank>
+        <Rank>
+          <Points>2</Points>
+          <Description>Your non-Physical attacks ignore 10% of the enemy&apos;s resistance.</Description>
+        </Rank>
+        <Rank>
+          <Points>3</Points>
+          <Description>Your non-Physical attacks ignore 15% of the enemy&apos;s resistance.</Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+    <Trait>
+      <Key>24</Key>
+      <Name>Flame Blitz</Name>
+      <Icon>warlord-cutting_distraction_a</Icon>
+      <BendType>HorizontalToVertical</BendType>
+      <MinimumPointsSpent>40</MinimumPointsSpent>
+      <DisplayRow>8</DisplayRow>
+      <DisplayColumn>1</DisplayColumn>
+      <Abilities>
+        <Ability>
+          <AbilityId>-55907766</AbilityId>
+          <Description>Deals additional Fire damage per Combo Point to up to 5 enemies. If the targeted enemy is affected by the Rogue’s Fiery Spike, the Rogue has a 20% chance per Combo Point to apply Fiery Spike to all enemies hit.
+
+1 Point: 702 damage
+2 Points: 899 damage
+3 Points: 1163 damage
+4 Points: 1492 damage
+5 Points: 1886 damage</Description>
+          <AddonId>AFCAAEA4A5ABD6854</AddonId>
+          <IsPassive>False</IsPassive>
+          <RequiresWeapon>Melee Weapon</RequiresWeapon>
+          <MaxRange>3.000000</MaxRange>
+          <CostEnergy>18</CostEnergy>
+          <ConsumesComboPoints>True</ConsumesComboPoints>
+          <CastTime>Instant</CastTime>
+        </Ability>
+      </Abilities>
+      <Ranks count="1">
+        <Rank>
+          <Points>1</Points>
+          <Description></Description>
+        </Rank>
+      </Ranks>
+    </Trait>
+  </Traits>
+  <Abilities>
+    <Ability>
+      <MinimumPointsInSoul>54</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Ebon Blades</Name>
+      <Icon>harbinger_lighting_blade_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>53</RequiredLevel>
+        <AbilityId>-94010781</AbilityId>
+        <Description>Grants weapon ability attacks a 100% chance to deal an additional 86 Death damage and debuffs the enemy, causing them to take 5% more damage, per stack, from the Rogue. Max 3 stacks. Lasts 1h.</Description>
+        <AddonId>AFA658263ACC91705</AddonId>
+        <IsPassive>False</IsPassive>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Death from the Shadows</Name>
+      <Icon>shadow_assault_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-84779344</AbilityId>
+        <Description>Deals 4917 to 5435 Death damage and casts Fiery Spike onto the target. Awards 2 Combo Points.</Description>
+        <AddonId>AFAF25EB08907C42A</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>24</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>2</GainComboPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">4.500000</PowerStatCoefficient>
+        <WeaponDamageMultiplier effect="0" action="0">4.500000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>44</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Touch of Darkness</Name>
+      <Icon>void_knight-pact_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>44</RequiredLevel>
+        <AbilityId>-83049049</AbilityId>
+        <Description>For the next 6s, weapon ability attacks deal an additional 496 Death damage and drain 5 Energy or 5 Power or 3% of the enemy&apos;s maximum mana.</Description>
+        <AddonId>AFB0CC5A7249B15A5</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>61</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Dark Descent</Name>
+      <Icon>nightblade_dark_descent_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>60</RequiredLevel>
+        <AbilityId>-76427338</AbilityId>
+        <Description>The Rogue&apos;s next 3 Finishers do not consume Combo Points. Lasts 15s.</Description>
+        <AddonId>AFB71CFB64D04DAC1</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>58</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Blazing Path</Name>
+      <Icon>nightblade_blazing_path</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>57</RequiredLevel>
+        <AbilityId>-56421621</AbilityId>
+        <Description>Teleports 15m forward, removes all crowd control effects and increases movement speed by 50% for 5s.</Description>
+        <AddonId>AFCA3130BD4F5F475</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <CostEnergy>24</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Flame Blitz</Name>
+      <Icon>warlord-cutting_distraction_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-55907766</AbilityId>
+        <Description>Deals additional Fire damage per Combo Point to up to 5 enemies. If the targeted enemy is affected by the Rogue’s Fiery Spike, the Rogue has a 20% chance per Combo Point to apply Fiery Spike to all enemies hit.
+
+1 Point: 702 damage
+2 Points: 899 damage
+3 Points: 1163 damage
+4 Points: 1492 damage
+5 Points: 1886 damage</Description>
+        <AddonId>AFCAAEA4A5ABD6854</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>18</CostEnergy>
+        <ConsumesComboPoints>True</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Nightblade Mastery</Name>
+      <Icon>disenchant1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>-54030457</AbilityId>
+        <Description>Increases damage by 1% for each point spent in the Nightblade soul.</Description>
+        <AddonId>AFCC78F8788E440E1</AddonId>
+        <IsPassive>True</IsPassive>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>12</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Lost Hope</Name>
+      <Icon>discombobulate2</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>12</RequiredLevel>
+        <AbilityId>148091336</AbilityId>
+        <Description>Incapacitates for 45s or until damaged. Cannot be used on enemies in combat. Can only affect 1 enemy. Does not break Stealth.</Description>
+        <AddonId>A08D3B1C8E020B9FF</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Duration>45.000004</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>40</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Twilight Transcendence</Name>
+      <Icon>inspiration3</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>40</RequiredLevel>
+        <AbilityId>272884501</AbilityId>
+        <Description>Removes all Curses, Diseases, and Poisons. Reduces damage taken by 50% and damage done by 40%. Restores 50% of your max health over 4s.</Description>
+        <AddonId>A1043E3158CF58AEF</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>120.000008</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Ebon Fury</Name>
+      <Icon>ebon_fury_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>302051848</AbilityId>
+        <Description>Dusk Strike and Twilight Force do not cost energy. Lasts 10s.</Description>
+        <AddonId>A1200F2084DDA4898</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>60.000004</Cooldown>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Duration>10.000000</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>4</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Conceal</Name>
+      <Icon>stealth_z</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>4</RequiredLevel>
+        <AbilityId>416247832</AbilityId>
+        <Description>Stealths for 30s, until damaged, or until an ability is used. Reduces movement speed by 30%. Cannot be used in combat.</Description>
+        <AddonId>A18CF70188201386E</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>10.000000</Cooldown>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Dusk to Dawn</Name>
+      <Icon>dusk_to_dawn_01_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>459303949</AbilityId>
+        <Description>Roots and deals 4322 Death damage over 4s. Applies Nightrage to the Rogue, increasing damage done by Blazing Strike and Flame Thrust by 20% for 60s. Awards 2 Combo Points.</Description>
+        <AddonId>A1B606C0D473CE942</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>24</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>2</GainComboPoints>
+        <CastTime>Instant</CastTime>
+        <Duration>0.300000</Duration>
+        <PowerStatCoefficient effect="1" action="0">3.830000</PowerStatCoefficient>
+        <DamageMultiplier effect="1" action="0">0.200000</DamageMultiplier>
+        <WeaponDamageMultiplier effect="1" action="0">3.830000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Twilight Force</Name>
+      <Icon>twilight_force_01_b</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>522887827</AbilityId>
+        <Description>Deals 911 to 1007 Death damage and applies State of Sloth to the enemy, reducing movement speed by 30% for 6s. Awards 1 Combo Point.</Description>
+        <AddonId>A1F2AA293A5C1AB89</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>26</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>1</GainComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>51</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Living Flame</Name>
+      <Icon>living_flame_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>50</RequiredLevel>
+        <AbilityId>544601658</AbilityId>
+        <Description>Deals 3724 Fire damage over 5s to up to 10 nearby enemies. Applies Fiery Spike onto affected enemies.</Description>
+        <AddonId>A2075F63A9924B3CF</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>60.000004</Cooldown>
+        <CostEnergy>26</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Duration>5.000000</Duration>
+        <Interval>1.000000</Interval>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>32</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Fiery Chains</Name>
+      <Icon>fiery_chains_01_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>32</RequiredLevel>
+        <AbilityId>915541730</AbilityId>
+        <Description>Deals 976 to 1078 Fire damage to up to 6 enemies. Awards 1 Combo Point, with an additional 50% chance on each enemy hit to add an additional Combo Point.</Description>
+        <AddonId>A36920EE28F0AB36F</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>6.000000</Cooldown>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>26</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>1</GainComboPoints>
+        <CastTime>Instant</CastTime>
+        <Radius>7.000000</Radius>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Flame Thrust</Name>
+      <Icon>flame_thrust_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1072857982</AbilityId>
+        <Description>Deals additional Fire damage per Combo Point.
+
+1 Point: 890 damage
+2 Points: 1140 damage
+3 Points: 1473 damage
+4 Points: 1890 damage
+5 Points: 2391 damage</Description>
+        <AddonId>A3FF2837E6F5F0267</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>16</CostEnergy>
+        <ConsumesComboPoints>True</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>48</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Dark Containment</Name>
+      <Icon>dark_containment_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>48</RequiredLevel>
+        <AbilityId>1181241243</AbilityId>
+        <Description>Incapacitates for 15s or until damaged.</Description>
+        <AddonId>A46684F9BB2A7B971</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <Cooldown>30.000002</Cooldown>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>10</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <Duration>15.000001</Duration>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>2</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Blazing Strike</Name>
+      <Icon>holysweep3a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>2</RequiredLevel>
+        <AbilityId>1240264818</AbilityId>
+        <Description>Deals additional Fire damage per Combo Point.
+
+1 Point: 938 damage
+2 Points: 1201 damage
+3 Points: 1553 damage
+4 Points: 1992 damage
+5 Points: 2519 damage</Description>
+        <AddonId>A49ECF0729AEF914C</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>16</CostEnergy>
+        <ConsumesComboPoints>True</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">2.350000</PowerStatCoefficient>
+        <WeaponDamageMultiplier effect="0" action="0">2.350000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>28</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Smother</Name>
+      <Icon>smother_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>28</RequiredLevel>
+        <AbilityId>1246668472</AbilityId>
+        <Description>Deals 1286 to 1422 Death damage. Debilitates for 5s. Awards 2 Combo Points.</Description>
+        <AddonId>A4A4EA6B8945BEC57</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>24</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>2</GainComboPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">1.200000</PowerStatCoefficient>
+        <WeaponDamageMultiplier effect="0" action="0">1.200000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>20</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Dusk Strike</Name>
+      <Icon>necropotence4a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>20</RequiredLevel>
+        <AbilityId>1311068666</AbilityId>
+        <Description>Deals 1094 to 1209 Death damage. Awards 1 Combo Point. This ability applies Emptiness, increasing the damage of Dusk Strike by 10% and its cost by 15% per stack.</Description>
+        <AddonId>A4E2551FA32ECAAEC</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>24</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>1</GainComboPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">1.020000</PowerStatCoefficient>
+        <WeaponDamageMultiplier effect="0" action="0">1.020000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Scourge of Darkness</Name>
+      <Icon>scourge_of_darkness_01_a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1387216370</AbilityId>
+        <Description>Causes the next 10 weapon attacks to deal additional Death damage per Combo Point.
+
+1 Point: 196 damage
+2 Points: 240 damage
+3 Points: 299 damage
+4 Points: 372 damage
+5 Points: 460 damage</Description>
+        <AddonId>A52AF3DF2B27DA6DD</AddonId>
+        <IsPassive>False</IsPassive>
+        <Cooldown>30.000002</Cooldown>
+        <CostEnergy>16</CostEnergy>
+        <ConsumesComboPoints>True</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>36</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Fell Blades</Name>
+      <Icon>sacrificepet4a</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>36</RequiredLevel>
+        <AbilityId>1411912672</AbilityId>
+        <Description>Grants weapon ability attacks a 30% chance to deal an additional 293 Death damage, reduce healing received by 10% for 15s, and siphon the stolen healing to the Rogue. Lasts 1h.</Description>
+        <AddonId>A542813E08F9B154D</AddonId>
+        <IsPassive>False</IsPassive>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>4</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Ebon Terror</Name>
+      <Icon>ebon_terror_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>4</RequiredLevel>
+        <AbilityId>1424810932</AbilityId>
+        <Description>Deals 1286 to 1422 Death damage. Confuses for 2s. Awards 2 Combo Points.</Description>
+        <AddonId>A54ECE3B46BC689EF</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>24</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>2</GainComboPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">1.200000</PowerStatCoefficient>
+        <WeaponDamageMultiplier effect="0" action="0">1.200000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>8</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Hellfire Blades</Name>
+      <Icon>hellfire_blades_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>8</RequiredLevel>
+        <AbilityId>1593134889</AbilityId>
+        <Description>Grants weapon ability attacks a 30% chance to deal an additional 338 Fire damage. Lasts 1h.</Description>
+        <AddonId>A5EF54F298F5BD2C5</AddonId>
+        <IsPassive>False</IsPassive>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>24</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Smoldering Blades</Name>
+      <Icon>rampage1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>24</RequiredLevel>
+        <AbilityId>1667467065</AbilityId>
+        <Description>Grants weapon ability attacks a 30% chance to deal an additional 541 Fire damage over 12s or if the enemy already has 5 stacks, consumes all stacks to deal 1128 Fire damage. Lasts 1h.</Description>
+        <AddonId>A6363873988A4F623</AddonId>
+        <IsPassive>False</IsPassive>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>16</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Weapon Flare</Name>
+      <Icon>holysweep1</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>16</RequiredLevel>
+        <AbilityId>1674121148</AbilityId>
+        <Description>Deals 546 to 604 Fire damage to up to 8 enemies. Awards 1 Combo Point.</Description>
+        <AddonId>A63C90FBCCCE8E4DF</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>26</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>1</GainComboPoints>
+        <CastTime>Instant</CastTime>
+        <Radius>7.000000</Radius>
+        <MaxAffected>8</MaxAffected>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Fiery Spike</Name>
+      <Icon>fiery_spike_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1922997020</AbilityId>
+        <Description>Deals 767 Fire damage over 10s. Max 3 stacks. Awards 1 Combo Point.</Description>
+        <AddonId>A729E9B1CA2095153</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>24</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>1</GainComboPoints>
+        <CastTime>Instant</CastTime>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>False</TraitRequired>
+      <Name>Primal Strike</Name>
+      <Icon>sweep3c</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1932700783</AbilityId>
+        <Description>Deals 911 to 1007 Death damage. Awards 1 Combo Point.</Description>
+        <AddonId>A7332AC6F7ACD7F06</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>3.000000</MaxRange>
+        <CostEnergy>24</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>1</GainComboPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">0.850000</PowerStatCoefficient>
+        <WeaponDamageMultiplier effect="0" action="0">0.850000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+    <Ability>
+      <MinimumPointsInSoul>0</MinimumPointsInSoul>
+      <TraitRequired>True</TraitRequired>
+      <Name>Dark Malady</Name>
+      <Icon>dark_malady_01</Icon>
+      <AbilityRank>
+        <Number>1</Number>
+        <RequiredLevel>0</RequiredLevel>
+        <AbilityId>1973222458</AbilityId>
+        <Description>Deals 1286 to 1422 Death damage. Increases the Rogue&apos;s damage done by 20% for 8s. Awards 2 Combo Points.</Description>
+        <AddonId>A759CFC3AD627A585</AddonId>
+        <IsPassive>False</IsPassive>
+        <RequiresWeapon>Melee Weapon</RequiresWeapon>
+        <MaxRange>20.000000</MaxRange>
+        <CostEnergy>24</CostEnergy>
+        <ConsumesComboPoints>False</ConsumesComboPoints>
+        <GainComboPoints>2</GainComboPoints>
+        <CastTime>Instant</CastTime>
+        <PowerStatCoefficient effect="0" action="0">1.200000</PowerStatCoefficient>
+        <WeaponDamageMultiplier effect="0" action="0">1.200000</WeaponDamageMultiplier>
+      </AbilityRank>
+    </Ability>
+  </Abilities>
+</SoulTree>
+

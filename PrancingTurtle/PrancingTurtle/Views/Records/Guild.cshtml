@@ -1,0 +1,273 @@
+﻿@using PrancingTurtle.Models.ViewModels.BossFight
+@model PrancingTurtle.Models.ViewModels.Records.GuildRecords
+
+@{
+    ViewBag.Title = Model.Difficulty != null
+        ? string.Format("{2} records for {0} ({1} mode)", Model.BossFight.Name, Model.Difficulty.Name, Model.GuildName)
+        : string.Format("{2} records for {0}", Model.BossFight.Name, Model.GuildName);
+}
+
+@section Scripts
+{
+    <script type="text/javascript">
+
+
+        function equalWidth() {
+            var span = $('.tab-pane > .chartHolder '),
+                widest = 0,
+                thisWidth = 0;
+
+            setEqWidth = function (elem) {
+                widest = 0;
+                elem.each(function () {
+                    thisWidth = $(this).outerWidth();
+
+                    if (thisWidth > widest) {
+                        widest = thisWidth;
+                    }
+                });
+
+                elem.css({ 'width': widest });
+            }
+            setEqWidth(span);
+        }
+
+        $(window).load(function () {
+            equalWidth();
+        });
+
+
+        $(window).resize(function () {
+            equalWidth();
+        });
+    </script>
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12 col-centered">
+            <div class="row">
+                <div style="float: left" width="410px">
+                    @if (Model.LoadImage)
+                    {
+                        <img src="@string.Format("/Content/images/portrait/{0}.png", Model.BossFight.PortraitFilename)" width="405" height="247" />
+                    }
+                    else
+                    {
+                        <img src="/Content/images/portrait/noportrait.png" width="405" height="247" />
+                    }
+                </div>
+                <div style="float: left">
+                    <div class="table-responsive">
+                        <table class="fs26">
+                            @*@if (Model.Difficulty != null)
+                                {
+                                    <h2>
+                                        <b>@Model.BossFight.Name</b> @Html.Raw(string.Format("({0} mode) records", Model.Difficulty.Name))
+                                    </h2>
+                                }
+                                else
+                                {
+                                    <h2>
+                                        <b>@Model.BossFight.Name</b>
+                                    </h2>
+                                }*@
+
+                            <tr>
+                                <td class="body-content" colspan="5">
+                                    @if (Model.Difficulty != null)
+                                    {
+                                        <h2>
+                                            <b>@Model.BossFight.Name</b> @Html.Raw(string.Format("({0} mode) records", Model.Difficulty.Name))
+                                        </h2>
+                                    }
+                                    else
+                                    {
+                                        <h2>
+                                            <b>@Model.BossFight.Name</b>
+                                        </h2>
+                                    }
+                                </td>
+                            </tr>
+                            <tr>
+                                @if (Model.SingleFastestKill != null)
+                                {
+                                    <td class="body-content" colspan="5">
+                                        Fastest kill:
+                                        <b>
+                                            @Html.ActionLink(string.Format("<{0}>", Model.SingleFastestKill.UploadGuild.Name), "Index", "Guild",
+                                                new { @id = Model.SingleFastestKill.GuildId }, new { @class = "text-info-i", style = "margin-left:5px;" })
+                                        </b>
+                                        <b>
+                                            @Html.ActionLink(string.Format("{0}", Model.SingleFastestKill.Duration.ToString(@"m\mss\s")),
+                                                "Overview", "Encounter", new { @id = Model.SingleFastestKill.Id }, null)
+                                        </b>
+                                    </td>
+                                }
+                                else
+                                {
+                                    <td class="body-content" colspan="5">
+                                        Fastest kill: No information available!
+                                    </td>
+                                }
+                            </tr>
+                            <tr><td colspan="5"></td></tr>
+                            <tr>
+                                <td></td>
+                                <td colspan="2" class="text-center darkerth-dark"><b>Player</b></td>
+                                <td colspan="2" class="text-center"><b>Guild</b></td>
+                            </tr>
+                            @* DPS *@
+                            <tr>
+                                <td class="body-content">Top DPS</td>
+                                @if (Model.SingleTopDps != null)
+                                {
+                                    <td class="body-content darkerth-dark">
+                                        <span class="@Model.SingleTopDps.DisplayColorClass">@Model.SingleTopDps.Player.DisplayName</span>
+                                    </td>
+                                    <td class="body-content darkerth-dark">
+                                        <b>@Html.ActionLink(string.Format("{0} dps", Model.SingleTopDps.Value), "PlayerDamageDone", "Encounter", new { @id = Model.SingleTopDps.EncounterId }, null)</b>
+                                        @*@Html.ImageActionLink("PlayerDamageDone", "Encounter", new { @id = Model.SingleTopDps.EncounterId }, "fs18 text-success", "fa fa-external-link-square")*@
+                                    </td>
+                                }
+                                else
+                                {
+                                    <td colspan="2">
+                                        No information available!
+                                    </td>
+                                }
+                                @if (Model.SingleTopDpsGuild != null)
+                                {
+                                    <td class="body-content">@Model.SingleTopDpsGuild.Guild.Name</td>
+                                    <td class="body-content">
+                                        <b>@Html.ActionLink(string.Format("{0} dps", Model.SingleTopDpsGuild.Value), "Overview", "Encounter", new { @id = Model.SingleTopDpsGuild.EncounterId }, null)</b>
+                                        @*@Html.ImageActionLink("Overview", "Encounter", new { @id = Model.SingleTopDpsGuild.EncounterId }, "fs18 text-success", "fa fa-external-link-square")*@
+                                    </td>
+                                }
+                                else
+                                {
+                                    <td colspan="2">
+                                        No information available!
+                                    </td>
+                                }
+                            </tr>
+                            @* HPS *@
+                            <tr>
+                                <td class="body-content">Top HPS</td>
+                                @if (Model.SingleTopHps != null)
+                                {
+                                    <td class="body-content darkerth-dark">
+                                        <span class="@Model.SingleTopHps.DisplayColorClass">@Model.SingleTopHps.Player.DisplayName</span>
+                                    </td>
+                                    <td class="body-content darkerth-dark">
+                                        <b>@Html.ActionLink(string.Format("{0} hps", Model.SingleTopHps.Value), "PlayerHealingDone", "Encounter", new { @id = Model.SingleTopHps.EncounterId }, null)</b>
+                                        @*@Html.ImageActionLink("PlayerHealingDone", "Encounter", new { @id = Model.SingleTopHps.EncounterId }, "fs18 text-success", "fa fa-external-link-square")*@
+                                    </td>
+                                }
+                                else
+                                {
+                                    <td colspan="2">
+                                        No information available!
+                                    </td>
+                                }
+                                @if (Model.SingleTopHpsGuild != null)
+                                {
+                                    <td class="body-content">@Model.SingleTopHpsGuild.Guild.Name</td>
+                                    <td class="body-content">
+                                        <b>@Html.ActionLink(string.Format("{0} hps", Model.SingleTopHpsGuild.Value), "Overview", "Encounter", new { @id = Model.SingleTopHpsGuild.EncounterId }, null)</b>
+                                        @*@Html.ImageActionLink("Overview", "Encounter", new { @id = Model.SingleTopHpsGuild.EncounterId }, "fs18 text-success", "fa fa-external-link-square")*@
+                                    </td>
+                                }
+                                else
+                                {
+                                    <td colspan="2">
+                                        No information available!
+                                    </td>
+                                }
+                            </tr>
+                            @* APS *@
+                            <tr>
+                                <td class="body-content">Top APS</td>
+                                @if (Model.SingleTopAps != null)
+                                {
+                                    <td class="body-content darkerth-dark">
+                                        <span class="@Model.SingleTopAps.DisplayColorClass">@Model.SingleTopAps.Player.DisplayName</span>
+                                    </td>
+                                    <td class="body-content darkerth-dark">
+                                        <b>@Html.ActionLink(string.Format("{0} aps", Model.SingleTopAps.Value), "PlayerShieldingDone", "Encounter", new { @id = Model.SingleTopAps.EncounterId }, null)</b>
+                                        @*@Html.ImageActionLink("PlayerHealingDone", "Encounter", new { @id = Model.SingleTopAps.EncounterId }, "fs18 text-success", "fa fa-external-link-square")*@
+                                    </td>
+                                }
+                                else
+                                {
+                                    <td colspan="2">
+                                        No information available!
+                                    </td>
+                                }
+                                @if (Model.SingleTopApsGuild != null)
+                                {
+                                    <td class="body-content">@Model.SingleTopApsGuild.Guild.Name</td>
+                                    <td class="body-content">
+                                        <b>@Html.ActionLink(string.Format("{0} aps", Model.SingleTopApsGuild.Value), "Overview", "Encounter", new { @id = Model.SingleTopApsGuild.EncounterId }, null)</b>
+                                        @*@Html.ImageActionLink("Overview", "Encounter", new { @id = Model.SingleTopApsGuild.EncounterId }, "fs18 text-success", "fa fa-external-link-square")*@
+                                    </td>
+                                }
+                                else
+                                {
+                                    <td colspan="2">
+                                        No information available!
+                                    </td>
+                                }
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="row"></div>
+            <hr />
+            <div class="row">
+                <div class="col-lg-12">
+                    @Model.GuildHybridXpsOverTimeChart
+                </div>
+            </div>
+            <hr/>
+            <div class="row">
+                <div class="col-lg-12">
+                    @Model.GuildDurationOverTimeChart
+                </div>
+            </div>
+            <hr />
+            <h1 class="text-center"><b>DAMAGE</b></h1>
+            <div class="row">
+                <div class="col-md-3" style="height: 400px; overflow: scroll; overflow-x: hidden;">
+                    @Html.Partial("~/Views/BossFight/_TopXPS.cshtml", new RankPlayerGuildType {DestinationAction = "PlayerDamageDone", Players = Model.GuildTopDps, ShowShardName = false})
+                </div>
+                <div class="col-md-9">
+                    @Model.PlayerDpsOverTimeChart
+                </div>
+            </div>
+            <hr/>
+            <h1 class="text-center"><b>HEALING</b>
+            </h1>
+        <div class="row">
+            <div class="col-md-9">
+                @Model.PlayerHpsOverTimeChart
+            </div>
+            <div class="col-md-3" style="height: 400px; overflow: scroll; overflow-x: hidden;">
+                @Html.Partial("~/Views/BossFight/_TopXPS.cshtml", new RankPlayerGuildType {DestinationAction = "PlayerHealingDone", Players = Model.GuildTopHps, ShowShardName = false})
+            </div>
+        </div>
+            <hr />
+            <h1 class="text-center"><b>ABSORPTION</b></h1>
+            <div class="row">
+                <div class="col-md-3" style="height: 400px; overflow: scroll; overflow-x: hidden;">
+                    @Html.Partial("~/Views/BossFight/_TopXPS.cshtml", new RankPlayerGuildType { DestinationAction = "PlayerShieldingDone", Players = Model.GuildTopAps, ShowShardName = false })
+                </div>
+                <div class="col-md-9">
+                    @Model.PlayerApsOverTimeChart
+                </div>
+            </div>
+            <hr />
+        </div>
+    </div>
+</div>

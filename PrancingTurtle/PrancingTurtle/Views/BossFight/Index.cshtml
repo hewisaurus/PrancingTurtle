@@ -1,0 +1,38 @@
+﻿@using PrancingTurtle.Helpers
+@model List<Database.Models.BossFight>
+
+@{
+    ViewBag.Title = "Boss fights";
+}
+
+<h2>Boss fights</h2>
+@Html.ActionLink("Create a new boss fight", "Create", "BossFight", null, new { @class = "btn btn-success" })
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Instance</th>
+                    <th>Requires special processing</th>
+                    <th class="text-right"></th>
+                </tr>
+                </thead>
+                <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Name</td>
+                        <td>@item.Instance.Name</td>
+                        <td>@item.RequiresSpecialProcessing</td>
+                        <td>@Html.ImageActionLink("Edit", "BossFight", new { @id = item.Id }, "text-warning", "fa fa-lg fa-pencil-square-o") |
+                        @Html.ImageActionLink("Delete", "BossFight", new { @id = item.Id }, "text-danger", "fa fa-lg fa-times")</td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

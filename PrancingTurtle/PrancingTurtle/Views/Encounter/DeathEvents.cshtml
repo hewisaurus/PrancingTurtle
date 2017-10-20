@@ -1,0 +1,69 @@
+﻿@using PrancingTurtle.Models.ViewModels
+@model PrancingTurtle.Models.ViewModels.Encounter.EncounterDeathDetailViewModel
+@{
+    ViewBag.Title = string.Format("{0} ({1}) player death details", Model.Encounter.BossFight.Name, Model.Encounter.BossFight.Instance.Name);
+}
+
+@Html.Partial("_EncounterNav2", new EncounterNav(Model.Encounter.Id,
+        Model.Encounter.BossFight.Name, Model.Encounter.BossFight.Instance.Name,
+                    Model.Encounter.Duration, Model.Encounter.SuccessfulKill, Model.Session), new ViewDataDictionary { { "link", "deathdetail" } })
+<br/>
+<h4 class="text-center">@string.Format("Events leading up to the death of {0} ({1} seconds after the fight started)", Model.Player.Name, Model.SecondsElapsed)</h4>
+<br />
+<div class="row">
+    <div class="col-lg-8 col-centered">
+        <div class="table-responsive">
+            <table class="table table-bordered table-text-small">
+                <thead>
+                    <tr>
+                        <th class="table-seconds text-center">Seconds Elapsed</th>
+                        <th class="text-center">Type</th>
+                        <th class="text-center">Source</th>
+                        <th class="text-center">Target</th>
+                        <th class="text-center">Ability</th>
+                        <th class="text-center">Total</th>
+                        <th class="text-center">Intercepted</th>
+                        <th class="text-center">Absorbed</th>
+                        <th class="text-center">Overheal</th>
+                        <th class="text-center">Overkill</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.DeathEvents)
+                    {
+                        if (item.EventType == "Damage" && item.Overkill > 0)
+                        {
+                            <tr class="@item.RowClass">
+                                <td class="text-center">@item.SecondsElapsed</td>
+                                <td class="text-center">@item.EventType</td>
+                                <td class="text-center">@item.Source</td>
+                                <td class="text-center">@item.Target</td>
+                                <td class="text-center">@item.Ability</td>
+                                <td class="text-center">@item.Total</td>
+                                <td class="text-center">@item.Intercepted</td>
+                                <td class="text-center">@item.Absorbed</td>
+                                <td class="text-center">@item.Overheal</td>
+                                <td class="text-center">@item.Overkill</td>
+                            </tr>
+                        }
+                        else
+                        {
+                            <tr>
+                                <td class="text-center">@item.SecondsElapsed</td>
+                                <td class="@item.TextClass">@item.EventType</td>
+                                <td class="@item.TextClass">@item.Source</td>
+                                <td class="@item.TextClass">@item.Target</td>
+                                <td class="@item.TextClass">@item.Ability</td>
+                                <td class="@item.TextClass">@item.Total</td>
+                                <td class="@item.TextClass">@item.Intercepted</td>
+                                <td class="@item.TextClass">@item.Absorbed</td>
+                                <td class="@item.TextClass">@item.Overheal</td>
+                                <td class="@item.TextClass">@item.Overkill</td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

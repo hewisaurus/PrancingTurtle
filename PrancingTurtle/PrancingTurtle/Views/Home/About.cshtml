@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "About the Prancing Turtle";
+}
+
+<div class="container container-fluid">
+    <h2>All about the Prancing Turtle... well, a little more, at least.</h2>
+    <h6>Some of your frequently asked questions, and some other info that might be useful</h6><br />
+    <h4><b>What is the Prancing Turtle again?</b></h4>
+    <h5>He's our resident Testudine, a sucker for logic puzzles, sudoku and wading through ridiculously large piles of data.</h5>
+    <br/>
+    <h4><b>No, seriously, what is this site about?</b></h4>
+    <h5>This site exists to give <a href="http://www.riftgame.com" target="_blank" class="text-info">Rift</a> players somewhere to keep track of their performance, get an idea of how they compare to other players, or even just check out what other guilds are getting up to. There's something here for everyone, even if you just like looking at pretty graphs!</h5>
+    <br/>
+    <h4><b>Haven't I seen sites like this before?</b></h4>
+    <h5>There's a good chance you have. Early ideas for this project came from the original RiftLogs site, but development really only started here once our Testudines found out that Hypatia wasn't active anymore.</h5>
+    <br/>
+    <h4><b>It would be useful for my guild, but we don't want all of our data to be public.</b></h4>
+    <h5>No problem. You can set sessions and encounters to public (for everyone to see) or private (visible only to guild members) as you see fit.</h5>
+    <br/>
+    <h4><b>How do I get started?</b></h4>
+    <h5>Log in, then head on over to @Html.ActionLink("My Account", "Index", "Manage", null, new {@class = "text-info"}) and start creating your character(s)! Once you have one or more characters, you will see the option to create or join a guild.</h5>
+    <br/>
+    <h4><b>Why hasn't one or more of the encounters in my log shown up?</b></h4>
+    <h5>
+        This could be caused by one of two things - either something went wrong with the import process, or the encounters aren't listed as valid boss fights within the database.
+        We have a set list of encounter bosses &amp; uploaded logs are checked against this list. Think something that you uploaded should definitely be displayed, but it isn't there?
+        Let us know!
+    </h5>
+    <br />
+    <h4><b>Do I have to pay to use this site?</b></h4>
+    <h5>No. There will always be a free option, but at some point in the future, features will be added that are only available to subscribers. These sorts of sites don't run themselves, and take a huge
+        investment of time and effort to create. There's no available information on plans or features at this stage, but more information will be made available at a later date.</h5>
+    <br/>
+    <h4><b>Why do I have to go to one of the damage / healing / absorption pages before I can see buffs and debuffs?</b></h4>
+    <h5>As some encounters end up with a huge list of NPCs or have multiple instances of the same NPC, you're required to go to one of the detail pages so that you can more easily identify
+        the target that you want to check debuffs on. Want to see the debuffs on NPC 'XYZ' but there are 5 of them in the list? The one that took the most damage (for example) might be a good place to start. 
+    This should end up saving you a lot of time, rather than having to check a number of different NPCs until you find the one that you actually wanted.</h5>
+</div>

@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Upload a session";
+}
+
+<div class="container container-fluid">
+    <div class="col-lg-4 col-centered">
+        <h2>Create a new session, or upload to an existing one!</h2>
+        <br/>
+        <div class="jumbotron">
+            <div class="row text-center">
+                @Html.ActionLink("I haven't created a session yet", "UploadPart1", "Session", null, new {@class = "btn btn-success btn-lg"})
+            </div>
+            <br/>
+            <div class="row text-center">
+                @Html.ActionLink("I have created a session, but it's blank", "UploadPart3", "Session", null, new { @class = "btn btn-warning btn-lg" })
+            </div>
+            <br />
+            <div class="row text-center">
+                @Html.ActionLink("Add another log to an existing session", "VerifyExistingSession", "Session", null, new { @class = "btn btn-info btn-lg disabled" })
+                <h6>This option will be available soon!</h6>
+            </div>
+        </div>
+    </div>
+</div>
