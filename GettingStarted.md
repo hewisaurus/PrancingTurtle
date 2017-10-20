@@ -15,6 +15,8 @@ If you're already familiar with how to clone or have your own way of doing it, g
 
 In Visual Studio, open Team Explorer and click 'Clone' underneath the GitHub section. If you're not already logged in, you'll be prompted for authentication, and then you'll be able to select a repository to clone. Find the PrancingTurtle repository, select which path you'd like to clone it to, and hit the Clone button below.
 
+Once you follow the next few steps to create necessary configuration files, make sure that Git ignores them so they won't be checked in. This is to ensure that your sensitive info (usernames / passwords) isn't shared with everyone.
+
 ### Copy example files (mail account info, DB connection strings)
 
 #### Web project
@@ -70,3 +72,12 @@ Similar to AutoExtracter, this application has a config file that it reads from 
 This project uses MySQL's Bulk Loader in order to insert damage, healing and shielding records - particularly when inserting upwards of 30000 records at a time, this is an efficient method. Smaller tables don't require this and have a much simpler method of inserting data.
 
 If you run the application after it has been built in **debug** mode in VS, the child windows that spawn won't close on their own (this is deliberate). If you don't need to watch the console as it works, run the app in **Release** and it'll close automatically.
+
+## Last, but not least...
+
+Make sure that all of the configuration files that you created or renamed are included in Git's ignore list, so they're not checked in. There should be 5:
+* /PrancingTurtle/PrancingTurtle/ConnectionStrings.config
+* /PrancingTurtle/PrancingTurtle/Helpers/Mail/AccountInfo.cs
+* /PrancingTurtle/PrancingTurtle/Helpers/Authorization/ApplicationSid.cs
+* /PrancingTurtle/AutoExtracterAsync/App.config
+* /PrancingTurtle/AutoParser/App.config
