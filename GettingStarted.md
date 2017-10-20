@@ -19,6 +19,16 @@ Once you follow the next few steps to create necessary configuration files, make
 
 ### Copy example files (mail account info, DB connection strings)
 
+#### Common project
+
+Either rename **UserGroups.example.cs** to **UserGroups.cs** or create a new UserGroups.cs file and copy the contents from the example into it. The string for Admin can be set to anything, the only requirement is that a group with a matching name exists in the **UserGroup** table once you've imported the schema. For example, if you change the line to read
+
+```C#
+public const string Admin = "PTAdminUsers";
+```
+
+then you'd need to add a record to the **UserGroup** table, with the name **PTAdminUsers** and then give your test account access by adding a record into **UserGroupMembership** that links the two together.
+
 #### Web project
 
 In the PrancingTurtle (web) project, the two files you'll need to create are **PrancingTurtle/ConnectionStrings.config** and **PrancingTurthe/Helpers/Mail/AccountInfo.cs**. Example files are provided next to where the live files should live, so you can copy/paste their contents and create the new files. This is in place so that you're able to point your debug copy of PT to a local MySQL server for ease of use, as well as the mail engine if you'd like to debug that too.
@@ -75,9 +85,10 @@ If you run the application after it has been built in **debug** mode in VS, the 
 
 ## Last, but not least...
 
-Make sure that all of the configuration files that you created or renamed are included in Git's ignore list, so they're not checked in. There should be 5:
+Make sure that all of the configuration files that you created or renamed are included in Git's ignore list, so they're not checked in. There should be 6:
 * /PrancingTurtle/PrancingTurtle/ConnectionStrings.config
 * /PrancingTurtle/PrancingTurtle/Helpers/Mail/AccountInfo.cs
 * /PrancingTurtle/PrancingTurtle/Helpers/Authorization/ApplicationSid.cs
 * /PrancingTurtle/AutoExtracterAsync/App.config
 * /PrancingTurtle/AutoParser/App.config
+* /PrancingTurtle/Common/UserGroups.cs
