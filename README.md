@@ -3,7 +3,7 @@ A web-based CombatLog parser for [RIFT](http://www.riftgame.com). Link to the li
 
 The whole project is written in C#, and consists of two console applications & one ASP.NET MVC project. Below is a breakdown of how PT has been put together and a bit of history - if you're looking for the Getting Started guide, you'll find it [here](https://github.com/hewisaurus/PrancingTurtle/blob/master/GettingStarted.md).
 
-I can be contacted via discord at **Hewi#0692**
+Best contact method for issues - discord: **Hewi#0692**
 
 ## Components
 
