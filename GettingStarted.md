@@ -27,7 +27,7 @@ Either rename **UserGroups.example.cs** to **UserGroups.cs** or create a new Use
 public const string Admin = "PTAdminUsers";
 ```
 
-then you'd need to add a record to the **UserGroup** table, with the name **PTAdminUsers** and then give your test account access by adding a record into **UserGroupMembership** that links the two together.
+then you'd need to add a record to the **UserGroup** table, with the name **PTAdminUsers** and then give your test account access by adding a record into **UserGroupMembership** that links the two together. By default it's set to **AdminUsers** and there is a UserGroup in the database that matches this - so you don't have to change it if you don't want to.
 
 #### Web project
 
