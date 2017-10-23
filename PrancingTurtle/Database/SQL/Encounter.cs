@@ -98,13 +98,6 @@ namespace Database.SQL
                        "JOIN Shard S ON AUC.ShardId = S.Id " +
                        "LEFT JOIN Guild G ON AUC.GuildId = G.Id " +
                        "WHERE E.Id = @id LIMIT 0,1";
-                //return "SELECT TOP 1 * FROM Encounter E " +
-                //       "JOIN BossFight BF ON E.BossFightId = BF.Id " +
-                //       "JOIN Instance I ON BF.InstanceId = I.Id " +
-                //       "JOIN AuthUserCharacter AUC ON E.UploaderId = AUC.Id " +
-                //       "JOIN Shard S ON AUC.ShardId = S.Id " +
-                //       "LEFT JOIN Guild G ON AUC.GuildId = G.Id " +
-                //       "WHERE E.Id = @id";
             }
         }
 
@@ -124,7 +117,7 @@ namespace Database.SQL
                            "JOIN AbilityRole AR ON A.AbilityId = AR.AbilityLogId " +
                            "JOIN PlayerClass PC ON AR.PlayerClassId = PC.Id " +
                            "JOIN RoleIcon RI ON AR.RoleIconId = RI.Id " +
-                           "WHERE D.EncounterId = 273 ORDER BY RI.Priority ASC) AS X " +
+                           "WHERE D.EncounterId = @id ORDER BY RI.Priority ASC) AS X " +
                            "GROUP BY X.Name " +
                            "UNION " +
                            "SELECT * FROM (SELECT P.Id, P.Name, RI.Name AS Role, PC.Name AS Class " +
@@ -133,7 +126,7 @@ namespace Database.SQL
                            "JOIN AbilityRole AR ON A.AbilityId = AR.AbilityLogId " +
                            "JOIN PlayerClass PC ON AR.PlayerClassId = PC.Id " +
                            "JOIN RoleIcon RI ON AR.RoleIconId = RI.Id " +
-                           "WHERE D.EncounterId = 273 ORDER BY RI.Priority ASC) AS X " +
+                           "WHERE D.EncounterId = @id ORDER BY RI.Priority ASC) AS X " +
                            "GROUP BY X.Name " +
                            "UNION " +
                            "SELECT * FROM (SELECT P.Id, P.Name, RI.Name AS Role, PC.Name AS Class " +
@@ -142,44 +135,8 @@ namespace Database.SQL
                            "JOIN AbilityRole AR ON A.AbilityId = AR.AbilityLogId " +
                            "JOIN PlayerClass PC ON AR.PlayerClassId = PC.Id " +
                            "JOIN RoleIcon RI ON AR.RoleIconId = RI.Id " +
-                           "WHERE D.EncounterId = 273 ORDER BY RI.Priority ASC) AS X " +
-                           "GROUP BY X.Name"; 
-                    //return "SELECT Id, Name, Role, Class " +
-                    //       "FROM (SELECT P.Id, P.Name, RI.Name AS Role, " +
-                    //       "PC.Name AS Class, row_number() OVER " +
-                    //       "(PARTITION BY P.Name order by RI.Priority ASC) as row_number " +
-                    //       "FROM ShieldingDone SD " +
-                    //       "JOIN Ability A ON SD.AbilityId = A.Id " +
-                    //       "JOIN Player P ON SD.SourcePlayerId = P.Id " +
-                    //       "JOIN AbilityRole AR ON A.AbilityId = AR.AbilityLogId " +
-                    //       "JOIN PlayerClass PC ON AR.PlayerClassId = PC.Id " +
-                    //       "JOIN RoleIcon RI ON AR.RoleIconId = RI.Id " +
-                    //       "WHERE SD.EncounterId = @id ) as rows where row_number = 1 " +
-                    //       "UNION " +
-                    //       "SELECT Id, Name, Role, Class " +
-                    //       "FROM (SELECT P.Id, P.Name, RI.Name AS Role, " +
-                    //       "PC.Name AS Class, row_number() OVER " +
-                    //       "(PARTITION BY P.Name order by RI.Priority ASC) as row_number " +
-                    //       "FROM HealingDone HD " +
-                    //       "JOIN Ability A ON HD.AbilityId = A.Id " +
-                    //       "JOIN Player P ON HD.SourcePlayerId = P.Id " +
-                    //       "JOIN AbilityRole AR ON A.AbilityId = AR.AbilityLogId " +
-                    //       "JOIN PlayerClass PC ON AR.PlayerClassId = PC.Id " +
-                    //       "JOIN RoleIcon RI ON AR.RoleIconId = RI.Id " +
-                    //       "WHERE HD.EncounterId = @id ) as rows where row_number = 1 " +
-                    //       "UNION " +
-                    //       "SELECT Id, Name, Role, Class " +
-                    //       "FROM (SELECT P.Id, P.Name, RI.Name AS Role, " +
-                    //       "PC.Name AS Class,  row_number() OVER " +
-                    //       "(PARTITION BY P.Name order by RI.Priority ASC) as row_number " +
-                    //       "FROM DamageDone DD " +
-                    //       "JOIN Ability A ON DD.AbilityId = A.Id " +
-                    //       "JOIN Player P ON DD.SourcePlayerId = P.Id " +
-                    //       "JOIN AbilityRole AR ON A.AbilityId = AR.AbilityLogId " +
-                    //       "JOIN PlayerClass PC ON AR.PlayerClassId = PC.Id " +
-                    //       "JOIN RoleIcon RI ON AR.RoleIconId = RI.Id " +
-                    //       "WHERE DD.EncounterId = @id) as rows where row_number = 1 " +
-                    //       "ORDER BY Role, Name";
+                           "WHERE D.EncounterId = @id ORDER BY RI.Priority ASC) AS X " +
+                           "GROUP BY X.Name";
                 }
             }
             /// <summary>
@@ -198,27 +155,6 @@ namespace Database.SQL
                            "JOIN Player P ON D.SourcePlayerId = P.Id " +
                            "JOIN PlayerClass PC ON AR.PlayerClassId = PC.Id " +
                            "JOIN RoleIcon RI ON AR.RoleIconId = RI.Id ORDER BY RI.Priority ASC) AS X GROUP BY X.Id";
-
-                    return "SELECT * FROM (SELECT D.SourcePlayerId AS Id, P.Name, RI.Name AS Role, PC.Name AS Class " +
-                           "FROM ShieldingDone D JOIN Ability A ON D.AbilityId = A.Id " +
-                           "JOIN AbilityRole AR ON A.AbilityId = AR.AbilityLogId " +
-                           "JOIN Player P ON D.SourcePlayerId = P.Id " + 
-                           "JOIN PlayerClass PC ON AR.PlayerClassId = PC.Id " +
-                           "JOIN RoleIcon RI ON AR.RoleIconId = RI.Id " +
-                           "WHERE D.EncounterId = @id ORDER BY RI.Priority ASC) AS X " +
-                           "GROUP BY X.Id";
-//                    return @"SELECT Id, Name, Role, Class FROM (
-//                             SELECT P.Id, P.Name, RI.Name AS Role, PC.Name AS Class, 
-//                             row_number() OVER (PARTITION BY P.Name order by RI.Priority ASC) as row_number
-//                             FROM ShieldingDone SD
-//                             JOIN Ability A ON SD.AbilityId = A.Id
-//                             JOIN Player P ON SD.SourcePlayerId = P.Id
-//                             JOIN AbilityRole AR ON A.AbilityId = AR.AbilityLogId
-//                             JOIN PlayerClass PC ON AR.PlayerClassId = PC.Id
-//                             JOIN RoleIcon RI ON AR.RoleIconId = RI.Id
-//                             WHERE SD.EncounterId = @id
-//                             ) as rows where row_number = 1
-//                             ORDER BY Role, Name";
                 }
             }
             /// <summary>
@@ -237,26 +173,6 @@ namespace Database.SQL
                            "JOIN Player P ON D.SourcePlayerId = P.Id " +
                            "JOIN PlayerClass PC ON AR.PlayerClassId = PC.Id " +
                            "JOIN RoleIcon RI ON AR.RoleIconId = RI.Id ORDER BY RI.Priority ASC) AS X GROUP BY X.Id";
-                    //return "SELECT * FROM (SELECT D.SourcePlayerId AS Id, P.Name, RI.Name AS Role, PC.Name AS Class " +
-                    //       "FROM HealingDone D JOIN Ability A ON D.AbilityId = A.Id " +
-                    //       "JOIN AbilityRole AR ON A.AbilityId = AR.AbilityLogId " +
-                    //       "JOIN Player P ON D.SourcePlayerId = P.Id " + 
-                    //       "JOIN PlayerClass PC ON AR.PlayerClassId = PC.Id " +
-                    //       "JOIN RoleIcon RI ON AR.RoleIconId = RI.Id " +
-                    //       "WHERE D.EncounterId = @id ORDER BY RI.Priority ASC) AS X " +
-                    //       "GROUP BY X.Id";
-//                    return @"SELECT Id, Name, Role, Class FROM (
-//                             SELECT P.Id, P.Name, RI.Name AS Role, PC.Name AS Class, 
-//                             row_number() OVER (PARTITION BY P.Name order by RI.Priority ASC) as row_number
-//                             FROM HealingDone HD
-//                             JOIN Ability A ON HD.AbilityId = A.Id
-//                             JOIN Player P ON HD.SourcePlayerId = P.Id
-//                             JOIN AbilityRole AR ON A.AbilityId = AR.AbilityLogId
-//                             JOIN PlayerClass PC ON AR.PlayerClassId = PC.Id
-//                             JOIN RoleIcon RI ON AR.RoleIconId = RI.Id
-//                             WHERE HD.EncounterId = @id
-//                             ) as rows where row_number = 1
-//                             ORDER BY Role, Name";
                 }
             }
             /// <summary>
@@ -274,26 +190,6 @@ namespace Database.SQL
                            "JOIN Player P ON D.SourcePlayerId = P.Id " +
                            "JOIN PlayerClass PC ON AR.PlayerClassId = PC.Id " +
                            "JOIN RoleIcon RI ON AR.RoleIconId = RI.Id ORDER BY RI.Priority ASC";
-                    //return "SELECT * FROM (SELECT D.SourcePlayerId AS Id, P.Name, RI.Name AS Role, PC.Name AS Class " +
-                    //       "FROM DamageDone D JOIN Ability A ON D.AbilityId = A.Id " +
-                    //       "JOIN AbilityRole AR ON A.AbilityId = AR.AbilityLogId " +
-                    //       "JOIN Player P ON D.SourcePlayerId = P.Id " + 
-                    //       "JOIN PlayerClass PC ON AR.PlayerClassId = PC.Id " +
-                    //       "JOIN RoleIcon RI ON AR.RoleIconId = RI.Id " +
-                    //       "WHERE D.EncounterId = @id ORDER BY RI.Priority ASC) AS X " +
-                    //       "GROUP BY X.Id";
-//                    return @"SELECT Id, Name, Role, Class FROM (
-//                             SELECT P.Id, P.Name, RI.Name AS Role, PC.Name AS Class, 
-//                             row_number() OVER (PARTITION BY P.Name order by RI.Priority ASC) as row_number
-//                             FROM DamageDone DD
-//                             JOIN Ability A ON DD.AbilityId = A.Id
-//                             JOIN Player P ON DD.SourcePlayerId = P.Id
-//                             JOIN AbilityRole AR ON A.AbilityId = AR.AbilityLogId
-//                             JOIN PlayerClass PC ON AR.PlayerClassId = PC.Id
-//                             JOIN RoleIcon RI ON AR.RoleIconId = RI.Id
-//                             WHERE DD.EncounterId = @id
-//                             ) as rows where row_number = 1
-//                             ORDER BY Role, Name";
                 }
             }
         }
@@ -905,13 +801,6 @@ namespace Database.SQL
                     return "SELECT * FROM (SELECT * FROM EncounterDebuffAction " +
                            "WHERE EncounterId = @id " +
                            "ORDER BY DebuffName) AS X GROUP BY DebuffName";
-//                    return @"select *
-//                             from (
-//                                select *,
-//                                       row_number() over (partition by DebuffName, SourceType order by SourceType) as row_number
-//                                from EncounterDebuffAction WHERE EncounterId = @id
-//                                ) as rows
-//                             where row_number = 1";
                 }
             }
             /// <summary>
@@ -924,13 +813,6 @@ namespace Database.SQL
                     return "SELECT * FROM (SELECT * FROM EncounterBuffAction " +
                            "WHERE EncounterId = @id " +
                            "ORDER BY BuffName) AS X GROUP BY BuffName";
-//                    return @"select *
-//                             from (
-//                                select *,
-//                                       row_number() over (partition by BuffName, SourceType order by SourceType) as row_number
-//                                from EncounterBuffAction WHERE EncounterId = @id
-//                                ) as rows
-//                             where row_number = 1";
                 }
             }
 
@@ -993,8 +875,6 @@ namespace Database.SQL
                         {
                             return string.Format("FROM {0} {1} JOIN Ability A ON {1}.AbilityId = A.Id " +
                                    "JOIN Encounter E ON {1}.EncounterId = E.Id JOIN Player P ON {1}.SourcePlayerId = P.Id ", RecordTable, RecordTableAlias);
-                            //return "FROM DamageDone DD JOIN Ability A ON DD.AbilityId = A.Id " +
-                            //       "JOIN Encounter E ON DD.EncounterId = E.Id JOIN Player P ON DD.SourcePlayerId = P.Id ";
                         }
                     }
                     public static string InteractionJoinTargetPlayer
@@ -1003,8 +883,6 @@ namespace Database.SQL
                         {
                             return string.Format("FROM {0} {1} JOIN Ability A ON {1}.AbilityId = A.Id " +
                                    "JOIN Encounter E ON {1}.EncounterId = E.Id JOIN Player P ON {1}.TargetPlayerId = P.Id ", RecordTable, RecordTableAlias);
-                            //return "FROM DamageDone DD JOIN Ability A ON DD.AbilityId = A.Id " +
-                            //       "JOIN Encounter E ON DD.EncounterId = E.Id JOIN Player P ON DD.SourcePlayerId = P.Id ";
                         }
                     }
                     public static string InteractionJoinNoPlayer
@@ -1013,8 +891,6 @@ namespace Database.SQL
                         {
                             return string.Format("FROM {0} {1} JOIN Ability A ON {1}.AbilityId = A.Id " +
                                    "JOIN Encounter E ON {1}.EncounterId = E.Id ", RecordTable, RecordTableAlias);
-                            //return "FROM DamageDone DD JOIN Ability A ON DD.AbilityId = A.Id " +
-                            //       "JOIN Encounter E ON DD.EncounterId = E.Id ";
                         }
                     }
                     public static string InteractionBaseQueryTotals
@@ -1230,20 +1106,6 @@ namespace Database.SQL
                                             "GROUP BY SecondsElapsed, AbilityName " +
                                             "ORDER BY SecondsElapsed, AbilityName",
                                             RecordTable, RecordTableAlias);
-
-                                        //return string.Format("SELECT {1}.SecondsElapsed, A.Name AS AbilityName, " +
-                                        //       InteractionBaseQueryPerSecond +
-                                        //       "FROM {0} {1} JOIN Ability A ON {1}.AbilityId = A.Id " +
-                                        //       BaseWhereOutgoing + "AND {1}.TargetNpcId IS NOT NULL " +
-                                        //       "GROUP BY {1}.SecondsElapsed, A.Name " +
-                                        //       "UNION " +
-                                        //       "SELECT {1}.SecondsElapsed, A.Name AS AbilityName, " +
-                                        //       InteractionBaseQueryPerSecond +
-                                        //       "FROM {0} {1} JOIN Ability A ON {1}.AbilityId = A.Id JOIN Player P ON {1}.TargetPlayerId = P.Id " +
-                                        //       BaseWhereOutgoing + "AND {1}.TargetPlayerId IS NOT NULL " +
-                                        //       "GROUP BY {1}.SecondsElapsed, A.Name " +
-                                        //       "ORDER BY {1}.SecondsElapsed, AbilityName",
-                                        //       RecordTable, RecordTableAlias);
                                     }
                                 }
 
@@ -1251,46 +1113,6 @@ namespace Database.SQL
                                 {
                                     get
                                     {
-                                        // Result when generated
-
-                                        //SELECT X.AbilityName, X.DamageType, X.Icon,
-                                        //SUM(X.Crits) AS Crits, SUM(X.Hits) AS Hits, MAX(X.BiggestHit) AS BiggestHit,
-                                        //(SUM(X.Total) / (SUM(X.Crits) + SUM(X.Hits))) AS AverageHit, SUM(X.Total) AS Total,
-                                        //SUM(X.Blocked) AS Blocked, SUM(X.Ignored) AS Ignored, SUM(X.Intercepted) AS Intercepted, SUM(X.Absorbed) AS Absorbed,
-                                        //SUM(X.Effective) AS Effective,
-                                        //(SUM(X.Total) / ((DATEPART(HOUR, X.Duration) * 3600) + (DATEPART(MINUTE, X.Duration) * 60) + DATEPART(SECOND, X.Duration))) AS Average,
-                                        //(SUM(X.Effective) / ((DATEPART(HOUR, X.Duration) * 3600) + (DATEPART(MINUTE, X.Duration) * 60) + DATEPART(SECOND, X.Duration))) AS AverageEffective,
-                                        //((100.0 * (SUM(X.Effective) + SUM(X.Absorbed)) / (SELECT (SUM(EffectiveDamage) + SUM(AbsorbedAmount)) FROM DamageDone WHERE EncounterId = 2565 AND SourcePlayerId = 198 AND TargetNpcId IS NOT NULL))) AS Percentage
-                                        //FROM 
-                                        //(SELECT E.Duration, A.Name AS AbilityName, A.DamageType, A.Icon, COUNT(CASE WHEN DD.CriticalHit = 'true' THEN 1 END) AS Crits, 
-                                        //count(CASE WHEN DD.CriticalHit = 'false' THEN 1 END) AS Hits, MAX(DD.TotalDamage) AS BiggestHit, AVG(DD.TotalDamage) AS AverageHit, 
-                                        //(SUM(DD.EffectiveDamage) + SUM(DD.AbsorbedAmount) + SUM(DD.BlockedAmount) + SUM(DD.InterceptedAmount) + SUM(DD.IgnoredAmount)) AS Total, 
-                                        //SUM(DD.BlockedAmount) AS Blocked, SUM(DD.IgnoredAmount) AS Ignored, SUM(DD.InterceptedAmount) AS Intercepted, SUM(DD.AbsorbedAmount) AS Absorbed, 
-                                        //SUM(DD.EffectiveDamage) AS Effective, 
-                                        //((SUM(EffectiveDamage) + SUM(AbsorbedAmount) + SUM(BlockedAmount) + SUM(InterceptedAmount) + SUM(IgnoredAmount)) / ((DATEPART(HOUR, E.Duration) * 3600) 
-                                        //+ (DATEPART(MINUTE, E.Duration) * 60) + DATEPART(SECOND, E.Duration))) AS Average, 
-                                        //(SUM(EffectiveDamage) / ((DATEPART(HOUR, E.Duration) * 3600) 
-                                        //+ (DATEPART(MINUTE, E.Duration) * 60) + DATEPART(SECOND, E.Duration))) AS AverageEffective, ((100.0 * (SUM(DD.EffectiveDamage) + SUM(DD.AbsorbedAmount)) /  
-                                        //(SELECT (SUM(EffectiveDamage) + SUM(AbsorbedAmount)) FROM DamageDone WHERE EncounterId = 2565 AND SourcePlayerId = 198 AND TargetNpcId IS NOT NULL)))
-                                        // AS Percentage FROM DamageDone DD JOIN Ability A ON DD.AbilityId = A.Id JOIN Encounter E ON DD.EncounterId = E.Id 
-                                        // WHERE DD.EncounterId = 2565 AND DD.SourcePlayerId = 198 AND TotalDamage > 0  AND DD.TargetNpcId IS NOT NULL 
-                                        // GROUP BY E.Duration, A.Name, A.DamageType, A.Icon, E.Duration UNION 
-                                        // SELECT E.Duration, A.Name AS AbilityName, A.DamageType, A.Icon, COUNT(CASE WHEN DD.CriticalHit = 'true' THEN 1 END) AS Crits, 
-                                        // count(CASE WHEN DD.CriticalHit = 'false' THEN 1 END) AS Hits, MAX(DD.TotalDamage) AS BiggestHit, AVG(DD.TotalDamage) AS AverageHit, 
-                                        // (SUM(DD.EffectiveDamage) + SUM(DD.AbsorbedAmount) + SUM(DD.BlockedAmount) + SUM(DD.InterceptedAmount) + SUM(DD.IgnoredAmount)) AS Total, 
-                                        // SUM(DD.BlockedAmount) AS Blocked, SUM(DD.IgnoredAmount) AS Ignored, SUM(DD.InterceptedAmount) AS Intercepted, SUM(DD.AbsorbedAmount) AS Absorbed, 
-                                        // SUM(DD.EffectiveDamage) AS Effective, 
-                                        // ((SUM(EffectiveDamage) + SUM(AbsorbedAmount) + SUM(BlockedAmount) + SUM(InterceptedAmount) + SUM(IgnoredAmount)) / ((DATEPART(HOUR, E.Duration) * 3600) 
-                                        // + (DATEPART(MINUTE, E.Duration) * 60) + DATEPART(SECOND, E.Duration))) AS Average, (SUM(EffectiveDamage) / ((DATEPART(HOUR, E.Duration) * 3600) + 
-                                        // (DATEPART(MINUTE, E.Duration) * 60) + DATEPART(SECOND, E.Duration))) AS AverageEffective, ((100.0 * (SUM(DD.EffectiveDamage) + SUM(DD.AbsorbedAmount)) /  
-                                        // (SELECT (SUM(EffectiveDamage) + SUM(AbsorbedAmount)) FROM DamageDone WHERE EncounterId = 2565 AND SourcePlayerId = 198 AND TargetPlayerId IS NOT NULL))) 
-                                        // AS Percentage FROM DamageDone DD JOIN Ability A ON DD.AbilityId = A.Id JOIN Encounter E ON DD.EncounterId = E.Id 
-                                        // JOIN Player P ON DD.TargetPlayerId = P.Id 
-                                        // WHERE DD.EncounterId = 2565 AND DD.SourcePlayerId = 198 AND TotalDamage > 0  AND DD.TargetPlayerId IS NOT NULL 
-                                        // GROUP BY E.Duration, A.Name, A.DamageType, A.Icon, E.Duration) AS X
-                                        // GROUP BY Duration, AbilityName, DamageType, Icon
-                                        // ORDER BY Total DESC
-
                                         return string.Format(
                                             "SELECT X.AbilityName, X.DamageType, X.Icon, " +
                                             "SUM(X.Crits) AS Crits, SUM(X.Hits) AS Hits, MAX(X.BiggestHit) AS BiggestHit, " +
@@ -1313,17 +1135,6 @@ namespace Database.SQL
                                                "GROUP BY Duration, AbilityName, DamageType, Icon " +
                                                "ORDER BY Total DESC",
                                                RecordTable, RecordTableAlias, SearchEncounterId, SearchCharacterId);
-
-                                        //return string.Format("SELECT A.Name AS AbilityName, A.DamageType, A.Icon, " + InteractionBaseQueryTotals +
-                                        //       "FROM {0} WHERE EncounterId = {2} AND SourcePlayerId = {3} AND TargetNpcId IS NOT NULL))) AS Percentage " +
-                                        //       InteractionJoinNoPlayer + BaseWhereOutgoing + " AND {1}.TargetNpcId IS NOT NULL " +
-                                        //       "GROUP BY A.Name, A.DamageType, A.Icon, E.Duration " +
-                                        //       "UNION " +
-                                        //       "SELECT A.Name AS AbilityName, A.DamageType, A.Icon, " + InteractionBaseQueryTotals +
-                                        //       "FROM {0} WHERE EncounterId = {2} AND SourcePlayerId = {3} AND TargetPlayerId IS NOT NULL))) AS Percentage " +
-                                        //       InteractionJoinTargetPlayer + BaseWhereOutgoing + " AND {1}.TargetPlayerId IS NOT NULL " +
-                                        //       "GROUP BY A.Name, A.DamageType, A.Icon, E.Duration ORDER BY Total DESC",
-                                        //       RecordTable, RecordTableAlias, SearchEncounterId, SearchCharacterId);
                                     }
                                 }
                             }
@@ -5044,10 +4855,6 @@ namespace Database.SQL
                            "WHERE EBA.EncounterId = @id AND EBA.TargetId = @targetId " +
                            "GROUP BY EBA.DebuffName, EBA.SourceName, EBA.SecondDebuffWentUp, EBA.SecondDebuffWentDown, A.Icon " +
                            "ORDER BY EBA.DebuffName, EBA.SourceName";
-                    return
-                        @"SELECT DISTINCT EBA.DebuffName, EBA.SourceName, EBA.SecondDebuffWentUp, EBA.SecondDebuffWentDown, A.Icon, S.Role 
-                          FROM EncounterDebuffAction EBA JOIN Ability A ON EBA.AbilityId = A.Id LEFT JOIN Soul S ON A.SoulId = S.Id
-                          WHERE EBA.EncounterId = @id AND EBA.TargetId = @targetId ORDER BY EBA.DebuffName, EBA.SourceName";
                 }
             }
         }
