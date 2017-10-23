@@ -27,7 +27,7 @@ Either rename **UserGroups.example.cs** to **UserGroups.cs** or create a new Use
 public const string Admin = "PTAdminUsers";
 ```
 
-then you'd need to add a record to the **UserGroup** table, with the name **PTAdminUsers** and then give your test account access by adding a record into **UserGroupMembership** that links the two together.
+then you'd need to add a record to the **UserGroup** table, with the name **PTAdminUsers** and then give your test account access by adding a record into **UserGroupMembership** that links the two together. By default it's set to **AdminUsers** and there is a UserGroup in the database that matches this - so you don't have to change it if you don't want to.
 
 #### Web project
 
@@ -51,10 +51,10 @@ Right-click the PrancingTurtle web project and click "Set as Startup Project" if
 ### Import the DB schema to a local MySQL server
 You can find the default schema [here](https://github.com/hewisaurus/PrancingTurtle/blob/master/PTSchema-20171016.sql). It includes create statements for the tables, so you can copy/paste it directly into something like MySQL Workbench and execute it to get a working (but empty) database.
 
-The following files include the bare minimum data required in order to have a useful site. There is one user, **testuser@domain.com** and its password is **qwerty12345**
- * Minimum data with no sessions [here](https://github.com/hewisaurus/PrancingTurtle/blob/master/PTBasicData-IncGuild-NoSessions.sql)
+If you'd also like some seed data for the database, choose from the following three files. There is one user, **testuser@domain.com** and its password is **qwerty12345**
+ * Minimum data with no sessions [here](https://github.com/hewisaurus/PrancingTurtle/blob/master/PTBasicData-IncGuild-NoSessions.sql) - Instances, boss fights only
  * Minimum data with 2 sessions [here](https://github.com/hewisaurus/PrancingTurtle/blob/master/PTBasicData-IncGuild-2Sessions.zip) - 7.6mb zipped, 74mb uncompressed
- * Minimum data with 5 sessions [here](https://github.com/hewisaurus/PrancingTurtle/blob/master/PTBasicData-IncGuild-5Sessions.zip)
+ * Minimum data with 5 sessions [here](https://github.com/hewisaurus/PrancingTurtle/blob/master/PTBasicData-IncGuild-5Sessions.zip) - 16.9mb zipped, 162mb uncompressed
 
 ### Hangfire - a background job execution framework
 PT uses Hangfire to coordinate a series of background tasks and the existing Quartz.NET tasks will be moved to Hangfire in the future. As long as you configure a working MySQL/MariaDB server within the web project's **ConnectionStrings.config** file, the Hangfire database will be created automatically.
