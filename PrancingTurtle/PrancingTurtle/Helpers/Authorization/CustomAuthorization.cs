@@ -33,7 +33,8 @@ namespace PrancingTurtle.Helpers.Authorization
             if (_controller == typeof(AbilityController) ||
                 _controller == typeof(AbilityRoleController) ||
                 _controller == typeof(BossFightController) ||
-                _controller == typeof(InstanceController))
+                _controller == typeof(InstanceController) ||
+                _controller == typeof(SilentUpdateController))
             {
                 return httpContext.User.IsInRole(UserGroups.Admin);
             }
