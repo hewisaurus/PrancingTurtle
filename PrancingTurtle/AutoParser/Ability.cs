@@ -17,7 +17,7 @@ namespace AutoParser
         public int? RankNumber { get; set; }
         public string RequiresWeapon { get; set; }
         public decimal Cooldown { get; set; }
-        public string CastTime { get; set; }
+        public decimal CastTime { get; set; }
         public bool Channel { get; set; }
         public decimal Duration { get; set; }
         public decimal Interval { get; set; }
