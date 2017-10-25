@@ -38,7 +38,7 @@ CREATE TABLE `Ability` (
   `RankNumber` int(11) DEFAULT NULL,
   `RequiresWeapon` varchar(50) DEFAULT NULL,
   `Cooldown` decimal(8,2) DEFAULT NULL,
-  `CastTime` varchar(50) DEFAULT NULL,
+  `CastTime` decimal(4,2) DEFAULT NULL,
   `Channel` tinyint(1) DEFAULT NULL,
   `Duration` decimal(8,2) DEFAULT NULL,
   `Interval` decimal(4,2) DEFAULT NULL,
