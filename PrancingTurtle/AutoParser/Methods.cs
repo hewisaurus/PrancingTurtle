@@ -1352,7 +1352,18 @@ namespace AutoParser
             }
             #endregion
 
-
+            #region Commander Isiel, in The Bastion of Steel
+            if (bossFight.Name == "Commander Isiel" && bossFight.Instance.Name == "The Bastion of Steel")
+            {
+                encounter.EncounterSuccess = false;
+                if (encounter.Events.Any(e => e.ActionType == ActionType.TargetSlain && e.TargetName == "Commander Isiel") &&
+                    encounter.Events.Any(e => e.ActionType == ActionType.TargetSlain && e.TargetName == "Vindicator MK1"))
+                {
+                    encounter.EncounterSuccess = true;
+                    encounter.ValidForRanking = encounter.EncounterSuccess;
+                }
+            }
+            #endregion
 
             return encounter;
         }

@@ -404,6 +404,13 @@ namespace AutoParser
             {
                 DisplayName = "Council of Fate";
             }
+
+            // The Bastion of Steel
+            // Commander Isiel
+            if (BossName == "Vindicator MK1" || BossName == "Commander Isiel")
+            {
+                DisplayName = "Commander Isiel";
+            }
         }
 
         private void UpdateSecondsElapsedForEvents()
