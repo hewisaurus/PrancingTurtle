@@ -1376,9 +1376,18 @@ namespace AutoParser
             }
             else
             {
+                Console.WriteLine(" ** Encounter length currently {0}", encounter.Length.ToString());
                 encounter.EncounterSuccess = true;
                 encounter.Events = encounter.Events.Where(e => e.SecondsElapsed <= hylasDiedRecord.SecondsElapsed)
                     .ToList();
+                // Finally, update the duration if it has changed
+                TimeSpan encDuration = encounter.Events.Last().ParsedTimeStamp -
+                                       encounter.Events.First().ParsedTimeStamp;
+                if (encounter.Length != encDuration)
+                {
+                    encounter.Length = encDuration;
+                }
+                Console.WriteLine(" ** Encounter length now {0}", encounter.Length.ToString());
             }
 
             #endregion
