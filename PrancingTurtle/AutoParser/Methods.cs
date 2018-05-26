@@ -1365,6 +1365,24 @@ namespace AutoParser
             }
             #endregion
 
+            #region Prince Hylas, in Greenscale's Blight
+
+            var hylasDiedRecord = encounter.Events.FirstOrDefault(e =>
+                e.ActionType == ActionType.TargetSlain && e.TargetName == "Prince Hylas");
+            if (hylasDiedRecord == null)
+            {
+                encounter.EncounterSuccess = false;
+                Console.WriteLine(" ** No record was found where Hylas was slain!");
+            }
+            else
+            {
+                encounter.EncounterSuccess = true;
+                encounter.Events = encounter.Events.Where(e => e.SecondsElapsed <= hylasDiedRecord.SecondsElapsed)
+                    .ToList();
+            }
+
+            #endregion
+
             return encounter;
         }
 
