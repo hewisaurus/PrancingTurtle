@@ -2177,6 +2177,15 @@ namespace AutoParser
                                             "Inwar Darktide encounter detected, so setting combat downtime value to {0}",
                                             downtimeSeconds);
                                     }
+
+                                    if (entry.TargetType == CharacterType.Npc && entry.TargetName == "Prince Hylas" ||
+                                        entry.AttackerType == CharacterType.Npc && entry.AttackerName == "Prince Hylas")
+                                    {
+                                        downtimeSeconds = 50;
+                                        Console.WriteLine(
+                                            "Prince Hylas encounter detected, so setting combat downtime value to {0}",
+                                            downtimeSeconds);
+                                    }
                                     // Do we need this? Adjusted HP instead...
                                     //else if (entry.TargetType == CharacterType.Npc && (entry.TargetName == "Pagura"))
                                     //{
