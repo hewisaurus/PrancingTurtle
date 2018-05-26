@@ -88,6 +88,7 @@
     <Compile Include="Models\EncounterOverview.cs" />
     <Compile Include="Models\EncounterPlayerRole.cs" />
     <Compile Include="Models\EncounterPlayerStatistics.cs" />
+    <Compile Include="Models\GameEdition.cs" />
     <Compile Include="Models\Guild.cs" />
     <Compile Include="Models\GuildRank.cs" />
     <Compile Include="Models\GuildStatus.cs" />
