@@ -315,7 +315,12 @@ namespace Database.Repositories
         {
             string timeElapsed;
             return
-                Query(q => q.Query<Instance>(MySQL.Session.GetInstancesSeen, new { sessionId }), out timeElapsed).ToList();
+                Query(q => q.Query<Instance, GameEdition, Instance>(
+                    MySQL.Session.GetInstancesSeen, (i, ge) =>
+                    {
+                        i.Edition = ge;
+                        return i;
+                    }, new { sessionId }), out timeElapsed).ToList();
         }
 
         public List<string> GetDifficultiesSeen(int sessionId, int instanceId)

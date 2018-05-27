@@ -26,6 +26,10 @@ namespace Database.Models
         public int GameVersion { get; set; }
         public bool ForceShowTier { get; set; }
 
+        public int GameEditionId { get; set; }
+
+        public GameEdition Edition { get; set; }
+
         // UI Lists
         public List<string> DifficultiesSeen { get; set; }
     }
