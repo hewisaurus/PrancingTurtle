@@ -42,11 +42,26 @@
                 <table class="table">
                     @foreach (var session in Model.Sessions)
                     {
+                        var gameEditions = new Dictionary<string, string>();
+                        foreach (var instance in session.InstancesSeen)
+                        {
+                            if (!gameEditions.ContainsKey(instance.Edition.Name))
+                            {
+                                gameEditions.Add(instance.Edition.Name, instance.Edition.DisplayClass);
+                            }
+                        }
+
+
                         <tr>
                             <td class="recent-timeago">
                                 <b>@DateTimeHelpers.TimeAgo(session.Date.Add(Model.TimeZoneOffset))</b>
                             </td>
                             <td class="text-left">
+                                @foreach (var edition in gameEditions)
+                                {
+                                    <span class="label label-@edition.Value">@edition.Key</span>
+                                }
+                                @*<span class="label label-@session.InstancesSeen."></span>*@
                                 @Html.Raw(string.Format("&lt;{0}&gt;", session.AuthUserCharacter.Guild.Name))
                                 @foreach (var instance in session.InstancesSeen)
                                 {
@@ -95,6 +110,6 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://prancingturtle.com" />
     <meta property="og:site_name" content="Prancing Turtle" />
-    <meta property="og:description" content="A combat log parsing website for RIFT. Powered by turtles, for players."/>
+    <meta property="og:description" content="A combat log parsing website for RIFT. Powered by turtles, for players." />
     <meta property="og:image" content="https://prancingturtle.com/pt.png" />
 }
