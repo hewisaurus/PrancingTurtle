@@ -246,10 +246,11 @@
 
         public static string GetInstancesSeen
         {
-            get { return "SELECT I.* FROM SessionEncounter SE " +
+            get { return "SELECT I.*, GE.* FROM SessionEncounter SE " +
                          "JOIN Encounter E ON SE.EncounterId = E.Id " +
                          "JOIN BossFight BF ON E.BossFightId = BF.Id " +
                          "JOIN Instance I ON BF.InstanceId = I.Id " +
+                         "JOIN GameEdition GE ON I.GameEditionId = GE.Id " +
                          "WHERE SE.SessionId = @sessionId GROUP BY I.Name"; }
         }
 
