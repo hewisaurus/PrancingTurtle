@@ -15,31 +15,8 @@
             <p>@Model.SiteNotification.Body</p>
         </div>
     }
-    @*<div class="alert alert-dismissible alert-warning">
-            <button type="button" class="close" data-dismiss="alert">×</button>
-            <p>
-                Uploading via FTP is flaky at the moment and isn't working reliably. We're working on a fix for this!
-            </p>
-        </div>*@<h2>Welcome to the home of the Prancing Turtle!</h2>
+    <h2>Welcome to the home of the Prancing Turtle!</h2>
     <h6>He might prance, but mine turtle's smarter cousin is a force to be reckoned with.</h6><br />
-
-    @*<div class="alert alert-dismissible alert-danger">
-            <button type="button" class="close" data-dismiss="alert">×</button>
-            <h3><b>Site maintenance / downtime</b>
-            </h3>
-            <p>
-                This coming weekend, there will be two small periods of time during which <b>prancingturtle.com</b> will be unavailable.
-            </p>
-            <p>
-                The first will be for <b>3 hours</b> starting on <b>Saturday, May 30th at 9am AEST (Friday 4pm PST, Friday 11pm GMT)</b>, and the second
-                will be for <b>up to 4 hours</b> starting on <b>Sunday, May 31st at 8am AEST (Saturday 3pm PST, Saturday 10pm GMT)</b>.
-            </p>
-            <p>
-                These two periods of downtime are both due to planned maintenance as well as utility works, and if time allows (and the turtles do their jobs in time), we should also be able to implement
-                the fix for the flaky FTP issues we've been having. The changelog will be updated over the weekend once the maintenance has been carried out.
-            </p>
-        </div>*@
-
     <h4>Don't miss an update! Follow us on Twitter &amp; Facebook!</h4>
     <a href="https://twitter.com/PrancingTurtl" class="twitter-follow-button" data-show-count="false">Follow @Html.Raw("@PrancingTurtl")</a>
     <div class="fb-like" data-href="https://www.facebook.com/prancingturtle" data-layout="standard" data-action="like" data-show-faces="false" data-share="true" data-colorscheme="dark"></div>
@@ -53,8 +30,6 @@
     @if (!Request.IsAuthenticated)
     {
         <div class="alert alert-success">
-            @*<div class="alert alert-dismissable alert-success">*@
-            @*<button type="button" class="close" data-dismiss="alert">×</button>*@
             <p>You're not logged in, so all encounters shown have been converted to UTC time (+0:00)</p>
             @Html.ActionLink("If you register an account, you can login and set your timezone so that all encounters and sessions are shown in your local time.", "Register", "Account", null, new { @class = "text-danger" })
         </div>
@@ -81,30 +56,10 @@
                                     if (instance.DifficultiesSeen.Any())
                                     {
                                         <label><b>@Html.Raw(string.Format("({0})", string.Join(", ", instance.DifficultiesSeen)))</b></label>
-
-                                        @*@Html.Raw(" (")
-                                            foreach (var difficultySeen in instance.DifficultiesSeen)
-                                            {
-                                                switch (difficultySeen)
-                                                {
-                                                    case "EM":
-                                                        <span class="label label-success">EM</span>
-                                                        break;
-                                                    case "NM":
-                                                    <span class="label label-warning">NM</span>
-                                                        break;
-                                                    case "HM":
-                                                    <span class="label label-danger">HM</span>
-                                                        break;
-                                                }
-
-                                            }
-                                            @Html.Raw(")")*@
                                     }
 
                                 }
                                 <span> -> </span>
-                                @*@Html.ActionLink(session.Name, "Detail", "Session", new { @id = session.Id }, new { @class = "btn btn-xs btn-success" })*@
                                 <b>@Html.ActionLink(session.Name, "Detail", "Session", new { @id = session.Id }, new { @class = "text-info-i" })</b>
                             </td>
                         </tr>
@@ -120,20 +75,6 @@
                 {
                     <li>@item.PrintedFullObject</li>
                 }
-                @*<li>08/06/2015 - Extended the timeout for encounters to 15 seconds, up from 10. Encounters are deemed finished when no NPCs have taken damage for 15 seconds,
-                        and this change helps allow for situations (particularly seen within the Drekanoth of Fate encounter) where there is a small period
-                        of downtime within an encounter that is still active.</li>
-                    <li>08/06/2015 - Added some more boss portraits. Check out the release notes for full details.</li>
-                    <li>21/05/2015 - Fixed a bug that occurred while comparing breakdowns where one or more abilities did no damage</li>
-                    <li>21/05/2015 - Added some boss portraits! These can be seen on the instance search pages or on the overview for a particular encounter, if a portrait exists.
-                        More will be added over time.
-                    </li>
-                    <li>09/05/2015 - Added the ability to compare DPS breakdowns for players within a single encounter. On the 'Damage Done' pages,
-                        select the players you'd like to compare, and hit the green compare button down the bottom of the page. Currently, only Player Damage Done is comparable - the others will be coming soon!
-                    </li>
-                    <li>09/05/2015 - Added the ability to copy and paste an encounter's parse, similar to in-game parsing tools. This is visible at the top of each overview page within an encounter, such
-                        as 'Player Damage Done' or 'NPC Healing Taken'
-                    </li>*@
             </ul>
             <p>
                 <b>@Html.ImageActionLink("V1", "ReleaseNotes", null, "text-info", "fa fa-external-link-square", "Release Notes")</b> |
