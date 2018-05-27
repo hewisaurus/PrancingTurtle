@@ -10,7 +10,7 @@ namespace Database.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public string Display { get; set; }
+        public string DisplayClass { get; set; }
         public DateTime Created { get; set; }
         public DateTime Modified { get; set; }
     }
