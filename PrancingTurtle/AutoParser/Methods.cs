@@ -1355,7 +1355,7 @@ namespace AutoParser
             #region Commander Isiel, in The Bastion of Steel
             if (bossFight.Name == "Commander Isiel" && bossFight.Instance.Name == "The Bastion of Steel")
             {
-                encounter.EncounterSuccess = false;
+                encounter.EncounterSuccess = false;//    
                 if (encounter.Events.Any(e => e.ActionType == ActionType.TargetSlain && e.TargetName == "Commander Isiel") &&
                     encounter.Events.Any(e => e.ActionType == ActionType.TargetSlain && e.TargetName == "Vindicator MK1"))
                 {
@@ -1367,27 +1367,31 @@ namespace AutoParser
 
             #region Prince Hylas, in Greenscale's Blight
 
-            var hylasDiedRecord = encounter.Events.FirstOrDefault(e =>
-                e.ActionType == ActionType.TargetSlain && e.TargetName == "Prince Hylas");
-            if (hylasDiedRecord == null)
+            if (bossFight.Name == "Prince Hylas" && bossFight.Instance.Name == "Greenscale's Blight")
             {
-                encounter.EncounterSuccess = false;
-                Console.WriteLine(" ** No record was found where Hylas was slain!");
-            }
-            else
-            {
-                Console.WriteLine(" ** Encounter length currently {0}", encounter.Length.ToString());
-                encounter.EncounterSuccess = true;
-                encounter.Events = encounter.Events.Where(e => e.SecondsElapsed <= hylasDiedRecord.SecondsElapsed)
-                    .ToList();
-                // Finally, update the duration if it has changed
-                TimeSpan encDuration = encounter.Events.Last().ParsedTimeStamp -
-                                       encounter.Events.First().ParsedTimeStamp;
-                if (encounter.Length != encDuration)
+                var hylasDiedRecord = encounter.Events.FirstOrDefault(e =>
+                    e.ActionType == ActionType.TargetSlain && e.TargetName == "Prince Hylas");
+                if (hylasDiedRecord == null)
                 {
-                    encounter.Length = encDuration;
+                    encounter.EncounterSuccess = false;
+                    Console.WriteLine(" ** No record was found where Hylas was slain!");
                 }
-                Console.WriteLine(" ** Encounter length now {0}", encounter.Length.ToString());
+                else
+                {
+                    Console.WriteLine(" ** Encounter length currently {0}", encounter.Length.ToString());
+                    encounter.EncounterSuccess = true;
+                    encounter.Events = encounter.Events.Where(e => e.SecondsElapsed <= hylasDiedRecord.SecondsElapsed)
+                        .ToList();
+                    // Finally, update the duration if it has changed
+                    TimeSpan encDuration = encounter.Events.Last().ParsedTimeStamp -
+                                           encounter.Events.First().ParsedTimeStamp;
+                    if (encounter.Length != encDuration)
+                    {
+                        encounter.Length = encDuration;
+                    }
+
+                    Console.WriteLine(" ** Encounter length now {0}", encounter.Length.ToString());
+                }
             }
 
             #endregion
