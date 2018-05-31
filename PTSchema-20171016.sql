@@ -1,6 +1,6 @@
 CREATE DATABASE  IF NOT EXISTS `PrancingTurtle` /*!40100 DEFAULT CHARACTER SET latin1 */;
 USE `PrancingTurtle`;
--- MySQL dump 10.13  Distrib 5.7.12, for Win64 (x86_64)
+-- MySQL dump 10.13  Distrib 5.7.17, for Win64 (x86_64)
 --
 -- Host: 172.16.21.14    Database: PrancingTurtle
 -- ------------------------------------------------------
@@ -53,7 +53,7 @@ CREATE TABLE `Ability` (
   KEY `IX_Ability_Name` (`Name`),
   KEY `FK_Ability_Soul` (`SoulId`),
   CONSTRAINT `FK_Ability_Soul` FOREIGN KEY (`SoulId`) REFERENCES `Soul` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=29345 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=29652 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -76,7 +76,7 @@ CREATE TABLE `AbilityRole` (
   KEY `AbilityLogId` (`AbilityLogId`),
   CONSTRAINT `FK_AbilityRole_PlayerClass` FOREIGN KEY (`PlayerClassId`) REFERENCES `PlayerClass` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `FK_AbilityRole_RoleIcon` FOREIGN KEY (`RoleIconId`) REFERENCES `RoleIcon` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=227 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=241 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -125,7 +125,7 @@ CREATE TABLE `AuthUser` (
   `TimeZone` varchar(50) NOT NULL,
   `Created` datetime DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`Id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2372 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=2423 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -152,7 +152,7 @@ CREATE TABLE `AuthUserCharacter` (
   CONSTRAINT `FK_AuthUserCharacter_GuildRank` FOREIGN KEY (`GuildRankId`) REFERENCES `GuildRank` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `FK_UserCharacter_AuthUser` FOREIGN KEY (`AuthUserId`) REFERENCES `AuthUser` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `FK_UserCharacter_Shard` FOREIGN KEY (`ShardId`) REFERENCES `Shard` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=3300 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3378 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -172,7 +172,7 @@ CREATE TABLE `AuthUserCharacterGuildApplication` (
   KEY `FK_AuthUserCharacterGuildApplication_Guild` (`GuildId`),
   CONSTRAINT `FK_AuthUserCharacterGuildApplication_Guild` FOREIGN KEY (`GuildId`) REFERENCES `Guild` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `FK_AuthUserCharacterGuildApplication_UserCharacter` FOREIGN KEY (`AuthUserCharacterId`) REFERENCES `AuthUserCharacter` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=2082 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=2104 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -186,7 +186,7 @@ CREATE TABLE `AutoParserAbilityChecking` (
   `Id` int(11) NOT NULL AUTO_INCREMENT,
   `AbilityId` bigint(20) NOT NULL,
   PRIMARY KEY (`Id`)
-) ENGINE=InnoDB AUTO_INCREMENT=105493 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=108763 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -215,7 +215,7 @@ CREATE TABLE `AutoParserPlayerChecking` (
   `Id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'PK',
   `PlayerId` varchar(50) NOT NULL,
   PRIMARY KEY (`Id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2410 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=2976 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -238,7 +238,7 @@ CREATE TABLE `BossFight` (
   PRIMARY KEY (`Id`),
   KEY `FK_Boss_Instance` (`InstanceId`),
   CONSTRAINT `FK_Boss_Instance` FOREIGN KEY (`InstanceId`) REFERENCES `Instance` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=163 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=179 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -259,7 +259,7 @@ CREATE TABLE `BossFightDifficulty` (
   KEY `FK_BossFightDifficulty_EncounterDifficulty_idx` (`EncounterDifficultyId`),
   CONSTRAINT `FK_BossFightDifficulty_BossFight` FOREIGN KEY (`BossFightId`) REFERENCES `BossFight` (`Id`),
   CONSTRAINT `FK_BossFightDifficulty_EncounterDifficulty` FOREIGN KEY (`EncounterDifficultyId`) REFERENCES `EncounterDifficulty` (`Id`)
-) ENGINE=InnoDB AUTO_INCREMENT=220 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=228 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -278,7 +278,7 @@ CREATE TABLE `BossFightSingleTargetDetail` (
   KEY `IX_TargetName` (`TargetName`),
   KEY `FK_BossFightSingleTargetDetail_BossFight_idx` (`BossFightId`),
   CONSTRAINT `FK_BossFightSingleTargetDetail_BossFight` FOREIGN KEY (`BossFightId`) REFERENCES `BossFight` (`Id`)
-) ENGINE=InnoDB AUTO_INCREMENT=63 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=71 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -411,7 +411,7 @@ CREATE TABLE `DamageDone` (
   CONSTRAINT `FK_DamageDone_Encounter` FOREIGN KEY (`EncounterId`) REFERENCES `Encounter` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `FK_DamageDone_SourcePlayer` FOREIGN KEY (`SourcePlayerId`) REFERENCES `Player` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `FK_DamageDone_TargetPlayer` FOREIGN KEY (`TargetPlayerId`) REFERENCES `Player` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=6505789389 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=6608512693 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -445,7 +445,7 @@ CREATE TABLE `Encounter` (
   CONSTRAINT `FK_Encounter_BossFight` FOREIGN KEY (`BossFightId`) REFERENCES `BossFight` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `FK_Encounter_EncounterDifficulty` FOREIGN KEY (`EncounterDifficultyId`) REFERENCES `EncounterDifficulty` (`Id`),
   CONSTRAINT `FK_Encounter_Guild` FOREIGN KEY (`GuildId`) REFERENCES `Guild` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=197106 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=201786 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -496,7 +496,7 @@ CREATE TABLE `EncounterBuffAction` (
   KEY `FK_EncounterBuffAction_Ability` (`AbilityId`),
   CONSTRAINT `FK_EncounterBuffAction_Ability` FOREIGN KEY (`AbilityId`) REFERENCES `Ability` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `FK_EncounterBuffAction_Encounter` FOREIGN KEY (`EncounterId`) REFERENCES `Encounter` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=648773509 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=657008801 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -575,7 +575,7 @@ CREATE TABLE `EncounterDeath` (
   CONSTRAINT `FK_EncounterDeath_Encounter` FOREIGN KEY (`EncounterId`) REFERENCES `Encounter` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `FK_EncounterDeath_SourcePlayer` FOREIGN KEY (`SourcePlayerId`) REFERENCES `Player` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `FK_EncounterDeath_TargetPlayer` FOREIGN KEY (`TargetPlayerId`) REFERENCES `Player` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=7563513 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=7685884 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -607,7 +607,7 @@ CREATE TABLE `EncounterDebuffAction` (
   KEY `FK_EncounterDebuffAction_Ability` (`AbilityId`),
   CONSTRAINT `FK_EncounterDebuffAction_Ability` FOREIGN KEY (`AbilityId`) REFERENCES `Ability` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `FK_EncounterDebuffAction_Encounter` FOREIGN KEY (`EncounterId`) REFERENCES `Encounter` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=350602123 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=353772954 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -643,7 +643,7 @@ CREATE TABLE `EncounterNpc` (
   KEY `NpcName` (`NpcName`,`NpcId`),
   KEY `EncounterId` (`EncounterId`),
   CONSTRAINT `FK_EncounterNpc_Encounter` FOREIGN KEY (`EncounterId`) REFERENCES `Encounter` (`Id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3510211 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3570293 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -665,7 +665,7 @@ CREATE TABLE `EncounterNpcCast` (
   KEY `IX_EncounterNpcCast_NpcId` (`NpcId`),
   KEY `IX_EncounterNpcCast_AbilityName` (`AbilityName`),
   CONSTRAINT `FK_EncounterNpcCast_Encounter` FOREIGN KEY (`EncounterId`) REFERENCES `Encounter` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=1405044 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1445743 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -686,7 +686,7 @@ CREATE TABLE `EncounterOverview` (
   UNIQUE KEY `UC_EncounterOverview_EncounterId` (`EncounterId`),
   KEY `IX_EncounterOverview_EncounterId` (`EncounterId`),
   CONSTRAINT `FK_EncounterOverview_Encounter` FOREIGN KEY (`EncounterId`) REFERENCES `Encounter` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=182861 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=187545 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -710,7 +710,7 @@ CREATE TABLE `EncounterPlayerRole` (
   KEY `Name` (`Name`),
   CONSTRAINT `FK_Encounter_EncounterPlayerRole` FOREIGN KEY (`EncounterId`) REFERENCES `Encounter` (`Id`),
   CONSTRAINT `FK_Player_EncounterPlayerRole` FOREIGN KEY (`PlayerId`) REFERENCES `Player` (`Id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3882171 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3921487 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -776,7 +776,25 @@ CREATE TABLE `EncounterPlayerStatistics` (
   CONSTRAINT `FK_EncounterPlayerStatistics_Encounter` FOREIGN KEY (`EncounterId`) REFERENCES `Encounter` (`Id`),
   CONSTRAINT `FK_EncounterPlayerStatistics_HpsAbility` FOREIGN KEY (`TopHpsAbilityId`) REFERENCES `Ability` (`Id`),
   CONSTRAINT `FK_EncounterPlayerStatistics_Player` FOREIGN KEY (`PlayerId`) REFERENCES `Player` (`Id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1025978 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1037735 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Table structure for table `GameEdition`
+--
+
+DROP TABLE IF EXISTS `GameEdition`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `GameEdition` (
+  `Id` int(11) NOT NULL AUTO_INCREMENT,
+  `Name` varchar(45) NOT NULL,
+  `DisplayClass` varchar(10) NOT NULL,
+  `Created` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `Modified` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`Id`),
+  UNIQUE KEY `UQ_GameEdition_Name` (`Name`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -799,11 +817,12 @@ CREATE TABLE `Guild` (
   `HideRoster` tinyint(1) NOT NULL DEFAULT '1',
   `HideProgression` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`Id`),
+  UNIQUE KEY `UQ_Guild_ShardName` (`Name`,`ShardId`),
   KEY `FK_Guild_Shard` (`ShardId`),
   KEY `FK_Guild_GuildStatus` (`GuildStatusId`),
   CONSTRAINT `FK_Guild_GuildStatus` FOREIGN KEY (`GuildStatusId`) REFERENCES `GuildStatus` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `FK_Guild_Shard` FOREIGN KEY (`ShardId`) REFERENCES `Shard` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=580 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=596 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -882,7 +901,7 @@ CREATE TABLE `HealingDone` (
   CONSTRAINT `FK_HealingDone_Encounter` FOREIGN KEY (`EncounterId`) REFERENCES `Encounter` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `FK_HealingDone_SourcePlayer` FOREIGN KEY (`SourcePlayerId`) REFERENCES `Player` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `FK_HealingDone_TargetPlayer` FOREIGN KEY (`TargetPlayerId`) REFERENCES `Player` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=6148196883 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=6254278355 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -903,9 +922,12 @@ CREATE TABLE `Instance` (
   `ImageFilename` varchar(20) DEFAULT NULL,
   `TierNumber` tinyint(1) NOT NULL DEFAULT '1',
   `GameVersion` tinyint(2) NOT NULL DEFAULT '1',
+  `GameEditionId` int(11) DEFAULT NULL,
   `ForceShowTier` tinyint(1) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`Id`)
-) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=latin1;
+  PRIMARY KEY (`Id`),
+  KEY `FK_Instance_GameEdition_idx` (`GameEditionId`),
+  CONSTRAINT `FK_Instance_GameEdition` FOREIGN KEY (`GameEditionId`) REFERENCES `GameEdition` (`Id`)
+) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -922,7 +944,7 @@ CREATE TABLE `NewsRecentChanges` (
   `Created` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `Visible` tinyint(1) NOT NULL,
   PRIMARY KEY (`Id`)
-) ENGINE=InnoDB AUTO_INCREMENT=184 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=186 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -939,7 +961,7 @@ CREATE TABLE `NpcDeath` (
   `AlternateNames` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`Id`),
   KEY `IX_Name` (`Name`)
-) ENGINE=InnoDB AUTO_INCREMENT=9636 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=10086 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -957,7 +979,7 @@ CREATE TABLE `Player` (
   `PlayerClassId` int(11) DEFAULT NULL COMMENT 'This is nullable because we won''t know what class the player is when inserting, but we can loop over later and update it.',
   PRIMARY KEY (`Id`),
   KEY `PlayerId` (`PlayerId`)
-) ENGINE=InnoDB AUTO_INCREMENT=143575 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=146778 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1030,7 +1052,7 @@ CREATE TABLE `Session` (
   PRIMARY KEY (`Id`),
   KEY `FK_Session_AuthUserCharacter` (`AuthUserCharacterId`),
   CONSTRAINT `FK_Session_AuthUserCharacter` FOREIGN KEY (`AuthUserCharacterId`) REFERENCES `AuthUserCharacter` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=16762 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=17278 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1049,7 +1071,7 @@ CREATE TABLE `SessionEncounter` (
   KEY `FK_SessionEncounter_Session` (`SessionId`),
   CONSTRAINT `FK_SessionEncounter_Encounter` FOREIGN KEY (`EncounterId`) REFERENCES `Encounter` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `FK_SessionEncounter_Session` FOREIGN KEY (`SessionId`) REFERENCES `Session` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=237258 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=242062 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1077,7 +1099,7 @@ CREATE TABLE `SessionLog` (
   CONSTRAINT `FK_SessionLog_AuthUserCharacter` FOREIGN KEY (`AuthUserCharacterId`) REFERENCES `AuthUserCharacter` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `FK_SessionLog_Guild` FOREIGN KEY (`GuildId`) REFERENCES `Guild` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `FK_SessionLog_Session` FOREIGN KEY (`SessionId`) REFERENCES `Session` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=16552 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=17068 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1111,7 +1133,7 @@ CREATE TABLE `Shard` (
   `Region` varchar(3) NOT NULL,
   `ShardType` varchar(6) DEFAULT NULL,
   PRIMARY KEY (`Id`)
-) ENGINE=InnoDB AUTO_INCREMENT=158 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=159 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1146,7 +1168,7 @@ CREATE TABLE `ShieldingDone` (
   CONSTRAINT `FK_ShieldingDone_Encounter` FOREIGN KEY (`EncounterId`) REFERENCES `Encounter` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `FK_ShieldingDone_SourcePlayer` FOREIGN KEY (`SourcePlayerId`) REFERENCES `Player` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `FK_ShieldingDone_TargetPlayer` FOREIGN KEY (`TargetPlayerId`) REFERENCES `Player` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=390338597 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=396023809 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1164,7 +1186,7 @@ CREATE TABLE `SiteNotification` (
   `Created` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `Visible` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`Id`)
-) ENGINE=InnoDB AUTO_INCREMENT=44 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=47 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1183,7 +1205,7 @@ CREATE TABLE `Soul` (
   PRIMARY KEY (`Id`),
   KEY `FK_Soul_PlayerClass` (`PlayerClassId`),
   CONSTRAINT `FK_Soul_PlayerClass` FOREIGN KEY (`PlayerClassId`) REFERENCES `PlayerClass` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=52 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1288,4 +1310,4 @@ CREATE TABLE `UserGroupMembership` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-10-16 19:30:12
+-- Dump completed on 2018-05-31 17:55:20
