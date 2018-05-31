@@ -411,6 +411,39 @@ namespace AutoParser
             {
                 DisplayName = "Commander Isiel";
             }
+
+            // Greenscale's Blight
+            // Duke Letareus
+            if (BossName == "Duc Letareus" // French
+                || BossName == "Herzog Letareus") // German
+            {
+                DisplayName = "Duke Letareus";
+            }
+
+            // Infiltrator Johlen
+            if (BossName == "Infiltrateur Johlen") // French
+            {
+                DisplayName = "Infiltrator Johlen";
+            }
+
+            // Oracle Aleria
+            if (BossName == "Orakel Aleria") // German
+            {
+                DisplayName = "Oracle Aleria";
+            }
+
+            // Prince Hylas
+            if (BossName == "Prinz Hylas") // German
+            {
+                DisplayName = "Prince Hylas";
+            }
+
+            // Lord Greenscale
+            if (BossName == "Seigneur Vertécaille" // French
+                || BossName == "Fürst Grünschuppe") // German
+            {
+                DisplayName = "Lord Greenscale";
+            }
         }
 
         private void UpdateSecondsElapsedForEvents()
