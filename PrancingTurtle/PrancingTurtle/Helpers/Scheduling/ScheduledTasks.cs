@@ -87,7 +87,7 @@ namespace PrancingTurtle.Helpers.Scheduling
             scheduler.ScheduleJob(jUpdateEncounterPlayers, tUpdateEncounterPlayers);
 
             // Update EncounterPlayerStatistics
-            var updateEncounterPlayerStatisticsInterval = random.Next(10, 20);
+            var updateEncounterPlayerStatisticsInterval = random.Next(4, 8);
 
             IJobDetail jUpdateEncounterPlayerStatistics = JobBuilder.Create<EncounterPlayerStatistics>()
                 .WithIdentity("EncounterPlayerStatistics", "SilentUpdate").Build();
