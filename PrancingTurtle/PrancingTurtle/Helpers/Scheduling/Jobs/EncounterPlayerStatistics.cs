@@ -66,9 +66,9 @@ namespace PrancingTurtle.Helpers.Scheduling.Jobs
             {
                 Debug.WriteLine("Found no encounters that require statistics updates!");
                 _logger.Debug("Found no encounters that require statistics updates!");
-                _discord.Log(
-                    "Found no encounters that require statistics updates!",
-                    "EncounterPlayerStatistics", LogLevel.Warning);
+                //_discord.Log(
+                //    "Found no encounters that require statistics updates!",
+                //    "EncounterPlayerStatistics", LogLevel.Warning);
 
             }
             else
