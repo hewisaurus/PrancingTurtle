@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="ILogger.cs" />
     <Compile Include="NLogHandler.cs" />
+    <Compile Include="NullLogger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
