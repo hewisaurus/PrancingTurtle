@@ -60,7 +60,7 @@ namespace PrancingTurtle.Helpers.Scheduling.Jobs
 
             // Don't bother saving stats for encounters that aren't valid for rankings.
             // There's no point saving DPS/HPS/APS for encounters that are not successful, either.
-            var maxEncounters = 5;
+            var maxEncounters = 100;
             var encList = _encounterRepository.GetEncountersMissingPlayerStatistics(maxEncounters);
             if (!encList.Any())
             {
