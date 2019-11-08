@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using Database.Repositories.Interfaces;
+using DiscordLogger.Provider;
 using Quartz;
-using Logging;
+using Microsoft.Extensions.Logging;
+using ILogger = Logging.ILogger;
 
 namespace PrancingTurtle.Helpers.Scheduling.Jobs
 {
@@ -14,13 +16,15 @@ namespace PrancingTurtle.Helpers.Scheduling.Jobs
         private readonly IEncounterRepository _encounterRepository;
         private readonly IScheduledTaskRepository _taskRepository;
         private readonly IBossFightSingleTargetDetail _bossFightSingleTargetDetailRepository;
+        private readonly IDiscordService _discord;
 
-        public EncounterPlayerStatistics(ILogger logger, IEncounterRepository encounterRepository, IScheduledTaskRepository taskRepository, IBossFightSingleTargetDetail bossFightSingleTargetDetailRepository)
+        public EncounterPlayerStatistics(ILogger logger, IEncounterRepository encounterRepository, IScheduledTaskRepository taskRepository, IBossFightSingleTargetDetail bossFightSingleTargetDetailRepository, IDiscordService discord)
         {
             _logger = logger;
             _encounterRepository = encounterRepository;
             _taskRepository = taskRepository;
             _bossFightSingleTargetDetailRepository = bossFightSingleTargetDetailRepository;
+            _discord = discord;
         }
 
         public void Execute(IJobExecutionContext context)
@@ -31,7 +35,10 @@ namespace PrancingTurtle.Helpers.Scheduling.Jobs
             if (task == null)
             {
                 Debug.WriteLine("Can't update EncounterPlayerStatistics - no matching task definition exists in the database.");
-                _logger.Debug("Can't update EncounterPlayerStatistics - no matching task definition exists in the database.");
+                //_logger.Debug("Can't update EncounterPlayerStatistics - no matching task definition exists in the database.");
+                _discord.Log(
+                    "Can't update EncounterPlayerStatistics - no matching task definition exists in the database.",
+                    "EncounterPlayerStatistics", LogLevel.Error);
                 return;
             }
 
@@ -40,6 +47,9 @@ namespace PrancingTurtle.Helpers.Scheduling.Jobs
             {
                 _logger.Debug("Not enough time has passed for this scheduled task, so it won't be executed now");
                 Debug.WriteLine("Not enough time has passed for this scheduled task, so it won't be executed now");
+                _discord.Log(
+                    "Not enough time has passed for this scheduled task, so it won't be executed now",
+                    "EncounterPlayerStatistics", LogLevel.Warning);
                 return;
             }
 
@@ -50,17 +60,24 @@ namespace PrancingTurtle.Helpers.Scheduling.Jobs
 
             // Don't bother saving stats for encounters that aren't valid for rankings.
             // There's no point saving DPS/HPS/APS for encounters that are not successful, either.
-            var encList = _encounterRepository.GetEncountersMissingPlayerStatistics(100);
+            var maxEncounters = 5;
+            var encList = _encounterRepository.GetEncountersMissingPlayerStatistics(maxEncounters);
             if (!encList.Any())
             {
                 Debug.WriteLine("Found no encounters that require statistics updates!");
                 _logger.Debug("Found no encounters that require statistics updates!");
+                _discord.Log(
+                    "Found no encounters that require statistics updates!",
+                    "EncounterPlayerStatistics", LogLevel.Warning);
 
             }
             else
             {
                 _logger.Debug(string.Format("Found {0} encounters to save statistics for", encList.Count));
                 Debug.WriteLine(string.Format("Found {0} encounters to save statistics for", encList.Count));
+                _discord.Log(
+                    string.Format("Found {0} encounters to save statistics for (max {1})", encList.Count, maxEncounters),
+                    "EncounterPlayerStatistics", LogLevel.Information);
                 // Optionally filter our list for a specific bossfight here for testing
                 //encList = encList.Where(e => e.BossFightId == 41).ToList();
                 //_logger.Debug(string.Format("Updating stats for a filtered set of {0} encounters", encList.Count));
@@ -85,6 +102,10 @@ namespace PrancingTurtle.Helpers.Scheduling.Jobs
                             string.Format(
                                 "Skipping stats for encounter {0}/{1} as it has a 0-second duration that needs to be fixed.",
                                 i, encList.Count));
+                        _discord.Log(
+                            string.Format(
+                                "Skipping stats for encounter {0}/{1} as it has a 0-second duration that needs to be fixed.",
+                                i, encList.Count), "EncounterPlayerStatistics", LogLevel.Information);
                         continue;
                     }
 
@@ -350,6 +371,10 @@ namespace PrancingTurtle.Helpers.Scheduling.Jobs
                     Debug.WriteLine(string.Format(
                         "Finished saving stats for encounter {0}. Stats generated in {1} and saved in {2}.", enc.Id,
                         generateTime, sw.Elapsed));
+                    _discord.Log(
+                        string.Format(
+                            "Finished saving stats for encounter {0}. Stats generated in {1} and saved in {2}.", enc.Id,
+                            generateTime, sw.Elapsed), "EncounterPlayerStatistics", LogLevel.Warning);
                     //addPlayerStats.AddRange(addPlayerStats);
                 }
 
