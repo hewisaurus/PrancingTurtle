@@ -25,9 +25,12 @@ namespace PrancingTurtle.Helpers.Scheduling.Jobs
 
         public void Execute(IJobExecutionContext context)
         {
+            Debug.WriteLine("** Stepping into the execution of EncounterPlayerStatistics!");
+
             var task = _taskRepository.Get("EncounterPlayerStatistics");
             if (task == null)
             {
+                Debug.WriteLine("Can't update EncounterPlayerStatistics - no matching task definition exists in the database.");
                 _logger.Debug("Can't update EncounterPlayerStatistics - no matching task definition exists in the database.");
                 return;
             }
@@ -36,6 +39,7 @@ namespace PrancingTurtle.Helpers.Scheduling.Jobs
             if (task.LastRun.AddMinutes(task.ScheduleMinutes) > DateTime.Now)
             {
                 _logger.Debug("Not enough time has passed for this scheduled task, so it won't be executed now");
+                Debug.WriteLine("Not enough time has passed for this scheduled task, so it won't be executed now");
                 return;
             }
 
@@ -49,12 +53,14 @@ namespace PrancingTurtle.Helpers.Scheduling.Jobs
             var encList = _encounterRepository.GetEncountersMissingPlayerStatistics(100);
             if (!encList.Any())
             {
+                Debug.WriteLine("Found no encounters that require statistics updates!");
                 _logger.Debug("Found no encounters that require statistics updates!");
 
             }
             else
             {
                 _logger.Debug(string.Format("Found {0} encounters to save statistics for", encList.Count));
+                Debug.WriteLine(string.Format("Found {0} encounters to save statistics for", encList.Count));
                 // Optionally filter our list for a specific bossfight here for testing
                 //encList = encList.Where(e => e.BossFightId == 41).ToList();
                 //_logger.Debug(string.Format("Updating stats for a filtered set of {0} encounters", encList.Count));
@@ -341,6 +347,9 @@ namespace PrancingTurtle.Helpers.Scheduling.Jobs
                         string.Format(
                             "Finished saving stats for encounter {0}. Stats generated in {1} and saved in {2}.", enc.Id,
                             generateTime, sw.Elapsed));
+                    Debug.WriteLine(string.Format(
+                        "Finished saving stats for encounter {0}. Stats generated in {1} and saved in {2}.", enc.Id,
+                        generateTime, sw.Elapsed));
                     //addPlayerStats.AddRange(addPlayerStats);
                 }
 

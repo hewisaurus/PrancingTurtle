@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using PrancingTurtle.DependencyResolution;
 using PrancingTurtle.Helpers.Scheduling.Jobs;
 using Quartz;
@@ -11,6 +12,8 @@ namespace PrancingTurtle.Helpers.Scheduling
     {
         public static void Start()
         {
+            Debug.WriteLine("Scheduled task start has been called.");
+
             var container = new Container(new DefaultRegistry());
             IJobFactory jobFactory = new StructureMapJobFactory(container);
             IScheduler scheduler = container.GetInstance<IScheduler>();
@@ -95,6 +98,8 @@ namespace PrancingTurtle.Helpers.Scheduling
                     .WithSimpleSchedule(s => s.WithIntervalInMinutes(updateEncounterPlayerStatisticsInterval).RepeatForever())
                     .Build();
             scheduler.ScheduleJob(jUpdateEncounterPlayerStatistics, tUpdateEncounterPlayerStatistics);
+            // DEBUG
+            Debug.WriteLine("Encounter player stats schedule has been called.");
 
             // Remove old wipes
             var markOldWipesForDeletionInterval = random.Next(10, 20);

@@ -15,6 +15,7 @@ using EncounterPlayerStatistics = Database.Models.EncounterPlayerStatistics;
 using Database.Models;
 using PrancingTurtle.Helpers.Authorization;
 using PrancingTurtle.Helpers.BurstCalculation;
+using PrancingTurtle.Helpers.Scheduling;
 
 namespace PrancingTurtle.Controllers
 {
@@ -474,6 +475,19 @@ namespace PrancingTurtle.Controllers
 
             sr.Close();
             return abilities;
+        }
+
+        // Create the task schedule
+        public ActionResult KickOffScheduledTasks()
+        {
+            Start_Task_Scheduler();
+
+            return RedirectToAction("Index", "Home");
+        }
+
+        private void Start_Task_Scheduler()
+        {
+            ScheduledTasks.Start();
         }
     }
 }
