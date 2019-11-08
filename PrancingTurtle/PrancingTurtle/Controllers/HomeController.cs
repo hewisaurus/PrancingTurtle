@@ -1,36 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Drawing;
-using System.Globalization;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using Common;
 using Database.Models;
 using Database.QueryModels.Misc;
 using Database.Repositories.Interfaces;
-using DotNet.Highcharts;
-using DotNet.Highcharts.Enums;
-using DotNet.Highcharts.Helpers;
-using DotNet.Highcharts.Options;
+using DiscordLogger.Provider;
 using Hangfire;
 using Microsoft.AspNet.Identity;
-using Common;
+using Microsoft.Extensions.Logging;
 using PrancingTurtle.Helpers.Controllers;
-using PrancingTurtle.Models;
-using PrancingTurtle.Models.DatabaseType;
-using PrancingTurtle.Models.Misc;
-using PrancingTurtle.Models.ViewModels;
 using PrancingTurtle.Models.ViewModels.GuildNav;
 using PrancingTurtle.Models.ViewModels.Home;
 using PrancingTurtle.Models.ViewModels.Navigation;
-using Logging;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Web;
+using System.Web.Mvc;
 
 namespace PrancingTurtle.Controllers
 {
     public class HomeController : BaseController
     {
-        private readonly ILogger _logger;
         private readonly IAuthenticationRepository _authRepository;
         private readonly IAuthUserCharacterRepository _authUserCharacterRepository;
         private readonly ISessionRepository _sessionRepository;
@@ -41,30 +31,31 @@ namespace PrancingTurtle.Controllers
         private readonly IBossFightRepository _bossFightRepository;
         private readonly INewsRecentChangesRepository _recentChanges;
         private readonly ISiteNotificationRepository _siteNotification;
+        private readonly IDiscordService _discord;
 
         private readonly IRecurringTaskRepo _recurringTaskRepo;
 
         public HomeController(IAuthenticationRepository authRepository,
             ISessionRepository sessionRepository, INavigationRepository navigationRepository,
-            IStatRepository statRepository, IGuildRepository guildRepository, ILogger logger,
+            IStatRepository statRepository, IGuildRepository guildRepository,
             ISearchRepository searchRepository, IAuthUserCharacterRepository authUserCharacterRepository,
             IBossFightRepository bossFightRepository, INewsRecentChangesRepository recentChanges,
-            ISiteNotificationRepository siteNotification, IRecurringTaskRepo recurringTaskRepo)
+            ISiteNotificationRepository siteNotification, IRecurringTaskRepo recurringTaskRepo, IDiscordService discord)
         {
             _authRepository = authRepository;
             _sessionRepository = sessionRepository;
             _navigationRepository = navigationRepository;
             _statRepository = statRepository;
             _guildRepository = guildRepository;
-            _logger = logger;
             _searchRepository = searchRepository;
             _authUserCharacterRepository = authUserCharacterRepository;
             _bossFightRepository = bossFightRepository;
             _recentChanges = recentChanges;
             _siteNotification = siteNotification;
             _recurringTaskRepo = recurringTaskRepo;
+            _discord = discord;
         }
-        
+
         public ActionResult ScheduleDailyStats()
         {
             // Should be at the top of the hour, every 6 hours
@@ -77,7 +68,7 @@ namespace PrancingTurtle.Controllers
             RecurringJob.AddOrUpdate("DeleteRemovedEncounters", () => _recurringTaskRepo.DeleteRemovedEncounter(), "*/1 * * * *");
             return RedirectToAction("Index");
         }
-        
+
         public ActionResult Donate()
         {
             return View();
@@ -96,7 +87,7 @@ namespace PrancingTurtle.Controllers
             return View(stats);
         }
 
-        public ActionResult Index(string s)
+        public async Task<ActionResult> Index(string s)
         {
             if (!string.IsNullOrEmpty(s))
             {

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26730.8
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29418.71
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{5A57143D-3CE3-439B-AB79-E43D1953F4E3}"
 EndProject
@@ -14,6 +14,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoParser", "AutoParser\AutoParser.csproj", "{5760D237-F240-4BE1-BE12-1649D17B2A00}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrancingTurtle", "PrancingTurtle\PrancingTurtle.csproj", "{7303CFD1-CE63-413F-BDB5-83C3011F2062}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscordLogger", "DiscordLogger\DiscordLogger.csproj", "{DBA68D57-A685-47CF-94BD-CB0ED33D3A44}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{7303CFD1-CE63-413F-BDB5-83C3011F2062}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7303CFD1-CE63-413F-BDB5-83C3011F2062}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7303CFD1-CE63-413F-BDB5-83C3011F2062}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBA68D57-A685-47CF-94BD-CB0ED33D3A44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBA68D57-A685-47CF-94BD-CB0ED33D3A44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBA68D57-A685-47CF-94BD-CB0ED33D3A44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBA68D57-A685-47CF-94BD-CB0ED33D3A44}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

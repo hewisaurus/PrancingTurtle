@@ -8,6 +8,7 @@ namespace PrancingTurtle
     {
         public void Configuration(IAppBuilder app)
         {
+            
             ConfigureAuth(app);
         }
     }
