@@ -18,7 +18,19 @@ namespace DiscordLogger.Provider
 
         public async Task Log(string message, string sender, LogLevel level)
         {
-            await _discord.Send(BuildMessage(message, sender, level));
+            try
+            {
+                await _discord.SendAsync(BuildMessage(message, sender, level));
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+
+        public async Task Log(List<string> messageLines, string sender, LogLevel level)
+        {
+            throw new NotImplementedException();
         }
 
         private WebhookMessage BuildMessage(string message, string sender, LogLevel level)

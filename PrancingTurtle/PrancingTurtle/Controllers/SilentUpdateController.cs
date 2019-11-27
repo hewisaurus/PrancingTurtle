@@ -13,6 +13,7 @@ using Logging;
 using Player = Database.Models.Player;
 using EncounterPlayerStatistics = Database.Models.EncounterPlayerStatistics;
 using Database.Models;
+using DiscordLogger.Provider;
 using PrancingTurtle.Helpers.Authorization;
 using PrancingTurtle.Helpers.BurstCalculation;
 using PrancingTurtle.Helpers.Scheduling;
@@ -26,14 +27,16 @@ namespace PrancingTurtle.Controllers
         private readonly IBossFightRepository _bossFightRepository;
         private readonly IEncounterPlayerRoleRepository _encounterPlayerRoleRepository;
         private readonly ILogger _logger;
+        private readonly IDiscordService _discord;
         
         public SilentUpdateController(ILogger logger, IEncounterRepository encounterRepository,
-            IBossFightRepository bossFightRepository, IEncounterPlayerRoleRepository encounterPlayerRoleRepository)
+            IBossFightRepository bossFightRepository, IEncounterPlayerRoleRepository encounterPlayerRoleRepository, IDiscordService discord)
         {
             _logger = logger;
             _encounterRepository = encounterRepository;
             _bossFightRepository = bossFightRepository;
             _encounterPlayerRoleRepository = encounterPlayerRoleRepository;
+            _discord = discord;
         }
         
         public ActionResult AddMissingEncounterPlayerRoles()
@@ -111,16 +114,16 @@ namespace PrancingTurtle.Controllers
                 $"AddMissingEncounterPlayerRoles() complete! Added {encounterPlayerRolesToAdd.Count} in {sw.Elapsed}"));
         }
         
-        public ActionResult RemoveEncountersMarkedForDeletion()
+        public async Task<ActionResult> RemoveEncountersMarkedForDeletion()
         {
-            Remove_Encounters_Marked_For_Deletion();
+            await Remove_Encounters_Marked_For_Deletion();
             TempData.Add("flash", new FlashSuccessViewModel("RemoveEncountersMarkedForDeletion() complete!"));
             return RedirectToAction("Index", "Home");
         }
 
-        private void Remove_Encounters_Marked_For_Deletion()
+        private async Task Remove_Encounters_Marked_For_Deletion()
         {
-            _encounterRepository.RemoveEncountersMarkedForDeletion(User.Identity.GetUserId());
+            await _encounterRepository.RemoveEncountersMarkedForDeletionAsync(User.Identity.GetUserId());
         }
         
         public ActionResult MarkOldWipesForDeletion(int id = -1)

@@ -8,11 +8,16 @@ using System.Threading.Tasks;
 using Common;
 using Dapper;
 using Database.Models;
+using Database.Models.Misc;
 using Database.QueryModels;
 using Database.QueryModels.Misc;
 using Database.Repositories.Interfaces;
+using Database.SQL;
+using DiscordLogger.Provider;
 using Logging;
 using MySql.Data.MySqlClient;
+using Microsoft.Extensions.Logging;
+using Ability = Database.Models.Ability;
 using EncounterNpc = Database.Models.EncounterNpc;
 using AuthUserCharacter = Database.Models.AuthUserCharacter;
 using BossFight = Database.Models.BossFight;
@@ -27,19 +32,21 @@ namespace Database.Repositories
 {
     public class EncounterRepository : DapperRepositoryBase, IEncounterRepository
     {
-        private readonly ILogger _logger;
+        private readonly Logging.ILogger _logger;
         private readonly IAuthenticationRepository _authRepository;
         private readonly IAuthUserCharacterRepository _authUserCharacterRepository;
+        public readonly IDiscordService _discord;
 
-        public EncounterRepository(IConnectionFactory connectionFactory, ILogger logger,
-            IAuthUserCharacterRepository authUserCharacterRepository, IAuthenticationRepository authRepository)
+        public EncounterRepository(IConnectionFactory connectionFactory, Logging.ILogger logger,
+            IAuthUserCharacterRepository authUserCharacterRepository, IAuthenticationRepository authRepository, IDiscordService discord)
             : base(connectionFactory)
         {
             _logger = logger;
             _authUserCharacterRepository = authUserCharacterRepository;
             _authRepository = authRepository;
+            _discord = discord;
         }
-        
+
         public ReturnValue ChangePrivacy(int id, int userId, bool setToPublic = false)
         {
             string timeElapsed;
@@ -100,7 +107,7 @@ namespace Database.Repositories
 
             return returnValue;
         }
-        
+
         public void MakeValidForRankings(int id)
         {
             string timeElapsed;
@@ -127,7 +134,7 @@ namespace Database.Repositories
                 ? string.Format("Encounter {0} successfully set to InvalidForRankings", id)
                 : string.Format("Failed to set encounter {0} to InvalidForRankings", id));
         }
-        
+
         /// <summary>
         /// Gets a single encounter by its ID
         /// </summary>
@@ -268,7 +275,7 @@ namespace Database.Repositories
                         q.Query<long>(SQL.Encounter.GetTopDamageTakenForNpc,
                             new { encounterId, @name = npcName }), out timeElapsed).SingleOrDefault();
         }
-        
+
         public List<Encounter> GetFastestKills(int id, int d = -1)
         {
             string timeElapsed;
@@ -302,7 +309,7 @@ namespace Database.Repositories
 
             return sortedKillList.ToList();
         }
-        
+
         public List<EncounterPlayerStatistics> GetTopDamageHits(int id)
         {
             string timeElapsed;
@@ -310,7 +317,7 @@ namespace Database.Repositories
                 Query(q => q.Query<EncounterPlayerStatistics>(MySQL.BossFight.GetTopDamageHits, new { id }),
                     out timeElapsed).ToList();
         }
-        
+
         public List<EncounterPlayerStatistics> GetTopHealingHits(int id)
         {
             string timeElapsed;
@@ -318,7 +325,7 @@ namespace Database.Repositories
                 Query(q => q.Query<EncounterPlayerStatistics>(MySQL.BossFight.GetTopHealHits, new { id }),
                     out timeElapsed).ToList();
         }
-        
+
         public List<EncounterPlayerStatistics> GetTopShieldHits(int id)
         {
             string timeElapsed;
@@ -326,7 +333,7 @@ namespace Database.Repositories
                 Query(q => q.Query<EncounterPlayerStatistics>(MySQL.BossFight.GetTopShieldHits, new { id }),
                     out timeElapsed).ToList();
         }
-        
+
         public List<Encounter> GetDateSortedKills(int id, int d = -1)
         {
             string timeElapsed;
@@ -442,7 +449,7 @@ namespace Database.Repositories
         /// </summary>
         /// <param name="id">The ID of the encounter</param>
         /// <returns>A list of debuffs seen</returns>
-        
+
         /// <summary>
         /// Gets the total number of player deaths in a given encounter. Updated for MySQL
         /// </summary>
@@ -453,7 +460,7 @@ namespace Database.Repositories
             string timeElapsed;
             return Convert.ToInt32(Query(q => q.Query<long>(SQL.Encounter.Overview.TotalPlayerDeathsForEncounter, new { id }), out timeElapsed).SingleOrDefault());
         }
-        
+
         /// <summary>
         /// Gets the second elapsed when each player died
         /// </summary>
@@ -472,7 +479,7 @@ namespace Database.Repositories
             return Query(q => q.Query<int>(MySQL.Encounter.Character.Npc.AllNpcDeathsForEncounter,
                 new { id }), out timeElapsed).ToList();
         }
-        
+
         /// <summary>
         /// Gets the list of player deaths in a given encounter
         /// </summary>
@@ -514,7 +521,7 @@ namespace Database.Repositories
                 Query(q => q.Query<PlayerIdDeathCount>(MySQL.Encounter.CountDeathsPerPlayer, new { @encounterId = id }),
                     out timeElapsed).ToList();
         }
-        
+
         public List<DamageDone> GetDamageForEncounter(int id, List<int> playerIds)
         {
             string timeElapsed;
@@ -599,7 +606,7 @@ namespace Database.Repositories
                         q.Query<CharacterDebuffAction>(SQL.Encounter.Character.CharacterDebuffs,
                             new { @id = id, @targetId = target }), out timeElapsed).ToList();
         }
-        
+
 
         #region Overview
         //TODO: COMPRESS THIS SECTION. OVERVIEWPLAYERSOMETHINGDONE RECORDS SHOULD BE IN ONE METHOD, WHETHER IT'S DPS, HPS OR APS, INCOMING OR OUTGOING, ETC
@@ -871,7 +878,7 @@ namespace Database.Repositories
                 Query(q => q.Query<long>(MySQL.EncounterNpc.RecordsExistForEncounter, new { id }), out timeElapsed)
                     .SingleOrDefault() == 1;
         }
-        
+
         public List<EncounterNpc> GetEncounterNpcsFromEncounterInfo(int id)
         {
             string timeElapsed;
@@ -879,7 +886,7 @@ namespace Database.Repositories
                 Query(q => q.Query<EncounterNpc>(MySQL.EncounterNpc.CalculateForEncounter, new { id }),
                     out timeElapsed).ToList();
         }
-        
+
 
         public ReturnValue AddEncounterNpcs(List<EncounterNpc> encounterNpcs)
         {
@@ -1083,7 +1090,7 @@ namespace Database.Repositories
 
             return returnValue;
         }
-        
+
         public ReturnValue UpdateEncounterSingleTargetDpsStatistics(List<EncounterPlayerStatistics> list)
         {
             var returnValue = new ReturnValue();
@@ -1121,7 +1128,7 @@ namespace Database.Repositories
                 return returnValue;
             }
         }
-        
+
         /// <summary>
         /// Get the events leading up to a player's death
         /// </summary>
@@ -1137,7 +1144,7 @@ namespace Database.Repositories
                 new { encounterId, targetPlayerId, minSeconds, maxSeconds }), out timeElapsed).ToList();
         }
 
-       
+
         public void RemoveEncounter(string email, int encounterId)
         {
             try
@@ -1187,7 +1194,7 @@ namespace Database.Repositories
                 _logger.Debug(string.Format("{0} records removed from {1} in {2}", result, tableName, individualTimer.Elapsed));
             }
         }
-        
+
         private ReturnValue PerformRemoveRecordsForMarkedEncounters_Console(List<int> encounterIds, string email, string overrideConnectionString = null)
         {
             var returnValue = new ReturnValue();
@@ -1448,8 +1455,17 @@ namespace Database.Repositories
             }
         }
 
+        /// <summary>
+        /// This isn't used anymore - see the async method. 20191126
+        /// </summary>
+        /// <param name="email"></param>
+        /// <param name="console"></param>
+        /// <param name="overrideConnectionString"></param>
+        /// <returns></returns>
         public ReturnValue RemoveEncountersMarkedForDeletion(string email, bool console = false, string overrideConnectionString = null)
         {
+            //_discord.Log($"Stepped into 'RemoveEncountersMarkedForDeletion' ({email})", "EncounterRepository", LogLevel.Debug).Wait();
+
             var returnValue = new ReturnValue();
             //int maxEncounters = 1;
             int maxEncounters = 1;
@@ -1472,10 +1488,12 @@ namespace Database.Repositories
             }
             else
             {
-                _logger.Debug(
-                    string.Format(
-                        "Found a total of {0} encounters to 'remove' from the database as they're marked for removal",
-                        removeList.Count));
+                //_discord.Log($"Second message ", "EncounterRepository", LogLevel.Debug).Wait();
+                //_discord.Log($"Found a total of {removeList.Count} encounters to 'remove' from the database as they're marked for removal", "EncounterRepository", LogLevel.Debug).Wait();
+                //_logger.Debug(
+                //    string.Format(
+                //        "Found a total of {0} encounters to 'remove' from the database as they're marked for removal",
+                //        removeList.Count));
             }
             try
             {
@@ -1520,7 +1538,265 @@ namespace Database.Repositories
 
             return returnValue;
         }
-        
+
+        /// <summary>
+        /// This is the new method to remove records from encounters marked for deletion.
+        /// </summary>
+        /// <remarks>Date implemented: 20191126</remarks>
+        /// <param name="email"></param>
+        /// <returns></returns>
+        public async Task<ReturnValue> RemoveEncountersMarkedForDeletionAsync(string email)
+        {
+            //await _discord.Log($"Stepped into 'RemoveEncountersMarkedForDeletionAsync' ({email})", "EncounterRepository", LogLevel.Debug);
+
+            var returnValue = new ReturnValue();
+            // The number of encounters to be removed at a time. This value is currently not implemented.
+            int maxEncounters = 1;
+            int totalRemoved = 0;
+
+            // Get marked encounters that haven't already been removed
+            var removeList = (await QueryAsync(q => q.QueryAsync<Encounter>(MySQL.Encounter.GetMarkedForDeletion))).ToList();
+            if (!removeList.Any())
+            {
+                await _discord.Log($"There are no encounters marked for deletion.", "EncounterRepository", LogLevel.Information);
+                returnValue.Success = true;
+                return returnValue;
+            }
+
+            var totalEncounters = removeList.Count;
+
+            await _discord.Log($"Found a total of {totalEncounters} encounters to 'remove' from the database as they're marked for removal.", "EncounterRepository", LogLevel.Debug);
+
+
+            Stopwatch sw = new Stopwatch();
+
+            try
+            {
+                while (removeList.Any())
+                {
+                    var thisIndex = totalRemoved + 1;
+
+                    var encToRemove = removeList[0];
+                    var nextToRemove = removeList[1];
+
+                    using (var conn = await OpenConnectionAsync())
+                    {
+                        using (var trans = conn.BeginTransaction())
+                        {
+                            try
+                            {
+                                var recordCounts = (await conn.QueryAsync<EncounterTableRecords>(EncounterRemovalFrom.GetEncounterRecordCounts,
+                                    new { id = encToRemove.Id }, trans)).SingleOrDefault();
+
+                                if (recordCounts == null)
+                                {
+                                    var logMessage =
+                                        $"The record count for encounter ID #{encToRemove.Id} came back null. Weird.";
+                                    if (thisIndex < totalEncounters)
+                                    {
+                                        logMessage +=
+                                            $"\n\nNext encounter to remove: Encounter ID #{nextToRemove.Id} ({thisIndex + 1}/{totalEncounters}). Encounter length: {encToRemove.Duration}";
+                                    }
+
+                                    //await _discord.Log(logMessage, "EncounterRepository", LogLevel.Warning);
+                                    Debug.WriteLine(logMessage);
+                                }
+                                else if (recordCounts.HasRecords == false)
+                                {
+                                    // Wait for 500ms so that we're not rate limited
+                                    await Task.Delay(550);
+                                    await conn.ExecuteAsync(EncounterRemovalFrom.SetEncounterRemoved, new { id = encToRemove.Id }, trans);
+                                    var logMessage =
+                                        $"Encounter ID #{encToRemove.Id} ({thisIndex}/{totalEncounters}) has no records that need to be removed.";
+                                    if (thisIndex < totalEncounters)
+                                    {
+                                        logMessage +=
+                                            $"\n\nNext encounter to remove: Encounter ID #{nextToRemove.Id} ({thisIndex + 1}/{totalEncounters}). Encounter length: {encToRemove.Duration}";
+                                    }
+
+                                    //await _discord.Log(logMessage, "EncounterRepository", LogLevel.Debug);
+                                    Debug.WriteLine(logMessage);
+                                    trans.Commit();
+                                }
+                                else
+                                {
+                                    var logMessage = $"Removal of encounter ID #{encToRemove.Id} ({thisIndex + 1}/{totalEncounters}):";
+
+                                    sw.Reset();
+                                    sw.Start();
+
+                                    logMessage += $"\n{await PerformDeleteForEncounter("EncounterOverview", encToRemove.Id, conn, trans, recordCounts)}";
+                                    logMessage += $"\n{await PerformDeleteForEncounter("EncounterBuffEvent", encToRemove.Id, conn, trans, recordCounts)}";
+                                    logMessage += $"\n{await PerformDeleteForEncounter("EncounterBuffUptime", encToRemove.Id, conn, trans, recordCounts)}";
+                                    logMessage += $"\n{await PerformDeleteForEncounter("EncounterBuffAction", encToRemove.Id, conn, trans, recordCounts)}";
+                                    logMessage += $"\n{await PerformDeleteForEncounter("EncounterDebuffAction", encToRemove.Id, conn, trans, recordCounts)}";
+                                    logMessage += $"\n{await PerformDeleteForEncounter("EncounterNpcCast", encToRemove.Id, conn, trans, recordCounts)}";
+                                    logMessage += $"\n{await PerformDeleteForEncounter("EncounterDeath", encToRemove.Id, conn, trans, recordCounts)}";
+                                    logMessage += $"\n{await PerformDeleteForEncounter("DamageDone", encToRemove.Id, conn, trans, recordCounts)}";
+                                    logMessage += $"\n{await PerformDeleteForEncounter("HealingDone", encToRemove.Id, conn, trans, recordCounts)}";
+                                    logMessage += $"\n{await PerformDeleteForEncounter("ShieldingDone", encToRemove.Id, conn, trans, recordCounts)}";
+                                    logMessage += $"\n{await PerformDeleteForEncounter("EncounterPlayerRole", encToRemove.Id, conn, trans, recordCounts)}";
+                                    logMessage += $"\n{await PerformDeleteForEncounter("EncounterNpc", encToRemove.Id, conn, trans, recordCounts)}";
+                                    logMessage += $"\n{await PerformDeleteForEncounter("EncounterPlayerStatistics", encToRemove.Id, conn, trans, recordCounts)}";
+
+                                    sw.Stop();
+
+                                    logMessage += $"\n\nCompleted in {sw.Elapsed}";
+                                    if (thisIndex < totalEncounters)
+                                    {
+                                        logMessage +=
+                                            $"\n\nNext encounter to remove: Encounter ID #{nextToRemove.Id} ({thisIndex + 1}/{totalEncounters}). Encounter length: {nextToRemove.Duration}";
+                                    }
+
+                                    // If this process took less than 500ms, wait a short period of time so that we're not rate limited
+                                    if (sw.ElapsedMilliseconds < 550)
+                                    {
+                                        await Task.Delay(550 - (int)sw.ElapsedMilliseconds);
+                                    }
+
+                                    //await _discord.Log(logMessage, "EncounterRepository", LogLevel.Debug);
+                                    Debug.WriteLine(logMessage);
+                                    trans.Commit();
+                                }
+                            }
+                            catch (Exception ex)
+                            {
+                                trans.Rollback();
+                                await _discord.Log($"An exception occurred within the transaction: {ex.Message}",
+                                    "EncounterRepository", LogLevel.Critical);
+                                returnValue.Message = ex.Message;
+                            }
+                        }
+                    }
+
+                    totalRemoved++;
+                    removeList.RemoveAt(0);
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.Debug($"An error occurred while removing encounters marked for deletion: {ex.Message}");
+                await _discord.Log($"An exception was thrown while removing encounters marked for deletion: {ex.Message}", "EncounterRepository", LogLevel.Critical);
+                returnValue.Message = ex.Message;
+            }
+
+            await _discord.Log("Exiting the method for some reason", "EncounterRepository", LogLevel.Warning);
+            return returnValue;
+        }
+
+        private async Task<string> PerformDeleteForEncounter(string tableName, long encounterId, DbConnection conn,
+            DbTransaction trans, EncounterTableRecords counts)
+        {
+            int recordsDeleted = 0;
+            int previousRecordCount = 0;
+
+            switch (tableName)
+            {
+                case "EncounterOverview":
+                    previousRecordCount = counts.Overview;
+                    if (previousRecordCount > 0)
+                    {
+                        recordsDeleted = await conn.ExecuteAsync(EncounterRemovalFrom.EncounterOverview, new { id = encounterId }, trans);
+                    }
+                    break;
+                case "EncounterBuffEvent":
+                    previousRecordCount = counts.BuffEvent;
+                    if (previousRecordCount > 0)
+                    {
+                        recordsDeleted = await conn.ExecuteAsync(EncounterRemovalFrom.EncounterBuffEvent, new { id = encounterId }, trans);
+                    }
+                    break;
+                case "EncounterBuffUptime":
+                    previousRecordCount = counts.BuffUptime;
+                    if (previousRecordCount > 0)
+                    {
+                        recordsDeleted = await conn.ExecuteAsync(EncounterRemovalFrom.EncounterBuffUptime, new { id = encounterId }, trans);
+                    }
+                    break;
+                case "EncounterBuffAction":
+                    previousRecordCount = counts.BuffAction;
+                    if (previousRecordCount > 0)
+                    {
+                        recordsDeleted = await conn.ExecuteAsync(EncounterRemovalFrom.EncounterBuffAction, new { id = encounterId }, trans);
+                    }
+                    break;
+                case "EncounterDebuffAction":
+                    previousRecordCount = counts.DebuffAction;
+                    if (previousRecordCount > 0)
+                    {
+                        recordsDeleted = await conn.ExecuteAsync(EncounterRemovalFrom.EncounterDebuffAction, new { id = encounterId }, trans);
+                    }
+                    break;
+                case "EncounterNpcCast":
+                    previousRecordCount = counts.NpcCast;
+                    if (previousRecordCount > 0)
+                    {
+                        recordsDeleted = await conn.ExecuteAsync(EncounterRemovalFrom.EncounterNpcCast, new { id = encounterId }, trans);
+                    }
+                    break;
+                case "EncounterDeath":
+                    previousRecordCount = counts.Death;
+                    if (previousRecordCount > 0)
+                    {
+                        recordsDeleted = await conn.ExecuteAsync(EncounterRemovalFrom.EncounterDeath, new { id = encounterId }, trans);
+                    }
+                    break;
+                case "DamageDone":
+                    previousRecordCount = counts.Damage;
+                    if (previousRecordCount > 0)
+                    {
+                        recordsDeleted = await conn.ExecuteAsync(EncounterRemovalFrom.DamageDone, new { id = encounterId }, trans);
+                    }
+                    break;
+                case "HealingDone":
+                    previousRecordCount = counts.Healing;
+                    if (previousRecordCount > 0)
+                    {
+                        recordsDeleted = await conn.ExecuteAsync(EncounterRemovalFrom.HealingDone, new { id = encounterId }, trans);
+                    }
+                    break;
+                case "ShieldingDone":
+                    previousRecordCount = counts.Shielding;
+                    if (previousRecordCount > 0)
+                    {
+                        recordsDeleted = await conn.ExecuteAsync(EncounterRemovalFrom.ShieldingDone, new { id = encounterId }, trans);
+                    }
+                    break;
+                case "EncounterPlayerRole":
+                    previousRecordCount = counts.PlayerRole;
+                    if (previousRecordCount > 0)
+                    {
+                        recordsDeleted = await conn.ExecuteAsync(EncounterRemovalFrom.EncounterPlayerRole, new { id = encounterId }, trans);
+                    }
+                    break;
+                case "EncounterNpc":
+                    previousRecordCount = counts.Npc;
+                    if (previousRecordCount > 0)
+                    {
+                        recordsDeleted = await conn.ExecuteAsync(EncounterRemovalFrom.EncounterNpc, new { id = encounterId }, trans);
+                    }
+                    break;
+                case "EncounterPlayerStatistics":
+                    previousRecordCount = counts.PlayerStatistics;
+                    if (previousRecordCount > 0)
+                    {
+                        recordsDeleted = await conn.ExecuteAsync(EncounterRemovalFrom.EncounterPlayerStatistics, new { id = encounterId }, trans);
+                    }
+                    break;
+                default:
+                    return $"The table {tableName} was called for delete but was unhandled.";
+            }
+
+            if (previousRecordCount == 0)
+            {
+                return $"{tableName}: No existing records to delete.";
+            }
+
+            var recordText = previousRecordCount == 1 ? "record" : "records";
+
+            return $"{tableName}: {recordsDeleted}/{previousRecordCount} {recordText} deleted.";
+        }
+
         /// <summary>
         /// Marks encounters with the specified IDs as 'ToBeDeleted'
         /// </summary>

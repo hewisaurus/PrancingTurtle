@@ -299,10 +299,8 @@
             get { return "UPDATE Encounter SET ToBeDeleted = 1 WHERE Id IN @ids"; }
         }
 
-        public static string GetMarkedForDeletion
-        {
-            get { return "SELECT * FROM Encounter WHERE ToBeDeleted = 1 AND Removed = 0"; }
-        }
+        public static string GetMarkedForDeletion => "SELECT * FROM Encounter WHERE ToBeDeleted = 1 AND Removed = 0 ORDER BY Duration DESC";
+
         public static string GetMarkedForDeletionShortestFirst
         {
             get { return "SELECT * FROM Encounter WHERE ToBeDeleted = 1 AND Removed = 0 ORDER BY Duration ASC"; }

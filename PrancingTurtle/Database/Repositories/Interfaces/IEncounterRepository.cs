@@ -285,6 +285,15 @@ namespace Database.Repositories.Interfaces
         ReturnValue RemoveEncountersMarkedForDeletion(string email, bool console = false, string overrideConnectionString = null);
 
         /// <summary>
+        /// This is the new method to remove records from encounters marked for deletion.
+        /// </summary>
+        /// <remarks>Date implemented: 20191126</remarks>
+        /// <example>DoSomething();</example>
+        /// <param name="email">The email address of the user performing the cleanup</param>
+        /// <returns></returns>
+        Task<ReturnValue> RemoveEncountersMarkedForDeletionAsync(string email);
+
+        /// <summary>
         /// Marks multiple encounters for deletion
         /// </summary>
         /// <param name="encounterIds"></param>
