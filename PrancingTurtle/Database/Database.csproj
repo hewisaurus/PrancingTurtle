@@ -131,6 +131,7 @@
     <Compile Include="Models\EncounterOverview.cs" />
     <Compile Include="Models\EncounterPlayerRole.cs" />
     <Compile Include="Models\EncounterPlayerStatistics.cs" />
+    <Compile Include="Models\EncounterTableStats.cs" />
     <Compile Include="Models\GameEdition.cs" />
     <Compile Include="Models\Guild.cs" />
     <Compile Include="Models\GuildRank.cs" />
@@ -181,6 +182,7 @@
     <Compile Include="MySQL\Instance.cs" />
     <Compile Include="MySQL\NewsRecentChanges.cs" />
     <Compile Include="MySQL\NpcDeath.cs" />
+    <Compile Include="MySQL\OrphanedEncounter.cs" />
     <Compile Include="MySQL\Player.cs" />
     <Compile Include="MySQL\Records.cs" />
     <Compile Include="MySQL\RecurringTasksSql.cs" />

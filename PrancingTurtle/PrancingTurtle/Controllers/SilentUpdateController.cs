@@ -38,7 +38,19 @@ namespace PrancingTurtle.Controllers
             _encounterPlayerRoleRepository = encounterPlayerRoleRepository;
             _discord = discord;
         }
-        
+
+        public async Task<ActionResult> CheckForOrphanedEncounters()
+        {
+            await CheckForOrphanedEncountersAsync();
+            TempData.Add("flash", new FlashSuccessViewModel("CheckForOrphanedEncounters() complete!"));
+            return RedirectToAction("Index", "Home");
+        }
+
+        private async Task CheckForOrphanedEncountersAsync()
+        {
+            await _encounterRepository.CheckForOrphanedEncountersAsync();
+        }
+
         public ActionResult AddMissingEncounterPlayerRoles()
         {
             Add_Missing_EncounterPlayerRoles();

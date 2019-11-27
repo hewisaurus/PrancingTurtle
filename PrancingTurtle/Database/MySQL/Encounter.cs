@@ -316,6 +316,8 @@
             get { return "SELECT Id FROM Encounter WHERE SuccessfulKill = 1 AND ValidForRanking = 1 AND ToBeDeleted = 0 AND Removed = 0 ORDER BY ID Desc LIMIT 100000"; }
         }
 
+        public const string GetAllEncounterIdsNotToBeDeleted = "SELECT Id FROM Encounter WHERE ToBeDeleted = 0 ORDER BY Id";
+
         public const string GetAllDamageDoneForEncounter = "SELECT * FROM DamageDone WHERE EncounterId = @id ORDER BY SecondsElapsed, OrderWithinSecond";
         public const string GetAllHealingDoneForEncounter = "SELECT * FROM HealingDone WHERE EncounterId = @id ORDER BY SecondsElapsed, OrderWithinSecond";
         public const string GetAllShieldingDoneForEncounter = "SELECT * FROM ShieldingDone WHERE EncounterId = @id ORDER BY SecondsElapsed, OrderWithinSecond";

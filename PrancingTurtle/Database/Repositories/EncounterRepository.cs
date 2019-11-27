@@ -9,6 +9,7 @@ using Common;
 using Dapper;
 using Database.Models;
 using Database.Models.Misc;
+using Database.MySQL;
 using Database.QueryModels;
 using Database.QueryModels.Misc;
 using Database.Repositories.Interfaces;
@@ -1682,6 +1683,76 @@ namespace Database.Repositories
 
             await _discord.Log("Exiting the method for some reason", "EncounterRepository", LogLevel.Warning);
             return returnValue;
+        }
+
+        public async Task<ReturnValue> CheckForOrphanedEncountersAsync()
+        {
+            using (var conn = await OpenConnectionAsync())
+            {
+                // Update records for encounter stats
+                var encountersMissingStats =
+                    (await conn.QueryAsync<int>(OrphanedEncounter.EncounterIdsWithoutTableStats)).AsList();
+                var totalEncountersToUpdate = encountersMissingStats.Count;
+                Debug.WriteLine($"There are {totalEncountersToUpdate} encounters that don't have stats.");
+
+                int i = 1;
+                foreach (var encId in encountersMissingStats)
+                {
+                    var stats = (await conn.QueryAsync<EncounterTableRecords>(OrphanedEncounter.GetBasicEncounterStats,
+                        new {id = encId})).SingleOrDefault();
+                    //Debug.WriteLine($"Encounter {encId} DMG: {stats.Damage} HEAL: {stats.Healing} SHIELD: {stats.Shielding}");
+                    var addResult = await conn.ExecuteAsync(OrphanedEncounter.InsertTableStatsForEncounter, new
+                    {
+                        id = encId,
+                        damage = stats.Damage,
+                        healing = stats.Healing,
+                        shielding = stats.Shielding
+                    });
+                    Debug.WriteLine($"Updating stats for encounter #{encId} ({i}/{totalEncountersToUpdate}): {addResult}");
+                    i++;
+                }
+
+
+
+                //var encounterIds = (await conn.QueryAsync<int>(MySQL.Encounter.GetAllEncounterIdsNotToBeDeleted)).AsList();
+
+                //int i = 1;
+                //foreach (var encId in encounterIds)
+                //{
+                //    if (i == 10)
+                //    {
+                //        break;
+                //    }
+
+                //    var recordCounts = (await conn.QueryAsync<EncounterTableRecords>(EncounterRemovalFrom.GetEncounterRecordCounts,new { id = encId })).SingleOrDefault();
+                //    if (recordCounts == null)
+                //    {
+                //        Debug.WriteLine($"** Encounter Id #{encId} counts returned a null value");
+                //    }
+                //    else if (!recordCounts.HasRecords)
+                //    {
+                //        Debug.WriteLine($"** Encounter Id #{encId} appears to have been deleted - there are no records.");
+                //    }
+                //    else
+                //    {
+                //        Debug.WriteLine($"Encounter Id #{encId} - Damage {recordCounts.Damage}, Healing {recordCounts.Healing}");
+                //    }
+
+                //    // Step 1: Check that each encounter Id has matching rows in the tables that should have them (Damage/Healing)
+
+
+
+                //    // SELECT COUNT(1) FROM HealingDone WHERE EncounterId > 1 AND EncounterId < 3
+
+                //    // Step 2: Check Damage / Healing / Shielding / Buff / Debuff tables for encounter IDs that don't exist
+
+                //    // Check healing done
+
+                //    i++;
+                //}
+            }
+
+            return new ReturnValue(false, "");
         }
 
         private async Task<string> PerformDeleteForEncounter(string tableName, long encounterId, DbConnection conn,

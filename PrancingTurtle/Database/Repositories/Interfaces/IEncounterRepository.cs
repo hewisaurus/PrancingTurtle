@@ -294,6 +294,12 @@ namespace Database.Repositories.Interfaces
         Task<ReturnValue> RemoveEncountersMarkedForDeletionAsync(string email);
 
         /// <summary>
+        /// This method checks whether there are encounters without records, and records with encounters (in tables such as HealingDone and DamageDone)
+        /// </summary>
+        /// <returns></returns>
+        Task<ReturnValue> CheckForOrphanedEncountersAsync();
+
+        /// <summary>
         /// Marks multiple encounters for deletion
         /// </summary>
         /// <param name="encounterIds"></param>
