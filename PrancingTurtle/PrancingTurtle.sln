@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrancingTurtle", "PrancingT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscordLogger", "DiscordLogger\DiscordLogger.csproj", "{DBA68D57-A685-47CF-94BD-CB0ED33D3A44}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Microservices", "Microservices", "{EA0C4C25-A2E3-4D75-AA04-10F36E441A25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogParserConcept", "LogParserConcept\LogParserConcept.csproj", "{582A7C2C-7805-42D0-981F-68CE8B1DE35C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,9 +55,16 @@ Global
 		{DBA68D57-A685-47CF-94BD-CB0ED33D3A44}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBA68D57-A685-47CF-94BD-CB0ED33D3A44}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBA68D57-A685-47CF-94BD-CB0ED33D3A44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{582A7C2C-7805-42D0-981F-68CE8B1DE35C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{582A7C2C-7805-42D0-981F-68CE8B1DE35C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{582A7C2C-7805-42D0-981F-68CE8B1DE35C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{582A7C2C-7805-42D0-981F-68CE8B1DE35C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{582A7C2C-7805-42D0-981F-68CE8B1DE35C} = {EA0C4C25-A2E3-4D75-AA04-10F36E441A25}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {87F77D46-6F63-48EB-A0DA-C9E871D5EE3F}
