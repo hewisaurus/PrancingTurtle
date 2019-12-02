@@ -3,6 +3,7 @@ using LogParserConcept.Models;
 using System;
 using System.Linq;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -69,8 +70,16 @@ namespace LogParserConcept
             var currentCombatLastDamage = new DateTime();
             double daysToAdd = 0;
             var lastTimeStamp = new DateTime();
-            var calculatedTimestamp = new DateTime();
+            //var calculatedTimestamp = new DateTime();
             var encounterLength = new TimeSpan(0,0,0,0);
+
+            var players = new HashSet<string>();
+            var npcs = new HashSet<string>();
+            var pets = new HashSet<string>();
+            var abilities = new HashSet<string>();
+
+            // Testing
+            Stopwatch encWriter = new Stopwatch();
 
             while ((line = sr.ReadLine()) != null)
             {
@@ -112,6 +121,9 @@ namespace LogParserConcept
                         lastTimeStamp = entry.ParsedTimeStamp.AddDays(daysToAdd);
                         currentCombatLastDamage = entry.ParsedTimeStamp.AddDays(daysToAdd);
 
+                        // Update the time elapsed for this event
+                        entry.SetTimeElapsed(currentCombatStarted);
+
                         // Create the files that we'll use for this encounter
                         var encounterContainersCreated = CreateEncounterContainers(sessionPath, encounterNumber);
                         if (!encounterContainersCreated)
@@ -119,8 +131,14 @@ namespace LogParserConcept
                             Console.WriteLine($"Unable to create containers for encounter {encounterNumber}.");
                         }
 
+                        #region Single line append
+                        encWriter.Reset();
+                        encWriter.Start();
+                        // NB: This is only used to append lines one at a time.
                         // Add this entry to the file that it belongs to
                         await AppendLine(sessionPath, encounterNumber, encounterContainers[entry.ContainerType], line);
+                        //Console.WriteLine($"{entry.SecondsElapsed}: {line}");
+                        #endregion
                     }
                 }
                 else
@@ -130,20 +148,35 @@ namespace LogParserConcept
                     if (secondDifference == 0 || secondDifference > 0)
                     {
                         // Timestamp hasn't changed, or it's later in the same day
-                        calculatedTimestamp = entry.ParsedTimeStamp.AddDays(daysToAdd);
+                        entry.CalculatedTimeStamp = entry.ParsedTimeStamp.AddDays(daysToAdd);
                     }
                     else
                     {
                         // We have just rolled over midnight 
                         daysToAdd++;
-                        calculatedTimestamp = entry.ParsedTimeStamp.AddDays(daysToAdd);
+                        entry.CalculatedTimeStamp = entry.ParsedTimeStamp.AddDays(daysToAdd);
                         //currentCombatLastDamage = calculatedTimestamp;
                     }
 
-                    if ((calculatedTimestamp - currentCombatLastDamage).TotalSeconds > downtimeSeconds)
+                    // Update the time elapsed for this event
+                    entry.SetTimeElapsed(currentCombatStarted);
+
+                    if ((entry.CalculatedTimeStamp - currentCombatLastDamage).TotalSeconds > downtimeSeconds)
                     {
+                        encWriter.Stop();
                         inCombat = false;
-                        Console.WriteLine($"Combat for encounter {encounterNumber} ended at {entry.ParsedTimeStamp.AddDays(daysToAdd)}");
+                        encounterLength = currentCombatLastDamage - currentCombatStarted;
+                        Console.WriteLine($"Combat for encounter {encounterNumber} ended at {entry.ParsedTimeStamp.AddDays(daysToAdd)} ({entry.SecondsElapsed} seconds elapsed). Time elapsed for reading and writing: {encWriter.Elapsed}");
+                        Console.WriteLine($"The last damage was detected at {currentCombatLastDamage}");
+                        var encInfo = new List<string>
+                        {
+                            $"Encounter {encounterNumber}",
+                            $"Started: {currentCombatStarted}",
+                            $"Ended: {currentCombatLastDamage}",
+                            $"Duration: {encounterLength}"
+                        };
+                        await WriteEncounterInfo(sessionPath, encounterNumber, encInfo);
+
                         // Remove the encounter folder if it's not long enough to warrant saving
                         encounterLength = currentCombatLastDamage - currentCombatStarted;
                         if (encounterLength.TotalSeconds < 5)
@@ -160,7 +193,7 @@ namespace LogParserConcept
                     else if (!entry.IgnoreThisEvent)
                     {
                         // Update the last combat timestamp if it has changed
-                        if (calculatedTimestamp != currentCombatLastDamage)
+                        if (entry.CalculatedTimeStamp != currentCombatLastDamage)
                         {
                             if (entry.TargetType == CharacterType.Npc && entry.IsDamageType)
                             {
@@ -176,7 +209,34 @@ namespace LogParserConcept
                             case EncounterContainerType.NotLogged:
                                 break;
                             default:
+                                //Console.WriteLine($"{entry.SecondsElapsed}: {line}");
                                 await AppendLine(sessionPath, encounterNumber, encounterContainers[entry.ContainerType], line);
+                                switch (entry.AttackerType)
+                                {
+                                    case CharacterType.Player:
+                                        players.Add(entry.AttackerName);
+                                        break;
+                                    case CharacterType.Npc:
+                                        npcs.Add(entry.AttackerName);
+                                        break;
+                                    case CharacterType.Pet:
+                                        pets.Add(entry.AttackerName);
+                                        break;
+                                }
+                                switch (entry.TargetType)
+                                {
+                                    case CharacterType.Player:
+                                        players.Add(entry.TargetName);
+                                        break;
+                                    case CharacterType.Npc:
+                                        npcs.Add(entry.TargetName);
+                                        break;
+                                    case CharacterType.Pet:
+                                        pets.Add(entry.TargetName);
+                                        break;
+                                }
+
+                                abilities.Add(entry.AbilityName);
                                 break;
                         }
                     }
@@ -591,6 +651,11 @@ namespace LogParserConcept
             }
         }
 
+        static void SetTimeElapsed(this LogEntry entry, DateTime encounterStart)
+        {
+            entry.SecondsElapsed = (int) (entry.CalculatedTimeStamp - encounterStart).TotalSeconds;
+        }
+
         static int GetDowntimeValueForEncounter(this LogEntry entry)
         {
             foreach (var downtimeOverride in DowntimeOverrides)
@@ -608,6 +673,14 @@ namespace LogParserConcept
             return DefaultEncounterDowntime;
         }
 
+        /// <summary>
+        /// This is only used to append a single line at a time. Works, but is incredibly slow. On the upside, uses next to no memory to function well.
+        /// </summary>
+        /// <param name="sessionPath"></param>
+        /// <param name="encounterNumber"></param>
+        /// <param name="filename"></param>
+        /// <param name="line"></param>
+        /// <returns></returns>
         static async Task AppendLine(string sessionPath, int encounterNumber, string filename, string line)
         {
             try
@@ -618,6 +691,26 @@ namespace LogParserConcept
             catch (Exception ex)
             {
                 Console.WriteLine($"Error writing to {filename}: {ex.Message}");
+            }
+        }
+
+        static async Task WriteEncounterInfo(string sessionPath, int encounterNumber, List<string> lines)
+        {
+            try
+            {
+                var filePath = Path.Combine(sessionPath, $"{encounterNumber}.txt");
+                await using StreamWriter sw = new StreamWriter(filePath);
+                foreach (var line in lines)
+                {
+                    await sw.WriteLineAsync(line);
+                }
+
+                await sw.FlushAsync();
+                sw.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error writing to encounter {encounterNumber} info: {ex.Message}");
             }
         }
 

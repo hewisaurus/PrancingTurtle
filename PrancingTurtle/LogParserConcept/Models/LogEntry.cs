@@ -47,6 +47,7 @@ namespace LogParserConcept.Models
         public CharacterType TargetType { get; set; }
 
         public DateTime ParsedTimeStamp { get; set; }
+        public DateTime CalculatedTimeStamp { get; set; }
         /// <summary>
         /// The number of seconds that have elapsed since combat started
         /// </summary>
