@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Threading.Tasks;
+using LogParserConcept.Models;
 
 namespace LogParserConcept
 {
@@ -8,9 +10,28 @@ namespace LogParserConcept
     /// </summary>
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var logPath = @"F:\PrancingTurtle\InputLogs\CombatLog.txt";
+
+            //TODO: Stop being lazy and hardcoding while testing
+
+            var info = new SessionLogInfo
+            {
+                SessionDate = new DateTime(2019, 11, 18, 2, 32, 00),
+                SessionId = 18200,
+                OwnerGuild = "Casually Elite",
+                OwnerName = "Kyela",
+                OwnerShard = "Faeblight",
+                PublicSession = true,
+                SessionName = "Some session name",
+                UploaderTimezone = "UTC"
+            };
+
+            await Methods.ParseAsync(info, logPath);
+
+            Console.WriteLine("Finished. Press any key to exit.");
+            Console.ReadLine();
         }
     }
 }
