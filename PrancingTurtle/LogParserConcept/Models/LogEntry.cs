@@ -1,10 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using Common;
+using LogParserConcept.Json;
+using Newtonsoft.Json;
 
 namespace LogParserConcept.Models
 {
+    [JsonObject(MemberSerialization.OptIn, ItemNullValueHandling = NullValueHandling.Ignore)]
     public class LogEntry
     {
         public LogEntry()
@@ -15,35 +16,59 @@ namespace LogParserConcept.Models
             ValidEntry = false;
         }
 
+        
         public bool ValidEntry { get; set; }
         public string InvalidReason { get; set; }
-
-        public long AbsorbedAmount { get; set; }
+        [JsonProperty("action")]
         public ActionType ActionType { get; set; }
+        [JsonProperty("value")]
         public long ActionValue { get; set; }
-
+        
+        [JsonProperty("attId")]
         public string AttackerId { get; set; }
+        [JsonProperty("attName")]
         public string AttackerName { get; set; }
+        [JsonProperty("attPetOwnerId")]
         public string AttackerPetOwnerId { get; set; }
+        [JsonProperty("attType")]
         public CharacterType AttackerType { get; set; }
+        
+        [JsonProperty("absorbed")]
+        public long? AbsorbedAmount { get; set; }
+        [JsonProperty("amtBlocked")]
+        public long? BlockedAmount { get; set; }
+        [JsonProperty("amtDeflected")]
+        public long? DeflectAmount { get; set; }
+        [JsonProperty("amtIgnored")]
+        public long? IgnoredAmount { get; set; }
+        [JsonProperty("amtIntercepted")]
+        public long? InterceptAmount { get; set; }
+        [JsonProperty("amtOverheal")]
+        public long? OverhealAmount { get; set; }
+        [JsonProperty("amtOverkill")]
+        public long? OverKillAmount { get; set; }
 
-        public long BlockedAmount { get; set; }
-        public long DeflectAmount { get; set; }
-        public long IgnoredAmount { get; set; }
-        public long InterceptAmount { get; set; }
         public string Message { get; set; }
-        public long OverhealAmount { get; set; }
-        public long OverKillAmount { get; set; }
+        [JsonProperty("dodged")]
         public bool Dodged { get; set; }
-        public long SpecialValue { get; set; }
-        public long AbilityId { get; set; }
-        public string AbilityName { get; set; }
-        public string AbilityDamageType { get; set; }
-        public bool IgnoreThisEvent { get; set; }
 
+        public long SpecialValue { get; set; }
+        [JsonProperty("abilityId")]
+        public long AbilityId { get; set; }
+        [JsonProperty("abilityName")]
+        public string AbilityName { get; set; }
+        [JsonProperty("abilityType")]
+        public string AbilityDamageType { get; set; }
+        
+        public bool IgnoreThisEvent { get; set; }
+        
+        [JsonProperty("tgtId")]
         public string TargetId { get; set; }
+        [JsonProperty("tgtName")]
         public string TargetName { get; set; }
+        [JsonProperty("tgtPetOwnerId")]
         public string TargetPetOwnerId { get; set; }
+        [JsonProperty("tgtType")]
         public CharacterType TargetType { get; set; }
 
         public DateTime ParsedTimeStamp { get; set; }
@@ -51,8 +76,10 @@ namespace LogParserConcept.Models
         /// <summary>
         /// The number of seconds that have elapsed since combat started
         /// </summary>
+        [JsonProperty("elapsed")]
         public int SecondsElapsed { get; set; }
-
+        
+        [JsonProperty("totalDamage")]
         public long TotalDamage
         {
             get
@@ -60,7 +87,11 @@ namespace LogParserConcept.Models
                 if (!IsDamageType) return 0;
                 // DO NOT include intercepted values in the total
                 //return ActionValue + AbsorbedAmount + BlockedAmount + DeflectAmount + IgnoredAmount + InterceptAmount;
-                return ActionValue + AbsorbedAmount + BlockedAmount + DeflectAmount + IgnoredAmount;
+                var amtBlocked = BlockedAmount ?? 0;
+                var amtAbsorbed = AbsorbedAmount ?? 0;
+                var amtDeflected = DeflectAmount ?? 0;
+                var amtIgnored = IgnoredAmount ?? 0;
+                return ActionValue + amtAbsorbed + amtBlocked + amtDeflected + amtIgnored;
             }
         }
 

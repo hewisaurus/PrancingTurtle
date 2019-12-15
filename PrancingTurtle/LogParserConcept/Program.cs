@@ -12,37 +12,37 @@ namespace LogParserConcept
     {
         static async Task Main(string[] args)
         {
-            //var logPath = @"F:\PrancingTurtle\InputLogs\CombatLog.txt";
-
-            ////TODO: Stop being lazy and hardcoding while testing
-
-            //var info = new SessionLogInfo
-            //{
-            //    SessionDate = new DateTime(2019, 11, 18, 2, 32, 00),
-            //    SessionId = 18200,
-            //    OwnerGuild = "Casually Elite",
-            //    OwnerName = "Kyela",
-            //    OwnerShard = "Faeblight",
-            //    PublicSession = true,
-            //    SessionName = "Some session name",
-            //    UploaderTimezone = "UTC"
-            //};
-
-            var logPath = @"F:\PrancingTurtle\InputLogs\lxsnngvaax3\CombatLog.txt";
+            var logPath = @"F:\PrancingTurtle\InputLogs\CombatLog.txt";
 
             //TODO: Stop being lazy and hardcoding while testing
 
             var info = new SessionLogInfo
             {
-                SessionDate = new DateTime(2017, 11, 30),
-                SessionId = 16926,
-                OwnerGuild = "UnknownGuild",
-                OwnerName = "Someone",
-                OwnerShard = "SomeShard",
+                SessionDate = new DateTime(2019, 11, 18, 2, 32, 00),
+                SessionId = 18200,
+                OwnerGuild = "Casually Elite",
+                OwnerName = "Kyela",
+                OwnerShard = "Faeblight",
                 PublicSession = true,
                 SessionName = "Some session name",
                 UploaderTimezone = "UTC"
             };
+
+            //var logPath = @"F:\PrancingTurtle\InputLogs\lxsnngvaax3\CombatLog.txt";
+
+            ////TODO: Stop being lazy and hardcoding while testing
+
+            //var info = new SessionLogInfo
+            //{
+            //    SessionDate = new DateTime(2017, 11, 30),
+            //    SessionId = 16926,
+            //    OwnerGuild = "UnknownGuild",
+            //    OwnerName = "Someone",
+            //    OwnerShard = "SomeShard",
+            //    PublicSession = true,
+            //    SessionName = "Some session name",
+            //    UploaderTimezone = "UTC"
+            //};
 
             await Methods.ParseAsync(info, logPath);
 
