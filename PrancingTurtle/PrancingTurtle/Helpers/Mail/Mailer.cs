@@ -6,6 +6,8 @@ using System.Net.Mail;
 using System.Threading;
 using System.Web;
 using Logging;
+using RestSharp;
+using RestSharp.Authenticators;
 
 namespace PrancingTurtle.Helpers.Mail
 {
@@ -15,7 +17,7 @@ namespace PrancingTurtle.Helpers.Mail
         private static readonly ILogger Logger = new NLogHandler();
 
         /// <summary>
-        /// It's still blocking, but no on the same thread as the web request, so it appears to happen instantly.
+        /// It's still blocking, but not on the same thread as the web request, so it appears to happen instantly.
         /// </summary>
         /// <param name="to"></param>
         /// <param name="subject"></param>
@@ -26,12 +28,14 @@ namespace PrancingTurtle.Helpers.Mail
             {
                 try
                 {
-                    using (var client = new SmtpClient(AccountInfo.Server, AccountInfo.Port))
-                    {
-                        client.Credentials = new NetworkCredential(AccountInfo.Username, AccountInfo.Password);
-                        client.EnableSsl = AccountInfo.UseSsl;
-                        client.Send($"{MailCommonStrings.Sender} <{AccountInfo.SendingAddress}>", to, subject, body);
-                    }
+                    // Commented out - using MailGun API
+                    //using (var client = new SmtpClient(AccountInfo.Server, AccountInfo.Port))
+                    //{
+                        //client.Credentials = new NetworkCredential(AccountInfo.Username, AccountInfo.Password);
+                        //client.EnableSsl = AccountInfo.UseSsl;
+                        //client.Send($"{MailCommonStrings.Sender} <{AccountInfo.SendingAddress}>", to, subject, body);
+                    //}
+                    var mailResponse = SendMessage(to, subject, body);
                 }
                 catch (Exception ex)
                 {
@@ -46,6 +50,22 @@ namespace PrancingTurtle.Helpers.Mail
                     }
                 }
             });
+        }
+
+        private static IRestResponse SendMessage (string to, string subject, string body)
+        {
+            RestClient client = new RestClient ();
+            client.BaseUrl = new Uri ("https://api.mailgun.net/v3");
+            client.Authenticator = new HttpBasicAuthenticator ("api", AccountInfo.MailgunApiKey);
+            RestRequest request = new RestRequest ();
+            request.AddParameter ("domain", "mg.prancingturtle.com", ParameterType.UrlSegment);
+            request.Resource = "{domain}/messages";
+            request.AddParameter ("from", "no-reply@prancingturtle.com");
+            request.AddParameter ("to", to);
+            request.AddParameter ("subject", subject);
+            request.AddParameter ("text", body);
+            request.Method = Method.POST;
+            return client.Execute (request);
         }
     }
 }

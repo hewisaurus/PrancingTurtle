@@ -16,5 +16,8 @@ namespace PrancingTurtle.Helpers.Mail
     //    internal const string Password = "password";
     //    internal const int Port = 25;
     //    internal const bool UseSsl = false;
+    //
+    //    If using mailgun, here's the api key specification
+    //    internal const string MailgunApiKey = "key-12345123412123123123";
     //}
 }
