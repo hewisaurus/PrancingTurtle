@@ -140,9 +140,11 @@
     <Compile Include="Models\Instance.cs" />
     <Compile Include="Models\Misc\BossFightProgression.cs" />
     <Compile Include="Models\Misc\EncounterIdPlayerId.cs" />
+    <Compile Include="Models\Misc\EncounterPlayersAndRoles.cs" />
     <Compile Include="Models\Misc\EncounterTableRecords.cs" />
     <Compile Include="Models\Misc\GuildMemberSessionEncounterCount.cs" />
     <Compile Include="Models\Misc\Leaderboards.cs" />
+    <Compile Include="Models\Misc\PlayerIdValueSum.cs" />
     <Compile Include="Models\Misc\TableRowCount.cs" />
     <Compile Include="Models\NewsRecentChanges.cs" />
     <Compile Include="Models\NpcDeath.cs" />

@@ -338,6 +338,7 @@
     <Compile Include="Helpers\Mail\AccountInfo.cs" />
     <Compile Include="Helpers\Mail\MailCommonStrings.cs" />
     <Compile Include="Helpers\Mail\Mailer.cs" />
+    <Compile Include="Helpers\Math\ListMathExtensions.cs" />
     <Compile Include="Helpers\ModelBinder\TrimModelBinder.cs" />
     <Compile Include="Helpers\MvcHtmlExtensions.cs" />
     <Compile Include="Helpers\PagedListPageSizes.cs" />

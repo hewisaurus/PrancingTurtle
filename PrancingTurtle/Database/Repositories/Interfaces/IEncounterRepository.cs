@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Common;
 using Database.Models;
+using Database.Models.Misc;
 using Database.QueryModels;
 using Database.QueryModels.Misc;
 using Encounter = Database.Models.Encounter;
@@ -227,9 +228,22 @@ namespace Database.Repositories.Interfaces
             int id, int playerId = -1, string npcId = "", bool outgoing = true, CharacterType characterType = CharacterType.Player,
             InteractionType interactionType = InteractionType.Damage, InteractionFilter filter = InteractionFilter.All,
             InteractionMode mode = InteractionMode.Ability, int totalSeconds = 0);
+
+        /// <summary>
+        /// Count the number of players seen in an encounter, and the number of player roles in the database
+        /// (for comparison purposes to see if we need to update the roles table)
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        Task<EncounterPlayersAndRoles> CountEncounterPlayersAndRoles(int id);
+
+        Task<List<int>> GetAllEncounterIdsDescending();
         #endregion
 
         #region COMMAND METHODS
+
+        Task<bool> RemoveRoleRecordsForEncounter(int id);
+
         /// <summary>
         /// Attempts to modify encounter privacy. Fails if the user does not have the correct access
         /// </summary>

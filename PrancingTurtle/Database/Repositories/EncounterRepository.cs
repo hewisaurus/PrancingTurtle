@@ -48,6 +48,25 @@ namespace Database.Repositories
             _discord = discord;
         }
 
+        public async Task<EncounterPlayersAndRoles> CountEncounterPlayersAndRoles(int id)
+        {
+            return (await QueryAsync(
+                    q => q.QueryAsync<EncounterPlayersAndRoles>
+                        (SQL.Encounter.PlayerRoles.CountPlayersAndRolesForEncounter, new { id })))
+                .SingleOrDefault();
+        }
+
+        public async Task<List<int>> GetAllEncounterIdsDescending()
+        {
+            return (await QueryAsync(q => q.QueryAsync<int>(SQL.Encounter.GetAllIds))).AsList();
+        }
+
+        public async Task<bool> RemoveRoleRecordsForEncounter(int id)
+        {
+            var result = await ExecuteAsync(q => q.ExecuteAsync(SQL.Encounter.PlayerRoles.RemoveRecords, new { id }));
+            return result > 0;
+        }
+
         public ReturnValue ChangePrivacy(int id, int userId, bool setToPublic = false)
         {
             string timeElapsed;
@@ -1699,7 +1718,7 @@ namespace Database.Repositories
                 foreach (var encId in encountersMissingStats)
                 {
                     var stats = (await conn.QueryAsync<EncounterTableRecords>(OrphanedEncounter.GetBasicEncounterStats,
-                        new {id = encId})).SingleOrDefault();
+                        new { id = encId })).SingleOrDefault();
                     //Debug.WriteLine($"Encounter {encId} DMG: {stats.Damage} HEAL: {stats.Healing} SHIELD: {stats.Shielding}");
                     var addResult = await conn.ExecuteAsync(OrphanedEncounter.InsertTableStatsForEncounter, new
                     {

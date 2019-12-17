@@ -16,6 +16,7 @@ using Database.Models;
 using DiscordLogger.Provider;
 using PrancingTurtle.Helpers.Authorization;
 using PrancingTurtle.Helpers.BurstCalculation;
+using PrancingTurtle.Helpers.Math;
 using PrancingTurtle.Helpers.Scheduling;
 
 namespace PrancingTurtle.Controllers
@@ -51,10 +52,59 @@ namespace PrancingTurtle.Controllers
             await _encounterRepository.CheckForOrphanedEncountersAsync();
         }
 
+        public async Task<ActionResult> AddMissingEncounterPlayerRolesv2()
+        {
+            await Add_Missing_EncounterPlayerRolesv2();
+            return RedirectToAction("Index", "Home");
+        }
+
         public ActionResult AddMissingEncounterPlayerRoles()
         {
             Add_Missing_EncounterPlayerRoles();
             return RedirectToAction("Index", "Home");
+        }
+
+        private async Task Add_Missing_EncounterPlayerRolesv2()
+        {
+            var encounterIds = await _encounterRepository.GetAllEncounterIdsDescending();
+            foreach (var encId in encounterIds)
+            {
+                var encPlayersAndRoles = await _encounterRepository.CountEncounterPlayersAndRoles(encId);
+                if (encPlayersAndRoles.Players != encPlayersAndRoles.PlayersWithRoles)
+                {
+                    Debug.WriteLine($"Encounter #{encId} has {encPlayersAndRoles.Players} players but only {encPlayersAndRoles.PlayersWithRoles} roles");
+
+                    // Wipe out all of the EncounterPlayerRole records and update it, then check again
+                    if (encPlayersAndRoles.PlayersWithRoles > 0)
+                    {
+                        var removeResult = await _encounterRepository.RemoveRoleRecordsForEncounter(encId);
+                        if (removeResult == false)
+                        {
+                            Debug.WriteLine($"Something went wrong while removing roles for encounter {encId}");
+                        }
+                    }
+
+                    var rolesFromRecords = _encounterRepository.GetPlayerRoles(encId);
+                    if (rolesFromRecords.Any())
+                    {
+                        var playerRoleList = rolesFromRecords.Select(role => new EncounterPlayerRole()
+                        {
+                            Class = role.Class,
+                            EncounterId = encId,
+                            PlayerId = role.Id,
+                            Role = role.Role,
+                            Name = role.Name
+                        }).ToList();
+                        var result = _encounterRepository.AddPlayerEncounterRoles(playerRoleList);
+                    }
+
+                    //Debug.WriteLine($"Added {rolesFromRecords.Count} roles. Now, checking again...");
+
+                    //encPlayersAndRoles = await _encounterRepository.CountEncounterPlayersAndRoles(encId);
+
+                    //Debug.WriteLine($"Encounter #{encId} now has {encPlayersAndRoles.Players} players and {encPlayersAndRoles.PlayersWithRoles} roles");
+                }
+            }
         }
 
         private void Add_Missing_EncounterPlayerRoles()

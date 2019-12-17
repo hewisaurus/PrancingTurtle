@@ -6,7 +6,7 @@ namespace Database.SQL
     {
         public static string GetAllIds
         {
-            get { return "SELECT Id FROM Encounter"; }
+            get { return "SELECT Id FROM Encounter ORDER BY Id DESC"; }
         }
         /// <summary>
         /// Gets the query required to make an encounter private
@@ -192,6 +192,31 @@ namespace Database.SQL
                            "JOIN RoleIcon RI ON AR.RoleIconId = RI.Id ORDER BY RI.Priority ASC";
                 }
             }
+
+            public static string DamageTakenFromNpcs =
+                "SELECT TargetPlayerId AS PlayerId, SUM(TotalDamage) AS ValueSum " +
+                "FROM DamageDone WHERE EncounterId = @id AND SourcePlayerId IS NULL " +
+                "AND TargetPlayerId IS NOT NULL GROUP BY TargetPlayerId";
+            public static string HealingDoneToPlayers =
+                "SELECT SourcePlayerId AS PlayerId, SUM(EffectiveHealing) AS ValueSum " +
+                "FROM HealingDone WHERE EncounterId = @id AND SourcePlayerId IS NOT NULL " +
+                "AND TargetPlayerId IS NOT NULL GROUP BY SourcePlayerId";
+
+            public static string CountPlayersAndRolesForEncounter =
+                "SELECT P.EncounterId, COUNT(1) AS Players, " +
+                "(SELECT COUNT(1) FROM EncounterPlayerRole WHERE EncounterId = @id) " +
+                "AS PlayersWithRoles FROM (" +
+                "SELECT EncounterId, SourcePlayerId FROM DamageDone WHERE EncounterId = @id " +
+                "AND SourcePlayerId IS NOT NULL GROUP BY SourcePlayerId " +
+                "UNION " +
+                "SELECT EncounterId, SourcePlayerId FROM HealingDone WHERE EncounterId = @id " +
+                "AND SourcePlayerId IS NOT NULL GROUP BY SourcePlayerId " +
+                "UNION " +
+                "SELECT EncounterId, SourcePlayerId FROM ShieldingDone WHERE EncounterId = @id " +
+                "AND SourcePlayerId IS NOT NULL GROUP BY SourcePlayerId) P";
+
+            public static string RemoveRecords =
+                "DELETE FROM EncounterPlayerRole WHERE EncounterId = @id";
         }
 
         public static class Overview
