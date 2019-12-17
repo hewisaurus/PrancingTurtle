@@ -69,6 +69,7 @@ namespace PrancingTurtle.Controllers
             var encounterIds = await _encounterRepository.GetAllEncounterIdsDescending();
             foreach (var encId in encounterIds)
             {
+                Debug.WriteLine($"Checking encounter #{encId}");
                 var encPlayersAndRoles = await _encounterRepository.CountEncounterPlayersAndRoles(encId);
                 if (encPlayersAndRoles.Players != encPlayersAndRoles.PlayersWithRoles)
                 {
