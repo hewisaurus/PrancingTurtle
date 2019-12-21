@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Diagnostics;
 using System.IO;
+using System.Runtime.InteropServices;
 using System.Text.Json;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -80,6 +81,7 @@ namespace LogParserConcept
             var lastTimeStamp = new DateTime();
             //var calculatedTimestamp = new DateTime();
             var encounterLength = new TimeSpan(0, 0, 0, 0);
+            var unwrittenLines = new List<string>();
 
             // Per encounter counters
             long totalDamage = 0;
@@ -147,6 +149,7 @@ namespace LogParserConcept
                             Console.WriteLine($"Detected an overridden encounter downtime. The value is now {downtimeSeconds}");
                         }
                         inCombat = true;
+                        unwrittenLines = new List<string>();
 
                         // Set the variables that we'll use to determine when the encounter should end
                         currentCombatStarted = entry.ParsedTimeStamp.AddDays(daysToAdd);
@@ -181,8 +184,11 @@ namespace LogParserConcept
                         // NB: This is only used to append lines one at a time.
                         // Add this entry to the file that it belongs to
                         await AppendLine(sessionPath, encounterNumber, encounterContainers[entry.ContainerType], line);
-                        
+                        // Testing: Write to the encounter file
+                        await AppendLine_SingleFileForEncounter(sessionPath, encounterNumber, line);
+
                         //Console.WriteLine($"{entry.SecondsElapsed}: {line}");
+
                         #endregion
                     }
                 }
@@ -235,13 +241,13 @@ namespace LogParserConcept
                         encInfo.AddRange(npcDeaths.OrderByDescending(kvp => kvp.Value).Select(death => $"{death.Key}: {death.Value}"));
 
                         var encStats = new EncounterStats(
-                            encounterNumber, encounterLength, totalDamage, damageEvents, totalHealing, healingEvents, 
+                            encounterNumber, encounterLength, totalDamage, damageEvents, totalHealing, healingEvents,
                             totalShielding, shieldingEvents, playerDeaths, npcDeaths, npcDamageTaken);
 
                         // Old pre-JSON encounter stats
                         //await WriteEncounterInfo(sessionPath, encounterNumber, encInfo);
-
-                        await WriteEncounterStats(sessionPath, encounterNumber, encStats);
+                        // JSON
+                        //await WriteEncounterStats(sessionPath, encounterNumber, encStats);
 
                         // Remove the encounter folder if it's not long enough to warrant saving
                         encounterLength = currentCombatLastDamage - currentCombatStarted;
@@ -273,11 +279,13 @@ namespace LogParserConcept
                         globalInfo.Add("-------------------");
                         globalInfo.AddRange(globalNpcDeaths.OrderByDescending(kvp => kvp.Value).Select(death => $"{death.Key}: {death.Value}"));
 
+                        // Old pre-JSON encounter stats
                         //await WriteSessionInfo(sessionPath, globalInfo);
-                        await WriteSessionStats(sessionPath, new SessionStats
-                        (encounterNumber, totalEncounterDuration, globalTotalDamage, globalDamageEvents,
-                            globalTotalHealing, globalHealingEvents, globalTotalShielding, globalShieldingEvents,
-                            globalPlayerDeaths, globalNpcDeaths, globalNpcDamageTaken));
+                        // JSON
+                        //await WriteSessionStats(sessionPath, new SessionStats
+                        //(encounterNumber, totalEncounterDuration, globalTotalDamage, globalDamageEvents,
+                        //    globalTotalHealing, globalHealingEvents, globalTotalShielding, globalShieldingEvents,
+                        //    globalPlayerDeaths, globalNpcDeaths, globalNpcDamageTaken));
                     }
                     // Still in combat but not outside our downtime period. Write the event if we need to
                     else if (!entry.IgnoreThisEvent)
@@ -291,89 +299,117 @@ namespace LogParserConcept
                             }
                         }
 
+                        // Write damage/death records immediately, but collect all other logged entries and write them if we find another damage
+                        // record within the permitted downtime. If nothing happens for X seconds, then discard unwritten lines.
                         switch (entry.ContainerType)
                         {
-                            case EncounterContainerType.Unknown:
-                                Console.WriteLine($"  Unknown container type. Line: {line}");
+                            case EncounterContainerType.Damage:
+                            case EncounterContainerType.Death:
+                                // Write any previously unwritten lines to the log
+                                if (unwrittenLines.Any())
+                                {
+                                    await AppendLine_SingleFileForEncounter(sessionPath, encounterNumber, unwrittenLines);
+                                    unwrittenLines = new List<string>();
+                                }
+                                await AppendLine_SingleFileForEncounter(sessionPath, encounterNumber, line);
                                 break;
                             case EncounterContainerType.NotLogged:
+                            case EncounterContainerType.Unknown:
+                                // Do nothing with these
                                 break;
                             default:
-                                //Console.WriteLine($"{entry.SecondsElapsed}: {line}");
-                                await AppendLine(sessionPath, encounterNumber, encounterContainers[entry.ContainerType], line);
-                                switch (entry.AttackerType)
-                                {
-                                    case CharacterType.Player:
-                                        players.Add(entry.AttackerName);
-                                        break;
-                                    case CharacterType.Npc:
-                                        npcs.Add(entry.AttackerName);
-                                        break;
-                                    case CharacterType.Pet:
-                                        pets.Add(entry.AttackerName);
-                                        break;
-                                }
-                                switch (entry.TargetType)
-                                {
-                                    case CharacterType.Player:
-                                        players.Add(entry.TargetName);
-                                        break;
-                                    case CharacterType.Npc:
-                                        npcs.Add(entry.TargetName);
-                                        break;
-                                    case CharacterType.Pet:
-                                        pets.Add(entry.TargetName);
-                                        break;
-                                }
+                                // Not a death or damage record so add this to the list of unwritten lines
+                                unwrittenLines.Add(line);
+                                break;
+                        }
 
-                                abilities.Add(entry.AbilityName);
-                                break;
-                        }
-                        
-                        // Switch the container type again to add to the correct counter
-                        switch (entry.ContainerType)
-                        {
-                            case EncounterContainerType.Buff:
-                                buffEvents += 1;
-                                globalBuffEvents += 1;
-                                break;
-                            case EncounterContainerType.Damage:
-                                damageEvents += 1;
-                                totalDamage += entry.TotalDamage;
-                                globalDamageEvents += 1;
-                                globalTotalDamage += entry.TotalDamage;
-                                if (entry.TargetType == CharacterType.Npc && entry.TargetTakingDamage)
-                                {
-                                    npcDamageTaken.AddDamageTaken(entry.TargetName, entry.ActionValue);
-                                    globalNpcDamageTaken.AddDamageTaken(entry.TargetName, entry.ActionValue);
-                                }
-                                break;
-                            case EncounterContainerType.Heal:
-                                healingEvents += 1;
-                                totalHealing += entry.ActionValue;
-                                globalHealingEvents += 1;
-                                globalTotalHealing += entry.ActionValue;
-                                break;
-                            case EncounterContainerType.Shield:
-                                shieldingEvents += 1;
-                                totalShielding += entry.ActionValue;
-                                globalShieldingEvents += 1;
-                                globalTotalShielding += entry.ActionValue;
-                                break;
-                            case EncounterContainerType.Death:
-                                switch (entry.TargetType)
-                                {
-                                    case CharacterType.Player:
-                                        playerDeaths.AddDeath(entry.TargetName);
-                                        globalPlayerDeaths.AddDeath(entry.TargetName);
-                                        break;
-                                    case CharacterType.Npc:
-                                        npcDeaths.AddDeath(entry.TargetName);
-                                        globalNpcDeaths.AddDeath(entry.TargetName);
-                                        break;
-                                }
-                                break;
-                        }
+                        // This switch works well, but still logs entries after it needs to (when combat is finished)
+                        //switch (entry.ContainerType)
+                        //{
+                        //    case EncounterContainerType.Unknown:
+                        //        Console.WriteLine($"  Unknown container type. Line: {line}");
+                        //        break;
+                        //    case EncounterContainerType.NotLogged:
+                        //        break;
+                        //    default:
+                        //        //Console.WriteLine($"{entry.SecondsElapsed}: {line}");
+                        //        await AppendLine(sessionPath, encounterNumber, encounterContainers[entry.ContainerType], line);
+                        //        await AppendLine_SingleFileForEncounter(sessionPath, encounterNumber, line);
+                        //        switch (entry.AttackerType)
+                        //        {
+                        //            case CharacterType.Player:
+                        //                players.Add(entry.AttackerName);
+                        //                break;
+                        //            case CharacterType.Npc:
+                        //                npcs.Add(entry.AttackerName);
+                        //                break;
+                        //            case CharacterType.Pet:
+                        //                pets.Add(entry.AttackerName);
+                        //                break;
+                        //        }
+                        //        switch (entry.TargetType)
+                        //        {
+                        //            case CharacterType.Player:
+                        //                players.Add(entry.TargetName);
+                        //                break;
+                        //            case CharacterType.Npc:
+                        //                npcs.Add(entry.TargetName);
+                        //                break;
+                        //            case CharacterType.Pet:
+                        //                pets.Add(entry.TargetName);
+                        //                break;
+                        //        }
+
+                        //        abilities.Add(entry.AbilityName);
+                        //        break;
+                        //}
+
+                        // Testing / encounter stats
+
+                        //// Switch the container type again to add to the correct counter
+                        //switch (entry.ContainerType)
+                        //{
+                        //    case EncounterContainerType.Buff:
+                        //        buffEvents += 1;
+                        //        globalBuffEvents += 1;
+                        //        break;
+                        //    case EncounterContainerType.Damage:
+                        //        damageEvents += 1;
+                        //        totalDamage += entry.TotalDamage;
+                        //        globalDamageEvents += 1;
+                        //        globalTotalDamage += entry.TotalDamage;
+                        //        if (entry.TargetType == CharacterType.Npc && entry.TargetTakingDamage)
+                        //        {
+                        //            npcDamageTaken.AddDamageTaken(entry.TargetName, entry.ActionValue);
+                        //            globalNpcDamageTaken.AddDamageTaken(entry.TargetName, entry.ActionValue);
+                        //        }
+                        //        break;
+                        //    case EncounterContainerType.Heal:
+                        //        healingEvents += 1;
+                        //        totalHealing += entry.ActionValue;
+                        //        globalHealingEvents += 1;
+                        //        globalTotalHealing += entry.ActionValue;
+                        //        break;
+                        //    case EncounterContainerType.Shield:
+                        //        shieldingEvents += 1;
+                        //        totalShielding += entry.ActionValue;
+                        //        globalShieldingEvents += 1;
+                        //        globalTotalShielding += entry.ActionValue;
+                        //        break;
+                        //    case EncounterContainerType.Death:
+                        //        switch (entry.TargetType)
+                        //        {
+                        //            case CharacterType.Player:
+                        //                playerDeaths.AddDeath(entry.TargetName);
+                        //                globalPlayerDeaths.AddDeath(entry.TargetName);
+                        //                break;
+                        //            case CharacterType.Npc:
+                        //                npcDeaths.AddDeath(entry.TargetName);
+                        //                globalNpcDeaths.AddDeath(entry.TargetName);
+                        //                break;
+                        //        }
+                        //        break;
+                        //}
                     }
                 }
 
@@ -855,6 +891,32 @@ namespace LogParserConcept
             }
         }
 
+        static async Task AppendLine_SingleFileForEncounter(string sessionPath, int encounterNumber, string line)
+        {
+            try
+            {
+                var filePath = Path.Combine(sessionPath, encounterNumber.ToString(), $"encounter{encounterNumber}.txt");
+                await File.AppendAllTextAsync(filePath, line + Environment.NewLine);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error writing to encounter{encounterNumber}.txt: {ex.Message}");
+            }
+        }
+
+        static async Task AppendLine_SingleFileForEncounter(string sessionPath, int encounterNumber, List<string> lines)
+        {
+            try
+            {
+                var filePath = Path.Combine(sessionPath, encounterNumber.ToString(), $"encounter{encounterNumber}.txt");
+                await File.AppendAllLinesAsync(filePath, lines);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error writing to encounter{encounterNumber}.txt: {ex.Message}");
+            }
+        }
+
         /// <summary>
         /// This was built for testing purposes but isn't currently used.
         /// As it stands right now, ~4797kb of damage records gives a ~5396kb damage JSON document.
@@ -903,7 +965,7 @@ namespace LogParserConcept
             try
             {
                 await File.WriteAllTextAsync(
-                    Path.Combine(sessionPath, "session.txt"), 
+                    Path.Combine(sessionPath, "session.txt"),
                     JsonConvert.SerializeObject(stats));
             }
             catch (Exception ex)
@@ -937,7 +999,7 @@ namespace LogParserConcept
             try
             {
                 await File.WriteAllTextAsync(
-                    Path.Combine(sessionPath, $"{encounterNumber}.txt"), 
+                    Path.Combine(sessionPath, $"{encounterNumber}.txt"),
                     JsonConvert.SerializeObject(stats));
             }
             catch (Exception ex)
