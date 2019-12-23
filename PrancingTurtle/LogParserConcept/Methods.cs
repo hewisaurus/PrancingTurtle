@@ -67,7 +67,7 @@ namespace LogParserConcept
             using var sr = new StreamReader(fs);
             // TODO: Stop being lazy while testing and check for the actual timezone.
             // TODO: Stop being lazy while testing and check for the log type instead of assuming that we're logging with Standard.
-            var logType = LogType.Standard;
+            var logType = LogType.Unknown;
 
             // Main loop
             var line = "";
@@ -117,7 +117,29 @@ namespace LogParserConcept
 
             while ((line = sr.ReadLine()) != null)
             {
-                var entry = await ParseLine(line);
+                // If we don't know what type of log this is yet, then figure that out now
+                if (logType == LogType.Unknown)
+                {
+                    if (line.Length > 8)
+                    {
+                        if (line.Substring(2, 1) == ":" && line.Substring(5, 1) == ":")
+                        {
+                            logType = LogType.Standard;
+                        }
+                        else if (line.Substring(2, 1) == "/" && line.Substring(5, 1) == "/")
+                        {
+                            logType = LogType.Expanded;
+                        }
+                    }
+
+                    // If we haven't figured out the log type by this point, skip processing this line and check the next one
+                    if (logType == LogType.Unknown)
+                    {
+                        continue;
+                    }
+                }
+
+                var entry = await ParseLine(line, logType);
                 if (entry.ValidEntry == false)
                 {
                     if (!line.Contains("Combat Begin") && !line.Contains("Combat End"))
@@ -126,7 +148,8 @@ namespace LogParserConcept
                         Console.WriteLine(line);
                         Console.WriteLine();
                     }
-                    // Skip the rest of this loop
+                    // Skip the rest of this loop, but increment the line number before we do
+                    lineNumber++;
                     continue;
                 }
 
@@ -412,7 +435,7 @@ namespace LogParserConcept
                         //}
                     }
                 }
-
+                
                 lineNumber++;
             }
         }
@@ -441,7 +464,7 @@ namespace LogParserConcept
             }
         }
 
-        public static async Task<LogEntry> ParseLine(string logLine)
+        public static async Task<LogEntry> ParseLine(string logLine, LogType logType)
         {
             var entry = new LogEntry();
 
@@ -460,9 +483,43 @@ namespace LogParserConcept
                 entry.InvalidReason = "Bracket counts are not equal";
                 return entry;
             }
-
+            
             // Date parsing
-            if (!DateTime.TryParse(logLine.Substring(0, 8), out var entryDate))
+            // Standard logs have a 9 character date (actually, no date but let's ignore that fact)
+            // Expanded logs are in the format mm/dd/yyyy hh:mm:ss:mms: (assume mms means milliseconds)
+            var dateLength = logType == LogType.Standard ? 9 : 24;
+
+            var entryDate = new DateTime();
+            if (logType == LogType.Expanded)
+            {
+                // When /combatlogexpanded was added, the millisecond value wasn't forced to 3 digits.
+                // It is now, but we have to handle a 2 digit ms value if we want to be able to use old logs.
+                
+                // 12/02/2016 08:19:51:798:
+                // 12/02/2016 08:19:52:02:
+                // 12/02/2016 08:21:35:00:
+                var month = int.Parse(logLine.Substring(0, 2));
+                var day = int.Parse(logLine.Substring(3, 2));
+                var year = int.Parse(logLine.Substring(6, 4));
+                var hour = int.Parse(logLine.Substring(11, 2));
+                var minute = int.Parse(logLine.Substring(14, 2));
+                var second = int.Parse(logLine.Substring(17, 2));
+                // Figure out the millisecond value
+                var ms = 0;
+                var msValue = logLine.Substring(20, 3);
+                if (msValue.Contains(":"))
+                {
+                    ms = int.Parse(msValue.Substring(0, 2));
+                    dateLength = 23;
+                }
+                else
+                {
+                    ms = int.Parse(msValue);
+                }
+
+                entryDate = new DateTime(year, month, day, hour, minute, second, ms);
+            }
+            else if (!DateTime.TryParse(logLine.Substring(0, 8), out entryDate))
             {
                 entry.InvalidReason = "Date couldn't be parsed";
                 return entry;
@@ -486,7 +543,8 @@ namespace LogParserConcept
             var openBrackets = new List<int>();
             var closeBrackets = new List<int>();
 
-            var lineNoTimestamp = logLine.Substring(9).Trim();
+            // We've set "dateLength" based on the log type
+            var lineNoTimestamp = logLine.Substring(dateLength).Trim();
 
             for (var i = lineNoTimestamp.IndexOf('('); i > -1; i = lineNoTimestamp.IndexOf('(', i + 1))
             {

@@ -13,17 +13,19 @@ namespace LogParserConcept
         static async Task Main(string[] args)
         {
             var logPath = @"F:\PrancingTurtle\InputLogs\CombatLog.txt";
+            //var logPath = @"F:\PrancingTurtle\InputLogs\3crg4s0lva5-CombatLog.txt";
+            //3crg4s0lva5-CombatLog
 
             //TODO: Stop being lazy and hardcoding while testing
 
             var info = new SessionLogInfo
             {
-                SessionDate = new DateTime(2019, 11, 18, 2, 32, 00),
-                SessionId = 18200,
-                OwnerGuild = "Casually Elite",
-                OwnerName = "Kyela",
-                OwnerShard = "Faeblight",
-                PublicSession = true,
+                SessionDate = new DateTime(2019, 12, 23, 2, 32, 00),
+                SessionId = 18243,
+                OwnerGuild = "Ducktales",
+                OwnerName = "Toar",
+                OwnerShard = "Laethys",
+                PublicSession = false,
                 SessionName = "Some session name",
                 UploaderTimezone = "UTC"
             };
