@@ -20,14 +20,15 @@ namespace LogParserConcept
 
             var info = new SessionLogInfo
             {
-                SessionDate = new DateTime(2019, 12, 23, 2, 32, 00),
+                SessionDate = new DateTime(2019, 12, 23, 7, 11, 00),
                 SessionId = 18243,
                 OwnerGuild = "Ducktales",
                 OwnerName = "Toar",
                 OwnerShard = "Laethys",
                 PublicSession = false,
                 SessionName = "Some session name",
-                UploaderTimezone = "UTC"
+                //UploaderTimezone = "UTC"
+                UploaderTimezone = "AUS Eastern Standard Time"
             };
 
             //var logPath = @"F:\PrancingTurtle\InputLogs\lxsnngvaax3\CombatLog.txt";

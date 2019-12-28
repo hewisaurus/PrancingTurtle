@@ -65,8 +65,12 @@ namespace LogParserConcept
             Console.WriteLine($"Beginning to parse {logFile}");
             await using var fs = new FileStream(logFile, FileMode.Open, FileAccess.Read, FileShare.ReadWrite, 4096, true);
             using var sr = new StreamReader(fs);
-            // TODO: Stop being lazy while testing and check for the actual timezone.
-            // TODO: Stop being lazy while testing and check for the log type instead of assuming that we're logging with Standard.
+            #region Calculate when the session starts in local and UTC time
+            // Session date is stored in UTC already, so instead of subtracting offset for UTC, add offset for local
+            TimeZoneInfo tzi = TimeZoneInfo.FindSystemTimeZoneById(logInfo.UploaderTimezone);
+            DateTime localSessionDate = logInfo.SessionDate.Add(tzi.GetUtcOffset(logInfo.SessionDate));
+            Console.WriteLine($"Session date (local time): {localSessionDate}, UTC time: {logInfo.SessionDate}");
+            #endregion
             var logType = LogType.Unknown;
 
             // Main loop
