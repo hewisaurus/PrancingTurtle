@@ -876,6 +876,17 @@ namespace Database.SQL
                              ORDER BY ED.SecondsElapsed, ED.OrderWithinSecond";
                 }
             }
+
+            public static string NpcDeaths
+            {
+                get
+                {
+                    return 
+                        "SELECT * FROM EncounterDeath " +
+                        "WHERE TargetNpcName IS NOT NULL AND EncounterId = @id " +
+                        "ORDER BY SecondsElapsed, OrderWithinSecond";
+                }
+            }
         }
 
         /// <summary>
@@ -4882,6 +4893,47 @@ namespace Database.SQL
                            "ORDER BY EBA.DebuffName, EBA.SourceName";
                 }
             }
+        }
+
+        public static class UpdateDuration
+        {
+            //CLEAR: 
+            //EncounterPlayerStatistics
+            //EncounterTableStats
+            //EncounterOverview
+
+            //UPDATE:
+            //EncounterBuffAction
+            //EncounterDebuffAction
+            //EncounterDeath
+            //DamageDone
+            //HealingDone
+            //ShieldingDone
+
+            public const string ClearEncounterPlayerStatistics =
+                "DELETE FROM EncounterPlayerStatistics WHERE EncounterId = @encounterId";
+            public const string ClearEncounterTableStats =
+                "DELETE FROM EncounterTableStats WHERE EncounterId = @encounterId";
+            public const string ClearEncounterOverview =
+                "DELETE FROM EncounterOverview WHERE EncounterId = @encounterId";
+
+            //DELETE FROM EncounterDebuffAction WHERE EncounterId = 209977 AND SecondDebuffWentUp > 152
+
+            public const string UpdateEncounterBuffAction =
+                "DELETE FROM EncounterBuffAction WHERE EncounterId = @encounterId AND SecondBuffWentUp > @endSecond";
+            public const string UpdateEncounterDebuffAction =
+                "DELETE FROM EncounterDebuffAction WHERE EncounterId = @encounterId AND SecondDebuffWentUp > @endSecond";
+            public const string UpdateEncounterDeath =
+                "DELETE FROM EncounterDeath WHERE EncounterId = @encounterId AND SecondsElapsed > @endSecond";
+            public const string UpdateDamageDone =
+                "DELETE FROM DamageDone WHERE EncounterId = @encounterId AND SecondsElapsed > @endSecond";
+            public const string UpdateHealingDone =
+                "DELETE FROM HealingDone WHERE EncounterId = @encounterId AND SecondsElapsed > @endSecond";
+            public const string UpdateShieldingDone =
+                "DELETE FROM ShieldingDone WHERE EncounterId = @encounterId AND SecondsElapsed > @endSecond";
+
+            public const string UpdateEncounterDuration =
+                "UPDATE Encounter SET Duration = @duration WHERE Id = @encounterId";
         }
     }
 }

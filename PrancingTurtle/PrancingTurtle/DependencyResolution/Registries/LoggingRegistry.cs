@@ -11,7 +11,7 @@ namespace PrancingTurtle.DependencyResolution.Registries
     {
         public LoggingRegistry()
         {
-            For<ILogger>().Use<NullLogger>();
+            For<ILogger>().Use<NLogHandler>();
         }
     }
 }

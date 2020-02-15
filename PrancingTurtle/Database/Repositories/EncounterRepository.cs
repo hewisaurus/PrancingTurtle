@@ -534,6 +534,20 @@ namespace Database.Repositories
             return new List<EncounterDeath>();
         }
 
+        public async Task<List<EncounterDeath>> GetNpcDeathsAsync(int id)
+        {
+            try
+            {
+                return (await QueryAsync(q => q.QueryAsync<EncounterDeath>
+                    (SQL.Encounter.Overview.NpcDeaths, new { id }))).AsList();
+            }
+            catch (Exception ex)
+            {
+                _logger.Debug($"An error occurred while getting deaths: {ex.Message}");
+            }
+            return new List<EncounterDeath>();
+        }
+
         public List<PlayerIdDeathCount> CountDeathsPerPlayer(int id)
         {
             string timeElapsed;
@@ -2757,6 +2771,56 @@ namespace Database.Repositories
                             }, trans);
                     }
 
+                    trans.Commit();
+                }
+
+                returnValue.Success = true;
+            }
+            catch (Exception ex)
+            {
+                returnValue.Message = ex.Message;
+            }
+
+            return returnValue;
+        }
+
+        public async Task<ReturnValue> ModifyEncounterDuration(int encounterId, int endSecond)
+        {
+            var returnValue = new ReturnValue();
+
+            try
+            {
+                using (var conn = await OpenConnectionAsync())
+                {
+                    var trans = conn.BeginTransaction();
+
+                    //CLEAR: 
+                    //EncounterPlayerStatistics
+                    //EncounterTableStats
+                    //EncounterOverview
+                    await conn.ExecuteAsync(SQL.Encounter.UpdateDuration.ClearEncounterPlayerStatistics, new { encounterId });
+                    await conn.ExecuteAsync(SQL.Encounter.UpdateDuration.ClearEncounterTableStats, new { encounterId });
+                    await conn.ExecuteAsync(SQL.Encounter.UpdateDuration.ClearEncounterOverview, new { encounterId });
+
+                    //UPDATE:
+                    //EncounterBuffAction
+                    //EncounterDebuffAction
+                    //EncounterDeath
+                    //DamageDone
+                    //HealingDone
+                    //ShieldingDone
+                    await conn.ExecuteAsync(SQL.Encounter.UpdateDuration.UpdateEncounterBuffAction, new { encounterId, endSecond });
+                    await conn.ExecuteAsync(SQL.Encounter.UpdateDuration.UpdateEncounterDebuffAction, new { encounterId, endSecond });
+                    await conn.ExecuteAsync(SQL.Encounter.UpdateDuration.UpdateEncounterDeath, new { encounterId, endSecond });
+                    await conn.ExecuteAsync(SQL.Encounter.UpdateDuration.UpdateDamageDone, new { encounterId, endSecond });
+                    await conn.ExecuteAsync(SQL.Encounter.UpdateDuration.UpdateHealingDone, new { encounterId, endSecond });
+                    await conn.ExecuteAsync(SQL.Encounter.UpdateDuration.UpdateShieldingDone, new { encounterId, endSecond });
+
+                    var newEncounterDuration = new TimeSpan(0, 0, 0, endSecond);
+
+                    // Encounter
+                    await conn.ExecuteAsync(SQL.Encounter.UpdateDuration.UpdateEncounterDuration, new { encounterId, duration = newEncounterDuration });
+                    
                     trans.Commit();
                 }
 

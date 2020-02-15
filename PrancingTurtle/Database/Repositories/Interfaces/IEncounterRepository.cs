@@ -94,6 +94,7 @@ namespace Database.Repositories.Interfaces
         List<int> GetAllPlayerDeathTimers(int id);
         List<int> GetAllNpcDeathTimers(int id);
         List<EncounterDeath> GetDeaths(int id);
+        Task<List<EncounterDeath>> GetNpcDeathsAsync(int id);
         List<PlayerIdDeathCount> CountDeathsPerPlayer(int id);
 
         #region Comparison Methods
@@ -327,6 +328,9 @@ namespace Database.Repositories.Interfaces
         Task<ReturnValue> AddPlayerEncounterRolesAsync(List<EncounterPlayerRole> playerRoles);
         // This method will eventually be obsolete after it's integrated with the SaveEncounterPlayerStatistics method
         Task<ReturnValue> UpdateEncounterBurstStatistics(List<EncounterPlayerStatistics> list);
+
+        Task<ReturnValue> ModifyEncounterDuration(int encounterId, int newDurationSeconds);
+
         #endregion
     }
 }

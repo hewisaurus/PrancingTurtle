@@ -29,7 +29,7 @@ namespace PrancingTurtle.Controllers
         private readonly IEncounterPlayerRoleRepository _encounterPlayerRoleRepository;
         private readonly ILogger _logger;
         private readonly IDiscordService _discord;
-        
+
         public SilentUpdateController(ILogger logger, IEncounterRepository encounterRepository,
             IBossFightRepository bossFightRepository, IEncounterPlayerRoleRepository encounterPlayerRoleRepository, IDiscordService discord)
         {
@@ -176,7 +176,7 @@ namespace PrancingTurtle.Controllers
             TempData.Add("flash", new FlashSuccessViewModel(
                 $"AddMissingEncounterPlayerRoles() complete! Added {encounterPlayerRolesToAdd.Count} in {sw.Elapsed}"));
         }
-        
+
         public async Task<ActionResult> RemoveEncountersMarkedForDeletion()
         {
             await Remove_Encounters_Marked_For_Deletion();
@@ -188,7 +188,7 @@ namespace PrancingTurtle.Controllers
         {
             await _encounterRepository.RemoveEncountersMarkedForDeletionAsync(User.Identity.GetUserId());
         }
-        
+
         public ActionResult MarkOldWipesForDeletion(int id = -1)
         {
             // Created 30/11/2015
@@ -230,7 +230,7 @@ namespace PrancingTurtle.Controllers
                 encounters.RemoveRange(0, encounterList.Count);
             }
         }
-        
+
         public ActionResult RemoveDuplicateEncounterPlayerRoleRecords()
         {
             Remove_Duplicate_EncounterPlayerRole_Records();
@@ -272,7 +272,7 @@ namespace PrancingTurtle.Controllers
                 _logger.Debug("No duplicate EncounterPlayerRole records to remove!");
             }
         }
-        
+
         public ActionResult DoubleCheckEncounterDifficulty()
         {
             // Check that the encounters since a certain date have the correct difficult set against them
@@ -333,7 +333,7 @@ namespace PrancingTurtle.Controllers
                 }
             }
         }
-        
+
         public async Task<ActionResult> UpdateEncounterStatsBurstOnly()
         {
             // 20160622 - Added burst statistics to EncounterPlayerStatistics.
@@ -384,7 +384,7 @@ namespace PrancingTurtle.Controllers
 
             TempData.Add("flash", new FlashSuccessViewModel("Update_Encounter_Stats_BurstOnly() complete!"));
         }
-        
+
         public ActionResult ValidateSuccessfulEncounters(int id = -1)
         {
             Validate_Successful_Encounters(id);
@@ -511,7 +511,7 @@ namespace PrancingTurtle.Controllers
                 _logger.Debug($"Finished checking encounters for {bossFight.Name}");
             }
         }
-        
+
         private Dictionary<string, string> ParseSoulXmlFile(string path)
         {
             StreamReader sr = new StreamReader(path);
@@ -554,6 +554,82 @@ namespace PrancingTurtle.Controllers
         private void Start_Task_Scheduler()
         {
             ScheduledTasks.Start();
+        }
+
+        public async Task<ActionResult> CheckEncounterLength(int id = -1)
+        {
+            return RedirectToAction("BossFight", "Session", new { id });
+
+            if (id == -1)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
+            await Check_Encounter_Length(id);
+
+            return RedirectToAction("BossFight", "Session", new { id });
+        }
+
+        /// <summary>
+        /// Checks that the encounters for the specified boss fight are the correct length
+        /// i.e. the encounter stopped when the boss died
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        private async Task Check_Encounter_Length(int id)
+        {
+            // Add some bossfight specific parsing here to get us through until this is refactored and the parser does it instead
+
+            var bossFight = await _bossFightRepository.GetAsync(id);
+            if (bossFight == null)
+            {
+                return;
+            }
+
+            var encounters = _encounterRepository.GetSuccessfulEncounters(id)
+                .Where(e => e.ValidForRanking)
+                //.OrderBy(e => e.Duration).Take(10)
+                .ToList();
+
+            foreach (var encounter in encounters)
+            {
+                var encDeaths = await _encounterRepository.GetNpcDeathsAsync(encounter.Id);
+
+                switch (bossFight.Name)
+                {
+                    case "Azranel":
+                        // Stop the parse after Azranel dies
+                        var azranelDeath = encDeaths.FirstOrDefault(d => d.TargetNpcName == "Azranel");
+                        if (azranelDeath == null)
+                        {
+                            break;
+                        }
+
+                        if (encounter.Duration.TotalSeconds > azranelDeath.SecondsElapsed)
+                        {
+                            Debug.WriteLine($"Need to update the encounter length for encounter {encounter.Id} as it's " +
+                                            $"currently {encounter.Duration.TotalSeconds} seconds long but the boss died at {azranelDeath.SecondsElapsed} seconds.");
+
+                            var updateResult =
+                                await _encounterRepository.ModifyEncounterDuration(encounter.Id,
+                                    azranelDeath.SecondsElapsed);
+                            if (updateResult.Success)
+                            {
+                                Debug.WriteLine("Successfully updated the duration.");
+                            }
+                            else
+                            {
+                                Debug.WriteLine($"*** Couldn't update the duration: {updateResult.Message}");
+                            }
+                        }
+                        else
+                        {
+                            Debug.WriteLine($"The duration for encounter {encounter.Id} is correct - {encounter.Duration.TotalSeconds} seconds.");
+                        }
+                        
+                        break;
+                }
+            }
         }
     }
 }

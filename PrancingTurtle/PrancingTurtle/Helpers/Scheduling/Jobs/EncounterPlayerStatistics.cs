@@ -29,13 +29,14 @@ namespace PrancingTurtle.Helpers.Scheduling.Jobs
 
         public void Execute(IJobExecutionContext context)
         {
+            _logger.Debug("** Stepping into the execution of EncounterPlayerStatistics!");
             Debug.WriteLine("** Stepping into the execution of EncounterPlayerStatistics!");
 
             var task = _taskRepository.Get("EncounterPlayerStatistics");
             if (task == null)
             {
                 Debug.WriteLine("Can't update EncounterPlayerStatistics - no matching task definition exists in the database.");
-                //_logger.Debug("Can't update EncounterPlayerStatistics - no matching task definition exists in the database.");
+                _logger.Debug("Can't update EncounterPlayerStatistics - no matching task definition exists in the database.");
                 _discord.Log(
                     "Can't update EncounterPlayerStatistics - no matching task definition exists in the database.",
                     "EncounterPlayerStatistics", LogLevel.Error);
@@ -54,7 +55,8 @@ namespace PrancingTurtle.Helpers.Scheduling.Jobs
             }
 
             // Update the task lastrun time first, so if it takes a minute to run, we don't run it on another server at the same time
-            _taskRepository.UpdateTask(task.Id, DateTime.Now);
+            //TODO: Uncomment this before we push to production
+            //_taskRepository.UpdateTask(task.Id, DateTime.Now);
 
             Stopwatch sw = new Stopwatch();
 
@@ -366,8 +368,8 @@ namespace PrancingTurtle.Helpers.Scheduling.Jobs
                     sw.Stop();
                     _logger.Debug(
                         string.Format(
-                            "Finished saving stats for encounter {0}. Stats generated in {1} and saved in {2}.", enc.Id,
-                            generateTime, sw.Elapsed));
+                            "Finished saving stats for encounter {0} ({3}/{4}). Stats generated in {1} and saved in {2}.", enc.Id,
+                            generateTime, sw.Elapsed, i, encList.Count));
                     Debug.WriteLine(string.Format(
                         "Finished saving stats for encounter {0}. Stats generated in {1} and saved in {2}.", enc.Id,
                         generateTime, sw.Elapsed));
@@ -381,7 +383,7 @@ namespace PrancingTurtle.Helpers.Scheduling.Jobs
                 #endregion
             }
             // Now that we have added stats that didn't exist before, check if there are any single target stats that haven't been calculated at all yet
-            var stEncList = _encounterRepository.GetEncountersMissingSingleTargetDpsStatistics(100);
+            var stEncList = _encounterRepository.GetEncountersMissingSingleTargetDpsStatistics(300);
             if (!stEncList.Any())
             {
                 _logger.Debug("Found no encounters that require ST DPS updates!");
@@ -448,19 +450,37 @@ namespace PrancingTurtle.Helpers.Scheduling.Jobs
                     }
                     else
                     {
-                        foreach (var dmg in _encounterRepository.GetPlayerSingleTargetDamageDone(enc.Id, bossFight.TargetName))
+                        var stDmgRecords =
+                            _encounterRepository.GetPlayerSingleTargetDamageDone(enc.Id, bossFight.TargetName);
+                        if (stDmgRecords.Any())
                         {
-                            if (dmg.PlayerId == 0) continue;
-
-                            var thisPlayer = updatePlayerStats.FirstOrDefault(p => p.PlayerId == dmg.PlayerId && p.EncounterId == enc.Id);
-                            if (thisPlayer == null)
+                            foreach (var dmg in stDmgRecords)
                             {
-                                updatePlayerStats.Add(new Database.Models.EncounterPlayerStatistics()
+                                if (dmg.PlayerId == 0) continue;
+
+                                var thisPlayer = updatePlayerStats.FirstOrDefault(p =>
+                                    p.PlayerId == dmg.PlayerId && p.EncounterId == enc.Id);
+                                if (thisPlayer == null)
                                 {
-                                    EncounterId = enc.Id,
-                                    PlayerId = dmg.PlayerId,
-                                    SingleTargetDps = dmg.Damage / (long)enc.Duration.TotalSeconds
-                                });
+                                    updatePlayerStats.Add(new Database.Models.EncounterPlayerStatistics()
+                                    {
+                                        EncounterId = enc.Id,
+                                        PlayerId = dmg.PlayerId,
+                                        SingleTargetDps = dmg.Damage / (long) enc.Duration.TotalSeconds
+                                    });
+                                }
+                            }
+                        }
+                        else
+                        {
+                            // Check if this encounter actually has any damage records at all.
+                            // If it doesn't, remove the encounter entirely.
+                            var recordCounts = _encounterRepository.CountBasicRecordsForEncounter(enc.Id);
+                            if (recordCounts.DamageCount == 0)
+                            {
+                                // Remove this encounter so we don't try and use it again
+                                _logger.Debug($"Removing encounter {enc.Id} as there are no damage records in the database.");
+                                _encounterRepository.RemoveEncounter("system", enc.Id);
                             }
                         }
                     }
